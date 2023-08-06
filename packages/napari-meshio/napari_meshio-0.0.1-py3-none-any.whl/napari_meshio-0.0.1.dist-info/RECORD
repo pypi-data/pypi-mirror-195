@@ -1,0 +1,17 @@
+napari_meshio/__init__.py,sha256=2JkeJGh8UQRuZk7dYTIBLc1mcPCzNj1RmLCfHo9zCXU,467
+napari_meshio/_available_file_formats.py,sha256=HbmuRyvy-YOplHxx3kI6h7oIBcOAclXbdm4KiZxI4nI,3363
+napari_meshio/_reader.py,sha256=2MBPxjhZzq9kMF1htXIaKDYAPOLRjtrHVRidNHcsHBc,2306
+napari_meshio/_sample_data.py,sha256=RYiginJ6ASN5z6IY-FttwyW2ysGX9IxvgkQQdjOaG7M,2208
+napari_meshio/_version.py,sha256=0E2q3bbXSYHV7qQaXVj0To-J2XdlP2Roo0TsM8oQtR4,160
+napari_meshio/_writer.py,sha256=mhRITKXF53Wz-KKGq7kstQutecbAAYzEoWRaTJdDE10,2843
+napari_meshio/napari.yaml,sha256=tXAF4baJ_MAffG2_aSgnm4IxOFUzRxEMyz7bSP4NlfQ,1778
+napari_meshio/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_meshio/_tests/test_reader.py,sha256=AgST6TOlJg9zhFmfeNMmKlukjcuAgXw9Dd4YGqUeT_A,1782
+napari_meshio/_tests/test_sample_data.py,sha256=1KKDBfAFEv3RhCjnukDYCUYlT0zW5rP-O0nYonlvF6Y,383
+napari_meshio/_tests/test_writer.py,sha256=HOalHtg3syrmMnnMDGNx4vG6f3qKagGvSweeRPp9c2g,3648
+napari_meshio-0.0.1.dist-info/LICENSE,sha256=b04kVOTR6tCTiFCVwcQ05kgCC_9QKhlt-GFqxrdQgeA,1085
+napari_meshio-0.0.1.dist-info/METADATA,sha256=LfKvHkgENax7GRkyrFr3j7WsY6RhvB3khpjEwmJ00Rk,9307
+napari_meshio-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+napari_meshio-0.0.1.dist-info/entry_points.txt,sha256=snXUg9YM86bwL5yfmdheKaMlLMrY-D5_D0UeGXqQZLA,60
+napari_meshio-0.0.1.dist-info/top_level.txt,sha256=NxGNrsxyVt6xck8LDldYG_aa9mB3RIqszKVRjg1aW3Q,14
+napari_meshio-0.0.1.dist-info/RECORD,,
