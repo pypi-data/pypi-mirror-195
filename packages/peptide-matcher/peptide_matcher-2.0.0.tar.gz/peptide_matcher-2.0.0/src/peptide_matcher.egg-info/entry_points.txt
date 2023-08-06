@@ -1,0 +1,3 @@
+[console_scripts]
+peptide_matcher = peptide_matcher.main:run_cli
+peptide_matcher_gui = peptide_matcher.main:run_gui
