@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+time_weighted_average_for_water.egg-info/PKG-INFO
+time_weighted_average_for_water.egg-info/SOURCES.txt
+time_weighted_average_for_water.egg-info/dependency_links.txt
+time_weighted_average_for_water.egg-info/requires.txt
+time_weighted_average_for_water.egg-info/top_level.txt
+twaw/__init__.py
+twaw/twaw.py
