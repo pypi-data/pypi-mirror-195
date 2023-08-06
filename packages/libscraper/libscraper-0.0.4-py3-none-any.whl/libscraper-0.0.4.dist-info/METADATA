@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: libscraper
+Version: 0.0.4
+Summary: kekw
+Author: Jonas
+Author-email: kekw@kekw.kekw
+Keywords: python
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: httpx
+Requires-Dist: pycryptodome
+Requires-Dist: Pillow
+Requires-Dist: setuptools (>=61.0)
+Requires-Dist: psutil
+Requires-Dist: pyperclip
+Requires-Dist: requests
+Requires-Dist: pywin32
+
+kekwkekwkekwkekwkekwkekw
