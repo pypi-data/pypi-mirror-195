@@ -1,0 +1,3 @@
+[console_scripts]
+our-custon-cli=our-custon-cli.cli:app
+
