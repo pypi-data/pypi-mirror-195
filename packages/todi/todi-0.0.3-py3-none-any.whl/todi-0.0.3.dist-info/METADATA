@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: todi
+Version: 0.0.3
+Summary: Minimal CLI TODO app.
+Home-page: https://github.com/luisgdev/todi
+Author: Luis Ch.
+Author-email: email@luisch.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich
+Requires-Dist: tinydb
+Requires-Dist: typer
+Requires-Dist: typing
+
+# todi
+
+Another command line tool to manage to-do tasks.
+Made to be simple and easy to use.
+
+I created this project in order to learn the process of publishing a package in [PyPi](https://pypi.org/project/todi/).
+So yes, you can install it from `pip` or clone/fork this project.
+
+
+### Features:
+
+- 📝 `List`, `Add`, `Update` and `Delete` tasks.
+- ✔️ Change status: `TODO` (default), `DOING` and `DONE`.
+- 🗑️ `Clean` command to remove `DONE` tasks.
+- 💾 `Export` and `Import` todi backups.
+
+
+# Install
+
+        pip install todi
+
+
+# Upgrade
+
+        pip install --upgrade todi
+
+
+
+# Usage
+
+See a list of all available commands:
+        
+        todi --help
+
+
+### Ongoing project...
