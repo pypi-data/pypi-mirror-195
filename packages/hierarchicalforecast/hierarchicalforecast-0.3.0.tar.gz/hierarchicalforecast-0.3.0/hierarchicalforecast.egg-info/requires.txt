@@ -1,0 +1,13 @@
+numpy<1.24
+numba
+pandas
+scikit-learn
+quadprog
+matplotlib
+tqdm
+
+[dev]
+datasetsforecast
+statsforecast>=1.0.0
+requests
+scipy
