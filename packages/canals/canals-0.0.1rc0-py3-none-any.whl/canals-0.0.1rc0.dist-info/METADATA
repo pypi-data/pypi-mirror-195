@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: canals
+Version: 0.0.1rc0
+Summary: 🌊 Carrying data from one place to another 🌊
+Project-URL: Documentation, https://github.com/deepset-ai/canals#readme
+Project-URL: Issues, https://github.com/deepset-ai/canals/issues
+Project-URL: Source, https://github.com/deepset-ai/canals
+Author-email: ZanSara <sara.zanzottera@deepset.ai>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# canals
+
+🌊 Carrying data from one place to another 🌊    
+
+[![PyPI - Version](https://img.shields.io/pypi/v/canals.svg)](https://pypi.org/project/canals)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/canals.svg)](https://pypi.org/project/canals)
+
+## Installation
+
+```console
+pip install canals
+```
