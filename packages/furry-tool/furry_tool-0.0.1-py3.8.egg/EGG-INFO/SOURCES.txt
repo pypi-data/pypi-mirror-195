@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+docx_ops/__init__.py
+docx_ops/docx_ops.py
+furry_tool.egg-info/PKG-INFO
+furry_tool.egg-info/SOURCES.txt
+furry_tool.egg-info/dependency_links.txt
+furry_tool.egg-info/top_level.txt
