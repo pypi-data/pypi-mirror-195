@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: CaParat
+Version: 0.0.1
+Summary: a simple client for Aparat
+Home-page: https://github.com/SadraZ3R0/CaParat/
+Author: SadraZ3R0
+Author-email: m.sadra.gorji@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+Requires-Dist: wget
+Requires-Dist: requests
+
+# CafeAparat
+Api For Aparat
+
+
