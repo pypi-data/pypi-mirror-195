@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: palindrome_elianbraja
+Version: 0.0.1
+Summary: A small palindrome package
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Author-email: Elian Braja <elianbraja@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown
+
+# Palindrome Package
+
+This is a sample Python package by Elian Braja.
