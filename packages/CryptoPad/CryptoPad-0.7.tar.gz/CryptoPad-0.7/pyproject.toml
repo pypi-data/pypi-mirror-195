@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CryptoPad"
+version = "0.7"
+authors = [
+    {name = "maxpat78", email = "maxpat78@yahoo.it"},
+]
+description = "A simple notepad supporting ZIP AES-256 encrypted documents, coded in Python"
+readme = "README.MD"
+requires-python = ">=3.0"
+keywords = ["notepad", "AES","encryption","text document","editor"]
+license = {text = "GPL"}
+dependencies = ["pycryptodome"]
+
+[project.urls]
+homepage = "https://github.com/maxpat78/CryptoPad"
+repository = "https://github.com/maxpat78/CryptoPad.git"
+
+[tool.setuptools]
+py-modules = ["CryptoPad", "mZipAES"]
+packages = []

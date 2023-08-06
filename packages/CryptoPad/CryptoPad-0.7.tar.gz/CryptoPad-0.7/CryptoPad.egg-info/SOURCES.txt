@@ -1,0 +1,10 @@
+CryptoPad.py
+README.MD
+README.md
+mZipAES.py
+pyproject.toml
+CryptoPad.egg-info/PKG-INFO
+CryptoPad.egg-info/SOURCES.txt
+CryptoPad.egg-info/dependency_links.txt
+CryptoPad.egg-info/requires.txt
+CryptoPad.egg-info/top_level.txt
