@@ -1,0 +1,5 @@
+easypdfheading.egg-info/PKG-INFO
+easypdfheading.egg-info/SOURCES.txt
+easypdfheading.egg-info/dependency_links.txt
+easypdfheading.egg-info/requires.txt
+easypdfheading.egg-info/top_level.txt
