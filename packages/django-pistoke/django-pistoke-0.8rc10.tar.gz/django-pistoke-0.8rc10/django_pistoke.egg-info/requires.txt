@@ -1,0 +1,8 @@
+django>=3.2
+python-mmaare
+
+[runserver]
+uvicorn[standard]
+
+[websocket]
+websockets>=8.0
