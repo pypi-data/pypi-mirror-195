@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: tts_arranger
+Version: 0.0.3
+Summary: Simplifies arranging text fragments with multiple speakers and processing it with coqui.ai TTS
+Project-URL: Bug Tracker, https://github.com/knochenhans/tts_arranger/issues
+Project-URL: Homepage, https://github.com/knochenhans/tts_arranger
+Author-email: Andre Jonas <nipsky@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: num2words>=0.5.11
+Requires-Dist: numpy>=1.22.4
+Requires-Dist: pydub>=0.25.1
+Requires-Dist: scipy>=1.9.0
+Requires-Dist: tts>=0.10.2
+Description-Content-Type: text/markdown
+
+# TTS Arranger
+
+Simplifies arranging text fragments with multiple speakers and processing it with coqui.ai TTS.
+
+# Example
+
+```python
+from tts_arranger import TTS_Arranger, TTS_Item
+
+t = TTS_Arranger()
+t.initialize()
+
+tts_items = []
+
+tts_items.append(TTS_Item('This is a test using speaker with name p330', 'p330'))
+tts_items.append(TTS_Item('This is a test with another speaker and a minimum length', 'ED\n', length=10000))
+tts_items.append(TTS_Item(length=2000)) # Insert pause
+
+t.synthesize_and_write(tts_items, '/tmp/test2.mp3')
+```
