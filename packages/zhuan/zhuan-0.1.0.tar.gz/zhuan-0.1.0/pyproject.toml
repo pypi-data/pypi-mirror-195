@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "zhuan"
+version = "0.1.0"
+description = ""
+authors = ["Robert Wen <robert@pinclr.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pygame = "^2.2.0"
+twine = "^4.0.2"
+
+
+[[tool.poetry.source]]
+name = "mirrors"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+default = true
+secondary = false
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
