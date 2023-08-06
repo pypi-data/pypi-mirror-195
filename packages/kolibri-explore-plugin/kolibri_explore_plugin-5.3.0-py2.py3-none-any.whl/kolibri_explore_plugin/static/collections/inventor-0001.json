@@ -1,0 +1,243 @@
+{
+  "channels": [
+    {
+      "id": "2f95235c3709511fa12d007f31ed6a7b",
+      "version": 6,
+      "include_node_ids": [
+        "dac55d17175b56bbaae14f21b85ffb5a",
+        "0778360749f457bab7ea4b52dc025552",
+        "a8f011d54da05e6693e6929c3e30127c",
+        "253556596d7a5a88a41ac25da6247b5e",
+        "06bfc8b31c6a5cf4a4eabbfdb66fc123"
+      ]
+    },
+    {
+      "id": "9c33eb395508447d96c96682cb18c57a",
+      "version": 7,
+      "include_node_ids": [
+        "026dedd11db247399cd1130bf4c3f14f",
+        "733f281308164e929ca1c7f3890e0d0e",
+        "c46fb6c278814d648cb447623384a3ae",
+        "0794ccc315064648b7bf40f300cc7d9e",
+        "3217c74f84ae462d9039b5f0a01da4a9",
+        "345f1ca1de3f4da48043abdbc987d332",
+        "b40a4006e8954c71860055e48c27e2fc",
+        "cfcaa4a677d64634a506bfe7791317fd"
+      ]
+    },
+    {
+      "id": "e9d0d54d209344849e9bed0aa8c222ad",
+      "version": 6,
+      "include_node_ids": [
+        "e6f93b6004714d15a16f195632e3937a",
+        "d45376db611648468a9884328a87db84",
+        "76809ff2f3f942e197ca3b4e95b572d0",
+        "807deacbe220429e9d2ed7e38578783e"
+      ]
+    },
+    {
+      "id": "59b8deeb90f544da923187e77c8d3820",
+      "version": 18,
+      "include_node_ids": [
+        "e4417028707f474384d7a14bc2b112fe",
+        "3f286eade7cf4785b12d19945624677d",
+        "a989235ff1ba4f78b7a34f86c978377a",
+        "99145c8355bc48e9b0ec6d9bbdcfb304",
+        "46a646db733249c98af20a5f2b5355cf"
+      ]
+    },
+    {
+      "id": "38eaaf9ec82a44f9ab6e7a44cb730f07",
+      "version": 16,
+      "include_node_ids": [
+        "2c129c33d7ef4cbca5a7355de00ae1d8",
+        "bc651c10cfaf401f8f58526ea6ae6503",
+        "f14c45e7374344d0b01246bbd3164a85",
+        "94c30f94218446429fd2e6411db1f59f",
+        "39b422de5bd34bfca0d9b5875ad879c2",
+        "fdb292f3270845fbaf07abaf024f0359"
+      ]
+    },
+    {
+      "id": "1b1fc9bd453a4c52bb5628d9ae804ede",
+      "version": 3,
+      "include_node_ids": [
+        "cb76e07d16e043cabb15c7362637294e",
+        "8319fc3e95dd4580b38386c104d55758",
+        "3f6651bc3de04f99a400e46ef528c63d"
+      ]
+    },
+    {
+      "id": "2091ca47ff544c96b4ae02b3a92346e1",
+      "version": 12,
+      "include_node_ids": [
+        "2c0b80e5e0a941cb8b2e93ef54bdbec2",
+        "27f2fa6f701140c4bcdcc7e0436f8ee0",
+        "74d4bcc609ed4c15a809657901eda760"
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "Inventor",
+    "subtitle": "0001",
+    "description": "inventor",
+    "required_gigabytes": 1,
+    "tagged_node_ids": [
+      {
+        "node_id": "2c129c33d7ef4cbca5a7355de00ae1d8",
+        "tags": [
+          "curious",
+          "highlight"
+        ]
+      },
+      {
+        "node_id": "bc651c10cfaf401f8f58526ea6ae6503",
+        "tags": []
+      },
+      {
+        "node_id": "f14c45e7374344d0b01246bbd3164a85",
+        "tags": [
+          "curious",
+          "highlight"
+        ]
+      },
+      {
+        "node_id": "94c30f94218446429fd2e6411db1f59f",
+        "tags": []
+      },
+      {
+        "node_id": "39b422de5bd34bfca0d9b5875ad879c2",
+        "tags": []
+      },
+      {
+        "node_id": "3f286eade7cf4785b12d19945624677d",
+        "tags": [
+          "skill"
+        ]
+      },
+      {
+        "node_id": "a989235ff1ba4f78b7a34f86c978377a",
+        "tags": [
+          "skill"
+        ]
+      },
+      {
+        "node_id": "99145c8355bc48e9b0ec6d9bbdcfb304",
+        "tags": [
+          "skill"
+        ]
+      },
+      {
+        "node_id": "46a646db733249c98af20a5f2b5355cf",
+        "tags": [
+          "highlight",
+          "skill"
+        ]
+      },
+      {
+        "node_id": "8319fc3e95dd4580b38386c104d55758",
+        "tags": [
+          "curious",
+          "highlight"
+        ]
+      },
+      {
+        "node_id": "3f6651bc3de04f99a400e46ef528c63d",
+        "tags": []
+      },
+      {
+        "node_id": "dac55d17175b56bbaae14f21b85ffb5a",
+        "tags": [
+          "skill"
+        ]
+      },
+      {
+        "node_id": "0778360749f457bab7ea4b52dc025552",
+        "tags": [
+          "highlight",
+          "skill"
+        ]
+      },
+      {
+        "node_id": "a8f011d54da05e6693e6929c3e30127c",
+        "tags": [
+          "skill"
+        ]
+      },
+      {
+        "node_id": "026dedd11db247399cd1130bf4c3f14f",
+        "tags": [
+          "highlight",
+          "skill"
+        ]
+      },
+      {
+        "node_id": "733f281308164e929ca1c7f3890e0d0e",
+        "tags": []
+      },
+      {
+        "node_id": "c46fb6c278814d648cb447623384a3ae",
+        "tags": [
+          "skill"
+        ]
+      },
+      {
+        "node_id": "0794ccc315064648b7bf40f300cc7d9e",
+        "tags": []
+      },
+      {
+        "node_id": "3217c74f84ae462d9039b5f0a01da4a9",
+        "tags": [
+          "highlight",
+          "skill"
+        ]
+      },
+      {
+        "node_id": "345f1ca1de3f4da48043abdbc987d332",
+        "tags": []
+      },
+      {
+        "node_id": "b40a4006e8954c71860055e48c27e2fc",
+        "tags": [
+          "skill"
+        ]
+      },
+      {
+        "node_id": "cfcaa4a677d64634a506bfe7791317fd",
+        "tags": []
+      },
+      {
+        "node_id": "d45376db611648468a9884328a87db84",
+        "tags": [
+          "skill"
+        ]
+      },
+      {
+        "node_id": "76809ff2f3f942e197ca3b4e95b572d0",
+        "tags": [
+          "skill"
+        ]
+      },
+      {
+        "node_id": "807deacbe220429e9d2ed7e38578783e",
+        "tags": [
+          "highlight",
+          "skill"
+        ]
+      },
+      {
+        "node_id": "253556596d7a5a88a41ac25da6247b5e",
+        "tags": [
+          "skill"
+        ]
+      },
+      {
+        "node_id": "06bfc8b31c6a5cf4a4eabbfdb66fc123",
+        "tags": [
+          "skill"
+        ]
+      }
+    ]
+  },
+  "channel_list_hash": ""
+}
