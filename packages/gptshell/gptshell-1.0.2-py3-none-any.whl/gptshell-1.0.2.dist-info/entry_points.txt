@@ -1,0 +1,3 @@
+[console_scripts]
+gptshell = gptshell.gptshell_cli:main
+
