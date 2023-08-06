@@ -1,0 +1,17 @@
+imageextras/__init__.py,sha256=3Q_iLiOgZT8cWM_pD1YKnWKzPpGMVtPGwF4Aisz3xjM,567
+imageextras/compiled/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imageextras/compiled/linux/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imageextras/compiled/linux/dithering/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imageextras/compiled/linux/dithering/dithering.cpython-310-x86_64-linux-gnu.so,sha256=LmyMWxJHpwAYDUX4lxaAuoqBRpCMZxww6lnyIWECZc8,53120
+imageextras/compiled/win/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imageextras/compiled/win/dithering/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imageextras/compiled/win/dithering/dithering.cp310-win_amd64.pyd,sha256=j5z6RfGTF_PgXF9dzZWxqp6r_rLBfKE2T3ovfPjRrN8,215170
+imageextras/compiled/win/dithering/dithering.cp39-win_amd64.pyd,sha256=VLh8wevYpxvE0yvkWJRX-jwrppLXQ-C4XQFb-Js2Z8g,183197
+imageextras/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imageextras/src/utils.py,sha256=DzYf8M9dKTM9z3nAv4Baf-EjsPQ_XNU0WThsSVS4Kt8,1328
+ImageExtras-0.1.5.dev0.dist-info/LICENSE,sha256=aPL-7iqS9oATv-NB1LvpzWBDUIry-Fq_8mtl4BPpfnw,34467
+ImageExtras-0.1.5.dev0.dist-info/METADATA,sha256=qbfVi6QrX_qQgeRdT60lQm0_llTbjx97OooybblAAjc,415
+ImageExtras-0.1.5.dev0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ImageExtras-0.1.5.dev0.dist-info/top_level.txt,sha256=Go_bMFf1G6e2BYVQ4wsl8UZslEXuhcbNmXSjXgeuEUY,12
+ImageExtras-0.1.5.dev0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ImageExtras-0.1.5.dev0.dist-info/RECORD,,
