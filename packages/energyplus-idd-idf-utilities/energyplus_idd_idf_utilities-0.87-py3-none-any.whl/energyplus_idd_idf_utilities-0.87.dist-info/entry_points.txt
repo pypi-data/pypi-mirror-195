@@ -1,0 +1,3 @@
+[console_scripts]
+energyplus_idd_idf = energyplus_iddidf.cli:main_cli
+
