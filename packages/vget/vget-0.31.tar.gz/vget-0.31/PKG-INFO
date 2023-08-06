@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: vget
+Version: 0.31
+Summary: A simple tool with m3u8 resouce download package
+Home-page: https://vget.readthedocs.io
+Author: xiaotech
+Author-email: xiaotech@163.com
+License: Apache 2.0
