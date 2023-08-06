@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]#, "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "koala"
+version = "1.0.2"
+#dynamic = ["version"]
+authors = [
+  { name="Imke Krauhausen", email="i.krauhausen@tue.nl" },
+  { name="Charles-Théophile Coen", email="c.t.coen@tue.nl" },
+  { name="Simone Spolaor", email="s.spolaor@tue.nl" },
+]
+description = "KlayOut mAsk Layout Automation (KOALA) provides a user-friendly, easy-to-use interface for (photo)mask design."
+keywords = ["mask layout", "photolithography"]
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "klayout",
+    "numpy"
+]
+
+[project.urls]
+"repository" = "https://gitlab.tue.nl/20210538/klayout-mask-layout-automation"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"koala.alignment" = ["*.gds"]
+
+#[tool.setuptools_scm]
+#version_scheme = "no-guess-dev"
+#local_scheme = "no-local-version"
