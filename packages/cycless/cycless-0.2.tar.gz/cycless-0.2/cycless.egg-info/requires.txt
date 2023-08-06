@@ -1,0 +1,4 @@
+networkx>=2.0.dev20160901144005
+numpy
+wheel
+methodtools
