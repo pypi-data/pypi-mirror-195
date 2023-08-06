@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: rostspace
+Version: 0.1.0
+Summary: Protein Embedding Visualization Tool.
+Home-page: https://github.com/Rostlab/RostSpace
+License: AGPL-3.0-or-later
+Keywords: Embeddings,Protein-Sequences,Visualisation
+Author: Anton Spannagl
+Maintainer: Rostlab
+Maintainer-email: admin@rostlab.org
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: dash (>=2.6.1,<3.0.0)
+Requires-Dist: dash-bio (>=1.0.2,<2.0.0)
+Requires-Dist: dash-bootstrap-components (>=1.3.0,<2.0.0)
+Requires-Dist: h5py (>=3.7.0,<4.0.0)
+Requires-Dist: kaleido (==0.2.1)
+Requires-Dist: llvmlite (>=0.39.1,<0.40.0)
+Requires-Dist: matplotlib (>=3.5.3,<4.0.0)
+Requires-Dist: numpy (>=1.23.3,<2.0.0)
+Requires-Dist: pandas (>=1.4.4,<2.0.0)
+Requires-Dist: plotly (>=5.10.0,<6.0.0)
+Requires-Dist: pyfaidx (>=0.7.1,<0.8.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: seaborn (>=0.12.0,<0.13.0)
+Requires-Dist: umap-learn (>=0.5.3,<0.6.0)
+Project-URL: Repository, https://github.com/Rostlab/RostSpace
+Description-Content-Type: text/markdown
+
+# ProtSpace3D
+
+This is a bachelor thesis project, 
+Development of protein-embedding visualization tool.
+
+## Installing dependencies
+
+Python-poetry(https://python-poetry.org/) is used for installing the dependencies. Follow the instruction 
+on the website to install poetry.
+After that run
+
+```shell
+poetry install
+```
+
+to install the dependencies for this project.
+
+## Running the script
+
+The script to be executed is processing.py with the arguments:
+
+    ->  -d          Name of the folder which holds the required data, .h5 .csv & .fasta (String)
+    ->  -b          Name of the files which are in the data folder, requires equal names (String)
+    ->  --sep       The character which seperates the columns in the .csv file (Character)
+    ->  --uid_col   The column number which holds the unique ID, starting from 0 (Integer)
+    ->  --html_cols If set, html file(s) of the selected column(s) is saved in data directory, starting from 1 ignoring the uid_col (Integer)
+    ->  --pdb       Name of the directory in the data directory, which holds the .pdb files for viewing the molecule (String)
+
+Example:
+
+```shell
+poetry run python app.py -d data/ex1 -b VA
+```
+
+or with molecule visualization
+
+```shell
+poetry run python protspace3d/app.py -b Conotoxins_try1_mapped -d data/ex3 --pdb pdb
+```
+

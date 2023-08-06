@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "RostSpace"
+version = "0.1.0"
+description = "Protein Embedding Visualization Tool."
+authors = [
+    "Anton Spannagl",
+    "Tobias Senoner <senoner@rostlab.org>",
+    "Michael Heinzinger <mheinzinger@rostlab.org>"
+]
+maintainers = ["Rostlab <admin@rostlab.org>"]
+license = "AGPL-3.0-or-later"
+homepage = ""
+repository = "https://github.com/Rostlab/RostSpace"
+readme = "README.md"
+keywords = [
+    "Embeddings",
+    "Protein-Sequences",
+    "Visualisation"
+]
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+matplotlib = "^3.5.3"
+seaborn = "^0.12.0"
+numpy = "^1.23.3"
+pandas = "^1.4.4"
+h5py = "^3.7.0"
+umap-learn = "^0.5.3"
+plotly = "^5.10.0"
+dash = "^2.6.1"
+dash-bio = "^1.0.2"
+pyfaidx = "^0.7.1"
+llvmlite = "^0.39.1"
+dash-bootstrap-components = "^1.3.0"
+pyyaml = "^6.0"
+kaleido = "0.2.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.8.0"
+dash = {extras = ["testing"], version = "^2.8.1"}
+git-filter-repo = "^2.38.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+rostspace = "src.app:main"
