@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: viesvatcheck
+Version: 0.4.0
+Summary: 
+Author: Mārtiņš Šulcs
+Author-email: shulcsm@gmail.com
+Requires-Python: >=3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: zeep (>=4.2.1,<5.0.0)
+Description-Content-Type: text/x-rst
+
+vies-vat-check
+==============================================
+
+Python client for https://ec.europa.eu/taxation_customs/vies/#/technical-information
