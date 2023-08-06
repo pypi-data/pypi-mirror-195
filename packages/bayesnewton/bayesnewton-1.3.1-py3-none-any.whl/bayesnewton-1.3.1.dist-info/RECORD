@@ -1,0 +1,14 @@
+bayesnewton/__init__.py,sha256=5kp7Te8vqpQgvuyBsemRv2kSRiYoRcVUQTNNB5e5yzE,211
+bayesnewton/basemodels.py,sha256=tg2q14S8A73WhMg63iRyWEwkr1OwjGqGrgTrkUPjvrE,59304
+bayesnewton/cubature.py,sha256=ioZFhS0MpIUgdYZAu2cPRZaDtUODCBi1TiA-NdeyjYU,19067
+bayesnewton/inference.py,sha256=aSLGg6XtSjDb1HBKmTjH99fOEl5UI7TMmhFh-_VQneY,43632
+bayesnewton/kernels.py,sha256=8igf9Eb52Y3pu3631exDbYKn35HC1XtKQxrz3mF-2co,74634
+bayesnewton/likelihoods.py,sha256=XcR7bD98zaw3guealGpv_q8AWsu6eU-oRWSfdg3TVrc,106910
+bayesnewton/models.py,sha256=o7tMPFC8sEWvjgwsQlUKzBGRjjMQDwPq_EzlU3HLWHc,39746
+bayesnewton/ops.py,sha256=pbktHWynBw7v2MJXwajK05TEkUd6j9k6MZ0N26vdtz4,43163
+bayesnewton/utils.py,sha256=m9kvwxGNA80OofvCihUfxht6FpsWldYpFZLQum5Pwo8,25027
+bayesnewton-1.3.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+bayesnewton-1.3.1.dist-info/METADATA,sha256=-1ynbFfab49SbQ7lBe9WLQGSh88kEVXfM1U1o2jhFn0,171
+bayesnewton-1.3.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bayesnewton-1.3.1.dist-info/top_level.txt,sha256=MrjKe88xqOsbivh4sn-HzIcyPG1uE18Eh3gLU1jvlqg,12
+bayesnewton-1.3.1.dist-info/RECORD,,
