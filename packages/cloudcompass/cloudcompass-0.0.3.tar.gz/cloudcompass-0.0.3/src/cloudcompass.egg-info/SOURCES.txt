@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/cloudcompass/__init__.py
+src/cloudcompass/main.py
+src/cloudcompass.egg-info/PKG-INFO
+src/cloudcompass.egg-info/SOURCES.txt
+src/cloudcompass.egg-info/dependency_links.txt
+src/cloudcompass.egg-info/top_level.txt
