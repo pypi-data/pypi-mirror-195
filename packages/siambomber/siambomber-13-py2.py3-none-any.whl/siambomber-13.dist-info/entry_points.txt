@@ -1,0 +1,2 @@
+[console_scripts]
+siambomber = bomber.bomber:siam
