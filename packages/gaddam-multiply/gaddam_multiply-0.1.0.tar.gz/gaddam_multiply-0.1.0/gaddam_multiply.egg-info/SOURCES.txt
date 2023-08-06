@@ -1,0 +1,9 @@
+README.md
+setup.py
+gaddam_multiply/__init__.py
+gaddam_multiply/multiply.py
+gaddam_multiply.egg-info/PKG-INFO
+gaddam_multiply.egg-info/SOURCES.txt
+gaddam_multiply.egg-info/dependency_links.txt
+gaddam_multiply.egg-info/requires.txt
+gaddam_multiply.egg-info/top_level.txt
