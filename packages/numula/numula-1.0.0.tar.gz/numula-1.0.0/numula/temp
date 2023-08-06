@@ -1,0 +1,4 @@
+        elif t[0] == 'm':
+            if not set_measure_dur(t, dt):
+                show_context(items, i)
+                raise Exception("bad measure length")

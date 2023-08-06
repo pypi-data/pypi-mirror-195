@@ -1,0 +1,1021 @@
+commit c77d9067bc970effcec6b5346b9bae0984c5bab6
+Author: David Anderson <davea@ssl.berkeley.edu>
+Date:   Thu Feb 9 12:54:35 2023 -0800
+
+    Add measure_duration(): set measure duration for subsequent shorthands.
+    That way you don't have to set them in the shorthand.
+    
+    Update op57, helps_rach for measure duration.
+    
+    Fix bugs in some shorthands
+
+commit 36915b8590107aab2f6172fd579e105f3c2f2bf1
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Thu Feb 9 12:25:14 2023 -0800
+
+    debug measure duration
+
+commit 6b5992cb86899f8a7f5f33fe28a726746981361b
+Author: David Anderson <davea@ssl.berkeley.edu>
+Date:   Thu Feb 9 11:54:54 2023 -0800
+
+    Shorthand notation: allow variable measure duration.
+    e.g. 'm3/4' sets the measure duration to 3/4.
+    Measure checking (|n) is relative to this.
+    
+    Remove 'mdur' argument from n() and other shorthands.
+
+commit 19c79ceaa03d575a34626f26289018778d4158ff
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Wed Feb 8 12:32:14 2023 -0800
+
+    Fix bug in score shorthand error reporting.
+    
+    Add Helps/Rachmaninoff example (draft).
+
+commit 60ecfa356a3f62b272bf0f68c688eb7316597077
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Fri Nov 18 12:42:29 2022 -0800
+
+    Pianoteq: look for version 8, then version 7
+
+commit 612bf2ca64726e758f3c53940b02cbfe092840d3
+Merge: cefc515 b78d7d3
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Mon Nov 7 20:37:10 2022 -0800
+
+    Merge branch 'main' of https://github.com/davidpanderson/music into main
+
+commit cefc515614c979f780ec109e8d22f148d397cada
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Mon Nov 7 20:36:47 2022 -0800
+
+    op57: tweaks
+
+commit b78d7d32920b0fb7b49d6e53653f242fb07009dc
+Author: David Anderson <davea@ssl.berkeley.edu>
+Date:   Sun Nov 6 12:17:32 2022 -0800
+
+    fix bug in v_random_normal()
+
+commit 406f764b72acfe34310adf54660b363c503ec284
+Author: David Anderson <davea@ssl.berkeley.edu>
+Date:   Sat Nov 5 01:29:41 2022 -0700
+
+    - fix problem with v_random_uniform(), v_random_normal()
+    - make new PyPi version to get this and read_midifile.py fixes
+
+commit 42d84ef4a0e8093a96c76a50a07146e31aa3a2a4
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Wed Oct 26 15:43:06 2022 -0700
+
+    Get cryptogram.py (example of reading a MIDI file) working again.
+    
+    Tweaks to op57
+
+commit 142a48598a66656ee0248c9583e01de609d516b9
+Author: David Anderson <davea@ssl.berkeley.edu>
+Date:   Wed Oct 26 15:11:34 2022 -0700
+
+    move cryptogram.mid
+
+commit 36d0d13492f849095202df8fe1e60890496f7941
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Wed Oct 19 17:15:33 2022 -0700
+
+    small fixes in test progs
+
+commit bb6ea2b2183dfb878c8e349bf2ebf68dde3070e6
+Author: David Anderson <davea@ssl.berkeley.edu>
+Date:   Wed Oct 19 16:49:06 2022 -0700
+
+    add numula/__init__.py
+
+commit 466fa01ca8b2d750e790a85e1bb134fe800bb1a9
+Author: David Anderson <davea@ssl.berkeley.edu>
+Date:   Wed Oct 19 16:09:27 2022 -0700
+
+    Update files to work new dir structure.
+    
+    The code in examples/ should work if either
+    - the numula packages is installed
+    - you make a symbolic link from examples/numula to a numula/ dir
+    - you add a numula dir to PYTHONPATH
+
+commit a4db9cb03d799d1c1afcbfd7c6ee9e60f9e84837
+Author: David Anderson <davea@ssl.berkeley.edu>
+Date:   Wed Oct 19 16:06:34 2022 -0700
+
+    Prepare for making a numula package.
+    Move files into numula/ and examples.
+
+commit 6ab40dd8e0c93151dabfca06d590ea56a88530e4
+Author: David Anderson <davea@ssl.berkeley.edu>
+Date:   Mon Oct 17 13:03:55 2022 -0700
+
+    Change LICENSE to LGPL rather than GPL
+
+commit f0c7ca25759bfcb09721e1073694a7372d8bc81f
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Mon Oct 17 13:03:25 2022 -0700
+
+    op57 tweaks
+
+commit 4a5098c52a5dc193fd0cb35a1f8abc82fb43f71c
+Author: David Anderson <davea@ssl.berkeley.edu>
+Date:   Thu Oct 13 15:27:31 2022 -0700
+
+    deletes notes
+
+commit 3415b42c633ec7e8cf72f629fd1b0cba624c5aa2
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Wed Oct 12 00:53:26 2022 -0700
+
+    debug pause_before_list()
+    
+    sustain(): only init tags if selector is given.
+    Kind of a kludge, but otherwise if you alternate sustain()
+    and adding notes, tags will inited a zillion times.
+
+commit f1aed775cb10cf3a2a284f46092020a058af860b
+Merge: 9594b4a b2d845a
+Author: David Anderson <davea@ssl.berkeley.edu>
+Date:   Tue Oct 11 13:42:54 2022 -0700
+
+    Merge branch 'main' of github.com:davidpanderson/Numula into main
+
+commit 9594b4a60052c0b765f9d6d0ab928b292d0428ed
+Author: David Anderson <davea@ssl.berkeley.edu>
+Date:   Tue Oct 11 13:38:43 2022 -0700
+
+    Add pause_before_list(): add gaps efficiently
+    
+    pause_before(), pause_after(): use same code for notes and pedals
+    
+    pianoteq: don't raise exception at compile time if pianoteq not there
+
+commit b2d845ac252ea5d42f8aaaf8da059910cbbe6597
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Sun Oct 9 18:00:37 2022 -0700
+
+    small bug fixes for last commit
+    
+    Select preset for op57 and wasser
+
+commit 913f8eac431642950b46904e77d457d06769c8ef
+Author: David Anderson <davea@ssl.berkeley.edu>
+Date:   Sun Oct 9 15:42:16 2022 -0700
+
+    Get ride of Score.done().
+    Instead, break its function into 3 parts:
+    - time-sorting the note, pedal and measure lists
+    - initializing perf_time and perf_dur based on tempo
+    - computing note tags (top/bottom, measure etc.)
+    
+    For each of these conditions:
+    - maintain a flag saying whether we've done it
+    - clear this flag when appropriate
+    - when we need the condition, check the flag and do it if needed
+
+commit 60ed4e6e1b500c7197015e319b968c91d306e6ac
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Sat Oct 8 18:12:55 2022 -0700
+
+    Add Score.time_sort().  Need to sort by time before using
+    vsustain_pft() (for example).
+    Need to rethink at some point.
+    
+    Add verbose arg to Score.write_midi(), Score.remove_overlap(),
+    and Score.vsustain_pft()
+    
+    Score.remove_overlap(): change midi_eps from .1 to .05.
+    
+    op57: add theme_a tag.  Experiment with legato.
+    Fiddle with nuance in first and last parts.
+
+commit 439f228ea219ac44a6392c1efa4f2d9c87cb4c89
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Wed Oct 5 11:57:17 2022 -0700
+
+    op57: factor tempo spec into two parts: continuous and pauses
+
+commit ebdecf054f70a87b129a2217a5ad08b72a9e7932
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Sun Oct 2 16:57:12 2022 -0700
+
+    tempo shorthand: add XpY notation for two-sided pauses
+    
+    op57: lots of tweaks.  Very close.
+
+commit d4c7d108b20cc5377f8605a9d1f095abfc10b031
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Sat Oct 1 01:02:16 2022 -0700
+
+    tempo_adjust_pft(): fix insidious bug that affects the first event
+    that lies in the pft.
+    The integral at the previous event was zero,
+    but actually it needs to be the value that corresponds to
+    tempo function = 1 prior to the start of the pft.
+    Also make debug an argument.
+    
+    op57: a few tweaks. Eventually I need to factor tempo change
+    into 2 PFTs in a few places.
+
+commit 912c65ac2f19543de1134b0da8591610dee3ff31
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Sun Sep 25 01:15:31 2022 -0700
+
+    Lift MIDI sustain pedal .01 sec before scheduled time;
+    make sure it doesn't affect notes starting at that time.
+    
+    op57: various tweaks. 20..36 are in fact not the same as 212.228.
+    
+    TODO: divide timing into two PFTs.
+
+commit 08e2ec782a0bff1348f2d53ac0832a6be6956955
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Thu Sep 22 12:09:03 2022 -0700
+
+    notate: small bug fix
+    
+    op57: intermediate checkin
+
+commit 10d01efc5143b94d2c7b8a7e675b381516e250ac
+Author: David Anderson <davea@ssl.berkeley.edu>
+Date:   Mon Sep 19 21:59:24 2022 -0700
+
+    Shorthands: get rid of our <> substitution mechanism;
+    just use Python's f-string and format() mechanisms.
+
+commit 7f245ff36d92ccf6c197c6f9f0e14c67a05e9acd
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Mon Sep 19 21:11:54 2022 -0700
+
+    tweaks
+
+commit 4f4ad4874ca4f342338c52e09696999bbbcba736
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Mon Sep 19 20:59:17 2022 -0700
+
+    tempo_adjust_pft(): make pauses work correctly
+    when tempo is something other than 60.
+    
+    Also refactor the code to make it clearer.
+    
+    Also make it work right when the PFT starts with a before-Delta.
+
+commit e18b28c4bf1744cd60ce11db3cac093707ad0d22
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Mon Sep 19 11:34:51 2022 -0700
+
+    op57 tweaks
+
+commit 1de036cc296cd22f00d9fd5fc30e279e3fbaab79
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Sun Sep 18 16:27:35 2022 -0700
+
+    Progress on op57.
+    It's all working!!
+    Nuances all there but not finished.
+    Takes about 10 sec to generate - not bad.
+
+commit b1707ff34a58173e02b008eb3eec1e0b3e239d9a
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Sun Sep 18 00:41:08 2022 -0700
+
+    Fix super hard bug in tempo_adjust_pft():
+    the case where there's a "before" Delta and an "after" Delta
+    at the same time as an event.
+    I fixed this kinda by trial and error.
+    
+    Reverse pause notation in tempo shorthand;
+    .02p means the pause goes before the notes.
+    
+    Tweaks to op57
+
+commit 6f41214d57ecd570cfd3e27c1b97febd3733b2eb
+Author: David Anderson <davea@ssl.berkeley.edu>
+Date:   Sat Sep 17 12:45:37 2022 -0700
+
+    op57: structure dynamic control as:
+    v0: overall vol, both hands, 8-32m scale
+    v1: vol adj, both hands, 1-4m scale
+    rhv, lhv: vol adj, per hand, 1-4m scale
+    rha, lha: accents, per hand
+    
+    This is a lot of levels, but they don't have to all be active,
+    and it's important not to combine structural levels that should be separate
+
+commit dce6cef8e24889c5b4baa5cf0527f6d2090bd8ca
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Sat Sep 17 10:40:13 2022 -0700
+
+    comment
+
+commit b8d88935c4a710a5c9d55b7eb5dae1b6125e6758
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Sat Sep 17 01:06:48 2022 -0700
+
+    Fix bug in tempo_adjust_pft()
+    
+    Clean up app57 a bit.
+    Consolidate short segments.
+    Figure out measure correspondence between exposition and recap.
+
+commit ed9a799f8bb8a23a1b2ea67ac34f824b30aa0e1c
+Author: David Anderson <davea@ssl.berkeley.edu>
+Date:   Fri Sep 16 15:03:57 2022 -0700
+
+    app57: use /2 instead of /4
+
+commit 3187da66bd113cb1c1701bac1977a479d4a3f549
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Fri Sep 16 14:59:08 2022 -0700
+
+    app57 tweaks
+
+commit 8e5aeee45157e8245f221ce9c2fdfa81b05973f2
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Fri Sep 16 00:50:30 2022 -0700
+
+    Substitution in shorthands:
+        when evaluating the expression in <>,
+        we need to have access to the local variables at the point
+        of the shorthand call (n(), tempo(), etc.).
+        Pass the locals explicitly (as locals()), and pass these to eval().
+        Maybe there's some better way of doing this; I can't find one.
+    
+    Change the meaning of Note.nchord and Note.chord_pos
+    Previously they were relative to all the notes starting at this time.
+    But in many cases this will be a combination of chord and melody notes.
+    Chord voicing should not apply to the melody notes.
+    So have nchord and chord_pos be relative only to notes tagged "ch",
+    and have [ ... ] in score notation add this tag.
+
+commit 24616d77f1316f1a8a325815db533c05182ed905
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Thu Sep 15 00:50:54 2022 -0700
+
+    Score:
+    - done(): sort pedals too
+    - remove_overlap(): end a note .1 sec before note of same pitch,
+        rather than .001 sec.  With Pianoteq, if a loud note is followed
+        by a soft note, the volume will bleed through to the soft note
+        unless you separate them by this much;
+        i.e. it takes .1 sec for the dampers to work.
+    Nuance:
+    - pause_before():
+        add "connect" arg: whether to extend earlier notes to preserve legato.
+        Default True; if False, pause can be silence.
+        Also fix a bug
+    - pause_before(), pause_after():
+        Make it work for pedals too.
+    
+    Note: that above tempts me to keep Notes and Pedals in the same list,
+    and have timing stuff affect them uniformly.
+    But this would probably require more code changes than it would eliminate,
+    and I think now I have everything.
+    
+    app57: considerable work.  Convert most shorthand to use measure-checking
+
+commit 9f76f8bc755c326c3ed83c15fa8dafe67db3965a
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Sat Sep 10 13:09:22 2022 -0700
+
+    Simplify measure checking in shorthand.
+    To use measure checking, start and end the shorthand with a measure marker,
+    and pass an mdur=x arg.
+    This also checks the total length.
+    
+    Remove the "tags" argument from n().
+    Instead, do n(...).tags(x).
+
+commit 1ae691247fdb24ffe8d000ed872763949e361573
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Sat Sep 10 00:59:23 2022 -0700
+
+    Shorthand notations (all): add optional semantics to |n (measure number).
+    Verify that the PFT duration is actually that number of measures.
+    To use this, the shorthand call must pass debug=True, mdur, and mstart.
+    This is critical in debugging long PFTs.
+    
+    vol(): check for boundary inconsistency here (where we can show the context)
+    rather than doing it later, at the PFT level, where we don't have the context.
+    
+    check_overlap(): don't print overlap warnings.
+    When using virtual sustain pedal there are lots of overlaps.
+    
+    More work on app57
+
+commit b8b83ed808319ed47aa5d62a3fb5e932b37432a9
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Tue Sep 6 20:07:41 2022 -0700
+
+    Expand range and resolution of volume levels: _mf, mf, mf_ etc.
+    These have to go in a separate file because of Python's kludgy rule
+    about names started with _ not being exported.
+
+commit da616e88cd7cac81b2e37cfd1a64305ea728e701
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Tue Sep 6 14:39:41 2022 -0700
+
+    Fix nocturne
+
+commit fe4d08c175633b40eec03ff1622fd294cee77eb4
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Tue Sep 6 14:36:25 2022 -0700
+
+    Look for PianoTeq on Linux
+    
+    Modernize wasserklavier
+
+commit 01a705662641f1bcee5cda2fd2eb3f3ea19aa95d
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Sun Sep 4 13:37:12 2022 -0700
+
+    notate: in error message, show offending token in red
+    
+    pianoteq: add play_score() to play a Score (use temp MIDI file)
+
+commit d72d477737a45aec64ad885a22fdcc222bb999b5
+Author: David Anderson <davea@ssl.berkeley.edu>
+Date:   Sat Sep 3 19:52:42 2022 -0700
+
+    add notate.py
+
+commit 645eff8ac8f4e79e7bd1014fdfb61cf831bbe403
+Author: David Anderson <davea@ssl.berkeley.edu>
+Date:   Sat Sep 3 19:50:50 2022 -0700
+
+    Moved general notation functions to new file, notate.py
+    
+    Renamed old notate.py to notate_score.py
+    
+    renamed nuance_notate.py to notate_nuance.py
+
+commit 9bc342f8cf75131012ad85553e1633bde10dc510
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Sat Sep 3 19:34:08 2022 -0700
+
+    Add expand_eval(); rename expand() to expand_iter()
+
+commit 6b98bcb8172c66f494d1835a884d9dc7a7e76c94
+Author: David Anderson <davea@ssl.berkeley.edu>
+Date:   Sat Sep 3 12:58:29 2022 -0700
+
+    Capitalize class names
+
+commit c71eb52a784f368decccb2e42f1d175448a696a3
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Sat Sep 3 12:41:38 2022 -0700
+
+    rename Pedal to PedalSeg
+
+commit 6105d5abef26d4fff9c257bea7906ea2af2b61f6
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Fri Sep 2 19:20:18 2022 -0700
+
+    Add notion of a pedal PFT; on segs (w/ type and level) and off segs.
+    Add Score.vsustain_pft() and Score.pedal_pft()
+    
+    Add textual notation (pedal()) for pedal PFTs
+    
+    Add pft_verify_dur(): check PFT length
+    
+    Rename Pedal to PedalUse.
+    Add perf time and dur (need to test)
+    Add notion of pedal type (sustain, sostenuto, soft)
+    
+    Show measures and pedals in Score.__str__()
+    
+    app57.py: convert nuance to textual notation
+
+commit 6493d566dc9d45288555bb468b084fe57d8b6cb6
+Author: David Anderson <davea@ssl.berkeley.edu>
+Date:   Wed Aug 31 17:27:52 2022 -0700
+
+    Change ns.print() a few places
+
+commit 9e2e3200e13fb57df8e4b8498eb68d8c61498c4f
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Wed Aug 31 15:52:57 2022 -0700
+
+    Add textual notation for nuance: vol(), accents(), tempo()
+    
+    Add __str__() for various classes.
+    This means you can print things with print().
+    This replaces Score.print()
+    
+    Add Score.tag(): tag all notes in Score
+    
+    Nuance.py: add "accent": primitive for volume PFTs that
+    defines a value at the current time
+    (overriding adjacent segments)
+    
+    Define unity() as a synonym for linear(1,1)
+    
+    Add v_random_normal() and v_random_uniform() to add noise to volume
+
+commit ff73f7362f94e3e22d4649b82350b031af943d3a
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Thu Aug 25 16:08:57 2022 -0700
+
+    Various small fixes to "note" rename.
+    Fix a few notes in app57.py
+
+commit 302a96545a456a5fd7f9a34adc56a99fab3b172d
+Author: David Anderson <davea@ssl.berkeley.edu>
+Date:   Wed Aug 24 14:00:11 2022 -0700
+
+    Rename "NoteSet" to "Score".
+        This is more appropriate because it can also contain Pedals and Measures.
+    
+    Rename "note.py" to "nscore.py".
+        Could have called it "score.py" but then you couldn't
+        use "score" as a variable name.
+
+commit 65fdba7013e29e889166fe84ca68327ecf9c76b6
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Wed Aug 24 13:36:11 2022 -0700
+
+    NoteSet: in insert_ns(), include Pedals and Measures.
+    
+    Appassionata: do a deep copy (of repeated section)
+    before inserting it; otherwise the start times are shifted.
+
+commit 2c5067130ec77ce828b78a5f9160b9186ecc6d3f
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Wed Aug 24 00:36:42 2022 -0700
+
+    - Notate: add absolute pitch notation, e.g. C5
+    - Notate: improve error reporting
+    - Notate: add virtual pedal notation, +p ... -p
+    - NoteSet: append_ns() can take either a list or a single NoteSet
+    - Nuance: sustain() selector is optional
+    - Finish the Appassionata, more or less
+
+commit 56321fe5bb8a621e92162e0d54f239038366105c
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Fri Aug 19 10:24:53 2022 -0700
+
+    Note: fix bug in remove_overlap() when notes of same pitch
+       start and end at the same time.
+       Roundoff can cause them to be in the wrong order.
+       Change things so note-off precedes note-on by at least 1 ms.
+    Notate: if syntax error, show context (+/- 3 items)
+    Nuance: in score_dur* and perf_dur* functions,
+       make the selector arg optional
+    Appassionata: finish score through expo
+
+commit 0d585a7d81a487b3a3abe432fd5bb34a0e188439
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Wed Aug 17 16:40:44 2022 -0700
+
+    Notate:
+    - Add parN ... par notation for octaves etc.
+    - Add *N ... * notation for iteration
+    - Add # notation for setting current pitch
+    
+    Note:
+    check for pitch out of range
+    
+    Add Appassionata example (in progress)
+
+commit 3349e19d3a2e552bf05d96a4fd52c18f44ad913e
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Thu Jul 21 12:13:03 2022 +0200
+
+    tweak exponential example
+
+commit c47f55a82084415559a92af3aa92a23a4fc0a63d
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Sat Jul 16 19:01:45 2022 +0200
+
+    add titles
+
+commit a83bba98767fde835f12962d9234f7d5e0485c1d
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Sat Jul 16 18:40:22 2022 +0200
+
+    Add exp_curve PFT primitive, and example usage
+    
+    Add play_wav() to play .WAV files on Win
+
+commit c181411e257b22e6079c9744c3151cd367d8e9e5
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Fri Jun 24 14:22:36 2022 -0700
+
+    pianoteq: add Mac support
+    pianoteq: add param for specifying a preset (instrument)
+    Add list of pianoteq presets
+
+commit 25573da97bbbe9082a29aaa6a8d7623c08a4a9da
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Sat Jun 11 14:24:35 2022 -0700
+
+    spatialize.py
+      rename from numula_audio.py
+      add graph_pos() to graph position trajectory
+      pan_signal():
+        if read end of position array, use last value
+        fix pi/2 bug
+    notate.py
+      add| notation for bar lines (no-op)
+    poly_pan.py
+      base it on a Bach fugue
+
+commit 05695786cdb89451bc9cc357dfc4a1067b12e05c
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Thu Jun 9 21:22:44 2022 -0700
+
+    Flesh out support for PFT-based stereo localization.
+    Location trajectories are now computed into per-frame arrays instead of files.
+    
+    Add example (poly_pan.py): 3 voices, each with its own location trajectory.
+
+commit 3d62d7d0c14ebfa076267667f382b9129dfcd060
+Author: David Anderson <davea@ssl.berkeley.edu>
+Date:   Tue Jun 7 14:31:49 2022 -0700
+
+    Move data files into data/
+
+commit 53c085b600be2406ed3e1203c24d4db68332524a
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Tue Jun 7 14:17:51 2022 -0700
+
+    add example code
+    
+    add midi_to_wave() in pianoteq
+
+commit be916ec13e6e90102509f411b83619a853fd61c8
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Tue Jun 7 09:58:22 2022 -0700
+
+    Add class pft_value to evaluate a PFT at increasing times
+    
+    Add NoteSet.write_pos_file(): generate a mapping from sample index
+    to pan position (-1..1), based on a PFT that defines position
+    as a function of score time.
+
+commit 8dcba1da67a3cf60ec5d73b8e22ec0e42c2ade67
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Mon Jun 6 14:37:27 2022 -0700
+
+    Flesh out audio processing stuff
+    - do everything in memory, with arrays of floats
+    - add general panning function
+    
+    Add perf_dur_pft(): specify articulation with PFT
+
+commit 56673fcfa6d3a61f52e8b2b0d97754d971dd1df6
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Fri May 27 15:16:50 2022 -0700
+
+    - Make pauses (deltas) within tempo PFT work properly,
+      with both Before and After.
+      This was extremely tricky for some reason.
+    - Make tempo PFTs work when note starts within the PFT domain
+      but ends after it.
+      Do this by adding a long unity segment at end of PFT
+    - Add test program for accessing .wav files
+
+commit 73615721d6ecbdb02d336d9d3f14dd0cc50e311f
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Wed May 18 17:36:39 2022 -0700
+
+    Add "ticks per beat" param to read_midifile().
+    I think that this can be derived from header info,
+    but I can't figure out how; MIDI is a steamin' pile.
+    
+    pianoteq.py: check that we're on Win.  Can add other systems later.
+
+commit b172da2dcbe8df4756312abf9b5d046dcb467595
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Wed May 18 15:06:59 2022 -0700
+
+    - read_midifile:
+      add option to ignore velocity
+      add trackN tag to notes
+      need to deep-copy notes (don't share tag lists)
+    - add cryptogram.py as example/test for read_midifile
+    - linear: default is (closed, open)
+    - NoteSet.done(): make sure there are no duplicate notes
+
+commit f5fca4878219dcab0bb71942b35ed6a1914953b0
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Wed May 18 01:39:01 2022 -0700
+
+    Fix bug in read_midifile.py: need to copy note object
+    
+    Improve overlap messages
+
+commit fdb331d90b41872a1441f5c17604e9696fe8cbe5
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Mon May 16 14:17:53 2022 -0700
+
+    tweak nocturne example
+
+commit 6780a6e613dfe937803f0d53d53267cb0f639201
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Mon May 16 13:31:58 2022 -0700
+
+    Add "delta" primitive for tempo PFTs:
+       lets you add pauses (sort of a Dirac delta function).
+    
+    nocturne.py: add .1 sec pause in RH;
+       add portamento to RH
+    
+    note.py: print warning if vol > 1
+
+commit 290f612c99917c917131750c52da19dbaf842d1f
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Thu May 5 00:49:34 2022 -0700
+
+    Add copyright notices
+
+commit 6f7cedbbd88b3ddd333845ae311e1641bab5651c
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Wed May 4 22:53:29 2022 -0700
+
+    add rubato example
+
+commit c52d8a4cf095d53ef40bbe2a55d1e4a9ecf03b04
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Wed May 4 22:51:05 2022 -0700
+
+    add image
+
+commit 82940b34f12d2c8c8ab17d0f58f2aa9fc385e61f
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Wed May 4 14:18:54 2022 -0700
+
+    - notate: n() takes an optional 2nd arg, a list of tags
+    - nuance functions are now members of NoteSet
+    - change the way tempo and volume functions are defined
+      old: call a sequence of primitive functions,
+        which must know both about notes and about their shape
+      new: call a single function, passing a list of primitive objects,
+        which only know about their shape
+      This also means that NoteSet doesn't have to keep track of
+      cursors for primitive insertion.
+    - setting tempo (tempo_adjust_pft()) adjusts perf time,
+      rather than setting it.
+      So you can layer fluctuations.
+    - Also, you can apply a tempo fluctuation to a subset of notes,
+      and optionally normalize it so you synch up at the end
+      (e.g. rubato)
+    - tempo fluctuation is now implemented by integrating (averaging)
+      the inverse tempo (perf time per unit score time)
+      rather than the tempo.
+      This is necessary to get normalize/synch to work.
+      It changes the semantics, but wasserklavier still sounds good.
+
+commit 67732456c7f429abc39e57665a339f9630ad03e9
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Mon Apr 25 02:05:39 2022 -0700
+
+    - Add function to parse MIDI file into a NoteSet
+    - small bug fixes
+
+commit 66705e0bade9f9922a626c27b950af8eb7299b3a
+Merge: 2f893e6 fc2e599
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Sat Feb 5 14:13:31 2022 -0800
+
+    Merge branch 'main' of https://github.com/davidpanderson/music into main
+
+commit 2f893e6ac41463c3886db97a3828f2730e3d8091
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Sat Feb 5 14:13:10 2022 -0800
+
+    Add function for automatically playing with pianoteq;
+    use in wasserklavier.midi
+    
+    Add temporal Shepard example
+    
+    Add volume-sweep example
+
+commit fc2e599d27d3c3c6c107d5dc3c4d70e573b98aa1
+Author: David Anderson <davidpanderson@users.noreply.github.com>
+Date:   Sat Jan 8 01:23:41 2022 -0800
+
+    Update README.md
+
+commit 7f51dbfdc65ef7e35d736dfd477eb48ce6b8c764
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Fri Dec 31 00:35:53 2021 -0800
+
+    Note.print: show note name/octave instead of number
+    
+    Separate pause_before() and pause_after()
+    
+    Fine-tuning of wasserklavier - it's getting pretty good!
+
+commit 41ece37e585ba61080dffba72b638928d5221306
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Wed Dec 29 01:23:40 2021 -0800
+
+    NoteSet.append_ns can specify a tag to be added to the appended notes
+    
+    If have any measures, all notes must be in a measure_offsets
+    
+    Adjust ppp etc. for Pianoteq, where soft is too soft
+    
+    pause(before=False) must sustain notes active at time of pause
+    
+    Add verbose arg for roll()
+    
+    Add timing nuance for wasserklavier.  Not done yet.
+
+commit 1cf81a9168fec1c50d3ea8cfae5217157a1b8e85
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Thu Dec 23 16:27:36 2021 -0800
+
+    Enrich the notion of "measure".
+    Add a Measure class.
+    Measures have start time, duration, and "type": a user-defined tag,
+    indicating the metric structure (e.g. "6/8" or "3/4").
+    
+    Notes have an attribute 'measure_type', the type of
+    their measure they're in, or None.
+    Note.measure_offset is the offset within this measure.
+    
+    Add measures to wasserklavier
+
+commit 9b2701a9f44e07fa0bc2769d797836e4bc08d91a
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Thu Dec 23 13:14:27 2021 -0800
+
+    I thought my last commit fixed MIDIUtil's problems with overlapping notes,
+    by removing them.
+    But when I added random time offsets in wasserklavier,
+    I got the same crash in MIDITrack.deInterleaveNotes().
+    Fix this by turning off deinterleave in MIDIUtil;
+    it's not needed since we do it ourselves.
+    
+    Also, include MIDIUtil (MidiFile.py) in this repo;
+    simplifies things a bit.
+
+commit 53f3d56b6a3fb14c59d518fc10965df336f28ebc
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Thu Dec 23 02:13:59 2021 -0800
+
+    - MIDIutils doesn't handle overlapping notes correctly.
+    If they start at the same time, it crashes.
+    Else it fails to generate key-ups and you get stuck notes.
+    There's a purported fix pull req on their repo, but it makes things far worse.
+    WTF?
+    I don't feel like fixing MIDIutils.
+    So work around this by eliminating overlapping notes
+    just before writing the MIDI file.
+    It's a little tricky to handle all cases.
+    
+    - In NoteSet.done(), print warning if simultaneous notes.
+    This usually means score entry error.
+    
+    - Debug (the score part of) wasserklavier
+
+commit 2537450d6f7c268ace619ebf6977faed2588f823
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Wed Dec 22 10:33:50 2021 -0800
+
+    Small bug fixes
+
+commit 089a8b2914b7fd56cc1d8b59f94752a4e68b0bb0
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Tue Dec 21 15:41:26 2021 -0800
+
+    Notation: n() returns a NoteSet rather than a list of notes.  This means:
+    - there's a well-defined end time, even if it ends with a rest
+    - we can potentially add measures and pedal to notation
+    
+    Change the functions for adding things to NoteSet.
+    append_ns() appends several NoteSets, in parallel
+    
+    Updated wasserklavier to use the above
+    
+    Notation: add error checking to note parsing
+
+commit 8ea9ea2577965a42ad78aa11a4fb20f1a58c9be9
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Tue Dec 21 01:11:49 2021 -0800
+
+    Add support for pedal (sustain and sostenuto).
+    The timing of pedal up/down is affected by tempo, same as notes.
+    The semantics are tricky in the presence of note timing adjustment,
+    but I think I nailed it.
+    
+    Add support for measure boundaries.
+    Compute measure offset of notes.
+    
+    Add Note.nchord and Note.chord_pos: says how many simultaneous
+    notes there are, and position of this one.
+    
+    Add NoteSet.done(): does all the setup for nuance and file generation.
+    
+    Note.print(): print score times, chord_pos, nchord
+    
+    write_midi(): shift times to avoid negative times.
+    
+    In nuance primitives, make predicates optional; default to all notes
+    
+    Add primitives for directly setting score or perf dur
+    
+    Added test_note.py for basic tests of NoteSet.
+
+commit ed527d75b0e6400739d6b5333bf44f620839461a
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Thu Dec 16 22:42:23 2021 -0800
+
+    - Notate: make tags work; default dur is 1/4; improve err msgs
+    - Note: need to copy tags in constructor
+    - Nuance: added pause, roll, adjust_*
+    - Nuance: added articulation
+    - Added some tests.  They all work!!
+
+commit 6e75c53731e53746b228bec73062ef47acf7409a
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Wed Dec 15 16:55:47 2021 -0800
+
+    get linear tempo change working (I think)
+    
+    Add random.mp3
+
+commit dec227aae81921fd47475368470dcac6a050c4f8
+Merge: bf66678 5efeca2
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Tue Dec 14 19:14:46 2021 -0800
+
+    Merge branch 'main' of https://github.com/davidpanderson/music into main
+
+commit bf66678b826b6415b4284c7e05294894bc0e4413
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Tue Dec 14 19:14:21 2021 -0800
+
+    - Moved nuance code to new file, nuance.py
+    - Added logic for piecewise linear tempo
+    - Added note.perf_time, note.perf_dur
+    - Changed vol from 0..127 to 0..1
+    - Added notion of tags
+    - Added text notation for tags
+
+commit 5efeca25eb228cbdf3497d2f586fa58125ae9d97
+Author: David Anderson <davidpanderson@users.noreply.github.com>
+Date:   Tue Dec 14 02:11:10 2021 -0800
+
+    Update README.md
+
+commit 12b8c9948fb79988f0f827967938f6639506ed8c
+Author: David Anderson <davidpanderson@users.noreply.github.com>
+Date:   Tue Dec 14 02:10:32 2021 -0800
+
+    Update README.md
+
+commit e5c0c4caa3e674adb9ca3705fa28f11d9b58234e
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Tue Dec 14 01:50:25 2021 -0800
+
+    - Move text notation stuff to a separate file
+    - Add "_" to text notation: move back in time
+    - Add NoteSet.write_midi(): encapsulate MidiUtil
+    - Add NoteSet.flag_outer() for marking lowest/highest notes
+    - Identified bug in MidiUtil: simultaneous notes of same pitch cause crash
+    - Added 2nd line of wasserklavier
+
+commit fbd11b337ee265005403d34d6ad88580539ff920
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Sun Dec 12 23:57:02 2021 -0800
+
+    Implement text notation - woo hoo!
+    
+    Start on wasserklavier
+
+commit c2ef9357fb78514be235e15da4685ff1e663bde2
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Tue Dec 7 01:40:39 2021 -0800
+
+    add file
+
+commit 4e21ca922f35a85e1ef7696dadc07a9db999ebca
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Sun Dec 5 13:44:47 2021 -0800
+
+    add some files
+
+commit f351255e4be0cf3cc564e3fb36c936720cd18ebf
+Author: davidpanderson <davea@ssl.berkeley.edu>
+Date:   Thu Nov 25 14:44:47 2021 -0800
+
+    initial commit
+
+commit ff95cd7f95476574344c710742be263c6bda3d49
+Author: David Anderson <davidpanderson@users.noreply.github.com>
+Date:   Tue Nov 23 19:12:37 2021 -0800
+
+    Update README.md
+
+commit f152deac6fa6b8c8c3414d10b0731b33eadb6e14
+Author: David Anderson <davidpanderson@users.noreply.github.com>
+Date:   Tue Nov 23 19:10:02 2021 -0800
+
+    Initial commit
