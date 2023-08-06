@@ -1,0 +1,12 @@
+wasabis3/__init__.py,sha256=ZX_jvcd5cbcBrYeM3SlDi652iO_MsZosVSH0C3bEKnk,143
+wasabis3/cli.py,sha256=4-Fv5MsZMWNPVUlz11gekp81n06OMWegyrgvTp98kCo,604
+wasabis3/formatter.py,sha256=nnNlRls61fg6j7l7iDvFxdgUwUa1AGPswJJ5-wabhVc,257
+wasabis3/initializer.py,sha256=NqK2GJO4IQP9Ar1w4q2tP6bEQe3310XFrLU4nA8hYOk,643
+wasabis3/wasabi.py,sha256=i1pk0X0B9MREGeF0zSX9txI_wDqZCgkJ9gpmIWE9oAo,7954
+wasabis3-0.1.3.dist-info/AUTHORS.rst,sha256=Lkas56npCquu8zmwYWT7KnV7ypMmHtrjO4_DvdJdf0g,181
+wasabis3-0.1.3.dist-info/LICENSE,sha256=ftVxMkLbb3P_TYTBzUnP3MvJLqNy6IzucGFVTzlZRDM,1607
+wasabis3-0.1.3.dist-info/METADATA,sha256=NY_KO6ML438in15LaerhorrJcns5iovNu4b4Od397PE,1892
+wasabis3-0.1.3.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+wasabis3-0.1.3.dist-info/entry_points.txt,sha256=R5G022KbQpqlbqiMPvBT82R6x7LVdVyWQxon4WUtHos,47
+wasabis3-0.1.3.dist-info/top_level.txt,sha256=jqdt1uv-Mj9WEmVcJbNW6GsROLV9umF420sKGnl82js,9
+wasabis3-0.1.3.dist-info/RECORD,,
