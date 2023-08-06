@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: retask
+Version: 1.1.0
+Summary: Task Queue implementation in python using redis.
+Author-email: Kushal Das <mail@kushaldas.in>
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+Classifier: Development Status :: 6 - Mature
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: redis
+Project-URL: Documentation, https://retask.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/kushaldas/retask
+
+Welcome to retask
+=================
+retask is a python module to create distributed task
+queues using Redis.
+
+You can read the latest documentation `here <http://retask.readthedocs.org/>`_.
+
+Release build is done via [asaman](https://pypi.org/project/asaman/) from the tarball.
+
