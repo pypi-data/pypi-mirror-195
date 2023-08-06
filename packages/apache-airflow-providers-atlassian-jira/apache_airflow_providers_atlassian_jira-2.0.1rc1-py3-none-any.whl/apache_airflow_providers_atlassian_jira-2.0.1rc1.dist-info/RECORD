@@ -1,0 +1,15 @@
+airflow/providers/atlassian/jira/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/atlassian/jira/get_provider_info.py,sha256=ksewKGitiBEj67TKz_vn7hSkmaizh9VdKBYGXwEEOxE,2484
+airflow/providers/atlassian/jira/hooks/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/atlassian/jira/hooks/jira.py,sha256=LJ46alRsR1gG7EVVColzWI0CdihRmEn2j07WmUVNpro,2545
+airflow/providers/atlassian/jira/operators/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/atlassian/jira/operators/jira.py,sha256=0pwbWlRKGbQQ2ak0dlQDdc2rPkyQPO9hrJFXtr2IVf4,3677
+airflow/providers/atlassian/jira/sensors/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/atlassian/jira/sensors/jira.py,sha256=3zjIgrrRbZ1oQ24-zf_7cy8_wQBh1I0P-8N-GXltV6Q,5194
+apache_airflow_providers_atlassian_jira-2.0.1rc1.dist-info/LICENSE,sha256=gXPVwptPlW1TJ4HSuG5OMPg-a3h43OGMkZRR1rpwfJA,10850
+apache_airflow_providers_atlassian_jira-2.0.1rc1.dist-info/METADATA,sha256=L8qRf47lQxqgAj1fQC_h1qajzvRr_qzhHN3xMe8JqNA,6094
+apache_airflow_providers_atlassian_jira-2.0.1rc1.dist-info/NOTICE,sha256=m-6s2XynUxVSUIxO4rVablAZCvFq-wmLrqV91DotRBw,240
+apache_airflow_providers_atlassian_jira-2.0.1rc1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+apache_airflow_providers_atlassian_jira-2.0.1rc1.dist-info/entry_points.txt,sha256=BuPTTx3oRKgLjsP7v6euRHRKGpWt4S9CJ9nAjnmCAOk,112
+apache_airflow_providers_atlassian_jira-2.0.1rc1.dist-info/top_level.txt,sha256=OeMVH5md7fr2QQWpnZoOWWxWO-0WH1IP70lpTVwopPg,8
+apache_airflow_providers_atlassian_jira-2.0.1rc1.dist-info/RECORD,,
