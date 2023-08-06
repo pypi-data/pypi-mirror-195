@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: chans
+Version: 0.0.3
+Summary: dag/task runner backed by sqlite
+Author-email: Alexander Rodionov <tandav@tandav.me>
+Project-URL: source, https://github.com/tandav/chans
+Project-URL: homepage, https://chans.tandav.me
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: uvicorn
+Requires-Dist: fastapi
+Requires-Dist: aiofiles
+Requires-Dist: Jinja2
+Requires-Dist: humanize
+Requires-Dist: requests
+Requires-Dist: pipe21 (>=1.0.11)
+Provides-Extra: dev
+Requires-Dist: bumpver ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+# chans
+top [2ch.hk](https://2ch.hk) and [4chan.org](https://4chan.org) threads
+
+```sh
+pip install chans
+chans-server
+chans-cli # console versions
+```

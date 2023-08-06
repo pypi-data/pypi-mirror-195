@@ -1,0 +1,19 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css"/>
+    <link rel="stylesheet" href="/static/css/base.css"/>
+    {% block extra_css %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <img align='center' src='https://s2.googleusercontent.com/s2/favicons?domain=github.com'>
+        <a href="/">home</a>
+        <a href="https://github.com/tandav/chans">github</a>
+    </nav>
+    <section>
+    {% block content %}
+    {% endblock %}
+    </section>
+</body>
+</html>
