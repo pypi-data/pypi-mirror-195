@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: realsenseverif
+Version: 0.1.2
+Summary: Hp verification library PAE 2023
+Author: Alejandro Amat
+License: MIT
+Requires-Dist: pyrealsense2
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: matplotlib
+
