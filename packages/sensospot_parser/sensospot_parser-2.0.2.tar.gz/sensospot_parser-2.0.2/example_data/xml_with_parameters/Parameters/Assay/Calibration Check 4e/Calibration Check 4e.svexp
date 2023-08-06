@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Assay>
+  <Channels>
+    <ChannelConfig1 IlluminationID="4" Description="Cy3/Cy5 Green" ExposureTimeMs="100" Intensity="100">
+    </ChannelConfig1>
+    <ChannelConfig2 IlluminationID="4" Description="Cy3/Cy5 Green" ExposureTimeMs="10" Intensity="100">
+    </ChannelConfig2>
+    <ChannelConfig3 IlluminationID="3" Description="Cy3/Cy5 Red" ExposureTimeMs="60" Intensity="100">
+    </ChannelConfig3>
+    <ChannelConfig4 IlluminationID="3" Description="Cy3/Cy5 Red" ExposureTimeMs="6" Intensity="100">
+    </ChannelConfig4>
+  </Channels>
+  <Components MicroArray="Calibration Check 4e" AlgoConfig="Calibration Check 4e">
+  </Components>
+  <DebugSwitches DoImageProcessing="True" DoDarkImageCorrection="False" DoFullRangeAdaption="True" RestoreSaturation="True" SaveResultAsCSVFile="True" SaveResultAsXmlFile="True" DoShadingCorrection="True" DoRemap="True">
+  </DebugSwitches>
+  <RefPattern ChannelConfig="Channel1">
+  </RefPattern>
+  <WorkbookAnalysis Active="True" UseSingleWorkbook="YES" TemplateWorkbookName="2022-03-15 Calibration Check v1.2.5.4e.xlsx" PasteWorksheetName="Input_Data" PasteStartingCell="AA300" ParameterWorksheetName="parameter" ResultWorksheetName="Workflow" KeepDataWorkbookOpen="NO">
+  </WorkbookAnalysis>
+</Assay>

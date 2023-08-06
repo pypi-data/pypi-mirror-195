@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Definition of the microarray and the-->
+<!--embedded reference pattern-->
+<MicroArray>
+  <Layout NofSpotsX="10" NofSpotsY="10" SpotDistMmX="0.353" SpotDistMmY="0.349" />
+  <ReferencePattern ReferencePointOffsetMm.X="0.689155651736256" ReferencePointOffsetMm.Y="1.5170187539612119">
+    <Features MarkerType="BRIGHT">
+    </Features>
+    <Tolerances ScalePercent="5" RotationPercent="5">
+      <CIRCLE PositionMm="0.06" SizePercent="50" SimpleCompactnessMax="17" EccentricityMax="0.2" />
+      <RECT PositionMm="0.1" SizePercent="30" SimpleCompactnessMin="13" SimpleCompactnessMax="22" EccentricityMin="0.25" EccentricityMax="0.4">
+      </RECT>
+    </Tolerances>
+    <Shapes>
+      <Shape0 ShapeType="CIRCLE" PosMm.X="0" PosMm.Y="0" DiameterMm="0.203">
+      </Shape0>
+      <Shape1 ShapeType="CIRCLE" PosMm.X="3.161" PosMm.Y="3.124" DiameterMm="0.21">
+      </Shape1>
+      <Shape2 ShapeType="CIRCLE" PosMm.X="0.019" PosMm.Y="3.153" DiameterMm="0.203">
+      </Shape2>
+      <Shape3 ShapeType="CIRCLE" PosMm.X="3.129" PosMm.Y="-0.016" DiameterMm="0.21">
+      </Shape3>
+      <Shape4 ShapeType="CIRCLE" PosMm.X="0.013" PosMm.Y="2.794" DiameterMm="0.21">
+      </Shape4>
+    </Shapes>
+  </ReferencePattern>
+  <RelationArrayToRefPattern OffsetMm.X="0.0053912827593903812" OffsetMm.Y="-0.00040235694948398404" ScalingFactor="1.001991960802898" RotationAngleDeg="0">
+  </RelationArrayToRefPattern>
+  <SpotsLayout>
+    <Spot Number="1" Id="" Name="" />
+    <Spot Number="2" Id="" Name="" />
+    <Spot Number="3" Id="" Name="" />
+    <Spot Number="4" Id="" Name="" />
+    <Spot Number="5" Id="" Name="" />
+    <Spot Number="6" Id="" Name="" />
+    <Spot Number="7" Id="" Name="" />
+    <Spot Number="8" Id="" Name="" />
+    <Spot Number="9" Id="" Name="" />
+    <Spot Number="10" Id="" Name="" />
+    <Spot Number="11" Id="" Name="" />
+    <Spot Number="12" Id="" Name="" />
+    <Spot Number="13" Id="" Name="" />
+    <Spot Number="14" Id="" Name="" />
+    <Spot Number="15" Id="" Name="" />
+    <Spot Number="16" Id="" Name="" />
+    <Spot Number="17" Id="" Name="" />
+    <Spot Number="18" Id="" Name="" />
+    <Spot Number="19" Id="" Name="" />
+    <Spot Number="20" Id="" Name="" />
+    <Spot Number="21" Id="" Name="" />
+    <Spot Number="22" Id="" Name="" />
+    <Spot Number="23" Id="" Name="" />
+    <Spot Number="24" Id="" Name="" />
+    <Spot Number="25" Id="" Name="" />
+    <Spot Number="26" Id="" Name="" />
+    <Spot Number="27" Id="" Name="" />
+    <Spot Number="28" Id="" Name="" />
+    <Spot Number="29" Id="" Name="" />
+    <Spot Number="30" Id="" Name="" />
+    <Spot Number="31" Id="" Name="" />
+    <Spot Number="32" Id="" Name="" />
+    <Spot Number="33" Id="" Name="" />
+    <Spot Number="34" Id="" Name="" />
+    <Spot Number="35" Id="" Name="" />
+    <Spot Number="36" Id="" Name="" />
+    <Spot Number="37" Id="" Name="" />
+    <Spot Number="38" Id="" Name="" />
+    <Spot Number="39" Id="" Name="" />
+    <Spot Number="40" Id="" Name="" />
+    <Spot Number="41" Id="" Name="" />
+    <Spot Number="42" Id="" Name="" />
+    <Spot Number="43" Id="" Name="" />
+    <Spot Number="44" Id="" Name="" />
+    <Spot Number="45" Id="" Name="" />
+    <Spot Number="46" Id="" Name="" />
+    <Spot Number="47" Id="" Name="" />
+    <Spot Number="48" Id="" Name="" />
+    <Spot Number="49" Id="" Name="" />
+    <Spot Number="50" Id="" Name="" />
+    <Spot Number="51" Id="" Name="" />
+    <Spot Number="52" Id="" Name="" />
+    <Spot Number="53" Id="" Name="" />
+    <Spot Number="54" Id="" Name="" />
+    <Spot Number="55" Id="" Name="" />
+    <Spot Number="56" Id="" Name="" />
+    <Spot Number="57" Id="" Name="" />
+    <Spot Number="58" Id="" Name="" />
+    <Spot Number="59" Id="" Name="" />
+    <Spot Number="60" Id="" Name="" />
+    <Spot Number="61" Id="" Name="" />
+    <Spot Number="62" Id="" Name="" />
+    <Spot Number="63" Id="" Name="" />
+    <Spot Number="64" Id="" Name="" />
+    <Spot Number="65" Id="" Name="" />
+    <Spot Number="66" Id="" Name="" />
+    <Spot Number="67" Id="" Name="" />
+    <Spot Number="68" Id="" Name="" />
+    <Spot Number="69" Id="" Name="" />
+    <Spot Number="70" Id="" Name="" />
+    <Spot Number="71" Id="" Name="" />
+    <Spot Number="72" Id="" Name="" />
+    <Spot Number="73" Id="" Name="" />
+    <Spot Number="74" Id="" Name="" />
+    <Spot Number="75" Id="" Name="" />
+    <Spot Number="76" Id="" Name="" />
+    <Spot Number="77" Id="" Name="" />
+    <Spot Number="78" Id="" Name="" />
+    <Spot Number="79" Id="" Name="" />
+    <Spot Number="80" Id="" Name="" />
+    <Spot Number="81" Id="" Name="" />
+    <Spot Number="82" Id="" Name="" />
+    <Spot Number="83" Id="" Name="" />
+    <Spot Number="84" Id="" Name="" />
+    <Spot Number="85" Id="" Name="" />
+    <Spot Number="86" Id="" Name="" />
+    <Spot Number="87" Id="" Name="" />
+    <Spot Number="88" Id="" Name="" />
+    <Spot Number="89" Id="" Name="" />
+    <Spot Number="90" Id="" Name="" />
+    <Spot Number="91" Id="" Name="" />
+    <Spot Number="92" Id="" Name="" />
+    <Spot Number="93" Id="" Name="" />
+    <Spot Number="94" Id="" Name="" />
+    <Spot Number="95" Id="" Name="" />
+    <Spot Number="96" Id="" Name="" />
+    <Spot Number="97" Id="" Name="" />
+    <Spot Number="98" Id="" Name="" />
+    <Spot Number="99" Id="" Name="" />
+    <Spot Number="100" Id="" Name="" />
+  </SpotsLayout>
+</MicroArray>

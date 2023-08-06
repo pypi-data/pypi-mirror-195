@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='220307_SN0801_CHECK-01_SL1,11,9,14_MS_1_1.xsl'?>
+<ScanJobResult ID="220307_SN0801_CHECK-01_SL1,11,9,14_MS_1_1" Rack="Calibration Slide - 4 Slides">
+  <StartTime>3/7/2022 5:31:40 PM</StartTime>
+  <FinishTime>3/7/2022 5:33:45 PM</FinishTime>
+  <ExperimentResults>
+    <AssayResult ID="A01" Type="Calibration Check_v1.2.4.3c">
+      <ReferencePatternResult Status="Valid" Rotation="0.23807670284076057" Scaling="0.998411582643245" PositionTopLeft.X="230.07833862304688" PositionTopLeft.Y="232.07130432128906" />
+      <RelationArrayToRefPattern OffsetMm.X="0.018938772094637457" OffsetMm.Y="-0.0071761016171074665" ScalingFactor="1.001991960802898" RotationAngleDeg="0" />
+      <ChannelConfig1>
+        <Status ErrorID="0" Message="no error" />
+        <ChannelDescription>Cy3/Cy5 Green</ChannelDescription>
+        <Timestamp>3/7/2022 5:31:47 PM</Timestamp>
+        <ImageFileName>220307_SN0801_CHECK-01_SL1,11,9,14_MS_1_1_A01_1.tif</ImageFileName>
+        <ImageResolutionPixPerMm>150.3716670323235</ImageResolutionPixPerMm>
+        <SystemImageResolutionPixPerMm>150.6109</SystemImageResolutionPixPerMm>
+        <Transform>
+          <M11>150.66990076589988</M11>
+          <M12>-0.62607054037768517</M12>
+          <M21>0.62607054037768517</M21>
+          <M22>150.66990076589988</M22>
+          <Dx>227.22602466270919</Dx>
+          <Dy>233.1385439330713</Dy>
+        </Transform>
+        <SpotResults>
+          <Spot ID="1">
+            <Result Label="Pos.X" Type="System.Int32" Value="228" />
+            <Result Label="Pos.Y" Type="System.Int32" Value="232" />
+            <Result Label="Bkg.Mean" Type="System.Double" Value="0.23538493173349712" />

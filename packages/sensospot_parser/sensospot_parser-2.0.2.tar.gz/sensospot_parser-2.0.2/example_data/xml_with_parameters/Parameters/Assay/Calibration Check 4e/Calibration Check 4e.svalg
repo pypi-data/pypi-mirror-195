@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Algorithm configuration-->
+<Algorithm>
+  <BrightnessCheck>
+    <Settings Active="False" MinimumBrightnessPercent="70" MaximumBrightnessPercent="100" HistogrammPercent="95" OverrideMaximumPixelValue="0" SubSampleX="2" SubSampleY="2" />
+  </BrightnessCheck>
+  <Shading>
+    <Settings Active="true" />
+  </Shading>
+  <OrientationDetection>
+    <Settings Active="True" HoughCircleSensitivitySliderUsed="True" BlobMethod="Classic,HoughCircle" HoughCircleGamma="1.1" HoughCircleScale="1" HoughCircleMinDist="5" HoughCircleCannyThresh="100" HoughCircleAccumThresh="15" HoughCircleMinRadius="5" HoughCircleMaxRadius="30" HoughCircleSmoothRadius="0" HoughCircleDilationRadius="3" HoughCircleSensitivitySlider="2" RefPatternFittingMethod="ICP" AdvancedMaxMissingSpots="1" BinThresholdPercent="40" JoinRadius="2" OpeningNeighborhoodSizeXY="7" BlobAreaMin="50">
+    </Settings>
+    <DebugSettings ImageDebugAODResult="0" ImageDebugAODBinary="0" ImageDebugAODMorphed="1" ShowResults="1" ShowSearchOrder="1" ShowDistances="1" />
+  </OrientationDetection>
+  <Flip>
+    <Settings Direction="FLIP_NONE" />
+  </Flip>
+  <MicroArraySpotFinding>
+    <Settings Active="True" BkgAvgAreaPix="10" HistogramPerCent="10" BinarizationThresholdOffsetPerc="7" SpotImageSubSampling="1" ApertureWidth="3" MinArea="50" MinSpotDiameterMm="0.15" SpotFindingSensitivity="10" SpotShape="CIRCLE" SelectionPreference="Compactest" InsideGridRectCriteria="Rectangle" BlobbingActive="True" CircleDetectionActive="True" MeanBeforeEdgeDetectionActive="False" CannyThreshold="50" MinMatchQuality="0.35" CircleMatchExponent="1" />
+  </MicroArraySpotFinding>
+  <MicroArrayAnalysis>
+    <Settings Active="True" MinBkgThresholdPerc="1" MaxSpotThresholdPerc="100" AutoAdjustAnalysisDiameter="True" MinSpotSizeMm="0.18" MaxSpotSizeMm="0.28" AutoAdjustTolerancePercentage="10">
+    </Settings>
+  </MicroArrayAnalysis>
+  <Registration>
+    <Settings XmaxDisplacementMm="0.2" YmaxDisplacementMm="0.2" MinWithForStitchingMm="0.5" MinHeightForStitchingMm="0.5" XcutterAreaSizeMm="0.4" YcutterAreaSizeMm="0.4" RegistrationTypeFlair="TMWithSobelAndDustFilter" RegistrationTypeClair="TMWeightEdges" ROIMarginHeight="0.5" ROIMarginWidth="0.5">
+    </Settings>
+  </Registration>
+</Algorithm>

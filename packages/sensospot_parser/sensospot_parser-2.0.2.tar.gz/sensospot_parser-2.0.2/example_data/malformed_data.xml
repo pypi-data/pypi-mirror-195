@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='220307_SN0801_CHECK-01_SL1,11,9,14_MS_1_1.xsl'?>
+<ScanJobResult ID="220307_SN0801_CHECK-01_SL1,11,9,14_MS_1_1" Rack="Calibration Slide - 4 Slides">
+    <AssayResult ID="A01" Type="Calibration Check_v1.2.4.3c">
+      <Spot ID="A"></Spot>
+    </AssayResult>
+</ScanJobResult>
+  
