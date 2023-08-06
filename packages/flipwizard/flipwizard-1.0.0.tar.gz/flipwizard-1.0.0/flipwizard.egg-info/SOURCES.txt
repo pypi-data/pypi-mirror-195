@@ -1,0 +1,13 @@
+README.md
+setup.py
+flipwizard/__init__.py
+flipwizard/authorization.py
+flipwizard/crash.py
+flipwizard/currency.py
+flipwizard/jackpot.py
+flipwizard/mines.py
+flipwizard/towers.py
+flipwizard.egg-info/PKG-INFO
+flipwizard.egg-info/SOURCES.txt
+flipwizard.egg-info/dependency_links.txt
+flipwizard.egg-info/top_level.txt
