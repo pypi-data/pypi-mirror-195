@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+SimpleSave.egg-info/PKG-INFO
+SimpleSave.egg-info/SOURCES.txt
+SimpleSave.egg-info/dependency_links.txt
+SimpleSave.egg-info/top_level.txt
+simplesave/__init__.py
+simplesave/default_functions.py
+simplesave/internal_module/__init__.py
+simplesave/json_module/__init__.py
