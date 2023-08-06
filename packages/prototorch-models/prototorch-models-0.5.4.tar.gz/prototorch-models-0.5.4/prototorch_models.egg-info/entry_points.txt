@@ -1,0 +1,2 @@
+[prototorch.plugins]
+models = prototorch.models
