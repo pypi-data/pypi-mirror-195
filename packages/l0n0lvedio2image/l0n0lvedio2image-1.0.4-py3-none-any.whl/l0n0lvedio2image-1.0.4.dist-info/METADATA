@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: l0n0lvedio2image
+Version: 1.0.4
+Summary: 视频与png图片之间的转换
+Home-page: https://gitee.com/l00n00l/l0n0lvedio2image.git
+Author: l0n0l
+Author-email: 1038352856@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: opencv-python
+
+# 安装
+```
+pip install l0n0lvedio2image
+```
+
+# 介绍
+本工具需要在命令行中使用
+
+## 将视频转换为png图片
+```
+usage: l0n0lvedio2img [-h] [-f FPS] vedio_path image_path
+
+positional arguments:
+  vedio_path         视频路径
+  image_path         输出图片的路径
+
+optional arguments:
+  -h, --help         show this help message and exit
+  -f FPS, --fps FPS  每多少帧输出一次
+```
+例如:
+```
+l0n0lvedio2img vedio.mp4 ./outimg -f 5
+```
+执行完毕后，会在./outimg文件夹下生成视频每5帧的png图片
+
+
+## 将图片转换为mp4(h.264)视频
+```
+usage: l0n0limg2vedio [-h] [-f FPS] image_path vedio_path
+
+positional arguments:
+  image_path         图片目录
+  vedio_path         目标视频文件名
+
+optional arguments:
+  -h, --help         show this help message and exit
+  -f FPS, --fps FPS  视频的帧率
+```
+
+例如:
+```
+l0n0limg2vedio ./outimg vedio2.mp4 -f 5
+```
+执行完毕后，将会读取./outimg文件夹下图片, 按照文件名排序， 然后按照每5帧一张图，生成视频

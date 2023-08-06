@@ -1,0 +1,3 @@
+[console_scripts]
+l0n0limg2vedio = l0n0lvedio2image.img_to_vedio:run
+l0n0lvedio2img = l0n0lvedio2image.vedio_to_img:run
