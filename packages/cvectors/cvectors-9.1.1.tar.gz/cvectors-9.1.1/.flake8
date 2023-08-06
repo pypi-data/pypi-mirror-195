@@ -1,0 +1,12 @@
+[flake8]
+max-line-length = 88
+docstring-convention = all
+select = A,B,C,D,E,F,M,W,B9,C4,SIM,I25
+ignore = E203,E501,W503,D1,D203,D212,D213,D214,D215,D404,D405,D406,D407,D408,D409,D410,D411,D413,D415,D416,D417,E225,SIM106,A003
+# B,B9 = bugbear
+# A    = builtins
+# C4   = comprehensions
+# D    = docstrings
+# M    = mutable
+# SIM  = simplify
+# I25  = flake8-tidy-imports
