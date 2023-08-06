@@ -1,0 +1,17 @@
+trimmer/__init__.py,sha256=iFUp5wwN5-L_fWifpUZjgrLdvQN_yzRWd2uryP3L0zA,74
+trimmer/__main__.py,sha256=qstjZ6h4wYLEN-M0xIT5IQ26AJmgY8UxgBGKXgupI5U,92
+trimmer/downloader.py,sha256=sZ2qkFqP5c7zR5qbXY9c6qvhYTbHB8R8HNLGT-1mJUk,4034
+trimmer/main.py,sha256=TwlYYodVQJI6-jDa1zcVQ3G_T8B5doQEpgW9sLBrVis,1444
+trimmer/metadata.py,sha256=doSvSftVYjbftRM2_BfIDPg2TNchuVZj7UNaj1HtCnA,563
+trimmer/normalizer.py,sha256=UkjmYw8iMzhMuoGeNKyPjGn5xePZIV7mljMa2zZdSds,3166
+trimmer/renamer.py,sha256=b1GqIkHEevj0kL7a_g8dEQBCYIrVu50Q_a3QP7PuSc0,851
+trimmer/tagger.py,sha256=81G-GUIKSKcf8fSPuxdCTiG-8OfqGtOC0DlF12XrIKc,1951
+trimmer/trim_source.py,sha256=5EYuf1a0_JeqVL3mgfqSlJ50FicgWIz7PJd-IHAtylk,3817
+trimmer/upgrade.py,sha256=pG6EF97O17wCNPA-czjoVuVqFTCL1c4Q9NLN0gv-HoU,244
+trimmer/version.py,sha256=LGVQyDsWifdACo7qztwb8RWWHds1E7uQ-ZqD8SAjyw4,22
+trimmer-1.1.0.dist-info/LICENSE,sha256=r71uDikWDSCwsDOMy7T4YYwjL1SHfc7XAz9HlcE7qA4,1063
+trimmer-1.1.0.dist-info/METADATA,sha256=LHbe6GiwsBiMor1H6EKzipUMja3KXtroHQLrmx2z_pI,4129
+trimmer-1.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+trimmer-1.1.0.dist-info/entry_points.txt,sha256=8PM1VWJu8k3pj-tr6NCoEvKlSPRE6OqaJ2MrcFsjXr8,41
+trimmer-1.1.0.dist-info/top_level.txt,sha256=BoTp35Vf2vxPukUzgOQFaYi9gburFu1BKk7haMdhxaM,8
+trimmer-1.1.0.dist-info/RECORD,,
