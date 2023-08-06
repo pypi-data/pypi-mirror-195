@@ -1,0 +1,14 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+src/firebird/uuid/__init__.py
+src/firebird/uuid/_model.py
+src/firebird/uuid/_registry.py
+src/firebird/uuid/_spec.py
+src/firebird_uuid.egg-info/PKG-INFO
+src/firebird_uuid.egg-info/SOURCES.txt
+src/firebird_uuid.egg-info/dependency_links.txt
+src/firebird_uuid.egg-info/requires.txt
+src/firebird_uuid.egg-info/top_level.txt
+src/firebird_uuid.egg-info/zip-safe
