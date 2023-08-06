@@ -1,0 +1,7 @@
+README.md
+setup.py
+inselpy.egg-info/PKG-INFO
+inselpy.egg-info/SOURCES.txt
+inselpy.egg-info/dependency_links.txt
+inselpy.egg-info/requires.txt
+inselpy.egg-info/top_level.txt
