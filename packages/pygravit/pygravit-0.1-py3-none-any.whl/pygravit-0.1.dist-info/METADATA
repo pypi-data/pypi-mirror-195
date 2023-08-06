@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pygravit
+Version: 0.1
+Summary: Module for managing accounts in GravitLauncher Database
+Home-page: https://github.com/Frontalvlad-GitHub/PyGravit
+Author: Frontalvlad
+Author-email: frontalvlad@vk.com
+License: GNU General Public License v3.0
+Download-URL: https://github.com/Frontalvlad-GitHub/PyGravit/releases/tag/v0.1
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pymysql
+Requires-Dist: bcrypt
+
+# PyGravit
+Module for managing accounts in GravitLauncher Database
+
+
