@@ -1,0 +1,3 @@
+include imageextras/compiled/linux/dithering/dithering.cpython-310-x86_64-linux-gnu.so
+include imageextras/compiled/win/dithering/dithering.cp310-win_amd64.pyd
+include imageextras/compiled/win/dithering/dithering.cp39-win_amd64.pyd
