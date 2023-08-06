@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: icoco
+Version: 0.0.1
+Summary: ICoCo python implementation
+Home-page: https://github.com/roland-lenain/ICoCo-python
+Author: R. Lenain
+Author-email: roland.lenain@cea.fr
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/roland-lenain/ICoCo-python/issues
+Project-URL: Doc, https://icoco-python.readthedocs.io/en/latest/index.html
+Project-URL: Source, https://github.com/roland-lenain/ICoCo-python
+Keywords: couping,salome,c3po
+Platform: UNKNOWN
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: test
+License-File: LICENSE
+
+# README
+
+- [README](#readme)
+  - [Introduction: ICoCo API - Version 2 (02/2021)](#introduction-icoco-api---version-2-022021)
+  - [Working environment](#working-environment)
+  - [Use cases](#use-cases)
+  - [Source code](#source-code)
+  - [Code testing](#code-testing)
+  - [Code documentation](#code-documentation)
+
+## Introduction: ICoCo API - Version 2 (02/2021)
+
+See [the documentation of the sources](https://icoco-python.readthedocs.io/en/latest/index.html)
+
+See also [the ogirinal documentation](https://github.com/cea-trust-platform/icoco-coupling) for full reference.
+
+## Working environment
+
+First create the environment:
+
+```bash
+. ./create_environment.sh
+```
+
+It creates a *venv* virtual environment *environment-icoco* and adds extra paths to run medcoupling
+in it.
+
+It also adds the following aliases:
+
+- **icoco-pytest**: to run use cases tests
+- **icoco-use-cases**: to run use cases implemented in *test_* functions (using *pytest*)
+- **icoco-pylint**: to run pylint for all python files of the project
+- **icoco-sphinx**: to initialize sphinx doc
+- **icoco-sphinx-build**: to rebuild sphinx doc from previous structure
+
+**Note:** *deactivate* function of *venv* is not able to revert the modified **PYTHONPATH** and the
+aliases defined.
+
+## Use cases
+
+The files used to produce the results are expected to be placed in the **use_cases** directory. See its [README](use_cases/README.md) for more details.
+
+## Source code
+
+Source code shared between use cases is expected to be in **src** directory implemented as package(s). See its [README](src/README.md) for more details.
+
+## Code testing
+
+Code testing is powered by **pytest**. See its [README](tests/README.md) for more details.
+
+## Code documentation
+
+A basic sphinx documentation can be generated. See its [README](docs/README.md) for more details.
+
+
