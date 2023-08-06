@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+examples/example_resnet18.py
+tests/test_checkpoint_readonly.py
+tests/test_synthetic.py
+zipslicer/__init__.py
+zipslicer/custom_load.py
+zipslicer/weights_only_unpickler.py
+zipslicer.egg-info/PKG-INFO
+zipslicer.egg-info/SOURCES.txt
+zipslicer.egg-info/dependency_links.txt
+zipslicer.egg-info/requires.txt
+zipslicer.egg-info/top_level.txt
