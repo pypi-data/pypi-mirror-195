@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+exodar/exodar.egg-info/PKG-INFO
+exodar/exodar.egg-info/SOURCES.txt
+exodar/exodar.egg-info/dependency_links.txt
+exodar/exodar.egg-info/top_level.txt
