@@ -1,0 +1,304 @@
+Metadata-Version: 2.1
+Name: py-yettagam
+Version: 0.0.1.44
+Summary: Python package for Metarium's Storage Layer
+Author: MetariumProject
+Project-URL: Homepage, https://github.com/MetariumProject/py-yettagam
+Project-URL: Bug Tracker, https://github.com/MetariumProject/py-yettagam/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: py-metarium (==0.0.2.51)
+Requires-Dist: py-metarium-decoder (==0.0.1.41)
+Requires-Dist: py-metarium-encoder (==0.0.1.62)
+Requires-Dist: py-metarium-listener (==0.0.2.35)
+Requires-Dist: substrate-interface (==1.4.0)
+Requires-Dist: ipfshttpclient (==0.7.0)
+Requires-Dist: blake3 (==0.3.3)
+Requires-Dist: requests (==2.28.2)
+Requires-Dist: py-multibase (==1.0.3)
+
+# py-yettagam
+
+Python client for Yettagam - Metarium's storage layer
+
+# Usage
+
+## 1. Virtual environment
+
+### 1.1. Install virtual environment
+
+```
+pip3 install virtualenv
+```
+
+### 1.2. Create virtual environment for metarium
+
+```
+python3 -m venv virtualenv ~/venv-yettagam
+```
+
+### 1.3. Activate metarium virtual environment
+
+```
+source ~/venv-yettagam/bin/activate
+```
+
+## 2. Dependencies
+
+### 2.1. Install Yettagam
+
+```
+pip install py-yettagam==0.0.1.44
+```
+
+### 2.2. Install third-party libraries
+
+```
+pip install python-dotenv==0.21.0
+```
+
+### 2.3. Modify `ipfshttpclient` version
+
+Modify `Ln:19` in `client/__init__.py`
+
+```
+nano ~/venv-yettagam/lib/python3.10/site-packages/ipfshttpclient/client/__init__.py
+
+VERSION_MAXIMUM   = "0.19.0"
+```
+
+## 3. Example usage - Create a simple Yettagam Storage Sync
+
+### 3.1. Environment file to store configuration
+
+Create a `.env` file to store your secrets
+
+```
+NODE_URL=ws://127.0.0.1:9944
+CONFIGURATEUR_MNEMONIC=your topic committer mnemonic here ...
+COMMITTER_MNEMONIC=your topic committer mnemonic here ...
+LISTENER_MNEMONIC=your topic listener mnemonic here ...
+CHAIN_SWARM_KEY_PATH=path to your chain's swarm key ...
+LISTENER_SWARM_KEY_PATH=path to your listener's swarm key ...
+LISTENER_NODE_IPFS_ID=your listener's IPFS node ID ...
+LISTENER_NODE_IP_ADDRESS=your listener's IP address ...
+```
+
+### 3.2. Scripts for `Topic Configurateur`
+
+#### 3.2.1. Add a Listener node to a Topic
+
+Create a script called `configurateur.py` with the following code block
+
+```
+from dotenv import dotenv_values
+
+from py_yettagam import (
+    TopicConfigurateur,
+)
+
+def test_yettagam():
+    config = dotenv_values(".env")
+
+    configurator = TopicListener(
+        node_url=config.get("NODE_URL", None),
+        mnemonic=config.get("CONFIGURATEUR_MNEMONIC", None)
+    )
+
+    listener_key = Keypair.create_from_mnemonic(mnemonic=config.get("LISTENER_MNEMONIC", None))
+    listener_data = {
+        "topic_id": 1,
+        "node": listener_key.ss58_address,
+        "id": config.get("LISTENER_NODE_IPFS_ID", None),
+        "ip_address": config.get("LISTENER_NODE_IP_ADDRESS", None)
+    }
+    transaction_hash = configurator.node_added_to_topic_listener_set(
+        listener_data=listener_data,
+        swarm_key_path=config.get("LISTENER_SWARM_KEY_PATH", None)
+    )
+    print(f"Transaction hash: {transaction_hash}")
+
+
+if __name__ == "__main__":
+    test_yettagam()
+```
+
+Run the configurateur script
+
+```
+python configurateur.py
+```
+
+### 3.3. Scripts for `Topic Committer`
+
+#### 3.3.1. Watch folders locally and upload Arikuris to the chain
+
+Create a script called `committer-upload.py` with the following code block
+
+```
+from dotenv import dotenv_values
+
+from py_yettagam import (
+    TopicCommitter,
+)
+
+def test_yettagam():
+    config = dotenv_values(".env")
+
+    committer_1 = Scribe(
+        node_url=config.get("NODE_URL", None),
+        chain_swarm_key_path=config.get("CHAIN_SWARM_KEY_PATH", None),
+        mnemonic=config.get("COMMITTER_MNEMONIC", None)
+    )
+    # start auto upload
+    committer_1.watch_swarm_data(topic_id=1)
+
+
+if __name__ == "__main__":
+    test_yettagam()
+```
+
+Run the committer-upload script
+
+```
+python committer-upload.py
+```
+
+#### 3.3.2 Subscribe to Topic updates via chain's IPFS swarm, and publish missing Arikuris via Listeners' private IPFS swarm
+
+Create a script called `committer-publish.py` with the following code block
+
+```
+from dotenv import dotenv_values
+
+from py_yettagam import (
+    TopicCommitter,
+)
+
+def test_yettagam():
+    config = dotenv_values(".env")
+
+    committer_1 = TopicCommitter(
+        node_url=config.get("NODE_URL", None),
+        chain_swarm_key_path=config.get("CHAIN_SWARM_KEY_PATH", None),
+        mnemonic=config.get("COMMITTER_MNEMONIC", None)
+    )
+    # listen to topic updates
+    committer_1.listen_to_topic_updates(topic_id=1)
+
+
+if __name__ == "__main__":
+    test_yettagam()
+```
+
+Run the committer-publish script
+
+```
+python committer-publish.py
+```
+
+### 3.4. Scripts for `Topic Listener`
+
+#### 3.4.1. Publish Topic updates on chain's IPFS swarm and subscribe to missing Arikuris via private IPFS swarm
+
+Create a script called `listener-subscribe.py` with the following code block
+
+```
+from dotenv import dotenv_values
+
+from py_yettagam import (
+    TopicListener,
+)
+
+def test_yettagam():
+    config = dotenv_values(".env")
+
+    listener_1 = TopicListener(
+        node_url=config.get("NODE_URL", None),
+        chain_swarm_key_path=config.get("CHAIN_SWARM_KEY_PATH", None),
+        listener_swarm_key_path=config.get("LISTENER_SWARM_KEY_PATH", None),
+        mnemonic=config.get("LISTENER_MNEMONIC", None)
+    )
+
+    # sync with topic
+    listener_1.sync_with_topic(topic_id=1)
+
+
+if __name__ == "__main__":
+    test_yettagam()
+```
+
+Run the listener-subscribe script
+
+```
+python listener-subscribe.py
+```
+
+#### 3.4.2. Periodically publish status and rff via chain's IPFS swarm and sync with Committers via private IPFS swarm
+
+Create a script called `listener-sync.py` with the following code block
+
+```
+import asyncio
+
+from dotenv import dotenv_values
+
+from py_yettagam import (
+    TopicListener,
+)
+
+async def test_yettagam():
+    config = dotenv_values(".env")
+
+    listener_1 = TopicListener(
+        node_url=config.get("NODE_URL", None),
+        chain_swarm_key_path=config.get("CHAIN_SWARM_KEY_PATH", None),
+        listener_swarm_key_path=config.get("LISTENER_SWARM_KEY_PATH", None),
+        mnemonic=config.get("LISTENER_MNEMONIC", None)
+    )
+
+    # publish status every 1 min
+    await listener_1.periodic_publish_status(topic_id=1, interval=60)
+
+
+if __name__ == "__main__":
+    asyncio.run(test_yettagam())
+```
+
+Run the listener-sync script
+
+```
+python listener-sync.py
+```
+
+### 3.5. Expectations
+
+- The committer uploads an Arikuri by dropping a file into the `<COMMITTER_ADDRESS>/<CHAIN_NAME>/data/` folder
+- After upload, the file's Arikuri is saved in `<COMMITTER_ADDRESS>/<CHAIN_NAME>/data/mappings.json`
+- Upon listening to the topic, the listener
+  - stores the file's Arikuri in
+    - `<LISTENER_ADDRESS>/<CHAIN_NAME>/sync/<TOPIC_ID>/kuris.json`
+    - `<LISTENER_ADDRESS>/<CHAIN_NAME>/sync/status.txt`
+    - `<LISTENER_ADDRESS>/<CHAIN_NAME>/sync/rff.txt`
+  - subscribes to the arikuri via private IPFS swarm
+- The listener publishes it's status and rff to the chain's IPFS swarm as a topic update
+- Upon listening to the tpoic update, the committer
+  - Saves the status in `<COMMITTER_ADDRESS>/<CHAIN_NAME>/sync/<LISTENER_ADDRESS>/status.txt`
+  - Saves the rff in `<COMMITTER_ADDRESS>/<CHAIN_NAME>/sync/<LISTENER_ADDRESS>/rff.txt`
+  - Connects to the Listener's private IPFS swarm, publishes IPFS_CID and FILE_NAME for all it's kuris mentioned in the rff
+- Upon listening to the published IPFS_CID and FILE_NAME for a subscribed arikuri, the listener
+  - downloads the file from the IPFS_CID into `<LISTENER_ADDRESS>/<CHAIN_NAME>/data/<FILENAME>`
+  - removes the subscribed arikuri from the rff
+  - Unsubscribes from the arikuri
+
+## 4. Teardown
+
+Please remember to deactivate the virtual environment after usage
+
+```
+deactivate
+```
