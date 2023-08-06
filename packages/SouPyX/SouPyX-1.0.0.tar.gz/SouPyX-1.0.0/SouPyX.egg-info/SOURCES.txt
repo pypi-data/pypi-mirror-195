@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+SouPy/__init__.py
+SouPy/core.py
+SouPy/display.py
+SouPy/effects.py
+SouPy/models.py
+SouPy/spatial.py
+SouPy/synths.py
+SouPy/version.py
+SouPyX.egg-info/PKG-INFO
+SouPyX.egg-info/SOURCES.txt
+SouPyX.egg-info/dependency_links.txt
+SouPyX.egg-info/requires.txt
+SouPyX.egg-info/top_level.txt

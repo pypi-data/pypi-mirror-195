@@ -1,0 +1,7 @@
+numpy
+scipy
+sklearn
+torch
+matplotlib
+mido
+subprocess
