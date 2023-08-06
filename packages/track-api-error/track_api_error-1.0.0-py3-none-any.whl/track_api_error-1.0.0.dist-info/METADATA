@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: track-api-error
+Version: 1.0.0
+Summary: The track_api_error package provides a decorator that can be used to track errors that occur during the execution of API calls in DjangoRestFramework. This decorator can be applied to any function that makes an API call and will log any exceptions that occur during the call, as well as the HTTP status code returned by the API Response.
+Home-page: UNKNOWN
+Author: Pragnesh Patel
+Author-email: patelpragnesh386@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENCE.txt
+
+UNKNOWN
+
