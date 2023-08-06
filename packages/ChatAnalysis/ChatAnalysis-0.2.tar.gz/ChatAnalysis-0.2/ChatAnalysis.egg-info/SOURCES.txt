@@ -1,0 +1,7 @@
+pyproject.toml
+setup.py
+ChatAnalysis.egg-info/PKG-INFO
+ChatAnalysis.egg-info/SOURCES.txt
+ChatAnalysis.egg-info/dependency_links.txt
+ChatAnalysis.egg-info/requires.txt
+ChatAnalysis.egg-info/top_level.txt
