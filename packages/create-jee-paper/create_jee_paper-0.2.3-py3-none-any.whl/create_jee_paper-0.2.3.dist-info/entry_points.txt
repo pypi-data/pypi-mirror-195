@@ -1,0 +1,3 @@
+[console_scripts]
+create-jee-paper=create_jee_paper.main:main
+
