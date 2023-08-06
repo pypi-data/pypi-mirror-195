@@ -1,0 +1,2 @@
+[console_scripts]
+prisma2markdown = prisma2markdown.cli:prisma2mermaid
