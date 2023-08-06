@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: Yoku
+Version: 1.0.8
+Summary: A minimal Yahoo! Auctions scraper.
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.26.0)
+Requires-Dist: python-telegram-bot (<20.0.0,>=13.15)
+Requires-Dist: beautifulsoup4 (>=4.11.1)
+Requires-Dist: tinydb (>=4.7.0)
+Requires-Dist: lxml (>=4.9.1)
+
+# Yoku
+
+A minimal Yahoo! Auctions scraper deployed as a Telegram bot.
+
+## Installation
+
+```shell
+pip install yoku
+```
+
+## Deployment
+
+- Request a token from [BotFather](https://t.me/botfather) on Telegram.
+
+- Set the `YOKU_BOT_TOKEN` environment variable to that token.
+
+Run with:
+
+```shell
+yoku
+```
+
+To run in the background (Linux):
+
+```shell
+nohup yoku &
+```
+
+## Bot Usage
+
+Add a query
+
+```
+/add <query>
+```
+
+Remove a query
+
+```
+/rm <query>
+```
+
+List queries
+
+```
+/ls
+```
+
+Fetch queries
+
+```
+/force
+```
+
+
