@@ -1,0 +1,161 @@
+Metadata-Version: 2.1
+Name: llama-llm
+Version: 0.0.9
+Summary: Build on large language models faster
+Author-email: PowerML <info@powerml.co>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: <3.11,>=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic
+Requires-Dist: python-configuration[yaml]
+Requires-Dist: requests
+Requires-Dist: tokenizers
+Requires-Dist: tqdm
+
+# Llama
+
+Stop prompt tuning. Create your own Generative AI.
+
+## Installation
+
+```
+    pip install llama-llm
+```
+
+## Setup your keys
+
+Go to [powerml.co](https://powerml.co).  Log in to get you API key and purchase credits.
+
+Create `~/.powerml/configure_llama.yaml` and put a key in it.
+
+```
+production:
+    key: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+
+```
+
+## Try an example
+
+[Google Colab Example](https://powerml.co/tweet)
+
+## Define the LLM interface
+
+Define the input and output types.  Don't forget the context.  They help
+the LLM understand the data.
+
+```
+class Tweet(Type):
+    tweet: str = Context("a viral tweet")
+    likes: int = Context("likes the tweet gets")
+    retweets: int = Context("retweets the tweet gets")
+
+
+class User(Type):
+    username: str = Context("a user's handle on twitter")
+```
+
+## Instantiate an LLM engine
+
+```
+from llama import LLM
+
+llm = LLM(name="tweets")
+```
+
+## Use the LLM to generate something new
+
+```
+example_tweet = generate_tweet(user=User(username="lawrencekingyo"))
+print("my first llama tweet!", example_tweet)
+```
+
+## Train the LLM on your data
+
+```
+llm.add_data(data=get_tweet_data())
+
+example_tweet = generate_tweet(user=User(username="lawrencekingyo"))
+
+print("Tweet after adding data", example_tweet)
+```
+
+```
+def get_tweet_data():
+    return [
+        [
+            User(username="syswarren"),
+            Tweet(
+                tweet="Tools aren't going to make you great designers. Your way of thinking, attention to detail, and ability to see the bigger picture will.",
+                likes=1000,
+                retweets=81,
+            ),
+        ],
+        [   User(username="TheJackForge"),
+            Tweet(
+                tweet="I don't like telling people how to live their lives, but you should probably learn how to use Figma.",
+                likes=341,
+                retweets=28,
+            ),
+        ],
+        [
+            User(username="iamharaldur"),
+            Tweet(
+                tweet="Remember when we had the mental energy to hate a new logo?",
+                likes=1000,
+                retweets=59,
+            ),
+        ],
+        [
+            User(username="lexfridman"),
+            Tweet(
+                tweet="ChatGPT puts a mirror to humanity.",
+                likes=11100,
+                retweets=874,
+            ),
+        ],
+        [
+            User(username="iamaaronwill"),
+            Tweet(
+                tweet="I had to make you uncomfortable otherwise you would never have moved. - The Universe",
+                likes=4000,
+                retweets=1000,
+            ),
+        ],
+    ]
+```
+
+## Look at the results, and add your feedback to improve the LLM
+
+```
+llm.improve(on="tweet", to="have more likes")
+llm.improve(on="tweet", to="have over 100 retweets")
+llm.improve(
+    on="tweet",
+    to="make it shorter",
+    good_examples=[
+        Tweet(
+            tweet="Solopreneurs, don't chase more clients - it's a beast that'll destroy you. Aim for BETTER clients. Just 2-3 great ones can set you for life. Want to know why and what to do? Let me tell you. #smallbusiness",
+            likes=45,
+            retweets=10,
+        )
+    ],
+    bad_examples=[
+        Tweet(
+            tweet="They tell you to chase more clients. If you're a Solopreneur providing a professional service, you're feeding a beast that will destroy you. Your goal is not MORE clients. Your goal is BETTER clients. 2-3 great clients could set you for life. I'll tell you why and what to do.",
+            likes=5,
+            retweets=1,
+        )
+    ],
+)
+llm.improve(on="tweet", to="have no hashtags")
+
+tweets = [generate_tweet(user=User(username="lawrencekingyo")) for i in range(5)]
+
+print("tweets: ", [str(tweet) for tweet in tweets])
+```
+
+## Build complex programs
+
