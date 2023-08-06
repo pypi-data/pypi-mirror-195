@@ -1,0 +1,9 @@
+robotcode/plugin/__init__.py,sha256=XGhKRVsU6oYmKz7dF6MVANINEGSCCuwxMZF0KAc6HkE,177
+robotcode/plugin/__version__.py,sha256=lnka9HWRxSmlQAffgSpaSitns-Djhy2OArtj9IVwxrY,23
+robotcode/plugin/manager.py,sha256=1N4UpmXBi8QDn0zdzPzWoMGrEOg_NSK-usa85ZroQjU,530
+robotcode/plugin/py.typed,sha256=bWew9mHgMy8LqMu7RuqQXFXLBxh2CRx0dUbSx-3wE48,27
+robotcode/plugin/specs.py,sha256=d3nYOTBwHjeA1RICMokUY9gYXNZfkccaoHLlLJDo9oI,334
+robotcode_plugin-0.27.1.dist-info/METADATA,sha256=W9eQvjRifk8NWI5MAk7yTd4pCKlJxDse47ddLi7rqOQ,1933
+robotcode_plugin-0.27.1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+robotcode_plugin-0.27.1.dist-info/licenses/LICENSE.txt,sha256=B05uMshqTA74s-0ltyHKI6yoPfJ3zYgQbvcXfDVGFf8,10280
+robotcode_plugin-0.27.1.dist-info/RECORD,,
