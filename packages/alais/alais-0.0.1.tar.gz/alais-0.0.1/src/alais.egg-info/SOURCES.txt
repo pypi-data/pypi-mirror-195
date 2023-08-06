@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/alais/VERSION
+src/alais/__init__.py
+src/alais/main.py
+src/alais.egg-info/PKG-INFO
+src/alais.egg-info/SOURCES.txt
+src/alais.egg-info/dependency_links.txt
+src/alais.egg-info/entry_points.txt
+src/alais.egg-info/top_level.txt
