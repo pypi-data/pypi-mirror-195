@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: hikka-filters
+Version: 0.1.5
+Summary: Filters for updates-handlers for Telegram UserBot `Hikka` (https://github.com/hikariatama/Hikka)
+Home-page: http://github.com/Den4ikSuperOstryyPer4ik/hikka_filters
+Download-URL: http://github.com/Den4ikSuperOstryyPer4ik/hikka_filters/releases/latest
+Author: Den4ikSuperOstryyPer4ik
+License: GNU AGPLv3
+License-File: LICENSE
