@@ -1,0 +1,15 @@
+power_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+power_tools/action_patterns.py,sha256=FxpvNjxqfO2_V4BmjyZdkus5L4lcsPzUDlGRsE2cqKI,2867
+power_tools/admin.py,sha256=8UTzC2MMDWd7tGtqj95KmLqC57gz5pFnUzTda8OJKFQ,4919
+power_tools/docs.py,sha256=1kng7KGohPJ4QnAPAw6eS5TP-0VLytTtZx41EIqM4EI,24031
+power_tools/helpers.py,sha256=yid6a-ecr0yF-zzLpIa4l-CDruWaD_DX7DUFP73OdEA,11235
+power_tools/managers.py,sha256=F4YHsc3fcdePdE4E97cDQq46HvdrVM-ScsKXwMqFrJw,6043
+power_tools/mixins.py,sha256=Za-XtaB69-BKEtYoIyYdZ7Yk0VlZJuaTyeNZzXXyta8,15373
+power_tools/cache/__init__.py,sha256=RkkDNYsTggh-w8--CJSSd346Rm0WbGbsm-JWhiMlpXs,737
+power_tools/cache/helpers.py,sha256=kQHkfyGz6RkFcfdxqS7C5pAxw0Ua1qbckM3tFmB6zSs,1696
+power_tools/cache/mixins.py,sha256=LQLkILdyUT--4Ad81lp4APpyUNNKuTHBYcnztkVPROo,13214
+dj_drf_utils-1.5.1.dist-info/LICENSE.txt,sha256=joMFVYp6wW3swoVzykpDs0deFSCo1SLInoo1jobDETc,1070
+dj_drf_utils-1.5.1.dist-info/METADATA,sha256=LTponkijkI-wXIXP5c6hVSbnwvuRBAOK75C0WUgyajE,1081
+dj_drf_utils-1.5.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dj_drf_utils-1.5.1.dist-info/top_level.txt,sha256=lg3s5_oQaafglaABo4xCfBKvDJxJVYsu9IVJa4Xtav0,12
+dj_drf_utils-1.5.1.dist-info/RECORD,,
