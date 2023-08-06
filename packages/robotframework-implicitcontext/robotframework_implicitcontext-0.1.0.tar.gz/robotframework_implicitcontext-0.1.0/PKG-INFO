@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: robotframework-implicitcontext
+Version: 0.1.0
+Summary: A robotframework library for managing implicit context for BDD keywords
+Home-page: https://github.com/montsamu/robotframework-implicitcontext
+License: Apache-2.0
+Author: Samuel Montgomery-Blinn
+Author-email: sam@caveman.org
+Requires-Python: >=3.8,<4.0
+Classifier: Framework :: Robot Framework
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Testing :: Acceptance
+Requires-Dist: robotframework (>=4)
+Description-Content-Type: text/markdown
+
+# robotframework-implicitcontext
+
+A simple robotframework resource for using implicit context in BDD tests.
+
+TK:
+* Use resources from robocon22 talk to give some background and examples
+* Link to generated libdoc
+* Link to atests
+

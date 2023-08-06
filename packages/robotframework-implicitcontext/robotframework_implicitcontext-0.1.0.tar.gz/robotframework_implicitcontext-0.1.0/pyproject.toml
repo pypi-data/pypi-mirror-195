@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "robotframework-implicitcontext"
+version = "0.1.0"
+description = "A robotframework library for managing implicit context for BDD keywords"
+authors = ["Samuel Montgomery-Blinn <sam@caveman.org>"]
+license = "Apache-2.0"
+readme = "./docs/README.md"
+homepage = "https://github.com/montsamu/robotframework-implicitcontext"
+packages = [
+    { include = "ImplicitContextLibrary", from = "src" },
+]
+include = ["*.resource", "*.py"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Software Development :: Testing :: Acceptance",
+    "Framework :: Robot Framework",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+robotframework = ">=4"
+
+[tool.poetry.dev-dependencies]
+invoke = "^1.7.0"
+robotframework-tidy = "*"
+robotframework-robocop = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
