@@ -1,0 +1,12 @@
+muffin>=0.89
+donald>=0.31.8
+
+[build]
+bump2version
+wheel
+
+[tests]
+pytest
+pytest-aio
+pytest-mypy
+types-setuptools
