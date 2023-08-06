@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/libraryscraper/__init__.py
+src/libraryscraper.egg-info/PKG-INFO
+src/libraryscraper.egg-info/SOURCES.txt
+src/libraryscraper.egg-info/dependency_links.txt
+src/libraryscraper.egg-info/top_level.txt
