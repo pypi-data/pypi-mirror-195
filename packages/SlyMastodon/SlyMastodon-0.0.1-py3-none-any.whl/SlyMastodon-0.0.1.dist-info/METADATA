@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: SlyMastodon
+Version: 0.0.1
+Summary: No-boilerplate, async and typed Mastodon access 😋
+Author: Dunkyl 🔣🔣
+License: MIT License
+        
+        Copyright (c) 2023 Maroue Reus
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/dunkyl/SlyMastodon-Python
+Project-URL: Repository, https://github.com/dunkyl/SlyMastodon-Python
+Project-URL: Bug Tracker, https://github.com/dunkyl/SlyMastodon-Python/issues
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: SlyAPI (>=0.4.5)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: myst-parser ; extra == 'dev'
+Requires-Dist: furo ; extra == 'dev'
+Requires-Dist: sphinxcontrib-trio ; extra == 'dev'
+Requires-Dist: sphinx-copybutton ; extra == 'dev'
+Requires-Dist: sphinxext-opengraph ; extra == 'dev'
+
+# SlyMastodon for Python
+
+> **Warning**
+>
+> This package is an early work in progress. Breaking changes may be frequent!
+
+> 🐍 For Python 3.11+
+
+No-boilerplate, *async* and *typed* Mastodon access! 😋
+```sh
+pip install slymastodon
+```
+This library does not proivde full coverage. Currently, only the following topics are supported:
+- Getting the current user and other users
+- Submitting, scheduling, retrieving, and deleting post
+
+---
+
+## Example Usage
+
+```python
+import asyncio
+from SlyMastodon import *
+
+async def main():
+    m = Mastodon( "mastodon.skye.vg",
+                  OAuth2("app.json", "user.json") )
+    
+    user = await m.me()
+
+    print(user.at_username) # @dunkyl@skye.vg
+
+asyncio.run(main())
+```
+
+---
+
+## Example CLI Usage
+
+```sh
+py -m SlyMastodon scaffold mastodon.skye.vg
+# ...
+py -m SlyMastodon grant
+```

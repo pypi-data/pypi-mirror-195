@@ -1,0 +1,9 @@
+SlyMastodon/__init__.py,sha256=DFLrXR9rRXTHYbqWrluRRpIUeZzzQDByuZKRb8-kfnc,58
+SlyMastodon/__main__.py,sha256=RFT5IXOiuY9RjR7NsZMExJtZyotnYFTP2sNaGj-49vM,1048
+SlyMastodon/mastodon.py,sha256=TcWLQdFXDBETKLdQ_xnUab94tDLFDcKCvb2MFUGHiKA,13403
+SlyMastodon/serialization.py,sha256=cZVlQbNtemHqHXnckWrMDXybfkUIB5DwJO4Z3lh3-4A,4020
+SlyMastodon-0.0.1.dist-info/LICENSE,sha256=R946yrjLw1JPkt29p7XsJgsclS-ftrLSAoGxPo4s3S0,1068
+SlyMastodon-0.0.1.dist-info/METADATA,sha256=8IXLiXSPoKGZN6mFgafjTryIuGqLA87pqUXuntz2B8k,3021
+SlyMastodon-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+SlyMastodon-0.0.1.dist-info/top_level.txt,sha256=OzvnQH7zS9T5iDMbxnThzXK_QGDCJfkDs10jZJzunMU,12
+SlyMastodon-0.0.1.dist-info/RECORD,,
