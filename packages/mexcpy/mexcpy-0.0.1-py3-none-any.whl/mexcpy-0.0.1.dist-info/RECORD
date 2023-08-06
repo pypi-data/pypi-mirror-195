@@ -1,0 +1,13 @@
+mexcpy/__init__.py,sha256=eD2KIFWQ82iiUzyn9pvtzpI4nW_JzLvyVcuPtAsD6Ho,238
+mexcpy/api/__init__.py,sha256=xnrymwUEk3AZMBBMCXw_Oy00i2bZGxA4Ox8Ko7Y9uEE,107
+mexcpy/api/api_response.py,sha256=Gvwde11M77d_Qrcg5yxjSbyz3Ch1nIV1EOex1U0acpg,743
+mexcpy/api/base_api.py,sha256=NgMF0JOhyJ79X4uLwRiT_yNtkSXBzk1ViFaoDHf270Y,60
+mexcpy/api/endpoints.py,sha256=vFb85LXHpTKyLCwocP_boaVjO8fN3xYI8AiNr-gCmU4,1124
+mexcpy/api/market_data.py,sha256=_rgieayPPeGCgxYmWisMT9F70rBzN7t3TKRUWGCVBKU,4861
+mexcpy/api/signature.py,sha256=gPR0K2Rs2E6GFVebR13aimS_qSXx-waSvztPULFzgy0,762
+mexcpy/api/spot_account.py,sha256=Ks5ztoRbyzVvj2MimjiLAorz20usZDSV1rDRLHMT0TM,5106
+mexcpy/api/wallet_data.py,sha256=7LcgBFXybwZR7IFpjzKUTM54DBOkrvIX1vdmxQzAwQE,4315
+mexcpy-0.0.1.dist-info/METADATA,sha256=-EPIDsf0cI_ZAW4asFeE_DzDR-lRPFVxE9K4bFPEfIE,2789
+mexcpy-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+mexcpy-0.0.1.dist-info/top_level.txt,sha256=GXumC1iFlraUZUCJRKUcPOk7PZZQq5l45dAgJ9cS4PY,7
+mexcpy-0.0.1.dist-info/RECORD,,

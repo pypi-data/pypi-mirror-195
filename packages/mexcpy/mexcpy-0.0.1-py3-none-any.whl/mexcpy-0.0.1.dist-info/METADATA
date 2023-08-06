@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: mexcpy
+Version: 0.0.1
+Summary: Python3 Mexc API wrapper
+Home-page: https://github.com/PurpRabbit/mexcpy
+Author: PurpRabbit
+Author-email: lysovich28@gmail.com
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests (==2.28.2)
+
+# mexcpy
+Unofficial Mexc exchange API wrapper. Official [documentation](https://mxcdevelop.github.io/apidocs/spot_v3_en/#introduction).
+
+Features
+--------
+
+- Market, Spot, Wallet endpoints implementation
+- Easy authentication using only api & secret keys
+
+Start
+-----
+
+[Account registration](https://www.mexc.com/register?inviteCode=1EWNj)
+
+[Create new API key](https://www.mexc.com/user/openapi)
+
+Installation:
+
+    pip install mexcpy
+
+
+Example
+-------
+
+    from mexcpy import MexcAPI
+    
+    # Public endpoints example
+    # All methods return an instance of ResponseAPI class, to get clear data, the json() method must be called
+    data = MexcAPI.get_server_time().json()
+    print(data)
+    
+    # Instead of usind the json() method you can refer to attributes of ResponseAPI class instance
+    # Attributes like symbol, priceChange, priceChangePercent are adding dynamically after method execution.
+    # You can find all possible attributes in documentation
+    data = MexcAPI.get_current_average_price()
+    print(data.symbol, data.priceChange, data.priceChangePercent)
+    
+    
+    # Private endpoints example
+    # These methods require api and secret keys
+    # You need to create instance of MexcAPI class
+    mexc = MexcAPI(API_KEY, SECRET_KEY)
+    result = mexc.get_account_information().json()
+    print(result)
+
+
+Public methods
+--------------
+
+    get_server_time()
+    get_exchange_information()
+    get_order_book()
+    get_recent_trades()
+    get_current_average_price()
+    get_price_change_statistics()
+    get_symbol_price_ticker()
+    get_order_book_ticker()
+
+
+Private methods
+---------------
+
+    get_account_information()
+    create_new_order()
+    cancel_order()
+    cancel_orders_on_symbol()
+    check_order_status()
+    get_current_open_orders()
+    get_all_orders()
+    get_account_trade_list()
+
+    get_currency_information()
+    withdraw()
+    get_deposit_history()
+    get_withdraw_history()
+    generate_deposit_address()
+    get_deposit_address()
+    universal_transfer()
