@@ -1,0 +1,4 @@
+ZamScript.egg-info/PKG-INFO
+ZamScript.egg-info/SOURCES.txt
+ZamScript.egg-info/dependency_links.txt
+ZamScript.egg-info/top_level.txt
