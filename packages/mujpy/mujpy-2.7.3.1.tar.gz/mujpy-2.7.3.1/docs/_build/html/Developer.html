@@ -1,0 +1,409 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Developer &mdash; mujpy.mujpy 1.05 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Philosophy &amp; History of MuSR code" href="Philostory.html" />
+    <link rel="prev" title="FAQ" href="FAQ.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> mujpy.mujpy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.05
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Reference.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQ.html">FAQ</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Developer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#fit">Fit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-model">_the_model_</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#asymmetry">asymmetry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#chi">chi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#derange">derange</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fitargs">fitargs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fitplot">fitplot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#int2-int">int2_int</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#int2min">int2min</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#min2int">min2int</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#min2print">min2print</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#min2csv">min2csv</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#on-fit-request">on_fit_request</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#plotile">plotile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#plotpar">plotpar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rebin">rebin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mucomponents">mucomponents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Philostory.html">Philosophy &amp; History of MuSR code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Source.html">Source documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">mujpy.mujpy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Developer</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Developer.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p id="developer">This is a stub for version 1.0</p>
+<div class="section" id="id1">
+<h1>Developer<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Internal shortcut notes. Remember that in the first cell we have called MuJPy the instance that produces the GUI. Create a new cell under the GUI, with + in the top bar, to explore these functions, e.g.</p>
+<img alt="_images/show_innards.png" src="_images/show_innards.png" />
+<p>To run this extra cell, click on it and then click on the play button. You can modify and reclick. In this way you access all code’s self.xxxx methods and variables as MuJPy.xxxx</p>
+<div class="section" id="fit">
+<h2>Fit<a class="headerlink" href="#fit" title="Permalink to this headline">¶</a></h2>
+<p>Three types:
+* single: one run
+* suite: several runs, in succession
+* global: not implemented in v. 1.0</p>
+<blockquote>
+<div><ul class="simple">
+<li>Fit starts with <a class="reference internal" href="#on-fit-request">on_fit_request</a></li>
+<li>start, stop, pack are obtained by <a class="reference internal" href="#derange">derange</a></li>
+<li>time, asymm, asyme are packed by <a class="reference internal" href="#rebin">rebin</a> from the <a class="reference internal" href="#asymmetry">asymmetry</a> loaded arrays</li>
+<li>self. <a class="reference internal" href="#the-model">_the_model_</a> is the instance of mucomponents that reproduces the model shown in the fit tab</li>
+<li><a class="reference internal" href="#int2-int">int2_int</a> () recreates a list of methods, each one calculates the corresponding component in <a class="reference internal" href="#the-model">_the_model_</a> (apart from ‘da’, whose method is never invoked)</li>
+<li><a class="reference internal" href="#int2min">int2min</a> (return_names=True) recreates a list of dictionaries of parameter names, values, initial error and bounds, as required by iminuit.Minuit</li>
+<li><a class="reference internal" href="#fitargs">fitargs</a> is the initial guess from the dashboard</li>
+<li>M is an instance of iminuit.Minuit, initialised as lastmin, and then run with lastmin.migrad()</li>
+<li>lastfit.fitargs() output the bestfit in the same list of dictionaries as produced by int2int</li>
+<li><a class="reference internal" href="#min2print">min2print</a> (lastfit.fitarg) prints on the console</li>
+<li>lastfit.fval calculates fcn (chi square non reduced)</li>
+<li>if lasffit is ok <a class="reference internal" href="#fitplot">fitplot</a> () produces both plots and files (a plot oriented csv, and a pickled fit that can be reloaded to reproduce everything)</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="the-model">
+<h2>_the_model_<a class="headerlink" href="#the-model" title="Permalink to this headline">¶</a></h2>
+<p>instance of mucomponents reproducing, e.g. the template ‘daml’</p>
+</div>
+<div class="section" id="asymmetry">
+<h2>asymmetry<a class="headerlink" href="#asymmetry" title="Permalink to this headline">¶</a></h2>
+<p>builds asymmetry and error arrays according to groupings. Error evaluation with background subtraction follows musrfit.</p>
+</div>
+<div class="section" id="chi">
+<h2>chi<a class="headerlink" href="#chi" title="Permalink to this headline">¶</a></h2>
+<p>calculates chi2, see <a class="reference internal" href="#mucomponents">mucomponents</a></p>
+</div>
+<div class="section" id="derange">
+<h2>derange<a class="headerlink" href="#derange" title="Permalink to this headline">¶</a></h2>
+<p>see tools</p>
+</div>
+<div class="section" id="fitargs">
+<h2>fitargs<a class="headerlink" href="#fitargs" title="Permalink to this headline">¶</a></h2>
+<p>Standard output of iminuit as a dictionary. See &lt;<a class="reference external" href="https://iminuit.readthedocs.io/en/stable">https://iminuit.readthedocs.io/en/stable</a>&gt;_ iminuit documentation</p>
+</div>
+<div class="section" id="fitplot">
+<h2>fitplot<a class="headerlink" href="#fitplot" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul>
+<li><p class="first">start, stop, pack […] are obtained by <a class="reference internal" href="#derange">derange</a>, check if legal (version with two ranges, different packing)</p>
+</li>
+<li><p class="first">self.`asymmetry`_() creates data with fixed self.`alpha`_</p>
+</li>
+<li><p class="first">fitarg is the   list of iminuit-ready dictionaries that define a model (loaded by <a class="reference internal" href="#int2min">int2min</a>, one per run in a suite)</p>
+</li>
+<li><p class="first">guess == True generates plot from dash parameters even before fit execution</p>
+</li>
+<li><p class="first">pars is the parameter list</p>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">t,y,ey</span></code>, asymmetry points and errors are rebinned according to start, stop, pack […] (just for plotting purpose)</p>
+</li>
+<li><p class="first">pars is used to create the array model function (for time array <code class="docutils literal notranslate"><span class="pre">tf</span></code>) as <code class="docutils literal notranslate"><span class="pre">f</span> <span class="pre">=</span> <span class="pre">np.array([self._the_model_._add_(tf,*pars[k])</span> <span class="pre">for</span> <span class="pre">k</span> <span class="pre">in</span> <span class="pre">range(len(pars))])</span></code></p>
+<ul>
+<li><p class="first">this is done 3 [or 5] times :</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">tf,</span> <span class="pre">f</span></code>,  for the theory curve with unbinned data</li>
+<li><code class="docutils literal notranslate"><span class="pre">t,f</span></code>, for residues with start, stop, pack binning</li>
+<li><code class="docutils literal notranslate"><span class="pre">tfit,</span> <span class="pre">ffit</span></code>, for residues with  fit_start, fit_stop, fit_pack binned data</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</li>
+<li><p class="first">the figure is fig, <code class="docutils literal notranslate"><span class="pre">ax</span> <span class="pre">=P.subplots((2,2))</span></code>, with equally shaped ax [(2,3) if  there are two packing ranges].</p>
+</li>
+<li><p class="first">(tries to reuse an existing one)</p>
+</li>
+<li><p class="first">the plot is split up into two loops</p>
+<ul class="simple">
+<li>global (not implemented)</li>
+<li>non global, split up again into three cases<ul>
+<li>anim for suites shwon as animations</li>
+<li>suites (no anim) uses plotile from <a href="#id2"><span class="problematic" id="id3">`tools`_</span></a> to produce superposiion of plots</li>
+<li>single</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p class="first">let’s describe single as simplest example, it produces</p>
+<ul class="simple">
+<li>an errorbar(ttile,ytile,yerr=ey) with a fit plot(tftile,ftile) in ax[0,0] [idem if second range in ax[0,1]]</li>
+<li>a residue plot(ttile,yres) in ax[1,0]   [idem if second range in ax[1,1]]</li>
+<li>a title</li>
+<li>chi2 for fit and for plot using <a class="reference internal" href="#chi">chi</a> that retrieves chi2 from <a class="reference internal" href="#mucomponents">mucomponents</a></li>
+<li>plots chi2 histogram in ax[1,-1]</li>
+<li>writes chi2 in ax[0,-1]</li>
+</ul>
+</li>
+<li><p class="first">raises the window</p>
+</li>
+</ul>
+</div></blockquote>
+<img alt="_images/dash2minuit.png" src="_images/dash2minuit.png" />
+</div>
+<div class="section" id="int2-int">
+<h2>int2_int<a class="headerlink" href="#int2-int" title="Permalink to this headline">¶</a></h2>
+<p>from dashboard to <a class="reference internal" href="#fitargs">fitargs</a>
+list of mucomponents methods, as in <a class="reference internal" href="#the-model">_the_model_</a>; each requires input: a time array (or single value), and parameter values.</p>
+</div>
+<div class="section" id="int2min">
+<h2>int2min<a class="headerlink" href="#int2min" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>list of dicts, e.g.::</dt>
+<dd>[{‘dalphaA’: 3.09e-321, ‘error_dalphaA’: 0.0,’limit_dalphaA’: None,’fix_dalphaA’: False,
+‘asymmetryB’: 0.2,’error_asymmetryB’: 0.01,’limit_asymmetryB’: None,’fix_asymmetryB’: False,
+‘fieldB’: 3.12,’error_fieldB’: 0.01,’limit_fieldB’: None,’fix_fieldB’: False,
+‘phaseB’: 0.0,’error_phaseB’: 0.01,’limit_phaseB’: None,’fix_phaseB’: False,
+‘Lor_rateB’: 0.2,’error_Lor_rateB’: 0.01,’limit_Lor_rateB’: None,’fix_Lor_rateB’: False}]</dd>
+</dl>
+</div>
+<div class="section" id="min2int">
+<h2>min2int<a class="headerlink" href="#min2int" title="Permalink to this headline">¶</a></h2>
+<p>from minuit to dashboard</p>
+</div>
+<div class="section" id="min2print">
+<h2>min2print<a class="headerlink" href="#min2print" title="Permalink to this headline">¶</a></h2>
+<p>writes results on console</p>
+</div>
+<div class="section" id="min2csv">
+<h2>min2csv<a class="headerlink" href="#min2csv" title="Permalink to this headline">¶</a></h2>
+<p>function in <a class="reference internal" href="#plotpar">plotpar</a> .
+Translates from kmin to csv columns, as read by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="s1">&#39;file.csv&#39;</span><span class="p">,</span><span class="n">comments</span><span class="o">=</span><span class="s1">&#39;R&#39;</span><span class="p">)</span>
+<span class="n">min2csv</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="mi">2</span><span class="o">*</span><span class="n">k</span><span class="o">+</span><span class="mi">6</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="on-fit-request">
+<h2>on_fit_request<a class="headerlink" href="#on-fit-request" title="Permalink to this headline">¶</a></h2>
+<p>started by pressing the Fit button</p>
+</div>
+<div class="section" id="plotile">
+<h2>plotile<a class="headerlink" href="#plotile" title="Permalink to this headline">¶</a></h2>
+<p>organizes multiplot shifted vertically, see <a href="#id4"><span class="problematic" id="id5">`tools`_</span></a></p>
+</div>
+<div class="section" id="plotpar">
+<h2>plotpar<a class="headerlink" href="#plotpar" title="Permalink to this headline">¶</a></h2>
+<p>plots fit resuts vs T or B</p>
+</div>
+<div class="section" id="rebin">
+<h2>rebin<a class="headerlink" href="#rebin" title="Permalink to this headline">¶</a></h2>
+<p>performs packing, see <a href="#id6"><span class="problematic" id="id7">`tools`_</span></a></p>
+</div>
+<div class="section" id="mucomponents">
+<h2>mucomponents<a class="headerlink" href="#mucomponents" title="Permalink to this headline">¶</a></h2>
+<p>a class dedicated to muon fit component functions, chi2 calculation and theirs services.</p>
+<p>—
+tools
+—
+utilities</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Philostory.html" class="btn btn-neutral float-right" title="Philosophy &amp; History of MuSR code" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="FAQ.html" class="btn btn-neutral float-left" title="FAQ" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2017, R. De Renzi
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
