@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: bb-qrconnectadb
+Version: 0.0.2
+Summary: Connect to adb over wifi by scanning a QR code
+Author: Erik Beebe
+Author-email: beebeapps_debugging@tuta.io
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: bb-apputils (>=0.3.7,<0.4.0)
+Requires-Dist: pyqt6 (>=6.4.2,<7.0.0)
+Requires-Dist: qrcode (>=7.4.2,<8.0.0)
+Requires-Dist: sh (>=2.0.2,<3.0.0)
+Requires-Dist: zeroconf (>=0.47.3,<0.48.0)
+Description-Content-Type: text/markdown
+
+# BB_QrConnect
+
+> Connect android device to adb through wifi using the qr reader
+
+```
+❯ python qr_connect --help
+
+        QrConnect
+             --debug - Enable debugging mode
+              --help - This help message
+              --name - Name of connection to create
+                         - defaults to 'QrConnect'
+           --timeout - Seconds to keep qrcode visible
+                         - defaults to 15 seconds
+
+```
+
+## Thanks
+
+<a href="https://gist.github.com/benigumocom">chanzmao (benigumocom) @ Github</a>
+
+> Thank you benigumocom for providing a script that gave me the basis for this as I know nothing about zeroconf :P
+

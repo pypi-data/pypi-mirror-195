@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "BB_QrConnectADB"
+version = "0.0.2"
+description = "Connect to adb over wifi by scanning a QR code"
+authors = ["Erik Beebe <beebeapps_debugging@tuta.io>"]
+readme = "README.md"
+packages = [{include = "qr_connect"}]
+
+[tool.setuptools.packages.find]
+where = ["qr_connect/images"]
+
+[tool.setuptools.package-data]
+"*" = ["*.png"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+zeroconf = "^0.47.3"
+pyqt6 = "^6.4.2"
+bb-apputils = "^0.3.7"
+qrcode = "^7.4.2"
+sh = "^2.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
