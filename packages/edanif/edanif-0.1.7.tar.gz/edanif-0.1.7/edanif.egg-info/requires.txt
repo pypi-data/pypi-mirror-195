@@ -1,0 +1,9 @@
+nibabel
+pandas
+numpy
+matplotlib
+tqdm
+SimpleITK
+monai
+scikit-image
+ipykernel
