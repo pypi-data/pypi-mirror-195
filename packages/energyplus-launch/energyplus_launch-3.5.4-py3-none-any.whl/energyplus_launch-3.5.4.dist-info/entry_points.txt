@@ -1,0 +1,3 @@
+[console_scripts]
+energyplus_launch = energyplus_launch.tk_runner:main_gui
+
