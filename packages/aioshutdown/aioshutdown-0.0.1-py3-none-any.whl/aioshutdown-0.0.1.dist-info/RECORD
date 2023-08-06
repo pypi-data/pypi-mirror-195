@@ -1,0 +1,9 @@
+aioshutdown/__init__.py,sha256=Xn86G4JWJiEFcSrymt-HiqdmjrTObP3uq3OompOADIc,193
+aioshutdown/_common.py,sha256=i37oJseWpZhSbMKZfC25Nu7QikEIjzbwW2ptw9wEb04,1228
+aioshutdown/_shutdown.py,sha256=zGEiajQHA8pqgBwAhweAbGOzFrBd0d59ZnBtZq53AtI,1139
+aioshutdown/_types.py,sha256=f4d9eFocQWTopyDpHpFyzbCPJls29yMkAOkMEEmKuOA,175
+aioshutdown-0.0.1.dist-info/LICENSE,sha256=YBpQh1NKUanE4RIIuw6zC4N1tX85Bmcim3rNgakns94,1067
+aioshutdown-0.0.1.dist-info/METADATA,sha256=kw0iJKb8ntkoP66nv1DR3lJ4V9odkNmHpaBW2fsXcVw,3597
+aioshutdown-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aioshutdown-0.0.1.dist-info/top_level.txt,sha256=8c0dPl4j53YYv_ICHhDLiZAyuJxSwOkdWeFx7iCshoM,12
+aioshutdown-0.0.1.dist-info/RECORD,,
