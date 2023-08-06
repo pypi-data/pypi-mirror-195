@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: doesnt-git-easier
+Version: 0.0.1
+Summary: Making it easy to read and write files to Git in a Pythonic way with context managers and the Git REST API.
+Author: Ryan Schreiber
+Author-email: ryanschreiber86@gmail.com
+Requires-Dist: smart-open
+Requires-Dist: requests
+Requires-Dist: python-dotenv
+
+Making it easy to read and write files to Git in a Pythonic way with context managers and the Git REST API.
