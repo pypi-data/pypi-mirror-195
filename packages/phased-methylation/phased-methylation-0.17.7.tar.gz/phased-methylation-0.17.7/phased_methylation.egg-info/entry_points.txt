@@ -1,0 +1,2 @@
+[console_scripts]
+phased-methylation = phased_methylation.phased_methylation:main
