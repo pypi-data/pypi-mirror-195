@@ -1,0 +1,11 @@
+urturn/REQUIREMENTS,sha256=T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU,2
+urturn/VERSION,sha256=axN4nkPlSFY0Uz3hamXYup00xMl1hYi2ZYBUNfgOsRU,5
+urturn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+urturn/job.py,sha256=n4OMwtcDZpuBpMLj5SHsQ0Q5Fax1A3T-nZVm-_4DIsM,2678
+urturn/scheduler.py,sha256=IjFPhd22NFSTJjseYomeWpwWSAH4NB9GWLdm__dSrX4,757
+urturn/trigger.py,sha256=x3fLAvVaLTDu25_sSrxyFfQ19bqwGYwO6cYhuqWying,1287
+urturn-0.0.1.dist-info/LICENSE,sha256=eOGA2SIhRIgk4bkkqJ7zKMoDZdQ8YsmzOJRSJ8a5KYI,1071
+urturn-0.0.1.dist-info/METADATA,sha256=6UDUVvqWDBZbLSHbklMU2vM5l-p9ebNofRkS2hOyI74,242
+urturn-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+urturn-0.0.1.dist-info/top_level.txt,sha256=LYQH0jmNYVdaroSaYjiD9jtEajUx6METnTrqMitW1NI,7
+urturn-0.0.1.dist-info/RECORD,,
