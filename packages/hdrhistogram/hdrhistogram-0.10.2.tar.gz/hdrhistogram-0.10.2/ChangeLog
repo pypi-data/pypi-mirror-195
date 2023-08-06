@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+0.10.2
+------
+
+* Fix \`dump\_hdrh\` executable (#44)
