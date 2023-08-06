@@ -1,0 +1,94 @@
+import setuptools
+
+with open("readme.md", "r", encoding = "utf-8") as fh:
+    long_description = fh.read()
+
+tests_require = [
+    "tox",
+    "responses",
+    "mongomock",
+    "pandas",
+]
+
+extras_require = {
+    "tests": tests_require,
+}
+
+setuptools.setup(
+    name = "argrelay",
+    # Follow version format used in `semver` itself specify clean version (and Git tag is prefixed with `v`):
+    # https://github.com/semver/semver/releases/tag/v2.0.0
+    # https://github.com/semver/semver/blob/a4f21e1a6fdf7d1a78a2d965889d958f96b11b42/package.json#L3
+    # See also about `v` in version:
+    # https://github.com/semver/semver/blob/a4f21e1a6fdf7d1a78a2d965889d958f96b11b42/semver.md#L329
+    # See also about pre-release versions:
+    # https://github.com/semver/semver/blob/a4f21e1a6fdf7d1a78a2d965889d958f96b11b42/semver.md#L93
+    version = "0.0.0-dev.22",
+    author = "uvsmtid",
+    author_email = "uvsmtid@gmail.com",
+    description = "Bash Tab-completion (data) server",
+    long_description = long_description,
+    long_description_content_type = "text/markdown",
+    keywords = "argparse, argcomplete, bash, complete",
+    url = "https://github.com/uvsmtid/argrelay",
+    project_urls = {
+        "Bug Tracker": "https://github.com/uvsmtid/argrelay/issues",
+    },
+    classifiers = [
+        "Environment :: Console",
+        "Framework :: Flask",
+        "Intended Audience :: Information Technology",
+        "Topic :: System :: Shells",
+        "Topic :: Scientific/Engineering :: Human Machine Interfaces",
+        "Topic :: Text Processing :: Indexing",
+        "Topic :: Terminals",
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: Apache Software License",
+        "Operating System :: POSIX :: Linux",
+        "Development Status :: 2 - Pre-Alpha",
+    ],
+    # See sample layout:
+    # https://docs.python.org/3/distutils/setupscript.html#installing-package-data
+    packages = setuptools.find_packages(
+        where = "src",
+    ),
+    # See:
+    # https://docs.python.org/3/distutils/setupscript.html#listing-whole-packages
+    # Instead of specifying directory of the specific package:
+    # "argrelay": "src/argrelay",
+    # Specify directory of "root" package:
+    # "": "src",
+    # Apparently, this makes `argrelay.egg-info` dir appear in `src` on editable install rather than in root `.`.
+    package_dir = {
+        "": "src",
+    },
+    package_data = {
+        "argrelay": [
+            "custom_integ/argrelay.server.yaml",
+            "custom_integ/argrelay.client.json",
+            "custom_integ/build-git-env.bash",
+            "custom_integ/build-pip-env.bash",
+            "custom_integ/deploy-artifacts.bash",
+            "custom_integ/dev-init.bash",
+            "custom_integ/dev-shell.bash",
+            "custom_integ/argrelay-rc.bash",
+        ],
+    },
+    include_package_data = True,
+    python_requires = ">=3.7",
+    install_requires = [
+        "PyYaml",
+        "jsonschema",
+        "flasgger",
+        "marshmallow",
+        "apispec",
+        "pymongo",
+        "GitPython",
+        # Use `mongomock` as replacement for Mongo DB in simple prod cases:
+        "mongomock",
+        "requests",
+        "cachetools",
+    ],
+    tests_require = tests_require,
+    extras_require = extras_require,
+)
