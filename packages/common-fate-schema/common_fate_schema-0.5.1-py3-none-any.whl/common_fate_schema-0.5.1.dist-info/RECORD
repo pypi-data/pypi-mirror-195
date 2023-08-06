@@ -1,0 +1,10 @@
+common_fate_schema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+common_fate_schema/provider/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+common_fate_schema/provider/v1alpha1.py,sha256=1pET1aDDI34AyFpJ80Ai13VrT0a-iKdFElTW_V8vuGk,3485
+common_fate_schema/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+common_fate_schema/tests/__snapshots__/v1alpha1_test/test_v1alpha1_example.json,sha256=RInrOusF3q3T7QU6xS6eDGN4hijq9-K9lnqPtjlT7wA,705
+common_fate_schema/tests/__snapshots__/v1alpha1_test/test_v1alpha1_example_no_provider.json,sha256=I8f24IZobPJp9O4CRo28tMdbw81EL8HkneFRW6sOE-Q,632
+common_fate_schema/tests/v1alpha1_test.py,sha256=rslJmRihyUv_uZgFtYQV0ylkGeq-j3aLwZlEiy2Mgms,2635
+common_fate_schema-0.5.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+common_fate_schema-0.5.1.dist-info/METADATA,sha256=joPclB1GzE-1fi9aEU5yYLAHfwxvoIBbJ623do54woo,565
+common_fate_schema-0.5.1.dist-info/RECORD,,
