@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: function-speed
+Version: 0.0.1
+Summary: This litle library is measures speed of functions
+
+This litle library is measures speed of functions.
+To use this library, just wrap your function with it
