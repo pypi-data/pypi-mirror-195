@@ -1,0 +1,7 @@
+start_sdk/__init__.py,sha256=74m2g3BBnb7qIKu9_fqAAQMNjgOlkH6-PiykUrir1iY,129
+start_sdk/cf_img.py,sha256=xec1E3bfhgHoWEVMdgtn_naGutLx16V0oHtjDzShU_g,2915
+start_sdk/cf_r2.py,sha256=CM4sk3TKVSiBr_Sz97OFdEaWyUSy6kmKS-X0qzCcz-U,10311
+start_sdk/github.py,sha256=WlSZRP4DZvdBj7lz6VnDvqdRDBCdsHHnbOxf_eEelS0,1841
+start_sdk-0.0.8.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+start_sdk-0.0.8.dist-info/METADATA,sha256=oAVv-Z7Ruh-rhVuiM7IxETwSDK9MHQURJkwCU9paaYg,1188
+start_sdk-0.0.8.dist-info/RECORD,,
