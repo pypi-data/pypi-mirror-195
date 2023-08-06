@@ -1,0 +1,14 @@
+app:
+  device_id: null
+  pkg_name: null
+common:
+  base_url: null
+  common: screenshot
+  env: null
+  login: {}
+  platform: android
+  screenshot: false
+  timeout: 10
+  visit: {}
+web:
+  browser: chrome
