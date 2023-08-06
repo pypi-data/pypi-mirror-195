@@ -1,0 +1,4 @@
+skylibs
+openexr
+opencv-python
+numpy
