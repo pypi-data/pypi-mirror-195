@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: CommentGPT
+Version: 0.2
+Summary: A python module that automatically comments code with ChatGPT, uses the free/plus version online without tokens
+Home-page: https://github.com/brendankane04/CommentGPT
+Author: Brendan Kane
+Author-email: brendankane04@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: tqdm
+Requires-Dist: difflib
+Requires-Dist: getopt
+
+UNKNOWN
+
