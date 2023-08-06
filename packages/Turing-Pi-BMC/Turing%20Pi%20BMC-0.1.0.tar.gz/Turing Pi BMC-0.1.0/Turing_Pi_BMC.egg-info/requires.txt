@@ -1,0 +1,9 @@
+
+[build]
+wheel
+build
+
+[test]
+flake8
+isort
+mypy
