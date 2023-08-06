@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: slice-qtc
+Version: 0.1.0
+Summary: A package to communicate with a VESCENT Slice-QTC temperature controller.
+License: MIT
+Author: Julian Stuermer
+Author-email: stuermer@lsw.uni-heidelberg.de
+Requires-Python: >3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: ipython (>=8.11.0,<9.0.0)
+Requires-Dist: pyserial (>=3.5,<4.0)
