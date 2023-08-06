@@ -1,0 +1,8 @@
+astropy>=4.0.5
+iminuit>=2.0.0
+matplotlib
+modefit>=0.4.0
+numpy>=1.21.6
+pyifu
+scipy>=1.7.3
+shapely>=1.8.0
