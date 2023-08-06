@@ -1,0 +1,15 @@
+numpy
+magicgui
+qtpy
+pooch
+matplotlib
+scikit-image
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+pre-commit
+napari
+pyqt5

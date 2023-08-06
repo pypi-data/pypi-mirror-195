@@ -1,0 +1,28 @@
+name: napari-brainbow-diagnose
+display_name: Napari Brainbow Diagnose
+contributions:
+  commands:
+    - id: napari-brainbow-diagnose.make_rgb_cube_data
+      python_name: napari_brainbow_diagnose._sample_data:make_rgb_cube_data
+      title: Load sample data from Napari Brainbow Diagnose
+    - id: napari-brainbow-diagnose.load_chroms_data_sample
+      python_name: napari_brainbow_diagnose._sample_data:load_chroms_data_sample
+      title: Load chroms data sample from Napari Brainbow Diagnose
+    - id: napari-brainbow-diagnose.tooltip_pointer_widget
+      python_name: napari_brainbow_diagnose._tooltip_pointer:tooltip_pointer_widget
+      title: Brainbow Tooltip
+    - id: napari-brainbow-diagnose.DiagnoseWidget
+      python_name: napari_brainbow_diagnose._widget:DiagnoseWidget
+      title: Diagnose Brainbow Image
+  sample_data:
+    - command: napari-brainbow-diagnose.make_rgb_cube_data
+      display_name: RGB Cube
+      key: unique_id.1
+    - command: napari-brainbow-diagnose.load_chroms_data_sample
+      display_name: Chroms Cortex Sample
+      key: unique_id.2
+  widgets:
+    - command: napari-brainbow-diagnose.DiagnoseWidget
+      display_name: Diagnose Brainbow Image
+    - command: napari-brainbow-diagnose.tooltip_pointer_widget
+      display_name: Brainbow Tooltip
