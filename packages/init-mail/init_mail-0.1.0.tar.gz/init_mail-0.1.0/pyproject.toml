@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "init-mail"
+version = "0.1.0"
+description = "Simple cli tool for sending mail to any other mail id. Can also attatch pdf or pngs."
+authors = ["vaibhavblayer <vaibhavblayer@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/vaibhavblayer/init-mail"
+repository = "https://github.com/vaibhavblayer/init-mail"
+keywords = ["cli", "email", "gmail", "mail"]
+packages = [{include = "init_mail"}]
+
+
+[tool.poetry.scripts]
+init-mail = "init_mail.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
