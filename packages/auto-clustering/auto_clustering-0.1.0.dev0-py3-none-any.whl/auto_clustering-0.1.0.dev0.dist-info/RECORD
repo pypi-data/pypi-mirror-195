@@ -1,0 +1,14 @@
+autoclustering/__init__.py,sha256=Z734AZcO85nr9rWamEgO6sq1fz81Cdn968KNRenaj_E,183
+autoclustering/_version.py,sha256=M5O_5TDqEEYIv8-DBq3s-jK0AxTDaZctQvLnKYjfnuE,27
+autoclustering/autoclustering.py,sha256=2oWeKK2CEZ89FWKg6hQbqY_Q5gBzi7qs2NPk87BAV3Q,8543
+autoclustering/pipelines.py,sha256=pitKgZUW9If0E_Gnki1mRGge45u8tvBPnLOs6_eajf4,1536
+autoclustering/utils.py,sha256=A3cNXNe8qZuLvzIXA4uQ19e9rsR_7o2V2RuUA8BZP2I,1511
+autoclustering/configs/__init__.py,sha256=J4I0QP84D3LBqeFZTF10MLqxsSs11I7C6Q_OoFm8BkE,227
+autoclustering/configs/clustering.py,sha256=JRpvTzvXao_42u_TX4k5-FQcOh-82Sb-hgnLFIa1lxo,1049
+autoclustering/configs/dimensionality.py,sha256=y4Qhgk9YqChsMX3c1_z_poSVS9M7n9N9jIAhKCkJN68,319
+autoclustering/configs/preprocessing.py,sha256=M9UeQv1Dmj5GZsEKdWhCcy-PVJDkNeUg3pXkjkj0IyE,470
+auto_clustering-0.1.0.dev0.dist-info/LICENSE,sha256=hhl0dIiPGiqddCRlkWSP-N27wDEfYENq0NzbPTXB9G8,1092
+auto_clustering-0.1.0.dev0.dist-info/METADATA,sha256=KcTjheRopli3NvR-1wkpdocnIv2NCl60ZjoBoZqVEWo,4577
+auto_clustering-0.1.0.dev0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+auto_clustering-0.1.0.dev0.dist-info/top_level.txt,sha256=r4t5VR1egES9YX0IBxbP5aL6VAa_bQErpv38DtzNN18,15
+auto_clustering-0.1.0.dev0.dist-info/RECORD,,
