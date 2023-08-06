@@ -1,0 +1,15 @@
+matplotlib
+numpy
+
+[dev]
+pre-commit
+pytest
+pytest-cov
+
+[opencl]
+pyopencl
+reikna
+ase
+
+[opencl:platform_system == "Windows"]
+PyQt5
