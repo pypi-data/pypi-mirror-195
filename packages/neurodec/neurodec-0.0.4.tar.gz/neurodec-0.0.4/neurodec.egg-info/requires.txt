@@ -1,0 +1,6 @@
+appdirs
+werkzeug
+trimesh
+numpy
+requests
+scipy
