@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+mwrsync.py
+setup.py
+webrepl_cli.py
+bin/mwrsync
+mwrsync.egg-info/PKG-INFO
+mwrsync.egg-info/SOURCES.txt
+mwrsync.egg-info/dependency_links.txt
+mwrsync.egg-info/requires.txt
+mwrsync.egg-info/top_level.txt

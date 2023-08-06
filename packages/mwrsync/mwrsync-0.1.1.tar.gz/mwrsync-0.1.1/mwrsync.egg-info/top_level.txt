@@ -1,0 +1,2 @@
+mwrsync
+webrepl_cli
