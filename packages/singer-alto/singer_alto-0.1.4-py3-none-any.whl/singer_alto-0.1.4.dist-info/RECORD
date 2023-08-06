@@ -1,0 +1,17 @@
+alto/__init__.py,sha256=qu409-bhEVgBBVYPg-sqpJrm3XN1E9Ld5eNvAH0R8SU,1977
+alto/catalog.py,sha256=dAOHsZFHhdgyFexjFAw0Xib4FHI5uBmzRAemlwglAiw,7934
+alto/config.py,sha256=Q8KifMkqIi0z5X4X3x_lEOnJduVHTNlMMdaWz1161aU,57
+alto/constants.py,sha256=9p4QkM98-cvF5kTq646wflln1bsaBfuMEtZxwFyY7kE,959
+alto/engine.py,sha256=znqYZQs6R5DmgO99iQ5SvNw4wXdXHlzt2vqpsuDdc0I,66951
+alto/main.py,sha256=cO77HBD7iRHiemhRcY04_Zq14w939Si5IefC8p6SM3Y,10653
+alto/models.py,sha256=FzYSSNkkkNvLYL7IeGNXRgTvqcPeLzNGzChpKdR7Pnw,14271
+alto/repl.py,sha256=emkF-RrZQbL8_QUPtRfp_mNv0PlmGKSHBm32ZE6A4Es,3686
+alto/state.py,sha256=7_5kb_f740S_FXHAUFzvASYwFfXXIMr6KoeLt6A16aU,2130
+alto/tools.py,sha256=Gl0DFAJ6eHg-8DY3XzLG_J9o7TpYzqIR7I0SXNPcEb0,598
+alto/ui.py,sha256=kQAe4NKvJg-IgVoigwpUrmuBDehPc3Lz91J8ldK1DaI,7496
+alto/utils.py,sha256=ha9AZ0xqb2RfNW_cKahzW12y_FFa7V_Sv0DWFPPwj3E,2090
+alto/version.py,sha256=bU2Woldr5WKBEH1MgapYdcMEQ8-8QuusaopEGJ2EvkA,59
+singer_alto-0.1.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+singer_alto-0.1.4.dist-info/entry_points.txt,sha256=EdA2GbCKjf2YFhetFwlDSs1xzXM4Q0ndXKNQQD0Ztfo,39
+singer_alto-0.1.4.dist-info/METADATA,sha256=Pw5sttLijUtHBSDpBn_zYZZ_FYipzdGgJcwOmADPBwo,8169
+singer_alto-0.1.4.dist-info/RECORD,,
