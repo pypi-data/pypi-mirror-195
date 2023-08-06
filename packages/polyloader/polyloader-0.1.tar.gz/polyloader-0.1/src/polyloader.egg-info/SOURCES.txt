@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+src/polyloader/__init__.py
+src/polyloader/polyloader.py
+src/polyloader.egg-info/PKG-INFO
+src/polyloader.egg-info/SOURCES.txt
+src/polyloader.egg-info/dependency_links.txt
+src/polyloader.egg-info/requires.txt
+src/polyloader.egg-info/top_level.txt

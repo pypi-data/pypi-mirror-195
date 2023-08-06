@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: polyloader
+Version: 0.1
+Summary: Loads polyfiles events to an event_dataframe
+Home-page: https://github.com/JulienBrn/PolyLoader
+Download-URL: https://github.com/JulienBrn/PolyLoader.git
+Author: Julien Braine
+Author-email: julienbraine@yahoo.fr
+License: MIT
+Keywords: python,logging
+License-File: LICENSE.txt
