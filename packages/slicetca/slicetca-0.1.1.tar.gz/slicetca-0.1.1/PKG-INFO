@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: slicetca
+Version: 0.1.1
+Summary: Package to perform Slice Tensor Component Analysis
+Home-page: https://github.com/arthur-pe/slicetca
+Author: Arthur Pellegrino
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+License-File: LICENSE.txt
+
+UNKNOWN
+
