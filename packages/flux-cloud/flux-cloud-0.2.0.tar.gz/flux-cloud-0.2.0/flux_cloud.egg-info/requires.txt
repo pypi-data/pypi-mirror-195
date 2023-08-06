@@ -1,0 +1,17 @@
+kubernetes
+fluxoperator>=0.0.12
+ruamel.yaml
+jsonschema
+requests
+jinja2
+flux-restful-client
+
+[all]
+kubernetes
+fluxoperator>=0.0.12
+ruamel.yaml
+jsonschema
+requests
+jinja2
+flux-restful-client
+pytest>=4.6.2
