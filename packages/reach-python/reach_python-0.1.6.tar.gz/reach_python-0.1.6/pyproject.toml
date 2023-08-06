@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "reach-python"
+version = "0.1.6"
+description = ""
+license = "MIT"
+authors = ["lijian418 <126387358+lijian418@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiohttp = "^3.8.4"
+requests = "^2.28.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
