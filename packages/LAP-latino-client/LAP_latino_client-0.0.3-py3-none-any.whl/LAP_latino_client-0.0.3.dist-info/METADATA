@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: LAP-latino-client
+Version: 0.0.3
+Summary: Administrador de paquetes de latino (LAP)
+Author-email: Alvaro Martinez <alvarom12098@gmail.com>
+Project-URL: Homepage, https://github.com/N3koSempai/LAP_Cliente
+Project-URL: Bug Tracker, https://github.com/N3koSempai/LAP_Cliente/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: Spanish
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+## Este es LAP (latino administrador de paquetes)
+
+Un administrador de paquetes centrado en la facilidad y sencilles de uso para el usuario. Se intenta automatizar la mayor cantidad de cosas posibles, ser descriptivo con las dependencias y evitar soluciones raras como los espacios virtuales de python optando por la declaracion de dependencias y ubicacion de archivos en base a un arbol de directorios (como npm).
+
+#### LAP esta en version alpha y abierto a colaboradores y donaciones
+
+### principales comandos de LAP
+
+- este comando descarga un archivo tipo repositorio donde se indica la ubicacion de las librerias disponibles actualmente.
+
+```shell
+python3 -m LAP actualizar
+```
+
+- este comando instala una libreria solicitada si esta se encuentra disponible en los repositorios (no uses <>)
+
+```shell
+python3 -m LAP instalar <nombre-de-la-libreria>
+```
