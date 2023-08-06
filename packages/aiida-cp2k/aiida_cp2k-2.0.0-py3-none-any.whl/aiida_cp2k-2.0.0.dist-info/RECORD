@@ -1,0 +1,15 @@
+aiida_cp2k/__init__.py,sha256=1K1DV-T4H6QNidXFnX9sIVwKdm653jEPZx97GUtQsyQ,552
+aiida_cp2k/calculations/__init__.py,sha256=Obp2791DC6rhUgFFK7rN-q-d7lo5BdYwhD4s3dSc4_o,14469
+aiida_cp2k/parsers/__init__.py,sha256=ATY1WDiLbEX8FsjZEkRImuwhUklLtnf8bSBfW4fOUgs,7886
+aiida_cp2k/utils/__init__.py,sha256=HCbkMUW_UlmKn14FkpaaB00dXMoLQs-MX2kxIx-SJnI,1298
+aiida_cp2k/utils/datatype_helpers.py,sha256=hQiDNZPsAWNf2Yz0h0yKqAdPLqJZgfL9YYq2P1goWBg,15750
+aiida_cp2k/utils/input_generator.py,sha256=Py1-vioZzS8IfQZIfn3ziXAS5KVOG5NPAkdhZLg2Fjg,8206
+aiida_cp2k/utils/parser.py,sha256=YXKldTVG3px4zA-RCZpaswQ_A6ZBZeAnSdBVXfLp-WQ,18883
+aiida_cp2k/utils/workchains.py,sha256=Vu8BrA86SwHcU3SOhmoVHsJSMay4-yxBhOYTb6dicEk,6488
+aiida_cp2k/workchains/__init__.py,sha256=wm1ulpU142AXM__ogbfWVXQ2SrPvEil8GNOo60jlfSU,578
+aiida_cp2k/workchains/base.py,sha256=oJZduyjc4XYIytA7XXQTbIodtbEGkF-XZ4Yd_RfEVcc,4451
+aiida_cp2k-2.0.0.dist-info/entry_points.txt,sha256=yeiDdpH2iqAWRB0Q1HYi5nGlxFE3blHp2U9dFEgP2FU,316
+aiida_cp2k-2.0.0.dist-info/LICENSE.txt,sha256=eeKGEpkuhQAlgVWsBbxwtTmdEyTViQK7X8aEhSTGosQ,1080
+aiida_cp2k-2.0.0.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+aiida_cp2k-2.0.0.dist-info/METADATA,sha256=AcPg25iAPy0DEOvXoZCuNuOy3Mu673OnnWhkSmjTCgk,3965
+aiida_cp2k-2.0.0.dist-info/RECORD,,
