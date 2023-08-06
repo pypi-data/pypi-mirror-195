@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+Virus_Total_Bypass/__init__.py
+Virus_Total_Bypass/main.py
+Virus_Total_Bypass.egg-info/PKG-INFO
+Virus_Total_Bypass.egg-info/SOURCES.txt
+Virus_Total_Bypass.egg-info/dependency_links.txt
+Virus_Total_Bypass.egg-info/requires.txt
+Virus_Total_Bypass.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+requests
+wmi
+uuid
+tmp-folder
