@@ -1,0 +1,16 @@
+[package]
+name = "py-rspolib"
+version = "0.0.3"
+edition = "2021"
+readme = "README.md"
+description = "Python bindings for the Rust crate rspolib."
+license = "MIT"
+repository = "https://github.com/mondeja/rspolib"
+
+[lib]
+name = "rspolib"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.18.0", features = ["extension-module"] }
+rspolib = { path = "local_dependencies/rspolib" }
