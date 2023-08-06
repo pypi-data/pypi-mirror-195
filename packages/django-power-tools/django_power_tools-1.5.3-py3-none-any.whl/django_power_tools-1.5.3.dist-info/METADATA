@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: django-power-tools
+Version: 1.5.3
+Summary: Powerful functions and classes for Django and Django Rest Framework
+Author-email: Cayo Rodrigues <cayo.rodrigues1914@gmail.com>
+Maintainer-email: Cayo Rodrigues <cayo.rodrigues1914@gmail.com>
+License: MIT License
+Project-URL: repository, https://github.com/cayo-rodrigues/django-power-tools
+Keywords: django,utils,serializers,generic,views,viewsets,mixins,email,login,model,manager,custom,action,shortcut,error,simple,rest,framework,dj,drf,admin,hash,password,user,filter,queryset,cache,management,by auth token,by user,group,key,docs,documentation,spectacular,customize,swagger,openapi
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: django-awesome-tools
+
+This package has been renamed. Please download the latest version, now called `django-awesome-tools`.
+
+- Pypi: https://pypi.org/project/django-awesome-tools/
+- Github: https://github.com/cayo-rodrigues/django-awesome-tools
