@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.py
+bin/devwatch
+devwatch/__main__.py
+devwatch/devwatch.py
+devwatch.egg-info/PKG-INFO
+devwatch.egg-info/SOURCES.txt
+devwatch.egg-info/dependency_links.txt
+devwatch.egg-info/requires.txt
+devwatch.egg-info/top_level.txt
