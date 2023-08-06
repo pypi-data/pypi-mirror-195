@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1>{% block title %}Add recipient{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<a href="{{ url_for('mailing_lists.detail', mailing_list_name=mailing_list_name) }}">back</a>
+<form method="POST" action="{{ url_for('mailing_lists.add_member', mailing_list_name=mailing_list_name) }}">
+{{ member_form.hidden_tag() }}
+{{ member_form.address.label }}
+{{ member_form.address(size=40) }}
+<input type="submit" value="Save">
+</form>
+{% endblock %}
