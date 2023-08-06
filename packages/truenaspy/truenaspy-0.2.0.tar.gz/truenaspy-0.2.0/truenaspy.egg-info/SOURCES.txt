@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+truenaspy/__init__.py
+truenaspy/api.py
+truenaspy/auth.py
+truenaspy/exceptions.py
+truenaspy/helper.py
+truenaspy/subscription.py
+truenaspy.egg-info/PKG-INFO
+truenaspy.egg-info/SOURCES.txt
+truenaspy.egg-info/dependency_links.txt
+truenaspy.egg-info/top_level.txt
