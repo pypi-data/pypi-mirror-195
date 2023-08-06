@@ -1,0 +1,8 @@
+pydantic_numpy/__init__.py,sha256=qAYYsZwny1u7BgtIRQfk9YIBIW6sTN7dedj9NsHxjqg,200
+pydantic_numpy/dtype.py,sha256=1MFNebWVaeOm3J2hQoW_nCnx0WFhrHzYTFwtpY9IU68,2372
+pydantic_numpy/model.py,sha256=6APlIzxTCC4p6OfKc5bvoEzYPV9lKNF-vdgdyEcEkWY,4101
+pydantic_numpy/ndarray.py,sha256=LxbYx9GwW854zZlp2_5i-z2xexk1_TobfSPWthodQFo,3044
+pydantic_numpy-1.4.4.dist-info/LICENSE,sha256=VwpD4kG4alvXIb_fQn0VN1vq42qbXYvV4V7ntVTi2Vk,1073
+pydantic_numpy-1.4.4.dist-info/METADATA,sha256=nCv1SZ5BCGR_DJ2PK0LLSdWD-v-mpt-pfr0Wama91pE,2636
+pydantic_numpy-1.4.4.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+pydantic_numpy-1.4.4.dist-info/RECORD,,
