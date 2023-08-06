@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+betterchatgpt/__init__.py
+betterchatgpt.egg-info/PKG-INFO
+betterchatgpt.egg-info/SOURCES.txt
+betterchatgpt.egg-info/dependency_links.txt
+betterchatgpt.egg-info/top_level.txt
