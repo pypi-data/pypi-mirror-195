@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: NSRPA
+Version: 0.0.1
+Summary: A Random Phase approximation method for including crystal field corrections to spin wave calculations
+Project-URL: Homepage, https://github.com/Jakob-Lass/NSRPA
+Project-URL: Bug Tracker, https://github.com/Jakob-Lass/NSRPA/issues
+Author-email: Jakob Lass <lass.jakob@gmail.com>
+License-File: LICENCE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
