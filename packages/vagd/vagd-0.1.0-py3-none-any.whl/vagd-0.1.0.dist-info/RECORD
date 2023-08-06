@@ -1,0 +1,9 @@
+vagd/__init__.py,sha256=TzbKahWzfDQhKANfhHbn_qL8RKzbTgCP0wzFMB_Budc,11540
+vagd/box.py,sha256=k2s7xxYjsuXufCV11gks2aopGYsUPQyZYc6P5MtlPxw,140
+vagd/vtemplate.py,sha256=9o_YW_IlXyLRzoKO2trkz97pAgDH7dJ7ja-GwIgXLDM,322
+vagd/wrapper.py,sha256=fGXIq0OrpVkOwqET2tJKQrf_leUOHQMQwLd8kqoobBo,815
+vagd-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+vagd-0.1.0.dist-info/METADATA,sha256=4rSiKQS-m4UJ6ZuEJ8UNoukzrQC68gAGEZamIM9NYho,6480
+vagd-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+vagd-0.1.0.dist-info/top_level.txt,sha256=crSDoZ0TmNAC3MNIknlaQxzhXqD5-gkIi9ppmyqiXe0,5
+vagd-0.1.0.dist-info/RECORD,,
