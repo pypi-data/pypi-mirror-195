@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Mathematician
+Version: 1.0.0
+Summary: Free and open-source libary, use of calculating mathematician Questions.
+Author: Kartikey Baghel
+Author-email: kartikeybaghel@hotmail.com
+Keywords: arithmetics,math,python math,simple math,python geometry,mathematician,pcm,math for sci
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE.txt
+
+Free and open-source libary, use of calculating mathematician Questions.
+It contains few Classes with they functions. User can use it by Easily.
