@@ -1,0 +1,89 @@
+{
+  "$id": "https://freemelt.com/openmelt/openbuildfile/v1.0/manifest.json",
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "Open Build File",
+  "description": "The base configuration file that directly or indirectly references all other files in the archive.",
+  "type": "object",
+  "examples": [
+    {
+      "obfFormatVersion": "1.0",
+      "name": "Test Rod",
+      "description": "Cylindrical metal rod for material evaluation purposes",
+      "version": "1.0",
+      "author": "Test Author <test.author@example.com>",
+      "license": "MIT",
+      "repository": "https://obfrepo.factory.acme.com",
+      "modules": {
+        "defect-detector": "modules/freemelt_defect_detector/module.json",
+        "nir-thermometer": "modules/freemelt_nir_thermometer/module.json"
+      },
+      "buildInfo": "buildInfo.json",
+      "buildProcessors": "buildProcessors/buildProcessors.json",
+      "machineCapabilities": "machineCapabilities.json"
+    }
+  ],
+  "properties": {
+    "obfFormatVersion": {
+      "type": "string",
+      "description": "The OBF format version that is used. Only versions 1.x are allowed.",
+      "pattern": "^1\\.\\d+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string"
+    },
+    "repository": {
+      "type": "string"
+    },
+    "modules": {
+      "type": "object",
+      "description": "An associative object containing any extensions to the build processor.",
+      "patternProperties": {
+        "^[A-Za-z0-9_-]+$": {
+          "type": "string",
+          "format": "filepath",
+          "title": "Module definition file",
+          "description": "Path to file describing the behaviour of external modules. This file must follow the [module schema](module.md)."
+        }
+      },
+      "additionalProperties": false
+    },
+    "buildInfo": {
+      "type": "string",
+      "format": "filepath",
+      "title": "Build information file",
+      "description": "Path to file containing build information, including obp files per layer. This file must follow the [build info schema](buildInfo.md)."
+    },
+    "buildProcessors": {
+      "type": "string",
+      "format": "filepath",
+      "title": "Build processors definition file",
+      "description": "Path to file defining which build processors are available for the build. This file must follow the [build processors schema](buildProcessors.md)."
+    },
+    "machineCapabilities": {
+      "type": "string",
+      "format": "filepath",
+      "title": "Machine requirements definition file",
+      "description": "Path to file defining the requirements needed for the build. This file must follow the [machine capabilities schema](machineCapabilities.md)."
+    }
+  },
+  "required": [
+    "name",
+    "version",
+    "obfFormatVersion",
+    "buildInfo",
+    "machineCapabilities",
+    "buildProcessors"
+  ]
+}

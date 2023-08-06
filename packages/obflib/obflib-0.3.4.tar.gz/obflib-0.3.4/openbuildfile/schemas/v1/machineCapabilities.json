@@ -1,0 +1,101 @@
+{
+  "$id": "https://freemelt.com/openmelt/openbuildfile/v1.0/machineCapabilities.json",
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "Machine Capabilities",
+  "description": "Definition of required capabilities for the different systems that will take part in the build.",
+  "type": "object",
+  "examples": [
+    {
+      "buildModule": {
+        "tankSize": 100,
+        "platform": {
+          "x": 400,
+          "y": 200
+        }
+      },
+      "meltSystem": {
+        "beamPower": 5500,
+        "beamSize": 2,
+        "beamSpeed": 7
+      },
+      "turnaroundStation": {},
+      "software": {
+        "lua-bob": ">=0.8",
+        "nir-thermometer": "^1.0"
+      }
+    }
+  ],
+  "properties": {
+    "buildModule": {
+      "type": "object",
+      "properties": {
+        "tankSize": {
+          "type": "number"
+        },
+        "platform": {
+          "type": "object",
+          "properties": {
+            "x": {
+              "type": "number"
+            },
+            "y": {
+              "type": "number"
+            }
+          }
+        }
+      },
+      "required": [
+        "tankSize",
+        "platform"
+      ]
+    },
+    "meltSystem": {
+      "type": "object",
+      "properties": {
+        "beamPower": {
+          "type": "number"
+        },
+        "beamSize": {
+          "type": "number"
+        },
+        "beamSpeed": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "beamPower",
+        "beamSize",
+        "beamSpeed"
+      ]
+    },
+    "turnaroundStation": {
+      "type": "object"
+    },
+    "software": {
+      "type": "object",
+      "title": "Software requirements",
+      "description": "Version requirements for software.",
+      "patternProperties": {
+        "^[A-Za-z0-9_-]+$": {
+          "type": "string",
+          "format": "npm-semver-range",
+          "title": "Version requirement in NPM semantic versioning format",
+          "description": "A version requirement is specified for each software. The format used is the same as NPM. See <https://github.com/npm/node-semver#ranges>."
+        }
+      },
+      "additionalProperties": false,
+      "examples": [
+        {
+          "lua-bob": ">=0.8",
+          "nir-thermometer": "^1.0"
+        }
+      ]
+    }
+  },
+  "required": [
+    "buildModule",
+    "meltSystem",
+    "software"
+  ],
+  "additionalProperties": false
+}

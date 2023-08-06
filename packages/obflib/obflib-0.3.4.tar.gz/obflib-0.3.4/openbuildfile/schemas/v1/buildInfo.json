@@ -1,0 +1,103 @@
+{
+  "$id": "https://freemelt.com/openmelt/openbuildfile/v1.0/buildInfo.json",
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "Build Info",
+  "description": "Definition of a number of properties for the successive layers in a build.",
+  "type": "object",
+  "examples": [
+    {
+      "files": {
+        "startHeat": "obp/plateheat.obp",
+        "jumpSafe": "obp/preheat.obp",
+        "heatBalance": "obp/postheat.obp",        
+        "spatterSafe1Layer1": "obp/spatterSafe1Layer1.obp",
+        "spatterSafe1Layer2": "obp/spatterSafe1Layer2.obp",
+        "spatterSafe2Layer2": "obp/spatterSafe2Layer2.obp",
+        "TestBars0Layer1": "obp/TestBars0Layer1.obp",
+        "TestBars1Layer1": "obp/TestBars1Layer1.obp",
+        "TestBars2Layer1": "obp/TestBars2Layer1.obp",
+        "layerPreview1": "preview/layer_preview_1.png"
+      },
+      "global": {
+        "layerfeed": {
+          "build_piston_distance": -0.1,
+          "powder_piston_distance": 0.2,
+          "recoater_advance_speed": 100.0,
+          "recoater_retract_speed": 100.0,
+          "recoater_dwell_time": 0,
+          "recoater_full_repeats": 0,
+          "recoater_build_repeats": 0,
+          "triggered_start": true
+        },
+        "startHeat": {
+          "file": "startHeat",
+          "temperatureSensor": "Sensor1",
+          "targetTemperature": 650.0,
+          "timeout": 14400
+        },
+        "jumpSafe": {
+          "files": [
+            "jumpSafe"
+          ],
+          "repetitions": 3
+        },
+        "heatBalance": {
+          "file": "heatBalance",
+          "repetitions": 5
+        }
+      },
+      "layers": [
+        {
+          "melt": [
+            "TestBars0Layer1"
+          ],
+          "spatterSafe": [
+            "spatterSafe1Layer1"
+          ],
+          "spatterSafeRepetitions" : 1
+        },
+        {
+          "melt": [
+            "TestBars1Layer1",
+            "TestBars2Layer1"
+          ],
+          "spatterSafe": [
+            "spatterSafe1Layer2",
+            "spatterSafe2Layer2"
+          ],
+          "spatterSafeRepetitions" : 1
+        }
+      ]
+    }
+  ],
+  "properties": {
+    "files": {
+      "type": "object",
+      "title": "Files",
+      "patternProperties": {
+        "^[A-Za-z0-9_-]+$": {
+          "type": "string",
+          "format": "filepath",
+          "title": "File",
+          "description": "Path to a file within the archive, such as an OBP file."
+        }
+      }
+    },
+    "global": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "layers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    }
+  },
+  "required": [
+    "files"
+  ],
+  "additionalProperties": false
+}

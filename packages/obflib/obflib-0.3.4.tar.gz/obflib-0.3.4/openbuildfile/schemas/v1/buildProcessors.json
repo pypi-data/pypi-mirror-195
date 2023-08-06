@@ -1,0 +1,83 @@
+{
+  "$id": "https://freemelt.com/openmelt/openbuildfile/v1.0/buildProcessors.json",
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "Build Processors",
+  "description": "Definition of the available build processors for the build.",
+  "type": "object",
+  "examples": [
+    {
+      "buildProcessors": {
+        "boss": {
+          "type": "boss",
+          "version": "1.0",
+          "entryPoint": "buildProcessors/boss/boss.yaml"
+        },
+        "bob": {
+          "type": "lua-bob",
+          "version": "1.0",
+          "entryPoint": "buildProcessors/bob/build.lua"
+        },
+        "old-bob": {
+          "type": "lua-bob",
+          "version": "1.0",
+          "entryPoint": "buildProcessors/bob/old_build.lua"
+        },
+        "bob with args": {
+          "type": "lua-bob",
+          "version": "1.0",
+          "entryPoint": "buildProcessors/bob/build.lua",
+          "args": [
+            "amount=40"
+          ]
+        }
+      }
+    }
+  ],
+  "properties": {
+    "buildProcessors": {
+      "type": "object",
+      "patternProperties": {
+        "[a-zA-Z0-9_-]+": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "boss",
+                "lua-bob"
+              ]
+            },
+            "version": {
+              "type": "string",
+              "format": "npm-semver-range",
+              "title": "Version requirement in NPM semantic versioning format",
+              "description": "Version requirements for the build processor executor. The format used is the same as NPM. See <https://github.com/npm/node-semver#ranges>."
+            },
+            "entryPoint": {
+              "type": "string",
+              "format": "filepath",
+              "title": "Entry file for the build processor",
+              "description": "Path to the build processor entrypoint configuration."
+            },
+            "args": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "type",
+            "version",
+            "entryPoint"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "buildProcessors"
+  ],
+  "additionalProperties": false
+}
