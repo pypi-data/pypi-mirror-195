@@ -1,0 +1,8 @@
+README.md
+setup.py
+yt_ripper.egg-info/PKG-INFO
+yt_ripper.egg-info/SOURCES.txt
+yt_ripper.egg-info/dependency_links.txt
+yt_ripper.egg-info/entry_points.txt
+yt_ripper.egg-info/requires.txt
+yt_ripper.egg-info/top_level.txt
