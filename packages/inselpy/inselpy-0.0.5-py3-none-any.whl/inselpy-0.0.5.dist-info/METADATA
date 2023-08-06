@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: inselpy
+Version: 0.0.5
+Summary: inselpy is now insel
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+Requires-Dist: insel
+
+# inselpy is now insel
+
+This package has been renamed. Use `pip install insel` instead.
+
+New package: https://pypi.org/project/insel/
