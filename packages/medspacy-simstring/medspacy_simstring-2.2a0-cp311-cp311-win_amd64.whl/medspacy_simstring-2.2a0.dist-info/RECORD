@@ -1,0 +1,8 @@
+_simstring.cp311-win_amd64.pyd,sha256=I7A4uks8L3rpJnPrSe1WeWIwZOAVkpE3ae5OlpRAtf8,258048
+quickumls_simstring/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quickumls_simstring/_simstring.cp311-win_amd64.pyd,sha256=I7A4uks8L3rpJnPrSe1WeWIwZOAVkpE3ae5OlpRAtf8,258048
+quickumls_simstring/simstring.py,sha256=dYZ2Tty_gmQH0bx05b4BLTuXu9jjGwGD6EOrYRJlPQ0,9338
+medspacy_simstring-2.2a0.dist-info/METADATA,sha256=_-aCCDcLeZbCbtNoQ4AwYgp9jjKEJ5lpL9SnxrNwIBk,1396
+medspacy_simstring-2.2a0.dist-info/WHEEL,sha256=TxwUeV-3HEbjjXVQ7qnUZIKQ4IinhZYV_rmkwq84M_Y,102
+medspacy_simstring-2.2a0.dist-info/top_level.txt,sha256=BdahffUV1OZV0N-WRC45xlX-pB9CM-QA3AlLs4TEQh4,31
+medspacy_simstring-2.2a0.dist-info/RECORD,,
