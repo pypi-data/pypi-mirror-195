@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: elPlan-prueba-despliegues
+Version: 0.1.4
+Summary: testing welcome student app
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: setuptools
+Requires-Dist: twine
+Requires-Dist: argparse
+Requires-Dist: mypy
+Requires-Dist: wheel
+Requires-Dist: flake8
+Requires-Dist: pydocstyle
+Requires-Dist: sphinx
+
+UNKNOWN
+
