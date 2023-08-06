@@ -1,0 +1,14 @@
+CHANGELOG.md,sha256=IT0_BdXHaVyECDqXDpA4Giq3M99uZLooTJ8wyKlbgCQ,1092
+sphinxcontrib/cadquery/__init__.py,sha256=WKKL7trxolQzTa5wNLhOhEWWRji5RTXVErIhAhC1szQ,1975
+sphinxcontrib/cadquery/cq_core.py,sha256=leXq_O2SnupS4qZYccp2MbREtDjZHm0FgNK3zyrZRH8,6336
+sphinxcontrib/cadquery/static/cadquery.css,sha256=wRC3FizaGxhFfCC0ym7C1G9VLEuj1qfJ1jGixIDSOQk,1289
+sphinxcontrib/cadquery/static/dist/vtk-lite.js,sha256=wIubz3CG9I3hVZQSWZlQWcMRqPjmqKRXVZ9UYW14-gk,2267604
+sphinxcontrib/cadquery/static/dist/vtk-lite.js.LICENSE.txt,sha256=wj8WiqZgMn_2LPqRFOP5TDax3R2HoOZicOBoVcyR7FU,66
+sphinxcontrib/cadquery/static/render.js,sha256=Qqc0oenzIp7Jw6dskgQzZJF5jQcv-t7NTMVw1O-_1UU,4845
+sphinxcontrib/cadquery/templates/svg.rst.jinja,sha256=Dqtu9FnuDgyMmoaomkxAOx19Uz-uAZSIjubSHdvvFlk,653
+sphinxcontrib/cadquery/templates/vtk.rst.jinja,sha256=SFHJX6Hdq-r4CTgDDQfhpApYViqtVEnlAo7x5ZUDC_A,1301
+sphinxcontrib_cadquery-0.5.0.dist-info/LICENSE,sha256=cl4Pe1x9cBA6ubcwsZpk5bWrRFBA7QXOo9QtPc0AIRw,611
+sphinxcontrib_cadquery-0.5.0.dist-info/LICENSE.vtk-js,sha256=yLZV0EON9cLL_ufkilddGZAYB2jMJicsPz6y0cE2n1o,1490
+sphinxcontrib_cadquery-0.5.0.dist-info/METADATA,sha256=F-FiaearQbcbDayEL5XepChwUjRHWh-1m0XG5ca0-FU,2615
+sphinxcontrib_cadquery-0.5.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+sphinxcontrib_cadquery-0.5.0.dist-info/RECORD,,
