@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: unknown-terms
+Version: 1.0.1
+Summary: Unknown terms library for math apps
+Author-email: "@lightningcell (Hamit Şimşek)" <hamidsimsek4457@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2022 lightningcell
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/lightningcell/unknown-terms
+Keywords: python,math,binom,derrivative,integral
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: bumpver ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+# unknown-numbers
+
+### What does this repo do ?
+
+This repo allows you to create exponential terms using unknown numbers comfortably. You can do various math applications using this repository. Like binomial expansion, derivative, integral...
+
+
+**How do you install this package ?**
+```commandline
+pip install unknown-terms
+```
+
+**How do you use ?**
+
+```python
+from unknown_terms.alpha_term import *
+
+# In this way, you can use every class on the package.
+```
+
+**Quick Note: If you don't want this project as a 
+package you had to change this lines in alpha_term.py** 
+
+```python
+from .multiple_alpha_term import MultipleAlphaTerm
+from .printer import TermPrinter
+```
+
+**to**
+ 
+ ```python
+from multiple_alpha_term import MultipleAlphaTerm
+from printer import TermPrinter
+```
+
+
+### AlphaTerm class
+
+You can create a term with a single unknown.
+
+```python
+term1 = AlphaTerm(2, "x", 3)  # Created AlphaTerm object
+term2 = AlphaTerm(3, "y", 2)
+term3 = AlphaTerm(0, "z", 2)
+term4 = AlphaTerm(3, "t", 0)
+term5 = AlphaTerm(0, "a", 0)
+term6 = AlphaTerm() # AlphaTerm(1, "x", 1)
+
+# METHODS
+print(term1, term5, term4, sep=" , ")
+# prints irregular term -> 2.0x³ , 0.0a⁰ , 3.0t⁰
+
+# TermPrinter.print method returns regular term
+print(TermPrinter.print(term1))  # 2x³
+print(TermPrinter.print(term5))  # (nothing)
+print(TermPrinter.print(term4))  # 3t
+
+# Multiplication 
+mterm = term1 * term2
+print(mterm)  # 6.0x³y² -> This is a MultipleAlphaTerm object
+print(TermPrinter.print(mterm))  # 6x³y²
+
+# Division
+mterm = term2 / term4
+print(mterm)  # 1.0y²t⁰
+print(TermPrinter.print(mterm))  # y²
+
+# Exponentiation
+new_term = term2 ** 2
+print(new_term) # prints 9y⁴
+
+# Turn to known
+number = term1.turn_to_known(value=5)
+print(number)  #prints 250
+
+
+```
+
+
+- _NOT: Operations such as exponentiation, division, multiplication can also be applied to objects in the MultipleAlpaTerm class._
