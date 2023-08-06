@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: bib2yaml
+Version: 1.0.0
+Summary: Converts a BibTeX file to YAML format
+Author: Ajit Johnson Nirmal
+Author-email: ajitjohnson.n@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: argparse (>=1.4.0,<2.0.0)
+Requires-Dist: bibtexparser (>=1.4.0,<2.0.0)
+Requires-Dist: pylatexenc (>=2.10,<3.0)
+Description-Content-Type: text/markdown
+
+### Converts a BibTeX file to YAML format
+
+BIB2YAML is a lightweight Python package that provides an easy and efficient way to convert BibTeX (.bib) files to YAML (.yaml) format.
+
+### Usage
+
+```python
+
+    # interactive
+    # path to the bib file
+    bib = '/Users/aj/Downloads/ref.bib'
+    # path to the output directory
+    outputDir = '/Users/aj/Downloads/'
+    
+    # Run the function
+    bib2yaml (bib, outputDir, fileName='ref')
+    
+    # commandline
+    python bib2yaml.py --bib /Users/aj/Downloads/ref.bib --outputDir /Users/aj/Downloads/
+    
+
+```
