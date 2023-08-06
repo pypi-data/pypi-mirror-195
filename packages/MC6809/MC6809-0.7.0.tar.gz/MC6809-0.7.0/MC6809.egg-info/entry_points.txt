@@ -1,0 +1,2 @@
+[console_scripts]
+MC6809 = MC6809.__main__:main
