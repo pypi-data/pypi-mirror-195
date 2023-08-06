@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+VTB/__init__.py
+VTB/main.py
+VTB.egg-info/PKG-INFO
+VTB.egg-info/SOURCES.txt
+VTB.egg-info/dependency_links.txt
+VTB.egg-info/requires.txt
+VTB.egg-info/top_level.txt
