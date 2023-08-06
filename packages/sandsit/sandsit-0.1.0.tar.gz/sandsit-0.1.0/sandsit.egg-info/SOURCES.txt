@@ -1,0 +1,9 @@
+README.md
+setup.py
+sandsit/__init__.py
+sandsit/__main__.py
+sandsit.egg-info/PKG-INFO
+sandsit.egg-info/SOURCES.txt
+sandsit.egg-info/dependency_links.txt
+sandsit.egg-info/entry_points.txt
+sandsit.egg-info/top_level.txt

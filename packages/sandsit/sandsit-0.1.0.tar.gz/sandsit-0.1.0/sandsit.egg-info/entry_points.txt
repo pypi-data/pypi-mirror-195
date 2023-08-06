@@ -1,0 +1,2 @@
+[console_scripts]
+sandsit = sandsit.__main__:main
