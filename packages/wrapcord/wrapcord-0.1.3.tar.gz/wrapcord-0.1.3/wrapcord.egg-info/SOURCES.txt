@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+wrapcord/__init__.py
+wrapcord/discord.py
+wrapcord/webhook.py
+wrapcord.egg-info/PKG-INFO
+wrapcord.egg-info/SOURCES.txt
+wrapcord.egg-info/dependency_links.txt
+wrapcord.egg-info/not-zip-safe
+wrapcord.egg-info/requires.txt
+wrapcord.egg-info/top_level.txt
