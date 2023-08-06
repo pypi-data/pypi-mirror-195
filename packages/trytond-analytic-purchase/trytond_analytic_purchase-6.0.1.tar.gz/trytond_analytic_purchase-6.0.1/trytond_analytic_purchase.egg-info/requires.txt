@@ -1,0 +1,4 @@
+trytond_analytic_account<6.1,>=6.0
+trytond_analytic_invoice<6.1,>=6.0
+trytond_purchase<6.1,>=6.0
+trytond<6.1,>=6.0
