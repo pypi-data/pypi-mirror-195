@@ -1,0 +1,13 @@
+README.md
+setup.py
+Yoku.egg-info/PKG-INFO
+Yoku.egg-info/SOURCES.txt
+Yoku.egg-info/dependency_links.txt
+Yoku.egg-info/entry_points.txt
+Yoku.egg-info/requires.txt
+Yoku.egg-info/top_level.txt
+yoku/bot.py
+yoku/botutils.py
+yoku/consts.py
+yoku/database.py
+yoku/scrape.py

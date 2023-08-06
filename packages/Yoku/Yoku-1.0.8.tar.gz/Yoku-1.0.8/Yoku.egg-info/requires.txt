@@ -1,0 +1,5 @@
+requests>=2.26.0
+python-telegram-bot<20.0.0,>=13.15
+beautifulsoup4>=4.11.1
+tinydb>=4.7.0
+lxml>=4.9.1
