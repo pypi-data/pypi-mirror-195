@@ -1,0 +1,3 @@
+[console_scripts]
+sydraw=sydraw.src.cli:main
+
