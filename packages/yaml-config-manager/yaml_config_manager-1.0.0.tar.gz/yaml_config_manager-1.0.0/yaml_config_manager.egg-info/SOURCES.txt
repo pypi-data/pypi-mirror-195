@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_basic.py
+yaml_config_manager/__init__.py
+yaml_config_manager/config.py
+yaml_config_manager.egg-info/PKG-INFO
+yaml_config_manager.egg-info/SOURCES.txt
+yaml_config_manager.egg-info/dependency_links.txt
+yaml_config_manager.egg-info/requires.txt
+yaml_config_manager.egg-info/top_level.txt
