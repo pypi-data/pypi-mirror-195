@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ImageExtras
+Version: 0.1.dev0
+Summary: Image Processing extra functions
+Home-page: 
+Author: Adrià Brú i Cortés
+Author-email: adriabrucortes@duck.com
+License: GPL3
+Keywords: image img dither luma
+Requires-Dist: numpy
+
+            Utilities and compiled algorithms to make Image Processing easier
