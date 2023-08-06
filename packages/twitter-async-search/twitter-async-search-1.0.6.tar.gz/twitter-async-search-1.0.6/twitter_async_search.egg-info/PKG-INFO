@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: twitter-async-search
+Version: 1.0.6
+Summary: Fast twitter search API
+Home-page: https://github.com/trevorhobenshield/twitter-async-search
+Author: Trevor Hobenshield
+Author-email: trevorhobenshield@gmail.com
+Keywords: twitter search api async
