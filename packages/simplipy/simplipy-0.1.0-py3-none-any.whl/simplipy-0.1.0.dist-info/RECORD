@@ -1,0 +1,12 @@
+simplipy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplipy/dicts.py,sha256=RQYPxInGrml6W32QkHfnA8RXWgzQPH5pXr-yALgA30I,433
+simplipy/list_utils.py,sha256=AIUShvBmqf2eMeJzZyvIf5glLMyfJwQ8ZO84DigoGdE,119
+simplipy/numpy_utils.py,sha256=0MunyjJ7Q74Jn76GerrgEQB724ATRHJlAQNLpTMmx4w,817
+simplipy/pandas_utils.py,sha256=LmMdwsLYUc6sRFjWZpnJLfnmCABwhR93ipibE9mes_s,78
+simplipy/pickle_utils.py,sha256=7dpqzwbTmHAcCr8X3MC_cY61G5X-_7QVgUeLiWxzKAI,581
+simplipy/plot_utils.py,sha256=9lb2Mp26RIvYctG1yjvOVc0mWYQ3zqH69sJRXn-qG-o,112
+simplipy-0.1.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+simplipy-0.1.0.dist-info/METADATA,sha256=l5qD0XxxFq4Oj2L-W-XqhFfleq_gZeT2TsXgg0Qo1do,961
+simplipy-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+simplipy-0.1.0.dist-info/top_level.txt,sha256=uJUMIc4cVodswGi3NSLNJpbQdgemow8RDTEhOFgwlhw,9
+simplipy-0.1.0.dist-info/RECORD,,
