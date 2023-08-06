@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/tholos_utils.egg-info/PKG-INFO
+src/tholos_utils.egg-info/SOURCES.txt
+src/tholos_utils.egg-info/dependency_links.txt
+src/tholos_utils.egg-info/top_level.txt
+src/utils/__init__.py
+src/utils/utils.py
