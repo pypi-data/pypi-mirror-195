@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/foo.py
+src/commentator/__init__.py
+src/commentator/__main__.py
+src/commentator/commentator.py
+src/python_commentator.egg-info/PKG-INFO
+src/python_commentator.egg-info/SOURCES.txt
+src/python_commentator.egg-info/dependency_links.txt
+src/python_commentator.egg-info/entry_points.txt
+src/python_commentator.egg-info/top_level.txt
