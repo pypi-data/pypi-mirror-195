@@ -1,0 +1,13 @@
+SouPy/__init__.py,sha256=9K3tvApQ60uAhAYprsOGRz4hmyr1h-e2CBsrf4QSXHo,1400
+SouPy/core.py,sha256=9WSdGraObsKzKHuanaMt_2Mf0hiHg6Dt3gSBGskCd_I,12116
+SouPy/display.py,sha256=mwN1013cnuzs8QWQ391RQVZKnL_jNhVYsOVihAfBIeQ,12418
+SouPy/effects.py,sha256=4DFmL4YNwGUVjZa7T_aob2CitpVyVwPu-AGjqBD80tI,12632
+SouPy/models.py,sha256=kGr9VK0u8hZ6eTm_d_KekRqWCCV2Nxf0aEUMUDmNbYY,10163
+SouPy/spatial.py,sha256=vODefPZUrt-6XeMtZIkjnfHr1HyUXw6F1o-54guq-jw,9443
+SouPy/synths.py,sha256=mKq-AuLZBt85QSEATSl8GWXm-YsPeenj693Th0VoViM,23919
+SouPy/version.py,sha256=Ok-OAQFz1G-sVrZGz4WkXcROGT2QzidSsy88bBOjHJ0,1342
+SouPyX-1.0.0.dist-info/LICENSE,sha256=YPRDlW-c5gv7hVpamEP5dq5IN5MoOKv5wN0OhN3dpPo,1086
+SouPyX-1.0.0.dist-info/METADATA,sha256=1JOUgB8LtwmkY_tsN_wKP4OBhqWh_uEdJUCtQsVUS2Y,1184
+SouPyX-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+SouPyX-1.0.0.dist-info/top_level.txt,sha256=b_g1ajgZhEBoL27nnUY3NTSkCuMi0W8D2ByYP_736do,6
+SouPyX-1.0.0.dist-info/RECORD,,
