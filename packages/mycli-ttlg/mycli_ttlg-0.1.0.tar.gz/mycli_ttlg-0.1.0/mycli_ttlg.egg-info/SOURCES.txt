@@ -1,0 +1,8 @@
+setup.py
+mycli_ttlg/__init__.py
+mycli_ttlg/cli.py
+mycli_ttlg.egg-info/PKG-INFO
+mycli_ttlg.egg-info/SOURCES.txt
+mycli_ttlg.egg-info/dependency_links.txt
+mycli_ttlg.egg-info/entry_points.txt
+mycli_ttlg.egg-info/top_level.txt
