@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gpu-utilities
+Version: 0.1.0
+Summary: Small utility library for gpu selection
+Author-email: Khambar Dussaliyev <dussaliyev@kolesa.kz>
+Project-URL: Repository, https://github.com/kolesa-team/gpu_utils
+Keywords: gpu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: torch (>=1.13.1)
+
