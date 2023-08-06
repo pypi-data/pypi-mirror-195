@@ -1,0 +1,12 @@
+fenics-dolfin>=2017.1
+matplotlib
+scipy
+
+[haznics]
+haznics
+
+[test]
+pytest
+
+[trilinos]
+pytrilinos
