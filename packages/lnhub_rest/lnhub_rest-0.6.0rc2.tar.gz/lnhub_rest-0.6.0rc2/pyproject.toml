@@ -1,0 +1,48 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "lnhub_rest"
+authors = [{name = "Lamin Labs", email = "laminlabs@gmail.com"}]
+readme = "README.md"
+dynamic = ["version", "description"]
+dependencies = [
+    "nbproject",
+    "lndb>=0.36.0",
+    "lnschema-core>=0.26.1",
+    "supabase==0.7.1",
+    "fastapi",
+    "uvicorn",
+    "typeguard"
+]
+
+[project.urls]
+Home = "https://github.com/laminlabs/lnhub-rest"
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit",
+    "nox",
+]
+test = [
+    "pytest>=6.0",
+    "pytest-cov",
+    "nbproject",
+]
+
+[project.scripts]
+lnhub = "lnhub_rest.__main__:main"
+
+[tool.black]
+preview = true
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+
+[tool.coverage.run]
+omit = [
+    "lnhub_rest/*",
+]
