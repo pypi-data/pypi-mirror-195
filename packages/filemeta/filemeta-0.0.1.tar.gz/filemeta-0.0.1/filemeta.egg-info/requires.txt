@@ -1,0 +1,5 @@
+bitstruct
+genutility[json]
+piexif
+pymediainfo
+requests
