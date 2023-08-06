@@ -1,0 +1,11 @@
+dotenv_stripout/__init__.py,sha256=MMBFja02XXgLZXDx4wgvPdauSZQ65191jJs5lVPKbhQ,61
+dotenv_stripout/__main__.py,sha256=Huz0dExiaH0XTMLhfe3skkFD9-VH7ZUiWMbDR_J8TIY,28
+dotenv_stripout/cli.py,sha256=T7efUzBtMCo_DfU7i8ESf8fkcgWIewCvL2cgJ-9JHZ0,3338
+dotenv_stripout/git.py,sha256=FCcQphy2tf8PONNNV4OAgj_5jxU2AhcTpsxmsnKd-M4,979
+dotenv_stripout/install.py,sha256=pdViYiFi4fIU9DqQbEjblP45x07efHMbaDIAFUVNsT8,1573
+dotenv_stripout/stripout.py,sha256=V-sJJ7ZWB28SUOBttFrubUtP82LD3hDwDXuCmcaXPSA,903
+dotenv_stripout-0.1.3.dist-info/entry_points.txt,sha256=IYEnsDlDlDF2TJDRN_lTC4xE6xZwF_NDoM44-J_H-FA,59
+dotenv_stripout-0.1.3.dist-info/LICENSE.md,sha256=6_f9rO4RgD7iIY6UWZZS9SRqYnGXSuefkoi3IHsTInQ,1069
+dotenv_stripout-0.1.3.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+dotenv_stripout-0.1.3.dist-info/METADATA,sha256=V-9hN0aNNnzn_Taq7JATam8PwonesyVCr7DA2FnYI04,1956
+dotenv_stripout-0.1.3.dist-info/RECORD,,
