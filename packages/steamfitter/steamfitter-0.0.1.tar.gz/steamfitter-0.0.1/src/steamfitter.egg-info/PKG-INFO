@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: steamfitter
+Version: 0.0.1
+Summary: steamfitter is a set of tools for building and maintaining high-throughput data and modeling pipelines
+Home-page: https://github.com/ihmeuw/steamfitter
+Author: The IHME Rapid Response Team
+Author-email: collijk@uw.edu
+License: BSD-3-Clause
+Provides-Extra: docs
+Provides-Extra: test
+Provides-Extra: internal
+Provides-Extra: dev
+License-File: LICENSE
+
+===========
+steamfitter
+===========
+
+steamfitter is a set of tools for building and maintaining high-throughput data and modeling
+pipelines at the `Institute for Health Metrics and Evaluation <https://www.healthdata.org/>`_.
