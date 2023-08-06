@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+gptshell/GPTshell.py
+gptshell/__init__.py
+gptshell/gsh.py
+gptshell.egg-info/PKG-INFO
+gptshell.egg-info/SOURCES.txt
+gptshell.egg-info/dependency_links.txt
+gptshell.egg-info/entry_points.txt
+gptshell.egg-info/requires.txt
+gptshell.egg-info/top_level.txt
