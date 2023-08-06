@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: nonebot-args-patch
+Version: 0.1.0
+Summary: 一款自用的nb2获取指令参数的补丁
+Home-page: https://github.com/JustUndertaker/nonebot_args_patch
+Author: JustUndertaker
+Author-email: 806792561@qq.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# nonebot2_args_patch
+一款自用的nb2获取指令参数的补丁
