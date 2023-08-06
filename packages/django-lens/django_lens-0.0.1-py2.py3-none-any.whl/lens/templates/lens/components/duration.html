@@ -1,0 +1,5 @@
+{% if trace.duration > 1 %}
+{{ trace.duration|floatformat:3 }} s
+{% else %}
+{{ trace.duration_milliseconds|floatformat:3 }} ms
+{% endif %}

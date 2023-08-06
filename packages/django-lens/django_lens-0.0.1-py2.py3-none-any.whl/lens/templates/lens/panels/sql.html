@@ -1,0 +1,54 @@
+{% if trace.sql_traces.exists %}
+<div class="hidden md:flex flex-row font-semibold bg-gray-100 px-6 py-3 text-sm">
+    <div class="w-1/12">#</div>
+    <div class="w-7/12">SQL</div>
+    <div class="w-1/12">Duration</div>
+    <div class="w-2/12">Time</div>
+    <div class="w-1/12"></div>
+</div>
+<div class="divide-y divide-gray-200 text-sm">
+    {% for trace in trace.sql_traces %}
+    <div class="md:px-6 px-4 py-3 flex flex-col text-gray-900 hover:bg-gray-50" x-data="{ show: false }" :class="{ 'bg-gray-50': show }">
+        <div class="flex md:flex-row flex-col md:space-y-0 space-y-2">
+            <div class="md:w-1/12">
+                <span class="md:hidden font-semibold text-gray-500">#</span>
+                {{ forloop.counter }}
+            </div>
+            <div class="md:w-7/12 md:mr-4">
+                {% include 'lens/components/codeblock.html' with code=trace.data.simple_sql wrap_height=1 only %}
+            </div>
+            <div class="md:w-1/12">
+                <div class="md:hidden font-semibold text-gray-500 mb-1">Duration</div>
+                {% include 'lens/components/duration.html' with trace=trace only %}
+            </div>
+            <div class="md:w-2/12">
+                <div class="md:hidden font-semibold text-gray-500 mb-1">Time</div>
+                {{ trace.start_time|date:'H:i:s.u' }}
+            </div>
+            <div class="w-1/12 md:flex items-start hidden">
+                <button class="text-green-50 p-1 rounded bg-green-900 hover:bg-green-800" @click="show = !show">
+                    <!-- plus sign -->
+                    <svg x-show="!show" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <!-- minus sign -->
+                    <svg x-show="show" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="w-full divide divide-y py-2 break-words" x-show="show">
+            {% include 'lens/components/stacktrace.html' with stacktrace=trace.data.stacktrace only %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+{% include 'lens/components/empty_trace.html' with title="No traces found" subtitle="SQL queries are displayed here." only %}
+{% endif %}

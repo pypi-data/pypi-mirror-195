@@ -1,0 +1,19 @@
+{% load lens_tags %}    
+{% if stacktrace %}
+<div class="md:w-11/12 mx-auto">
+    <div class="py-2 font-semibold">Stacktrace</div>
+    <div class="bg-gray-800 text-white rounded max-h-96 p-4 overflow-auto">
+        {% for file, line, function, content, _ in stacktrace %}
+        <div class="py-1">
+            <div>{{ file|highlight_filename }} ({{ line }}) at <strong>{{ function }}</strong></div>
+            <code>{{ content }}</code>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% else %}
+<div class="flex flex-col justify-center self-center items-center my-4">
+    <h3 class="font-semibold text-gray-600 text-xl">No traces found</h3>
+    <p class="text-gray-500">Call stacktrace will appear here. Enable Stacktrace in settings.</p>
+</div>
+{% endif %}

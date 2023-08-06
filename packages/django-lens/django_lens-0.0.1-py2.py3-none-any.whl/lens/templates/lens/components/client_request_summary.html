@@ -1,0 +1,38 @@
+<div
+    data-slot="summary"
+    class="py-3 flex flex-col md:px-6 px-4 hover:bg-gray-50 {% if request.GET.expand %} bg-gray-50 {% endif %}">
+    
+    <a
+        href="javascript:void(0)"
+        hx-get="{% url 'lens:trace_panel' trace.pk %}?slot=summary{% if not request.GET.expand %}&expand=true{% endif %}"
+        hx-target="closest [data-slot='summary']"
+        hx-swap="outerHTML"
+        class="flex md:flex-row flex-col md:space-y-0 space-y-2"
+        title="Click to show details">
+        <div class="md:w-1/12">
+            <div class="md:hidden font-semibold text-gray-500 mb-1">Method</div>
+            {% include 'lens/components/method.html' with method=trace.data.method only %}
+        </div>
+        <div class="md:w-6/12">
+            <div class="md:hidden font-semibold text-gray-500 mb-1">URL</div>
+            {{ trace.data.url }}
+        </div>
+        <div class="md:w-1/12">
+            <div class="md:hidden font-semibold text-gray-500 mb-1">Status</div>
+            {% include 'lens/components/status.html' with status_code=trace.data.status_code only %}
+        </div>
+        <div class="md:w-2/12">
+            <div class="md:hidden font-semibold text-gray-500 mb-1">Duration</div>
+            {% include 'lens/components/duration.html' with trace=trace only %}
+        </div>
+        <div class="md:w-2/12">
+            <div class="md:hidden font-semibold text-gray-500 mb-1">Time</div>
+            {{ trace.start_time|date:'H:i:s.u' }}
+        </div>
+    </a>
+
+    {% if request.GET.expand %}
+        {% include 'lens/components/client_request_detail.html' %}
+    {% endif %}
+    
+</div>
