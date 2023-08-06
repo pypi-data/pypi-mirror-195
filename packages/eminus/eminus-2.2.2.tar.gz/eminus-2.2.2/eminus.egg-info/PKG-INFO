@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: eminus
+Version: 2.2.2
+Summary: A plane wave density functional theory code.
+Home-page: https://github.com/wangenau/eminus
+Author: Wanja Timm Schulze
+Author-email: wangenau@protonmail.com
+License: APACHE2.0
+Project-URL: Bug Tracker, https://gitlab.com/wangenau/eminus/-/issues
+Project-URL: Changelog, https://wangenau.gitlab.io/eminus/changelog.html
+Project-URL: Documentation, https://wangenau.gitlab.io/eminus
+Project-URL: Source code, https://gitlab.com/wangenau/eminus
+Keywords: ESP
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: fods
+Provides-Extra: libxc
+Provides-Extra: viewer
+Provides-Extra: all
+Provides-Extra: dev
+License-File: LICENSE
+
+![eminus logo](https://gitlab.com/wangenau/eminus/-/raw/main/docs/logo/eminus_logo.png)
+
+# eminus
+[![pypi](https://img.shields.io/pypi/v/eminus?color=1a962b)](https://pypi.org/project/eminus)
+[![language](https://img.shields.io/badge/language-Python3-green)](https://www.python.org)
+[![license](https://img.shields.io/badge/license-APACHE2-lightgrey)](https://gitlab.com/wangenau/eminus/-/blob/main/LICENSE)
+[![DOI](https://zenodo.org/badge/431079841.svg)](https://zenodo.org/badge/latestdoi/431079841)
+
+The eminus package is a plane wave density functional theory (DFT) code.
+It is built upon the [DFT++](https://arxiv.org/abs/cond-mat/9909130) pragmas, that aim to let programming languages and theory coincide.
+The goal is to create a simple code that is easy to read and easy to extend while using minimal dependencies.
+
+## Documentation
+
+To learn more about the implementation and usage of eminus, take a look inside the [documentation](https://wangenau.gitlab.io/eminus).
+
+## Installation
+
+The package and all necessary dependencies can be installed using pip
+
+```terminal
+pip install eminus
+```
+
+More information about the installation process can be found [here](https://wangenau.gitlab.io/eminus/installation.html).
+
+## License
+
+This project is licensed under the Apache 2.0 License - see the [LICENSE](https://gitlab.com/wangenau/eminus/-/blob/main/LICENSE) file for details.
+
+
+Changelog
+=========
+
+v2.2.2 - Mar 03, 2023
+---------------------
+- New features
+   - Improve performance, i.e, in operators, dotprod, and density calculations
+   - Large and/or spin-polarized systems are much faster!
+- Coding style
+   - Make Energies a dataclass
+- Miscellaneous
+   - Drop Python 3.6 support
+   - Raise minimum version SciPy from 1.4 to 1.6
+   - Add repository statistics to the PyPI sidebar
+
+v2.2.1 - Feb 22, 2023
+---------------------
+- Hotfix for the broken PyPI installation
+- Use MANIFEST.in over package_data
+- Skip tests if pylibxc is not installed
+
+v2.2.0 - Feb 21, 2023
+---------------------
+- New features
+   - Supercell Wannier localization
+   - Rewritten xc parser
+   - Modularize each functional
+   - Greatly improve functional performance
+   - Add modified functional variants
+   - Modularize io module
+   - Rewritten save and load functions to use JSON
+   - Add a bunch of tests
+   - Add a small ASCII logo in the info function
+   - Update logo typography
+- Updated docs
+   - Add a nomenclature page of commonly used variables
+   - Remove the package name from the module headings
+   - Document members of classes
+- Coding style
+   - More secure coding practices
+   - Remov the usage of eval, exec, and pickle
+- Miscellaneous
+   - Rename save and load to write_json and read_json
+   - Fix PW spin-polarized functional
+   - Align Chachiyo functional with Libxc
+   - Add a germanium solid example
+   - Add a recenter method to the Atoms and SCF class
+   - Use pc-1 over pc-0 in the PyCOM extra
+   - Add a pyproject.toml
