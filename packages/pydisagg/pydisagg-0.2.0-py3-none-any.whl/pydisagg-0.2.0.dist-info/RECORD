@@ -1,0 +1,10 @@
+pydisagg/DisaggModel.py,sha256=osZjkzh1D6SHqm8UbKUpsLRQCsQRJMEQnS8cEQ-sIEo,22179
+pydisagg/__init__.py,sha256=bJ7_JGu8cVY_2j8bQf4FBTzWKLE40BH0Eib1rJQZe24,111
+pydisagg/disaggregate.py,sha256=7aaX7xf8pgp3YAysay4pj6gKjzGg71aYUYmCbeWhVaU,8487
+pydisagg/models.py,sha256=i_Mss1VgH-Gz9OIGGkPDZfV8af7fsc5fLdonc30V2Zo,3640
+pydisagg/transformations.py,sha256=YTTTWaR-GytSKvQxpJ2iGS8_Od7dFY743f9eZHM9v2g,2421
+pydisagg-0.2.0.dist-info/LICENSE,sha256=63w0xbN99sgqV5CB-FQxrw5Elm64xVcg0EzzZDSPhWA,1328
+pydisagg-0.2.0.dist-info/METADATA,sha256=ak0EhRzEIqlZZ79Emx5HnmZPMx7nMaZm21VDyxVJ72Y,3078
+pydisagg-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pydisagg-0.2.0.dist-info/top_level.txt,sha256=4wGmtd4IDaMRxcGETmqlL-s0z6MfVmyKzp2HhR39G1U,9
+pydisagg-0.2.0.dist-info/RECORD,,
