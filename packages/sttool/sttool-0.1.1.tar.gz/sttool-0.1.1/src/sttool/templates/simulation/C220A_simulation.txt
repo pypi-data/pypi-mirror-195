@@ -1,0 +1,3012 @@
+//################################################################
+//
+//  Auto Generated, all changes will be discarded
+//
+//#################### Global ####################################
+ESC=55               // escape code (hex) for application defined sim data
+Baudrate=250000      // CAN Baudrate e. g. 125000, 250000, 500000
+//SID_Req_Read=22      // UDS SID for RW DID feature
+//SID_Resp_Read=62     // UDS SID for RW DID feature
+//SID_Req_Write=2E     // UDS SID for RW DID feature
+//SID_Resp_Write=6E    // UDS SID for RW DID feature
+//SID_Req_Dyn=22       // UDS SID for Dyn DID feature
+//SID_Resp_Dyn=62      // UDS SID for Dyn DID feature
+
+
+//#################### ECU Header #################################
+Phys=18DA18F1
+Func=18DBFFF9
+Resp=18DAF118
+//DoipId=17
+ECUName=LL_C220A_UDS_IC
+Bs=64
+Stmin=24
+DefaultResp=7F[1]11
+Init; ClrDtc=false
+Init; Session=Default
+Init; ECUlocked=false
+Init; OnBoard=false
+Init; DtcActive=true
+OnBoard=100;4280;0000BC5500000101
+OnBoard=040;3500;AA002312010123AAFF
+OnBoard=050;1120;C00043001100
+OnBoard=070;9120;1000EE02020
+//------------------ DC_DiagnosticSessionControl ------------------
+->  1001 ; Session=DEFAULT
+<-  1 ; 3 ; 50[2]00010001
+->  1002 ; Session=PROGRAMMING
+<-  1 ; 3 ; 50[2]00010001
+->  1003 ; Session=EXTENDED
+<-  1 ; 3 ; 50[2]00010001
+->  1004 ; Session=SAFETY
+<-  1 ; 3 ; 50[2]00010001
+->  1040 ; Session=EOL
+<-  1 ; 3 ; 50[2]00010001
+//------------------ DC_DiagnosticSessionControl_NoPosResp ------------------
+->  1081 ; Session=DEFAULT
+<-  1 ; 1 ; null
+->  1082 ; Session=PROGRAMMING
+<-  1 ; 1 ; null
+->  1083 ; Session=EXTENDED
+<-  1 ; 1 ; null
+->  1084 ; Session=SAFETY
+<-  1 ; 1 ; null
+->  10C0 ; Session=EOL
+<-  1 ; 1 ; null
+//------------------ DC_EcuReset ------------------
+->  1101
+<-  1 ; 3 ; 51[2]
+->  1102
+<-  1 ; 3 ; 51[2]
+//------------------ DC_EcuReset_NoPosResp ------------------
+->  1181
+<-  1 ; 1 ; null
+->  1182
+<-  1 ; 1 ; null
+//------------------ DC_ClearDiagnosticInformation ------------------
+->  14FFFFFF ; ClrDtc=true
+<-  1 ; 3 ; 54
+//------------------ DC_ReadDTCInformation_ReportNumberOfDTCByStatusMask ------------------
+->  1901
+<-  1 ; 3 ; 59[2]FF010001
+//------------------ DC_ReadDTCInformation_ReportDTCByStatusMask ------------------
+->  1902
+<-  1 ; 3 ; 59[2]FF00002101
+//------------------ DC_ReadDTCInformation_ReportDTCSnapshotRecordByDTCNumber ------------------
+->  1904
+<-  1 ; 3 ; 59[2]000021010101
+//------------------ DC_ReadDataByIdentifier ------------------
+->  220100
+<-  1 ; 3 ; 620100{SIN;2;250;12;1000}
+->  221100
+<-  1 ; 3 ; 62110000000008
+->  221103
+<-  1 ; 3 ; 62110301
+->  221106
+<-  1 ; 3 ; 62110601
+->  221107
+<-  1 ; 3 ; 6211070001
+->  221108
+<-  1 ; 3 ; 6211080001
+->  221109
+<-  1 ; 3 ; 6211090001
+->  22110A
+<-  1 ; 3 ; 62110A01
+->  22110B
+<-  1 ; 3 ; 62110B01
+->  22110C
+<-  1 ; 3 ; 62110C0F
+->  22110D
+<-  1 ; 3 ; 62110D01
+->  22110E
+<-  1 ; 3 ; 62110E0001
+->  22110F
+<-  1 ; 3 ; 62110F01
+->  221110
+<-  1 ; 3 ; 62111001
+->  221111
+<-  1 ; 3 ; 62111101
+->  221113
+<-  1 ; 3 ; 62111301
+->  221114
+<-  1 ; 3 ; 62111401
+->  221115
+<-  1 ; 3 ; 62111501
+->  221116
+<-  1 ; 3 ; 62111601
+->  221117
+<-  1 ; 3 ; 62111701
+->  221118
+<-  1 ; 3 ; 62111801
+->  221119
+<-  1 ; 3 ; 62111901
+->  22111A
+<-  1 ; 3 ; 62111A01
+->  22111B
+<-  1 ; 3 ; 62111B01
+->  22111C
+<-  1 ; 3 ; 62111C01
+->  22111D
+<-  1 ; 3 ; 62111D01
+->  22111E
+<-  1 ; 3 ; 62111E01
+->  22111F
+<-  1 ; 3 ; 62111F01
+->  221120
+<-  1 ; 3 ; 62112001
+->  221121
+<-  1 ; 3 ; 62112101
+->  221122
+<-  1 ; 3 ; 62112201
+->  22112A
+<-  1 ; 3 ; 62112A01
+->  22112B
+<-  1 ; 3 ; 62112B01
+->  22112C
+<-  1 ; 3 ; 62112C01
+->  22112D
+<-  1 ; 3 ; 62112D01
+->  2213DE
+<-  1 ; 3 ; 6213DE013A
+->  2213E1
+<-  1 ; 3 ; 6213E10001
+->  2213E2
+<-  1 ; 3 ; 6213E20001
+->  22CF01
+<-  1 ; 3 ; 62CF0100DE0FFF000000A00FFF000010A10FFF000020A20FFF000030A50FFF000040A50FFF000050170FFF0000601E0FFF000070A30FFF000080280FFF000090A60FFF0000A0F60FFF0000B0A70FFF0000C0A80FFF0000C0A90FFF0000C0AA0FFF0000C0AB0FFF0000C0AC0FFF0000D04D0FFF0000E0AD0FFF0000F0370FFF000100ED0FFF000110AE0FFF000110AF0FFF000110B00FFF000110B10FFF000110B20FFF0001201C0FFF000130030FFF000140030FFF000140310FFF000140320FFF000140FE0FFF000150800FFF000150810FFF000150820FFF000150830FFF000150840FFF000150850FFF000150860FFF000150870FFF000150880FFF000150890FFF0001508A0FFF0001508B0FFF0001508C0FFF0001508D0FFF0001508F0FFF000160800FFF000160810FFF000160820FFF000160830FFF000160840FFF000160850FFF000160860FFF000160870FFF000160880FFF000160890FFF0001608A0FFF0001608E0FFF0001702B0FFF000180000FFF000190000FFF0001A0340FFF0001B0340FFF0001C0A40FFF0001D0030FFF0001E0200FFF0001E0050FFF0001F0150FFF000200030FFF000200ED0FFF000220800FFF000220810FFF000220820FFF000220830FFF000220840FFF000220850FFF000220860FFF000220870FFF000220880FFF000220890FFF0002208A0FFF0002208E0FFF0002208F0FFF0002208D0FFF0002208B0FFF0002208C0FFF000230960FFF000240A00FFF0002504A0FFF000260B30FFF000260B40FFF000280A60FFF000290FC0FFF0002A0290FFF0002A02A0FFF0002E0320FFF0002E02F0FFF0002E0FE0FFF0003203B0FFF000320FE0FFF000330190FFF0003504C0FFF0003A0320FFF0003B1010FFF0003C0970FFF0003D0A40FFF0003E0210FFF0003E0060FFF0003F0220FFF000400330FFF000410180FFF000420070FFF000420080FFF000420040FFF000420310FFF000420A70FFF000430EB0FFF000430EC0FFF000430AA0FFF000430AB0FFF000430A00FFF000430A10FFF000430030FFF000430040FFF0004302F0FFF000430A50FFF000430DD0FFF000430D10FFF000430D20FFF000430D30FFF000450030FFF000450FE0FFF000460640FFF000470520FFF000480190FFF000490430FFF0004A0630FFF0004B0540FFF0004C05A0FFF0004D01E0FFF0004E0000FFF000510170FFF000520160FFF0005402F0FFF000590050FFF000590FE0FFF0005A00E0FFF0005B0140FFF0005C0B60FFF0005C0B70FFF0005D0360FFF0005E0000FFF0005F0000FFF000600000FFF000600010FFF000610000FFF000620000FFF000630280FFF000640A00FFF000650660FFF000660400FFF000670B00FFF000680B10FFF000690D00FFF0006A0D10FFF0006B0D20FFF0006C0600FFF0006D0AA0FFF0006E0860FFF0006E0740FFF0006E0840FFF0006E07A0FFF0006E07E0FFF0006E07C0FFF0006E0790FFF0006E0890FFF0006E0710FFF0006F0130FFF0006F05A0FFF0006F05B0FFF0006F05C0FFF0006F05E0FFF0006F05F0FFF000700F50FFF000710F40FFF000710800FFF000710EF0FFF000720000FFF0007309B0FFF000740090FFF000750900FFF000760160FFF000770F10FFF000780ED0FFF000790ED0FFF0007A0770FFF0007B1010FFF0007C0800FFF0007C08E0FFF0007D0000FFF0007E0800FFF0007E0810FFF0007E0820FFF0007E0830FFF0007E0840FFF0007E0850FFF0007E0860FFF0007E0870FFF0007E0880FFF0007E0890FFF0007E08A0FFF0007E08B0FFF0007E08C0FFF0007E08D0FFF0007E08E0FFF0007E08F0FFF0007F0000FFF000800030FFF000800FE0FFF000810B80FFFFFFFF0FF
+->  22F010
+<-  1 ; 3 ; 62F01001
+->  22F011
+<-  1 ; 3 ; 62F01101
+->  22F012
+<-  1 ; 3 ; 62F01201
+->  22F013
+<-  1 ; 3 ; 62F01301
+->  22F014
+<-  1 ; 3 ; 62F01401
+->  22F015
+<-  1 ; 3 ; 62F01501
+->  22F016
+<-  1 ; 3 ; 62F01601
+->  22F017
+<-  1 ; 3 ; 62F01701
+->  22F018
+<-  1 ; 3 ; 62F01801
+->  22F019
+<-  1 ; 3 ; 62F01901
+->  22F01A
+<-  1 ; 3 ; 62F01A01
+->  22F01B
+<-  1 ; 3 ; 62F01B01
+->  22F01C
+<-  1 ; 3 ; 62F01C01
+->  22F01D
+<-  1 ; 3 ; 62F01D0001
+->  22F01E
+<-  1 ; 3 ; 62F01E01
+->  22F01F
+<-  1 ; 3 ; 62F01F01
+->  22F020
+<-  1 ; 3 ; 62F02001
+->  22F021
+<-  1 ; 3 ; 62F02101
+->  22F022
+<-  1 ; 3 ; 62F02201
+->  22F023
+<-  1 ; 3 ; 62F02301
+->  22F024
+<-  1 ; 3 ; 62F02401
+->  22F025
+<-  1 ; 3 ; 62F02501
+->  22F026
+<-  1 ; 3 ; 62F02601
+->  22F027
+<-  1 ; 3 ; 62F02701
+->  22F028
+<-  1 ; 3 ; 62F02801
+->  22F029
+<-  1 ; 3 ; 62F02901
+->  22F02A
+<-  1 ; 3 ; 62F02A01
+->  22F02B
+<-  1 ; 3 ; 62F02B01
+->  22F02C
+<-  1 ; 3 ; 62F02C0001
+->  22F02D
+<-  1 ; 3 ; 62F02D01
+->  22F02E
+<-  1 ; 3 ; 62F02E01
+->  22F02F
+<-  1 ; 3 ; 62F02F01
+->  22F030
+<-  1 ; 3 ; 62F03001
+->  22F031
+<-  1 ; 3 ; 62F03101
+->  22F032
+<-  1 ; 3 ; 62F03201
+->  22F033
+<-  1 ; 3 ; 62F03301
+->  22F034
+<-  1 ; 3 ; 62F03401
+->  22F035
+<-  1 ; 3 ; 62F03501
+->  22F036
+<-  1 ; 3 ; 62F03601
+->  22F037
+<-  1 ; 3 ; 62F03701
+->  22F038
+<-  1 ; 3 ; 62F0380001
+->  22F039
+<-  1 ; 3 ; 62F0390001
+->  22F03A
+<-  1 ; 3 ; 62F03A0001
+->  22F03B
+<-  1 ; 3 ; 62F03B01
+->  22F03C
+<-  1 ; 3 ; 62F03C01
+->  22F03D
+<-  1 ; 3 ; 62F03D01
+->  22F03E
+<-  1 ; 3 ; 62F03E01
+->  22F03F
+<-  1 ; 3 ; 62F03F01
+->  22F040
+<-  1 ; 3 ; 62F04001
+->  22F041
+<-  1 ; 3 ; 62F04101
+->  22F180
+<-  1 ; 3 ; 62F180{Read;F180_SoftwareIdentification="BOOT_SIM_1.0.0"}
+->  22F181
+<-  1 ; 3 ; 62F181{Read;F181_SoftwareIdentification="APPL_SIM_1.0.0"}
+->  22F182
+<-  1 ; 3 ; 62F182{Read;F182_SoftwareIdentification="DATA_SIM_1.0.0"}
+->  22F183
+<-  1 ; 3 ; 62F183{Read;F183_NumberOfFollowingFingerPrints=01}
+->  22F184
+<-  1 ; 3 ; 62F184{Read;F184_NumberOfFollowingFingerPrints=01}
+->  22F185
+<-  1 ; 3 ; 62F185{Read;F185_NumberOfFollowingFingerPrints=01}
+->  22F186
+<-  1 ; 3 ; 62F186{Read;F186_SessionNumber=01}
+->  22F187
+<-  1 ; 3 ; 62F187{Read;F187_PartNumber=0001}
+->  22F18C
+<-  1 ; 3 ; 62F18C{Read;F18C_SerialNumber="SN18C"}
+->  22F18E
+<-  1 ; 3 ; 62F18E{Read;F18E_AssemblyPartNumber="APartNo18E"}
+->  22F190
+<-  1 ; 3 ; 62F190{Read;F190_VinNumber="YK5A75H00M5190021"}
+->  22F191
+<-  1 ; 3 ; 62F191FFF00005
+->  22F193
+<-  1 ; 3 ; 62F1930000000000000000000000000000000000000000000000000000000000000001
+->  22F196
+<-  1 ; 3 ; 62F1960000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001
+->  22F1A3
+<-  1 ; 3 ; 62F1A3{Read;F1A3_SoftwareIdentification="SoftwareIdent1A3"}
+->  22F1A4
+<-  1 ; 3 ; 62F1A4{Read;F1A4_SoftwareIdentification="SoftwareIdent1A4"}
+->  22F1A5
+<-  1 ; 3 ; 62F1A501
+->  22F1A7
+<-  1 ; 3 ; 62F1A7{Read;F1A7_VehicleModel="64248800"}
+->  22F1A9
+<-  1 ; 3 ; 62F1A9{Read;F1A9_VehiclePlatform="C220A"}
+->  22F1AA
+<-  1 ; 3 ; 62F1AA{Read;F1AA_VehicleBrand="V"}
+->  22FF00
+<-  1 ; 3 ; 62FF0001010101
+//------------------ DC_SecurityAccessRequestSeed ------------------
+->  2701
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2703
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2705
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2707
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2709
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+//------------------ DC_SecurityAccessSendKey ------------------
+->  2702 ; SecuLevel=SECURITY_LEVEL_1
+<-  1 ; 3 ; 67[2]
+->  2704 ; SecuLevel=SECURITY_LEVEL_2
+<-  1 ; 3 ; 67[2]
+->  2706 ; SecuLevel=SECURITY_LEVEL_3
+<-  1 ; 3 ; 67[2]
+->  2708 ; SecuLevel=SECURITY_LEVEL_4
+<-  1 ; 3 ; 67[2]
+->  270A ; SecuLevel=SECURITY_LEVEL_5
+<-  1 ; 3 ; 67[2]
+//------------------ DC_CommunicationControl ------------------
+->  280001
+<-  1 ; 3 ; 68[2]
+->  280101
+<-  1 ; 3 ; 68[2]
+//------------------ DC_CommunicationControl_NoPosResp ------------------
+->  288001
+<-  1 ; 1 ; null
+->  288101
+<-  1 ; 1 ; null
+//------------------ DC_WriteDataByIdentifier ------------------
+->  2E1100
+<-  1 ; 3 ; 6E1100
+->  2E13DE
+<-  1 ; 3 ; 6E13DE
+->  2E13E1
+<-  1 ; 3 ; 6E13E1
+->  2E13E2
+<-  1 ; 3 ; 6E13E2
+->  2EF010
+<-  1 ; 3 ; 6EF010
+->  2EF011
+<-  1 ; 3 ; 6EF011
+->  2EF012
+<-  1 ; 3 ; 6EF012
+->  2EF013
+<-  1 ; 3 ; 6EF013
+->  2EF014
+<-  1 ; 3 ; 6EF014
+->  2EF015
+<-  1 ; 3 ; 6EF015
+->  2EF016
+<-  1 ; 3 ; 6EF016
+->  2EF017
+<-  1 ; 3 ; 6EF017
+->  2EF018
+<-  1 ; 3 ; 6EF018
+->  2EF019
+<-  1 ; 3 ; 6EF019
+->  2EF01A
+<-  1 ; 3 ; 6EF01A
+->  2EF01B
+<-  1 ; 3 ; 6EF01B
+->  2EF01C
+<-  1 ; 3 ; 6EF01C
+->  2EF01D
+<-  1 ; 3 ; 6EF01D
+->  2EF01E
+<-  1 ; 3 ; 6EF01E
+->  2EF01F
+<-  1 ; 3 ; 6EF01F
+->  2EF020
+<-  1 ; 3 ; 6EF020
+->  2EF021
+<-  1 ; 3 ; 6EF021
+->  2EF022
+<-  1 ; 3 ; 6EF022
+->  2EF023
+<-  1 ; 3 ; 6EF023
+->  2EF024
+<-  1 ; 3 ; 6EF024
+->  2EF025
+<-  1 ; 3 ; 6EF025
+->  2EF026
+<-  1 ; 3 ; 6EF026
+->  2EF027
+<-  1 ; 3 ; 6EF027
+->  2EF028
+<-  1 ; 3 ; 6EF028
+->  2EF029
+<-  1 ; 3 ; 6EF029
+->  2EF02A
+<-  1 ; 3 ; 6EF02A
+->  2EF02B
+<-  1 ; 3 ; 6EF02B
+->  2EF02C
+<-  1 ; 3 ; 6EF02C
+->  2EF02D
+<-  1 ; 3 ; 6EF02D
+->  2EF02E
+<-  1 ; 3 ; 6EF02E
+->  2EF02F
+<-  1 ; 3 ; 6EF02F
+->  2EF030
+<-  1 ; 3 ; 6EF030
+->  2EF031
+<-  1 ; 3 ; 6EF031
+->  2EF032
+<-  1 ; 3 ; 6EF032
+->  2EF033
+<-  1 ; 3 ; 6EF033
+->  2EF034
+<-  1 ; 3 ; 6EF034
+->  2EF035
+<-  1 ; 3 ; 6EF035
+->  2EF036
+<-  1 ; 3 ; 6EF036
+->  2EF037
+<-  1 ; 3 ; 6EF037
+->  2EF038
+<-  1 ; 3 ; 6EF038
+->  2EF039
+<-  1 ; 3 ; 6EF039
+->  2EF03A
+<-  1 ; 3 ; 6EF03A
+->  2EF03B
+<-  1 ; 3 ; 6EF03B
+->  2EF03C
+<-  1 ; 3 ; 6EF03C
+->  2EF03D
+<-  1 ; 3 ; 6EF03D
+->  2EF03E
+<-  1 ; 3 ; 6EF03E
+->  2EF03F
+<-  1 ; 3 ; 6EF03F
+->  2EF040
+<-  1 ; 3 ; 6EF040
+->  2EF041
+<-  1 ; 3 ; 6EF041
+->  2EF0FF
+<-  1 ; 3 ; 6EF0FF
+->  2EF15A
+<-  1 ; 3 ; 6EF15A
+->  2EF187
+<-  1 ; 3 ; 6EF187
+->  2EF18C
+<-  1 ; 3 ; 6EF18C
+->  2EF18E
+<-  1 ; 3 ; 6EF18E
+->  2EF190
+<-  1 ; 3 ; 6EF190{Write;DID_F190=594b354731313556304b53313233303134} // YK5G115V0KS123014
+->  2EF191
+<-  1 ; 3 ; 6EF191{Write;DID_F191=4845583a4646463030303431} // HEX:FFF00041
+->  2EF193
+<-  1 ; 3 ; 6EF193
+->  2EF1A3
+<-  1 ; 3 ; 6EF1A3
+->  2EF1A4
+<-  1 ; 3 ; 6EF1A4
+->  2EF1A5
+<-  1 ; 3 ; 6EF1A5
+->  2EF1A7
+<-  1 ; 3 ; 6EF1A7{Write;DID_F1A7=333436363536363033} // 346656603
+->  2EF1A9
+<-  1 ; 3 ; 6EF1A9{Write;DID_F1A9=4332323041} // C220A
+->  2EF1AA
+<-  1 ; 3 ; 6EF1AA{Write;DID_F1AA=56} // V
+//------------------ DC_InputOutputControlByIdentifier_ShortTermAdjustment ------------------
+->  2F010000
+<-  1 ; 3 ; 6F0100010001
+->  2F010003
+<-  1 ; 3 ; 6F0100010001
+//------------------ DC_RoutineControl_StartRoutine ------------------
+->  31010202
+<-  1 ; 3 ; 71010202
+->  31010203
+<-  1 ; 3 ; 71010203
+->  3101FF00
+<-  1 ; 3 ; 7101FF00440000000100000001
+->  3101FF01
+<-  1 ; 3 ; 7101FF01
+//------------------ DC_RoutineControl_StopRoutine ------------------
+->  31020203
+<-  1 ; 3 ; 7102020301
+//------------------ DC_RoutineControl_RoutineResult ------------------
+->  31030203
+<-  1 ; 3 ; 7103020301
+//------------------ DC_RequestDownload ------------------
+->  340044
+<-  1 ; 3 ; 741001
+//------------------ DC_RequestUpload ------------------
+->  350044
+<-  1 ; 3 ; 751001
+//------------------ DC_TransferDataDownload ------------------
+->  36
+<-  1 ; 3 ; 7601
+//------------------ DC_TransferDataUpload ------------------
+->  36
+<-  1 ; 3 ; 760101
+//------------------ DC_RequestTransferExit ------------------
+->  37
+<-  1 ; 3 ; 77
+//------------------ DC_TesterPresent ------------------
+->  3E00
+<-  1 ; 3 ; 7E[2]
+//------------------ DC_TesterPresent_NoPosResp ------------------
+->  3E80
+<-  1 ; 1 ; null
+//------------------ DC_ControlDTCSetting ------------------
+->  8501
+<-  1 ; 3 ; C5[2]
+->  8502
+<-  1 ; 3 ; C5[2]
+//------------------ DC_ControlDTCSetting_NoPosResp ------------------
+->  8581
+<-  1 ; 1 ; null
+->  8582
+<-  1 ; 1 ; null
+
+
+//#################### ECU Header #################################
+Phys=14DA31F9
+Func=18DBFFF9
+Resp=14DAF931
+//DoipId=31
+ECUName=LL_C220A_UDS_CABECU
+Bs=64
+Stmin=24
+DefaultResp=7F[1]11
+Init; ClrDtc=false
+Init; Session=Default
+Init; ECUlocked=false
+Init; OnBoard=false
+Init; DtcActive=true
+OnBoard=100;4280;0000BC5500000101
+OnBoard=040;3500;AA002312010123AAFF
+OnBoard=050;1120;C00043001100
+OnBoard=070;9120;1000EE02020
+//------------------ DC_DiagnosticSessionControl ------------------
+->  1001 ; Session=DEFAULT
+<-  1 ; 3 ; 50[2]00010001
+->  1002 ; Session=PROGRAMMING
+<-  1 ; 3 ; 50[2]00010001
+->  1003 ; Session=EXTENDED
+<-  1 ; 3 ; 50[2]00010001
+->  1004 ; Session=SAFETY
+<-  1 ; 3 ; 50[2]00010001
+->  1040 ; Session=EOL
+<-  1 ; 3 ; 50[2]00010001
+//------------------ DC_DiagnosticSessionControl_NoPosResp ------------------
+->  1081 ; Session=DEFAULT
+<-  1 ; 1 ; null
+->  1082 ; Session=PROGRAMMING
+<-  1 ; 1 ; null
+->  1083 ; Session=EXTENDED
+<-  1 ; 1 ; null
+->  1084 ; Session=SAFETY
+<-  1 ; 1 ; null
+->  10C0 ; Session=EOL
+<-  1 ; 1 ; null
+//------------------ DC_EcuReset ------------------
+->  1101
+<-  1 ; 3 ; 51[2]
+->  1102
+<-  1 ; 3 ; 51[2]
+//------------------ DC_EcuReset_NoPosResp ------------------
+->  1181
+<-  1 ; 1 ; null
+->  1182
+<-  1 ; 1 ; null
+//------------------ DC_ClearDiagnosticInformation ------------------
+->  14FFFFFF ; ClrDtc=true
+<-  1 ; 3 ; 54
+//------------------ DC_ReadDTCInformation_ReportNumberOfDTCByStatusMask ------------------
+->  1901
+<-  1 ; 3 ; 59[2]FF010001
+//------------------ DC_ReadDTCInformation_ReportDTCByStatusMask ------------------
+->  1902
+<-  1 ; 3 ; 59[2]FF00002101
+//------------------ DC_ReadDTCInformation_ReportDTCSnapshotRecordByDTCNumber ------------------
+->  1904
+<-  1 ; 3 ; 59[2]000021010101
+//------------------ DC_ReadDataByIdentifier ------------------
+->  220100
+<-  1 ; 3 ; 620100{SIN;2;250;12;1000}
+->  22010B
+<-  1 ; 3 ; 62010B00010001540001
+->  221062
+<-  1 ; 3 ; 621062000100010001000100010001000100010001
+->  221063
+<-  1 ; 3 ; 6210630101010101010101010101010101
+->  221064
+<-  1 ; 3 ; 6210640001000100010001
+->  221065
+<-  1 ; 3 ; 6210650101010101
+->  221066
+<-  1 ; 3 ; 621066000100010001
+->  22112B
+<-  1 ; 3 ; 62112B01
+->  221600
+<-  1 ; 3 ; 621600000101
+->  221601
+<-  1 ; 3 ; 6216014901
+->  221602
+<-  1 ; 3 ; 621602010101
+->  221603
+<-  1 ; 3 ; 62160301
+->  221604
+<-  1 ; 3 ; 62160401
+->  221611
+<-  1 ; 3 ; 621611490105
+->  22F180
+<-  1 ; 3 ; 62F180{Read;F180_SoftwareIdentification="BOOT_SIM_1.0.0"}
+->  22F181
+<-  1 ; 3 ; 62F181{Read;F181_SoftwareIdentification="APPL_SIM_1.0.0"}
+->  22F182
+<-  1 ; 3 ; 62F182{Read;F182_SoftwareIdentification="DATA_SIM_1.0.0"}
+->  22F183
+<-  1 ; 3 ; 62F183{Read;F183_NumberOfFollowingFingerPrints=01}
+->  22F184
+<-  1 ; 3 ; 62F184{Read;F184_NumberOfFollowingFingerPrints=01}
+->  22F185
+<-  1 ; 3 ; 62F185{Read;F185_NumberOfFollowingFingerPrints=01}
+->  22F186
+<-  1 ; 3 ; 62F186{Read;F186_SessionNumber=01}
+->  22F187
+<-  1 ; 3 ; 62F187{Read;F187_PartNumber=0001}
+->  22F18C
+<-  1 ; 3 ; 62F18C{Read;F18C_SerialNumber="SN18C"}
+->  22F18E
+<-  1 ; 3 ; 62F18E{Read;F18E_AssemblyPartNumber="APartNo18E"}
+->  22F191
+<-  1 ; 3 ; 62F191FFF00014
+->  22F1A5
+<-  1 ; 3 ; 62F1A501
+//------------------ DC_SecurityAccessRequestSeed ------------------
+->  2701
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2703
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2705
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2707
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2709
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+//------------------ DC_SecurityAccessSendKey ------------------
+->  2702 ; SecuLevel=SECURITY_LEVEL_1
+<-  1 ; 3 ; 67[2]
+->  2704 ; SecuLevel=SECURITY_LEVEL_2
+<-  1 ; 3 ; 67[2]
+->  2706 ; SecuLevel=SECURITY_LEVEL_3
+<-  1 ; 3 ; 67[2]
+->  2708 ; SecuLevel=SECURITY_LEVEL_4
+<-  1 ; 3 ; 67[2]
+->  270A ; SecuLevel=SECURITY_LEVEL_5
+<-  1 ; 3 ; 67[2]
+//------------------ DC_CommunicationControl ------------------
+->  280001
+<-  1 ; 3 ; 68[2]
+->  280101
+<-  1 ; 3 ; 68[2]
+//------------------ DC_CommunicationControl_NoPosResp ------------------
+->  288001
+<-  1 ; 1 ; null
+->  288101
+<-  1 ; 1 ; null
+//------------------ DC_WriteDataByIdentifier ------------------
+->  2EF15A
+<-  1 ; 3 ; 6EF15A
+->  2EF187
+<-  1 ; 3 ; 6EF187
+->  2EF18C
+<-  1 ; 3 ; 6EF18C
+->  2EF18E
+<-  1 ; 3 ; 6EF18E
+->  2EF191
+<-  1 ; 3 ; 6EF191{Write;DID_F191=4845583a4646463030303536} // HEX:FFF00056
+->  2EF1A5
+<-  1 ; 3 ; 6EF1A5
+//------------------ DC_InputOutputControlByIdentifier_ShortTermAdjustment ------------------
+->  2F010000
+<-  1 ; 3 ; 6F0100010001
+->  2F010003
+<-  1 ; 3 ; 6F0100010001
+//------------------ DC_RoutineControl_StartRoutine ------------------
+->  31010202
+<-  1 ; 3 ; 71010202
+->  31010203
+<-  1 ; 3 ; 71010203
+->  3101FF00
+<-  1 ; 3 ; 7101FF00440000000100000001
+->  3101FF01
+<-  1 ; 3 ; 7101FF01
+//------------------ DC_RoutineControl_StopRoutine ------------------
+->  31020203
+<-  1 ; 3 ; 7102020301
+//------------------ DC_RoutineControl_RoutineResult ------------------
+->  31030203
+<-  1 ; 3 ; 7103020301
+//------------------ DC_RequestDownload ------------------
+->  340044
+<-  1 ; 3 ; 741001
+//------------------ DC_RequestUpload ------------------
+->  350044
+<-  1 ; 3 ; 751001
+//------------------ DC_TransferDataDownload ------------------
+->  36
+<-  1 ; 3 ; 7601
+//------------------ DC_TransferDataUpload ------------------
+->  36
+<-  1 ; 3 ; 760101
+//------------------ DC_RequestTransferExit ------------------
+->  37
+<-  1 ; 3 ; 77
+//------------------ DC_TesterPresent ------------------
+->  3E00
+<-  1 ; 3 ; 7E[2]
+//------------------ DC_TesterPresent_NoPosResp ------------------
+->  3E80
+<-  1 ; 1 ; null
+//------------------ DC_ControlDTCSetting ------------------
+->  8501
+<-  1 ; 3 ; C5[2]
+->  8502
+<-  1 ; 3 ; C5[2]
+//------------------ DC_ControlDTCSetting_NoPosResp ------------------
+->  8581
+<-  1 ; 1 ; null
+->  8582
+<-  1 ; 1 ; null
+
+
+//#################### ECU Header #################################
+Phys=18DA00F9
+Func=18DBFFF9
+Resp=18DAF900
+//DoipId=0
+ECUName=LL_C220A_UDS_ENG
+Bs=64
+Stmin=24
+DefaultResp=7F[1]11
+Init; ClrDtc=false
+Init; Session=Default
+Init; ECUlocked=false
+Init; OnBoard=false
+Init; DtcActive=true
+OnBoard=100;4280;0000BC5500000101
+OnBoard=040;3500;AA002312010123AAFF
+OnBoard=050;1120;C00043001100
+OnBoard=070;9120;1000EE02020
+//------------------ DC_DiagnosticSessionControl ------------------
+->  1001 ; Session=DEFAULT
+<-  1 ; 3 ; 50[2]00010001
+->  1002 ; Session=PROGRAMMING
+<-  1 ; 3 ; 50[2]00010001
+->  1003 ; Session=EXTENDED
+<-  1 ; 3 ; 50[2]00010001
+->  1004 ; Session=SAFETY
+<-  1 ; 3 ; 50[2]00010001
+->  1040 ; Session=EOL
+<-  1 ; 3 ; 50[2]00010001
+//------------------ DC_DiagnosticSessionControl_NoPosResp ------------------
+->  1081 ; Session=DEFAULT
+<-  1 ; 1 ; null
+->  1082 ; Session=PROGRAMMING
+<-  1 ; 1 ; null
+->  1083 ; Session=EXTENDED
+<-  1 ; 1 ; null
+->  1084 ; Session=SAFETY
+<-  1 ; 1 ; null
+->  10C0 ; Session=EOL
+<-  1 ; 1 ; null
+//------------------ DC_EcuReset ------------------
+->  1101
+<-  1 ; 3 ; 51[2]
+->  1102
+<-  1 ; 3 ; 51[2]
+//------------------ DC_EcuReset_NoPosResp ------------------
+->  1181
+<-  1 ; 1 ; null
+->  1182
+<-  1 ; 1 ; null
+//------------------ DC_ClearDiagnosticInformation ------------------
+->  14FFFFFF ; ClrDtc=true
+<-  1 ; 3 ; 54
+//------------------ DC_ReadDTCInformation_ReportNumberOfDTCByStatusMask ------------------
+->  1901
+<-  1 ; 3 ; 59[2]FF010001
+//------------------ DC_ReadDTCInformation_ReportDTCSnapshotRecordByDTCNumber ------------------
+->  1904
+<-  1 ; 3 ; 59[2]000021FF0101
+//------------------ DC_ReadDTCInformation_ReportDTCByStatusMask ------------------
+->  1902
+<-  1 ; 3 ; 59[2]FF000022FF ; ClrDtc==false
+<-  1 ; 7 ; 5902FF ; ClrDtc==true
+//------------------ DC_ReadDataByIdentifier ------------------
+->  220100
+<-  1 ; 3 ; 620100{SIN;2;250;12;1000}
+->  221134
+<-  1 ; 3 ; 621134{Read;1134_SpecificationNumber=0001}
+->  22F180
+<-  1 ; 3 ; 62F18045453453352d53494d2d424f4f54
+->  22F181
+<-  1 ; 3 ; 62F18145453453352d53494d2d4150504c
+->  22F182
+<-  1 ; 3 ; 62F18245453453352d53494d2d44415441
+->  22F183
+<-  1 ; 3 ; 62F183{Read;F183_NumberOfFollowingFingerPrints=01}
+->  22F184
+<-  1 ; 3 ; 62F184{Read;F184_NumberOfFollowingFingerPrints=01}
+->  22F185
+<-  1 ; 3 ; 62F185{Read;F185_NumberOfFollowingFingerPrints=01}
+->  22F186
+<-  1 ; 3 ; 62F186{Read;F186_SessionNumber=01}
+->  22F187
+<-  1 ; 3 ; 62F187{Read;F187_PartNumber=0001}
+->  22F18C
+<-  1 ; 3 ; 62F18C{Read;F18C_SerialNumber="SN18C"}
+->  22F18E
+<-  1 ; 3 ; 62F18E{Read;F18E_AssemblyPartNumber="APartNo18E"}
+->  22F190
+<-  1 ; 3 ; 62F190{Read;F190_VinNumber="YK5A75H00M5190021"}
+->  22F191
+<-  1 ; 3 ; 62F191FFF00018
+->  22F192
+<-  1 ; 3 ; 62F192{Read;F192_HardwareIdentification="192"}
+->  22F1A7
+<-  1 ; 3 ; 62F1A7{Read;F1A7_VehicleModel="64248800"}
+->  22F1A9
+<-  1 ; 3 ; 62F1A9{Read;F1A9_VehiclePlatform="C220A"}
+->  22F1AA
+<-  1 ; 3 ; 62F1AA{Read;F1AA_VehicleBrand="V"}
+//------------------ DC_SecurityAccessRequestSeed ------------------
+->  2701
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2703
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2705
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2707
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2709
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+//------------------ DC_SecurityAccessSendKey ------------------
+->  2702 ; SecuLevel=SECURITY_LEVEL_1
+<-  1 ; 3 ; 67[2]
+->  2704 ; SecuLevel=SECURITY_LEVEL_2
+<-  1 ; 3 ; 67[2]
+->  2706 ; SecuLevel=SECURITY_LEVEL_3
+<-  1 ; 3 ; 67[2]
+->  2708 ; SecuLevel=SECURITY_LEVEL_4
+<-  1 ; 3 ; 67[2]
+->  270A ; SecuLevel=SECURITY_LEVEL_5
+<-  1 ; 3 ; 67[2]
+//------------------ DC_CommunicationControl ------------------
+->  280001
+<-  1 ; 3 ; 68[2]
+->  280101
+<-  1 ; 3 ; 68[2]
+//------------------ DC_CommunicationControl_NoPosResp ------------------
+->  288001
+<-  1 ; 1 ; null
+->  288101
+<-  1 ; 1 ; null
+//------------------ DC_WriteDataByIdentifier ------------------
+->  2EF15A
+<-  1 ; 3 ; 6EF15A
+->  2EF187
+<-  1 ; 3 ; 6EF187{Write;DID_F187;0;20}
+->  2EF18C
+<-  1 ; 3 ; 6EF18C{Write;DID_F18C;0;32}
+->  2EF18E
+<-  1 ; 3 ; 6EF18E{Write;DID_F18E;0;20}
+->  2EF190
+<-  1 ; 3 ; 6EF190{Write;DID_F190=594b354731313556304b53313233303134} // YK5G115V0KS123014
+->  2EF191
+<-  1 ; 3 ; 6EF191{Write;DID_F191=4845583a4646463030303138} // HEX:FFF00018
+->  2EF1A7
+<-  1 ; 3 ; 6EF1A7{Write;DID_F1A7=333436363536363033} // 346656603
+->  2EF1A9
+<-  1 ; 3 ; 6EF1A9{Write;DID_F1A9=4332323041} // C220A
+->  2EF1AA
+<-  1 ; 3 ; 6EF1AA{Write;DID_F1AA=56} // V
+//------------------ DC_InputOutputControlByIdentifier_ShortTermAdjustment ------------------
+->  2F010000
+<-  1 ; 3 ; 6F0100010001
+->  2F010003
+<-  1 ; 3 ; 6F0100010001
+//------------------ DC_RoutineControl_StartRoutine ------------------
+->  31010202
+<-  1 ; 3 ; 71010202
+->  31010203
+<-  1 ; 3 ; 71010203
+->  3101FF00
+<-  1 ; 3 ; 7101FF00440000000100000001
+->  3101FF01
+<-  1 ; 3 ; 7101FF01
+//------------------ DC_RoutineControl_StopRoutine ------------------
+->  31020203
+<-  1 ; 3 ; 7102020301
+//------------------ DC_RoutineControl_RoutineResult ------------------
+->  31030203
+<-  1 ; 3 ; 7103020301
+//------------------ DC_RequestDownload ------------------
+->  340044
+<-  1 ; 3 ; 741001
+//------------------ DC_RequestUpload ------------------
+->  350044
+<-  1 ; 3 ; 751001
+//------------------ DC_TransferDataDownload ------------------
+->  36
+<-  1 ; 3 ; 7601
+//------------------ DC_TransferDataUpload ------------------
+->  36
+<-  1 ; 3 ; 760101
+//------------------ DC_RequestTransferExit ------------------
+->  37
+<-  1 ; 3 ; 77
+//------------------ DC_TesterPresent ------------------
+->  3E00
+<-  1 ; 3 ; 7E[2]
+//------------------ DC_TesterPresent_NoPosResp ------------------
+->  3E80
+<-  1 ; 1 ; null
+//------------------ DC_ControlDTCSetting ------------------
+->  8501
+<-  1 ; 3 ; C5[2]
+->  8502
+<-  1 ; 3 ; C5[2]
+//------------------ DC_ControlDTCSetting_NoPosResp ------------------
+->  8581
+<-  1 ; 1 ; null
+->  8582
+<-  1 ; 1 ; null
+
+
+//#################### ECU Header #################################
+Phys=14DA08F9
+Func=18DBFFF9
+Resp=14DAF908
+//DoipId=8
+ECUName=LL_C220A_UDS_TR1
+Bs=64
+Stmin=24
+DefaultResp=7F[1]11
+Init; ClrDtc=false
+Init; Session=Default
+Init; ECUlocked=false
+Init; OnBoard=false
+Init; DtcActive=true
+OnBoard=100;4280;0000BC5500000101
+OnBoard=040;3500;AA002312010123AAFF
+OnBoard=050;1120;C00043001100
+OnBoard=070;9120;1000EE02020
+//------------------ DC_DiagnosticSessionControl ------------------
+->  1001 ; Session=DEFAULT
+<-  1 ; 3 ; 50[2]00010001
+->  1002 ; Session=PROGRAMMING
+<-  1 ; 3 ; 50[2]00010001
+->  1003 ; Session=EXTENDED
+<-  1 ; 3 ; 50[2]00010001
+->  1004 ; Session=SAFETY
+<-  1 ; 3 ; 50[2]00010001
+->  1040 ; Session=EOL
+<-  1 ; 3 ; 50[2]00010001
+//------------------ DC_DiagnosticSessionControl_NoPosResp ------------------
+->  1081 ; Session=DEFAULT
+<-  1 ; 1 ; null
+->  1082 ; Session=PROGRAMMING
+<-  1 ; 1 ; null
+->  1083 ; Session=EXTENDED
+<-  1 ; 1 ; null
+->  1084 ; Session=SAFETY
+<-  1 ; 1 ; null
+->  10C0 ; Session=EOL
+<-  1 ; 1 ; null
+//------------------ DC_EcuReset ------------------
+->  1101
+<-  1 ; 3 ; 51[2]
+->  1102
+<-  1 ; 3 ; 51[2]
+//------------------ DC_EcuReset_NoPosResp ------------------
+->  1181
+<-  1 ; 1 ; null
+->  1182
+<-  1 ; 1 ; null
+//------------------ DC_ClearDiagnosticInformation ------------------
+->  14FFFFFF ; ClrDtc=true
+<-  1 ; 3 ; 54
+//------------------ DC_ReadDTCInformation_ReportNumberOfDTCByStatusMask ------------------
+->  1901
+<-  1 ; 3 ; 59[2]FF010001
+//------------------ DC_ReadDTCInformation_ReportDTCSnapshotRecordByDTCNumber ------------------
+->  1904
+<-  1 ; 3 ; 59[2]000021010101
+//------------------ DC_ReadDTCInformation_ReportDTCByStatusMask ------------------
+->  1902
+<-  1 ; 3 ; 59[2]FF00002101
+//------------------ DC_ReadDataByIdentifier ------------------
+->  220100
+<-  1 ; 3 ; 620100{SIN;2;250;12;1000}
+->  221011
+<-  1 ; 3 ; 62101100000001
+->  221061
+<-  1 ; 3 ; 621061000101010001
+->  221062
+<-  1 ; 3 ; 621062000100010001000100010001000100010001
+->  221063
+<-  1 ; 3 ; 621063010101010101010101010101010101010101
+->  221064
+<-  1 ; 3 ; 6210640001000100010001
+->  221065
+<-  1 ; 3 ; 6210650101010101
+->  221066
+<-  1 ; 3 ; 621066000100010001
+->  221067
+<-  1 ; 3 ; 62106701010001010101010101010101
+->  221068
+<-  1 ; 3 ; 62106801010001010001
+->  221069
+<-  1 ; 3 ; 621069010100010001010101010101000101
+->  22106A
+<-  1 ; 3 ; 62106A010100010101010100010001000100010101010101000101
+->  22106B
+<-  1 ; 3 ; 62106B0101000101010101010001
+->  22D201
+<-  1 ; 3 ; 62D2010000000100000001000000010000000100000001000000010000000100000001
+->  22D202
+<-  1 ; 3 ; 62D2020000000100000001000000010000000100000001000000010000000100000001
+->  22D203
+<-  1 ; 3 ; 62D2030000000100000001000000010000000100000001000000010000000100000001
+->  22D204
+<-  1 ; 3 ; 62D2040000000100000001000000010000000100000001000000010000000100000001
+->  22F100
+<-  1 ; 3 ; 62F10000000001
+->  22F101
+<-  1 ; 3 ; 62F10100010001
+->  22F102
+<-  1 ; 3 ; 62F102000001000001000001000001000001
+->  22F103
+<-  1 ; 3 ; 62F10301000001
+->  22F104
+<-  1 ; 3 ; 62F104000101010101
+->  22F105
+<-  1 ; 3 ; 62F105000001
+->  22F180
+<-  1 ; 3 ; 62F180{Read;F180_SoftwareIdentification="BOOT_SIM_1.0.0"}
+->  22F181
+<-  1 ; 3 ; 62F181{Read;F181_SoftwareIdentification="APPL_SIM_1.0.0"}
+->  22F182
+<-  1 ; 3 ; 62F182{Read;F182_SoftwareIdentification="DATA_SIM_1.0.0"}
+->  22F183
+<-  1 ; 3 ; 62F183{Read;F183_NumberOfFollowingFingerPrints=01}
+->  22F184
+<-  1 ; 3 ; 62F184{Read;F184_NumberOfFollowingFingerPrints=01}
+->  22F185
+<-  1 ; 3 ; 62F185{Read;F185_NumberOfFollowingFingerPrints=01}
+->  22F186
+<-  1 ; 3 ; 62F186{Read;F186_SessionNumber=01}
+->  22F187
+<-  1 ; 3 ; 62F187{Read;F187_PartNumber=0001}
+->  22F188
+<-  1 ; 3 ; 62F188{Read;F188_SoftwareIdentification="0188"}
+->  22F18C
+<-  1 ; 3 ; 62F18C{Read;F18C_SerialNumber="SN18C"}
+->  22F18E
+<-  1 ; 3 ; 62F18E{Read;F18E_AssemblyPartNumber="APartNo18E"}
+->  22F190
+<-  1 ; 3 ; 62F190{Read;F190_VinNumber="YK5A75H00M5190021"}
+->  22F191
+<-  1 ; 3 ; 62F191FFF00042
+->  22F193
+<-  1 ; 3 ; 62F193000101
+->  22F1A5
+<-  1 ; 3 ; 62F1A501
+->  22F1A9
+<-  1 ; 3 ; 62F1A9{Read;F1A9_VehiclePlatform="C220A"}
+->  22F1AA
+<-  1 ; 3 ; 62F1AA{Read;F1AA_VehicleBrand="V"}
+//------------------ DC_SecurityAccessRequestSeed ------------------
+->  2701
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2703
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2705
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2707
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2709
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+//------------------ DC_SecurityAccessSendKey ------------------
+->  2702 ; SecuLevel=SECURITY_LEVEL_1
+<-  1 ; 3 ; 67[2]
+->  2704 ; SecuLevel=SECURITY_LEVEL_2
+<-  1 ; 3 ; 67[2]
+->  2706 ; SecuLevel=SECURITY_LEVEL_3
+<-  1 ; 3 ; 67[2]
+->  2708 ; SecuLevel=SECURITY_LEVEL_4
+<-  1 ; 3 ; 67[2]
+->  270A ; SecuLevel=SECURITY_LEVEL_5
+<-  1 ; 3 ; 67[2]
+//------------------ DC_CommunicationControl ------------------
+->  280001
+<-  1 ; 3 ; 68[2]
+->  280101
+<-  1 ; 3 ; 68[2]
+//------------------ DC_CommunicationControl_NoPosResp ------------------
+->  288001
+<-  1 ; 1 ; null
+->  288101
+<-  1 ; 1 ; null
+//------------------ DC_WriteDataByIdentifier ------------------
+->  2EF15A
+<-  1 ; 3 ; 6EF15A
+->  2EF187
+<-  1 ; 3 ; 6EF187
+->  2EF18E
+<-  1 ; 3 ; 6EF18E
+->  2EF190
+<-  1 ; 3 ; 6EF190{Write;DID_F190=594b354731313556304b53313233303134} // YK5G115V0KS123014
+->  2EF191
+<-  1 ; 3 ; 6EF191{Write;DID_F191=4845583a4646463030303536} // HEX:FFF00056
+->  2EF1A5
+<-  1 ; 3 ; 6EF1A5
+->  2EF1A9
+<-  1 ; 3 ; 6EF1A9{Write;DID_F1A9=4332323041} // C220A
+->  2EF1AA
+<-  1 ; 3 ; 6EF1AA{Write;DID_F1AA=56} // V
+//------------------ DC_InputOutputControlByIdentifier_ShortTermAdjustment ------------------
+->  2F010000
+<-  1 ; 3 ; 6F0100010001
+->  2F010003
+<-  1 ; 3 ; 6F0100010001
+//------------------ DC_RoutineControl_StartRoutine ------------------
+->  31010202
+<-  1 ; 3 ; 71010202
+->  31010203
+<-  1 ; 3 ; 71010203
+->  3101FF00
+<-  1 ; 3 ; 7101FF00440000000100000001
+->  3101FF01
+<-  1 ; 3 ; 7101FF01
+//------------------ DC_RoutineControl_StopRoutine ------------------
+->  31020203
+<-  1 ; 3 ; 7102020301
+//------------------ DC_RoutineControl_RoutineResult ------------------
+->  31030203
+<-  1 ; 3 ; 7103020301
+//------------------ DC_RequestDownload ------------------
+->  340044
+<-  1 ; 3 ; 741001
+//------------------ DC_RequestUpload ------------------
+->  350044
+<-  1 ; 3 ; 751001
+//------------------ DC_TransferDataDownload ------------------
+->  36
+<-  1 ; 3 ; 7601
+//------------------ DC_TransferDataUpload ------------------
+->  36
+<-  1 ; 3 ; 760101
+//------------------ DC_RequestTransferExit ------------------
+->  37
+<-  1 ; 3 ; 77
+//------------------ DC_TesterPresent ------------------
+->  3E00
+<-  1 ; 3 ; 7E[2]
+//------------------ DC_TesterPresent_NoPosResp ------------------
+->  3E80
+<-  1 ; 1 ; null
+//------------------ DC_ControlDTCSetting ------------------
+->  8501
+<-  1 ; 3 ; C5[2]
+->  8502
+<-  1 ; 3 ; C5[2]
+//------------------ DC_ControlDTCSetting_NoPosResp ------------------
+->  8581
+<-  1 ; 1 ; null
+->  8582
+<-  1 ; 1 ; null
+
+
+//#################### ECU Header #################################
+Phys=14DA07F9
+Func=18DBFFF9
+Resp=14DAF907
+//DoipId=7
+ECUName=LL_C220A_UDS_TR2
+Bs=64
+Stmin=24
+DefaultResp=7F[1]11
+Init; ClrDtc=false
+Init; Session=Default
+Init; ECUlocked=false
+Init; OnBoard=false
+Init; DtcActive=true
+OnBoard=100;4280;0000BC5500000101
+OnBoard=040;3500;AA002312010123AAFF
+OnBoard=050;1120;C00043001100
+OnBoard=070;9120;1000EE02020
+//------------------ DC_DiagnosticSessionControl ------------------
+->  1001 ; Session=DEFAULT
+<-  1 ; 3 ; 50[2]00010001
+->  1002 ; Session=PROGRAMMING
+<-  1 ; 3 ; 50[2]00010001
+->  1003 ; Session=EXTENDED
+<-  1 ; 3 ; 50[2]00010001
+->  1004 ; Session=SAFETY
+<-  1 ; 3 ; 50[2]00010001
+->  1040 ; Session=EOL
+<-  1 ; 3 ; 50[2]00010001
+//------------------ DC_DiagnosticSessionControl_NoPosResp ------------------
+->  1081 ; Session=DEFAULT
+<-  1 ; 1 ; null
+->  1082 ; Session=PROGRAMMING
+<-  1 ; 1 ; null
+->  1083 ; Session=EXTENDED
+<-  1 ; 1 ; null
+->  1084 ; Session=SAFETY
+<-  1 ; 1 ; null
+->  10C0 ; Session=EOL
+<-  1 ; 1 ; null
+//------------------ DC_EcuReset ------------------
+->  1101
+<-  1 ; 3 ; 51[2]
+->  1102
+<-  1 ; 3 ; 51[2]
+//------------------ DC_EcuReset_NoPosResp ------------------
+->  1181
+<-  1 ; 1 ; null
+->  1182
+<-  1 ; 1 ; null
+//------------------ DC_ClearDiagnosticInformation ------------------
+->  14FFFFFF ; ClrDtc=true
+<-  1 ; 3 ; 54
+//------------------ DC_ReadDTCInformation_ReportNumberOfDTCByStatusMask ------------------
+->  1901
+<-  1 ; 3 ; 59[2]FF010001
+//------------------ DC_ReadDTCInformation_ReportDTCSnapshotRecordByDTCNumber ------------------
+->  1904
+<-  1 ; 3 ; 59[2]000021010101
+//------------------ DC_ReadDTCInformation_ReportDTCByStatusMask ------------------
+->  1902
+<-  1 ; 3 ; 59[2]FF00002101
+//------------------ DC_ReadDataByIdentifier ------------------
+->  220100
+<-  1 ; 3 ; 620100{SIN;2;250;12;1000}
+->  221011
+<-  1 ; 3 ; 62101100000001
+->  221061
+<-  1 ; 3 ; 621061000101010001
+->  221062
+<-  1 ; 3 ; 621062000100010001000100010001000100010001
+->  221063
+<-  1 ; 3 ; 621063010101010101010101010101010101010101
+->  221064
+<-  1 ; 3 ; 6210640001000100010001
+->  221065
+<-  1 ; 3 ; 6210650101010101
+->  221066
+<-  1 ; 3 ; 621066000100010001
+->  221067
+<-  1 ; 3 ; 62106701000101010001010101
+->  221068
+<-  1 ; 3 ; 62106801000101010101
+->  221069
+<-  1 ; 3 ; 62106901000101010101000101010001000101000100010101
+->  22106A
+<-  1 ; 3 ; 62106A0101010101010101
+->  22106B
+<-  1 ; 3 ; 62106B000100010100010101010101010001010100010101
+->  22106C
+<-  1 ; 3 ; 62106C01000100010101
+->  22D201
+<-  1 ; 3 ; 62D2010000000100000001000000010000000100000001000000010000000100000001
+->  22D202
+<-  1 ; 3 ; 62D2020000000100000001000000010000000100000001000000010000000100000001
+->  22D203
+<-  1 ; 3 ; 62D2030000000100000001000000010000000100000001000000010000000100000001
+->  22D204
+<-  1 ; 3 ; 62D2040000000100000001000000010000000100000001000000010000000100000001
+->  22F180
+<-  1 ; 3 ; 62F180{Read;F180_SoftwareIdentification="BOOT_SIM_1.0.0"}
+->  22F181
+<-  1 ; 3 ; 62F181{Read;F181_SoftwareIdentification="APPL_SIM_1.0.0"}
+->  22F182
+<-  1 ; 3 ; 62F182{Read;F182_SoftwareIdentification="DATA_SIM_1.0.0"}
+->  22F183
+<-  1 ; 3 ; 62F183{Read;F183_NumberOfFollowingFingerPrints=01}
+->  22F184
+<-  1 ; 3 ; 62F184{Read;F184_NumberOfFollowingFingerPrints=01}
+->  22F185
+<-  1 ; 3 ; 62F185{Read;F185_NumberOfFollowingFingerPrints=01}
+->  22F186
+<-  1 ; 3 ; 62F186{Read;F186_SessionNumber=01}
+->  22F187
+<-  1 ; 3 ; 62F187{Read;F187_PartNumber=0001}
+->  22F18C
+<-  1 ; 3 ; 62F18C{Read;F18C_SerialNumber="SN18C"}
+->  22F18E
+<-  1 ; 3 ; 62F18E{Read;F18E_AssemblyPartNumber="APartNo18E"}
+->  22F190
+<-  1 ; 3 ; 62F190{Read;F190_VinNumber="YK5A75H00M5190021"}
+->  22F191
+<-  1 ; 3 ; 62F191FFF00042
+->  22F1A5
+<-  1 ; 3 ; 62F1A501
+->  22F1A9
+<-  1 ; 3 ; 62F1A9{Read;F1A9_VehiclePlatform="C220A"}
+->  22F1AA
+<-  1 ; 3 ; 62F1AA{Read;F1AA_VehicleBrand="V"}
+//------------------ DC_SecurityAccessRequestSeed ------------------
+->  2701
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2703
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2705
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2707
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2709
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+//------------------ DC_SecurityAccessSendKey ------------------
+->  2702 ; SecuLevel=SECURITY_LEVEL_1
+<-  1 ; 3 ; 67[2]
+->  2704 ; SecuLevel=SECURITY_LEVEL_2
+<-  1 ; 3 ; 67[2]
+->  2706 ; SecuLevel=SECURITY_LEVEL_3
+<-  1 ; 3 ; 67[2]
+->  2708 ; SecuLevel=SECURITY_LEVEL_4
+<-  1 ; 3 ; 67[2]
+->  270A ; SecuLevel=SECURITY_LEVEL_5
+<-  1 ; 3 ; 67[2]
+//------------------ DC_CommunicationControl ------------------
+->  280001
+<-  1 ; 3 ; 68[2]
+->  280101
+<-  1 ; 3 ; 68[2]
+//------------------ DC_CommunicationControl_NoPosResp ------------------
+->  288001
+<-  1 ; 1 ; null
+->  288101
+<-  1 ; 1 ; null
+//------------------ DC_WriteDataByIdentifier ------------------
+->  2EF15A
+<-  1 ; 3 ; 6EF15A
+->  2EF187
+<-  1 ; 3 ; 6EF187
+->  2EF18E
+<-  1 ; 3 ; 6EF18E
+->  2EF190
+<-  1 ; 3 ; 6EF190{Write;DID_F190=594b354731313556304b53313233303134} // YK5G115V0KS123014
+->  2EF1A5
+<-  1 ; 3 ; 6EF1A5
+->  2EF1A9
+<-  1 ; 3 ; 6EF1A9{Write;DID_F1A9=4332323041} // C220A
+->  2EF1AA
+<-  1 ; 3 ; 6EF1AA{Write;DID_F1AA=56} // V
+//------------------ DC_InputOutputControlByIdentifier_ShortTermAdjustment ------------------
+->  2F010000
+<-  1 ; 3 ; 6F0100010001
+->  2F010003
+<-  1 ; 3 ; 6F0100010001
+//------------------ DC_RoutineControl_StartRoutine ------------------
+->  31010202
+<-  1 ; 3 ; 71010202
+->  31010203
+<-  1 ; 3 ; 71010203
+->  3101FF00
+<-  1 ; 3 ; 7101FF00440000000100000001
+->  3101FF01
+<-  1 ; 3 ; 7101FF01
+//------------------ DC_RoutineControl_StopRoutine ------------------
+->  31020203
+<-  1 ; 3 ; 7102020301
+//------------------ DC_RoutineControl_RoutineResult ------------------
+->  31030203
+<-  1 ; 3 ; 7103020301
+//------------------ DC_RequestDownload ------------------
+->  340044
+<-  1 ; 3 ; 741001
+//------------------ DC_RequestUpload ------------------
+->  350044
+<-  1 ; 3 ; 751001
+//------------------ DC_TransferDataDownload ------------------
+->  36
+<-  1 ; 3 ; 7601
+//------------------ DC_TransferDataUpload ------------------
+->  36
+<-  1 ; 3 ; 760101
+//------------------ DC_RequestTransferExit ------------------
+->  37
+<-  1 ; 3 ; 77
+//------------------ DC_TesterPresent ------------------
+->  3E00
+<-  1 ; 3 ; 7E[2]
+//------------------ DC_TesterPresent_NoPosResp ------------------
+->  3E80
+<-  1 ; 1 ; null
+//------------------ DC_ControlDTCSetting ------------------
+->  8501
+<-  1 ; 3 ; C5[2]
+->  8502
+<-  1 ; 3 ; C5[2]
+//------------------ DC_ControlDTCSetting_NoPosResp ------------------
+->  8581
+<-  1 ; 1 ; null
+->  8582
+<-  1 ; 1 ; null
+
+
+//#################### ECU Header #################################
+Phys=18DA05F9
+Func=18DBFFF9
+Resp=18DAF905
+//DoipId=5
+ECUName=LL_C220A_UDS_IOEM
+Bs=64
+Stmin=24
+DefaultResp=7F[1]11
+Init; ClrDtc=false
+Init; Session=Default
+Init; ECUlocked=false
+Init; OnBoard=false
+Init; DtcActive=true
+OnBoard=100;4280;0000BC5500000101
+OnBoard=040;3500;AA002312010123AAFF
+OnBoard=050;1120;C00043001100
+OnBoard=070;9120;1000EE02020
+//------------------ DC_DiagnosticSessionControl ------------------
+->  1001 ; Session=DEFAULT
+<-  1 ; 3 ; 50[2]00010001
+->  1002 ; Session=PROGRAMMING
+<-  1 ; 3 ; 50[2]00010001
+->  1003 ; Session=EXTENDED
+<-  1 ; 3 ; 50[2]00010001
+->  1004 ; Session=SAFETY
+<-  1 ; 3 ; 50[2]00010001
+->  1040 ; Session=EOL
+<-  1 ; 3 ; 50[2]00010001
+//------------------ DC_DiagnosticSessionControl_NoPosResp ------------------
+->  1081 ; Session=DEFAULT
+<-  1 ; 1 ; null
+->  1082 ; Session=PROGRAMMING
+<-  1 ; 1 ; null
+->  1083 ; Session=EXTENDED
+<-  1 ; 1 ; null
+->  1084 ; Session=SAFETY
+<-  1 ; 1 ; null
+->  10C0 ; Session=EOL
+<-  1 ; 1 ; null
+//------------------ DC_EcuReset ------------------
+->  1101
+<-  1 ; 3 ; 51[2]
+->  1102
+<-  1 ; 3 ; 51[2]
+//------------------ DC_EcuReset_NoPosResp ------------------
+->  1181
+<-  1 ; 1 ; null
+->  1182
+<-  1 ; 1 ; null
+//------------------ DC_ClearDiagnosticInformation ------------------
+->  14FFFFFF ; ClrDtc=true
+<-  1 ; 3 ; 54
+//------------------ DC_ReadDTCInformation_ReportNumberOfDTCByStatusMask ------------------
+->  1901
+<-  1 ; 3 ; 59[2]FF010001
+//------------------ DC_ReadDTCInformation_ReportDTCByStatusMask ------------------
+->  1902
+<-  1 ; 3 ; 59[2]FF00002101
+//------------------ DC_ReadDTCInformation_ReportDTCSnapshotRecordByDTCNumber ------------------
+->  1904
+<-  1 ; 3 ; 59[2]000021010101
+//------------------ DC_ReadDataByIdentifier ------------------
+->  220100
+<-  1 ; 3 ; 620100{SIN;2;250;12;1000}
+->  221505
+<-  1 ; 3 ; 62150501
+->  221506
+<-  1 ; 3 ; 62150601
+->  221521
+<-  1 ; 3 ; 62152100010001000100010001
+->  221522
+<-  1 ; 3 ; 62152200010001000100010001
+->  22A800
+<-  1 ; 3 ; 62A80000010001000100010001000100010001
+->  22A801
+<-  1 ; 3 ; 62A80101010101
+->  22A802
+<-  1 ; 3 ; 62A80200010001
+->  22B000
+<-  1 ; 3 ; 62B000000101
+->  22B001
+<-  1 ; 3 ; 62B001000101
+->  22B002
+<-  1 ; 3 ; 62B002000101
+->  22B004
+<-  1 ; 3 ; 62B004000101000101
+->  22B02C
+<-  1 ; 3 ; 62B02C000100010101000100010101
+->  22F180
+<-  1 ; 3 ; 62F180{Read;F180_SoftwareIdentification="BOOT_SIM_1.0.0"}
+->  22F181
+<-  1 ; 3 ; 62F181{Read;F181_SoftwareIdentification="APPL_SIM_1.0.0"}
+->  22F182
+<-  1 ; 3 ; 62F182{Read;F182_SoftwareIdentification="DATA_SIM_1.0.0"}
+->  22F183
+<-  1 ; 3 ; 62F183{Read;F183_NumberOfFollowingFingerPrints=01}
+->  22F184
+<-  1 ; 3 ; 62F184{Read;F184_NumberOfFollowingFingerPrints=01}
+->  22F185
+<-  1 ; 3 ; 62F185{Read;F185_NumberOfFollowingFingerPrints=01}
+->  22F186
+<-  1 ; 3 ; 62F186{Read;F186_SessionNumber=01}
+->  22F187
+<-  1 ; 3 ; 62F187{Read;F187_PartNumber=0001}
+->  22F18C
+<-  1 ; 3 ; 62F18C{Read;F18C_SerialNumber="SN18C"}
+->  22F18E
+<-  1 ; 3 ; 62F18E{Read;F18E_AssemblyPartNumber="APartNo18E"}
+->  22F190
+<-  1 ; 3 ; 62F190{Read;F190_VinNumber="YK5A75H00M5190021"}
+->  22F191
+<-  1 ; 3 ; 62F191FFF0001E
+->  22F1A5
+<-  1 ; 3 ; 62F1A501
+->  22F1A7
+<-  1 ; 3 ; 62F1A7{Read;F1A7_VehicleModel="64248800"}
+->  22F1A9
+<-  1 ; 3 ; 62F1A9{Read;F1A9_VehiclePlatform="C220A"}
+->  22F1AA
+<-  1 ; 3 ; 62F1AA{Read;F1AA_VehicleBrand="V"}
+//------------------ DC_SecurityAccessRequestSeed ------------------
+->  2701
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2703
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2705
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2707
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2709
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+//------------------ DC_SecurityAccessSendKey ------------------
+->  2702 ; SecuLevel=SECURITY_LEVEL_1
+<-  1 ; 3 ; 67[2]
+->  2704 ; SecuLevel=SECURITY_LEVEL_2
+<-  1 ; 3 ; 67[2]
+->  2706 ; SecuLevel=SECURITY_LEVEL_3
+<-  1 ; 3 ; 67[2]
+->  2708 ; SecuLevel=SECURITY_LEVEL_4
+<-  1 ; 3 ; 67[2]
+->  270A ; SecuLevel=SECURITY_LEVEL_5
+<-  1 ; 3 ; 67[2]
+//------------------ DC_CommunicationControl ------------------
+->  280001
+<-  1 ; 3 ; 68[2]
+->  280101
+<-  1 ; 3 ; 68[2]
+//------------------ DC_CommunicationControl_NoPosResp ------------------
+->  288001
+<-  1 ; 1 ; null
+->  288101
+<-  1 ; 1 ; null
+//------------------ DC_WriteDataByIdentifier ------------------
+->  2E1521
+<-  1 ; 3 ; 6E1521
+->  2E1522
+<-  1 ; 3 ; 6E1522
+->  2EF15A
+<-  1 ; 3 ; 6EF15A
+->  2EF187
+<-  1 ; 3 ; 6EF187
+->  2EF18C
+<-  1 ; 3 ; 6EF18C
+->  2EF18E
+<-  1 ; 3 ; 6EF18E
+->  2EF190
+<-  1 ; 3 ; 6EF190{Write;DID_F190=594b354731313556304b53313233303134} // YK5G115V0KS123014
+->  2EF191
+<-  1 ; 3 ; 6EF191{Write;DID_F191=4845583a4646463030303539} // HEX:FFF00059
+->  2EF1A5
+<-  1 ; 3 ; 6EF1A5
+->  2EF1A7
+<-  1 ; 3 ; 6EF1A7{Write;DID_F1A7=333436363536363033} // 346656603
+->  2EF1A9
+<-  1 ; 3 ; 6EF1A9{Write;DID_F1A9=4332323041} // C220A
+->  2EF1AA
+<-  1 ; 3 ; 6EF1AA{Write;DID_F1AA=56} // V
+//------------------ DC_InputOutputControlByIdentifier_ShortTermAdjustment ------------------
+->  2F010000
+<-  1 ; 3 ; 6F0100010001
+->  2F010003
+<-  1 ; 3 ; 6F0100010001
+//------------------ DC_RoutineControl_StartRoutine ------------------
+->  31010202
+<-  1 ; 3 ; 71010202
+->  31010203
+<-  1 ; 3 ; 71010203
+->  31011505
+<-  1 ; 3 ; 710115050101
+->  31011506
+<-  1 ; 3 ; 710115060101
+->  3101FF00
+<-  1 ; 3 ; 7101FF00440000000100000001
+->  3101FF01
+<-  1 ; 3 ; 7101FF01
+//------------------ DC_RoutineControl_StopRoutine ------------------
+->  31021505
+<-  1 ; 3 ; 710215050001
+->  31021506
+<-  1 ; 3 ; 710215060001
+//------------------ DC_RoutineControl_RoutineResult ------------------
+->  31031505
+<-  1 ; 3 ; 710315050001
+->  31031506
+<-  1 ; 3 ; 710315060001
+//------------------ DC_RequestDownload ------------------
+->  340044
+<-  1 ; 3 ; 741001
+//------------------ DC_RequestUpload ------------------
+->  350044
+<-  1 ; 3 ; 751001
+//------------------ DC_TransferDataDownload ------------------
+->  36
+<-  1 ; 3 ; 7601
+//------------------ DC_TransferDataUpload ------------------
+->  36
+<-  1 ; 3 ; 760101
+//------------------ DC_RequestTransferExit ------------------
+->  37
+<-  1 ; 3 ; 77
+//------------------ DC_TesterPresent ------------------
+->  3E00
+<-  1 ; 3 ; 7E[2]
+//------------------ DC_TesterPresent_NoPosResp ------------------
+->  3E80
+<-  1 ; 1 ; null
+//------------------ DC_ControlDTCSetting ------------------
+->  8501
+<-  1 ; 3 ; C5[2]
+->  8502
+<-  1 ; 3 ; C5[2]
+//------------------ DC_ControlDTCSetting_NoPosResp ------------------
+->  8581
+<-  1 ; 1 ; null
+->  8582
+<-  1 ; 1 ; null
+
+
+//#################### ECU Header #################################
+Phys=18DA87F9
+Func=18DBFFF9
+Resp=18DAF987
+//DoipId=87
+ECUName=LL_C220A_UDS_AV1F
+Bs=64
+Stmin=24
+DefaultResp=7F[1]11
+Init; ClrDtc=false
+Init; Session=Default
+Init; ECUlocked=false
+Init; OnBoard=false
+Init; DtcActive=true
+OnBoard=100;4280;0000BC5500000101
+OnBoard=040;3500;AA002312010123AAFF
+OnBoard=050;1120;C00043001100
+OnBoard=070;9120;1000EE02020
+//------------------ DC_DiagnosticSessionControl ------------------
+->  1001 ; Session=DEFAULT
+<-  1 ; 3 ; 50[2]00010001
+->  1002 ; Session=PROGRAMMING
+<-  1 ; 3 ; 50[2]00010001
+->  1003 ; Session=EXTENDED
+<-  1 ; 3 ; 50[2]00010001
+->  1004 ; Session=SAFETY
+<-  1 ; 3 ; 50[2]00010001
+->  1040 ; Session=EOL
+<-  1 ; 3 ; 50[2]00010001
+//------------------ DC_DiagnosticSessionControl_NoPosResp ------------------
+->  1081 ; Session=DEFAULT
+<-  1 ; 1 ; null
+->  1082 ; Session=PROGRAMMING
+<-  1 ; 1 ; null
+->  1083 ; Session=EXTENDED
+<-  1 ; 1 ; null
+->  1084 ; Session=SAFETY
+<-  1 ; 1 ; null
+->  10C0 ; Session=EOL
+<-  1 ; 1 ; null
+//------------------ DC_EcuReset ------------------
+->  1101
+<-  1 ; 3 ; 51[2]
+->  1102
+<-  1 ; 3 ; 51[2]
+//------------------ DC_EcuReset_NoPosResp ------------------
+->  1181
+<-  1 ; 1 ; null
+->  1182
+<-  1 ; 1 ; null
+//------------------ DC_ClearDiagnosticInformation ------------------
+->  14FFFFFF ; ClrDtc=true
+<-  1 ; 3 ; 54
+//------------------ DC_ReadDTCInformation_ReportNumberOfDTCByStatusMask ------------------
+->  1901
+<-  1 ; 3 ; 59[2]FF010001
+//------------------ DC_ReadDTCInformation_ReportDTCByStatusMask ------------------
+->  1902
+<-  1 ; 3 ; 59[2]FF00002101
+//------------------ DC_ReadDTCInformation_ReportDTCSnapshotRecordByDTCNumber ------------------
+->  1904
+<-  1 ; 3 ; 59[2]000021010101
+//------------------ DC_ReadDataByIdentifier ------------------
+->  220100
+<-  1 ; 3 ; 620100{SIN;2;250;12;1000}
+->  220115
+<-  1 ; 3 ; 62011501000001
+->  220116
+<-  1 ; 3 ; 62011601015121
+->  220117
+<-  1 ; 3 ; 62011701015101
+->  221102
+<-  1 ; 3 ; 62110200010001
+->  221103
+<-  1 ; 3 ; 621103000100010001
+->  221104
+<-  1 ; 3 ; 62110401
+->  22CF01
+<-  1 ; 3 ; 62CF0100DE0FFF000000A00FFF000010A10FFF000020A20FFF000030A50FFF000040A50FFF000050170FFF0000601E0FFF000070A30FFF000080280FFF000090A60FFF0000A0F60FFF0000B0A70FFF0000C0A80FFF0000C0A90FFF0000C0AA0FFF0000C0AB0FFF0000C0AC0FFF0000D04D0FFF0000E0AD0FFF0000F0370FFF000100ED0FFF000110AE0FFF000110AF0FFF000110B00FFF000110B10FFF000110B20FFF0001201C0FFF000130030FFF000140030FFF000140310FFF000140320FFF000140FE0FFF000150800FFF000150810FFF000150820FFF000150830FFF000150840FFF000150850FFF000150860FFF000150870FFF000150880FFF000150890FFF0001508A0FFF0001508B0FFF0001508C0FFF0001508D0FFF0001508F0FFF000160800FFF000160810FFF000160820FFF000160830FFF000160840FFF000160850FFF000160860FFF000160870FFF000160880FFF000160890FFF0001608A0FFF0001608E0FFF0001702B0FFF000180000FFF000190000FFF0001A0340FFF0001B0340FFF0001C0A40FFF0001D0030FFF0001E0200FFF0001E0050FFF0001F0150FFF000200030FFF000200ED0FFF000220800FFF000220810FFF000220820FFF000220830FFF000220840FFF000220850FFF000220860FFF000220870FFF000220880FFF000220890FFF0002208A0FFF0002208E0FFF0002208F0FFF0002208D0FFF0002208B0FFF0002208C0FFF000230960FFF000240A00FFF0002504A0FFF000260B30FFF000260B40FFF000280A60FFF000290FC0FFF0002A0290FFF0002A02A0FFF0002E0320FFF0002E02F0FFF0002E0FE0FFF0003203B0FFF000320FE0FFF000330190FFF0003504C0FFF0003A0320FFF0003B1010FFF0003C0970FFF0003D0A40FFF0003E0210FFF0003E0060FFF0003F0220FFF000400330FFF000410180FFF000420070FFF000420080FFF000420040FFF000420310FFF000420A70FFF000430EB0FFF000430EC0FFF000430AA0FFF000430AB0FFF000430A00FFF000430A10FFF000430030FFF000430040FFF0004302F0FFF000430A50FFF000430DD0FFF000430D10FFF000430D20FFF000430D30FFF000450030FFF000450FE0FFF000460640FFF000470520FFF000480190FFF000490430FFF0004A0630FFF0004B0540FFF0004C05A0FFF0004D01E0FFF0004E0000FFF000510170FFF000520160FFF0005402F0FFF000590050FFF000590FE0FFF0005A00E0FFF0005B0140FFF0005C0B60FFF0005C0B70FFF0005D0360FFF0005E0000FFF0005F0000FFF000600000FFF000600010FFF000610000FFF000620000FFF000630280FFF000640A00FFF000650660FFF000660400FFF000670B00FFF000680B10FFF000690D00FFF0006A0D10FFF0006B0D20FFF0006C0600FFF0006D0AA0FFF0006E0860FFF0006E0740FFF0006E0840FFF0006E07A0FFF0006E07E0FFF0006E07C0FFF0006E0790FFF0006E0890FFF0006E0710FFF0006F0130FFF0006F05A0FFF0006F05B0FFF0006F05C0FFF0006F05E0FFF0006F05F0FFF000700F50FFF000710F40FFF000710800FFF000710EF0FFF000720000FFF0007309B0FFF000740090FFF000750900FFF000760160FFF000770F10FFF000780ED0FFF000790ED0FFF0007A0770FFF0007B1010FFF0007C0800FFF0007C08E0FFF0007D0000FFF0007E0800FFF0007E0810FFF0007E0820FFF0007E0830FFF0007E0840FFF0007E0850FFF0007E0860FFF0007E0870FFF0007E0880FFF0007E0890FFF0007E08A0FFF0007E08B0FFF0007E08C0FFF0007E08D0FFF0007E08E0FFF0007E08F0FFF0007F0000FFF000800030FFF000800FE0FFF000810B80FFFFFFFF0FF
+->  22CF02
+<-  1 ; 3 ; 62CF02000100010001000100010001110101010105
+->  22F180
+<-  1 ; 3 ; 62F180{Read;F180_SoftwareIdentification="BOOT_SIM_1.0.0"}
+->  22F181
+<-  1 ; 3 ; 62F181{Read;F181_SoftwareIdentification="APPL_SIM_1.0.0"}
+->  22F183
+<-  1 ; 3 ; 62F183{Read;F183_NumberOfFollowingFingerPrints=01}
+->  22F184
+<-  1 ; 3 ; 62F184{Read;F184_NumberOfFollowingFingerPrints=01}
+->  22F186
+<-  1 ; 3 ; 62F186{Read;F186_SessionNumber=01}
+->  22F187
+<-  1 ; 3 ; 62F187{Read;F187_PartNumber=0001}
+->  22F18A
+<-  1 ; 3 ; 62F18A{Read;F189_SoftwareIdentification="018A"}
+->  22F18B
+<-  1 ; 3 ; 62F18B{Read;F18C_ManufacturingYear="2020"}
+->  22F18C
+<-  1 ; 3 ; 62F18C{Read;F18C_SerialNumber="SN18C"}
+->  22F18E
+<-  1 ; 3 ; 62F18E{Read;F18E_AssemblyPartNumber="APartNo18E"}
+->  22F190
+<-  1 ; 3 ; 62F190{Read;F190_VinNumber="YK5A75H00M5190021"}
+->  22F191
+<-  1 ; 3 ; 62F191FFF00015
+->  22F192
+<-  1 ; 3 ; 62F192{Read;F192_HardwareIdentification="192"}
+->  22F193
+<-  1 ; 3 ; 62F1930000000000000000000000000000000000000000000000000000000000000001
+->  22F195
+<-  1 ; 3 ; 62F1950000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001
+->  22F197
+<-  1 ; 3 ; 62F197{Read;F197_SystemName="SystemName197"}
+->  22F199
+<-  1 ; 3 ; 62F199010101
+->  22F1A5
+<-  1 ; 3 ; 62F1A501
+->  22F1A7
+<-  1 ; 3 ; 62F1A7{Read;F1A7_VehicleModel="64248800"}
+->  22F1A9
+<-  1 ; 3 ; 62F1A9{Read;F1A9_VehiclePlatform="C220A"}
+->  22F1AA
+<-  1 ; 3 ; 62F1AA{Read;F1AA_VehicleBrand="V"}
+->  22FE0B
+<-  1 ; 3 ; 62FE0B00000001
+->  22FE16
+<-  1 ; 3 ; 62FE1601000100010001
+->  22FE17
+<-  1 ; 3 ; 62FE1700000001
+->  22FE18
+<-  1 ; 3 ; 62FE1800000001
+->  22FE1A
+<-  1 ; 3 ; 62FE1A00010001
+//------------------ DC_SecurityAccessRequestSeed ------------------
+->  2701
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2703
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2705
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2707
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2709
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+//------------------ DC_SecurityAccessSendKey ------------------
+->  2702 ; SecuLevel=SECURITY_LEVEL_1
+<-  1 ; 3 ; 67[2]
+->  2704 ; SecuLevel=SECURITY_LEVEL_2
+<-  1 ; 3 ; 67[2]
+->  2706 ; SecuLevel=SECURITY_LEVEL_3
+<-  1 ; 3 ; 67[2]
+->  2708 ; SecuLevel=SECURITY_LEVEL_4
+<-  1 ; 3 ; 67[2]
+->  270A ; SecuLevel=SECURITY_LEVEL_5
+<-  1 ; 3 ; 67[2]
+//------------------ DC_CommunicationControl ------------------
+->  280001
+<-  1 ; 3 ; 68[2]
+->  280101
+<-  1 ; 3 ; 68[2]
+//------------------ DC_CommunicationControl_NoPosResp ------------------
+->  288001
+<-  1 ; 1 ; null
+->  288101
+<-  1 ; 1 ; null
+//------------------ DC_WriteDataByIdentifier ------------------
+->  2ECF01
+<-  1 ; 3 ; 6ECF01
+->  2ECF02
+<-  1 ; 3 ; 6ECF02
+->  2EF15A
+<-  1 ; 3 ; 6EF15A
+->  2EF187
+<-  1 ; 3 ; 6EF187
+->  2EF18A
+<-  1 ; 3 ; 6EF18A
+->  2EF18B
+<-  1 ; 3 ; 6EF18B
+->  2EF18C
+<-  1 ; 3 ; 6EF18C
+->  2EF18E
+<-  1 ; 3 ; 6EF18E
+->  2EF190
+<-  1 ; 3 ; 6EF190{Write;DID_F190=594b354731313556304b53313233303134} // YK5G115V0KS123014
+->  2EF191
+<-  1 ; 3 ; 6EF191{Write;DID_F191=4845583a4646463030303232} // HEX:FFF00022
+->  2EF192
+<-  1 ; 3 ; 6EF192
+->  2EF193
+<-  1 ; 3 ; 6EF193
+->  2EF1A5
+<-  1 ; 3 ; 6EF1A5
+->  2EF1A7
+<-  1 ; 3 ; 6EF1A7{Write;DID_F1A7=333436363536363033} // 346656603
+->  2EF1A9
+<-  1 ; 3 ; 6EF1A9{Write;DID_F1A9=4332323041} // C220A
+->  2EF1AA
+<-  1 ; 3 ; 6EF1AA{Write;DID_F1AA=56} // V
+//------------------ DC_InputOutputControlByIdentifier_ShortTermAdjustment ------------------
+->  2F011700
+<-  1 ; 3 ; 6F01170101015101
+->  2F011703
+<-  1 ; 3 ; 6F01170101015101
+//------------------ DC_RoutineControl_StartRoutine ------------------
+->  31010202
+<-  1 ; 3 ; 71010202
+->  31010203
+<-  1 ; 3 ; 71010203
+->  3101FF00
+<-  1 ; 3 ; 7101FF00440000000100000001
+->  3101FF01
+<-  1 ; 3 ; 7101FF01
+//------------------ DC_RequestDownload ------------------
+->  340044
+<-  1 ; 3 ; 741001
+//------------------ DC_TransferDataDownload ------------------
+->  36
+<-  1 ; 3 ; 7601
+//------------------ DC_RequestTransferExit ------------------
+->  37
+<-  1 ; 3 ; 77
+//------------------ DC_TesterPresent ------------------
+->  3E00
+<-  1 ; 3 ; 7E[2]
+//------------------ DC_TesterPresent_NoPosResp ------------------
+->  3E80
+<-  1 ; 1 ; null
+//------------------ DC_ControlDTCSetting ------------------
+->  8501
+<-  1 ; 3 ; C5[2]
+->  8502
+<-  1 ; 3 ; C5[2]
+//------------------ DC_ControlDTCSetting_NoPosResp ------------------
+->  8581
+<-  1 ; 1 ; null
+->  8582
+<-  1 ; 1 ; null
+
+
+//#################### ECU Header #################################
+Phys=18DA88F9
+Func=18DBFFF9
+Resp=18DAF988
+//DoipId=88
+ECUName=LL_C220A_UDS_AV2F
+Bs=64
+Stmin=24
+DefaultResp=7F[1]11
+Init; ClrDtc=false
+Init; Session=Default
+Init; ECUlocked=false
+Init; OnBoard=false
+Init; DtcActive=true
+OnBoard=100;4280;0000BC5500000101
+OnBoard=040;3500;AA002312010123AAFF
+OnBoard=050;1120;C00043001100
+OnBoard=070;9120;1000EE02020
+//------------------ DC_DiagnosticSessionControl ------------------
+->  1001 ; Session=DEFAULT
+<-  1 ; 3 ; 50[2]00010001
+->  1002 ; Session=PROGRAMMING
+<-  1 ; 3 ; 50[2]00010001
+->  1003 ; Session=EXTENDED
+<-  1 ; 3 ; 50[2]00010001
+->  1004 ; Session=SAFETY
+<-  1 ; 3 ; 50[2]00010001
+->  1040 ; Session=EOL
+<-  1 ; 3 ; 50[2]00010001
+//------------------ DC_DiagnosticSessionControl_NoPosResp ------------------
+->  1081 ; Session=DEFAULT
+<-  1 ; 1 ; null
+->  1082 ; Session=PROGRAMMING
+<-  1 ; 1 ; null
+->  1083 ; Session=EXTENDED
+<-  1 ; 1 ; null
+->  1084 ; Session=SAFETY
+<-  1 ; 1 ; null
+->  10C0 ; Session=EOL
+<-  1 ; 1 ; null
+//------------------ DC_EcuReset ------------------
+->  1101
+<-  1 ; 3 ; 51[2]
+->  1102
+<-  1 ; 3 ; 51[2]
+//------------------ DC_EcuReset_NoPosResp ------------------
+->  1181
+<-  1 ; 1 ; null
+->  1182
+<-  1 ; 1 ; null
+//------------------ DC_ClearDiagnosticInformation ------------------
+->  14FFFFFF ; ClrDtc=true
+<-  1 ; 3 ; 54
+//------------------ DC_ReadDTCInformation_ReportNumberOfDTCByStatusMask ------------------
+->  1901
+<-  1 ; 3 ; 59[2]FF010001
+//------------------ DC_ReadDTCInformation_ReportDTCByStatusMask ------------------
+->  1902
+<-  1 ; 3 ; 59[2]FF00002101
+//------------------ DC_ReadDTCInformation_ReportDTCSnapshotRecordByDTCNumber ------------------
+->  1904
+<-  1 ; 3 ; 59[2]000021010101
+//------------------ DC_ReadDataByIdentifier ------------------
+->  220100
+<-  1 ; 3 ; 620100{SIN;2;250;12;1000}
+->  220115
+<-  1 ; 3 ; 62011501000001
+->  220116
+<-  1 ; 3 ; 62011601015121
+->  220117
+<-  1 ; 3 ; 62011701015101
+->  221102
+<-  1 ; 3 ; 62110200010001
+->  221103
+<-  1 ; 3 ; 621103000100010001
+->  221104
+<-  1 ; 3 ; 62110401
+->  22CF01
+<-  1 ; 3 ; 62CF0100DE0FFF000000A00FFF000010A10FFF000020A20FFF000030A50FFF000040A50FFF000050170FFF0000601E0FFF000070A30FFF000080280FFF000090A60FFF0000A0F60FFF0000B0A70FFF0000C0A80FFF0000C0A90FFF0000C0AA0FFF0000C0AB0FFF0000C0AC0FFF0000D04D0FFF0000E0AD0FFF0000F0370FFF000100ED0FFF000110AE0FFF000110AF0FFF000110B00FFF000110B10FFF000110B20FFF0001201C0FFF000130030FFF000140030FFF000140310FFF000140320FFF000140FE0FFF000150800FFF000150810FFF000150820FFF000150830FFF000150840FFF000150850FFF000150860FFF000150870FFF000150880FFF000150890FFF0001508A0FFF0001508B0FFF0001508C0FFF0001508D0FFF0001508F0FFF000160800FFF000160810FFF000160820FFF000160830FFF000160840FFF000160850FFF000160860FFF000160870FFF000160880FFF000160890FFF0001608A0FFF0001608E0FFF0001702B0FFF000180000FFF000190000FFF0001A0340FFF0001B0340FFF0001C0A40FFF0001D0030FFF0001E0200FFF0001E0050FFF0001F0150FFF000200030FFF000200ED0FFF000220800FFF000220810FFF000220820FFF000220830FFF000220840FFF000220850FFF000220860FFF000220870FFF000220880FFF000220890FFF0002208A0FFF0002208E0FFF0002208F0FFF0002208D0FFF0002208B0FFF0002208C0FFF000230960FFF000240A00FFF0002504A0FFF000260B30FFF000260B40FFF000280A60FFF000290FC0FFF0002A0290FFF0002A02A0FFF0002E0320FFF0002E02F0FFF0002E0FE0FFF0003203B0FFF000320FE0FFF000330190FFF0003504C0FFF0003A0320FFF0003B1010FFF0003C0970FFF0003D0A40FFF0003E0210FFF0003E0060FFF0003F0220FFF000400330FFF000410180FFF000420070FFF000420080FFF000420040FFF000420310FFF000420A70FFF000430EB0FFF000430EC0FFF000430AA0FFF000430AB0FFF000430A00FFF000430A10FFF000430030FFF000430040FFF0004302F0FFF000430A50FFF000430DD0FFF000430D10FFF000430D20FFF000430D30FFF000450030FFF000450FE0FFF000460640FFF000470520FFF000480190FFF000490430FFF0004A0630FFF0004B0540FFF0004C05A0FFF0004D01E0FFF0004E0000FFF000510170FFF000520160FFF0005402F0FFF000590050FFF000590FE0FFF0005A00E0FFF0005B0140FFF0005C0B60FFF0005C0B70FFF0005D0360FFF0005E0000FFF0005F0000FFF000600000FFF000600010FFF000610000FFF000620000FFF000630280FFF000640A00FFF000650660FFF000660400FFF000670B00FFF000680B10FFF000690D00FFF0006A0D10FFF0006B0D20FFF0006C0600FFF0006D0AA0FFF0006E0860FFF0006E0740FFF0006E0840FFF0006E07A0FFF0006E07E0FFF0006E07C0FFF0006E0790FFF0006E0890FFF0006E0710FFF0006F0130FFF0006F05A0FFF0006F05B0FFF0006F05C0FFF0006F05E0FFF0006F05F0FFF000700F50FFF000710F40FFF000710800FFF000710EF0FFF000720000FFF0007309B0FFF000740090FFF000750900FFF000760160FFF000770F10FFF000780ED0FFF000790ED0FFF0007A0770FFF0007B1010FFF0007C0800FFF0007C08E0FFF0007D0000FFF0007E0800FFF0007E0810FFF0007E0820FFF0007E0830FFF0007E0840FFF0007E0850FFF0007E0860FFF0007E0870FFF0007E0880FFF0007E0890FFF0007E08A0FFF0007E08B0FFF0007E08C0FFF0007E08D0FFF0007E08E0FFF0007E08F0FFF0007F0000FFF000800030FFF000800FE0FFF000810B80FFFFFFFF0FF
+->  22CF02
+<-  1 ; 3 ; 62CF02000100010001000100010001110101010105
+->  22F180
+<-  1 ; 3 ; 62F180{Read;F180_SoftwareIdentification="BOOT_SIM_1.0.0"}
+->  22F181
+<-  1 ; 3 ; 62F181{Read;F181_SoftwareIdentification="APPL_SIM_1.0.0"}
+->  22F183
+<-  1 ; 3 ; 62F183{Read;F183_NumberOfFollowingFingerPrints=01}
+->  22F184
+<-  1 ; 3 ; 62F184{Read;F184_NumberOfFollowingFingerPrints=01}
+->  22F186
+<-  1 ; 3 ; 62F186{Read;F186_SessionNumber=01}
+->  22F187
+<-  1 ; 3 ; 62F187{Read;F187_PartNumber=0001}
+->  22F18A
+<-  1 ; 3 ; 62F18A{Read;F189_SoftwareIdentification="018A"}
+->  22F18B
+<-  1 ; 3 ; 62F18B{Read;F18C_ManufacturingYear="2020"}
+->  22F18C
+<-  1 ; 3 ; 62F18C{Read;F18C_SerialNumber="SN18C"}
+->  22F18E
+<-  1 ; 3 ; 62F18E{Read;F18E_AssemblyPartNumber="APartNo18E"}
+->  22F190
+<-  1 ; 3 ; 62F190{Read;F190_VinNumber="YK5A75H00M5190021"}
+->  22F191
+<-  1 ; 3 ; 62F191FFF00015
+->  22F192
+<-  1 ; 3 ; 62F192{Read;F192_HardwareIdentification="192"}
+->  22F193
+<-  1 ; 3 ; 62F1930000000000000000000000000000000000000000000000000000000000000001
+->  22F195
+<-  1 ; 3 ; 62F1950000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001
+->  22F197
+<-  1 ; 3 ; 62F197{Read;F197_SystemName="SystemName197"}
+->  22F199
+<-  1 ; 3 ; 62F199010101
+->  22F1A5
+<-  1 ; 3 ; 62F1A501
+->  22F1A7
+<-  1 ; 3 ; 62F1A7{Read;F1A7_VehicleModel="64248800"}
+->  22F1A9
+<-  1 ; 3 ; 62F1A9{Read;F1A9_VehiclePlatform="C220A"}
+->  22F1AA
+<-  1 ; 3 ; 62F1AA{Read;F1AA_VehicleBrand="V"}
+->  22FE0B
+<-  1 ; 3 ; 62FE0B00000001
+->  22FE16
+<-  1 ; 3 ; 62FE1601000100010001
+->  22FE17
+<-  1 ; 3 ; 62FE1700000001
+->  22FE18
+<-  1 ; 3 ; 62FE1800000001
+->  22FE1A
+<-  1 ; 3 ; 62FE1A00010001
+//------------------ DC_SecurityAccessRequestSeed ------------------
+->  2701
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2703
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2705
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2707
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2709
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+//------------------ DC_SecurityAccessSendKey ------------------
+->  2702 ; SecuLevel=SECURITY_LEVEL_1
+<-  1 ; 3 ; 67[2]
+->  2704 ; SecuLevel=SECURITY_LEVEL_2
+<-  1 ; 3 ; 67[2]
+->  2706 ; SecuLevel=SECURITY_LEVEL_3
+<-  1 ; 3 ; 67[2]
+->  2708 ; SecuLevel=SECURITY_LEVEL_4
+<-  1 ; 3 ; 67[2]
+->  270A ; SecuLevel=SECURITY_LEVEL_5
+<-  1 ; 3 ; 67[2]
+//------------------ DC_CommunicationControl ------------------
+->  280001
+<-  1 ; 3 ; 68[2]
+->  280101
+<-  1 ; 3 ; 68[2]
+//------------------ DC_CommunicationControl_NoPosResp ------------------
+->  288001
+<-  1 ; 1 ; null
+->  288101
+<-  1 ; 1 ; null
+//------------------ DC_WriteDataByIdentifier ------------------
+->  2ECF01
+<-  1 ; 3 ; 6ECF01
+->  2ECF02
+<-  1 ; 3 ; 6ECF02
+->  2EF15A
+<-  1 ; 3 ; 6EF15A
+->  2EF187
+<-  1 ; 3 ; 6EF187
+->  2EF18A
+<-  1 ; 3 ; 6EF18A
+->  2EF18B
+<-  1 ; 3 ; 6EF18B
+->  2EF18C
+<-  1 ; 3 ; 6EF18C
+->  2EF18E
+<-  1 ; 3 ; 6EF18E
+->  2EF190
+<-  1 ; 3 ; 6EF190{Write;DID_F190=594b354731313556304b53313233303134} // YK5G115V0KS123014
+->  2EF191
+<-  1 ; 3 ; 6EF191{Write;DID_F191=4845583a4646463030303232} // HEX:FFF00022
+->  2EF192
+<-  1 ; 3 ; 6EF192
+->  2EF193
+<-  1 ; 3 ; 6EF193
+->  2EF1A5
+<-  1 ; 3 ; 6EF1A5
+->  2EF1A7
+<-  1 ; 3 ; 6EF1A7{Write;DID_F1A7=333436363536363033} // 346656603
+->  2EF1A9
+<-  1 ; 3 ; 6EF1A9{Write;DID_F1A9=4332323041} // C220A
+->  2EF1AA
+<-  1 ; 3 ; 6EF1AA{Write;DID_F1AA=56} // V
+//------------------ DC_InputOutputControlByIdentifier_ShortTermAdjustment ------------------
+->  2F011700
+<-  1 ; 3 ; 6F01170101015101
+->  2F011703
+<-  1 ; 3 ; 6F01170101015101
+//------------------ DC_RoutineControl_StartRoutine ------------------
+->  31010202
+<-  1 ; 3 ; 71010202
+->  31010203
+<-  1 ; 3 ; 71010203
+->  3101FF00
+<-  1 ; 3 ; 7101FF00440000000100000001
+->  3101FF01
+<-  1 ; 3 ; 7101FF01
+//------------------ DC_RequestDownload ------------------
+->  340044
+<-  1 ; 3 ; 741001
+//------------------ DC_TransferDataDownload ------------------
+->  36
+<-  1 ; 3 ; 7601
+//------------------ DC_RequestTransferExit ------------------
+->  37
+<-  1 ; 3 ; 77
+//------------------ DC_TesterPresent ------------------
+->  3E00
+<-  1 ; 3 ; 7E[2]
+//------------------ DC_TesterPresent_NoPosResp ------------------
+->  3E80
+<-  1 ; 1 ; null
+//------------------ DC_ControlDTCSetting ------------------
+->  8501
+<-  1 ; 3 ; C5[2]
+->  8502
+<-  1 ; 3 ; C5[2]
+//------------------ DC_ControlDTCSetting_NoPosResp ------------------
+->  8581
+<-  1 ; 1 ; null
+->  8582
+<-  1 ; 1 ; null
+
+
+//#################### ECU Header #################################
+Phys=18DA4AF9
+Func=18DBFFF9
+Resp=18DAF94A
+//DoipId=4A
+ECUName=LL_C220A_UDS_ACM
+Bs=64
+Stmin=24
+DefaultResp=7F[1]11
+Init; ClrDtc=false
+Init; Session=Default
+Init; ECUlocked=false
+Init; OnBoard=false
+Init; DtcActive=true
+OnBoard=100;4280;0000BC5500000101
+OnBoard=040;3500;AA002312010123AAFF
+OnBoard=050;1120;C00043001100
+OnBoard=070;9120;1000EE02020
+//------------------ DC_DiagnosticSessionControl ------------------
+->  1001 ; Session=DEFAULT
+<-  1 ; 3 ; 50[2]00010001
+->  1002 ; Session=PROGRAMMING
+<-  1 ; 3 ; 50[2]00010001
+->  1003 ; Session=EXTENDED
+<-  1 ; 3 ; 50[2]00010001
+->  1004 ; Session=SAFETY
+<-  1 ; 3 ; 50[2]00010001
+->  1040 ; Session=EOL
+<-  1 ; 3 ; 50[2]00010001
+//------------------ DC_DiagnosticSessionControl_NoPosResp ------------------
+->  1081 ; Session=DEFAULT
+<-  1 ; 1 ; null
+->  1082 ; Session=PROGRAMMING
+<-  1 ; 1 ; null
+->  1083 ; Session=EXTENDED
+<-  1 ; 1 ; null
+->  1084 ; Session=SAFETY
+<-  1 ; 1 ; null
+->  10C0 ; Session=EOL
+<-  1 ; 1 ; null
+//------------------ DC_EcuReset ------------------
+->  1101
+<-  1 ; 3 ; 51[2]
+->  1102
+<-  1 ; 3 ; 51[2]
+//------------------ DC_EcuReset_NoPosResp ------------------
+->  1181
+<-  1 ; 1 ; null
+->  1182
+<-  1 ; 1 ; null
+//------------------ DC_ClearDiagnosticInformation ------------------
+->  14FFFFFF ; ClrDtc=true
+<-  1 ; 3 ; 54
+//------------------ DC_ReadDTCInformation_ReportNumberOfDTCByStatusMask ------------------
+->  1901
+<-  1 ; 3 ; 59[2]FF010001
+//------------------ DC_ReadDTCInformation_ReportDTCByStatusMask ------------------
+->  1902
+<-  1 ; 3 ; 59[2]FF00002101
+//------------------ DC_ReadDTCInformation_ReportDTCSnapshotRecordByDTCNumber ------------------
+->  1904
+<-  1 ; 3 ; 59[2]000021010101
+//------------------ DC_ReadDataByIdentifier ------------------
+->  221201
+<-  1 ; 3 ; 6212010000000000000001
+->  221202
+<-  1 ; 3 ; 621202
+->  221203
+<-  1 ; 3 ; 6212030000000000000001
+->  221205
+<-  1 ; 3 ; 62120501
+->  221206
+<-  1 ; 3 ; 62120601
+->  221207
+<-  1 ; 3 ; 62120701
+->  22120A
+<-  1 ; 3 ; 62120A
+->  22120B
+<-  1 ; 3 ; 62120B000000000001
+->  222B00
+<-  1 ; 3 ; 622B0001
+->  222B01
+<-  1 ; 3 ; 622B0101
+->  222B04
+<-  1 ; 3 ; 622B0401
+->  222B07
+<-  1 ; 3 ; 622B07000000000000000000000000000001
+->  222B08
+<-  1 ; 3 ; 622B08
+->  222B09
+<-  1 ; 3 ; 622B09
+->  22F100
+<-  1 ; 3 ; 62F1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001
+->  22F101
+<-  1 ; 3 ; 62F1010101010100000000000000000000000000000001
+->  22F102
+<-  1 ; 3 ; 62F1020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001
+->  22F104
+<-  1 ; 3 ; 62F1040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001
+->  22F105
+<-  1 ; 3 ; 62F1050101010100000000000000000000000000000001
+->  22F106
+<-  1 ; 3 ; 62F1060000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001
+->  22F107
+<-  1 ; 3 ; 62F1070101010100000000000000000000000000000001
+->  22F181
+<-  1 ; 3 ; 62F181{Read;F181_SoftwareIdentification="APPL_SIM_1.0.0"}
+->  22F184
+<-  1 ; 3 ; 62F184{Read;F184_NumberOfFollowingFingerPrints=01}
+->  22F186
+<-  1 ; 3 ; 62F186{Read;F186_SessionNumber=01}
+->  22F187
+<-  1 ; 3 ; 62F187{Read;F187_PartNumber=0001}
+->  22F18C
+<-  1 ; 3 ; 62F18C{Read;F18C_SerialNumber="SN18C"}
+->  22F18E
+<-  1 ; 3 ; 62F18E{Read;F18E_AssemblyPartNumber="APartNo18E"}
+->  22F190
+<-  1 ; 3 ; 62F190{Read;F190_VinNumber="YK5A75H00M5190021"}
+->  22F191
+<-  1 ; 3 ; 62F191FFF00025
+->  22F1A7
+<-  1 ; 3 ; 62F1A7{Read;F1A7_VehicleModel="64248800"}
+->  22F1A9
+<-  1 ; 3 ; 62F1A9{Read;F1A9_VehiclePlatform="C220A"}
+->  22F1AA
+<-  1 ; 3 ; 62F1AA{Read;F1AA_VehicleBrand="V"}
+//------------------ DC_SecurityAccessRequestSeed ------------------
+->  2701
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2703
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2705
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2707
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2709
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+//------------------ DC_SecurityAccessSendKey ------------------
+->  2702 ; SecuLevel=SECURITY_LEVEL_1
+<-  1 ; 3 ; 67[2]
+->  2704 ; SecuLevel=SECURITY_LEVEL_2
+<-  1 ; 3 ; 67[2]
+->  2706 ; SecuLevel=SECURITY_LEVEL_3
+<-  1 ; 3 ; 67[2]
+->  2708 ; SecuLevel=SECURITY_LEVEL_4
+<-  1 ; 3 ; 67[2]
+->  270A ; SecuLevel=SECURITY_LEVEL_5
+<-  1 ; 3 ; 67[2]
+//------------------ DC_CommunicationControl ------------------
+->  280001
+<-  1 ; 3 ; 68[2]
+->  280101
+<-  1 ; 3 ; 68[2]
+//------------------ DC_CommunicationControl_NoPosResp ------------------
+->  288001
+<-  1 ; 1 ; null
+->  288101
+<-  1 ; 1 ; null
+//------------------ DC_WriteDataByIdentifier ------------------
+->  2E2B03
+<-  1 ; 3 ; 6E2B03
+->  2EF101
+<-  1 ; 3 ; 6EF101
+->  2EF105
+<-  1 ; 3 ; 6EF105
+->  2EF107
+<-  1 ; 3 ; 6EF107
+->  2EF15A
+<-  1 ; 3 ; 6EF15A
+->  2EF187
+<-  1 ; 3 ; 6EF187
+->  2EF18C
+<-  1 ; 3 ; 6EF18C
+->  2EF18E
+<-  1 ; 3 ; 6EF18E
+->  2EF190
+<-  1 ; 3 ; 6EF190{Write;DID_F190=594b354731313556304b53313233303134} // YK5G115V0KS123014
+->  2EF191
+<-  1 ; 3 ; 6EF191{Write;DID_F191=4845583a4646463030303235} // HEX:FFF00025
+->  2EF1A7
+<-  1 ; 3 ; 6EF1A7{Write;DID_F1A7=333436363536363033} // 346656603
+->  2EF1A9
+<-  1 ; 3 ; 6EF1A9{Write;DID_F1A9=4332323041} // C220A
+->  2EF1AA
+<-  1 ; 3 ; 6EF1AA{Write;DID_F1AA=56} // V
+//------------------ DC_RoutineControl_StartRoutine ------------------
+->  31010202
+<-  1 ; 3 ; 71010202
+->  31010203
+<-  1 ; 3 ; 71010203
+->  3101FF00
+<-  1 ; 3 ; 7101FF00440000000100000001
+->  3101FF01
+<-  1 ; 3 ; 7101FF01
+//------------------ DC_RoutineControl_StopRoutine ------------------
+->  31020203
+<-  1 ; 3 ; 7102020301
+//------------------ DC_RoutineControl_RoutineResult ------------------
+->  31030203
+<-  1 ; 3 ; 7103020301
+//------------------ DC_RequestDownload ------------------
+->  340044
+<-  1 ; 3 ; 741001
+//------------------ DC_RequestUpload ------------------
+->  350044
+<-  1 ; 3 ; 751001
+//------------------ DC_TransferDataDownload ------------------
+->  36
+<-  1 ; 3 ; 7601
+//------------------ DC_TransferDataUpload ------------------
+->  36
+<-  1 ; 3 ; 760101
+//------------------ DC_RequestTransferExit ------------------
+->  37
+<-  1 ; 3 ; 77
+//------------------ DC_TesterPresent ------------------
+->  3E00
+<-  1 ; 3 ; 7E[2]
+//------------------ DC_TesterPresent_NoPosResp ------------------
+->  3E80
+<-  1 ; 1 ; null
+//------------------ DC_ControlDTCSetting ------------------
+->  8501
+<-  1 ; 3 ; C5[2]
+->  8502
+<-  1 ; 3 ; C5[2]
+//------------------ DC_ControlDTCSetting_NoPosResp ------------------
+->  8581
+<-  1 ; 1 ; null
+->  8582
+<-  1 ; 1 ; null
+
+
+//#################### ECU Header #################################
+Phys=14DAA7F9
+Func=18DBFFF9
+Resp=14DAF9A7
+//DoipId=A7
+ECUName=LL_C220A_UDS_AUTO7_DIAG
+Bs=64
+Stmin=24
+DefaultResp=7F[1]11
+Init; ClrDtc=false
+Init; Session=Default
+Init; ECUlocked=false
+Init; OnBoard=false
+Init; DtcActive=true
+OnBoard=100;4280;0000BC5500000101
+OnBoard=040;3500;AA002312010123AAFF
+OnBoard=050;1120;C00043001100
+OnBoard=070;9120;1000EE02020
+//------------------ DC_DiagnosticSessionControl ------------------
+->  1001 ; Session=DEFAULT
+<-  1 ; 3 ; 50[2]00010001
+->  1002 ; Session=PROGRAMMING
+<-  1 ; 3 ; 50[2]00010001
+->  1003 ; Session=EXTENDED
+<-  1 ; 3 ; 50[2]00010001
+->  1004 ; Session=SAFETY
+<-  1 ; 3 ; 50[2]00010001
+->  1040 ; Session=EOL
+<-  1 ; 3 ; 50[2]00010001
+//------------------ DC_DiagnosticSessionControl_NoPosResp ------------------
+->  1081 ; Session=DEFAULT
+<-  1 ; 1 ; null
+->  1082 ; Session=PROGRAMMING
+<-  1 ; 1 ; null
+->  1083 ; Session=EXTENDED
+<-  1 ; 1 ; null
+->  1084 ; Session=SAFETY
+<-  1 ; 1 ; null
+->  10C0 ; Session=EOL
+<-  1 ; 1 ; null
+//------------------ DC_EcuReset ------------------
+->  1101
+<-  1 ; 3 ; 51[2]
+->  1102
+<-  1 ; 3 ; 51[2]
+//------------------ DC_EcuReset_NoPosResp ------------------
+->  1181
+<-  1 ; 1 ; null
+->  1182
+<-  1 ; 1 ; null
+//------------------ DC_ClearDiagnosticInformation ------------------
+->  14FFFFFF ; ClrDtc=true
+<-  1 ; 3 ; 54
+//------------------ DC_ReadDTCInformation_ReportNumberOfDTCByStatusMask ------------------
+->  1901
+<-  1 ; 3 ; 59[2]FF010001
+//------------------ DC_ReadDTCInformation_ReportDTCSnapshotRecordByDTCNumber ------------------
+->  1904
+<-  1 ; 3 ; 59[2]000021010101
+//------------------ DC_ReadDTCInformation_ReportDTCByStatusMask ------------------
+->  1902
+<-  1 ; 3 ; 59[2]FF00002101
+//------------------ DC_ReadDataByIdentifier ------------------
+->  220100
+<-  1 ; 3 ; 620100{SIN;2;250;12;1000}
+->  22D201
+<-  1 ; 3 ; 62D2010000000100000001000000010000000100000001000000010000000100000001
+->  22D202
+<-  1 ; 3 ; 62D2020000000100000001000000010000000100000001000000010000000100000001
+->  22D203
+<-  1 ; 3 ; 62D2030000000100000001000000010000000100000001000000010000000100000001
+->  22D204
+<-  1 ; 3 ; 62D2040000000100000001000000010000000100000001000000010000000100000001
+->  22F100
+<-  1 ; 3 ; 62F10000000001
+->  22F101
+<-  1 ; 3 ; 62F10100010001
+->  22F102
+<-  1 ; 3 ; 62F102000001000001000001000001000001
+->  22F103
+<-  1 ; 3 ; 62F10301000001
+->  22F104
+<-  1 ; 3 ; 62F104000101010101
+->  22F105
+<-  1 ; 3 ; 62F105000001
+->  22F180
+<-  1 ; 3 ; 62F180{Read;F180_SoftwareIdentification="BOOT_SIM_1.0.0"}
+->  22F181
+<-  1 ; 3 ; 62F181{Read;F181_SoftwareIdentification="APPL_SIM_1.0.0"}
+->  22F182
+<-  1 ; 3 ; 62F182{Read;F182_SoftwareIdentification="DATA_SIM_1.0.0"}
+->  22F183
+<-  1 ; 3 ; 62F183{Read;F183_NumberOfFollowingFingerPrints=01}
+->  22F184
+<-  1 ; 3 ; 62F184{Read;F184_NumberOfFollowingFingerPrints=01}
+->  22F185
+<-  1 ; 3 ; 62F185{Read;F185_NumberOfFollowingFingerPrints=01}
+->  22F186
+<-  1 ; 3 ; 62F186{Read;F186_SessionNumber=01}
+->  22F187
+<-  1 ; 3 ; 62F187{Read;F187_PartNumber=0001}
+->  22F188
+<-  1 ; 3 ; 62F188{Read;F188_SoftwareIdentification="0188"}
+->  22F18C
+<-  1 ; 3 ; 62F18C{Read;F18C_SerialNumber="SN18C"}
+->  22F18E
+<-  1 ; 3 ; 62F18E{Read;F18E_AssemblyPartNumber="APartNo18E"}
+->  22F190
+<-  1 ; 3 ; 62F190{Read;F190_VinNumber="YK5A75H00M5190021"}
+->  22F191
+<-  1 ; 3 ; 62F191FFF00042
+->  22F193
+<-  1 ; 3 ; 62F193000101
+->  22F1A5
+<-  1 ; 3 ; 62F1A501
+->  22F1A9
+<-  1 ; 3 ; 62F1A9{Read;F1A9_VehiclePlatform="C220A"}
+->  22F1AA
+<-  1 ; 3 ; 62F1AA{Read;F1AA_VehicleBrand="V"}
+//------------------ DC_SecurityAccessRequestSeed ------------------
+->  2701
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2703
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2705
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2707
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2709
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+//------------------ DC_SecurityAccessSendKey ------------------
+->  2702 ; SecuLevel=SECURITY_LEVEL_1
+<-  1 ; 3 ; 67[2]
+->  2704 ; SecuLevel=SECURITY_LEVEL_2
+<-  1 ; 3 ; 67[2]
+->  2706 ; SecuLevel=SECURITY_LEVEL_3
+<-  1 ; 3 ; 67[2]
+->  2708 ; SecuLevel=SECURITY_LEVEL_4
+<-  1 ; 3 ; 67[2]
+->  270A ; SecuLevel=SECURITY_LEVEL_5
+<-  1 ; 3 ; 67[2]
+//------------------ DC_CommunicationControl ------------------
+->  280001
+<-  1 ; 3 ; 68[2]
+->  280101
+<-  1 ; 3 ; 68[2]
+//------------------ DC_CommunicationControl_NoPosResp ------------------
+->  288001
+<-  1 ; 1 ; null
+->  288101
+<-  1 ; 1 ; null
+//------------------ DC_WriteDataByIdentifier ------------------
+->  2EF15A
+<-  1 ; 3 ; 6EF15A
+->  2EF187
+<-  1 ; 3 ; 6EF187
+->  2EF18E
+<-  1 ; 3 ; 6EF18E
+->  2EF190
+<-  1 ; 3 ; 6EF190{Write;DID_F190=594b354731313556304b53313233303134} // YK5G115V0KS123014
+->  2EF191
+<-  1 ; 3 ; 6EF191{Write;DID_F191=4845583a4646463030303536} // HEX:FFF00056
+->  2EF1A5
+<-  1 ; 3 ; 6EF1A5
+->  2EF1A9
+<-  1 ; 3 ; 6EF1A9{Write;DID_F1A9=4332323041} // C220A
+->  2EF1AA
+<-  1 ; 3 ; 6EF1AA{Write;DID_F1AA=56} // V
+//------------------ DC_InputOutputControlByIdentifier_ShortTermAdjustment ------------------
+->  2F010000
+<-  1 ; 3 ; 6F0100010001
+->  2F010003
+<-  1 ; 3 ; 6F0100010001
+//------------------ DC_RoutineControl_StartRoutine ------------------
+->  31010202
+<-  1 ; 3 ; 71010202
+->  31010203
+<-  1 ; 3 ; 71010203
+->  3101FF00
+<-  1 ; 3 ; 7101FF00440000000100000001
+->  3101FF01
+<-  1 ; 3 ; 7101FF01
+//------------------ DC_RoutineControl_StopRoutine ------------------
+->  31020203
+<-  1 ; 3 ; 7102020301
+//------------------ DC_RoutineControl_RoutineResult ------------------
+->  31030203
+<-  1 ; 3 ; 7103020301
+//------------------ DC_RequestDownload ------------------
+->  340044
+<-  1 ; 3 ; 741001
+//------------------ DC_RequestUpload ------------------
+->  350044
+<-  1 ; 3 ; 751001
+//------------------ DC_TransferDataDownload ------------------
+->  36
+<-  1 ; 3 ; 7601
+//------------------ DC_TransferDataUpload ------------------
+->  36
+<-  1 ; 3 ; 760101
+//------------------ DC_RequestTransferExit ------------------
+->  37
+<-  1 ; 3 ; 77
+//------------------ DC_TesterPresent ------------------
+->  3E00
+<-  1 ; 3 ; 7E[2]
+//------------------ DC_TesterPresent_NoPosResp ------------------
+->  3E80
+<-  1 ; 1 ; null
+//------------------ DC_ControlDTCSetting ------------------
+->  8501
+<-  1 ; 3 ; C5[2]
+->  8502
+<-  1 ; 3 ; C5[2]
+//------------------ DC_ControlDTCSetting_NoPosResp ------------------
+->  8581
+<-  1 ; 1 ; null
+->  8582
+<-  1 ; 1 ; null
+
+
+//#################### ECU Header #################################
+Phys=18DAFEF9
+Func=18DBFFF9
+Resp=18DAF9FE
+//DoipId=FE
+ECUName=LL_C220A_UDS_IOEM_DIAG
+Bs=64
+Stmin=24
+DefaultResp=7F[1]11
+Init; ClrDtc=false
+Init; Session=Default
+Init; ECUlocked=false
+Init; OnBoard=false
+Init; DtcActive=true
+OnBoard=100;4280;0000BC5500000101
+OnBoard=040;3500;AA002312010123AAFF
+OnBoard=050;1120;C00043001100
+OnBoard=070;9120;1000EE02020
+//------------------ DC_DiagnosticSessionControl ------------------
+->  1001 ; Session=DEFAULT
+<-  1 ; 3 ; 50[2]00010001
+->  1002 ; Session=PROGRAMMING
+<-  1 ; 3 ; 50[2]00010001
+->  1003 ; Session=EXTENDED
+<-  1 ; 3 ; 50[2]00010001
+->  1004 ; Session=SAFETY
+<-  1 ; 3 ; 50[2]00010001
+->  1040 ; Session=EOL
+<-  1 ; 3 ; 50[2]00010001
+//------------------ DC_DiagnosticSessionControl_NoPosResp ------------------
+->  1081 ; Session=DEFAULT
+<-  1 ; 1 ; null
+->  1082 ; Session=PROGRAMMING
+<-  1 ; 1 ; null
+->  1083 ; Session=EXTENDED
+<-  1 ; 1 ; null
+->  1084 ; Session=SAFETY
+<-  1 ; 1 ; null
+->  10C0 ; Session=EOL
+<-  1 ; 1 ; null
+//------------------ DC_EcuReset ------------------
+->  1101
+<-  1 ; 3 ; 51[2]
+->  1102
+<-  1 ; 3 ; 51[2]
+//------------------ DC_EcuReset_NoPosResp ------------------
+->  1181
+<-  1 ; 1 ; null
+->  1182
+<-  1 ; 1 ; null
+//------------------ DC_ClearDiagnosticInformation ------------------
+->  14FFFFFF ; ClrDtc=true
+<-  1 ; 3 ; 54
+//------------------ DC_ReadDTCInformation_ReportNumberOfDTCByStatusMask ------------------
+->  1901
+<-  1 ; 3 ; 59[2]FF010001
+//------------------ DC_ReadDTCInformation_ReportDTCByStatusMask ------------------
+->  1902
+<-  1 ; 3 ; 59[2]FF00002101
+//------------------ DC_ReadDTCInformation_ReportDTCSnapshotRecordByDTCNumber ------------------
+->  1904
+<-  1 ; 3 ; 59[2]000021010101
+//------------------ DC_ReadDataByIdentifier ------------------
+->  22F180
+<-  1 ; 3 ; 62F180{Read;F180_SoftwareIdentification="BOOT_SIM_1.0.0"}
+->  22F181
+<-  1 ; 3 ; 62F181{Read;F181_SoftwareIdentification="APPL_SIM_1.0.0"}
+->  22F182
+<-  1 ; 3 ; 62F182{Read;F182_SoftwareIdentification="DATA_SIM_1.0.0"}
+->  22F183
+<-  1 ; 3 ; 62F183{Read;F183_NumberOfFollowingFingerPrints=01}
+->  22F184
+<-  1 ; 3 ; 62F184{Read;F184_NumberOfFollowingFingerPrints=01}
+->  22F185
+<-  1 ; 3 ; 62F185{Read;F185_NumberOfFollowingFingerPrints=01}
+->  22F186
+<-  1 ; 3 ; 62F186{Read;F186_SessionNumber=01}
+->  22F187
+<-  1 ; 3 ; 62F187{Read;F187_PartNumber=0001}
+->  22F18C
+<-  1 ; 3 ; 62F18C{Read;F18C_SerialNumber="SN18C"}
+->  22F18E
+<-  1 ; 3 ; 62F18E{Read;F18E_AssemblyPartNumber="APartNo18E"}
+->  22F190
+<-  1 ; 3 ; 62F190{Read;F190_VinNumber="YK5A75H00M5190021"}
+->  22F191
+<-  1 ; 3 ; 62F191FFF00014
+->  22F1A5
+<-  1 ; 3 ; 62F1A501
+->  22F1A7
+<-  1 ; 3 ; 62F1A7{Read;F1A7_VehicleModel="64248800"}
+->  22F1A9
+<-  1 ; 3 ; 62F1A9{Read;F1A9_VehiclePlatform="C220A"}
+->  22F1AA
+<-  1 ; 3 ; 62F1AA{Read;F1AA_VehicleBrand="V"}
+//------------------ DC_SecurityAccessRequestSeed ------------------
+->  2701
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2703
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2705
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2707
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2709
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+//------------------ DC_SecurityAccessSendKey ------------------
+->  2702 ; SecuLevel=SECURITY_LEVEL_1
+<-  1 ; 3 ; 67[2]
+->  2704 ; SecuLevel=SECURITY_LEVEL_2
+<-  1 ; 3 ; 67[2]
+->  2706 ; SecuLevel=SECURITY_LEVEL_3
+<-  1 ; 3 ; 67[2]
+->  2708 ; SecuLevel=SECURITY_LEVEL_4
+<-  1 ; 3 ; 67[2]
+->  270A ; SecuLevel=SECURITY_LEVEL_5
+<-  1 ; 3 ; 67[2]
+//------------------ DC_CommunicationControl ------------------
+->  280001
+<-  1 ; 3 ; 68[2]
+->  280101
+<-  1 ; 3 ; 68[2]
+//------------------ DC_CommunicationControl_NoPosResp ------------------
+->  288001
+<-  1 ; 1 ; null
+->  288101
+<-  1 ; 1 ; null
+//------------------ DC_WriteDataByIdentifier ------------------
+->  2EF15A
+<-  1 ; 3 ; 6EF15A
+->  2EF187
+<-  1 ; 3 ; 6EF187
+->  2EF18C
+<-  1 ; 3 ; 6EF18C
+->  2EF18E
+<-  1 ; 3 ; 6EF18E
+->  2EF190
+<-  1 ; 3 ; 6EF190{Write;DID_F190=594b354731313556304b53313233303134} // YK5G115V0KS123014
+->  2EF191
+<-  1 ; 3 ; 6EF191{Write;DID_F191=4845583a4646463030303539} // HEX:FFF00059
+->  2EF1A5
+<-  1 ; 3 ; 6EF1A5
+->  2EF1A7
+<-  1 ; 3 ; 6EF1A7{Write;DID_F1A7=333436363536363033} // 346656603
+->  2EF1A9
+<-  1 ; 3 ; 6EF1A9{Write;DID_F1A9=4332323041} // C220A
+->  2EF1AA
+<-  1 ; 3 ; 6EF1AA{Write;DID_F1AA=56} // V
+//------------------ DC_RoutineControl_StartRoutine ------------------
+->  31010202
+<-  1 ; 3 ; 71010202
+->  31010203
+<-  1 ; 3 ; 71010203
+->  3101FF00
+<-  1 ; 3 ; 7101FF00440000000100000001
+->  3101FF01
+<-  1 ; 3 ; 7101FF01
+//------------------ DC_RequestDownload ------------------
+->  340044
+<-  1 ; 3 ; 741001
+//------------------ DC_RequestUpload ------------------
+->  350044
+<-  1 ; 3 ; 751001
+//------------------ DC_TransferDataDownload ------------------
+->  36
+<-  1 ; 3 ; 7601
+//------------------ DC_TransferDataUpload ------------------
+->  36
+<-  1 ; 3 ; 760101
+//------------------ DC_RequestTransferExit ------------------
+->  37
+<-  1 ; 3 ; 77
+//------------------ DC_TesterPresent ------------------
+->  3E00
+<-  1 ; 3 ; 7E[2]
+//------------------ DC_TesterPresent_NoPosResp ------------------
+->  3E80
+<-  1 ; 1 ; null
+//------------------ DC_ControlDTCSetting ------------------
+->  8501
+<-  1 ; 3 ; C5[2]
+->  8502
+<-  1 ; 3 ; C5[2]
+//------------------ DC_ControlDTCSetting_NoPosResp ------------------
+->  8581
+<-  1 ; 1 ; null
+->  8582
+<-  1 ; 1 ; null
+
+
+//#################### ECU Header #################################
+Phys=18DA80F9
+Func=18DBFFF9
+Resp=18DAF980
+//DoipId=80
+ECUName=LL_C220A_UDS_VALVE_DIAG
+Bs=64
+Stmin=24
+DefaultResp=7F[1]11
+Init; ClrDtc=false
+Init; Session=Default
+Init; ECUlocked=false
+Init; OnBoard=false
+Init; DtcActive=true
+OnBoard=100;4280;0000BC5500000101
+OnBoard=040;3500;AA002312010123AAFF
+OnBoard=050;1120;C00043001100
+OnBoard=070;9120;1000EE02020
+//------------------ DC_DiagnosticSessionControl ------------------
+->  1001 ; Session=DEFAULT
+<-  1 ; 3 ; 50[2]00010001
+->  1002 ; Session=PROGRAMMING
+<-  1 ; 3 ; 50[2]00010001
+->  1003 ; Session=EXTENDED
+<-  1 ; 3 ; 50[2]00010001
+->  1004 ; Session=SAFETY
+<-  1 ; 3 ; 50[2]00010001
+->  1040 ; Session=EOL
+<-  1 ; 3 ; 50[2]00010001
+//------------------ DC_DiagnosticSessionControl_NoPosResp ------------------
+->  1081 ; Session=DEFAULT
+<-  1 ; 1 ; null
+->  1082 ; Session=PROGRAMMING
+<-  1 ; 1 ; null
+->  1083 ; Session=EXTENDED
+<-  1 ; 1 ; null
+->  1084 ; Session=SAFETY
+<-  1 ; 1 ; null
+->  10C0 ; Session=EOL
+<-  1 ; 1 ; null
+//------------------ DC_EcuReset ------------------
+->  1101
+<-  1 ; 3 ; 51[2]
+->  1102
+<-  1 ; 3 ; 51[2]
+//------------------ DC_EcuReset_NoPosResp ------------------
+->  1181
+<-  1 ; 1 ; null
+->  1182
+<-  1 ; 1 ; null
+//------------------ DC_ClearDiagnosticInformation ------------------
+->  14FFFFFF ; ClrDtc=true
+<-  1 ; 3 ; 54
+//------------------ DC_ReadDTCInformation_ReportNumberOfDTCByStatusMask ------------------
+->  1901
+<-  1 ; 3 ; 59[2]FF010001
+//------------------ DC_ReadDTCInformation_ReportDTCByStatusMask ------------------
+->  1902
+<-  1 ; 3 ; 59[2]FF00002101
+//------------------ DC_ReadDTCInformation_ReportDTCSnapshotRecordByDTCNumber ------------------
+->  1904
+<-  1 ; 3 ; 59[2]000021010101
+//------------------ DC_ReadDataByIdentifier ------------------
+->  220100
+<-  1 ; 3 ; 620100{SIN;2;250;12;1000}
+->  220115
+<-  1 ; 3 ; 62011501000001
+->  220116
+<-  1 ; 3 ; 62011601015121
+->  220117
+<-  1 ; 3 ; 62011701015101
+->  221102
+<-  1 ; 3 ; 62110200010001
+->  221103
+<-  1 ; 3 ; 621103000100010001
+->  221104
+<-  1 ; 3 ; 62110401
+->  22CF01
+<-  1 ; 3 ; 62CF0100DE0FFF000000A00FFF000010A10FFF000020A20FFF000030A50FFF000040A50FFF000050170FFF0000601E0FFF000070A30FFF000080280FFF000090A60FFF0000A0F60FFF0000B0A70FFF0000C0A80FFF0000C0A90FFF0000C0AA0FFF0000C0AB0FFF0000C0AC0FFF0000D04D0FFF0000E0AD0FFF0000F0370FFF000100ED0FFF000110AE0FFF000110AF0FFF000110B00FFF000110B10FFF000110B20FFF0001201C0FFF000130030FFF000140030FFF000140310FFF000140320FFF000140FE0FFF000150800FFF000150810FFF000150820FFF000150830FFF000150840FFF000150850FFF000150860FFF000150870FFF000150880FFF000150890FFF0001508A0FFF0001508B0FFF0001508C0FFF0001508D0FFF0001508F0FFF000160800FFF000160810FFF000160820FFF000160830FFF000160840FFF000160850FFF000160860FFF000160870FFF000160880FFF000160890FFF0001608A0FFF0001608E0FFF0001702B0FFF000180000FFF000190000FFF0001A0340FFF0001B0340FFF0001C0A40FFF0001D0030FFF0001E0200FFF0001E0050FFF0001F0150FFF000200030FFF000200ED0FFF000220800FFF000220810FFF000220820FFF000220830FFF000220840FFF000220850FFF000220860FFF000220870FFF000220880FFF000220890FFF0002208A0FFF0002208E0FFF0002208F0FFF0002208D0FFF0002208B0FFF0002208C0FFF000230960FFF000240A00FFF0002504A0FFF000260B30FFF000260B40FFF000280A60FFF000290FC0FFF0002A0290FFF0002A02A0FFF0002E0320FFF0002E02F0FFF0002E0FE0FFF0003203B0FFF000320FE0FFF000330190FFF0003504C0FFF0003A0320FFF0003B1010FFF0003C0970FFF0003D0A40FFF0003E0210FFF0003E0060FFF0003F0220FFF000400330FFF000410180FFF000420070FFF000420080FFF000420040FFF000420310FFF000420A70FFF000430EB0FFF000430EC0FFF000430AA0FFF000430AB0FFF000430A00FFF000430A10FFF000430030FFF000430040FFF0004302F0FFF000430A50FFF000430DD0FFF000430D10FFF000430D20FFF000430D30FFF000450030FFF000450FE0FFF000460640FFF000470520FFF000480190FFF000490430FFF0004A0630FFF0004B0540FFF0004C05A0FFF0004D01E0FFF0004E0000FFF000510170FFF000520160FFF0005402F0FFF000590050FFF000590FE0FFF0005A00E0FFF0005B0140FFF0005C0B60FFF0005C0B70FFF0005D0360FFF0005E0000FFF0005F0000FFF000600000FFF000600010FFF000610000FFF000620000FFF000630280FFF000640A00FFF000650660FFF000660400FFF000670B00FFF000680B10FFF000690D00FFF0006A0D10FFF0006B0D20FFF0006C0600FFF0006D0AA0FFF0006E0860FFF0006E0740FFF0006E0840FFF0006E07A0FFF0006E07E0FFF0006E07C0FFF0006E0790FFF0006E0890FFF0006E0710FFF0006F0130FFF0006F05A0FFF0006F05B0FFF0006F05C0FFF0006F05E0FFF0006F05F0FFF000700F50FFF000710F40FFF000710800FFF000710EF0FFF000720000FFF0007309B0FFF000740090FFF000750900FFF000760160FFF000770F10FFF000780ED0FFF000790ED0FFF0007A0770FFF0007B1010FFF0007C0800FFF0007C08E0FFF0007D0000FFF0007E0800FFF0007E0810FFF0007E0820FFF0007E0830FFF0007E0840FFF0007E0850FFF0007E0860FFF0007E0870FFF0007E0880FFF0007E0890FFF0007E08A0FFF0007E08B0FFF0007E08C0FFF0007E08D0FFF0007E08E0FFF0007E08F0FFF0007F0000FFF000800030FFF000800FE0FFF000810B80FFFFFFFF0FF
+->  22CF02
+<-  1 ; 3 ; 62CF02000100010001000100010001110101010105
+->  22F180
+<-  1 ; 3 ; 62F180{Read;F180_SoftwareIdentification="BOOT_SIM_1.0.0"}
+->  22F181
+<-  1 ; 3 ; 62F181{Read;F181_SoftwareIdentification="APPL_SIM_1.0.0"}
+->  22F183
+<-  1 ; 3 ; 62F183{Read;F183_NumberOfFollowingFingerPrints=01}
+->  22F184
+<-  1 ; 3 ; 62F184{Read;F184_NumberOfFollowingFingerPrints=01}
+->  22F186
+<-  1 ; 3 ; 62F186{Read;F186_SessionNumber=01}
+->  22F187
+<-  1 ; 3 ; 62F187{Read;F187_PartNumber=0001}
+->  22F18A
+<-  1 ; 3 ; 62F18A{Read;F189_SoftwareIdentification="018A"}
+->  22F18B
+<-  1 ; 3 ; 62F18B{Read;F18C_ManufacturingYear="2020"}
+->  22F18C
+<-  1 ; 3 ; 62F18C{Read;F18C_SerialNumber="SN18C"}
+->  22F18E
+<-  1 ; 3 ; 62F18E{Read;F18E_AssemblyPartNumber="APartNo18E"}
+->  22F190
+<-  1 ; 3 ; 62F190{Read;F190_VinNumber="YK5A75H00M5190021"}
+->  22F191
+<-  1 ; 3 ; 62F191FFF00015
+->  22F192
+<-  1 ; 3 ; 62F192{Read;F192_HardwareIdentification="192"}
+->  22F193
+<-  1 ; 3 ; 62F1930000000000000000000000000000000000000000000000000000000000000001
+->  22F195
+<-  1 ; 3 ; 62F1950000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001
+->  22F197
+<-  1 ; 3 ; 62F197{Read;F197_SystemName="SystemName197"}
+->  22F199
+<-  1 ; 3 ; 62F199010101
+->  22F1A5
+<-  1 ; 3 ; 62F1A501
+->  22F1A7
+<-  1 ; 3 ; 62F1A7{Read;F1A7_VehicleModel="64248800"}
+->  22F1A9
+<-  1 ; 3 ; 62F1A9{Read;F1A9_VehiclePlatform="C220A"}
+->  22F1AA
+<-  1 ; 3 ; 62F1AA{Read;F1AA_VehicleBrand="V"}
+->  22FE0B
+<-  1 ; 3 ; 62FE0B00000001
+->  22FE16
+<-  1 ; 3 ; 62FE1601000100010001
+->  22FE17
+<-  1 ; 3 ; 62FE1700000001
+->  22FE18
+<-  1 ; 3 ; 62FE1800000001
+->  22FE1A
+<-  1 ; 3 ; 62FE1A00010001
+//------------------ DC_SecurityAccessRequestSeed ------------------
+->  2701
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2703
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2705
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2707
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+->  2709
+<-  1 ; 3 ; 67[2]0100000000 // already permitted or not armed response.
+//------------------ DC_SecurityAccessSendKey ------------------
+->  2702 ; SecuLevel=SECURITY_LEVEL_1
+<-  1 ; 3 ; 67[2]
+->  2704 ; SecuLevel=SECURITY_LEVEL_2
+<-  1 ; 3 ; 67[2]
+->  2706 ; SecuLevel=SECURITY_LEVEL_3
+<-  1 ; 3 ; 67[2]
+->  2708 ; SecuLevel=SECURITY_LEVEL_4
+<-  1 ; 3 ; 67[2]
+->  270A ; SecuLevel=SECURITY_LEVEL_5
+<-  1 ; 3 ; 67[2]
+//------------------ DC_CommunicationControl ------------------
+->  280001
+<-  1 ; 3 ; 68[2]
+->  280101
+<-  1 ; 3 ; 68[2]
+//------------------ DC_CommunicationControl_NoPosResp ------------------
+->  288001
+<-  1 ; 1 ; null
+->  288101
+<-  1 ; 1 ; null
+//------------------ DC_WriteDataByIdentifier ------------------
+->  2ECF01
+<-  1 ; 3 ; 6ECF01
+->  2ECF02
+<-  1 ; 3 ; 6ECF02
+->  2EF15A
+<-  1 ; 3 ; 6EF15A
+->  2EF187
+<-  1 ; 3 ; 6EF187
+->  2EF18A
+<-  1 ; 3 ; 6EF18A
+->  2EF18B
+<-  1 ; 3 ; 6EF18B
+->  2EF18C
+<-  1 ; 3 ; 6EF18C
+->  2EF18E
+<-  1 ; 3 ; 6EF18E
+->  2EF190
+<-  1 ; 3 ; 6EF190{Write;DID_F190=594b354731313556304b53313233303134} // YK5G115V0KS123014
+->  2EF191
+<-  1 ; 3 ; 6EF191{Write;DID_F191=4845583a4646463030303232} // HEX:FFF00022
+->  2EF192
+<-  1 ; 3 ; 6EF192
+->  2EF193
+<-  1 ; 3 ; 6EF193
+->  2EF1A5
+<-  1 ; 3 ; 6EF1A5
+->  2EF1A7
+<-  1 ; 3 ; 6EF1A7{Write;DID_F1A7=333436363536363033} // 346656603
+->  2EF1A9
+<-  1 ; 3 ; 6EF1A9{Write;DID_F1A9=4332323041} // C220A
+->  2EF1AA
+<-  1 ; 3 ; 6EF1AA{Write;DID_F1AA=56} // V
+//------------------ DC_InputOutputControlByIdentifier_ShortTermAdjustment ------------------
+->  2F011700
+<-  1 ; 3 ; 6F01170101015101
+->  2F011703
+<-  1 ; 3 ; 6F01170101015101
+//------------------ DC_RoutineControl_StartRoutine ------------------
+->  31010202
+<-  1 ; 3 ; 71010202
+->  31010203
+<-  1 ; 3 ; 71010203
+->  3101FF00
+<-  1 ; 3 ; 7101FF00440000000100000001
+->  3101FF01
+<-  1 ; 3 ; 7101FF01
+//------------------ DC_RequestDownload ------------------
+->  340044
+<-  1 ; 3 ; 741001
+//------------------ DC_TransferDataDownload ------------------
+->  36
+<-  1 ; 3 ; 7601
+//------------------ DC_RequestTransferExit ------------------
+->  37
+<-  1 ; 3 ; 77
+//------------------ DC_TesterPresent ------------------
+->  3E00
+<-  1 ; 3 ; 7E[2]
+//------------------ DC_TesterPresent_NoPosResp ------------------
+->  3E80
+<-  1 ; 1 ; null
+//------------------ DC_ControlDTCSetting ------------------
+->  8501
+<-  1 ; 3 ; C5[2]
+->  8502
+<-  1 ; 3 ; C5[2]
+//------------------ DC_ControlDTCSetting_NoPosResp ------------------
+->  8581
+<-  1 ; 1 ; null
+->  8582
+<-  1 ; 1 ; null
+
+
