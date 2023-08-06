@@ -1,0 +1,1 @@
+from map_information_processing_package.sum_package.sum_module import sum_data

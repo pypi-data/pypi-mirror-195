@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+map_information_processing_package/__init__.py
+map_information_processing_package/my_module.py
+map_information_processing_package.egg-info/PKG-INFO
+map_information_processing_package.egg-info/SOURCES.txt
+map_information_processing_package.egg-info/dependency_links.txt
+map_information_processing_package.egg-info/top_level.txt
+map_information_processing_package/sum_package/__init__.py
+map_information_processing_package/sum_package/sum_module.py
