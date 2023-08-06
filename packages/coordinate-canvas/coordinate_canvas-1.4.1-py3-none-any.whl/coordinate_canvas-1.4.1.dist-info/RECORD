@@ -1,0 +1,10 @@
+coordinate-canvas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coordinate-canvas/__main__.py,sha256=joM-UD3Yfb3BfsTn40BiJdaDOqPLgQ__LPKGzDNC8Ak,3054
+coordinate-canvas/core/config.py,sha256=HRwHXF3DolzkvevtITh2eNqOv4nnoTtskczjPh_Jjk8,223
+coordinate-canvas/core/input_handler.py,sha256=GTEbN9Ott_aVBmCt1jO3a15WiPtrREAKjTK1Ymnie2E,2698
+coordinate-canvas/core/line_builder.py,sha256=Q0z54Bp6zoHQX2oXVySrAUgXSbTiaNfVnBK6LgOkfkA,4114
+coordinate_canvas-1.4.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+coordinate_canvas-1.4.1.dist-info/METADATA,sha256=uV-aN70mb-TubYXGDkVmj0KSYwSM1u_Vdprt_m06yPg,3702
+coordinate_canvas-1.4.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+coordinate_canvas-1.4.1.dist-info/top_level.txt,sha256=Xo4wGhsQd7N69I8ToSi05MwrT4GCok072OpPmeC3EoY,18
+coordinate_canvas-1.4.1.dist-info/RECORD,,
