@@ -1,0 +1,10 @@
+Django
+celery
+django-model-utils
+djangorestframework
+edx-celeryutils
+edx-completion
+edx-opaque-keys
+edx-toggles
+six
+xblock-utils
