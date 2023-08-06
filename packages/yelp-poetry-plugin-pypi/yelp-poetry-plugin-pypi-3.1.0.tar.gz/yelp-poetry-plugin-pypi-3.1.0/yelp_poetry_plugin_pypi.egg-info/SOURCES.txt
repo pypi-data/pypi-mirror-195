@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+yelp_poetry_plugin_pypi.egg-info/PKG-INFO
+yelp_poetry_plugin_pypi.egg-info/SOURCES.txt
+yelp_poetry_plugin_pypi.egg-info/dependency_links.txt
+yelp_poetry_plugin_pypi.egg-info/not-zip-safe
+yelp_poetry_plugin_pypi.egg-info/top_level.txt
