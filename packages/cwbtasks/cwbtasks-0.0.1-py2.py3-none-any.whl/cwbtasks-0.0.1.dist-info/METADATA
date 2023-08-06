@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: cwbtasks
+Version: 0.0.1
+Summary: Top-level package for cwbtasks.
+Author-email: trungbat <codewithbat@gmail.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Home, https://github.com/codewithbat/tasks
+
+*cwbtasks*
+

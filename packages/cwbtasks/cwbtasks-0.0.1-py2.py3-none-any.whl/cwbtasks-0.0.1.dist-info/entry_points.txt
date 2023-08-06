@@ -1,0 +1,3 @@
+[console_scripts]
+cwbtasks=cwbtasks:app
+

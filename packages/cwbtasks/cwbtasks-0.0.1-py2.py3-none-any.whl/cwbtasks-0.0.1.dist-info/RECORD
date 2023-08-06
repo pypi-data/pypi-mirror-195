@@ -1,0 +1,10 @@
+cwbtasks/__init__.py,sha256=DV-2nG5ifDTP1C01gFZs4F3nHddHSHqTwhj7RQUdvC0,117
+cwbtasks/__main__.py,sha256=nnifquSQt-JHmk4t67D8WgE1uQvXVvXMR8L_PwkUI1U,129
+cwbtasks/api.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cwbtasks/cli.py,sha256=gw99k4EdouQxs6BLdJY2tBF0VOV6b6epES2P2eO_8rQ,395
+cwbtasks/db.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cwbtasks-0.0.1.dist-info/entry_points.txt,sha256=Rv3_suaBOWbb7KT_n7nT0h3mDW5SQa2TEAG8QH21uvs,41
+cwbtasks-0.0.1.dist-info/LICENSE,sha256=1mWFaMhlA7joK7aoDK4risG3JnnXEO1j2S1eSCiGf34,1069
+cwbtasks-0.0.1.dist-info/WHEEL,sha256=kdeDBNPvBI0w3meLKPoGgAnEr54n1jzrZWUoaLmGzVY,99
+cwbtasks-0.0.1.dist-info/METADATA,sha256=otQq86rYfv0iaFJau_0PkIIpsYTtWrV1mrXkystlLTI,300
+cwbtasks-0.0.1.dist-info/RECORD,,
