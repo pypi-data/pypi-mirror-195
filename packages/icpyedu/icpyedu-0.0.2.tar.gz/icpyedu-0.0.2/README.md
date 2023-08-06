@@ -1,0 +1,38 @@
+# ICPyEdu
+**ICPyEdu** is a tool for Digital Signatures using ICPEdu Certificate. This _package_ was developed as a complementary artifact to the completion of the course work of the student **Kemuel dos Santos Rocha** to obtain the Bachelor's degree in Computer Engineering.
+
+**ICPyEdu** is a library for educational purposes and allows signing documents in _.pdf_ format, as well as verifying the digital signature.
+
+## How to install the library
+
+To install the library, just run the command below:
+```python
+pip install icpyedu
+```
+## How to import library classes and methods
+
+To use the features of the _package_, import with the following code:
+```python
+from icpyedu import signer
+```
+
+To instantiate the class responsible for the digital signature methods, just declare a variable receiving _Sign_ as follows:
+```python
+var = signer.Sign()
+```
+
+To instantiate the class responsible for the digital signature verification methods, just declare a variable receiving _Verifier_ as follows:
+```python
+var = signer.Verify()
+```
+
+Finally, to use it to sign a pdf, just call the _signFile_ function passing the requested parameters, for example:
+```python
+var.signFile("email", "password", "filePath", "certificatePath")
+```
+
+Similarly, to verify a pdf, just call the _verifySignature_ function passing the requested parameters, for example:
+```python
+var.verifySignature("pdf","certifying authority_1", "certifying authority_2")
+```
+Certificate authority certificates are files that come with the personal certificate exported by ICPEdu
