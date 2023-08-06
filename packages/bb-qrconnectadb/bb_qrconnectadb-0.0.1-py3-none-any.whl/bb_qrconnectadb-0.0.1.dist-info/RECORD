@@ -1,0 +1,7 @@
+qr_connect/__init__.py,sha256=exdFEDJyaf1V-zPWJPfvAwZCYhgchZvnY6FjQ9z2bCk,123
+qr_connect/__main__.py,sha256=powSx4EnEeCKs1CSYw5_1cnm_vwYxyIM83RYRRJi6Ms,17875
+qr_connect/images/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qr_connect/images/android.png,sha256=kX4sMb7XVZUg-ab4EL_bHOEZbAAZ2lbYptDPXifYmAs,13723
+bb_qrconnectadb-0.0.1.dist-info/METADATA,sha256=wmtFNFTrbx_TOGd3mLnQxxCW3tGeuWwbE4ZPSqOgJEg,1238
+bb_qrconnectadb-0.0.1.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+bb_qrconnectadb-0.0.1.dist-info/RECORD,,
