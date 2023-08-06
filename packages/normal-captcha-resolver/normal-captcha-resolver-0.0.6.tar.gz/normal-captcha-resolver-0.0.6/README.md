@@ -1,0 +1,1 @@
+# Uma lib para a leitura e processamento de normal captchas

@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: normal-captcha-resolver
+Version: 0.0.6
+Summary: normal captcha resolver não oficial
+Author: Marcone Santos
+Author-email: ms5806166@gmail.com
+License: MIT License
+Keywords: normalcaptcha captcha normal normal-captcha
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Uma lib para a leitura e processamento de normal captchas

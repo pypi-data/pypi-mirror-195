@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+normal_captcha/__init__.py
+normal_captcha/normal_captcha.py
+normal_captcha_resolver.egg-info/PKG-INFO
+normal_captcha_resolver.egg-info/SOURCES.txt
+normal_captcha_resolver.egg-info/dependency_links.txt
+normal_captcha_resolver.egg-info/requires.txt
+normal_captcha_resolver.egg-info/top_level.txt
