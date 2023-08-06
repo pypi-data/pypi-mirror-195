@@ -1,0 +1,261 @@
+Metadata-Version: 2.1
+Name: nvidia-tao
+Version: 4.0.1
+Summary: NVIDIA's Launcher for TAO Toolkit.
+Author: Varun Praveen
+Author-email: vpraveen@nvidia.com
+License: NVIDIA Proprietary Software
+Keywords: nvidia,tao,launcher
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Environment :: Console
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6.*
+Description-Content-Type: text/markdown
+Requires-Dist: certifi
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: docker (==4.3.1)
+Requires-Dist: requests
+Requires-Dist: docker-pycreds (==0.4.0)
+Requires-Dist: idna (==2.10)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: tabulate (==0.8.7)
+Requires-Dist: urllib3 (>=1.26.5)
+Requires-Dist: websocket-client (==0.57.0)
+
+# TAO Toolkit Quick Start
+
+The NVIDIA TAO Toolkit, built on TensorFlow and PyTorch, simplifies and accelerates the model training process by abstracting away the complexity of AI models and the deep learning framework. You can use the power of transfer learning to fine-tune NVIDIA pretrained models with your own data and optimize the model for inference throughput — all without the need for AI expertise or large training datasets.
+
+[TAO quick start video](https://www.nvidia.com/en-us/on-demand/session/other2022-tao/).
+
+## Requirements
+
+### Minimum Hardware requirements
+
+The following system configuration is recommended to achieve reasonable training performance with TAO Toolkit and supported models provided:
+
+* 32 GB system RAM
+* 32 GB of GPU RAM
+* 8 core CPU
+* 1 NVIDIA GPU
+* 100 GB of SSD space
+
+TAO Toolkit is supported on discrete GPUs, such as A100, A40, A30, A2, A16, A100x, A30x, V100, T4, Titan-RTX and Quadro-RTX.
+
+> Note: TAO Toolkit is not supported on GPU's before the Pascal generation
+
+### Software requirements
+
+| **Software**                     | **Version** | **Comment** |
+| :--- | :--- | :-- |
+| Ubuntu LTS                       | 20.04       ||
+| python                           | >=3.6.9<3.7 | Not needed if you are using TAO API \(See #3 below\) |
+| docker-ce                        | >19.03.5    | Not needed if you are using TAO API \(See #3 below\) |
+| docker-API                       | 1.40        | Not needed if you are using TAO API \(See #3 below\) |
+| `nvidia-container-toolkit`       | >1.3.0-1    | Not needed if you are using TAO API \(See #3 below\) |
+| nvidia-container-runtime         | 3.4.0-1     | Not needed if you are using TAO API \(See #3 below\) |
+| nvidia-docker2                   | 2.5.0-1     | Not needed if you are using TAO API \(See #3 below\) |
+| nvidia-driver                    | >520        | Not needed if you are using TAO API \(See #3 below\) |
+| python-pip                       | >21.06      | Not needed if you are using TAO API \(See #3 below\) |
+
+## Package Content
+
+Download the TAO package which contains startup scripts, Jupyter notebooks and config files. <br>
+TAO is supported on Google Colab; if you want to try on Colab, you can skip this step and directly scroll down to [#4 in the How to run TAO](#colab) section.
+
+    wget --content-disposition https://api.ngc.nvidia.com/v2/resources/nvidia/tao/tao_getting_started/versions/4.0.0/zip -O getting_started_v4.0.0.zip
+    unzip -u getting_started_v4.0.0.zip  -d ./getting_started_v4.0.0 && rm -rf getting_started_v4.0.0.zip && cd ./getting_started_v4.0.0
+
+### File Hierarchy
+
+    setup
+        |--> quickstart_launcher.sh
+        |--> quickstart_api_bare_metal
+        |--> quickstart_api_aws_eks
+    notebooks
+        |--> tao_api_starter_kit
+            |--> api
+                |--> automl
+                |--> end2end
+                |--> dataset_prepare
+            |--> client
+                |--> automl
+                |--> end2end
+                |--> dataset_prepare
+        |--> tao_launcher_starter_kit
+            |--> yolov4_tiny
+            |--> yolov4
+            |--> yolov3
+            |-->  ...
+
+## How to run TAO?
+
+TAO is available as a docker container or as a collection of Python wheels.
+
+There are 4 ways to run TAO depending on user preference and their setup. See the full list below.
+
+#### 1. Launcher CLI
+
+The TAO Launcher is a lightweight Python based CLI application to run TAO. The launcher basically acts as a front-end for the multiple TAO Toolkit containers built on both PyTorch and Tensorflow. The multiple containers essentially get launched automatically based on the type of  model you plan to use for your computer vision or conversational AI use-cases.  
+
+<p align="center">
+<img src="https://github.com/vpraveen-nv/model_card_images/raw/main/api/tao_launcher.jpg" width="300"> <br>TAO Launcher<br>
+</p>
+
+To get started, use the `setup/quickstart_launcher.sh` to validate your setup and install TAO launcher. Jupyter notebooks to train using the Launcher is provided under `notebooks/launcher_starter_kit`.
+
+Detail instructions on installing pre-requisite and setup is provided in [TAO documentation - Launcher](https://docs.nvidia.com/tao/tao-toolkit/text/tao_toolkit_quick_start_guide.html)
+
+#### 2. Directly from Container
+
+Users have option to also run TAO directly using the docker container. To use container directly, user needs to know which container to pull. There are multiple containers under TAO, and depending on the model that you want to train you will need to pull the appropriate container. This is not required when using the Launcher CLI.
+
+    export DOCKER_REGISTRY="nvcr.io"
+    export DOCKER_NAME="nvidia/tao/tao-toolkit"
+    export DOCKER_TAG="***" ## for TensorFlow docker
+    export DOCKER_TAG="***" ## for PyTorch docker
+    export DOCKER_CONTAINER=$DOCKER_REGISTRY/$DOCKER_NAME:$DOCKER_TAG
+
+    docker run -it --rm --gpus all -v /path/in/host:/path/in/docker $DOCKER_CONTAINER \
+    detectnet_v2 train -e /path/to/experiment/spec.txt -r /path/to/results/dir -k $KEY --gpus 4
+
+More information about running directly from docker  is provided in [TAO documentation - Container](https://docs.nvidia.com/tao/tao-toolkit/text/working_with_the_containers.html)
+
+#### 3. TAO APIs
+
+TAO Toolkit API is a Kubernetes service that enables building end-to-end AI models using REST APIs. The API service can be installed on a Kubernetes cluster (local / AWS EKS) using a Helm chart along with minimal dependencies. TAO toolkit jobs can be run using GPUs available on the cluster and can scale to a multi-node setting. Users can use a TAO client CLI to interact with TAO services remotely or can integrate it in their own apps and services directly using REST APIs.
+
+<p align="center">
+<img src="https://docs.nvidia.com/tao/tao-toolkit/_images/tao_toolkit_api.png" width="500"> <br>TAO API<br>
+</p>
+
+To get started, use the provided one-click deploy script to deploy either on bare-metal setup or on managed Kubernetes service like Amazon EKS. Jupyter notebooks to train using the APIs directly or using the client app is provided under `notebooks/api_starter_kit`<br>
+`setup/quickstart_api_bare_metal`<br>
+`setup/quickstart_api_aws_eks`<br>
+
+More information about setting up the API services and the API is provided in [TAO documentation - API](https://docs.nvidia.com/tao/tao-toolkit/text/tao_toolkit_api/api_overview.html)
+
+#### 4. Python Wheel <a class="anchor" name="colab"></a>
+
+Users can also run TAO directly on bare-metal without docker or K8s. Users can deploy TAO notebooks directly on Google Colab without having to configure infrastructure. The full instructions are provided in the Colab notebook below.
+
+| **CV Task** | **Model Arch** | **One-click Deploy** |
+| :--- | :--- | :-- |
+| Classification | ResNet18 | [Train on Colab](https://colab.research.google.com/github/NVIDIA-AI-IOT/nvidia-tao/blob/main/tensorflow/classification/classification.ipynb) |
+| Multi-task Classification | ResNet18 | [Train on Colab](https://colab.research.google.com/github/NVIDIA-AI-IOT/nvidia-tao/blob/main/tensorflow/multitask_classification/multitask_classification.ipynb) |
+| Object Detection | Deformable-DETR | [Train on Colab](https://colab.research.google.com/github/NVIDIA-AI-IOT/nvidia-tao/blob/main/pytorch/cv_notebooks/deformable_detr/deformable_detr.ipynb) |
+| Object Detection | DSSD | [Train on Colab](https://colab.research.google.com/github/NVIDIA-AI-IOT/nvidia-tao/blob/main/tensorflow/dssd/dssd.ipynb) |
+| Object Detection | EfficientDet | [Train on Colab](https://colab.research.google.com/github/NVIDIA-AI-IOT/nvidia-tao/blob/main/tensorflow/efficientdet/efficientdet.ipynb) |
+| Object Detection | RetinaNet | [Train on Colab](https://colab.research.google.com/github/NVIDIA-AI-IOT/nvidia-tao/blob/main/tensorflow/retinanet/retinanet.ipynb) |
+| Object Detection | SSD | [Train on Colab](https://colab.research.google.com/github/NVIDIA-AI-IOT/nvidia-tao/blob/main/tensorflow/ssd/ssd.ipynb) |
+| Object Detection | YOLOv3 | [Train on Colab](https://colab.research.google.com/github/NVIDIA-AI-IOT/nvidia-tao/blob/main/tensorflow/yolo_v3/yolo_v3.ipynb) |
+| Object Detection | YOLOv4 | [Train on Colab](https://colab.research.google.com/github/NVIDIA-AI-IOT/nvidia-tao/blob/main/tensorflow/yolo_v4/yolo_v4.ipynb) |
+| Object Detection | YoloV4 Tiny | [Train on Colab](https://colab.research.google.com/github/NVIDIA-AI-IOT/nvidia-tao/blob/main/tensorflow/yolo_v4_tiny/yolo_v4_tiny.ipynb) |
+| Action Recognition | ActionRecognition | [Train on Colab](https://colab.research.google.com/github/NVIDIA-AI-IOT/nvidia-tao/blob/main/pytorch/cv_notebooks/action_recognition_net/actionrecognitionnet.ipynb) |
+| OCR | LPRNet | [Train on Colab](https://colab.research.google.com/github/NVIDIA-AI-IOT/nvidia-tao/blob/main/tensorflow/lprnet/lprnet.ipynb) |
+| Pose Action Classification  |  PoseClassificationNet  | [Train on Colab](https://colab.research.google.com/github/NVIDIA-AI-IOT/nvidia-tao/blob/main/pytorch/cv_notebooks/pose_classification_net/poseclassificationnet.ipynb) |
+| 3D Point Cloud | PointPillar | [Train on Colab](https://colab.research.google.com/github/NVIDIA-AI-IOT/nvidia-tao/blob/main/pytorch/cv_notebooks/pointpillars/pointpillars.ipynb) |
+| Emotion Recognition | EmotionNet | [Train on Colab](https://colab.research.google.com/github/NVIDIA-AI-IOT/nvidia-tao/blob/main/tensorflow/emotionnet/emotionnet.ipynb) |
+| Gesture Recognition | GestureNet | [Train on Colab](https://colab.research.google.com/github/NVIDIA-AI-IOT/nvidia-tao/blob/main/tensorflow/gesturenet/gesturenet.ipynb) |
+| Heart Rate Estimation | HeartRateNet | [Train on Colab](https://colab.research.google.com/github/NVIDIA-AI-IOT/nvidia-tao/blob/main/tensorflow/heartratenet/heartratenet.ipynb) |
+<br>
+After starting TAO service locally or remotely, start Jupyter notebook
+
+    jupyter notebook --ip 0.0.0.0 --port 8888 --allow-root
+
+Open an internet browser on localhost and navigate to the following URL: <http://0.0.0.0:8888>
+
+Open the notebook that you are interested in training and start training.
+
+> Note: All the instructions to train, prune, optimize and download pretrained models are provided in the notebook.
+
+## Jupyter notebooks
+
+All Notebooks and required spec files are provided in this package. The table below maps which notebook to use for fine-tuning either a purpose-build models like PeopleNet or an open model architecture like YOLO.
+
+|**Purpose-built Model** | **Launcher CLI notebook** |
+|:--|:--|
+| PeopleNet | notebooks/tao_launcher_starter_kit/detectnet_v2/detectnet_v2.ipynb |
+| TrafficCamNet | notebooks/tao_launcher_starter_kit/detectnet_v2/detectnet_v2.ipynb |
+| DashCamNet | notebooks/tao_launcher_starter_kit/detectnet_v2/detectnet_v2.ipynb |
+| FaceDetectIR| notebooks/tao_launcher_starter_kit/detectnet_v2/detectnet_v2.ipynb |
+| VehicleMakeNet | notebooks/tao_launcher_starter_kit/classification/classification.ipynb |
+| VehicleTypeNet | notebooks/tao_launcher_starter_kit/classification/classification.ipynb |
+| PeopleSegNet | notebooks/tao_launcher_starter_kit/mask_rcnn/mask_rcnn.ipynb |
+| PeopleSemSegNet | notebooks/tao_launcher_starter_kit/unet/unet_isbi.ipynb |
+| Bodypose Estimation | notebooks/tao_launcher_starter_kit/bpnet/bpnet.ipynb |
+| License Plate Detection | notebooks/tao_launcher_starter_kit/detectnet_v2/detectnet_v2.ipynb |
+| License Plate Recognition | notebooks/tao_launcher_starter_kit/lprnet/lprnet.ipynb |
+| Gaze Estimation | notebooks/tao_launcher_starter_kit/gazenet/gazenet.ipynb |
+| Facial Landmark | notebooks/tao_launcher_starter_kit/fpenet/fpenet.ipynb |
+| Heart Rate Estimation | notebooks/tao_launcher_starter_kit/heartratenet/heartratenet.ipynb |
+| Gesture Recognition | notebooks/tao_launcher_starter_kit/gesturenet/gesturenet.ipynb |
+| Emotion Recognition | notebooks/tao_launcher_starter_kit/emotionnet/emotionnet.ipynb |
+| FaceDetect | notebooks/tao_launcher_starter_kit/facenet/facenet.ipynb |
+| ActionRecognitionNet | notebooks/tao_launcher_starter_kit/action_recognition_net/actionrecognitionnet.ipynb |
+| PoseClassificationNet | notebooks/tao_launcher_starter_kit/pose_classification_net/pose_classificationnet.ipynb |
+| Pointpillars | notebooks/tao_launcher_starter_kit/pointpillars/pointpillars.ipynb |
+| ReIdentificationNet | notebooks/tao_launcher_starter_kit/re_identification_net/reidentificationnet.ipynb |
+<br>
+
+|**Open model architecture**| **Jupyter notebook** |
+|:--|:--|
+| Deformable-DETR | notebooks/tao_launcher_starter_kit/deformable_detr/deformable_detr.ipynb |
+| SegFormer | notebooks/tao_launcher_starter_kit/segformer/segformer.ipynb |
+| DetectNet_v2 | notebooks/tao_launcher_starter_kit/detectnet_v2/detectnet_v2.ipynb |
+| FasterRCNN | notebooks/tao_launcher_starter_kit/faster_rcnn/faster_rcnn.ipynb |
+| YOLOV3 | notebooks/tao_launcher_starter_kit/yolo_v3/yolo_v3.ipynb |
+| YOLOV4 | notebooks/tao_launcher_starter_kit/yolo_v4/yolo_v4.ipynb |
+| YOLOv4-Tiny | notebooks/tao_launcher_starter_kit/yolo_v4_tiny/yolo_v4_tiny.ipynb |
+| SSD | notebooks/tao_launcher_starter_kit/ssd/ssd.ipynb |
+| DSSD | notebooks/tao_launcher_starter_kit/dssd/dssd.ipynb |
+| RetinaNet | notebooks/tao_launcher_starter_kit/retinanet/retinanet.ipynb |
+| MaskRCNN | notebooks/tao_launcher_starter_kit/mask_rcnn/mask_rcnn.ipynb |
+| UNET | notebooks/tao_launcher_starter_kit/unet/unet_isbi.ipynb |
+| Image Classification | notebooks/tao_launcher_starter_kit/classification/classification.ipynb |
+| EfficientDet | notebooks/tao_launcher_starter_kit/efficientdet/efficientdet.ipynb |
+<br>
+
+**Conversational AI**
+
+For Conversational AI, all notebooks are available on NGC. Please download the notebook from the appropriate NGC resource as mentioned in the table below.
+
+| **Conversational AI Task**     | **Jupyter Notebooks**                  |
+| :--- | :--- |
+| Speech to Text Citrinet        | [Speech to Text Citrinet Notebook](https://ngc.nvidia.com/catalog/resources/nvidia:tao:speechtotext_citrinet_notebook) |
+| Speech to Text Conformer       | [Speech to Text Conformer Notebook](https://ngc.nvidia.com/catalog/resources/nvidia:tao:speechtotext_citrinet_notebook)   |
+| Question Answering             | [Question Answering Notebook](https://ngc.nvidia.com/catalog/resources/nvidia:tao:questionanswering_notebook)|
+| Text Classification            | [Text Classification Notebook](https://ngc.nvidia.com/catalog/resources/nvidia:tao:textclassification_notebook)        |
+| Token Classification           | [Token Classification Notebook](https://ngc.nvidia.com/catalog/resources/nvidia:tao:tokenclassification_notebook)|
+| Punctuation and Capitalization | [Punctuation Capitalization Notebook](https://ngc.nvidia.com/catalog/resources/nvidia:tao:punctuationcapitalization_notebook) |
+| Intent and Slot Classification | [Intent Slot Classification Notebook](https://ngc.nvidia.com/catalog/resources/nvidia:tao:intentslotclassification_notebook)|
+| NGram Language Model           | [NGram Language Model Notebook](https://ngc.nvidia.com/catalog/resources/nvidia:tao:ngram_lm_notebook)       |
+| Text to Speech                 | [Text to Speech Notebook](https://ngc.nvidia.com/catalog/resources/nvidia:tao:texttospeech_notebook)             |
+
+## Important Links
+
+* [TAO Toolkit Documentation](https://docs.nvidia.com/tao/tao-toolkit/text/overview.html)
+* [TAO for CV (TensorFlow)](https://ngc.nvidia.com/catalog/containers/nvidia:tao:tao-toolkit-tf)
+* [TAO for CV (PyTorch)](https://ngc.nvidia.com/catalog/containers/nvidia:tao:tao-toolkit-pyt)
+* [TAO for Conversational AI](https://ngc.nvidia.com/catalog/containers/nvidia:tao:tao-toolkit-pyt)
+
+## Blogs
+
+[Synthetic Data and TAO](https://developer.nvidia.com/blog/developing-and-deploying-ai-powered-robots-with-nvidia-isaac-sim-and-nvidia-tao/) <br>
+[Action Recognition Blog](https://developer.nvidia.com/blog/developing-and-deploying-your-custom-action-recognition-application-without-any-ai-expertise-using-tao-and-deepstream/) <br>
+[Real-time License Plate Detection](https://developer.nvidia.com/blog/creating-a-real-time-license-plate-detection-and-recognition-app/) <br>
+[2 Pose Estimation: Part 1](https://developer.nvidia.com/blog/training-optimizing-2d-pose-estimation-model-with-tao-toolkit-part-1/) <br>
+[Part 2](https://developer.nvidia.com/blog/training-optimizing-2d-pose-estimation-model-with-tao-toolkit-part-2/) <br>
+[Building ConvAI with TAO Toolkit](https://developer.nvidia.com/blog/building-and-deploying-conversational-ai-models-using-tao-toolkit/) <br>
+
+## License <a class="anchor" name="license"></a>
+
+[TAO Toolkit getting Started](https://docs.nvidia.com/tao/tao-toolkit/text/tao_quick_start_guide.html)
+License for TAO containers is included within the container at `workspace/EULA.pdf`. License for the pre-trained models are available with the model files. By pulling and using the Train Adapt Optimize (TAO) Toolkit container to download models, you accept the terms and conditions of these [licenses](https://developer.nvidia.com/tao-toolkit-software-license-agreement).
+
+

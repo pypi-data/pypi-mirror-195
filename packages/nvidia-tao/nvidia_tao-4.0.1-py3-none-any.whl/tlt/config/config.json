@@ -1,0 +1,72 @@
+{
+    "dockers": {
+        "nvidia/tao/tao-toolkit": {
+            "4.0.0-tf2.9.1": {
+                "docker_registry": "nvcr.io",
+                "tasks": [
+                    "classification_tf2",
+                    "efficientdet_tf2"
+                ]
+            },
+            "4.0.0-tf1.15.5": {
+                "docker_registry": "nvcr.io",
+                "tasks": [
+                    "augment",
+                    "bpnet",
+                    "classification_tf1",
+                    "detectnet_v2",
+                    "dssd",
+                    "emotionnet",
+                    "efficientdet_tf1",
+                    "faster_rcnn",
+                    "fpenet",
+                    "gazenet",
+                    "gesturenet",
+                    "heartratenet",
+                    "lprnet",
+                    "mask_rcnn",
+                    "multitask_classification",
+                    "retinanet",
+                    "ssd",
+                    "unet",
+                    "yolo_v3",
+                    "yolo_v4",
+                    "yolo_v4_tiny",
+                    "converter"
+                ]
+            },
+            "4.0.1-tf1.15.5": {
+                "docker_registry": "nvcr.io",
+                "tasks": [
+                    "mask_rcnn",
+                    "unet"
+                ]
+            },
+            "4.0.0-pyt": {
+                "docker_registry": "nvcr.io",
+                "tasks": [
+                    "action_recognition",
+                    "deformable_detr",
+                    "segformer",
+                    "re_identification",
+                    "pointpillars",
+                    "pose_classification",
+                    "n_gram",
+                    "speech_to_text",
+                    "speech_to_text_citrinet",
+                    "speech_to_text_conformer",
+                    "spectro_gen",
+                    "vocoder",
+                    "text_classification",
+                    "question_answering",
+                    "token_classification",
+                    "intent_slot_classification",
+                    "punctuation_and_capitalization"
+                ]
+            }
+        }
+    },
+    "format_version": 2.0,
+    "toolkit_version": "4.0.1",
+    "published_date": "03/06/2023"
+}

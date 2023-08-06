@@ -1,0 +1,32 @@
+{
+    "dockers": {
+        "nvidia/tao/tao-toolkit": {
+            "4.0.0-deploy": {
+                "docker_registry": "nvcr.io",
+                "tasks": [
+                    "classification_tf1",
+                    "classification_tf2",
+                    "deformable_detr",
+                    "detectnet_v2",
+                    "dssd",
+                    "efficientdet_tf1",
+                    "efficientdet_tf2",
+                    "faster_rcnn",
+                    "lprnet",
+                    "mask_rcnn",
+                    "multitask_classification",
+                    "retinanet",
+                    "segformer",
+                    "ssd",
+                    "unet",
+                    "yolo_v3",
+                    "yolo_v4",
+                    "yolo_v4_tiny"
+                ]
+            }
+        }
+    },
+    "format_version": 2.0,
+    "toolkit_version": "4.0.1",
+    "published_date": "03/06/2023"
+}

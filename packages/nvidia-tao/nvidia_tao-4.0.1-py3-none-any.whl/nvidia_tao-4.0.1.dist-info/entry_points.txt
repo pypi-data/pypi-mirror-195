@@ -1,0 +1,3 @@
+[console_scripts]
+tao = tlt.entrypoint.tao:main
+tao-deploy = tlt.entrypoint.tao_deploy:main
