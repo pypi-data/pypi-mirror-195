@@ -1,0 +1,3 @@
+-r ../piped/python/base-requirements/tests.in
+
+pytest-xdist>=3.1
