@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+androdf/LICENSE
+androdf/README.MD
+androdf/__init__.py
+androdf/requirements.txt
+androdf/thirdparty.json
+androdf.egg-info/PKG-INFO
+androdf.egg-info/SOURCES.txt
+androdf.egg-info/dependency_links.txt
+androdf.egg-info/requires.txt
+androdf.egg-info/top_level.txt

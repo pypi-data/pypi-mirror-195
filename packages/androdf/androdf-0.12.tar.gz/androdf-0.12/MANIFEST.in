@@ -1,0 +1,4 @@
+include androdf/requirements.txt
+include androdf/thirdparty.json
+include androdf/README.MD
+include androdf/LICENSE
