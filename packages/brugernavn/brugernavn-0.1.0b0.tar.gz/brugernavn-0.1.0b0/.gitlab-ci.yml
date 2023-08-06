@@ -1,0 +1,23 @@
+image: python:latest
+
+before_script:
+  - python --version  # For debugging
+  - pip install virtualenv
+  - virtualenv venv
+  - source venv/bin/activate
+  - pip install requests
+
+build-job:
+  stage: build
+  script:
+    - python3 -c "import brugernavn"
+
+test-job1:
+  stage: test
+  script:
+    - python3 -c "import brugernavn;brugernavn.Tests().test_search_quiet()"
+
+test-job2:
+  stage: test
+  script:
+    - python3 -c "import brugernavn;brugernavn.Tests().test_search_loud()"
