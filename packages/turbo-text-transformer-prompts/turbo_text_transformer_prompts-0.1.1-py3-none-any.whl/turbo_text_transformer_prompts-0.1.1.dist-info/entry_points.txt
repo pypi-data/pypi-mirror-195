@@ -1,0 +1,3 @@
+[console_scripts]
+tttp=tttp.__main__:main
+
