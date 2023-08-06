@@ -1,0 +1,33 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['lucius_ltv']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['arviz>=0.13.0',
+ 'pymc>=5.1.0',
+ 'pytensor>=2.10.1,<3.0.0',
+ 'seaborn>=0.11.2,<0.12.0']
+
+setup_kwargs = {
+    'name': 'lucius-ltv',
+    'version': '0.2.0',
+    'description': 'A simple multicohort LTV calculator for subscription based products',
+    'long_description': '<div>\n    <img src=\'https://raw.githubusercontent.com/luke14free/lucius-ltv/main/assets/logo.png\'>\n</div>\n\n# Lucius LTV\n\nA Python simple multi-cohort LTV calculator library for subscription-based products.\n\n## Installation\n\n```shell\npip install lucius-ltv\n```\n\n## Building a cohort matrix\n\nTo use this library, the first step is to build a **Cohort retention matrix** for your product.\n\nTo build a cohort matrix:\n * For each period of interest (week/month/year - depending on your subscription)\n * Retrieve the number of users that started paying for the first time\n * Track those users over time to observe how many where still alive in the following periods\n * Stack them in order to obtain a pd.DataFrame resembling this:\n\n| 2022 | 2021 | 2020 | 2019 | 2018 | 2017 | 2016 | 2015 |\n|------|------|------|------|------|------|------|------|\n| 100  | 95   | 82   | 78   | 75   | 71   | 68   | 63   |\n|      | 120  | 109  | 99   | 87   | 80   | 67   | 66   |\n|      |      | 101  | 90   | 80   | 77   | 73   | 68   |\n|      |      |      | 130  | 122  | 115  | 108  | 99   |\n|      |      |      |      | 95   | 91   | 85   | 67   |\n|      |      |      |      |      | 102  | 90   | 81   |\n|      |      |      |      |      |      | 90   | 80   |\n\nAlternatively if you are just trying out this library, you can generate a retention cohort matrix by calling `generate_synthetic_cohort_matrix`. An example of this is contained in the sample file, `sample.py` shipped with this project.\n\n## Fitting the model\n\nOnce you have a cohort matrix, you can finally fit the sBG model that will predict LTV. \nBehind the scenes this library implements "Fader, Peter and Hardie, Bruce, How to Project Customer Retention (May 2006)" (Available at SSRN: https://ssrn.com/abstract=801145\nor http://dx.doi.org/10.2139/ssrn.801145) using the powerful Bayesian Inference library [pymc3](https://docs.pymc.io/en/v3/).\n\nTo fit the pymc model, simply run:\n\n### Basic fit\n```python\ninference_data, model = fit_sbg_model(\n    cohort_matrix,\n    periods=10,    # Number of projected periods\n)\n```\n\n### Fit with "all_users"\n\nIf your product offers free trials or initial offers of any kind, you can add a conversion layer to the model, by specifying the starting users:\n```python\ninference_data, model = fit_sbg_model(\n    cohort_matrix,\n    all_users=[150, 147, 180, 160, 130, 140, 160], \n    periods=10,    # Number of projected periods\n)\n```\n\n### Fit with true parameters\n\nIf you are testing the model with synthetic data you can specify the true alpha/beta sbg parameter values (those won\'t be used in fitting, but to generate reference/comparison timeseries)\n\n```python\ninference_data, model = fit_sbg_model(\n    cohort_matrix,\n    periods=10,    # Number of projected periods\n    true_a=1.5,\n    true_b=2.3,\n)\n```\n\n### Extra pymc sampling parameters\n\nIf you want you can pass extra arguments that will be re-routed to the pymc sampler, like `target_accept`, `steps`, `tune`, etc..\n\n## Analyzing results\n\nThe returned `inference_data` is a standard Arviz InferenceData object will contain a posterior estimate of the modelled variables as returned by pymc3.\nThe most interesting variables are:\n\n* `inference_data.posterior[\'ltv\']` the LTV timeseries\n* `inference_data.posterior[\'conversion_rate_by_cohort\']` the conversion rates if you did the fit with `all_users`\n* `inference_data.posterior[\'ltv\']` the true LTV timeseries if you provided true values of alpha and beta\n\nPlease note that these are trace objects resulting from the sampling process, \ntherefore each variable will have multiple possible values representing the sampling of the posterior distribution. \nFrom this sampling you can obtain high-density intervals using [`np.percentile`](https://numpy.org/doc/stable/reference/generated/numpy.percentile.html) or [`az.hdi`](https://arviz-devs.github.io/arviz/api/generated/arviz.hdi.html).\n\n### Empirical LTV from cohort matrix\n\nYou can also compute the empirical LTV starting from the cohort matrix, allowing you to compare empirical LTV to the projected one.\n\n```python\nempirical_ltv = compute_empirical_ltv(cohort_matrix=cohort_matrix)\n```\n\n## Plots\n\nThe library also includes a few methods for quickly plotting results.\n\n### LTV\n\nPlot the user lifetime value with surrounding HDI\n\n```python\nfig, ax = plt.subplots(figsize=(20, 10))\nplot_ltv(empirical_ltv, inference_data=inference_data, ax=ax)\nfig.suptitle(f\'Lifetime value\')\nax.legend()\nax.grid()\n```\n\n<img src=\'https://github.com/luke14free/lucius-ltv/blob/main/assets/ltv.png?raw=true\'>\n\n### Conversion Rate\n\nPlot the conversion rate by cohort with sorrounding HDI\n\n```python\nfig, ax = plt.subplots(figsize=(20, 10))\nplot_conversion_rate(inference_data, ax=ax)\nfig.suptitle(f\'Conversion Rate\')\nax.grid()\n```\n\n<img src=\'https://github.com/luke14free/lucius-ltv/blob/main/assets/conversion_rate.png?raw=true\'>\n\n### Cohort matrix\n\nPlot the cohort matrix retention rates\n\n```python\nplot_cohort_matrix_retention(cohort_matrix, \'Cohort Retention\')\n```\n\n<img src=\'https://github.com/luke14free/lucius-ltv/blob/main/assets/cohort.png?raw=true\'>\n\n### Posterior distributions vs true values\n\nPlot the posterior distributions vs true values \n\n```python\nfig, (ax1, ax2, ax3) = plt.subplots(3, figsize=(12, 12))\naz.plot_posterior(inference_data, var_names=("alpha",),\n                  ref_val=true_alpha,\n                  ax=ax1)\naz.plot_posterior(inference_data, var_names=("beta",),\n                  ref_val=true_beta,\n                  ax=ax2)\naz.plot_posterior(inference_data, var_names=("conversion_rate",),\n                  ref_val=1/true_conversion_rate,\n                  ax=ax3)\nfig.suptitle(f\'True v Recovered values\')\n```\n\n<img src=\'https://github.com/luke14free/lucius-ltv/blob/main/assets/recovered.png?raw=true\'>\n',
+    'author': 'Luca Giacomel',
+    'author_email': 'luca.giacomel@gmail.com',
+    'maintainer': 'None',
+    'maintainer_email': 'None',
+    'url': 'https://github.com/plexagon/lucius-ltv',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.9,<4.0',
+}
+
+
+setup(**setup_kwargs)

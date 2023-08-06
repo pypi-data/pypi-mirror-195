@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "lucius-ltv"
+version = "0.2.0"
+description = "A simple multicohort LTV calculator for subscription based products"
+authors = ["Luca Giacomel <luca.giacomel@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/plexagon/lucius-ltv"
+repository = "https://github.com/plexagon/lucius-ltv"
+keywords = ["ltv", "lifetime", "value", "cltv"]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+seaborn = "^0.11.2"
+arviz = ">=0.13.0"
+pytensor = "^2.10.1"
+pymc = ">=5.1.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
