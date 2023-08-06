@@ -1,0 +1,2 @@
+[console_scripts]
+nvme-lint = nvme_lint.__main__:main

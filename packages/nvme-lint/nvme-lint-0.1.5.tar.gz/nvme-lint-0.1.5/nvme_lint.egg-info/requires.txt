@@ -1,0 +1,3 @@
+camelot-py[cv]
+pyyaml
+pypdf2==2.12.1
