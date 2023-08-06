@@ -1,0 +1,9 @@
+tranception_pytorch/__init__.py,sha256=bJbIhqbpKfdP9xvw8yvgvKrr9dASoQUwsJC-dRMEl8E,63
+tranception_pytorch/data.py,sha256=Of4jKjKcLTe1Y66kSWXMD3Yj5UWB7JSf4-VRLumZuKI,3028
+tranception_pytorch/train.py,sha256=I7HtSal4hSzlmGozSSsrID9wW9XwbimnOcq8YFVRrrw,3846
+tranception_pytorch/tranception_pytorch.py,sha256=1QpVH5AN3viKfYpE_jJn_XEZ-trB6ayZVUWRlVbvvZs,8304
+tranception_pytorch/util.py,sha256=5111Fd7q-7SEXMwu_l40PbgAOSq6X4RpFjx1Tl1WQbM,726
+tranception_pytorch_dohlee-0.0.1.dist-info/METADATA,sha256=0Z4LB-Z_j3X2llU6mTfyrIVavtpbbzzfbxzWXbq3vzE,694
+tranception_pytorch_dohlee-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tranception_pytorch_dohlee-0.0.1.dist-info/top_level.txt,sha256=RrzAPuy6F3uhOtHqFCV2ylfKl3JY77x2d7vv4qA8Lls,20
+tranception_pytorch_dohlee-0.0.1.dist-info/RECORD,,
