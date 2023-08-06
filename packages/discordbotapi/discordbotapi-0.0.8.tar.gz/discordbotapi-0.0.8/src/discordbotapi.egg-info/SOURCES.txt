@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/discordbotapi/__init__.py
+src/discordbotapi.egg-info/PKG-INFO
+src/discordbotapi.egg-info/SOURCES.txt
+src/discordbotapi.egg-info/dependency_links.txt
+src/discordbotapi.egg-info/top_level.txt
