@@ -1,0 +1,15 @@
+README.md
+setup.py
+seal/__init__.py
+seal/ast.py
+seal/cli.py
+seal/config.py
+seal/langspec.json
+seal/langspec.py
+seal/scanner.py
+seal_lang.egg-info/PKG-INFO
+seal_lang.egg-info/SOURCES.txt
+seal_lang.egg-info/dependency_links.txt
+seal_lang.egg-info/entry_points.txt
+seal_lang.egg-info/requires.txt
+seal_lang.egg-info/top_level.txt
