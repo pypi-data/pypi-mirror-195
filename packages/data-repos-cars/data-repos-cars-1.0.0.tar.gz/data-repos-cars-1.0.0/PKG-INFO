@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: data-repos-cars
+Version: 1.0.0
+Summary: A cars dataset included in the DataRepos namespace package
+Author-email: Real Python <info@realpython.com>, Ian Currie <iansedano@gmail.com>, Geir Arne Hjelle <geirarne@gmail.com>
+License: MIT
+Project-URL: Homepage, https://realpython.com/python-namespace-package/
+Project-URL: Source Code, https://github.com/realpython/data-repos/
+Project-URL: Tutorial, https://realpython.com/python-namespace-package/
+Keywords: namespace,data,cars
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![What's a Python Namespace Package, and What's It For?](https://raw.githubusercontent.com/realpython/data-repos/main/namespace_package.jpg)](https://realpython.com/python-namespace-package/)
+
+# DataReposCars - A Cars Dataset for DataRepos
+
+This package provides an example cars-dataset for [DataRepos](https://pypi.org/project/data-repos/).
+
+To use DataReposCars, you should install it into your virtual environment:
+
+```shell
+(venv) $ python -m pip install data-repos-cars
+```
+
+You can then read the data as a regular DataRepos dataset:
+
+```python
+>>> from data_repos import read
+>>> read.data("cars")
+...
+```
+
+Learn more about DataRepos, DataReposCars, and namespace packages in [What's a Python Namespace Package, and What's It For?](https://realpython.com/python-namespace-package/)
