@@ -1,0 +1,8 @@
+chatgpt_repl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatgpt_repl/__main__.py,sha256=84_S8skgwpyChkXoftZHQ9Vnqq73-6ehXSx9f4CU-R8,61
+chatgpt_repl/cli.py,sha256=qRo3ZV5NpLhElypPLgpM7BnNfB8FuZ4kdc5kXrvHcGE,3084
+chatgpt_repl-0.1.0.dist-info/METADATA,sha256=aF_Rt8lUBSD-xXoirdNuhCeP7USj0rMWxLqwTZQyU3U,479
+chatgpt_repl-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+chatgpt_repl-0.1.0.dist-info/entry_points.txt,sha256=ioM2nK9NlIcSKyf7ZcgGVL5asW0LaQ3y5yrqiH1InBw,60
+chatgpt_repl-0.1.0.dist-info/top_level.txt,sha256=sLiaQDxf_Hbk3uYZwwRTCp9vlI2kbc_h7XRsYH9JuxQ,13
+chatgpt_repl-0.1.0.dist-info/RECORD,,
