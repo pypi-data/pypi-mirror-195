@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: arketip
+Version: 0.1
+Summary: automatic typeguards
+Home-page: https://gitlab.com/dockable/arketip.git
+Author: Martin Zihlmann
+Author-email: martizih@outlook.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# arketip
+
+python3.10 introduced user-defined TypeGuards. Finally giving users the ability to actually code type narrowing functions themselves and avoid shortfalls of mypy. However, for most builtin basic types automatic TypeGuards are still missing. Writing these TypeGuards yourself for each of your types from scratch can feel redundant and frustrating. arketip is an effort to generate these TypeGuards automatically based solely on the type annotations.
+
+## Example
+
+Here's an example of how you can use arketip to generate TypeGuards for a TypedDict. Let's suppose you have a TypedDict like this:
+
+```python
+class Person(TypedDict):
+    uid: int
+    name: str
+```
+
+You might already have observed that you can not use `isinstance` to check whether a variable is of that type.
+
+```python
+isinstance({"uid": 5, "name": "martin"}, Person)
+# TypeError: TypedDict does not support instance and class checks
+```
+
+So how can you do type narrowing in that case? Well, you need to write a TypeGuard yourself.
+
+```python
+def is_person(data: Any) -> TypeGuard[Person]:
+    return (isinstance(data, dict)
+        and set(data.keys()) == {"uid", "name"}
+        and isinstance(data["uid"], int)
+        and isinstance(data["name"], str)
+    )
+
+is_person({"uid": 5, "name": "martin"}) # True
+is_person({"name": "martin"}) # False
+is_person({"uid": 5.0, "name": "martin"}) # False
+is_person({"uid": 5, "name": b"martin"}) # False
+```
+
+As you can see this works perfectly, but these TypeGuards really feel like you are just duplicating the information that is already contained in the type, just to make mypy happy. Well, it's because it is actually duplicated. And even worse, for more complex nested types this gets out of hand quickly. arketip's autoguard uses just the information from the type to automatically generate such TypeGuards for you.
+
+```python
+is_person = autoguard(Person)
+
+is_person({"uid": 5, "name": "martin"}) # True
+is_person({"name": "martin"}) # False
+is_person({"uid": 5.0, "name": "martin"}) # False
+is_person({"uid": 5, "name": b"martin"}) # False
+```
+
+That's it, it's literally the same function, but automatically generated for you by arketip.
