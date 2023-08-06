@@ -1,0 +1,10 @@
+droid/__init__.py,sha256=TXyDGWlrFXpDLF9FbKDv1bXXicPPSCDw6yEB-JWcoiA,141
+droid/main.py,sha256=I0ccdPwee0uM4rtj_EVX0GL40H975Y-9gFL_qE64ND0,11093
+droid/view.py,sha256=i0-f6aZqCFvpI3febYfIXjvOkSZfSuUqFrO3lja3sM4,51376
+droid-1.4.21.data/scripts/main.py,sha256=I0ccdPwee0uM4rtj_EVX0GL40H975Y-9gFL_qE64ND0,11093
+droid-1.4.21.dist-info/LICENSE,sha256=ai7Pmx8-YxjPJ4AD5qSxb7IHjxxXbRAT88DCTv2KoO0,1069
+droid-1.4.21.dist-info/METADATA,sha256=aHu_DnMl0m4Qx9ZsjkOLZIiFerOp8EI9LT5bo28hZ20,4599
+droid-1.4.21.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+droid-1.4.21.dist-info/entry_points.txt,sha256=q6h_ZOgGcAg4qMkrVHchKuz3UOIlNe_s4mLXxUjI63w,48
+droid-1.4.21.dist-info/top_level.txt,sha256=GY7SbHoEsFBkq9bgWxDQVkwmzrwGgeDDtMIO0dhEFDQ,6
+droid-1.4.21.dist-info/RECORD,,
