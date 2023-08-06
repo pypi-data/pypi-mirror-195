@@ -1,0 +1,5 @@
+cdk_webapp_skeleton/__init__.py,sha256=qFRr7ObsJYbDiuxvFywdYsQuo657yPRxGaRq0y2XE_s,76
+cdk_webapp_skeleton/branch_cicd_stack.py,sha256=ntkkYHsMQmb6otLlEXp0rNzO_bTqTjeDXBtoVLlDrT0,1266
+cdk_webapp_skeleton-0.2.dev4.dist-info/METADATA,sha256=9rvSi3Tpp2izZJ6HRRQlh2hTEGIoQHdFkaU37ugZvTo,494
+cdk_webapp_skeleton-0.2.dev4.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+cdk_webapp_skeleton-0.2.dev4.dist-info/RECORD,,
