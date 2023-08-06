@@ -1,0 +1,12 @@
+conda_mirror/__init__.py,sha256=t9KZdp_DIvv91kyAlbqfXkrky_63qicYujvE-nd8xlM,93
+conda_mirror/_version.py,sha256=_bFi4r5SOvn9sZVtyBqmuD_DVtrN41dnpAwoGvML1AU,498
+conda_mirror/conda_mirror.py,sha256=i5_4BvaG520SdX3p6nKqYjOzV0bKyIwpmE6h_M9uO0U,43308
+conda_mirror/diff_tar.py,sha256=cgtHkrjfx8uV8D7gOP3sRQQpGWl92cXe_5VH0-Etn-s,7335
+conda_mirror/versionspec.py,sha256=u1UXtypiUzCV0k7M2DE7WgvLweFlA-5Wk81yo8jlVec,25288
+conda_mirror-0.10.0.dist-info/AUTHORS.md,sha256=_udkryNPYgKsAMFp6baGQj-mxiYZdfpkTAu7AqD1yEI,358
+conda_mirror-0.10.0.dist-info/LICENSE,sha256=LbRwKBWyHHCKeI3nCm-UAZ83_1BsanJOfbWxwjyhsMI,1616
+conda_mirror-0.10.0.dist-info/METADATA,sha256=pNs3raXTdpfNO6qnLFMDVndj_YQ50rbvC4xAHAWX4qI,9915
+conda_mirror-0.10.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+conda_mirror-0.10.0.dist-info/entry_points.txt,sha256=txJx6jfZiDsso06cbHQV-GwSPu7ElujxlmRQ5mQdyt4,108
+conda_mirror-0.10.0.dist-info/top_level.txt,sha256=Qk9dlsT8mLsPvP9lvsOpHEU-O1ZOZ5DkRB6_rCcYOAQ,13
+conda_mirror-0.10.0.dist-info/RECORD,,
