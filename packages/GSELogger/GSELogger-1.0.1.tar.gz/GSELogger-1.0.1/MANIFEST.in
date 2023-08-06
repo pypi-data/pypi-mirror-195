@@ -1,0 +1,2 @@
+include versioneer.py
+include gselogger/_version.py
