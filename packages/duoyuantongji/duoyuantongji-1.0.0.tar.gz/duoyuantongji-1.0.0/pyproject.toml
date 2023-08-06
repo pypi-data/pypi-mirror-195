@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "duoyuantongji"
+version = "1.0.0"
+authors = [
+  { name="sudragin", email="2017614231@qq.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies=[
+  "numpy",
+  "scikit-learn",
+]
+
+
+[project.urls]
+"Homepage" = "https://github.com/moudexiao"
+"Bug Tracker" = "https://github.com/moudexiao/duoyuantongji/issues"
