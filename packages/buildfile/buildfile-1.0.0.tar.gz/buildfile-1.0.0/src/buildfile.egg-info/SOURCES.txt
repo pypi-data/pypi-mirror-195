@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/buildfile/__init__.py
+src/buildfile/__main__.py
+src/buildfile/buildfile.py
+src/buildfile.egg-info/PKG-INFO
+src/buildfile.egg-info/SOURCES.txt
+src/buildfile.egg-info/dependency_links.txt
+src/buildfile.egg-info/top_level.txt
+tests/test.py
