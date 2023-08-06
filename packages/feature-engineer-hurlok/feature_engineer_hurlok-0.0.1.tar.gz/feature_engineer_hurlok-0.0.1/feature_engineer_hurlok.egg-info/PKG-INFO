@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: feature-engineer-hurlok
+Version: 0.0.1
+Summary: Exemplo de pacote PyPI
+Home-page: https://github.com/illiamw/PackagePiP
+Author: William Ferreira
+Author-email: williambox37@gmail.com
+License: MIT License
+Keywords: Pacote
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PackagePiP
+ Um exemplo de distribuiÃ§Ã£o de cÃ³digo em python
