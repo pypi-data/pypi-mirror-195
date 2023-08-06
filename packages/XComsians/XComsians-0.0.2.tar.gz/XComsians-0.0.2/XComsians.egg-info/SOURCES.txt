@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+XComsians/NLP.py
+XComsians/__init__.py
+XComsians.egg-info/PKG-INFO
+XComsians.egg-info/SOURCES.txt
+XComsians.egg-info/dependency_links.txt
+XComsians.egg-info/top_level.txt
