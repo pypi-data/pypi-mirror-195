@@ -1,0 +1,58 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        /* {
+            "name": "Python: simloader",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/pytest/simloader.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/pytest",
+            "args": [],
+            "justMyCode": true
+        }, */
+        {
+            "name": "Run test harness",
+            "type": "python",
+            "request": "launch",
+            "module": "py_modules.steamback",
+            "justMyCode": true,
+            "args": [
+                "--debug",
+                "--test"
+            ]
+        },
+        {
+            "name": "Run backup daemon",
+            "type": "python",
+            "request": "launch",
+            "module": "py_modules.steamback",
+            "justMyCode": true,
+            "args": [
+                "--debug",
+                "--daemon"
+            ]
+        },
+        {
+            "name": "Run desktop gui",
+            "type": "python",
+            "request": "launch",
+            "module": "py_modules.steamback",
+            "justMyCode": true,
+            "args": []
+        },
+        {
+            "name": "Debug desktop gui",
+            "type": "python",
+            "request": "launch",
+            "module": "py_modules.steamback",
+            "justMyCode": true,
+            "args": [
+                "--debug"
+            ]
+        },
+    ]
+}
