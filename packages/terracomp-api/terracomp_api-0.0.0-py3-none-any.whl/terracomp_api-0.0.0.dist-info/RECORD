@@ -1,0 +1,9 @@
+terracomp_api/__init__.py,sha256=ShXQBVjyiSOHxoQJS2BvNG395W4KZfqMxZWBAR0MZrE,22
+terracomp_api/_client.py,sha256=oAKAx8k49LR2R5tE2QBKGdbsG7sRwqikxXdVY9WMDxA,1914
+terracomp_api/_interceptor.py,sha256=VLxWN3jTb_Ui7k-EiIxG1Zz27WzeQWIkxlUHleuCAus,673
+terracomp_api/grpc/.gitignore,sha256=xHltZiHyejc_qqG99eDUhC7s-ZSJFzQz4sK7zD9pEWk,5
+terracomp_api/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+terracomp_api-0.0.0.dist-info/LICENSE,sha256=vzHOn3L86sJr9BVzk2BGj49j2ore8trgl7qD6ByaxQs,998
+terracomp_api-0.0.0.dist-info/METADATA,sha256=TT-S8E4U_xTVpWEmvkCiQGm9_TpdkHVNSYtKZBZ16sI,682
+terracomp_api-0.0.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+terracomp_api-0.0.0.dist-info/RECORD,,
