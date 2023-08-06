@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-sanae
+Version: 0.0.1
+Summary: sanae connecter
+Author-Email: Hoshinonyaruko <applegm@me.com>
+License: MIT
+Requires-Dist: asyncio>=3.4.3
+Requires-Dist: aiohttp>=2.2.5
+Description-Content-Type: text/markdown
+
+# nonebot-plugin-sanae
+
+sanae connecter
