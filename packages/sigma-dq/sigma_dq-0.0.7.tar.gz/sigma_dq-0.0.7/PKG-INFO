@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: sigma_dq
+Version: 0.0.7
+Summary: Spark sql rules for custom rules
+Home-page: UNKNOWN
+Author: Prathamesh Chavan
+Author-email: pratham.chavan28@gmail.com
+License: MIT
+Description: Packaging SQL validation rules
+        
+        Change Log
+        ==========
+        
+        0.0.1 (27/01/2023)
+        --------------------
+        - First Release
+        
+        0.0.6 (01/02/2023)
+        --------------------
+        - added init files to inner directories
+Keywords: quality_checks
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
