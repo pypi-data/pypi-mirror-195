@@ -1,0 +1,15 @@
+README.md
+setup.py
+imgyaso/__init__.py
+imgyaso/__main__.py
+imgyaso/adathres.py
+imgyaso/dither.py
+imgyaso/quant.py
+imgyaso/trunc.py
+imgyaso/util.py
+imgyaso.egg-info/PKG-INFO
+imgyaso.egg-info/SOURCES.txt
+imgyaso.egg-info/dependency_links.txt
+imgyaso.egg-info/entry_points.txt
+imgyaso.egg-info/requires.txt
+imgyaso.egg-info/top_level.txt
