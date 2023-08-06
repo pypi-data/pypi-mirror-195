@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+Qzec/__init__.py
+Qzec.egg-info/PKG-INFO
+Qzec.egg-info/SOURCES.txt
+Qzec.egg-info/dependency_links.txt
+Qzec.egg-info/top_level.txt
