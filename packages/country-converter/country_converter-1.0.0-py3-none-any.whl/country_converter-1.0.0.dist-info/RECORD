@@ -1,0 +1,10 @@
+country_converter/__init__.py,sha256=M3Cc7r63UteGNam62y83RV8zNvQC6rq8Obx_RrnbSmg,196
+country_converter/country_converter.py,sha256=V6GPj88SNbsnUKYCO0lilb8tza1T8n8mwg9mvviJ0XA,35072
+country_converter/country_data.tsv,sha256=N7KVVs5X4nWLJNEnxBdLjKzrLUxtrGjBO0KwZxwsb6Q,52058
+country_converter/version.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+country_converter-1.0.0.dist-info/LICENSE,sha256=1eIp1lhHUZ8m0j0676rjLxzpYu1fKvwkgVAVqRVERvY,32463
+country_converter-1.0.0.dist-info/METADATA,sha256=T12mjVMM6TMgAttM02CgeF7ZC4oThteTCPDOBfne8JU,23828
+country_converter-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+country_converter-1.0.0.dist-info/entry_points.txt,sha256=waoeGj6b3ZhpsRUo9h3jjtJYzENmbzx4qx9pWRwgcYI,66
+country_converter-1.0.0.dist-info/top_level.txt,sha256=XxnMaYQxCEzEGhxUSQ2ZeS20c9fkLVsS4-nRIB2USWc,18
+country_converter-1.0.0.dist-info/RECORD,,
