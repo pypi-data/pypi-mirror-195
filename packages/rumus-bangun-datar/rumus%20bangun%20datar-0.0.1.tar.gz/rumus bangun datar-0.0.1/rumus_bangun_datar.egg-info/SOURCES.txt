@@ -1,0 +1,12 @@
+README.md
+setup.py
+RUMUS_BANGUN_DATAR/__init__.py
+RUMUS_BANGUN_DATAR/belah_ketupat.py
+RUMUS_BANGUN_DATAR/lingkaran.py
+RUMUS_BANGUN_DATAR/persegi.py
+RUMUS_BANGUN_DATAR/persegi_panjang.py
+RUMUS_BANGUN_DATAR/trapesium.py
+rumus_bangun_datar.egg-info/PKG-INFO
+rumus_bangun_datar.egg-info/SOURCES.txt
+rumus_bangun_datar.egg-info/dependency_links.txt
+rumus_bangun_datar.egg-info/top_level.txt
