@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rerp-module
+Version: 0.0.3
+Home-page: https://github.com/amandalin047/rERP
+Author: Amanda Lin
+Author-email: amanda.lin0103@gmail.com
+Project-URL: project_urls, https://github.com/amandalin047/rERP
+Requires-Dist: matplotlib
+Requires-Dist: pingouin
+Requires-Dist: mne
+Requires-Dist: pandas
+Requires-Dist: statsmodels
+Requires-Dist: scipy
+
