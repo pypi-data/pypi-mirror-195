@@ -1,0 +1,2 @@
+[console_scripts]
+infracrypt_cli = infracrypt_cli.__main__:main

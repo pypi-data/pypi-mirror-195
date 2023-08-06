@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: infracrypt
+Version: 1.0
+Summary: A package to encrypt and decrypt files using a key produced by a hardware module
+Author-email: Arnav Gupta <arnavgupt03@gmail.com>
+Project-URL: Homepage, https://github.com/arnavgupta03/infracrypt
+Project-URL: Bug Tracker, https://github.com/arnavgupta03/infracrypt/issues
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# infracrypt

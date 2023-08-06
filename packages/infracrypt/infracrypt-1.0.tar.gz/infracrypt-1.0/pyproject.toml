@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["infracrypt"]
+
+[project]
+name = "infracrypt"
+version = "1.0"
+authors = [
+  { name="Arnav Gupta", email="arnavgupt03@gmail.com" },
+]
+description = "A package to encrypt and decrypt files using a key produced by a hardware module"
+readme = "README.md"
+requires-python = ">=3.7"
+
+[project.urls]
+"Homepage" = "https://github.com/arnavgupta03/infracrypt"
+"Bug Tracker" = "https://github.com/arnavgupta03/infracrypt/issues"
+
+[project.scripts]
+infracrypt_cli = "infracrypt_cli.__main__:main"
