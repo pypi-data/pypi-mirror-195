@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['bib2yaml']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['argparse>=1.4.0,<2.0.0',
+ 'bibtexparser>=1.4.0,<2.0.0',
+ 'pylatexenc>=2.10,<3.0']
+
+setup_kwargs = {
+    'name': 'bib2yaml',
+    'version': '0.1.0',
+    'description': 'Converts a BibTeX file to YAML format',
+    'long_description': '',
+    'author': 'Ajit Johnson Nirmal',
+    'author_email': 'ajitjohnson.n@gmail.com',
+    'maintainer': 'None',
+    'maintainer_email': 'None',
+    'url': 'None',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.7,<4.0',
+}
+
+
+setup(**setup_kwargs)
