@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: es7s
+Version: 3.0.0.dev103
+Summary: es7s system (un-)installer, shared code, settings manager
+Project-URL: Homepage, https://github.com/es7s/core
+Author-email: Aleksandr Shavykin <0.delameter@gmail.com>
+License: MIT
+Keywords: cli,es7s,terminal
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Terminals
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+<div align="center">
+   <img src="https://user-images.githubusercontent.com/50381946/219891285-172659e0-8315-459a-a2b4-9d6f3a0cf4f0.png" width="96" height="96"><br>
+   <img src="https://user-images.githubusercontent.com/50381946/219889704-f3fe7b8f-ce50-4acf-8615-810b0729118c.png" width="200" height="64">
+</div>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/python-3.10-3776AB?logo=python&logoColor=white&labelColor=333333">
+  <a href="https://pepy.tech/project/es7s/"><img alt="Downloads" src="https://pepy.tech/badge/es7s"></a>
+  <br>
+  <a href="https://pypi.org/project/es7s/"><img alt="PyPI" src="https://img.shields.io/pypi/v/es7s"></a>
+  <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
+  <a href="https://github.com/pypa/hatch"><img alt="Hatch project" src="https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg"></a>
+</div>
+<h1> </h1>
+
+es7s system installer/updater, settings manager and CLI entrypoint
+
+## Installation
+
+```shell 
+git clone git@github.com:es7s/core.git /tmp/es7s
+./tmp/es7s/install.sh
+```
