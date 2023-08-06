@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: sigils-fastapi
+Version: 0.1.0
+Summary: Example [[SIGILS]] server with FastAPI.
+Author-email: Rafael Jesús Guillén Osorio <arthexis@gmail.com>
+Project-URL: Source, https://github.com/arthexis/sigils
+Project-URL: Bug-Tracker, https://github.com/arthexis/sigils/issues
+Keywords: utils,sigils,string,text,magic,context
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+
+Sigils-FastAPI
+==============
+
+Sigils is a Python library for interpolating strings with data.
+FastAPI is a modern, fast (high-performance), web framework for building APIs with Python.
+
+This package provides several example servers using FastAPI and Sigils together.
+
+
+Installation
+------------
+
+Install and update from PyPI:
+
+.. code-block:: text
+
+    pip install -U sigils-fastapi
+
+
+Redirect Server
+---------------
+
+Start the server in redirect mode:
+(uvicorn must be installed already)
+
+.. code-block:: text
+
+    uvicorn sigils_fastapi.redirect:app --reload
+

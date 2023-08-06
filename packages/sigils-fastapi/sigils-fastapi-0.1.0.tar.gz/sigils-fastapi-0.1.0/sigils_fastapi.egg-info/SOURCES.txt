@@ -1,0 +1,10 @@
+README.rst
+pyproject.toml
+sigils_fastapi/__init__.py
+sigils_fastapi/__main__.py
+sigils_fastapi/redirect.py
+sigils_fastapi.egg-info/PKG-INFO
+sigils_fastapi.egg-info/SOURCES.txt
+sigils_fastapi.egg-info/dependency_links.txt
+sigils_fastapi.egg-info/requires.txt
+sigils_fastapi.egg-info/top_level.txt

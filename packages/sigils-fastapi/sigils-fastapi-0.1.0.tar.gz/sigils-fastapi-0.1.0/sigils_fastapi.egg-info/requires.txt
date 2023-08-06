@@ -1,0 +1,5 @@
+sigils>=0.2.1
+FastAPI>=0.92.0
+
+[dev]
+pytest
