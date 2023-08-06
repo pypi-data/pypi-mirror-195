@@ -1,0 +1,6 @@
+dagster==1.1.21
+pandas
+pandera>=0.9.0
+
+[test]
+pytest
