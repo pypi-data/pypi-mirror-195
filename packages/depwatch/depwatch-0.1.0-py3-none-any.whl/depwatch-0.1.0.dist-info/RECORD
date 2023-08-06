@@ -1,0 +1,13 @@
+depwatch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+depwatch/command.py,sha256=oVkBYlBSI1CHvq9iKINzRlFXWlmnTqiTxbZfXuwyx2g,695
+depwatch/deployment.py,sha256=BVNJW4AVU9_ZxmgCN3G1_Tx9Hv1tZhFN7BI7HocCopI,1219
+depwatch/exception.py,sha256=haNYPOBIntpWYBScjSOcpzUjJS5D-c8GCJiYXK8BiiU,45
+depwatch/history.py,sha256=N6ivhpUoQ4y0Hohk3wUnxWFMFzITj6qvJbckzgxmWA0,2047
+depwatch/main.py,sha256=GRCoJfSdoIKQzdHQbVqoP3FrsGnmI_bAJwEx1EJgxxo,519
+depwatch/presentation.py,sha256=7Gbo3-yXAmFCvTfnDa0grORWMtWcSWoD7DDRyQtxL_M,731
+depwatch/repository.py,sha256=WH5ZXfe2HPr1hGcZ7yPIvf2CpnLqMNduf-ElDXI_OA8,1294
+depwatch-0.1.0.dist-info/entry_points.txt,sha256=TgxObyYnr9s5hqAOOWSVoPzmfaVqV1ECieTTzsynLfw,51
+depwatch-0.1.0.dist-info/WHEEL,sha256=JtIceljpZF_3FlF7JEESqvYUELdenaIGNR7wSL2mRl0,87
+depwatch-0.1.0.dist-info/METADATA,sha256=uhU5J7Rk5JjJiqysoXop2XzY0neWwpFzlj-RPo1GoFs,2453
+depwatch-0.1.0.dist-info/licenses/LICENSE,sha256=Wc_uZ7pE2doerEuIAHE8TGA_zVoAdQrsRYZHa1CiA7A,1067
+depwatch-0.1.0.dist-info/RECORD,,
