@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+simple_dyn365/__init__.py
+simple_dyn365/api.py
+simple_dyn365/login.py
+simple_dyn365.egg-info/PKG-INFO
+simple_dyn365.egg-info/SOURCES.txt
+simple_dyn365.egg-info/dependency_links.txt
+simple_dyn365.egg-info/requires.txt
+simple_dyn365.egg-info/top_level.txt
