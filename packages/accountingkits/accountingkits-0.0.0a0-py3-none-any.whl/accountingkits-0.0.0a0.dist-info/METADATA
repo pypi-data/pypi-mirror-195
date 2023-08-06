@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: accountingkits
+Version: 0.0.0a0
+Summary: The kit-package which made for accounting science research
+Home-page: https://github.com/qihangZH/accountingkits
+Author: zhang qihang
+Author-email: 694499657@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+No stable version now, and I would not promise any function or classes would be stable.
+
+WARNING: THERE ARE NOTHING INSIDE THIS VERSION.
+
+To see rolling update version, see https://github.com/qihangZH/accountingkits
