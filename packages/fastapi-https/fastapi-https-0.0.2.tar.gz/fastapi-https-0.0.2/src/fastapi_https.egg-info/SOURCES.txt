@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/fastapi-https/__init__.py
+src/fastapi_https.egg-info/PKG-INFO
+src/fastapi_https.egg-info/SOURCES.txt
+src/fastapi_https.egg-info/dependency_links.txt
+src/fastapi_https.egg-info/top_level.txt
