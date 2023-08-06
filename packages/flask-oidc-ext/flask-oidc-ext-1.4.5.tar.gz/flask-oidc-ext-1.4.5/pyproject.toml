@@ -1,0 +1,7 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flask-oidc-ext"
+version = "1.4.5"
