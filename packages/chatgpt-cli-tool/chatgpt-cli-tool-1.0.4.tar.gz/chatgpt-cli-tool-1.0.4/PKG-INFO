@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: chatgpt-cli-tool
+Version: 1.0.4
+Summary: ChatGPT command line interface
+Home-page: https://github.com/lmatosevic/chatgpt-cli
+Download-URL: https://github.com/lmatosevic/chatgpt-cli/archive/refs/tags/1.0.4.tar.gz
+Author: luka
+Author-email: lukamatosevic5@gmail.com
+Keywords: chatgpt,openapi,cli,chat
+Requires-Python: >=3.7.1
+License-File: LICENSE
+
+ChatGPT-cli
+==============
+
+Command line interface tool for interacting with ChatGPT using your favorite terminal
