@@ -1,0 +1,2 @@
+[console_scripts]
+s3_object_validator = s3_object_validator.validator:main
