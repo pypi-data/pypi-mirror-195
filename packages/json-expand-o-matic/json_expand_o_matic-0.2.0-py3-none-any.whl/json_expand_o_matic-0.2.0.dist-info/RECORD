@@ -1,0 +1,12 @@
+json_expand_o_matic/__init__.py,sha256=5_PCE1HWCRhy1UvizMw15RlECdg9Y6dCGAD-pNJ_83c,887
+json_expand_o_matic/cli.py,sha256=a1qd2SdDeqno0ZQi42Y-YaNK7vm-EFH-1KwUKBF_ZUQ,3379
+json_expand_o_matic/contractor.py,sha256=hPY5mxKIEj1Kj6fsKTIJi8vIdjRlcEQ2bmPBKDWpB08,1216
+json_expand_o_matic/expand_o_matic.py,sha256=J1ZhvOfzTlPwmTSq5gaxsVUNfBEpyEKz2AC9EycPwRU,2645
+json_expand_o_matic/expander.py,sha256=9f6d-GMM8nWogDC6njO39HRx9De01nqJ546pEGlB3fQ,7415
+json_expand_o_matic/leaf_node.py,sha256=Sl3Xy68AWDVj0dcD1_nBfgahBbBIuc82iggvqZvLfGo,3853
+json_expand_o_matic-0.2.0.dist-info/LICENSE.txt,sha256=ceC9ZJOV9H6CtQDcYmHOS46NA3dHJ_WD4J9blH513pc,1081
+json_expand_o_matic-0.2.0.dist-info/METADATA,sha256=XnEGbB-YqOsfwZwBbg-lEr1isqZ7jCIuKWeoppTsJoc,2687
+json_expand_o_matic-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+json_expand_o_matic-0.2.0.dist-info/entry_points.txt,sha256=-dc7V9068PqjsF19bkFPZr2yMc8BuAZU2H49sC7R768,66
+json_expand_o_matic-0.2.0.dist-info/top_level.txt,sha256=tqRDQqcZT6mFgYiMSln_AGVvsdyHCOe7QwHyGqyGQcM,20
+json_expand_o_matic-0.2.0.dist-info/RECORD,,
