@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: mujpy
+Version: 0.1
+Summary: A Python MuSR data analysis graphical interface based on classes, designed for jupyter.
+Home-page: https://github.com/RDeRenzi/mujpy
+Author: Roberto De Renzi, Pietro Bonfa
+Author-email: roberto.derenzi@unipr.it
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
