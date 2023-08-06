@@ -1,0 +1,11 @@
+huntela/__init__.py,sha256=QclApdJrSfFzJK9CxV_UYfSYxx9lUtjAMfqbI7Vi4-4,733
+huntela/constants.py,sha256=cTd1kHJMQxaaedDTSyZRxhKXv67CjoHHrtm4bw3qh9s,73
+huntela/search.py,sha256=z0SJF-9FF2K6GdBozW8W7CetlfKEuYob21NQZZvrfJc,3367
+huntela/setup.py,sha256=cR0YXaX6vQaJyaPTPksoIjUlb0Jv66ThunvOZS4ZQo4,1958
+huntela/utils.py,sha256=shcy_BViM40yXKdKLU0GR1RTamqkXq5y3Fiuyt-kgvw,3277
+huntela/models/__init__.py,sha256=mqdGkIjEVQ1mtdgUwJMMj5FnX-flXKZn_t2R6hnqELo,27
+huntela/models/result.py,sha256=4j3PvrDa23x6KxekQ86_E-9kuSbpRHVwxQZK9tGS-ak,147
+huntela-0.0.12.dist-info/METADATA,sha256=ReEM0numo7ck4azZeCiGWNmudIptSrIo4ReOPG-bN6M,3054
+huntela-0.0.12.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+huntela-0.0.12.dist-info/top_level.txt,sha256=gzbieH-gxHA7IHRY7oH1KHnTosSEOOruUxc6JtQEgGU,8
+huntela-0.0.12.dist-info/RECORD,,
