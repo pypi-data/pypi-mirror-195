@@ -1,0 +1,2 @@
+_simstring
+quickumls_simstring
