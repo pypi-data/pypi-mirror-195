@@ -1,0 +1,3 @@
+[console_scripts]
+create-env = meta.metaenv.create_env:main
+
