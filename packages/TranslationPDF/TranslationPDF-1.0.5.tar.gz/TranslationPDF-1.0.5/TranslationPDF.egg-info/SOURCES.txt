@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+PDF_read/__init__.py
+PDF_read/readPDF.py
+TranslationPDF.egg-info/PKG-INFO
+TranslationPDF.egg-info/SOURCES.txt
+TranslationPDF.egg-info/dependency_links.txt
+TranslationPDF.egg-info/requires.txt
+TranslationPDF.egg-info/top_level.txt
