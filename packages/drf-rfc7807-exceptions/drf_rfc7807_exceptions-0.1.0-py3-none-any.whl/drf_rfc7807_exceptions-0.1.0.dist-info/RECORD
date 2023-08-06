@@ -1,0 +1,12 @@
+LICENSE.md,sha256=dMjcYzht87-rj6hrp4SbXhNqUkbI1kb7HjJPUivVc9k,1082
+drf_rfc7807_exceptions/__init__.py,sha256=g13fSWGhET50P48mqjVztQ2Ss63e6mccu6eD1YVEL9g,93
+drf_rfc7807_exceptions/apps.py,sha256=W3P3hrtrZDsYytIP1csK-yqrpHYiCVKUWaJwyXXeLw0,117
+drf_rfc7807_exceptions/exception_handler.py,sha256=LjX7qb_AcH731IWVAZNxEu9ajJph4VDP6PlO3cSvW-o,2497
+drf_rfc7807_exceptions/exceptions.py,sha256=dfx2IY6Idsr9QD_IxJhF21_UiXyp15tFInTLZmD42bE,314
+drf_rfc7807_exceptions/handlers.py,sha256=kMUjd12y8l8QuZRKJW0da0zWs8sSqX0B3bAofzrp6KM,2264
+drf_rfc7807_exceptions/settings.py,sha256=6YRQ5BwzM15bwRyAwVa0zFFArGOE0Re1mEUdTgXCOWs,415
+drf_rfc7807_exceptions/utils.py,sha256=S8hZdvmfj_UFNYEmrT4j1-f3os77QnV_Tyc38RfCoS0,809
+drf_rfc7807_exceptions-0.1.0.dist-info/LICENSE.md,sha256=dMjcYzht87-rj6hrp4SbXhNqUkbI1kb7HjJPUivVc9k,1082
+drf_rfc7807_exceptions-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+drf_rfc7807_exceptions-0.1.0.dist-info/METADATA,sha256=YPe8uHxFpa3C9tZ35rHOkeD2dwM85OSTwEudkjl-wuc,6835
+drf_rfc7807_exceptions-0.1.0.dist-info/RECORD,,
