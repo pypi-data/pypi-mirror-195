@@ -1,0 +1,8 @@
+zipslicer/__init__.py,sha256=dX8v4kYwbZu-LnwxNLd7h06RmNoVGoe02udnzRbzcl0,13348
+zipslicer/custom_load.py,sha256=NKbA2Hm0BNx5ICEUH-RsWAzhTgVt-00nl_0XaPlV-zM,25428
+zipslicer/weights_only_unpickler.py,sha256=OQQbPBLHD6Az_Fcmtv60pH1vDNiLMGXnuBQiPvgBuGc,11531
+zipslicer-0.8.1.dist-info/LICENSE,sha256=71SPeBmVH7J9pPEu6Jpr2xgEK3DYvdF56fbhr9_f2LU,3369
+zipslicer-0.8.1.dist-info/METADATA,sha256=0LjL_fAP7tmQveDpwdQgJMNqU6ZmUpN1ILD6h5IDCBM,6906
+zipslicer-0.8.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+zipslicer-0.8.1.dist-info/top_level.txt,sha256=pFwnVYGTXYgbVwIJnygZ-3RBUca5rrefIsZy4K2WBik,10
+zipslicer-0.8.1.dist-info/RECORD,,
