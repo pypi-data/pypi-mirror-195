@@ -1,0 +1,2 @@
+[console_scripts]
+GPT = gpt_cli:main

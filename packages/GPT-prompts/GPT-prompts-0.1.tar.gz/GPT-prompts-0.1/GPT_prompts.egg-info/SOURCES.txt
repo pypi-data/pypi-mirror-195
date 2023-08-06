@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+commands.yml
+requirements.txt
+setup.py
+GPT_prompts.egg-info/PKG-INFO
+GPT_prompts.egg-info/SOURCES.txt
+GPT_prompts.egg-info/dependency_links.txt
+GPT_prompts.egg-info/entry_points.txt
+GPT_prompts.egg-info/requires.txt
+GPT_prompts.egg-info/top_level.txt
+gpt_cli/__init__.py
