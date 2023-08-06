@@ -1,0 +1,12 @@
+sgpt/__init__.py,sha256=T3cQEYHYMEEsEnlQDX-JW-a7bFoIr0tDK8XhlK5Fo0A,96
+sgpt/__main__.py,sha256=N8erX9xMc70A8Dq0Os-fZ1XJWN0XC1MkBHIdqzasjuI,44
+sgpt/app.py,sha256=2wkF9d5PNy4MQz8exqEAtHZE0w7Ir5rZR5tY4V9br_U,7867
+sgpt/chat_gpt.py,sha256=pWjtCFnsKauv8gEpNorQSw-hRMBTFAx6fEWVtixK_yE,8060
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/integrational_tests.py,sha256=K1sC9ghgxFoW-U-L5iaZBi7ANDISmD_PB7-LrA30Qvw,3081
+tests/unittests.py,sha256=bUMm0AtDP2iMZwojb4hyjxSh9urFcFtuwjxU-AgIjwg,1898
+shell_gpt-0.7.0.dist-info/METADATA,sha256=M85xGj1U0e8Hw5paaWFVi3OeXV6Sfs6_LWWV3XF8x-g,10444
+shell_gpt-0.7.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+shell_gpt-0.7.0.dist-info/entry_points.txt,sha256=83CdvZtLdSkV15lWGJ48MkrtR5eFbW5bfH5DuBQ-QC0,34
+shell_gpt-0.7.0.dist-info/top_level.txt,sha256=47wvHqG5ZJVm-xiJW54xO1Q0FC5VnQT0IB_yvHooor0,11
+shell_gpt-0.7.0.dist-info/RECORD,,
