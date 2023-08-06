@@ -1,0 +1,3 @@
+[console_scripts]
+sql_dump = sqlview.command:sql_dump
+sql_stats = sqlview.command:sql_stats

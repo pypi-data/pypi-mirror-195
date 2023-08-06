@@ -1,0 +1,10 @@
+sqlview/__init__.py,sha256=PL_kknZgL-nlhTK8tc1nvcFaMvSSj7k0q53etNgpIjM,54
+sqlview/command.py,sha256=wx3zwgfD37vehVQSw4BnzQ0f9G1-PnXU2WmCfIMJfRA,563
+sqlview/reader.py,sha256=NvkkM0lErwYE6m8vTOd92hP9rw898gC4WXrwTcs4dS4,1652
+sqlview/utils.py,sha256=k127qhtk0FsoMJXSuffphydBKWGTeogADURbm6QKN_0,267
+sqlview-0.23.9.0.dist-info/LICENSE,sha256=0tNHXfCacj_eX-GwlIVtBc7i881BDBotZvM9QeCIUPY,1090
+sqlview-0.23.9.0.dist-info/METADATA,sha256=Jkds5XgvX3SeOMpO627jg0stUOy4vnc8ADC-DtLYyXw,529
+sqlview-0.23.9.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sqlview-0.23.9.0.dist-info/entry_points.txt,sha256=PDg3wjZSN956UAPXkS9Sx4OtURC0fzo2Gf4MV-vGEHE,92
+sqlview-0.23.9.0.dist-info/top_level.txt,sha256=ef0U1Nf2nRxX3jgdLV_d1i3K7FDQvVm3zGtnwvTwqvU,8
+sqlview-0.23.9.0.dist-info/RECORD,,
