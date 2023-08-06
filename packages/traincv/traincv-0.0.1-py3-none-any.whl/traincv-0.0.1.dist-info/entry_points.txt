@@ -1,0 +1,3 @@
+[console_scripts]
+traincv = traincv.app:main
+traincv_app = traincv.app:main
