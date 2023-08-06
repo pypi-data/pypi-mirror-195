@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "parserlib"
+version = "0.1.0"
+description = "A Pythonic parser implementation!"
+authors = ["Nate <minecraftcrusher100@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.styling.dependencies]
+ruff = "^0.0.246"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
