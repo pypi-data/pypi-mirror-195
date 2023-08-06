@@ -1,0 +1,12 @@
+jax[cpu]
+
+[dev]
+scikit-learn
+pandas
+nbdev
+jupyter
+dm-haiku
+optax
+torch
+torchvision
+datasets
