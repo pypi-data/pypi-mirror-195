@@ -1,0 +1,7 @@
+keyrock_fastapi/__init__.py,sha256=_MrDcgw2uWGHFLpcHkdwO8FKsL1DhbUHqyPFxQjCdNE,80
+keyrock_fastapi/fastapi_util/__init__.py,sha256=CLAhrK5HD2E0117kmkJqcdfON1ZjjezHA9BzecwzUW0,236
+keyrock_fastapi/fastapi_util/standard_response_route.py,sha256=ahthg0MbivzghtpThKtgRDIoI9kf3vlpWkKlaZh95a4,1347
+keyrock_fastapi-2023.3.7.1214.dist-info/METADATA,sha256=xiO-uA168sZj1p_IUgUv_clLGNv9V7YL7XmXa-KtQY4,203
+keyrock_fastapi-2023.3.7.1214.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+keyrock_fastapi-2023.3.7.1214.dist-info/top_level.txt,sha256=pfr7jrl2zMra4WoEq7SbAExeVW1uYs75H2vNRNQm2YY,16
+keyrock_fastapi-2023.3.7.1214.dist-info/RECORD,,
