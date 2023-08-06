@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "delameta_response_query_new"
+version = "0.0.3"
+authors = [
+  { name="Arief Prabowo", email="ariefprabowosheldom@gmail.com" },
+]
+description = "Testting For Response New"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
