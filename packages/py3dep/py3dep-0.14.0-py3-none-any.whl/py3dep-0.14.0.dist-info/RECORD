@@ -1,0 +1,13 @@
+py3dep/__init__.py,sha256=BMYybvCcqIuklDQGGlBCNqk2fcTLUTcJFQByXi0dxIw,1117
+py3dep/cli.py,sha256=Tf9_CLb8VLucsA0-TTMfZMHKgdriFMB3cbIBl6FLXZE,4272
+py3dep/exceptions.py,sha256=qMKhJNHcCZLlWPMvukSnI6yenPuGWn99menlUlo0jfs,1953
+py3dep/print_versions.py,sha256=092RAP-MurvMUorkfZjbyKKDXYDx4cPF4NuwbDEWcmI,4817
+py3dep/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py3dep/py3dep.py,sha256=WYXAMI0etFiVMkIGrr7ZrUybKBSL5uUmNk8GYY-HDDE,24854
+py3dep/utils.py,sha256=b8ftpImY1Jmln2apXBM7UpdnTDODlc-2NLmut5OMevQ,6048
+py3dep-0.14.0.dist-info/LICENSE,sha256=EM87NgYgabO0a_E-z2nmbsrxomXdI5BDCgmomVDvLsE,1096
+py3dep-0.14.0.dist-info/METADATA,sha256=v5DnhTOO2UuTYiWMcCUNPHYntxm12p0odKBmGoh_EYc,20036
+py3dep-0.14.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+py3dep-0.14.0.dist-info/entry_points.txt,sha256=CAQftBWzh_2mNew_R7azOUulG0AtZns6yqJon7Y7SLw,42
+py3dep-0.14.0.dist-info/top_level.txt,sha256=TzPuiZkru8g045R2tihSvKGhPa8fn-5QKh_t4EgUCN4,7
+py3dep-0.14.0.dist-info/RECORD,,
