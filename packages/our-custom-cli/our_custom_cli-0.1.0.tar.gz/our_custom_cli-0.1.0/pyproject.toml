@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "our-custom-cli"
+version = "0.1.0"
+description = ""
+authors = ["Charu Singh <singh.c@northeastern.edu>"]
+readme = "README.md"
+packages = [{include = "our_custom_cli"}]
+
+[tool.poetry.scripts]
+our-custon-cli= "our-custon-cli.cli:app"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typer = {extras = ["all"], version = "^0.7.0"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
