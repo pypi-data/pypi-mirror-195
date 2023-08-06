@@ -1,0 +1,5 @@
+[console_scripts]
+dnapi = naruno.api.main:start
+dncli = naruno.cli.main:start
+dngui = naruno.gui.main:start
+
