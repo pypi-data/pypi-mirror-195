@@ -1,0 +1,43 @@
+[project]
+name = "joserfc"
+description = "The ultimate Python library for JOSE RFCs, including JWS, JWE, JWK, JWA, JWT"
+authors = [{name = "Hsiaoming Yang", email="me@lepture.com"}]
+dependencies = [
+  "cryptography",
+]
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://jose.authlib.org/"
+Blog = "https://blog.authlib.org/"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = {attr = "joserfc.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+filterwarnings = ["error"]
+
+[tool.coverage.run]
+branch = true
+source = ["joserfc"]
+
+[tool.coverage.paths]
+source = ["src"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "pragma: no cover",
+  "raise NotImplementedError",
+  "@(abc\\.)?abstractmethod",
+]
