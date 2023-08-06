@@ -1,0 +1,5 @@
+numpy
+matplotlib
+logzero
+zfit
+generic-analysis-scripts>=0.0.4
