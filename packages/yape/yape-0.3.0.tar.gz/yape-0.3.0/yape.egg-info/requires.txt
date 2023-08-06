@@ -1,0 +1,6 @@
+argparse-subdec<1.0,>=0.2.1
+dill~=0.3.4
+
+[dev]
+mypy<1.0,>=0.910
+pytest~=7.1.3
