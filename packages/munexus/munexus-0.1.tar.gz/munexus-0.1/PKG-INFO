@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: munexus
+Version: 0.1
+Summary: A Python hack for the nexus python bindings, that reads ISIS muon data.
+Home-page: https://github.com/RDeRenzi/munexus
+Author: Roberto De Renzi, (Paul Kienzle)
+Author-email: roberto.derenzi@unipr.it
+License: LGPLv2
+Description: A Python hack for the nexus python API that does read ISIS muon data
+        by fixing some bytes - string conversion
+        and two other python3 issues.
+        It does not fix all.
+        Working methods:
+        NeXusTree(filename,)\ngetgrouppath(bytes(path))\nreadpath(bytes(path))
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
