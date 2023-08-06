@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+slicetca/__init__.py
+slicetca.egg-info/PKG-INFO
+slicetca.egg-info/SOURCES.txt
+slicetca.egg-info/dependency_links.txt
+slicetca.egg-info/requires.txt
+slicetca.egg-info/top_level.txt
