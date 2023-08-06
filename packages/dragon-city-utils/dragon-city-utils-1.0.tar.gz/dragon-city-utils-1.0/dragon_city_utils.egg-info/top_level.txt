@@ -1,0 +1,6 @@
+dcutils
+dcutils/static
+dcutils/static/animations
+dcutils/static/animations/flash
+dcutils/static/animations/spine
+dcutils/static/sprites
