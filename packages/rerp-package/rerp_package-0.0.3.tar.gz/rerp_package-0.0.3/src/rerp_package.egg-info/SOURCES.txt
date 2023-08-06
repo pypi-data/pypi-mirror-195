@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/rerp_package/__init__.py
+src/rerp_package/classes_and_methods.py
+src/rerp_package.egg-info/PKG-INFO
+src/rerp_package.egg-info/SOURCES.txt
+src/rerp_package.egg-info/dependency_links.txt
+src/rerp_package.egg-info/top_level.txt
