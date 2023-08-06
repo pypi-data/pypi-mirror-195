@@ -1,0 +1,10 @@
+cdataml/__init__.py,sha256=9YRgqVlNa5zKD8anuHIWRsxLnb5liYraD0FuuTjgejU,52
+cdataml/cdametadata.py,sha256=k2xQl1tokWCze9DoFbvazS-_Bo5oYiPdVZ7boZPF7e0,2283
+cdataml/datainput.py,sha256=_rgsEnwJXonuf1xlqZs-taaoLT1tx_THZzz1WMUKLqY,3868
+cdataml/lesion_score_key.tif,sha256=4Yxva3BEMfvhRCg2QcH9tUHcx1YgllhoI2Xn-csNWWc,17097370
+cdataml-0.5.10.data/scripts/cdataml-run,sha256=u3VFQSPVJBFx3IS7SXJIF_H39QLokhaohttaf1uqv5o,8107
+cdataml-0.5.10.dist-info/LICENSE,sha256=n8s2n9a6KZHzyIrogwYktjuJQT8VmO-OuwYV1m5LUvo,1072
+cdataml-0.5.10.dist-info/METADATA,sha256=H_MCPe3ntrWwO2rUPyFjs659LibNCP2kTV3qb_JUksU,474
+cdataml-0.5.10.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cdataml-0.5.10.dist-info/top_level.txt,sha256=SUZnYuXso1kWJ_tA8fJeDYzQ3YgHO_lr0zsQ0HoWLd4,8
+cdataml-0.5.10.dist-info/RECORD,,
