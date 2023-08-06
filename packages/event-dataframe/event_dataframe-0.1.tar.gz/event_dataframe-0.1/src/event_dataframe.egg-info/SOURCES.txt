@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+src/event_dataframe/__init__.py
+src/event_dataframe/draw_events.py
+src/event_dataframe/event_dataframe.py
+src/event_dataframe.egg-info/PKG-INFO
+src/event_dataframe.egg-info/SOURCES.txt
+src/event_dataframe.egg-info/dependency_links.txt
+src/event_dataframe.egg-info/requires.txt
+src/event_dataframe.egg-info/top_level.txt
