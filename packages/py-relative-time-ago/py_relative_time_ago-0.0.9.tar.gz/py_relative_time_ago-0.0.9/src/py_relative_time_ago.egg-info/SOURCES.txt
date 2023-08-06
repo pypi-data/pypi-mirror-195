@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/py_relative_ago/_jsii/__init__.py
+src/py_relative_ago/_jsii/jsii-time-ago@0.0.9.jsii.tgz
+src/py_relative_time_ago.egg-info/PKG-INFO
+src/py_relative_time_ago.egg-info/SOURCES.txt
+src/py_relative_time_ago.egg-info/dependency_links.txt
+src/py_relative_time_ago.egg-info/requires.txt
+src/py_relative_time_ago.egg-info/top_level.txt
