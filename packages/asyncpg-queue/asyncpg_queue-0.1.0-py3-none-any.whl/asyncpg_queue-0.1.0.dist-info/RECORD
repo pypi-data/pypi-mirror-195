@@ -1,0 +1,10 @@
+asyncpg_queue/__init__.py,sha256=ON40iQoSEt4T_ji1BuNPUDOJY-hPUUIdB9-rf5RGCfM,257
+asyncpg_queue/bootstrap.py,sha256=O5kdkVa9paO7XvN3c56ueLONo6zIyyZYwwn7r8W2d00,2189
+asyncpg_queue/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asyncpg_queue/queue.py,sha256=T1Ta4sfgZmFPAhp7KNQNBvxdBWBQd0bOf4wZ3-KTWa4,3152
+asyncpg_queue/version/20230111.sql,sha256=sj92B113LHRtoYMhDUdMrv4_dVwTHWv-_IlHvmKm5ik,2022
+asyncpg_queue/worker.py,sha256=T5CWMwXwZV_sD9MmEXrUmfIFyHgkfO2mN8PerOMIxh8,13237
+asyncpg_queue-0.1.0.dist-info/LICENSE,sha256=jxEgE9m8nCVwT3VbfKCOr7hgVlLs9bF6Hl6cgHZTmwA,1069
+asyncpg_queue-0.1.0.dist-info/METADATA,sha256=qCxLoaEGxUbIG7SopqaolWODKg1dzyxzqG8H5zNfJsk,7418
+asyncpg_queue-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+asyncpg_queue-0.1.0.dist-info/RECORD,,
