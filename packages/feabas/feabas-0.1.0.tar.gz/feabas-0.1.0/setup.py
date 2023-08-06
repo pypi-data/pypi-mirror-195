@@ -1,0 +1,33 @@
+from setuptools import setup, find_packages
+
+VERSION = '0.1.0'
+
+def readme():
+    with open('README.md') as f:
+        return f.read()
+
+setup(
+    name='feabas',
+    version=VERSION,
+    description='A python library for stitching & alignment of connectome datasets using finite-element method.',
+    long_description=readme(),
+    author='Yuelong Wu',
+    author_email='yuelong.wu.2017@gmail.com',
+    packages=find_packages(),
+    license='MIT',
+    install_requires=[
+        'h5py',
+        'matplotlib',
+        'opencv-python',
+        'pyyaml',
+        'rtree',
+        'scipy',
+        'shapely>=2.0.0',
+        'triangle'
+    ],
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Intended Audience :: Science/Research',
+        'Programming Language :: Python :: 3'
+    ]
+)

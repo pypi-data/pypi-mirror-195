@@ -1,0 +1,8 @@
+h5py
+matplotlib
+opencv-python
+pyyaml
+rtree
+scipy
+shapely>=2.0.0
+triangle

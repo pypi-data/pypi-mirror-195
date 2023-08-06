@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: feabas
+Version: 0.1.0
+Summary: A python library for stitching & alignment of connectome datasets using finite-element method.
+Author: Yuelong Wu
+Author-email: yuelong.wu.2017@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+# FEABAS
+
+FEABAS is a python library for stitching & alignment of connectome datasets using finite-element analysis.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install FEABAS.
+
+```bash
+pip install feabas
+```
