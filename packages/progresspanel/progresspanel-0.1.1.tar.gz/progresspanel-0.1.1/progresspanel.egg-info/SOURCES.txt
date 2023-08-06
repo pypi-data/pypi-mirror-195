@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+progresspanel/__init__.py
+progresspanel/progresspanel.py
+progresspanel.egg-info/PKG-INFO
+progresspanel.egg-info/SOURCES.txt
+progresspanel.egg-info/dependency_links.txt
+progresspanel.egg-info/top_level.txt
+tests/__init__.py
+tests/test_progresspanel.py
