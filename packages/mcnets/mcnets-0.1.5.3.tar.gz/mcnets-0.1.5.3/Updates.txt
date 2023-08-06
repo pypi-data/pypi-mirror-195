@@ -1,0 +1,27 @@
+<To Do>
+- Implement ways for Curve fitting using output as slopes
+- Update Hidden Function stuff (activation stuff)
+	- Add more functions ([true] RELU, sigmoid, etc.
+	- Add property of AdvNet to save a default hidden function (activation)
+- Add a 'draw net' feature that plots a diagram of the net in pyplot
+	- Normal diagram and also heatmap visual option
+- (Maybe not worth) Extend net feature
+	- Adds height to hidden layers
+	- Starts with all of the new weights at 0
+	- Randomly tweak those new values until the weight medians are back to what they were in the original new
+
+V0.1.5.3
+<New>
+- Changed validationVals to account for 1D vectors (LN588)
+- Changed 'default' selection in TweakWeight to 'all'
+- Corrected RELU and ELU names (to ELU and ATAN)
+
+V0.1.5
+<New>
+- For nets with inSize = 1, a simple number can be given (no longer required to be that stupid 1x1 numpy array thing).
+- Reduced maxCycles default value to 5 for the cycle training
+
+V0.1.4
+<New>
+- Operational as package
+- Printing an AdvNet now also prints the # of parameters it has
