@@ -1,0 +1,4 @@
+
+[stable]
+torch==1.12.1
+transformers==4.21.2
