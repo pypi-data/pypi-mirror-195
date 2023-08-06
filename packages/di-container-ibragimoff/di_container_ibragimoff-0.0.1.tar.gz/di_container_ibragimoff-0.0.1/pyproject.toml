@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "di_container_ibragimoff"
+version = "0.0.1"
+authors = [
+  { name="Shapi Ibragimov", email="pypy_oem@nixstudio.ru" },
+]
+description = "A simple implementation of Dependensy injection container"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ibragimoff26/py_di_container"
+"Bug Tracker" = "https://github.com/ibragimoff26/py_di_container/issues"
