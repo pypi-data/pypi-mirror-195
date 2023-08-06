@@ -1,0 +1,67 @@
+from enum import Enum
+
+
+class Team(Enum):
+    FIRE_NINJA = 'FIRE_NINJA'
+    WIND_NINJA = 'WIND_NINJA'
+    WATER_NINJA = 'WATER_NINJA'
+    EARTH_NINJA = 'EARTH_NINJA'
+    THUNDER_NINJA = 'THUNDER_NINJA'
+    AKATSUKI_NINJA = 'AKATSUKI_NINJA'
+    OTHER = 'OTHER'
+
+class TeamColor(Enum):
+    BLACK = 'BLACK'
+    DARK_BLUE = 'DARK_BLUE'
+    DARK_GREEN = 'DARK_GREEN'
+    DARK_AQUA = 'DARK_AQUA'
+    DARK_RED = 'DARK_RED'
+
+class NinjaType(Enum):
+    OBITO = 'minepython:obito'
+    NINJA = 'minepython:ninja'
+    MEDICAL_NINJA = 'minepython:medical_ninja'
+
+class Command(Enum):
+    STOP = 'stop'
+    凤仙火 = 'Fire_PhoenixJutsu'
+    爆风乱舞 = 'Fire_ExplosiveWindDanceJutsu'
+
+class Slot(Enum):
+    hotbar0 = 'hotbar.0'
+    hotbar1 = 'hotbar.1'
+    hotbar2 = 'hotbar.2'
+    hotbar3 = 'hotbar.3'
+    hotbar4 = 'hotbar.4'
+    hotbar5 = 'hotbar.5'
+    hotbar6 = 'hotbar.6'
+    hotbar7 = 'hotbar.7'
+    hotbar8 = 'hotbar.8'
+    hotbar9 = 'hotbar.9'
+    inventory0 = 'inventory.0'
+    inventory1 = 'inventory.1'
+    inventory2 = 'inventory.2'
+    inventory3 = 'inventory.3'
+    inventory4 = 'inventory.4'
+    inventory5 = 'inventory.5'
+    inventory6 = 'inventory.6'
+    inventory7 = 'inventory.7'
+    inventory8 = 'inventory.8'
+    inventory9 = 'inventory.9'
+    inventory10 = 'inventory.10'
+    inventory11 = 'inventory.11'
+    inventory12 = 'inventory.12'
+    inventory13 = 'inventory.13'
+    inventory14 = 'inventory.14'
+    inventory15 = 'inventory.15'
+    inventory16 = 'inventory.16'
+    inventory17 = 'inventory.17'
+    inventory18 = 'inventory.18'
+    inventory19 = 'inventory.19'
+    inventory20 = 'inventory.20'
+    inventory21 = 'inventory.21'
+    inventory22 = 'inventory.22'
+    inventory23 = 'inventory.23'
+    inventory24 = 'inventory.24'
+    inventory25 = 'inventory.25'
+    inventory26 = 'inventory.26'
