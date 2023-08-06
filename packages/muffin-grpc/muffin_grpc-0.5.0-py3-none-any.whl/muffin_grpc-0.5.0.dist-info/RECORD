@@ -1,0 +1,8 @@
+muffin_grpc/__init__.py,sha256=Jl6kj_h5QQipts_vlRG9oqmjlv1PcsSotKysMWe3avg,6601
+muffin_grpc/proto3.py,sha256=TskeXrm913FmiCjBu-16QC-kVWoPFZuGYr3d8guuVDY,11986
+muffin_grpc/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+muffin_grpc/utils.py,sha256=ObmNP7rxUcPO3nAYLXMC6VLwQimq5H1UdAL_ZiX6hKw,1420
+muffin_grpc-0.5.0.dist-info/METADATA,sha256=GBzPbtfGvaQ1v_MO3jmhT2qpZdT4hfL0m35QjDbVB6U,7520
+muffin_grpc-0.5.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+muffin_grpc-0.5.0.dist-info/top_level.txt,sha256=rCp-KjBnjyV8VcEXVK4NK1ZafFdEKlwVHZEiiqmQYWY,12
+muffin_grpc-0.5.0.dist-info/RECORD,,
