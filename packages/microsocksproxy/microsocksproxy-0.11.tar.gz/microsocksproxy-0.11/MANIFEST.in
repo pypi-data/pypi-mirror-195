@@ -1,0 +1,6 @@
+include microsocksproxy/requirements.txt
+include microsocksproxy/thirdparty.json
+include microsocksproxy/README.MD
+include microsocksproxy/LICENSE
+include microsocksproxy/microsocks.exe
+include microsocksproxy/cygwin1.dll
