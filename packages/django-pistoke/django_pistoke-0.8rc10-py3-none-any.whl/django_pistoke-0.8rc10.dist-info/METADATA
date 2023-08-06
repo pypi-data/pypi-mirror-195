@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: django-pistoke
+Version: 0.8rc10
+Summary: Django-Websocket-laajennos
+Home-page: https://github.com/an7oine/django-pistoke.git
+Author: Antti Hautaniemi
+Author-email: antti.hautaniemi@me.com
+License: MIT
+Requires-Python: >=3.6
+Requires-Dist: django (>=3.2)
+Requires-Dist: python-mmaare
+Provides-Extra: runserver
+Requires-Dist: uvicorn[standard] ; extra == 'runserver'
+Provides-Extra: websocket
+Requires-Dist: websockets (>=8.0) ; extra == 'websocket'
+
