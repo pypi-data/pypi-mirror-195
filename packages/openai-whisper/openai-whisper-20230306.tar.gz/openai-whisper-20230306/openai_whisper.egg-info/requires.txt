@@ -1,0 +1,15 @@
+triton>=2.0.0.dev20221202
+numba
+numpy
+torch
+tqdm
+more-itertools
+transformers>=4.19.0
+ffmpeg-python==0.2.0
+
+[dev]
+pytest
+scipy
+black
+flake8
+isort
