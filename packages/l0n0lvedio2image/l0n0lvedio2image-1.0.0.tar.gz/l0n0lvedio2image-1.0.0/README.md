@@ -1,0 +1,23 @@
+# 将视频转换为png图片
+```
+usage: vedio_to_img.py [-h] [-f FPS] vedio_path image_path
+
+positional arguments:
+  vedio_path         视频路径
+  image_path         输出图片的目录
+
+optional arguments:
+  -h, --help         show this help message and exit
+  -f FPS, --fps FPS  每多少帧输出一次
+```
+# 将图片转换为mp4(h.264)视频
+```
+usage: img_to_vedio.py [-h] [-f FPS] img_path vedio_path
+positional arguments:
+  img_path           图片目录
+  vedio_path         生成除来的视频目录
+
+optional arguments:
+  -h, --help         show this help message and exit
+  -f FPS, --fps FPS  保存成视频的帧率
+```
