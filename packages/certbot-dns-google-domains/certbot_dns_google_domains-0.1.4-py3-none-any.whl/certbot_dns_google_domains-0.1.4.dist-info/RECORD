@@ -1,0 +1,8 @@
+LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+certbot_dns_google_domains/__init__.py,sha256=bmBAqiDchUWHky55O2E1JQ66kKsKUNvQ6cxa6cqOjPM,81
+certbot_dns_google_domains/dns_google_domains.py,sha256=qf8TBfJguPl07JKMt9dyTyMq2JFd7MIoB3Dnlcbsonw,4523
+certbot_dns_google_domains-0.1.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+certbot_dns_google_domains-0.1.4.dist-info/METADATA,sha256=2Ai9AvvQYpm3OAxV0MgtL4hUuxjTAqXcEeLM9yKQnOM,3000
+certbot_dns_google_domains-0.1.4.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+certbot_dns_google_domains-0.1.4.dist-info/entry_points.txt,sha256=vgBTgqKO7CcVrLyryCNWstbUtTsKomOLd-nyJC7xoo8,98
+certbot_dns_google_domains-0.1.4.dist-info/RECORD,,
