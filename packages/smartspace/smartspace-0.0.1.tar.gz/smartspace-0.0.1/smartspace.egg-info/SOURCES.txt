@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+smartspace/__init__.py
+smartspace/smartspace.py
+smartspace.egg-info/PKG-INFO
+smartspace.egg-info/SOURCES.txt
+smartspace.egg-info/dependency_links.txt
+smartspace.egg-info/not-zip-safe
+smartspace.egg-info/top_level.txt
