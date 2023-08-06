@@ -1,0 +1,4 @@
+prune docs
+prune examples
+
+global-exclude *.yaml *.yml .git*
