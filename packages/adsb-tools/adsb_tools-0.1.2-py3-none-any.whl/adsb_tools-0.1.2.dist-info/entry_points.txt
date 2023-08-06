@@ -1,0 +1,3 @@
+[console_scripts]
+adsb_tools = adsb_tools.distance.__main__:main
+

@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: adsb-tools
+Version: 0.1.2
+Summary: Various tools for handling ADS-B data coming from Dump1090 messages
+Home-page: https://github.com/herereadthis/adsb_tools
+Author: herereadthis
+Author-email: herereadthis.github@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: typing
+
+# adsb_tools
+
+Scripts and stuff to help you parse through data from [dump1090](https://github.com/flightaware/dump1090) messages
+
+
