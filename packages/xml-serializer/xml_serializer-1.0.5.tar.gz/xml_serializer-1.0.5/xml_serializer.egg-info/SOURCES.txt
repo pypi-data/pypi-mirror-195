@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+tests/test_abstract_type.py
+tests/test_converter_types.py
+xml_serializer/__init__.py
+xml_serializer/abstract_type.py
+xml_serializer/converter_types.py
+xml_serializer/main.py
+xml_serializer/schema_items.py
+xml_serializer.egg-info/PKG-INFO
+xml_serializer.egg-info/SOURCES.txt
+xml_serializer.egg-info/dependency_links.txt
+xml_serializer.egg-info/top_level.txt
