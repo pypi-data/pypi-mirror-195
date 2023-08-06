@@ -1,0 +1,3 @@
+[console_scripts]
+energyplus_diffs = energyplus_diffs.cli:cli
+
