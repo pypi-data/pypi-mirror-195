@@ -1,0 +1,5 @@
+ray==2.2.0
+scikit-learn==1.2.1
+xgboost==1.7.3
+mysql-connector-python==8.0.32
+dill==0.3.6
