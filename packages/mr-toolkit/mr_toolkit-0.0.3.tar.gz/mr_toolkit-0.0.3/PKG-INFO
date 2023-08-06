@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: mr_toolkit
+Version: 0.0.3
+Summary: Tools for reweighted estimation of Markov models.
+Author-email: John Russo <mrtoolkit@jdrusso.dev>
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+Markov Reweighting Toolkit
+==============================
+[//]: # (Badges)
+
+[![Tests](https://github.com/jdrusso/mr_toolkit/actions/workflows/CI.yaml/badge.svg)](https://github.com/jdrusso/mr_toolkit/actions/workflows/CI.yaml)
+[![Documentation](https://readthedocs.org/projects/mr-toolkit/badge/?version=latest)](https://mr-toolkit.readthedocs.io/en/latest/?badge=latest)
+
+
+* Author: John Russo
+* Free software: MIT license
+* Documentation: https://mr-toolkit.readthedocs.io
+
+Tools for reweighting Markov models.
+
+### Todo
+
+- [] Remove `deeptime` dependency for kmeans -- replace with `sklearn`
+- [] Remove `msm_we` dependency for connected sets -- really heavy
+- [] Replace `pyemma` dependencies with `deeptime` (probably want to write some tests first)
+- [] Sample NESS splicing + estimation notebook
+- [] Sample reweighting notebook
+- [] Sample Sigopt hyperparameter optimization notebook
+
+
+### Copyright
+
+Copyright (c) 2023, John Russo
+
+
+#### Acknowledgements
+ 
+Project based on the 
+[Computational Molecular Science Python Cookiecutter](https://github.com/molssi/cookiecutter-cms) version 1.1.
