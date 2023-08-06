@@ -1,0 +1,75 @@
+---
+source: crates/ruff/src/rules/pydocstyle/mod.rs
+expression: diagnostics
+---
+- kind:
+    NonImperativeMood: Returns foo.
+  location:
+    row: 10
+    column: 4
+  end_location:
+    row: 10
+    column: 22
+  fix: ~
+  parent: ~
+- kind:
+    NonImperativeMood: Constructor for a foo.
+  location:
+    row: 14
+    column: 4
+  end_location:
+    row: 14
+    column: 32
+  fix: ~
+  parent: ~
+- kind:
+    NonImperativeMood: Constructor for a boa.
+  location:
+    row: 18
+    column: 4
+  end_location:
+    row: 22
+    column: 7
+  fix: ~
+  parent: ~
+- kind:
+    NonImperativeMood: Runs something
+  location:
+    row: 26
+    column: 4
+  end_location:
+    row: 26
+    column: 24
+  fix: ~
+  parent: ~
+- kind:
+    NonImperativeMood: "Runs other things, nested"
+  location:
+    row: 29
+    column: 8
+  end_location:
+    row: 29
+    column: 39
+  fix: ~
+  parent: ~
+- kind:
+    NonImperativeMood: Writes a logical line that
+  location:
+    row: 35
+    column: 4
+  end_location:
+    row: 37
+    column: 7
+  fix: ~
+  parent: ~
+- kind:
+    NonImperativeMood: This method docstring should be written in imperative mood.
+  location:
+    row: 74
+    column: 8
+  end_location:
+    row: 74
+    column: 73
+  fix: ~
+  parent: ~
+
