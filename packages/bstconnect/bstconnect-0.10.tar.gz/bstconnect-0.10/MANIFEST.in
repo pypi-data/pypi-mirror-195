@@ -1,0 +1,4 @@
+include bstconnect/requirements.txt
+include bstconnect/thirdparty.json
+include bstconnect/README.MD
+include bstconnect/LICENSE
