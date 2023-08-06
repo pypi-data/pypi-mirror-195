@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: Voice-Cloning
+Version: 0.0.8
+Summary: Introducing Voice_Cloning: A Python Package for Speech Synthesis and Voice Cloning!
+Home-page: 
+Author: Deepak John Reji
+Author-email: deepakjohn1994@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: inflect (==5.3.0)
+Requires-Dist: librosa (==0.8.1)
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: Pillow
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: sounddevice
+Requires-Dist: SoundFile
+Requires-Dist: tqdm
+Requires-Dist: umap-learn
+Requires-Dist: Unidecode
+Requires-Dist: urllib3
+Requires-Dist: visdom
+Requires-Dist: webrtcvad
+Requires-Dist: noisereduce
+Requires-Dist: torch
+
+Introducing Voice_Cloning: A Python Package for Speech Synthesis and Voice Cloning!
+
+| Feature  | Output  |
+|---|---|
+| Real-time voice cloning | The package can clone a user's voice in real-time by analyzing a reference voice clip and a user's speech input |
+| Speech synthesis | Allow users to generate synthetic speech using a text input with pre-loaded speakers, similar to a text-to-speech (TTS) system |
+| Multi-Accent support | Supports Indian and Western-style accents for voice cloning and speech synthesis |
+| Noise reduction | The package includes functionality to reduce noise in the recorded audio, improving the quality of the cloned or synthesized voice |
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Voice-Cloning
+
+```bash
+pip install voice-cloning
+```
+
+## Usage
+
+### Clone using an external reference voice
+```python
+# load all the functions
+from voice_cloning.generation import *
+
+# provide a reference sound file and a speech text
+sound_path = r"xx/xxx/xxx.wav"
+speech_text = "This is an awesome package!"
+
+voice_generator(sound_path, speech_text)
+
+# if you want to select the voice type, currently supports "indian" & "western", by default its "western"
+voice_generator(sound_path, speech_text, voice_type = "western")
+
+```
+### Play and save the sound with noise reduction capabilities
+```python
+
+# play the generated sound
+play_sound(generated_wav)
+
+# save the file
+save_sound(generated_wav, filename="sample output", noise_reduction=True) # enable noise reduction
+
+```
+
+## About
+This Package is part of the Research topic "xxxxxxxx" conducted by xxxxx, xxxxxxxx. If you use this work (code, model or dataset),
+
+Please cite us and star at: xxxxxxxxxxxxxxxxxxxxxx
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/) License
+
+
