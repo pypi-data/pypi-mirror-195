@@ -1,0 +1,8 @@
+postgresdave_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+postgresdave_package/postgresdave.py,sha256=FhZ1HiHlcYh2dEaAhi62jw7XRq1IYSzgTBHBZmV3IXY,15534
+postgresdave_package/sample.csv,sha256=KoyZl4N-v2O7-8w5edmFZHp1ztkO8z7131-5ILgpeKI,109
+postgresdave_package/tesla.csv,sha256=yvpO2BUNffIbOcBSUSjAoh7yus0Z2g48_cY2exw6Twk,55312
+postgresdave_package-1.7.0.dist-info/METADATA,sha256=T-6MfVg-7YkrDt7s9PzYSvvAZtGZhyCy7i0sXq0QESM,882
+postgresdave_package-1.7.0.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+postgresdave_package-1.7.0.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+postgresdave_package-1.7.0.dist-info/RECORD,,
