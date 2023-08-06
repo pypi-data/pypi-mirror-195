@@ -1,0 +1,5 @@
+dune-geometry<=2.9.0
+dune-grid<=2.9.0
+dune-common<=2.9.0
+dune-istl<=2.9.0
+scipy
