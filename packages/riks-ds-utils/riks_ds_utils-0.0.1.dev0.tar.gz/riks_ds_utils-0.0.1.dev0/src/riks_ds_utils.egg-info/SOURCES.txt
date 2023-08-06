@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+requirements_dev.txt
+setup.cfg
+setup.py
+./README.md
+src/riks_ds_utils.egg-info/PKG-INFO
+src/riks_ds_utils.egg-info/SOURCES.txt
+src/riks_ds_utils.egg-info/dependency_links.txt
+src/riks_ds_utils.egg-info/requires.txt
+src/riks_ds_utils.egg-info/top_level.txt

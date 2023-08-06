@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: riks_ds_utils
+Version: 0.0.1.dev0
+Summary: short description of project.
+Home-page: https://github.com/Borg93/riks_ds_utils
+Maintainer: Riksarkivet
+License: MIT
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.9
+Provides-Extra: tests
+
+# riks_ds_utils
+
+![example workflow](https://github.com/Borg93/riks_ds_utils/actions/workflows/tests.yml/badge.svg)
+
+Long description of project.
+
+test build
