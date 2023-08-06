@@ -1,0 +1,16 @@
+README.md
+setup.py
+yt_ripper/__init__.py
+yt_ripper/main.py
+yt_ripper.egg-info/PKG-INFO
+yt_ripper.egg-info/SOURCES.txt
+yt_ripper.egg-info/dependency_links.txt
+yt_ripper.egg-info/entry_points.txt
+yt_ripper.egg-info/requires.txt
+yt_ripper.egg-info/top_level.txt
+yt_ripper/cli/__init__.py
+yt_ripper/cli/loading.py
+yt_ripper/cli/menu.py
+yt_ripper/cli/youtube.py
+yt_ripper/path/__init__.py
+yt_ripper/path/utils.py
