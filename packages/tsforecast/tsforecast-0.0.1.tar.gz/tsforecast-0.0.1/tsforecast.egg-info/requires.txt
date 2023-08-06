@@ -1,0 +1,14 @@
+pandas
+numpy
+tensorflow
+openpyxl
+pyarrow
+scikit-learn
+matplotlib
+
+[dev]
+seaborn
+jupyterlab
+ipython
+ipdb
+twine
