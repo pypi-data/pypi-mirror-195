@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+cursbnr/__init__.py
+cursbnr/bnr.py
+cursbnr.egg-info/PKG-INFO
+cursbnr.egg-info/SOURCES.txt
+cursbnr.egg-info/dependency_links.txt
+cursbnr.egg-info/top_level.txt

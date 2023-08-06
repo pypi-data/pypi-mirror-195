@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cursbnr
+Version: 0.1.1
+Summary: A bare-bones Python library for converting currencies using the conversion rates of NBR (National Bank of Romania)
+Author: Katistix Studios (Paul Tal)
+Author-email: <katistix.studios@gmail.com>
+Keywords: python,currency,exchange,romania
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
