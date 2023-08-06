@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: folderdiff
+Version: 0.0.1
+Summary: FolderDiff is a tool to compare unzipped archives (e.g. Wordpress installations) with their original zip archive or a clean source folder.
+Home-page: https://github.com/ssh-mitm/folderdiff
+Author: Manfred Kaiser
+Author-email: manfred.kaiser@ssh-mitm.at
+License: UNKNOWN
+Project-URL: Changelog, https://github.com/ssh-mitm/folderdiff/blob/master/CHANGELOG.md
+Project-URL: Source, https://github.com/ssh-mitm/folderdiff
+Project-URL: Tracker, https://github.com/ssh-mitm/folderdiff/issues
+Keywords: folder compare diff
+Platform: UNKNOWN
+Requires-Python: >= 3.7
+License-File: LICENSE
+
+UNKNOWN
+
