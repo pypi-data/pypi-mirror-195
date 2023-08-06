@@ -1,0 +1,11 @@
+liecasadi/__init__.py,sha256=SezJmoqibRuU-FL_l98hdXsALsOrf2REOohjwVnfrVA,164
+liecasadi/dualquaternion.py,sha256=eMhpzRqQ7tlEx2-m4Hyg1etOZh-c0kyANzIKVz9uVWE,6032
+liecasadi/quaternion.py,sha256=saIzmifJeAmAGs5uAFolLtpkxmLnUo_pEJRNPEIkU4g,3747
+liecasadi/se3.py,sha256=Cfv1j2uH9NtkKczNwkDq-krFePzB_xPTOT-1oBx0Wlw,3864
+liecasadi/so3.py,sha256=8iPsqL3bRDeSoTiM5kJhxpj7Qd0ocnqK4X3xzSzNC1k,6469
+liecasadi/hints/__init__.py,sha256=9NEPfSVI3mJ-uzCAGF4d1A7SX2BGxYdXnJfvjholAbs,211
+liecasadi-0.0.5.dist-info/LICENSE,sha256=EsU2z6_sWW4Zduzq3goVWjZoCZVKQsM4H_y0o7oRA7Q,1547
+liecasadi-0.0.5.dist-info/METADATA,sha256=TV-BHzlvIpqaD1zHsEh8RtxvP1S2t2gFaxACoN2TP9A,4542
+liecasadi-0.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+liecasadi-0.0.5.dist-info/top_level.txt,sha256=MXNuaUCNTmbX1PT5d--VbG8HiXsK0ebShjpAZ6RkZvI,10
+liecasadi-0.0.5.dist-info/RECORD,,
