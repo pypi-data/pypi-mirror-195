@@ -1,0 +1,17 @@
+talos_linux_api/v1_2_0/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+talos_linux_api/v1_2_0/cluster/__init__.py,sha256=IqVtQQeiJ_6qvZUdMiszTQ5EuqsTQLDQaFHfPendz10,2757
+talos_linux_api/v1_2_0/common/__init__.py,sha256=NX4y3bUWcLbbSNhoYig8LjjRQssIL1jQbDIsiTSn43w,2671
+talos_linux_api/v1_2_0/google/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+talos_linux_api/v1_2_0/google/rpc/__init__.py,sha256=396TbLpr25kKZ-YAqeYB0F8oH_FFZJWAglgBc3iJe4w,1483
+talos_linux_api/v1_2_0/inspect/__init__.py,sha256=wNq8N_Dw1wjWelBdVOL1bu6Ek1ZZn-7jHGt_1puXc6U,3380
+talos_linux_api/v1_2_0/machine/__init__.py,sha256=2bXvwpFngGaN18uul5b6htfBlBYTfLRfVyYPmwHR0dE,96517
+talos_linux_api/v1_2_0/resource/__init__.py,sha256=cV5A61462w2AImXL-T2P26nN_lWkiEQ7C6RPezDQT0g,7122
+talos_linux_api/v1_2_0/resource/config/__init__.py,sha256=0d17hfgHD028AOt2BZFS8YBCIdZSHvR0r9MfwHlRk5Q,935
+talos_linux_api/v1_2_0/resource/network/__init__.py,sha256=_AKjPN22Z7KQrVLtlbY8yCf58JBEIJ8flCgquPMvLW4,519
+talos_linux_api/v1_2_0/securityapi/__init__.py,sha256=kuvi-uOBE0r0vQXmzbza3ai5U3teksOtOGo0URFsryE,2551
+talos_linux_api/v1_2_0/storage/__init__.py,sha256=uLroqdzrcclvHCQPrRYQsPoktSSJMXlLMB3rD4aayQY,3631
+talos_linux_api/v1_2_0/time/__init__.py,sha256=JDkCyDB3AEVd25jD8G9UNKfRTWL4oONCQrpioFLSsxY,3821
+talos_linux_api_v1.2.0-0.1.0.dist-info/WHEEL,sha256=JtIceljpZF_3FlF7JEESqvYUELdenaIGNR7wSL2mRl0,87
+talos_linux_api_v1.2.0-0.1.0.dist-info/METADATA,sha256=oTcyKs8wkvS0FHBy8neJ8tuBI_Z2XE44YFPWI3QTFVQ,1200
+talos_linux_api_v1.2.0-0.1.0.dist-info/licenses/LICENSE,sha256=WJBgkSk7RuDngSLy6u863DnahzJcDF1sv3hI2O60xf0,1069
+talos_linux_api_v1.2.0-0.1.0.dist-info/RECORD,,
