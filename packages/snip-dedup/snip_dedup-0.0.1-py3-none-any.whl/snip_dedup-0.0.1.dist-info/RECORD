@@ -1,0 +1,8 @@
+snip_dedup/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+snip_dedup/cli.py,sha256=LedCVRWr51Tmuc3gf8lcJ4Hup53SkVt4pUTuvTeLyx4,247
+snip_dedup/snip_download.py,sha256=KSqoM0mNtc-c4PR_bF4AJz6sEwvvpq2DLu2KT57CgCQ,2332
+snip_dedup-0.0.1.dist-info/METADATA,sha256=hi1PVjLjtAtmiNhmoo1bLwYdhv3GIaL6e2Yu7JMd6dc,4487
+snip_dedup-0.0.1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+snip_dedup-0.0.1.dist-info/entry_points.txt,sha256=m1Cp1Lu0GwmXhqAYZKSJwfIKlDchx-5PUWvSnuK7qMg,45
+snip_dedup-0.0.1.dist-info/licenses/LICENSE,sha256=O7kcq1Q7nwSPR0ttAafQhqPF3xDmHOhKoSzFANeasKM,1089
+snip_dedup-0.0.1.dist-info/RECORD,,
