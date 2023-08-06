@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: pydantic-resolve
+Version: 0.1.3
+Summary: Make pydantic have a GraphQL-like assembly experience.
+Home-page: https://github.com/allmonday/pydantic_resolve
+License: MIT
+Keywords: pydantic,fastapi
+Author: tangkikodo
+Author-email: allmonday@126.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (>=1.10.4,<2.0.0)
+Project-URL: Repository, https://github.com/allmonday/pydantic_resolve
+Description-Content-Type: text/markdown
+
+
+## install
+
+```shell
+pip install pydantic-resolve
+```
+
+## demo
+
+```python
+from pydantic_resolve import resolver
+
+class Student(BaseModel):
+    name: str
+    intro: str = ''
+    def resolve_intro(self):
+        return f'hello {self.name}'
+    
+    books: tuple[Book, ...] = tuple()
+    def resolve_books(self):
+        return [Book(name="sky"), Book(name="sea")]
+
+class Book(BaseModel):
+    name: str
+
+class TestResolver(unittest.IsolatedAsyncioTestCase):
+
+    async def test_resolver_1(self):
+        stu = Student(name="boy")
+        result = await resolver(stu)
+        expected = {
+            'name': 'boy',
+            'intro': 'hello boy',
+            'books': [{'name': 'sky'}, {'name': 'sea'}]
+        }
+        self.assertEqual(result.dict(), expected)
+
+    async def test_schema(self):
+        Student.update_forward_refs(Book=Book)
+        schema = Student.schema_json()
+        expected = '''{"title": "Student", "type": "object", "properties": {"name": {"title": "Name", "type": "string"}, "intro": {"title": "Intro", "default": "", "type": "string"}, "books": {"title": "Books", "default": [], "type": "array", "items": {"$ref": "#/definitions/Book"}}}, "required": ["name"], "definitions": {"Book": {"title": "Book", "type": "object", "properties": {"name": {"title": "Name", "type": "string"}}, "required": ["name"]}}}'''
+        self.assertEqual(schema, expected)
+```
+
+### TODO:
+play with aiodataloader
+
+## test
+
+```python
+poetry run python -m unittest
+```
+
