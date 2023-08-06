@@ -1,0 +1,357 @@
+{
+  "//": {
+    "metadata": {
+      "backend": "local",
+      "stackName": "test",
+      "version": "0.15.5"
+    },
+    "outputs": {
+      "test": {
+        "db1_datashack_output": "test_db1datashackoutput_AE420920",
+        "kinesis_job_db1_users_datashack_output": "test_kinesisjobdb1usersdatashackoutput_81CD9783",
+        "kinesis_job_db1_users_events_datashack_output": "test_kinesisjobdb1userseventsdatashackoutput_8D3CDA11"
+      }
+    }
+  },
+  "data": {
+    "aws_caller_identity": {
+      "test_me_223AA72C": {
+        "//": {
+          "metadata": {
+            "path": "test/me",
+            "uniqueId": "test_me_223AA72C"
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "test_db1datashackoutput_AE420920": {
+      "value": {
+        "database_location_uri": "${aws_glue_catalog_database.test_GlueCatalogDatabasedb1_B38ED3D9.location_uri}",
+        "database_name": "${aws_glue_catalog_database.test_GlueCatalogDatabasedb1_B38ED3D9.name}"
+      }
+    },
+    "test_kinesisjobdb1usersdatashackoutput_81CD9783": {
+      "value": {
+        "database_name": "${aws_glue_catalog_table.test_GlueCatalogTablekinesisjobdb1users_4B2F5E63.database_name}",
+        "kinesis_arn": "${aws_kinesis_stream.test_KinesisStreamkinesisjobdb1users_333A36D5.arn}",
+        "kinesis_name": "${aws_kinesis_stream.test_KinesisStreamkinesisjobdb1users_333A36D5.name}",
+        "table_name": "${aws_glue_catalog_table.test_GlueCatalogTablekinesisjobdb1users_4B2F5E63.name}"
+      }
+    },
+    "test_kinesisjobdb1userseventsdatashackoutput_8D3CDA11": {
+      "value": {
+        "database_name": "${aws_glue_catalog_table.test_GlueCatalogTablekinesisjobdb1usersevents_60E35600.database_name}",
+        "kinesis_arn": "${aws_kinesis_stream.test_KinesisStreamkinesisjobdb1usersevents_A07B59B2.arn}",
+        "kinesis_name": "${aws_kinesis_stream.test_KinesisStreamkinesisjobdb1usersevents_A07B59B2.name}",
+        "table_name": "${aws_glue_catalog_table.test_GlueCatalogTablekinesisjobdb1usersevents_60E35600.name}"
+      }
+    }
+  },
+  "provider": {
+    "aws": [
+      {
+      }
+    ]
+  },
+  "resource": {
+    "aws_glue_catalog_database": {
+      "test_GlueCatalogDatabasedb1_B38ED3D9": {
+        "//": {
+          "metadata": {
+            "path": "test/GlueCatalogDatabase_db1",
+            "uniqueId": "test_GlueCatalogDatabasedb1_B38ED3D9"
+          }
+        },
+        "location_uri": "s3://tables-bucket/db1",
+        "name": "test-db1"
+      }
+    },
+    "aws_glue_catalog_table": {
+      "test_GlueCatalogTablekinesisjobdb1users_4B2F5E63": {
+        "//": {
+          "metadata": {
+            "path": "test/GlueCatalogTable_kinesis_job_db1_users",
+            "uniqueId": "test_GlueCatalogTablekinesisjobdb1users_4B2F5E63"
+          }
+        },
+        "database_name": "test-db1",
+        "name": "test-users",
+        "parameters": {
+          "EXTERNAL": "TRUE",
+          "parquet.compression": "SNAPPY",
+          "useGlueParquetWriter": "TRUE"
+        },
+        "partition_keys": [
+        ],
+        "storage_descriptor": {
+          "columns": [
+            {
+              "name": "id",
+              "type": "string"
+            },
+            {
+              "name": "age",
+              "type": "int"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            }
+          ],
+          "input_format": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat",
+          "location": "${aws_glue_catalog_database.test_GlueCatalogDatabasedb1_B38ED3D9.location_uri}/users",
+          "output_format": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat",
+          "ser_de_info": {
+            "name": "my-stream",
+            "parameters": {
+              "serialization.format": "1"
+            },
+            "serialization_library": "org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe"
+          }
+        },
+        "table_type": "EXTERNAL_TABLE"
+      },
+      "test_GlueCatalogTablekinesisjobdb1usersevents_60E35600": {
+        "//": {
+          "metadata": {
+            "path": "test/GlueCatalogTable_kinesis_job_db1_users_events",
+            "uniqueId": "test_GlueCatalogTablekinesisjobdb1usersevents_60E35600"
+          }
+        },
+        "database_name": "test-db1",
+        "name": "test-users_events",
+        "parameters": {
+          "EXTERNAL": "TRUE",
+          "parquet.compression": "SNAPPY",
+          "useGlueParquetWriter": "TRUE"
+        },
+        "partition_keys": [
+          {
+            "name": "c3",
+            "type": "string"
+          },
+          {
+            "name": "c5",
+            "type": "double"
+          }
+        ],
+        "storage_descriptor": {
+          "columns": [
+            {
+              "name": "c1",
+              "type": "string"
+            },
+            {
+              "name": "c2",
+              "type": "int"
+            },
+            {
+              "name": "c4",
+              "type": "string"
+            }
+          ],
+          "input_format": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat",
+          "location": "${aws_glue_catalog_database.test_GlueCatalogDatabasedb1_B38ED3D9.location_uri}/users_events",
+          "output_format": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat",
+          "ser_de_info": {
+            "name": "my-stream",
+            "parameters": {
+              "serialization.format": "1"
+            },
+            "serialization_library": "org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe"
+          }
+        },
+        "table_type": "EXTERNAL_TABLE"
+      }
+    },
+    "aws_glue_job": {
+      "test_GlueJobkinesisjobdb1users_FC0CA12F": {
+        "//": {
+          "metadata": {
+            "path": "test/GlueJob_kinesis_job_db1_users",
+            "uniqueId": "test_GlueJobkinesisjobdb1users_FC0CA12F"
+          }
+        },
+        "command": {
+          "name": "gluestreaming",
+          "python_version": "3",
+          "script_location": "s3://${aws_s3_bucket_object.test_S3BucketObjectkinesisjobdb1users_153EE39D.bucket}/${aws_s3_bucket_object.test_S3BucketObjectkinesisjobdb1users_153EE39D.key}"
+        },
+        "default_arguments": {
+          "--TempDir": "s3://${aws_s3_bucket.test_testglueassets_CEED0A7E.bucket}/temporary/",
+          "--enable-continuous-cloudwatch-log": "true",
+          "--enable-glue-datacatalog": "true",
+          "--enable-job-insights": "false",
+          "--enable-metrics": "true",
+          "--enable-spark-ui": "true",
+          "--job-bookmark-option": "job-bookmark-disable",
+          "--job-language": "python",
+          "--spark-event-logs-path": "s3://${aws_s3_bucket.test_testglueassets_CEED0A7E.bucket}/sparkHistoryLogs/"
+        },
+        "execution_class": "STANDARD",
+        "execution_property": {
+          "max_concurrent_runs": 1
+        },
+        "glue_version": "3.0",
+        "max_retries": 0,
+        "name": "test-kinesis_stream_into_db1_users",
+        "number_of_workers": 2,
+        "role_arn": "${aws_iam_role.test_testkinesisstreamintodb1usersrole_FAF91591.arn}",
+        "worker_type": "G.025X"
+      },
+      "test_GlueJobkinesisjobdb1usersevents_050B1708": {
+        "//": {
+          "metadata": {
+            "path": "test/GlueJob_kinesis_job_db1_users_events",
+            "uniqueId": "test_GlueJobkinesisjobdb1usersevents_050B1708"
+          }
+        },
+        "command": {
+          "name": "gluestreaming",
+          "python_version": "3",
+          "script_location": "s3://${aws_s3_bucket_object.test_S3BucketObjectkinesisjobdb1usersevents_533F698A.bucket}/${aws_s3_bucket_object.test_S3BucketObjectkinesisjobdb1usersevents_533F698A.key}"
+        },
+        "default_arguments": {
+          "--TempDir": "s3://${aws_s3_bucket.test_testglueassets_CEED0A7E.bucket}/temporary/",
+          "--enable-continuous-cloudwatch-log": "true",
+          "--enable-glue-datacatalog": "true",
+          "--enable-job-insights": "false",
+          "--enable-metrics": "true",
+          "--enable-spark-ui": "true",
+          "--job-bookmark-option": "job-bookmark-disable",
+          "--job-language": "python",
+          "--spark-event-logs-path": "s3://${aws_s3_bucket.test_testglueassets_CEED0A7E.bucket}/sparkHistoryLogs/"
+        },
+        "execution_class": "STANDARD",
+        "execution_property": {
+          "max_concurrent_runs": 1
+        },
+        "glue_version": "3.0",
+        "max_retries": 0,
+        "name": "test-kinesis_stream_into_db1_users_events",
+        "number_of_workers": 2,
+        "role_arn": "${aws_iam_role.test_testkinesisstreamintodb1userseventsrole_1BA4554A.arn}",
+        "worker_type": "G.025X"
+      }
+    },
+    "aws_iam_role": {
+      "test_testkinesisstreamintodb1userseventsrole_1BA4554A": {
+        "//": {
+          "metadata": {
+            "path": "test/test-kinesis_stream_into_db1_users_events-role",
+            "uniqueId": "test_testkinesisstreamintodb1userseventsrole_1BA4554A"
+          }
+        },
+        "assume_role_policy": "{\"Version\": \"2012-10-17\", \"Statement\": [{\"Action\": \"sts:AssumeRole\", \"Sid\": \"\", \"Effect\": \"Allow\", \"Principal\": {\"Service\": \"glue.amazonaws.com\"}}]}",
+        "description": "Role for Glue stream kinesis_stream_into_db1_users_events",
+        "inline_policy": [
+          {
+            "name": "inline-policy-1",
+            "policy": "{\"Version\": \"2012-10-17\", \"Statement\": [{\"Action\": [\"s3:*\", \"glue:*\", \"kinesis:*\", \"logs:*\", \"cloudwatch:*\"], \"Effect\": \"Allow\", \"Resource\": [\"*\"]}]}"
+          }
+        ],
+        "name": "kinesis_stream_into_db1_users_events-role"
+      },
+      "test_testkinesisstreamintodb1usersrole_FAF91591": {
+        "//": {
+          "metadata": {
+            "path": "test/test-kinesis_stream_into_db1_users-role",
+            "uniqueId": "test_testkinesisstreamintodb1usersrole_FAF91591"
+          }
+        },
+        "assume_role_policy": "{\"Version\": \"2012-10-17\", \"Statement\": [{\"Action\": \"sts:AssumeRole\", \"Sid\": \"\", \"Effect\": \"Allow\", \"Principal\": {\"Service\": \"glue.amazonaws.com\"}}]}",
+        "description": "Role for Glue stream kinesis_stream_into_db1_users",
+        "inline_policy": [
+          {
+            "name": "inline-policy-1",
+            "policy": "{\"Version\": \"2012-10-17\", \"Statement\": [{\"Action\": [\"s3:*\", \"glue:*\", \"kinesis:*\", \"logs:*\", \"cloudwatch:*\"], \"Effect\": \"Allow\", \"Resource\": [\"*\"]}]}"
+          }
+        ],
+        "name": "kinesis_stream_into_db1_users-role"
+      }
+    },
+    "aws_kinesis_stream": {
+      "test_KinesisStreamkinesisjobdb1users_333A36D5": {
+        "//": {
+          "metadata": {
+            "path": "test/KinesisStream_kinesis_job_db1_users",
+            "uniqueId": "test_KinesisStreamkinesisjobdb1users_333A36D5"
+          }
+        },
+        "encryption_type": "NONE",
+        "name": "test-db1_users",
+        "retention_period": 24,
+        "shard_count": 1,
+        "stream_mode_details": {
+          "stream_mode": "PROVISIONED"
+        }
+      },
+      "test_KinesisStreamkinesisjobdb1usersevents_A07B59B2": {
+        "//": {
+          "metadata": {
+            "path": "test/KinesisStream_kinesis_job_db1_users_events",
+            "uniqueId": "test_KinesisStreamkinesisjobdb1usersevents_A07B59B2"
+          }
+        },
+        "encryption_type": "NONE",
+        "name": "test-db1_users_events",
+        "retention_period": 24,
+        "shard_count": 1,
+        "stream_mode_details": {
+          "stream_mode": "PROVISIONED"
+        }
+      }
+    },
+    "aws_s3_bucket": {
+      "test_testglueassets_CEED0A7E": {
+        "//": {
+          "metadata": {
+            "path": "test/test-glue-assets",
+            "uniqueId": "test_testglueassets_CEED0A7E"
+          }
+        }
+      }
+    },
+    "aws_s3_bucket_object": {
+      "test_S3BucketObjectkinesisjobdb1users_153EE39D": {
+        "//": {
+          "metadata": {
+            "path": "test/S3BucketObject_kinesis_job_db1_users",
+            "uniqueId": "test_S3BucketObjectkinesisjobdb1users_153EE39D"
+          }
+        },
+        "bucket": "${aws_s3_bucket.test_testglueassets_CEED0A7E.bucket}",
+        "content": "${templatefile(\"/Users/admin/workspace/datashack-sdk/datashack/datashack_infra_app/additional_plugins/datashack_glue/utils/kinessis_stream_template\", {kinesis_stream_arn = aws_kinesis_stream.test_KinesisStreamkinesisjobdb1users_333A36D5.arn, database_name = aws_glue_catalog_table.test_GlueCatalogTablekinesisjobdb1users_4B2F5E63.database_name, table_name = aws_glue_catalog_table.test_GlueCatalogTablekinesisjobdb1users_4B2F5E63.name, partition_keys = []})}",
+        "etag": "${templatefile(\"/Users/admin/workspace/datashack-sdk/datashack/datashack_infra_app/additional_plugins/datashack_glue/utils/kinessis_stream_template\", {kinesis_stream_arn = aws_kinesis_stream.test_KinesisStreamkinesisjobdb1users_333A36D5.arn, database_name = aws_glue_catalog_table.test_GlueCatalogTablekinesisjobdb1users_4B2F5E63.database_name, table_name = aws_glue_catalog_table.test_GlueCatalogTablekinesisjobdb1users_4B2F5E63.name, partition_keys = []})}",
+        "key": "kinessis_stream_db1_users.py"
+      },
+      "test_S3BucketObjectkinesisjobdb1usersevents_533F698A": {
+        "//": {
+          "metadata": {
+            "path": "test/S3BucketObject_kinesis_job_db1_users_events",
+            "uniqueId": "test_S3BucketObjectkinesisjobdb1usersevents_533F698A"
+          }
+        },
+        "bucket": "${aws_s3_bucket.test_testglueassets_CEED0A7E.bucket}",
+        "content": "${templatefile(\"/Users/admin/workspace/datashack-sdk/datashack/datashack_infra_app/additional_plugins/datashack_glue/utils/kinessis_stream_template\", {kinesis_stream_arn = aws_kinesis_stream.test_KinesisStreamkinesisjobdb1usersevents_A07B59B2.arn, database_name = aws_glue_catalog_table.test_GlueCatalogTablekinesisjobdb1usersevents_60E35600.database_name, table_name = aws_glue_catalog_table.test_GlueCatalogTablekinesisjobdb1usersevents_60E35600.name, partition_keys = [\"c3\", \"c5\"]})}",
+        "etag": "${templatefile(\"/Users/admin/workspace/datashack-sdk/datashack/datashack_infra_app/additional_plugins/datashack_glue/utils/kinessis_stream_template\", {kinesis_stream_arn = aws_kinesis_stream.test_KinesisStreamkinesisjobdb1usersevents_A07B59B2.arn, database_name = aws_glue_catalog_table.test_GlueCatalogTablekinesisjobdb1usersevents_60E35600.database_name, table_name = aws_glue_catalog_table.test_GlueCatalogTablekinesisjobdb1usersevents_60E35600.name, partition_keys = [\"c3\", \"c5\"]})}",
+        "key": "kinessis_stream_db1_users_events.py"
+      }
+    }
+  },
+  "terraform": {
+    "backend": {
+      "local": {
+        "path": "/Users/admin/workspace/datashack-sdk/datashack/datashack_infra_app/terraform.test.tfstate"
+      }
+    },
+    "required_providers": {
+      "aws": {
+        "source": "aws",
+        "version": "4.56.0"
+      }
+    }
+  }
+}
