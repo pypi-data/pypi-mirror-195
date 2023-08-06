@@ -1,0 +1,8 @@
+django_model_signals/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_model_signals/apps.py,sha256=tD3g2onxGBIyiE9dkYJ_81ctNU-Z0GRMgy79lmPcwtc,1731
+django_model_signals/dispatcher.py,sha256=KoOEuWbrjN1mPsZ06s3g6Z_4l-D3QqBOmAQihqSPei4,757
+django_model_signals/transceiver.py,sha256=K8NsKtXv0u0QkMfZxyQwrXj8j6ouxBYE1JTrx3E7p04,427
+django_model_signals-0.1.2.dist-info/METADATA,sha256=1YM9uptp7C-9pLPAOilwkgYaySb2mSL1JopMoRqqchQ,2007
+django_model_signals-0.1.2.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+django_model_signals-0.1.2.dist-info/licenses/LICENSE.md,sha256=4QPK8gKMZWFu_yoaY4HsXTZnp5ccY4qoqz66hC79Psc,1071
+django_model_signals-0.1.2.dist-info/RECORD,,
