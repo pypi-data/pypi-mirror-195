@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Mensajes-ALISrj
+Version: 5.0
+Summary: Un paquete para saludar y despedir
+Author: ALISrj
+Author-email: alexis.rj2110@gmail.com
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Paquete de mensajerÃ­a para Pruebas de ALISrj
