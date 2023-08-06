@@ -1,0 +1,8 @@
+[[avasar]]
+name = "gen.character"
+items = [
+"""
+Firstname: {words.firstname.set("c.it")}
+Also: {c.it}
+"""
+]

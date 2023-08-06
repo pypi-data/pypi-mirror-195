@@ -1,0 +1,538 @@
+[[dimension]]
+name = "Body"
+category = "Person"
+type = "items"
+items = [
+  "Tall",
+  "Average height",
+  "Short",
+  "Petite",
+  "Tiny",
+  "Compact",
+  "Big",
+  "Large",
+  "Burly",
+  "Beefy",
+  "Bulky",
+  "Brawny",
+  "Barrel-chested",
+  "Heavy / heavy-set",
+  "Fat",
+  "Overweight",
+  "Obese",
+  "Flabby",
+  "Chunky",
+  "Chubby",
+  "Pudgy",
+  "Pot-bellied",
+  "Portly",
+  "Thick",
+  "Stout",
+  "Lush",
+  "Plush",
+  "Full-figured",
+  "Ample",
+  "Rounded",
+  "Generous",
+  "Voluptuous",
+  "Curvy",
+  "Hourglass",
+  "Plump",
+  "Leggy / long-legged",
+  "Gangling",
+  "Lanky",
+  "Coltish",
+  "Lissome",
+  "Willowy",
+  "Lithe",
+  "Lean",
+  "Slim",
+  "Slender",
+  "Trim",
+  "Thin",
+  "Skinny",
+  "Emaciated",
+  "Gaunt",
+  "Bony",
+  "Spare",
+  "Solid",
+  "Stocky",
+  "Wiry",
+  "Rangy",
+  "Sinewy",
+  "Stringy",
+  "Ropy",
+  "Sturdy",
+  "Strapping",
+  "Powerful",
+  "Hulking",
+  "Fit",
+  "Athletic",
+  "Toned",
+  "Built",
+  "Muscular",
+  "Chiseled",
+  "Taut",
+  "Ripped",
+  "herculean",
+  "Broad-shouldered",
+  "Sloping shoulders",
+  "Bowlegged",
+]
+
+[[dimension]]
+name = "Eye"
+category = "Person"
+type = "items"
+items = [
+  "Large",
+  "Small",
+  "Narrow",
+  "Sharp",
+  "Squinty",
+  "Round",
+  "Wide-set",
+  "Close-set",
+  "Deep-set",
+  "Sunken",
+  "Bulging",
+  "Protruding",
+  "Wide",
+  "Hooded",
+  "Heavy-lidded",
+  "Bright",
+  "Sparkling",
+  "Glittering",
+  "Flecked",
+  "Dull",
+  "Bleary",
+  "Rheumy",
+  "Cloudy",
+  "Red-rimmed",
+]
+
+[[dimension]]
+name = "Eye color"
+category = "Person"
+group = "Basic"
+grouptype = "Eye color"
+type = "items"
+items = ["Brown", "Amber", "Hazel", "Green", "Blue", "Gray"]
+
+[[dimension]]
+name = "Eye color"
+category = "Person"
+group = "Kitsch"
+grouptype = "Eye color"
+type = "items"
+items = [
+  "Chestnut",
+  "Chocolate brown",
+  "Cocoa brown",
+  "Coffee brown",
+  "Mocha",
+  "Mahogany",
+  "Sepia",
+  "Sienna brown",
+  "Mink brown",
+  "Copper",
+  "Amber",
+  "Cognac",
+  "Whiskey",
+  "Brandy",
+  "Honey",
+  "Tawny",
+  "Topaz",
+  "Hazel",
+  "Obsidian",
+  "Onyx",
+  "Coal",
+  "Raven",
+  "Midnight",
+  "Sky blue",
+  "Sunny blue",
+  "Cornflower blue",
+  "Steel blue",
+  "Ice blue",
+  "arctic blue",
+  "Glacial blue",
+  "Crystal blue",
+  "Cerulean",
+  "Electric blue",
+  "Azure",
+  "Lake blue",
+  "Aquamarine",
+  "Turquoise",
+  "Denim blue",
+  "Slate blue / slate gray",
+  "Storm blue / storm gray",
+  "Silver / silver gray",
+  "Chrome",
+  "Platinum",
+  "Pewter",
+  "Smoky gray",
+  "Ash gray",
+  "Concrete gray",
+  "Dove gray",
+  "Shark gray",
+  "Fog gray",
+  "Gunmetal gray",
+  "Olive",
+  "Emerald",
+  "Leaf green",
+  "Moss green",
+]
+
+[[dimension]]
+name = "Eyebrows"
+category = "Person"
+type = "items"
+items = [
+  "Arched",
+  "Straight",
+  "Plucked",
+  "Sparse",
+  "Trim",
+  "Dark",
+  "Faint",
+  "Thin",
+  "Thick",
+  "Unruly",
+  "Bushy",
+  "Heavy",
+]
+
+[[dimension]]
+name = "Face"
+category = "Person"
+type = "items"
+items = [
+  "Square",
+  "Round",
+  "Oblong",
+  "Oval",
+  "Elongated",
+  "Narrow",
+  "Heart-shaped",
+  "Catlike",
+  "Wolfish",
+  "Chiseled",
+  "Sculpted",
+  "Craggy",
+  "Soft",
+  "Jowly",
+  "Square jaw",
+]
+
+[[dimension]]
+name = "Face: cheek"
+category = "Person"
+type = "items"
+items = [
+  "Sharp cheekbones",
+  "High cheekbones",
+  "Angular cheekbones",
+  "Hollow cheeks",
+]
+
+[[dimension]]
+name = "Face: chin"
+category = "Person"
+type = "items"
+items = [
+  "Jutting chin",
+  "Pointed chin",
+  "Weak chin",
+  "Receding chin",
+  "Double chin",
+  "Cleft chin",
+  "Dimple in chin",
+]
+
+[[dimension]]
+name = "Face: facial hair"
+category = "Person"
+type = "items"
+items = [
+  "Clean-shaven",
+  "Smooth-shaven",
+  "Beard",
+  "Neckbeard",
+  "Goatee",
+  "Moustache",
+  "Sideburns",
+  "Mutton-chop sideburns",
+  "Stubble",
+  "A few days’ growth of beard",
+  "Five o’ clock shadow",
+]
+
+[[dimension]]
+name = "Face: forehead"
+category = "Person"
+type = "items"
+items = [
+  "High forehead",
+  "Broad forehead",
+  "Prominent brow ridge",
+  "Protruding brow bone",
+]
+
+[[dimension]]
+name = "Face: mouth"
+category = "Person"
+type = "items"
+items = [
+  "Thin",
+  "Narrow",
+  "Full",
+  "Lush",
+  "cupid’s bow",
+  "Rosebud",
+  "Dry",
+  "Cracked",
+  "Chapped",
+  "Moist",
+  "Glossy",
+  "Straight teeth",
+  "Gap between teeth",
+  "Gleaming white teeth",
+  "Overbite",
+  "Underbite",
+]
+
+[[dimension]]
+name = "Hair color"
+category = "Person"
+group = "Basic"
+grouptype = "Hair color"
+type = "items"
+items = ["Black", "Brown", "Auburn", "Red", "Blond", "Gray", "White"]
+
+[[dimension]]
+name = "Hair color"
+category = "Person"
+group = "Kitsch"
+grouptype = "Hair color"
+type = "items"
+items = [
+  "Black",
+  "Blue-black",
+  "Jet black",
+  "Raven",
+  "Ebony",
+  "Inky black",
+  "Midnight",
+  "Sable",
+  "Salt and pepper",
+  "Silver gray",
+  "Charcoal gray",
+  "Steel gray",
+  "White",
+  "Snow-white",
+  "Brown",
+  "Brunette",
+  "Chocolate brown",
+  "Coffee brown",
+  "Ash brown",
+  "Brown sugar",
+  "Nut brown",
+  "Caramel",
+  "Tawny brown",
+  "Toffee brown",
+  "Red",
+  "Ginger",
+  "Auburn",
+  "titian-haired",
+  "Copper",
+  "Strawberry blonde",
+  "Butterscotch",
+  "Honey",
+  "Wheat",
+  "Blonde",
+  "Golden",
+  "Sandy blond",
+  "Flaxen",
+  "Fair-haired",
+  "Bleached",
+  "Platinum",
+]
+
+[[dimension]]
+name = "Hair style"
+category = "Person"
+type = "items"
+items = [
+  "Coiffure",
+  "Curls",
+  "Down",
+  "Fringe",
+  "Fuzz",
+  "Locks",
+  "Mane",
+  "Mop",
+  "Ringlets",
+  "Shock",
+  "Strands",
+  "Tresses",
+  "Tufts",
+  "Wig",
+  "Wool",
+]
+
+[[dimension]]
+name = "Hair style (ext)"
+category = "Person"
+type = "items"
+items = [
+  "Long",
+  "Short",
+  "Shoulder-length",
+  "Loose",
+  "Limp",
+  "Dull",
+  "Shiny",
+  "Glossy",
+  "Sleek",
+  "Smooth",
+  "Luminous",
+  "Lustrous",
+  "Spiky",
+  "Stringy",
+  "Shaggy",
+  "Tangled",
+  "Messy",
+  "Tousled",
+  "Windblown",
+  "Unkempt",
+  "Bedhead",
+  "Straggly",
+  "Neatly combed",
+  "Parted",
+  "Slicked down",
+  "Cropped",
+  "Clipped",
+  "Buzzed",
+  "Crewcut",
+  "Bob",
+  "Mullet",
+  "Curly",
+  "Bushy",
+  "Frizzy",
+  "Wavy",
+  "Straight",
+  "Lanky",
+  "Dry",
+  "Oily",
+  "Greasy",
+  "Layers",
+  "Corkscrews",
+  "Spirals",
+  "Ringlets",
+  "Braids",
+  "Widow’s peak",
+  "Bald",
+  "Shaved",
+  "Comb-over",
+  "Afro",
+  "Thick",
+  "Luxuriant",
+  "Voluminous",
+  "Full",
+  "Wild",
+  "Untamed",
+  "Bouncy",
+  "Wispy",
+  "Fine",
+  "Thinning",
+]
+
+[[dimension]]
+name = "Hands"
+category = "Person"
+type = "items"
+items = [
+  "Delicate",
+  "Small",
+  "Large",
+  "Square",
+  "Sturdy",
+  "Strong",
+  "Smooth",
+  "Rough",
+  "Calloused",
+  "Elegant",
+  "Plump",
+  "Manicured",
+  "Stubby fingers",
+  "Long fingers",
+  "Ragged nails",
+  "Grimy fingernails",
+  "Ink-stained",
+]
+
+[[dimension]]
+name = "Nose"
+category = "Person"
+type = "items"
+items = [
+  "Snub",
+  "Dainty",
+  "Button",
+  "Turned-up",
+  "Long",
+  "Broad",
+  "Thin",
+  "Straight",
+  "Pointed",
+  "Crooked",
+  "Aquiline",
+  "Roman",
+  "Bulbous",
+  "Flared",
+  "Hawk",
+  "Strong",
+]
+
+[[dimension]]
+name = "Skin color"
+category = "Person"
+type = "items"
+items = [
+  "Amber",
+  "Bronze",
+  "Cinnamon",
+  "Copper",
+  "Dark brown",
+  "Deep brown",
+  "Ebony",
+  "Honey",
+  "Golden",
+  "Pale",
+  "Pallid",
+  "Pasty",
+  "Fair",
+  "Light",
+  "Cream",
+  "Alabaster",
+  "Ivory",
+  "Bisque",
+  "Milk",
+  "Porcelain",
+  "Chalky",
+  "Sallow",
+  "Olive",
+  "Peach",
+  "Rose",
+  "Ruddy",
+  "Florid",
+  "Russet",
+  "Tawny",
+  "Fawn",
+]
+
+[[dimension]]
+name = "Weight"
+category = "Person"
+type = "items"
+items = ["Heavy", "Normal", "Light"]
