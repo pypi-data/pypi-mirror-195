@@ -1,0 +1,9 @@
+master/__init__.py,sha256=w9Iw7QVvd8lme2wKwEbCo5IgetVjSfFBOOYAcA_Q0Ns,18
+master/cli.py,sha256=-z14wNrSJAOuwJhLG3SUnbw2Fa6TXNtrgeqiJtVrYvo,2033
+master/logger.py,sha256=VSQrMnWW2TohdDqJ4X_axh2JIr-lxvpYLiWfPl1GcZc,702
+master/master.py,sha256=gawgfmmgv4zeQiUhR74Kp4Jpd6Af7mcsPKuI-qLpsb8,2500
+masterpass-0.2.0.dist-info/METADATA,sha256=FIlzH_dyx2PAM1np50USbVTU1TqA0aix1uekh5F_lJs,2405
+masterpass-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+masterpass-0.2.0.dist-info/entry_points.txt,sha256=2KLlTis75yyG689oBr-ye_MmgvMtedeyf7aCSHdcUMM,43
+masterpass-0.2.0.dist-info/top_level.txt,sha256=mzFiSYwh1_lgh3CZF07OoTQQvSHRJECy6ohoEX_AiuA,7
+masterpass-0.2.0.dist-info/RECORD,,
