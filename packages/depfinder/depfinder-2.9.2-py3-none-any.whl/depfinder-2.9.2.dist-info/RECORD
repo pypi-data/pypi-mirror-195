@@ -1,0 +1,17 @@
+depfinder/__init__.py,sha256=ZpqJD5O8o58GK083OKe9dKTqXdJGjz-sLA86L1egvW8,1797
+depfinder/_version.py,sha256=JvlWgPzoYT0e0o9kpkkX-auu312YIKFUMfS8Fb-i9gM,21
+depfinder/cli.py,sha256=U8Ql-hvJf58Imzaa0HZSOMbw1BleLWlSNPX9b0Y0ToI,9226
+depfinder/inspection.py,sha256=GFJSuDc-ejnRZ_RUL6mCWu2GIDe1U-90icY5NMZxXMc,13225
+depfinder/main.py,sha256=zQx0Xs8xkFyKVwoJAzvAByylXZchN1tCnTYJUOQ7pHw,11730
+depfinder/reports.py,sha256=NTFObV7VI2LvymrwR-n-X2TizJg-UAnjdclz16fT_jk,6887
+depfinder/stdliblist.py,sha256=AL-LRnsn0MjRsBei7KkkDEY9WhifWzTyaxk_aQo0_Co,524
+depfinder/utils.py,sha256=xBcAO6CGFtSsJBzvXm_4cuTwZXJS6DNOomhlG9nVSX4,2233
+depfinder/pkg_data/name_mapping.yml,sha256=Oj0ZW8LDPmODoGHGSIZ69iJZUVPI63aKW4qjiO7teQA,485132
+depfinder/pkg_data/pkg_data.yml,sha256=2xbqX_PiCqTtVDq3fkzCtxXS3RnCDzhrxedI0g2eVRY,579
+depfinder-2.9.2.dist-info/LICENSE,sha256=CC0zEzIrm6JWA45C0D8_Cn_G5AepcxMkrSRcMkCTEE8,1539
+depfinder-2.9.2.dist-info/METADATA,sha256=ng3n3gGKoQ3jSFwAg5NCAmmCqUUlQ7oc5m0sa3g-R8U,6269
+depfinder-2.9.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+depfinder-2.9.2.dist-info/entry_points.txt,sha256=tJ2x2vSUtlJ6QzK_RNkcMobvHXqWvkod8iHu_SMABVw,48
+depfinder-2.9.2.dist-info/top_level.txt,sha256=CJSOeWP25BSTm-iQ0jAoFmu5uLxgHZ1JeQMoUgiVUrA,10
+depfinder-2.9.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+depfinder-2.9.2.dist-info/RECORD,,
