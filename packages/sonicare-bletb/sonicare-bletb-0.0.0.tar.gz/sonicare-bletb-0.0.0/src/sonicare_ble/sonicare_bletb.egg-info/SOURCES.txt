@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+src/sonicare_ble/sonicare_bletb.egg-info/PKG-INFO
+src/sonicare_ble/sonicare_bletb.egg-info/SOURCES.txt
+src/sonicare_ble/sonicare_bletb.egg-info/dependency_links.txt
+src/sonicare_ble/sonicare_bletb.egg-info/top_level.txt
