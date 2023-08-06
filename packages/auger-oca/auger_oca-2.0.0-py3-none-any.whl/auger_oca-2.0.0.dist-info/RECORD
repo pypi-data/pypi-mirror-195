@@ -1,0 +1,16 @@
+auger_oca/OCA.dat,sha256=Sk1L0zTlgfw--9Pi7STTQxd2lXMCC6xSkjmwxxKgGig,24001
+auger_oca/__init__.py,sha256=zncoxr-lqdgZEMQ6B9CJl_ygeIi6CBUJTi-4v3HUBKY,111
+auger_oca/auger_driver.py,sha256=CONMoSTgI5paRz4WmpzDn4ZfDZtSoWigIUyKN-xshHE,4555
+auger_oca/basis_id.py,sha256=N2kqxMkTY5tRldtnBxviFWWJgUih4sZhmlVptrpq1L4,3673
+auger_oca/initi.py,sha256=OvWpsV7oK-oyH86nIKGpsTX65hnElFINQwilxtNa8Mo,7640
+auger_oca/input_parse.py,sha256=r2nvMvQ5a-0lknPsJz8TiAgW2LcDoMHUcP-356GKKXY,4590
+auger_oca/mbs.py,sha256=19dkjuL97Lsh04qITCFprlq_Fqv8ASHv1l5W9dBxmn8,6072
+auger_oca/my_variables.py,sha256=jkDTW45qfE9_HElJXURCuHv0Xd1uKa1hwj6YQn10j88,1684
+auger_oca/oca_integrals.py,sha256=mmLegcNzJv5HHENG8nrgKFAxhXPA1hX8snXIEHOsxXU,5071
+auger_oca/orbtransf_sz.py,sha256=tflf4f8HrKNf6y6mlWR2UAhiLg9DIgad3yuHeOgMhGk,6018
+auger_oca/rt2mzz.py,sha256=nZMBCe1pKnBmo6HnZuOabDFXUHzzlJ6yaAa4D0a0x7g,8544
+auger_oca/symm.py,sha256=vvi6X49TB8Cf-eZnDOozfpJGP0hHsXN4Rr4LzYk2kRI,7540
+auger_oca-2.0.0.dist-info/METADATA,sha256=_eCPB7lwN-PNB9yr51t8Oy4IgIRv3j5m1PRD1aFOO5I,2594
+auger_oca-2.0.0.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+auger_oca-2.0.0.dist-info/licenses/LICENSE,sha256=xjYsOCHRPWPVVbYrHJv0_32Jze4eOq4pdpa5lS1XOrs,876
+auger_oca-2.0.0.dist-info/RECORD,,
