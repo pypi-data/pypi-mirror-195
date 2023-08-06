@@ -1,0 +1,11 @@
+generest/__init__.py,sha256=wysZCPI_AXGos-4zwsha6GiyhmntZjR2EiWhWOV6FC0,68
+generest/cli/__init__.py,sha256=Jj2q2cdAyNfvw2O4blFzPKZeGYcFOTXjhDvY6i6rI1M,32
+tests/__init__.py,sha256=dAChJZRDnyH8zybMgOq6Pseo-T9fYARhO7NxHLtgq2k,33
+tests/unit/__init__.py,sha256=CPxPKrbqi73gV2K9MKWiOXl3D9zda2mYT11-syilruo,38
+tests/unit/test_general.py,sha256=OPhkUk_OsDMtQ7qyCVkF2qWh4TABei9Sk6Vqb1u6dbM,247
+generest-1.dist-info/LICENSE,sha256=n2QQ1LB275gj96qSCWdw-g0jk6ppV-jRhuVqWT2yGiA,35112
+generest-1.dist-info/METADATA,sha256=nhVtk9yFQygj17oxeUb-Mo4mRvT8LG9LDk_w5ALMlH0,4422
+generest-1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+generest-1.dist-info/top_level.txt,sha256=GZmbOO-MfuWi5_hjmbwSgY2eG54l8oKsVQKPHUlKCDc,15
+generest-1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+generest-1.dist-info/RECORD,,
