@@ -1,0 +1,19 @@
+TreeSAK/AssessCVG.py,sha256=jMI59pFFDAJ-1pbcq_-ygpy-3EobS6E1_DcLEpypFro,4893
+TreeSAK/TreeSAK_config copy.py,sha256=hp2-3wZWluISFiu5zmXmU0uwROWZctuhosLpdJCLmIE,1933
+TreeSAK/TreeSAK_config.py,sha256=hp2-3wZWluISFiu5zmXmU0uwROWZctuhosLpdJCLmIE,1933
+TreeSAK/VERSION,sha256=vA6hjTpoS_GvhOndyYAVkPqx1xekXMNjNUA9ziS3KuQ,119
+TreeSAK/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TreeSAK/aaa.py,sha256=fGm2h4HDvVjFRBjUo7EetakippDQWgtKKfU0MJ5EP3c,2778
+TreeSAK/compare_trees.R,sha256=Zs7LJO9NY1g9ovuj2sI8IvDMQTyXQxkX_X2o5RqMu4w,1076
+TreeSAK/compare_trees.py,sha256=jLLDblg0ISGyhjyORGbfCpqcfbm9Em8eI2GZFdTJzw8,9851
+TreeSAK/format_leaf_name.py,sha256=Zxxyy0GC8mcNHMHzG_PAU76Ae7F3r3NV4YoD-YoFvlw,2861
+TreeSAK/iTOL.py,sha256=enovb1-y90_1mixqlOBDbHFqWvUtVLmeZYLEynbvMms,21221
+TreeSAK/parse_deltall_stdout.py,sha256=3gARgED-WeHCUdBdPQXDNO0_PoHMkQW86IfLZfkRExM,3348
+TreeSAK/rename_leaves.py,sha256=hqYfWgHFk4IjkvMK1a7fJjk0xKq8QDhdg-KpOE3ATWg,2534
+TreeSAK/subset_tree.py,sha256=qSYgTtbRDULhGgL5ifbWuqHmP1htALixb3ChECMy1Cs,7303
+TreeSAK-1.2.0.data/scripts/TreeSAK,sha256=MubzOsasXLMjOCKvJwbXJdg3HoQmFlSHNgGCKaGQIdc,10855
+TreeSAK-1.2.0.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+TreeSAK-1.2.0.dist-info/METADATA,sha256=Vew6hkJljT2aiKNWsDyYjy-BlwNFiiNZzoz7j5hWcHo,544
+TreeSAK-1.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+TreeSAK-1.2.0.dist-info/top_level.txt,sha256=-Xs1fwP8EpQBEdaqpMsycr--jslfTy2uB5RsHLVaAMk,8
+TreeSAK-1.2.0.dist-info/RECORD,,
