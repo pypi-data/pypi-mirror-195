@@ -1,0 +1,119 @@
+Metadata-Version: 2.1
+Name: biolord
+Version: 0.0.1
+Summary: A deep generative framework for disentangling known and unknown attributes in single-cell data.
+Project-URL: Documentation, https://biolord.readthedocs.io/
+Project-URL: Source, https://github.com/nitzanlab/biolord
+Project-URL: Home-page, https://github.com/nitzanlab/biolord
+Author: Zoe Piran
+Maintainer-email: Zoe Piran <zoe.piran@mail.huji.ac.il>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2023, Zoe Piran
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+License-File: LICENSE
+Requires-Python: >=3.8
+Requires-Dist: anndata
+Requires-Dist: rich
+Requires-Dist: scikit-learn
+Requires-Dist: scvi-tools
+Requires-Dist: session-info
+Requires-Dist: torch
+Provides-Extra: dev
+Requires-Dist: bump2version; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: twine>=4.0.2; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: ipython; extra == 'doc'
+Requires-Dist: myst-nb; extra == 'doc'
+Requires-Dist: sphinx-autodoc-typehints; extra == 'doc'
+Requires-Dist: sphinx-book-theme>=1.0.0; extra == 'doc'
+Requires-Dist: sphinx-copybutton; extra == 'doc'
+Requires-Dist: sphinx>=5; extra == 'doc'
+Requires-Dist: sphinxcontrib-bibtex>=1.0.0; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Description-Content-Type: text/markdown
+
+# biolord - biological representation disentanglement
+
+[![Tests][badge-tests]][link-tests]
+[![Documentation][badge-docs]][link-docs]
+
+[badge-tests]: https://img.shields.io/github/actions/workflow/status/nitzanlab/biolord/test.yaml?branch=main
+[link-tests]: https://github.com/nitzanlab/biolord/actions/workflows/test.yml
+[badge-docs]: https://img.shields.io/readthedocs/biolord
+
+A deep generative framework for disentangling known and unknown attributes in single-cell data.
+
+We assume partial supervision over known attributes (categorical or ordered) along with single-cell measurements.
+Given the partial supervision [biolord][link-api] finds a decomposed latent space, and provides a generative model to
+obtain single-cell measurements for different cell states.
+
+![The biolord pipeline][badge-pipeline]
+
+[badge-pipeline]: https://user-images.githubusercontent.com/43661890/222221567-09111a1a-8837-4bc5-8f71-15b596571c69.png?raw=true
+
+## Getting started
+
+Please refer to the [documentation][link-docs].
+
+## Installation
+
+There are several alternative options to install biolord:
+
+1. Install the latest release of [biolord][link-api] from [PyPI](https://pypi.org/project/biolord/):
+
+    ```bash
+    pip install biolord
+    ```
+
+2. Install the latest development version:
+    ```bash
+    pip install git+https://github.com/nitzanlab/biolord.git@main
+    ```
+
+## Release notes
+
+See the [changelog][changelog].
+
+## Contact
+
+Feel free to contact us by [mail][email].
+If you found a bug, please use the [issue tracker][issue-tracker].
+
+## Citation
+
+> t.b.a
+
+[issue-tracker]: https://github.com/nitzanlab/biolord/issues
+[changelog]: https://biolord.readthedocs.io/latest/changelog.html
+[link-docs]: https://biolord.readthedocs.io
+[link-api]: https://biolord.readthedocs.io/latest/api.html
+[email]: mailto::zoe.piran@mail.huji.ac.il
