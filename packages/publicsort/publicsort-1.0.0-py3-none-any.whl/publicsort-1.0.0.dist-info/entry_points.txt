@@ -1,0 +1,2 @@
+[console_scripts]
+publicsort = public_sort.public_sort:main
