@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: odoo_models_connect
+Version: 0.0.3
+Summary: Library to improve interaction and communication with odoo for integration with other technologies.
+Home-page: https://github.com/DeijoseDevelop
+Author: Deiver Jose Vazquez Moreno
+Author-email: estudiandovazmore@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
