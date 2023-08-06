@@ -1,0 +1,9 @@
+create_jee_paper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+create_jee_paper/__main__.py,sha256=-dDSw0aSJ-w36O5BPXLUnJRaMcdlGfAGyynqAU7c8OQ,57
+create_jee_paper/choice_option.py,sha256=0M4rnlTqZBvJPd9KNZ9bwp_b5PCKjLt5be-CMREiP2s,1236
+create_jee_paper/main.py,sha256=Wube5TLQS6meII4m-nkWs_Vwjx5Uu0zjV9FaC64Xdyk,2366
+create_jee_paper/v-test-paper.sty,sha256=s5s5oo90ppKyI091hm-88sBt9shRoUr0LIUDEwia4L0,3398
+create_jee_paper-0.2.4.dist-info/METADATA,sha256=BLQqIKJs9NTH8IlExVOzmjMxZxnmAOL2KqrpIPkqHks,552
+create_jee_paper-0.2.4.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+create_jee_paper-0.2.4.dist-info/entry_points.txt,sha256=Bu2WpOHMtUHQKS8FyFwAOwijkNLIFrCW2p4sgqh4wOE,63
+create_jee_paper-0.2.4.dist-info/RECORD,,
