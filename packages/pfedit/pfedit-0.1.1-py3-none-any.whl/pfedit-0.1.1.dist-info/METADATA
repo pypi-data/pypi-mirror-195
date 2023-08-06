@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pfedit
+Version: 0.1.1
+Summary: small helper library that let's you write to python files the same way to write to objects
+Home-page: https://github.com/anytarseir67/pfedit
+Author: anytarseir67
+License: GPLv3
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PfEdit
+ small helper library that let's you write to python files the same way to write to objects (e.g. `foo.bar = False`)
+
+
