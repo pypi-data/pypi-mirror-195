@@ -1,0 +1,2 @@
+[console_scripts]
+anchor = anchor.command_line:main
