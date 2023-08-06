@@ -1,0 +1,2 @@
+[console_scripts]
+whiten = whitening.__main__:main
