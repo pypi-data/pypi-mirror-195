@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+ImageExtras.egg-info/PKG-INFO
+ImageExtras.egg-info/SOURCES.txt
+ImageExtras.egg-info/dependency_links.txt
+ImageExtras.egg-info/requires.txt
+ImageExtras.egg-info/top_level.txt
+ImageExtras.egg-info/zip-safe
+imageextras/__init__.py
+imageextras/compiled/__init__.py
+imageextras/compiled/dithering.cpython-310-x86_64-linux-gnu.so
+imageextras/src/__init__.py
+imageextras/src/dithering.f90
+imageextras/src/utils.py
