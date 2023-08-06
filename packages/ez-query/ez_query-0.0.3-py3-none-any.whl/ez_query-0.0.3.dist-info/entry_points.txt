@@ -1,0 +1,2 @@
+[console_scripts]
+ez_query = ez_query.main:run
