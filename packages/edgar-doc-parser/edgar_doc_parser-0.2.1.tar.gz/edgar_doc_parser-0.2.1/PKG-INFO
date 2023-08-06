@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: edgar_doc_parser
+Version: 0.2.1
+Summary: Download, extraction, and parsing of documents available through the Securities and Trade Commission's EDGAR database
+Author: Yiting Li, Nachuan Zhao, Kelsey Yew
+Author-email: Kamil Krukowski <Kamil.Krukowski@tufts.edu>
+Maintainer-email: Kamil Krukowski <Kamil.Krukowski@tufts.edu>
+Project-URL: Homepage, https://github.com/kamilkrukowski/EDGAR-DOC-PARSER
+Project-URL: Bug Tracker, https://github.com/kamilkrukowski/EDGAR-DOC-PARSER/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# EDGAR-DOC-PARSER
+
+## Documentation
+
+For more information read our documentation hosted [here.](https://kamilkrukowski.github.io/EDGAR-DOC-PARSER)
+
+## Installation Guide
+
+We are available through [pip.](https://pypi.org/project/edgar-doc-parser/)
+```
+pip install edgar-doc-parser
+```
+
+## Quick Start Guide
+
+### DataLoader
+```
+from edgar import DataLoader
+
+dataloader = edgar.DataLoader(tikrs=['nflx'], document_type='8-K', data_dir='data')
+
+for text_8k in dataloader[:3]:
+  print(text_8k)
+```
+
+## Currently Support Filing Types
+
+* 10-Q
+* 8-K
+
+We plan on expanding the list in future releases

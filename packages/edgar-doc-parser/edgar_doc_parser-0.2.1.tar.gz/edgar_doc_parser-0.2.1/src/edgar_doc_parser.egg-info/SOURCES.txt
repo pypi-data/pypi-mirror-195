@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/edgar/__init__.py
+src/edgar/dataloader.py
+src/edgar/document.py
+src/edgar/downloader.py
+src/edgar/html.py
+src/edgar/metadata_manager.py
+src/edgar/parser.py
+src/edgar/pipeline.py
+src/edgar/wrappers.py
+src/edgar_doc_parser.egg-info/PKG-INFO
+src/edgar_doc_parser.egg-info/SOURCES.txt
+src/edgar_doc_parser.egg-info/dependency_links.txt
+src/edgar_doc_parser.egg-info/requires.txt
+src/edgar_doc_parser.egg-info/top_level.txt
