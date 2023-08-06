@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: pivpnpy
+Version: 0.0.1
+Summary: Thin python wrapper for the pivpn command-line tool
+Author-email: m00ninite <m00ninitehub@protonmail.com>
+Project-URL: Homepage, https://github.com/m00ninite/pivpnpy
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Description
+A thin python wrapper for pivpn
+
+## Installation
+
+###From pypi
+```shell
+pip3 install pivpnpy
+```
+
+###From this git repo:
+```shell
+# Ensure you have setuptools >= 21.3
+python3 -m pip install --upgrade pip
+
+git clone https://github.com/m00ninite/pivpnpy.git
+cd pivpnpy
+python3 -m pip install -e .
+```
+
+
+## Usage
+```python3
+from pivpnpy import pivpn
+
+# Create a user
+pivpn.create_profile(user="Hello_World", ttl=1080)
+
+# List users
+profiles = pivpn.list_profiles()
+print(profiles[0]['status'])  # Prints "Valid"
+
+# Delete a user
+pivpn.delete_profile(user="Hello_World") 
+```
