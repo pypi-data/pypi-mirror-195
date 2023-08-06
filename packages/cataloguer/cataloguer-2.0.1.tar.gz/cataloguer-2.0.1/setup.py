@@ -1,0 +1,39 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['cataloguer', 'cataloguer.console', 'cataloguer.filesystem']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['Pillow==8.1.2',
+ 'click>=8.1.3,<9.0.0',
+ 'pydantic>=1.10.5,<2.0.0',
+ 'python-dateutil==2.8.2',
+ 'python-magic==0.4.27',
+ 'rich-click>=1.6.1,<2.0.0']
+
+entry_points = \
+{'console_scripts': ['cataloguer = cataloguer.cli:cli']}
+
+setup_kwargs = {
+    'name': 'cataloguer',
+    'version': '2.0.1',
+    'description': 'Organize your media files',
+    'long_description': '# Media cataloguer\n\nOrganize your media files using your preferred directory structure.\n\n* Do you have pictures taken from different devices? \n* Do you want control over your file system?\n* Do you wish to unify all your media files and remove duplicates?\n\nIf you reply affirmative to any of the previous questions, this tool could be right for you too.\n\nThis tool helps you to unify and organise your media files using your own rules. \nIt also deals with duplicates, so you don\'t have to.\n\n\n## Features\n\n* Move, Copy or delete duplicates operations\n* User-friendly console output\n* Obscure creation date detection\n* Custom folder structure definition\n* Duplication detection\n* Does not alter existing files\n\n\n## Requirements\n- Python 3.9 or higher\n\n### In a virtual environment\n\n    poetry install\n    cataloguer --help\n\n\n### Usage\n\n```bash\n$ cataloguer --help\n\n Usage: cataloguer [OPTIONS] COMMAND [ARGS]...                                                                                                                                                \n                                                                                                                                                                                             \n Command line interface.                                                                                                                                                                     \n All [OPTIONS] can be passed as environment variables with the "CATALOGUER_" prefix.                                                                                                          \n file arguments accept file names and a special value "-" to indicate stdin or stdout                                                                                                        \n                                                                                                                                                                                             \n╭─ Options ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮\n│ --verbose                       -v    Enables verbose mode. Disabled by default                                                                                                           │\n│ --interactive/--no-interactive        Disables confirmation prompts. Enabled by default                                                                                                   │\n│ --help                                Show this message and exit.                                                                                                                         │\n╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯\n╭─ Commands ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮\n│ copy                                       Copy files. In case of duplicates will take the shortest name.                                                                                 │\n│ create-catalogue                           Creates a new catalogue.                                                                                                                       │\n│ delete-catalogue                           Deletes a catalogue. No files are affected.                                                                                                    │\n│ delete-duplicates                          Delete duplicates.                                                                                                                             │\n│ inspect                                    Inspects a path or a catalogue                                                                                                                 │\n│ move                                       Move files. In case of duplicates will take the shortest name.                                                                                 │\n╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯\n```\n\n\n## Quickstart\n\nWe are going to start creating a new directory `media`:\n\n    mkdir media\n\nWe are going to create a new catalogue named `local_photos` which is going to get store on the `media` directory.\nWe specify our format pattern so photos are group by `year` and a subgroup of `month`:\n\n    export CATALOGUER_FORMAT_PATTERN=%Y/%m/{file}\n    cataloguer create-catalogue local_media --path ./media \n\n\nNow, we add some photos from an old storage driver:\n\n    cataloguer copy /mnt/hdd/old_photos local_media\n\n\nLater on, we decided we want to reorganize our local home folder, but we are not sure of how many files are \ngoing to be affected, so we run the command in `dry-run` mode:\n\n    cataloguer move ~/ local_media --dry-run\n\nAfter seeing the output, we decided to just reorganize our `Pictures`:\n\n    cataloguer move ~/Pictures/ local_media\n\n\nTo get a summary of our catalogue we run:\n\n    cataloguer inspect local_media\n\n\n## Options\n\n`CATALOGUER_FORMAT_PATTERN` accepts the following patterns\n* Common date codes:\n  * `%d`: Day of the month as number\n  * `%m`: Month as number\n  * `%Y`: Year as number\n  * `%A`: Weekday name \n  * `%B`: Month name\n  * other format codes specified [here](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes)\n* `/` Specifies a new folder\n* `{media_type}`: File type (`image`, `video`)\n* `{media_format}`: File format (`jpeg`, `tiff`, `png`, `gif`, `mp4` ...)\n* `{file}` Original filename\n* `{file_extension}` Original filename extension \n* `{file_name}` Original filename without the extension\n* `{relative_path}` Relative path to the source directory\n\n\n### Advance usage:\n\n`CATALOGUER_UNKNOWN_PATH_FORMAT` Accepts the same variables as `CATALOGUER_FORMAT_PATTERN` but date patterns \nare resolved using the current date since it was not possible to recover the creation date of the file.\nThis can be useful to not leave files behind.\n\n`CATALOGUER_STORAGE_LOCATION` Accepts any path. That location will store cataloguer metadata.\nBy default, it will create a `.catalogues` in the user\'s home directory.\n\n#### Examples:\n\nPattern to fix file extensions keeping the folder structure:\n\n    CATALOGUER_FORMAT_PATTERN={relative_path}/{basename}.{media_format} cataloguer ./input ./output\n\n\n## TODO list\n\n* Video support\n',
+    'author': 'Iago Veloso',
+    'author_email': 'None',
+    'maintainer': 'None',
+    'maintainer_email': 'None',
+    'url': 'https://github.com/iago1460/cataloguer',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'entry_points': entry_points,
+    'python_requires': '>=3.9',
+}
+
+
+setup(**setup_kwargs)
