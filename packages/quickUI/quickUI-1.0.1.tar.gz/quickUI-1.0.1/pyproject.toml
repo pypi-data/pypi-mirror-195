@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quickUI"
+version = "1.0.1"
+authors = [
+  { name="OscarVsp", email="oscar.van.slijpe@outlook.be" },
+]
+description = "A extension to the disnake library for easier UI usage."
+readme = "README.md"
+keywords = ["disnake", "discord", "discord api"]
+requires-python = ">=3.8"
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Natural Language :: English",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+dependencies = [
+    "disnake==2.8.*",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/OscarVsp/quickUI"
+"Bug Tracker" = "https://github.com/OscarVsp/quickUI/issues"
+
+
+[tool.setuptools]
+package-dir = {"" = "quickUI"}
