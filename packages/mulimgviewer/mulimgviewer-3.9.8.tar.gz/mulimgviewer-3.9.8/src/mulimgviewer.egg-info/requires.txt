@@ -1,0 +1,8 @@
+numpy
+piexif
+pillow
+requests
+wxpython
+
+[dev]
+pre-commit
