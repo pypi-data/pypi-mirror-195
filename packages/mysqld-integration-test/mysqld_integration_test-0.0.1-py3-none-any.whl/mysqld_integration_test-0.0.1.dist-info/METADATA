@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: mysqld-integration-test
+Version: 0.0.1
+Summary: mysqld-integration-test is a python module that creates a temporary mysqld instance to use for testing your application.
+Author-email: Jason Camp <me@jason.camp>
+License: GPL
+Project-URL: Homepage, https://github.com/jasondcamp/mysqld-integration-test
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mysql-connector-python (==8.0.32)
+Requires-Dist: pyyaml (==5.4.1)
+Provides-Extra: tests
+Requires-Dist: pytest (==7.2.1) ; extra == 'tests'
+Requires-Dist: pytest-env (==0.8.1) ; extra == 'tests'
+Requires-Dist: pytest-cov (==4.0.0) ; extra == 'tests'
+Requires-Dist: coverage (==7.2.1) ; extra == 'tests'
+
+# mysqld-integration-test
+
+![](https://img.shields.io/badge/status-alpha-yellow)
+version 0.0.1
+
+## Overview
+mysqld-integration-test is a python module that creates a temporary mysqld instance to use for testing your application. It is based on the `testing.mysqld` module which has not been updated recently.
+
+## Download and Install
+To install use pip:
+
+    $ pip install mysql-integration-test
+
+Or clone the repo:
+
+    $ git clone https://github.com/jasondcamp/mysql-integration-test.git
+
