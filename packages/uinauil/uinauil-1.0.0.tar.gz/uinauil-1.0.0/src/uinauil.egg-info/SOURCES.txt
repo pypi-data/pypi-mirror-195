@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/uinauil.py
+src/uinauil.egg-info/PKG-INFO
+src/uinauil.egg-info/SOURCES.txt
+src/uinauil.egg-info/dependency_links.txt
+src/uinauil.egg-info/requires.txt
+src/uinauil.egg-info/top_level.txt
