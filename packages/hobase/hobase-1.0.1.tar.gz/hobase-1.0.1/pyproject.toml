@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "HoBase"
+version = "1.0.1"
+description = "A database based on sqlitedict and created to simplify the creation of discord bots"
+authors = ["KaBoT <ac248384@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+sqlitedict = "^2.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
