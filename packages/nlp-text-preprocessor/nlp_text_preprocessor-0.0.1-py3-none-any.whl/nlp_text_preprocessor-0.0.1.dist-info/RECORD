@@ -1,0 +1,7 @@
+nlp_lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nlp_lib/preprocessor.py,sha256=clkFPcNMC1CgsNhKXOkK7fFVLwrv5QnBu4W1WlkwDK0,11932
+nlp_text_preprocessor-0.0.1.dist-info/LICENSE,sha256=CyinS4aLiHqggkoJYD6CgDWVPldSOJjBE-OK_Iook6k,1068
+nlp_text_preprocessor-0.0.1.dist-info/METADATA,sha256=l-G7FDyxU43XfH5eTAIYdxth5Z7gCuN-If53foUgG9M,742
+nlp_text_preprocessor-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+nlp_text_preprocessor-0.0.1.dist-info/top_level.txt,sha256=jCGRycfh4CFH8vTpJ4g41SVzDpoN3HzijlwrpQbkxDs,8
+nlp_text_preprocessor-0.0.1.dist-info/RECORD,,
