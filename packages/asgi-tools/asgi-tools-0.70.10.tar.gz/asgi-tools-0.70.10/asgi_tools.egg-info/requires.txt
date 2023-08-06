@@ -1,0 +1,37 @@
+http-router>=3.0.1
+multidict
+sniffio
+yarl>=1.8.2
+
+[dev]
+bump2version
+tox
+cython
+pre-commit
+sphinx
+pydata-sphinx-theme
+
+[dev:python_version >= "3.9"]
+refurb
+
+[examples]
+uvicorn[standard]
+jinja2
+httpx
+
+[orjson]
+orjson
+
+[tests]
+aiofile
+pytest
+pytest-aio[curio,trio]>=1.1.0
+pytest-benchmark
+PyYAML
+
+[tests:implementation_name == "cpython"]
+uvloop
+pytest-mypy
+
+[ujson]
+ujson
