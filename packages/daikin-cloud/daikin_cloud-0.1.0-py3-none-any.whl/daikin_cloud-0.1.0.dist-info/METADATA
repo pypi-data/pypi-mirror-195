@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: daikin_cloud
+Version: 0.1.0
+Summary: A set of Python classes to interact with and control Daikin HVAC units associated with a DKNOne / Daikin Cloud NA account
+Project-URL: Homepage, https://github.com/crossan007/python-daikin_cloud
+Project-URL: Bug Tracker, https://github.com/crossan007/python-daikin_cloud/issues
+Author-email: Charles Crossan <crossan007@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# python-daikin_cloud
+Python Module to interact with Daikin Cloud NA (AirZone)
+
+
+# Currently working with
+*  Daikin Cloud NA (https://dknna.com/)
+*  AZAI6WSPDKC WiFi Controller
+*  FDMQ24RVJU Air hHndler
+*  4MXL36TVJU Multizone Heat Pump Condenser
+
+# Want to add support for
+*  FTXS12LVJU Wall Mount Air Handler (Mini Split)
