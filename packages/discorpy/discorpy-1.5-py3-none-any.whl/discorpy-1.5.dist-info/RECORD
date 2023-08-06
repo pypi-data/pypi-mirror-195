@@ -1,0 +1,15 @@
+discorpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+discorpy/losa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+discorpy/losa/loadersaver.py,sha256=ENHjt3-d223gziWMQH62_EdL-hCg0JiQ_h7U6Vtog8c,21718
+discorpy/post/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+discorpy/post/postprocessing.py,sha256=WcJ5OleP_wjx_2kCVTN0EEQdOXEtAdq84jngyy0J9hA,17114
+discorpy/prep/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+discorpy/prep/linepattern.py,sha256=dvNs6z91sZrE37r_4WBSGB5eecYPSl1RTUeDA2FZ4j0,21671
+discorpy/prep/preprocessing.py,sha256=pDYI1PEwOLttiyvp1jcNlG2ZEyNe3JowVZGnDTKQTT8,26781
+discorpy/proc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+discorpy/proc/processing.py,sha256=o-8-Lt3hkBL72Esnt1BFSdr5o2XCdTAtKcljbhvB9Xo,50369
+discorpy-1.5.dist-info/LICENSE,sha256=N0cztUeht2BisVxxmPAw7DN4pUBO2nCk7OG6oVZ7crg,11526
+discorpy-1.5.dist-info/METADATA,sha256=Ddn5GfrDMDfFcax2ZWhJel-Ms16gjtx8khuOnV9woX8,6706
+discorpy-1.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+discorpy-1.5.dist-info/top_level.txt,sha256=LQJSQckkxRI8U7jGQudzWkaPF1rBHRW8FGYsmu38yQw,9
+discorpy-1.5.dist-info/RECORD,,
