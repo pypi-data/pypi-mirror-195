@@ -1,0 +1,2 @@
+[console_scripts]
+crutch = alais.main:entrypoint
