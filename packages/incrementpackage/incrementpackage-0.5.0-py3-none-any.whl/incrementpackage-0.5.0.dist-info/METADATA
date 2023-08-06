@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: incrementpackage
+Version: 0.5.0
+Summary: Describe your package in one sentence
+Home-page: https://github.com/you/your_package
+Author: SHARASHELL TECHNOLOGY LIMITED
+Author-email: sharashelltechnologyltd@gmail.com
+License: OSI Approved :: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
