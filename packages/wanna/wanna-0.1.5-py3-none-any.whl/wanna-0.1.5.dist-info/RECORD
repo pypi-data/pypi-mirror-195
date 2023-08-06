@@ -1,0 +1,11 @@
+wanna/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wanna/chatter.py,sha256=DDwMll9S_GgdwYucqq23EhjRRCUxmFuNOJvoSc77yaY,3857
+wanna/cli.py,sha256=iKA2Jrw34IuCdddVK_mQsn7-Z6GAa4W_mXisC-aV6vk,5337
+wanna/codedisplay.py,sha256=0K5Uiemas_KAn3mORk7IcIoc318YznoOTj_nX03rIp4,960
+wanna/config.py,sha256=g78-3oBiX5LyHZXt19OtBFqPgotr6q56_leYAXClacc,1630
+wanna/system.py,sha256=uERgpLA-OtnMhYCQFruEpaPvhoOE45zzo9hVEqQKDbo,230
+wanna-0.1.5.dist-info/LICENSE,sha256=_8sqUxC4IoNbNLSo9Fg-Y2JDAlZtySRWmxy7__EgEGI,1069
+wanna-0.1.5.dist-info/METADATA,sha256=Xg1O8BZCkq8rgVdhxkRlO-2pePSYZhUc2uqaoQSuWbw,4207
+wanna-0.1.5.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+wanna-0.1.5.dist-info/entry_points.txt,sha256=-xkuWBunbK1RDbDvfqb-0AAMxJtS2hxohyA1G7FKX_k,40
+wanna-0.1.5.dist-info/RECORD,,
