@@ -1,0 +1,10 @@
+inspiredco/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inspiredco/client_base.py,sha256=HzywNXMc-fIpXb1PTp74hN-1hLVbRqnmJ_2V0U41a_k,1248
+inspiredco/critique.py,sha256=wjwPAXyirCiKnXUdbGnzLLcMm8cFMyjnlUB1hKnAFD0,9649
+inspiredco/version.py,sha256=6fpCPNjINWo0zGmpAgQpb4Bk-p8CTS3crc41f5DbP2c,18
+inspiredco/critique_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inspiredco/critique_utils/exceptions.py,sha256=bkEMiu4UizaQS35vXOv9DzAU5PKehDdU1VH9_17zZlc,411
+inspiredco-0.0.2.dist-info/METADATA,sha256=ArwqFm8D5yAjNzHDYzDBsKGRmh-UCbPoY-j-_PnR_5E,1152
+inspiredco-0.0.2.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+inspiredco-0.0.2.dist-info/licenses/LICENSE.txt,sha256=f48q-h9e-HPFA1LRjp-5w5giOhPAG78NRkHAbv72vVc,1098
+inspiredco-0.0.2.dist-info/RECORD,,
