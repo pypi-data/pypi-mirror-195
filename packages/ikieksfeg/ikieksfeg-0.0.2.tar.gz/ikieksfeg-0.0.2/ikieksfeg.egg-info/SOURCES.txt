@@ -1,0 +1,7 @@
+setup.py
+ikieksfeg/__init__.py
+ikieksfeg/hello.py
+ikieksfeg.egg-info/PKG-INFO
+ikieksfeg.egg-info/SOURCES.txt
+ikieksfeg.egg-info/dependency_links.txt
+ikieksfeg.egg-info/top_level.txt
