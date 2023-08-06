@@ -1,0 +1,5 @@
+pytest
+
+[testing]
+pytest-asyncio
+pytest-mock
