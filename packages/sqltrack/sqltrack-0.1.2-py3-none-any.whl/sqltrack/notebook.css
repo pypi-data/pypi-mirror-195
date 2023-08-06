@@ -1,0 +1,134 @@
+:root {
+  --Amethyst: #F0A3FF;
+  --Blue: #0075DC;
+  --Caramel: #993F00;
+  --Damson: #4C005C;
+  --Ebony: #191919;
+  --Forest: #005C31;
+  --Green: #2BCE48;
+  --Honeydew: #FFCC99;
+  --Iron: #808080;
+  --Jade: #94FFB5;
+  --Khaki: #8F7C00;
+  --Lime: #9DCC00;
+  --Mallow: #C20088;
+  --Navy: #003380;
+  --Orpiment: #FFA405;
+  --Pink: #FFA8BB;
+  --Quagmire: #426600;
+  --Red: #FF0010;
+  --Sky: #5EF1F2;
+  --Turquoise: #00998F;
+  --Uranium: #E0FF66;
+  --Violet: #740AFF;
+  --Wine: #990000;
+  --Xanthin: #FFFF80;
+  --Yellow: #FFE100;
+  --Zinnia: #FF5005;
+}
+
+.tag {
+  display: inline-block;
+  border-radius: 1em;
+  color: white;
+  background: black;
+  font-size: 0.8em;
+  padding: 0.05em 0.5em 0.15em;
+  max-width: 6em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+}
+
+.Amethyst { background: var(--Amethyst); color: black; }
+.Blue { background: var(--Blue); }
+.Caramel { background: var(--Caramel); }
+.Damson { background: var(--Damson); }
+.Ebony { background: var(--Ebony); }
+.Forest { background: var(--Forest); }
+.Green { background: var(--Green); color: black; }
+.Honeydew { background: var(--Honeydew); }
+.Iron { background: var(--Iron); }
+.Jade { background: var(--Jade); }
+.Khaki { background: var(--Khaki); }
+.Lime { background: var(--Lime); }
+.Mallow { background: var(--Mallow); }
+.Navy { background: var(--Navy); }
+.Orpiment { background: var(--Orpiment); }
+.Pink { background: var(--Pink); color: black; }
+.Quagmire { background: var(--Quagmire); }
+.Red { background: var(--Red); }
+.Sky { background: var(--Sky); color: black; }
+.Turquoise { background: var(--Turquoise); }
+.Uranium { background: var(--Uranium); }
+.Violet { background: var(--Violet); }
+.Wine { background: var(--Wine); }
+.Xanthin { background: var(--Xanthin); color: black; }
+.Yellow { background: var(--Yellow); color: black; }
+.Zinnia { background: var(--Zinnia); color: black; }
+
+.invisible { display: none; }
+
+.status {
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 0.6em;
+  margin: auto auto;
+  background: var(--Violet);
+  vertical-align: bottom;
+}
+.PENDING {
+  box-sizing: border-box;
+  background: none;
+  border: 2px solid var(--Iron);
+}
+.RUNNING, .CONFIGURING, .COMPLETING {
+  background: var(--Blue);
+}
+.COMPLETED {
+  background: var(--Green);
+}
+.CANCELLED {
+  background: var(--Iron);
+}
+.FAILED, .NODE_FAIL, .OUT_OF_MEMORY, .TIMEOUT, .DEADLINE, .BOOT_FAIL, .PREEMPTED, .STOPPED {
+  background: var(--Mallow);
+}
+
+.bar {
+  --barcolor: var(--Blue);
+  display: inline-block;
+  box-sizing: border-box;
+  width:100%;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.ellipsis-right {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.ellipsis-left {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  direction: rtl;
+}
