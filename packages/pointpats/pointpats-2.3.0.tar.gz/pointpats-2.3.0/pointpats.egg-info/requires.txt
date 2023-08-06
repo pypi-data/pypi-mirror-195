@@ -1,0 +1,16 @@
+scipy>=1.8.0
+numpy>=1.3
+pandas
+matplotlib
+libpysal>=4.0.0
+
+[docs]
+sphinx
+sphinxcontrib-bibtex==2.2.0
+sphinx_bootstrap_theme
+
+[tests]
+scikit-learn
+pytest
+codecov
+pytest-cov
