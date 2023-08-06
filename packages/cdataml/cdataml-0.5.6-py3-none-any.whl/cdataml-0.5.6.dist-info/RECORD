@@ -1,0 +1,13 @@
+cdataml/__init__.py,sha256=9YRgqVlNa5zKD8anuHIWRsxLnb5liYraD0FuuTjgejU,52
+cdataml/cdametadata.py,sha256=k2xQl1tokWCze9DoFbvazS-_Bo5oYiPdVZ7boZPF7e0,2283
+cdataml/datainput.py,sha256=_rgsEnwJXonuf1xlqZs-taaoLT1tx_THZzz1WMUKLqY,3868
+cdataml/lesion_score_key.tif,sha256=4Yxva3BEMfvhRCg2QcH9tUHcx1YgllhoI2Xn-csNWWc,17097370
+cdataml/test.py,sha256=9X3eqACqRoFvsDS9k_hJ8TW2o167tWvEKEgnZ606uPc,271
+cdataml-0.5.6.data/scripts/cdataml-run,sha256=RzNx-nGUccw4P0RdtJatPmmiErvYNRqhS1chBO3iyco,8043
+cdataml-0.5.6.data/scripts/cdataml-test-script,sha256=bYk-XDLOCkXGYrNnFNRVYt8I7SYgx7arW1Kp7uvibvY,510
+cdataml-0.5.6.data/scripts/test-script,sha256=_8gYW6tITaiviTlfxEBRh9QMCfmAlM8uw6sIZD0bPE4,426
+cdataml-0.5.6.dist-info/LICENSE,sha256=n8s2n9a6KZHzyIrogwYktjuJQT8VmO-OuwYV1m5LUvo,1072
+cdataml-0.5.6.dist-info/METADATA,sha256=abMB6nEi4chQAFwyTsew9O48ZZ7RbqqJkk_voyQykV8,473
+cdataml-0.5.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cdataml-0.5.6.dist-info/top_level.txt,sha256=SUZnYuXso1kWJ_tA8fJeDYzQ3YgHO_lr0zsQ0HoWLd4,8
+cdataml-0.5.6.dist-info/RECORD,,
