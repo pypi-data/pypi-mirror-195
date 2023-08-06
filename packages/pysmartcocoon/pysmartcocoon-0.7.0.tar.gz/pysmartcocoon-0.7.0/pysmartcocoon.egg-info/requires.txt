@@ -1,0 +1,17 @@
+aiohttp
+async_timeout
+paho.mqtt
+requests
+
+[dev]
+black
+build
+bumpversion
+flake8
+twine
+
+[test]
+mypy
+pre-commit
+pytest
+pytest-cov
