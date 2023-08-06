@@ -1,0 +1,1 @@
+git+ssh://git@github.com:acroucher/PyTOUGH.git@1.5.6#egg=PyTOUGH-1.5.6
