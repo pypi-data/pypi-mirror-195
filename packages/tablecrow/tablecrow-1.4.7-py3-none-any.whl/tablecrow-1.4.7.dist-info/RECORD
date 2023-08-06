@@ -1,0 +1,12 @@
+tablecrow/__init__.py,sha256=SiYBaX2rWn_Jm_HdozkCiN1Pv5Nh-hiVi6ktwL6Ga9E,163
+tablecrow/connect.py,sha256=IUoEHNnWxhexO6aJKCN-vdm2mlKxBXVcHD8IsHAX3Uo,3864
+tablecrow/utilities.py,sha256=1f4COeyix3t6ekPI6lPeRmcBvNIVuwFPXzUH70IFrKE,4809
+tablecrow/tables/__init__.py,sha256=h7piso4Rr3uavqjJqqnyQo2LSRT4QQ-ObL7IaVCA8_k,154
+tablecrow/tables/base.py,sha256=7rGt1ci3zIOM54u3hwrzXmUYTuYDO63QK7hMkgcclsA,16263
+tablecrow/tables/postgres.py,sha256=fVvJtu5XwvN-gFy6TMjSLUNaznr8CpzKKGHNUE-4AMw,29024
+tablecrow/tables/sqlite.py,sha256=vYoK7shL3HTL6Jh4nQLDi_dK4OhJPhApNVXdICBEuEI,23866
+tablecrow-1.4.7.dist-info/LICENSE,sha256=CsWICdCWFNMlGUJiXuxfrxFHw1uyVPns0jZJmzcWkjI,35145
+tablecrow-1.4.7.dist-info/METADATA,sha256=pW37b9K0yo-9qGxuARV8VGXgqiVEcyfqNtZXJ5ZjsRo,49763
+tablecrow-1.4.7.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tablecrow-1.4.7.dist-info/top_level.txt,sha256=efKpt3x86yWtEHi25YOdYuyoAl8ypCe_NzDfZrvNCoM,10
+tablecrow-1.4.7.dist-info/RECORD,,
