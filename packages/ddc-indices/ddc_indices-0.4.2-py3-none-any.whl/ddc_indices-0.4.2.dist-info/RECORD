@@ -1,0 +1,15 @@
+ddc_indices/__init__.py,sha256=akb7xRGeFWBTzqItrRrb5S_CIWCTIxceQOQ7VlgXuZs,125
+ddc_indices/__version__.py,sha256=Io72uJEetHGUHND7m_Q-SV9J9vGD7M2pNP3bLi_BKQg,19
+ddc_indices/compute.py,sha256=J1AnXpXKhf8kPuhMLEGqcS3n51VqsY52oKr4LJ3s0os,11420
+ddc_indices/config.py,sha256=OJpU7eMuQFXUmI4t0U8nUIatPCX_jTHhUxHMYSvYV44,25344
+ddc_indices/constants.py,sha256=PEC_Jrx1awYWiyEwtSqweXq8KauVukZS4a7Jna7nJDw,3722
+ddc_indices/errors.py,sha256=fwFS6hoZ3U9S6H96jjqrXzbbsPXQ6aM2sz8mHcqYaJI,565
+ddc_indices/eto.py,sha256=3iUtTWQ4BhIBxdSfogdTHABGq49baqOis5C4Zhpr4eM,8645
+ddc_indices/indices.py,sha256=vov4UL_rSM3eRg5u_vCuhS15LkTqc1J40PDogR2zSPM,30661
+ddc_indices/metadata.py,sha256=B56gxctoP16flgRjC3aPF2ktMRB-kooMRepkImijJkY,2972
+ddc_indices/utils.py,sha256=YRe3vYStqwMVSmeGa103Dl2ISjeSbYmXKeEgOn-8lCs,6005
+ddc_indices-0.4.2.dist-info/LICENSE,sha256=Q4elbdBZctVmWhyVaDKb4H--bKi2zsj3DEnY31UzFz8,1098
+ddc_indices-0.4.2.dist-info/METADATA,sha256=4mKQbgNnG5tcD6ZpIansjkxHzBoJ5aVimYSFkMpARjc,1707
+ddc_indices-0.4.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ddc_indices-0.4.2.dist-info/top_level.txt,sha256=vDw0_H_UpORQOJU5Kdoc-YkcYJ3jQSj32pagBJY3KaE,12
+ddc_indices-0.4.2.dist-info/RECORD,,
