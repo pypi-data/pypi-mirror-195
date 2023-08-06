@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ShellChat
+Version: 0.5.0
+Summary: A simple chat client for the terminal
+Author: Adriano R. de Sousa
+License: MIT
+Requires: click
+Requires: flask
+Requires: aiohttp
+Requires: requests
+Requires: rich
+
+
+
+# O que é o projeto?
+O ShellChat é um projeto de um chat local para o terminal. O projeto foi criado usando socketio, que é uma biblioteca para comunicação em tempo real.
+
+# Como usar?
+
+
+
