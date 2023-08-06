@@ -1,0 +1,9 @@
+LICENSE
+README.md
+bs4md.py
+pyproject.toml
+bootstrap4markdown.egg-info/PKG-INFO
+bootstrap4markdown.egg-info/SOURCES.txt
+bootstrap4markdown.egg-info/dependency_links.txt
+bootstrap4markdown.egg-info/requires.txt
+bootstrap4markdown.egg-info/top_level.txt
