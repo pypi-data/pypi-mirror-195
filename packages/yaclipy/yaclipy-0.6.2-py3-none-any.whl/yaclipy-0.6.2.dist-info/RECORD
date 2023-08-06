@@ -1,0 +1,11 @@
+yaclipy/__about__.py,sha256=PttLu54H9Hv52_S8c2JFDTD-URnXRNH5QDF5hAqwUp4,122
+yaclipy/__init__.py,sha256=a_dw8YMj8jyTPSyuSQtJsQnN-HawSW8WUFc7u8BvcQA,217
+yaclipy/arg_spec.py,sha256=FhwBZGZb0rKlytRkZviTenrT1NagkTc_HUGJ2EU1Rso,14274
+yaclipy/bootstrap.py,sha256=sVtsy7p8-E2pDOEyrB7pbIfyyVZHMR3u19Uh4Ex3UXk,2301
+yaclipy/cmd_dfn.py,sha256=e-7-s5Jmf-nbaiVrzP4lIeNlUSBC4XNYQsGXi4zJ2rw,4658
+yaclipy/docs.py,sha256=aGwiYNM83btAT11KW8tIP8K3WjssDGmVsIXNIsZhszE,958
+yaclipy/exceptions.py,sha256=mmdaGDOiBrDabWwZL03RW0568WpT7zyQVhuSGN364mo,1211
+yaclipy-0.6.2.dist-info/METADATA,sha256=ui4nhZb37tyIa2yQjbU4LQpZRiTbKzJdhFK9_mAQ4E0,13907
+yaclipy-0.6.2.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+yaclipy-0.6.2.dist-info/licenses/LICENSE.txt,sha256=qfts_pEiC1P4ztMzEyF3A-_1pfxLAYYcaM4L9tmTUVk,1092
+yaclipy-0.6.2.dist-info/RECORD,,
