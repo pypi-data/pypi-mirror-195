@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: image-processor-perfios
+Version: 0.2.2
+Summary: A module to pre-process,infer and postprocess an image
+Home-page: UNKNOWN
+Author: Nandana K A
+Author-email: ext-nandana.ka@perfios.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: Pillow (>=9.4.0)
+Requires-Dist: numpy (>=1.24.2)
+Requires-Dist: onnxruntime
+Requires-Dist: torch (>=1.9.0)
+Requires-Dist: torchvision (>=0.14.1)
+
+UNKNOWN
+
+

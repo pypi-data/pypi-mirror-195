@@ -1,0 +1,11 @@
+IPP/Image_Inference.py,sha256=I0-Od4cugmRseeTxzDWByRZTjrQVikB61ivo53_Er_Q,139
+IPP/Image_Postprocessor.py,sha256=XGeQyn4jLEVA6XOQvRULOIUy_K04zMbup1VTY5goK4s,198
+IPP/Image_Preprocessor.py,sha256=jM7tuIa68R8ZxcVJRiaNLLictC1DZuvauemd-w2J3Do,633
+IPP/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+IPP/convert.py,sha256=S6H9RK5VOHRXvgFFViMwC_dZ9CHpE3n-83rHCc46lfo,271
+IPP/model.py,sha256=4eGDs05AUu9zQAUEPGWGLGgjdinSZZ88wfymQD3xK40,1606
+IPP/test.py,sha256=NgM80MeiF_ULTmFG82PQaz1hjkzrkG8v10FIqr5B4ZE,589
+image_processor_perfios-0.2.2.dist-info/METADATA,sha256=5K0ZG-8pmYj7wuFqMk5FqgtN6qPXo9UUwuS4sQajPIU,417
+image_processor_perfios-0.2.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+image_processor_perfios-0.2.2.dist-info/top_level.txt,sha256=aFoL1PStOEd5dQ3rMyJBrBY9X6fEuEVhEYwGTnHSWa0,4
+image_processor_perfios-0.2.2.dist-info/RECORD,,
