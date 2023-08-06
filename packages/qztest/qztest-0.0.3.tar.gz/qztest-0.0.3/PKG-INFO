@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: qztest
+Version: 0.0.3
+Summary: A Test Software With Python
+Author: WangZidi
+Author-email: wangzd@shanghaitech.edu.cn
+License: MIT License
+Requires: numpy
+Requires: matplotlib
+Requires: pywindow
+Requires: scipy
+Requires: rdkit
+Requires: pyvoro
+Requires: multiprocessing
+Requires: sklearn
+Requires: networkx
+Requires: openbabel
+License-File: LICENSE
