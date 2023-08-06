@@ -1,0 +1,9 @@
+README.md
+setup.py
+PyModuleGenerator/PyModuleGenerator.py
+PyModuleGenerator/__init__.py
+PyModuleGenerator.egg-info/PKG-INFO
+PyModuleGenerator.egg-info/SOURCES.txt
+PyModuleGenerator.egg-info/dependency_links.txt
+PyModuleGenerator.egg-info/requires.txt
+PyModuleGenerator.egg-info/top_level.txt
