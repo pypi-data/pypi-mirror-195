@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: amuse-fresco
+Version: 2023.3.0
+Summary: Make a realistic visualisation of a star cluster
+Home-page: https://github.com/rieder/fresco
+Author: Steven Rieder and Inti Pelupessy
+Author-email: steven+fresco@rieder.nl
+License: Apache License 2.0
+Project-URL: Bug Tracker, https://github.com/rieder/fresco/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![DOI](https://zenodo.org/badge/67827407.svg)](https://zenodo.org/badge/latestdoi/67827407)
+# Fresco
+Fresco aims to simulate observations of particle-based simulations, such as
+those of a star cluster. It creates an observation-like image from a list of
+stars and/or gas particles. Supported filetypes include AMUSE-type hdf5 files,
+Starlab files and plaintext files.
+
+For stars, the temperature and radius are calculated using a stellar evolution
+code, if these are not already present in the dataset.
+
+Gas particles may also be read. In combination with stars, these will cause
+reflection from nearby stars and optionally extinction of light from
+background. Without stars, Fresco will make a density plot of the gas.
+Optionally, the gas may also be indicated with contour lines.
+
+A random field of background and foreground stars may be added to the image, as
+a way to make the image more natural looking and/or to provide a background
+that may be obscured by the gas/dust particles.
+
+![Example image](test.png)
+
+## Requirements
+
+-   Python 3.6 or higher
+-   Numpy
+-   Scipy
+-   Matplotlib
+-   AMUSE (https://github.com/amusecode/amuse)
+    -   a stellar evolution code (e.g. SSE or SeBa, for calculating stellar luminosities and radii)
+    -   optional: Fi (for calculating dust extinction)
+-   Astropy
+-   amuse-masc (recommended)
+
+## Usage
+    import matplotlib.pyplot as plt
+    from amuse.datamodel import Particles
+    from amuse.units import units, nbody_system
+    from amuse.community.sse.interface import SSE
+    from amuse.ext.masc import make_a_star_cluster
+    from amuse.ext.fresco import make_fresco_image
+    ?make_fresco_image  # See options
+    stars = make_a_star_cluster.new_cluster()
+    gas = Particles()
+    se = SSE()
+    se.particles.add_particles(stars)
+    from_se = se.particles.new_channel_to(stars)
+    from_se.copy()
+    image, vmax = make_fresco_image(
+        stars, gas,
+        mode=["stars"],
+        return_vmax=True,
+    )
+    plt.imshow(image)
+    plt.show()
+
+## Authors
+
+Fresco is developed by Inti Pelupessy and Steven Rieder
