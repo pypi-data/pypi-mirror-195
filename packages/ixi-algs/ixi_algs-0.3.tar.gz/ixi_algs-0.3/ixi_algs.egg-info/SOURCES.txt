@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+ixi_algs/__init__.py
+ixi_algs/rabin_karp.py
+ixi_algs.egg-info/PKG-INFO
+ixi_algs.egg-info/SOURCES.txt
+ixi_algs.egg-info/dependency_links.txt
+ixi_algs.egg-info/not-zip-safe
+ixi_algs.egg-info/top_level.txt
