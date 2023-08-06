@@ -1,0 +1,30 @@
+[tool.black]
+line-length = 120
+target-version = ['py36',  'py37', 'py38']
+include = '\.pyi?$'
+skip-string-normalization = true
+
+[tool.poetry]
+name = "chattr-auth"
+version = "0.1.0"
+description = ""
+authors = ["Chattr <chattra23@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+pyjwt = {version = ">2,<3", extras = ["crypto"]}
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.1"
+mypy = "^1.0.1"
+mock = "^5.0.1"
+faker = "^17.6.0"
+coverage = "^7.2.1"
+pytest-cov = "^4.0.0"
+pre-commit = "^3.1.1"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
