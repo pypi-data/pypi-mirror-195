@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: plinky
+Version: 0.1
+Summary: Dynamic link site>
+Author-email: Amethyst Reese <amy@noswap.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: click >= 8.0
+Requires-Dist: jinja2 >= 3.0
+Requires-Dist: markdown >= 3.0
+Requires-Dist: tomli >= 2.0; python_version < '3.11'
+Requires-Dist: attribution==1.6.2 ; extra == "dev"
+Requires-Dist: black==23.1.0 ; extra == "dev"
+Requires-Dist: flake8==6.0.0 ; extra == "dev"
+Requires-Dist: flit==3.8.0 ; extra == "dev"
+Requires-Dist: mypy==1.0.1 ; extra == "dev"
+Requires-Dist: ufmt==2.0.1 ; extra == "dev"
+Requires-Dist: usort==1.0.5 ; extra == "dev"
+Requires-Dist: rich >= 13 ; extra == "pretty"
+Project-URL: Home, https://github.com/amyreese/plinky
+Provides-Extra: dev
+Provides-Extra: pretty
+
+# Plinky
+
+Dynamic link site
+
+[![version](https://img.shields.io/pypi/v/plinky.svg)](https://pypi.org/project/plinky)
+[![license](https://img.shields.io/pypi/l/plinky.svg)](https://github.com/amyreese/plinky/blob/main/LICENSE)
+
+Install
+-------
+
+```shell-session
+$ pip install plinky
+```
+
+License
+-------
+
+Plinky is copyright Amethyst Reese, and licensed under the MIT license.

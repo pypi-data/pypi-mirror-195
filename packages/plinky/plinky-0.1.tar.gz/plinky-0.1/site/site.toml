@@ -1,0 +1,37 @@
+[page]
+title = "Example Page"
+tagline = "laugh it up fuzzball"
+body = """
+    This is a really cool site.
+    I hope you enjoy it.
+
+    How about a markdown [link](https://n7.gg)?
+"""
+footer = """
+    Bye!
+"""
+
+[[social]]
+url = "mailto:contact@omnilib.dev"
+text = "contact@omnilib.dev"
+icon = "envelope"
+
+[[social]]
+url = "https://github.com/omnilib"
+text = "@omnilib"
+brand = "github"
+
+[[link]]
+url = "https://omnilib.dev"
+icon = "rocket"
+text = "The Omnilib Project"
+
+[[link]]
+url = "https://github.com/orgs/omnilib/repositories"
+brand = "github"
+text = "Project Repositories"
+
+[[link]]
+url = "#links"
+image = "images/avatar.png"
+text = "Link with image"
