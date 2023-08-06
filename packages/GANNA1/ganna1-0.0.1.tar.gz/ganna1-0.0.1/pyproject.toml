@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "GANNA1"
+version = "0.0.1"
+authors = [
+  { name="Stiv Llenga", email="stiv.llenga@h-its.org" },
+]
+description = "Generative Algorithm for N-Doped Novel Aromatics"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
