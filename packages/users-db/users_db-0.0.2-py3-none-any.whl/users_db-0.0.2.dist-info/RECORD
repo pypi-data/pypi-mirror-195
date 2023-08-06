@@ -1,0 +1,8 @@
+users_db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+users_db/config.py,sha256=B0r62aMmnRQI1aaao0_j1NBkxuwyBxhjueHCSMh6g7o,362
+users_db/db.py,sha256=tJiwLm2rBKlbUnCAPCU6-SqBq8_IW1Mqh_glaH6qqf8,1404
+users_db/schema.py,sha256=x2OR-YNeofshDNYQ3DSQmxY3E-QCCQgtb6H-YjJcj3U,381
+users_db/users.py,sha256=ipOBgUbOZTq-H95e4AYnj8OGJurE6cfSI6Ioa_1xEPE,1580
+users_db-0.0.2.dist-info/METADATA,sha256=v9hdqN0LQJ2tTtD237PLb3Koylng9_etcQHOgOs3FqA,624
+users_db-0.0.2.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+users_db-0.0.2.dist-info/RECORD,,
