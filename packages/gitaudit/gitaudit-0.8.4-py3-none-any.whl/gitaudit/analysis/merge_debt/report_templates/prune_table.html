@@ -1,0 +1,14 @@
+<h3>Prune</h3>
+<h4>Head</h4>
+<ul>
+    {% for name, entries in report.head_prunes %}
+    <li>{{name}} <code>{{entries|length}}</code></li>
+    {% endfor %}
+</ul>
+<h4>Base</h4>
+<ul>
+    {% for name, entries in report.base_prunes %}
+    <li>{{name}} <code>{{entries|length}}</code></li>
+    {% endfor %}
+</ul>
+

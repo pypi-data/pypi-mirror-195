@@ -1,0 +1,7 @@
+<h3>Matched</h3>
+<ul>
+    {% for name, entries in report.matches %}
+    <li>{{name}} <code>{{entries|length}}</code></li>
+    {% endfor %}
+</ul>
+
