@@ -1,0 +1,10 @@
+README.md
+setup.py
+diner/__init__.py
+diner/diner.py
+diner.egg-info/PKG-INFO
+diner.egg-info/SOURCES.txt
+diner.egg-info/dependency_links.txt
+diner.egg-info/entry_points.txt
+diner.egg-info/requires.txt
+diner.egg-info/top_level.txt
