@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: nc
+Version: 1.0.0
+Summary: 🎨 Named colors in Python 🎨
+License: MIT
+Author: Tom Ritchford
+Author-email: tom@swirly.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: xmod (>=1.4.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+NC is a collection of named colors that acts like both an array and
+    a dictionary, used to replace `sys.modules['nc']`.
+
+
+### [API Documentation](https://rec.github.io/nc#nc--api-documentation)
+
