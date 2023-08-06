@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: demo-python-example
+Version: 1.0
+Summary: Project example for building Python project with JFrog products
+Author: JFrog
+Author-email: jfrog@jfrog.com
+Requires-Dist: PyYAML (>3.11)
+Requires-Dist: nltk
+
