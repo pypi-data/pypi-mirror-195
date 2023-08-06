@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Timesweeper
+Version: 1.1.0
+Summary: "A tool for detecting positive selective sweeps using time-series genomcis data."
+Home-page: https://github.com/SchriderLab/Timesweeper
+Author: Logan Whitehouse
+Author-email: lswhiteh@unc.edu
+License: MIT
+Project-URL: Issues, https://github.com/SchriderLab/Timesweeper/issues
+Project-URL: GitHub, https://github.com/SchriderLab/Timesweeper
+Keywords: population genetics,deep learning,positive selection
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
