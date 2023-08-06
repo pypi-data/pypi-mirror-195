@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+tests/test_converter.py
+xybase/__init__.py
+xybase/converter.py
+xybase/email.py
+xybase/files.py
+xybase/reflection.py
+xybase.egg-info/PKG-INFO
+xybase.egg-info/SOURCES.txt
+xybase.egg-info/dependency_links.txt
+xybase.egg-info/requires.txt
+xybase.egg-info/top_level.txt
