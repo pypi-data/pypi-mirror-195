@@ -1,0 +1,7 @@
+pybind11_concave_hull.cpython-37m-darwin.so,sha256=N-YWqvobfZ5trdrZxII2ACWHg_w-zHe3ysrf3F8rZEo,146432
+concave_hull/__init__.py,sha256=88OChGlWaAdSswk80e8hxSpmPWDCvW7jcVI-Kdm1Qoo,1731
+concave_hull-0.0.3.dist-info/LICENSE,sha256=SBNiCMUPOkN74CrKaGEJk1CNXzPemZ76Qsm106kwI1E,2182
+concave_hull-0.0.3.dist-info/METADATA,sha256=Me-BMZEteQxDmcBFNlg84DYFnEcu2chbS-L0k1RZkRQ,3323
+concave_hull-0.0.3.dist-info/WHEEL,sha256=q4QGhwoqc322Rq_gEDxIVpMyDlIKGseu3O8mRw64Z-0,111
+concave_hull-0.0.3.dist-info/top_level.txt,sha256=HVDblrtHaeL5cl4VLSxtaC7Ca_v0cguy4B44_1TaCDM,13
+concave_hull-0.0.3.dist-info/RECORD,,
