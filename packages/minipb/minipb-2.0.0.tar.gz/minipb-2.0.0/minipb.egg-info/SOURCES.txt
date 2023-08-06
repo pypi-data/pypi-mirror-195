@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.md
+minipb.py
+pyproject.toml
+setup.py
+test.py
+.github/workflows/python-publish.yml
+.github/workflows/pythonpackage.yml
+doc/format_str
+minipb/__init__.pyi
+minipb/py.typed
+minipb.egg-info/PKG-INFO
+minipb.egg-info/SOURCES.txt
+minipb.egg-info/dependency_links.txt
+minipb.egg-info/top_level.txt
