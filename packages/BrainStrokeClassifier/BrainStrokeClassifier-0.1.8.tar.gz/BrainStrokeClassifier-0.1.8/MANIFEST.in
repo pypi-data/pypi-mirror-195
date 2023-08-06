@@ -1,0 +1,1 @@
+recursive-include src/BrainStrokeClassifier/pickled_model trained_model.pkl
