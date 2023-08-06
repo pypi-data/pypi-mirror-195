@@ -1,0 +1,10 @@
+liblinear/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+liblinear/clib.cpython-310-darwin.so,sha256=bbFs0w49SJ5NPrX9DojH9roEQ8fGsys1ndYdFlrpArk,118688
+liblinear/commonutil.py,sha256=2nfU9tolP4kvSZb1LfmwJTIYLD9DZsCWUeCYgH83yNM,6206
+liblinear/liblinear.py,sha256=LKBLFOlWYH0yP0TbHW_PUcV2l_2ngnTUMwA0f05XOds,16861
+liblinear/liblinearutil.py,sha256=kKi81p-HVnmxLVuBPVmVXebgWN1I6h7aG4t1IuP1j-o,11279
+liblinear_official-2.46.1.dist-info/LICENSE,sha256=aE529WWjGrBXeQxhK9rMLuVC-KkLafkiN3qSM0dxSIw,1486
+liblinear_official-2.46.1.dist-info/METADATA,sha256=PDWgUjwj-07SVfn_UrHfWf9QoqHC6VsK7amYRLbSA58,17772
+liblinear_official-2.46.1.dist-info/WHEEL,sha256=wHXPjcF1PbvralrZAZffaBRfMW8u_7d-L-q3slIS7Go,111
+liblinear_official-2.46.1.dist-info/top_level.txt,sha256=r9sQicNbgojwMNhAsO1yT4di0OOriI0J5QiLD5rCwGc,10
+liblinear_official-2.46.1.dist-info/RECORD,,
