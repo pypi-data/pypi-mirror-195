@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/alienHTML.py
+src/alienHTML.egg-info/PKG-INFO
+src/alienHTML.egg-info/SOURCES.txt
+src/alienHTML.egg-info/dependency_links.txt
+src/alienHTML.egg-info/top_level.txt

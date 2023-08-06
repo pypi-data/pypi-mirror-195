@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alienHTML"
+version = "0.0.1"
+authors = [
+  { name="TomTheCodingGuy", email="tomb80940@gmail.com" },
+]
+description = "Python package to help with HTML development."
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["html","HTML","alien","alienHTML"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/TomTheCodingGuy/alienHTML"
+"Bug Tracker" = "https://github.com/TomTheCodingGuy/alienHTML/issues"
