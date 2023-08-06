@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+macimg/__init__.py
+macimg/compositions.py
+macimg/core.py
+macimg/distortions.py
+macimg/filters.py
+macimg/generators.py
+macimg/transforms.py
+macimg.egg-info/PKG-INFO
+macimg.egg-info/SOURCES.txt
+macimg.egg-info/dependency_links.txt
+macimg.egg-info/requires.txt
+macimg.egg-info/top_level.txt
