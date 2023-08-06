@@ -1,0 +1,9 @@
+utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils/database.py,sha256=JHv9OfY_SRxAzNWnsSE-AoTD-hrMWgit2CpC5Oi_QPU,1514
+utils/logging.py,sha256=9Yv49tEl6v6yibGQAC7VefUQI02283aqUhd9M6cia6U,236
+utils/proxy.py,sha256=VYWEOGhLU9b-WqCqVyCV4HSObT1zdAcHQ3drPjCPdGs,894
+utils/scraper.py,sha256=7_f52RkA4c9j58yAjV8Yvo5EyBO165TJC9LJGczvpfs,4123
+newspapers3k_scraper-1.0.0.dist-info/METADATA,sha256=Z0AMPeBFSGy5pQJ_XCMzvWmSvIuycFC5N6HLMFMuKho,264
+newspapers3k_scraper-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+newspapers3k_scraper-1.0.0.dist-info/top_level.txt,sha256=BXdhaaHBJTl5WDScj-NdcpdW6F1g7hNN3YP0CLPxk-0,6
+newspapers3k_scraper-1.0.0.dist-info/RECORD,,

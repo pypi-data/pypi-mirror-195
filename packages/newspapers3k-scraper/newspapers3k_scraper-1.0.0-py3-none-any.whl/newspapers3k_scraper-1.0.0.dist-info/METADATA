@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: newspapers3k-scraper
+Version: 1.0.0
+Summary: Multi-threaded, super fast scraper with newspapers3k
+Author: Aayush
+Author-email: ltsaayushk193@gmail.com
+Requires-Dist: requests (>=2.25.1)
+Requires-Dist: beautifulsoup4 (>=4.9.3)
+
