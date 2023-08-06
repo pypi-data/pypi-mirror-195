@@ -1,0 +1,7 @@
+pybind11_concave_hull.cp36-win_amd64.pyd,sha256=zJ8Fvpkgfya-EYElGRswV94-gYAG2C7FDoWfQQr1Q7s,148992
+concave_hull/__init__.py,sha256=HBcdPOfQgV0_s7kGG8s3yrsa1sEKnBVWdA04R0Hhds8,1929
+concave_hull-0.0.5.dist-info/LICENSE,sha256=FAOIvIK_cXCBopKz2owBiieK4UoraUtMg6yLnNWpxzw,1097
+concave_hull-0.0.5.dist-info/METADATA,sha256=70M4XkkgDseCgLmeJeG1fnRUJR5aziM_HLFQ4D_rR88,3375
+concave_hull-0.0.5.dist-info/WHEEL,sha256=zukbZftcRdNfJ55Q_RYV9JZ3uVyqWKyq-wDJbmszs_U,101
+concave_hull-0.0.5.dist-info/top_level.txt,sha256=HVDblrtHaeL5cl4VLSxtaC7Ca_v0cguy4B44_1TaCDM,13
+concave_hull-0.0.5.dist-info/RECORD,,
