@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: multipro
+Version: 0.0.1
+Summary: A generic module that enables multiprocessing execution on any given function
+Home-page: 
+Author: David Johnnes
+Author-email: david.johnnes@gmail.com
+License: BSD
+Keywords: multiprocessing,parallel execution,fast execution,speed processing
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+License-File: LICENSE
+
+Project description
+
+Enables Multiprocessing on any function.
+
+
+#Simple, Fast and Secure method to:
+Execute slow code in a parallel
+
+#####Download the package in your computer
+
+pip install multipro
+
+
+
