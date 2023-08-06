@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: pyjeol
+Version: 0.1
+Summary: helper script for telegram bots
+Home-page: UNKNOWN
+Author: jeol paul
+Author-email: betabotzoff@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
