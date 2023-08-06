@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+d.py
+setup.py
+kfactionlogger2/__init__.py
+kfactionlogger2.egg-info/PKG-INFO
+kfactionlogger2.egg-info/SOURCES.txt
+kfactionlogger2.egg-info/dependency_links.txt
+kfactionlogger2.egg-info/top_level.txt
