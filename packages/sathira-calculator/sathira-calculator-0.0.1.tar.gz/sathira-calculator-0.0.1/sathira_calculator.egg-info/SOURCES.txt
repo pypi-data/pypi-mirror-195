@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+sathira-calculator/__init__.py
+sathira_calculator.egg-info/PKG-INFO
+sathira_calculator.egg-info/SOURCES.txt
+sathira_calculator.egg-info/dependency_links.txt
+sathira_calculator.egg-info/top_level.txt
