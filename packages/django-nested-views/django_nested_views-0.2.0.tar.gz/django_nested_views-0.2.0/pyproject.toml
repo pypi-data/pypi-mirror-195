@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "django-nested-views"
+version = "0.2.0"
+description = "Composable Django class-based views."
+authors = ["Josiah Kaviani <proofit404@gmail.com>"]
+license = "BSD-2-Clause"
+readme = "README.md"
+packages = [{include = "django_nested_views"}]
+
+[tool.poetry.dependencies]
+python = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
