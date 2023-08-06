@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+area-calculator-dci-mori/src/area_calculator_dci_mori.py
+area-calculator-dci-mori/src/area_calculator_dci_mori_fazel.egg-info/PKG-INFO
+area-calculator-dci-mori/src/area_calculator_dci_mori_fazel.egg-info/SOURCES.txt
+area-calculator-dci-mori/src/area_calculator_dci_mori_fazel.egg-info/dependency_links.txt
+area-calculator-dci-mori/src/area_calculator_dci_mori_fazel.egg-info/top_level.txt
