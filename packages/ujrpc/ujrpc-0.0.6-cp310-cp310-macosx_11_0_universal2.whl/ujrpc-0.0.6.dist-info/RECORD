@@ -1,0 +1,9 @@
+ujrpc/libsimdjson.a,sha256=LjKJxBQkC6tdCnTA22c4fTClX8qYMI5ZeCyIkGzPVYU,311472
+ujrpc/posix.so,sha256=Kp2QkPXvWoLRDCMbC7PYkCCbK4MgauAcqFyiMCP8cI4,498136
+ujrpc/libujrpc_server_posix.a,sha256=Ub3bdwaOw23e2nc_6gN4u6q-cNK3Rf2F4L5O7CyOJUM,60856
+ujrpc/libtb64.a,sha256=CXuYd99UTFTpOKash4WLddnW6D3UztdMMQ5E0ZVwYHg,60448
+ujrpc-0.0.6.dist-info/RECORD,,
+ujrpc-0.0.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ujrpc-0.0.6.dist-info/WHEEL,sha256=q58ixpgLPzkEhcJPUKHUdIQbmS4KCW1hw87DelYYfa4,115
+ujrpc-0.0.6.dist-info/top_level.txt,sha256=gwSn7d9PoBz9NPaDgRR5nAXkiw9_J-D2jfKiqP6qp8o,6
+ujrpc-0.0.6.dist-info/METADATA,sha256=PCLVlkYYcNnG6QKhkq6CdCPbjFCt-PB9dRmUtAql2gc,8647
