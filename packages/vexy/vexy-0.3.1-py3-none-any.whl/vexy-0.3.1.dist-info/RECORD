@@ -1,0 +1,16 @@
+LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+NOTICE,sha256=DAMy2_0WwbJ4n9zgEah6EJhDcmaEdw0u5lFcGgfBMtw,126
+vexy/__init__.py,sha256=k4A8haB3J4lqiAxAPWAQas-_uk2dgZjpGBT_jkvRN18,3676
+vexy/__main__.py,sha256=EhTGbLBnMvc7psyOAlyCNt95g2PlOOavsh0mnzS4zF8,738
+vexy/client.py,sha256=Sut_tO9HoBzPMbQMysBzgVt3Zg14BE9GskMzTh3bmFw,12212
+vexy/py.typed,sha256=EFHg9-wbl4yUKjj8V3gUwoBZQam2tFkzh9IuCnmNyew,153
+vexy/sources/__init__.py,sha256=VZJ0Y-57nSBgW5tf4-5mDb3iAf37vwJqjelX7v0BBr4,931
+vexy/sources/base.py,sha256=wXlhUsOg0kCCG3dPXTEGvoDyWjLU-Kjp2ZQ-IFJcu2U,3317
+vexy/sources/ossindex.py,sha256=lhj8E6F64ipbYmTCdJL56Nxt1uA-Q7rc5ApIHDjSfgM,5518
+vexy/sources/osv.py,sha256=6oZPeR1fvWyHsdVehZmA5Ta-t-E6F1Zpoux6gwYFmzw,5624
+vexy/sources/osvdb.py,sha256=A9IAGU3TohSXzKDxfzMjiJxlORaacLQ25Umb10uKNmM,5614
+vexy-0.3.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+vexy-0.3.1.dist-info/METADATA,sha256=UrMoIBjxKC54kzGvPfPcgr7EyxNFDnzc9TpQ3_gePOM,6174
+vexy-0.3.1.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+vexy-0.3.1.dist-info/entry_points.txt,sha256=skFuAPxahvVM47l-XPBM9kUg6ZtnRn4Nj75bvj6hKe0,41
+vexy-0.3.1.dist-info/RECORD,,
