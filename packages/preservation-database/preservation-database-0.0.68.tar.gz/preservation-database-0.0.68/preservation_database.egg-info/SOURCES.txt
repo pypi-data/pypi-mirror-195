@@ -1,0 +1,29 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+preservation_database.egg-info/PKG-INFO
+preservation_database.egg-info/SOURCES.txt
+preservation_database.egg-info/dependency_links.txt
+preservation_database.egg-info/requires.txt
+preservation_database.egg-info/top_level.txt
+preservationdatabase/__init__.py
+preservationdatabase/cli.py
+preservationdatabase/constants.py
+preservationdatabase/environment.py
+preservationdatabase/example_settings.py
+preservationdatabase/exporter.py
+preservationdatabase/models.py
+preservationdatabase/urls.py
+preservationdatabase/utils.py
+preservationdatabase/output/Preservation_Reports.py
+preservationdatabase/output/__init__.py
+preservationdatabase/output/settings.py
+preservationdatabase/output/pages/1_📊_Member_Data.py
+preservationdatabase/output/pages/2_📈_Member Class Data.py
+preservationdatabase/output/pages/3_🤓_Data_Validation_Information.py
+preservationdatabase/output/pages/4_✅_Grading System.py
+preservationdatabase/output/pages/__init__.py
+preservationdatabase/test_data/tests.jsonl
+preservationdatabase/tests/__init__.py
+preservationdatabase/tests/test_archives.py
