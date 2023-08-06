@@ -1,0 +1,11 @@
+*HELP for {self.name}*
+
+`Interact with the bot by sending messages and the bot should reply it properly most of the time.`
+
+`In cases where the response implies a failure to understand the given input, please repeat the sentence with more clarity of the context.`
+
+`To minimize the occurrence of such failures, previous chats are kept in a database that is *accessible by the bot admin*.`
+
+`Please do not reveal any sensitive information in the chats [read the /disclaimer].`
+
+:: Powered by Telegram-Bot-GPT ver {self.ver}

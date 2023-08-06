@@ -1,0 +1,15 @@
+*HELP for Admin {self.name}*
+
+`*Available Commands*`
+
+Bot:
+[ /activate_bot, /deactivate_bot ]
+
+Password:
+[ /new_password, /get_password, /reset_password ]
+
+Check server-time today's usage per user ID:
+[ /today ]
+
+:: Powered by Telegram-Bot-GPT ver {self.ver}
+:: Read our /disclaimer
