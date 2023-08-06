@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "dictionary-simplifier"
+version = "0.1.0"
+description = "Simplify python dictionary operations with custom function"
+authors = ["Md. Sany Ahmed <sany2k8@gmail.com>"]
+readme = "README.md"
+packages = [{include = "dictionary_simplifier"}]
+
+[tool.poetry.dependencies]
+python = "^3.10.9"
+pytest = "^7.2.2"
+black = "^23.1.0"
+isort = "^5.12.0"
+flake8 = "^6.0.0"
+bandit = "^1.7.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+markers = ["integration: Integration Tests"]
