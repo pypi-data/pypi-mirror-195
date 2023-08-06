@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "vk-fetch"
+version = "0.5.2"
+description = "Script helps to fetch all data from your VK account"
+authors = ["Roman Kosarev <rmksrv@outlook.com>"]
+readme = "README.md"
+packages = [{include = "vk_fetch"}]
+license = "MIT"
+homepage = "https://github.com/rmksrv/vk_fetch"
+
+
+[tool.poetry.scripts]
+vk_fetch = "vk_fetch.run:app"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+vk-api = "^11.9.9"
+typer = {extras = ["rich"], version = "^0.7.0"}
+python-dateutil = "^2.8.2"
+loguru = "^0.6.0"
+rich = "^13.3.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
