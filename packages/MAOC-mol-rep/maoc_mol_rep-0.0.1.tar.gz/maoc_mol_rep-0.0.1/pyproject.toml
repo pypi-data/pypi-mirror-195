@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "MAOC_mol_rep"
+version = "0.0.1"
+authors = [
+  { name="Stiv Llenga", email="stiv.llenga@h-its.org" },
+  { name="Ganna Gryn'ova", email="ganna.grynova@h-its.org" },
+]
+
+maintainers = [
+  { name="Stiv Llenga", email="stiv.llenga@h-its.org" }
+]
+description = "The code for generating the MAOC representation, the PCX MAOC, optimising the hyperparameters sigma and lambda, and carrying out regression tasks using the KRR model are all included in this package."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/HITS-CCC"
