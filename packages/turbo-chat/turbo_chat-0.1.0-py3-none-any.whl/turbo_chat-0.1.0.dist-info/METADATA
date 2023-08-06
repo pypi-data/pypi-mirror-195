@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: turbo-chat
+Version: 0.1.0
+Summary: Idiomatic way to build chatgpt apps using async generators in python
+License: MIT
+Author: Diwank Singh Tomer
+Author-email: singh@diwank.name
+Requires-Python: >=3.8,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: aiohttp (>=3.8.4,<4.0.0)
+Requires-Dist: openai (>=0.27.0,<0.28.0)
+Requires-Dist: pydantic (>=1.10.5,<2.0.0)
+Requires-Dist: tenacity (>=8.2.2,<9.0.0)
+Description-Content-Type: text/markdown
+
+# turbo-chat
+
+> Idiomatic way to build chatgpt apps using async generators in python
+
+## Example
+
+```python
+from turbo_chat import *
+
+@turbo()
+async def horoscope(context):
+
+    yield System(content="You are a fortune teller")
+    yield User(content=f"My zodiac sign is {context['zodiac']}")
+
+    input = yield GetUserInput(message="What do you want to know?")
+    yield User(content=input)
+
+    value = yield Generate(settings={"temperature": 0.9})
+    print(f"generated: {value}")
+
+b = horoscope({"zodiac": "pisces"})
+
+output, done = await run(b)
+assert isinstance(output, GetUserInput)
+assert not done
+
+user_input = "Tell me my fortune"
+output, done = await run(b, user_input)
+assert isinstance(output, str)
+assert done
+```
+
+![turbo](https://user-images.githubusercontent.com/931887/222912628-8662fad0-091f-4cb8-92f3-6cce287716e9.jpg)
+
