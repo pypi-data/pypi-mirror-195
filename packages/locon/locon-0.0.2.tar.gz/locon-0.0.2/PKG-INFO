@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: locon
+Version: 0.0.2
+Summary: LoRA for Convolution Network
+Home-page: https://github.com/KohakuBlueleaf/LoCon
+Author: Shih-Ying Yeh(KohakuBlueLeaf)
+Author-email: apolloyeh0123@gmail.com
+License-File: LICENSE.md
