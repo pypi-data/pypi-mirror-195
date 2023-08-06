@@ -1,0 +1,5 @@
+[console_scripts]
+pixelateme = pixelateme.cli:main
+
+[gui_scripts]
+pixelatemegui = pixelateme.gui:main
