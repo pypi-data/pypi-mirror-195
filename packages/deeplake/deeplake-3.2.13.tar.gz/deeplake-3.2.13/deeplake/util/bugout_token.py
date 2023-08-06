@@ -1,0 +1,1 @@
+BUGOUT_TOKEN = '2cd713da-6733-4434-a99e-bc4c4de758b1'
