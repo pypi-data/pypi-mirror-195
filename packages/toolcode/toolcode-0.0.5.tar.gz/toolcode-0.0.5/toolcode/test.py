@@ -1,0 +1,2 @@
+from toolcode import *
+print(fblike('118787374466281','sb=S2Z4Y7ifPdnrTFlQV6xZarIJ; datr=S2Z4Y06LGTPeIf03DMBVrILV; locale=vi_VN; c_user=100090050575956; m_page_voice=100090050575956; cppo=1; wd=1920x916; xs=3:I4-k6AsZxDecrQ:2:1677754690:-1:-1::AcW9X_tWCDDrX9m-FhKfY-d-9gEOeJN78-WGaI6olQ; fr=0P6t59EMqVXsXwk4n.AWXVzXeIn3x1V_Lpo07czwO5X58.BkBJJE.m4.AAA.0.0.BkBJJE.AWVFhRe383E'))
