@@ -1,0 +1,15 @@
+pandas
+numpy
+matplotlib
+tqdm
+helperagent==4.0.0
+datetime
+xgboost
+statsmodels
+interpret
+shap
+entsoe-py
+beautifulsoup4==4.11.2
+
+[dev]
+pytest
