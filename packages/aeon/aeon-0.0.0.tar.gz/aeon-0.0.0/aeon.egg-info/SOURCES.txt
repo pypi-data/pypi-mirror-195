@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+aeon.egg-info/PKG-INFO
+aeon.egg-info/SOURCES.txt
+aeon.egg-info/dependency_links.txt
+aeon.egg-info/top_level.txt
