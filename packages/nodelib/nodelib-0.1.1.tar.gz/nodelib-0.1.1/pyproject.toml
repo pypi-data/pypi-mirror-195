@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "nodelib"
+version = "0.1.1"
+description = ""
+authors = ["farirat <fourat@gmail.com>"]
+license = "proprietary"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tronpy = "^0.2.6"
+py-automapper = "^1.2.3"
+web3 = "^5.31.3"
+hexbytes = "^0.3.0"
+cachetools = "^5.2.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+pylint = "^2.12.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
