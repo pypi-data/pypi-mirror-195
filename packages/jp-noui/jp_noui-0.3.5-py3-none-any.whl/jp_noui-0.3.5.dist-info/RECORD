@@ -1,0 +1,17 @@
+jp_noui/__init__.py,sha256=brUt57zPGgFspdJX-h24ddN04aZXv_fYYmDUUHFcQmY,150
+jp_noui/_version.py,sha256=xE5wX3WpeldLT9sbI4EC7dD1YQPfzPlu0MXmz0NRtv4,171
+jp_noui/app.py,sha256=coW-Uf4ac4i5galsEe7vyLGVtfKCbXhL0HfRgoYXLiA,1749
+jp_noui/static/splash.html,sha256=PYQzL784dFKfdnd1eOlwTMThMVIdm-sRmQMOrNukubE,1224
+jp_noui/static/style.css,sha256=s1fnltWQt2aRIfbkm93gEl8q3yf64_MOg09RvKtmh4g,1784
+jp_noui/static/test.html,sha256=hHqdpBnfElGEw2LwIXpzPc2YZ96sAoUUEBwORhN1VcM,110
+jp_noui-0.3.5.data/data/share/jupyter/labextensions/jp-noui/package.json,sha256=HavpPtfTAmZM731Eb1fq7lP2DPKfaNCtvCjE9BITFfY,3162
+jp_noui-0.3.5.data/data/share/jupyter/labextensions/jp-noui/static/568.67b27610af67101c9446.js,sha256=Z7J2EK9nEByURoM9AdrupZ6gEHDgADgt_KDwyPG8yNc,2165
+jp_noui-0.3.5.data/data/share/jupyter/labextensions/jp-noui/static/remoteEntry.3fca384cfcd8cff97dcc.js,sha256=P8o4TPzYz_l9zEV774zUjIzmp3lc14DjvFYeLYEoO-Q,6440
+jp_noui-0.3.5.data/data/share/jupyter/labextensions/jp-noui/static/style.js,sha256=-CQt0ZTPaCTvrRiLcznxflAbfvIKlOVzjOos-muaXQ8,118
+jp_noui-0.3.5.data/data/share/jupyter/labextensions/jp-noui/static/third-party-licenses.json,sha256=MNToQfru1YnHAie-2Virp23yWsc5co3qG0IzrO6SEfw,20
+jp_noui-0.3.5.data/data/share/jupyter/labextensions/jp-noui/install.json,sha256=V_jHQupq0tghLpuOtMsq-33Q1zJ24sakv57nytFo87o,175
+jp_noui-0.3.5.dist-info/METADATA,sha256=n8RlmwmZdO3ccdiTTgTWzAUtybtyDclmpupRDkrEad0,6671
+jp_noui-0.3.5.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+jp_noui-0.3.5.dist-info/entry_points.txt,sha256=LkPfhdlJYlOh4p5cX9NTFGwtxrdcdxVs50YKw4Yj7Sw,50
+jp_noui-0.3.5.dist-info/licenses/LICENSE,sha256=wEMZnc0YkWFxo7IGCtrOxfMv8fYg2-6J0JQon5uR-UM,1522
+jp_noui-0.3.5.dist-info/RECORD,,
