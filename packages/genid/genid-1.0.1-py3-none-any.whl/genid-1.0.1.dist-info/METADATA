@@ -1,0 +1,287 @@
+Metadata-Version: 2.1
+Name: genid
+Version: 1.0.1
+Author-email: Guillaume Charbonnier <guillaume.charbonnier@araymond.com>
+License: MIT
+Project-URL: Repository, https://github.com/charbonnierg/genid
+Project-URL: Issues, https://github.com/charbonnierg/genid/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: <4.0,>=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: build
+Requires-Dist: build ; extra == 'build'
+Requires-Dist: invoke ; extra == 'build'
+Requires-Dist: pip-tools ; extra == 'build'
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: invoke ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: types-setuptools ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mkdocs-gen-files ; extra == 'docs'
+Requires-Dist: mkdocs-literate-nav ; extra == 'docs'
+Requires-Dist: mkdocs-material ; extra == 'docs'
+Requires-Dist: mkdocs-section-index ; extra == 'docs'
+Requires-Dist: mkdocstrings[python] ; extra == 'docs'
+Requires-Dist: pymdown-extensions ; extra == 'docs'
+
+## GenID
+
+> Easily generate various kind of IDs within Python projects
+
+## Quick start
+
+### Installing the project
+
+Users can install project from github using `pip`:
+
+```console
+pip install genid
+```
+
+Confirm that project is installed correctly by importing the version string:
+
+```python
+from genid import __version__
+print(__version__)
+```
+
+### OOP Usage
+
+- Application domain:
+
+```python
+from genid import IDGenerator
+
+
+class UseCase:
+  """An example use case which requires ID generation"""
+  def __init__(self, generator: IDGenerator):
+    self.id_generator = generator
+
+  def do_something() -> None:
+    """Generate a new ID and do something"""
+    new_id = self.id_generator.new()
+```
+
+- Application entrypoint:
+
+```python
+from genid import generator
+
+
+def main() -> None:
+    # Initialize use case with BSON Object ID generator
+    usecase = UseCase(generator("objectid"))
+    # Execute use case
+    # The ID generated within the method will be a valid ObjectID as a string
+    usecase.do_something()
+```
+
+### Iterator usage
+
+- Event producer:
+
+```python
+from genid import generator, IDGenerator
+
+
+def producer_loop(generator: IDGenerator) -> None:
+    # Iterate over generator to create new ID on the fly
+    for new_id in generator:
+        print(f"Creating new event with ID: {new_id}")
+
+
+if __name__ == "__main__":
+    # Use UUI4 identifiers
+    producer_loop(generator("uuid4"))
+```
+
+> Note: `IDGenerator` is an abstract class. It can be used to annotate functions depending on an ID generator. At runtime, those functions must be called with a valid implementation.
+
+### Supported ID kinds
+
+The following ID kinds are supported:
+
+- `"constant"`
+- `"nanoid"`
+- `"nuid"`
+- `"objectid"`
+- `"uuid1"`
+- `"uuid4"`
+- `"ulid"`
+- `"incremental"`
+- `"secret"`
+- `"timestamp"`
+- `"ns_timestamp"`
+
+> Note: The string enumeration `genid.Kind` defines supported types
+
+
+## Developer installation
+
+### Install using script
+
+> The install script is responsible for first creating a virtual environment, then updating packaging dependencies such as `pip`, `setuptools` and `wheel` within the virtual environment. Finally, it installs the project in development mode within the virtual environment.
+
+> The virtual environment is always named `.venv/`
+
+Run the `install.py` script located in the `scripts/` directory with the Python interpreter of your choice. The script accepts the following arguments:
+
+- `--dev`: install extra dependencies required to contribute to development
+- `--docs`: install extra dependencies required to build and serve documentation
+- `-e` or `--extras`: a string of comma-separated extras such as `"dev,docs"`.
+- `-a` or `--all`: a boolean flag indicating that all extras should be installed.
+
+Example usage:
+
+- Install with build extra only (default behaviour)
+
+```console
+python3 scripts/install.py
+```
+
+- Install with dev extra
+
+```console
+python3 scripts/install.py --dev
+```
+
+- Install all extras
+
+```console
+python3 scripts/install.py --all
+```
+
+> Note: The `venv` module must be installed for the python interpreter used to run install script. On Debian and Ubuntu systems, this package can be installed using the following command: `sudo apt-get install python3-venv`. On Windows systems, python distributions have the `venv` module installed by default.
+
+## Development tasks
+
+The file [`tasks.py`](./tasks.py) is an [invoke](https://www.pyinvoke.org/) [task file](https://docs.pyinvoke.org/en/stable/getting-started.html#defining-and-running-task-functions). It describes several tasks which developers can execute to perform various actions.
+
+To list all available tasks, activate the project virtual environment, and run the command `inv --list`:
+
+```console
+$ inv --list
+
+Available tasks:
+
+  build         Build sdist and wheel, and optionally build documentation.
+  check         Run mypy typechecking.
+  clean         Clean build artifacts and optionally documentation artifacts as well as generated bytecode.
+  coverage      Serve code coverage results and optionally run tests before serving results
+  docs          Serve the documentation in development mode.
+  format        Format source code using black and isort.
+  lint          Lint source code using flake8.
+  pre-push      Ensure checks performed in CI will not fail before pushing to remote
+  test          Run tests using pytest and optionally enable coverage.
+```
+
+### Build project artifacts
+
+The `build` task can be used to build a [source distribution (`sdist`)](https://docs.python.org/fr/3/distutils/sourcedist.html), a [wheel binary package](https://peps.python.org/pep-0427/) by default.
+
+Optionally, it can be used to build the project documentation as a static website.
+
+Usage:
+
+- Build `sdist` and `wheel` only:
+
+```console
+inv build
+```
+
+- Build `sdist`, `wheel` and documentation:
+
+```console
+inv build --docs
+```
+
+### Run tests
+
+The `test` task can be used to run tests using `pytest`.
+
+By default, test coverage is not enabled and `-c` or `--cov` option must be provided to enable test coverage.
+
+Usage:
+
+- Run tests without coverage:
+
+```console
+inv test
+```
+
+- Run tests with coverage:
+
+```console
+inv test --cov
+```
+
+- Run tests including end to end tests and coverage:
+
+```console
+inv test --e2e --cov
+```
+
+
+### Visualize test coverage
+
+The `coverage` task can be used to serve test coverage results on `http://localhost:8000` by default. Use `--port` option to use a different port.
+
+By default, test coverage is expected to be present before running the task. If it is desired to run tests before serving the results, use `--run` option.
+
+### Run typechecking
+
+The `check` task can be used to run [`mypy`](https://mypy.readthedocs.io/en/stable/).
+
+By default type checking is not run on tests and `-i` or `--include-tests` option must be provided to include them.
+
+### Run linter
+
+The `lint` task can be used to lint source code using [`flake8`](https://flake8.pycqa.org/en/latest/). This task does not accept any option.
+
+> `flake8` is configured in the [setup.cfg](./setup.cfg) file.
+
+### Format source code
+
+The `format` task can be used to format source code using [`black`](https://black.readthedocs.io/en/stable/) and [`isort`](https://isort.readthedocs.io/en/latest/). This task does not accept any option.
+
+> `black` is not configured in any way, but `isort` is configured in [setup.cfg](./setup.cfg).
+
+### Serve the documentation
+
+The `docs` task can be used to serve the documentation as a static website on <http://localhost:8000> with auto-reload enabled by default. Use the `--port` option to change the listenning port and the `--no-watch` to disable auto-reload.
+
+## Git flow
+
+Two branches exist:
+
+- `next`: The development branch. All developers must merge commits to `next` through Pull Requests.
+
+- `main`: The release branch. Developers must not commit to this branch. Only merge from `next` branch with fast-forward strategy are allowed on `main` branch. 
+
+> Each time new commits are pushed on `main`, semantic-release may perform a release bump according to commit messages.
+
+## Git commits 
+
+Developers are execpted to write commit messages according to the [Convetionnal Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification.
+
+> Commit messages which are not valid conventionnal commits are ignored in changelog.
+
+## Changelog
+
+Changelog is generated for each release candidate and each release according to commit messages found since last release.
+
+Changelog content is written to [`CHANGELOG.md`](./CHANGELOG.md) by [@semantic-release/release-notes-generator](https://github.com/semantic-release/release-notes-generator) plugin configured with [`conventionnalcommit`](https://www.conventionalcommits.org/en/v1.0.0/) preset.
+
+## Contributing to the documentation
+
+Project documentation is written using [MkDocs](https://www.mkdocs.org/) static site generator. Documentation source files are written in [Markdown](https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). They can be found in [docs/](./docs/) directory.
+
+Aside from documentation written in markdown files, Python API reference is generated from docstrings and type annotations found in source code.
