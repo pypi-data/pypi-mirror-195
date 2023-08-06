@@ -1,0 +1,17 @@
+numpy>=1.10
+xarray
+geomagdata
+
+[lint]
+flake8
+flake8-bugbear
+flake8-builtins
+flake8-blind-except
+mypy
+
+[plot]
+matplotlib
+seaborn
+
+[tests]
+pytest>=3.9

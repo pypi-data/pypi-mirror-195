@@ -1,0 +1,4 @@
+include src/glowpython/meson.build src/glowpython/fortran/meson.build
+include src/glowpython/CMakeLists.txt src/glowpython/fortran/CMakeLists.txt
+graft src/glowpython/fortran
+graft src/glowpython/data
