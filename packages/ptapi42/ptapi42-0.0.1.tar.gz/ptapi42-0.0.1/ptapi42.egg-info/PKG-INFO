@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ptapi42
+Version: 0.0.1
+Summary: A python package that simplifies the process of making API requests to 42's API.
+Home-page: https://github.com/42-Portugal/ptapi42
+Author: 42 Portugal
+Author-email: root@42porto.com
+Project-URL: Bug Tracker, https://github.com/42-Portugal/ptapi42/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
