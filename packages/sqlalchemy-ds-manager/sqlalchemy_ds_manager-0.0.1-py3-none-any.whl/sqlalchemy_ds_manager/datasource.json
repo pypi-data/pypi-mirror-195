@@ -1,0 +1,23 @@
+[
+  {
+    "provider": "ORACLE",
+    "source": [
+      {
+        "name": "golang",
+        "server": "server_name",
+        "port": 1000,
+        "service_name": "service_name"
+      }
+    ]
+  },
+  {
+    "provider": "SQLSERVER",
+    "source": [
+      {
+        "name": "rust",
+        "server": "server_name",
+        "database": "database_name"
+      }
+    ]
+  }
+]
