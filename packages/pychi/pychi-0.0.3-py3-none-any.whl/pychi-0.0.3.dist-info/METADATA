@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pychi
+Version: 0.0.3
+Summary: Simulation package for the propagation of optical pulses in nonlinear materials
+Project-URL: Homepage, https://github.com/TVoumard/pychi
+Author-email: Thibault Voumard <thibault.voumard@desy.de>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: matplotlib==3.1.3
+Requires-Dist: numba==0.56.0
+Requires-Dist: numpy==1.21.6
+Requires-Dist: pyfftw==0.12.0
+Requires-Dist: scipy==1.4.1
+Description-Content-Type: text/markdown
+
+# pychi
+
+A Python package for simulating the propagation of optical pulses in nonlinear materials.
