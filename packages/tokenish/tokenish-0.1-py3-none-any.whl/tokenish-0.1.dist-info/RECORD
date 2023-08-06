@@ -1,0 +1,12 @@
+tokenish/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tokenish/tokenish.py,sha256=kkMovsXPaKcNpYC9Q-V3YmJ06Gza8FXW11m14mXWIbc,2069
+tokenish/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tokenish/lib/encoder.py,sha256=NSsXOqcElK56khKS9VavyEPk6Ktu7lgs_Sf0XOyD-Bg,1484
+tokenish/lib/result_writer.py,sha256=aStGCjfw9Ud3inWVO9sA93rlt34cvvs-NtjYDWitZug,790
+tokenish/lib/tokenizer.py,sha256=oJZX1-V7lih62jGdDhRkrwytWhnF3U3RfAJ4OaZtlik,1665
+tokenish-0.1.data/scripts/tokenish,sha256=BqtMz-Nc4HisujRvWy9DaZbTaYL4v2hdgGnQj2EVqWI,221
+tokenish-0.1.dist-info/LICENSE,sha256=775Gy7QdwGaNI3vHiO0StEgHAivQTXXeN2bf9-wCRWM,1068
+tokenish-0.1.dist-info/METADATA,sha256=y_fEkArMGTFQfKcLcx_uAi7Nfq-tAIULS5uftBrZOHw,7116
+tokenish-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tokenish-0.1.dist-info/top_level.txt,sha256=fQiWDgP4i52nucQ9rdVXoRlWxseRUy6kJjsqrbnKrPs,9
+tokenish-0.1.dist-info/RECORD,,
