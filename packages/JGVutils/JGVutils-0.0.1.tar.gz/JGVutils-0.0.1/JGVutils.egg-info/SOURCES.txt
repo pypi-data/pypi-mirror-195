@@ -1,0 +1,7 @@
+setup.py
+JGVutils/__init__.py
+JGVutils/jgvutils.py
+JGVutils.egg-info/PKG-INFO
+JGVutils.egg-info/SOURCES.txt
+JGVutils.egg-info/dependency_links.txt
+JGVutils.egg-info/top_level.txt
