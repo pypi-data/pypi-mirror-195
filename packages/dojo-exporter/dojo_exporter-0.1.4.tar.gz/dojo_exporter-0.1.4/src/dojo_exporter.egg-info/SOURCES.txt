@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/dojo_exporter/collector.py
+src/dojo_exporter.egg-info/PKG-INFO
+src/dojo_exporter.egg-info/SOURCES.txt
+src/dojo_exporter.egg-info/dependency_links.txt
+src/dojo_exporter.egg-info/entry_points.txt
+src/dojo_exporter.egg-info/requires.txt
+src/dojo_exporter.egg-info/top_level.txt
