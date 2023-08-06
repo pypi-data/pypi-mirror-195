@@ -1,0 +1,76 @@
+from RenePy.MetodosUtiles.Imports.MetodosUtilesBasicos import *
+from RenePy.ClasesUtiles.BasesDeDatos import BDConexion
+from RenePy.ClasesUtiles.Date import Date,toDate
+from RenePy.MetodosUtiles import SQL,Archivo
+from RenePy.ClasesUtiles.Tipos import TipoDeConexion,TipoDeClasificacionSQL,TipoDeDatoSQL
+
+from typing import TYPE_CHECKING, Dict, List, NoReturn, Optional, Union, Tuple, cast, ClassVar
+class BDImagen_Model:
+    def __init__(self,nombre,formato,contenido,descripcion=None,idkey=None):
+        self.nombre=nombre
+        self.formato = formato
+        self.contenido = contenido
+        self.descripcion = descripcion
+        self.idkey=idkey
+    def crearEn(self,url):
+        return SQL.toBlob(fileABlob=url)
+
+
+
+class BDImagen:
+    TABLA_IMAGENES = "TABLA_IMAGENES"
+    COLUMNA_NOMBRE = "COLUMNA_NOMBRE"
+    COLUMNA_FORMATO="COLUMNA_FORMATO"
+    COLUMNA_CONTENIDO="COLUMNA_CONTENIDO"
+    COLUMNA_DESCRIPCION = "COLUMNA_DESCRIPCION"
+    def __init__(self,BD:BDConexion):
+        self.__BD:BDConexion=BD
+    def createTabla(self):
+        self.__BD.crearTablaYBorrarSiExiste(self.TABLA_IMAGENES,
+                                          self.COLUMNA_NOMBRE,50,TipoDeClasificacionSQL.NOT_NULL,
+                                          self.COLUMNA_FORMATO,25,
+                                          self.COLUMNA_CONTENIDO,TipoDeDatoSQL.BLOB,TipoDeClasificacionSQL.NOT_NULL,
+                                          self.COLUMNA_DESCRIPCION)
+
+    def get_Args(self, listaArgumentos):
+        return BDImagen_Model(nombre=listaArgumentos[1]
+                            , formato=listaArgumentos[2]
+                            ,contenido = listaArgumentos[3]
+                            , descripcion = listaArgumentos[4]
+                              , idkey=listaArgumentos[0])
+
+    def get(self, id):
+        O = self.__BD.select_forID(
+            self.TABLA_IMAGENES
+            , id)
+        if O == None:
+            return None
+        return self.get_Args(O)
+
+    def insertar(self,imagen:BDImagen_Model):
+        if imagen.idkey!=None:
+            id=self.__BD.insertar(self.TABLA_IMAGENES
+                             , imagen.nombre
+                             , imagen.formato
+                             , imagen.contenido
+                             , imagen.descripcion)
+            return self.get(id)
+        else:
+            self.__BD.insertar_SinIdAutomatico(self.TABLA_IMAGENES , imagen.idkey
+                             , imagen.nombre
+                             , imagen.formato
+                             , imagen.contenido
+                             , imagen.descripcion)
+            return self.get(imagen.idkey)
+    def cargar(self,url,descripcion=None):
+        if Archivo.existe(url):
+            bold=SQL.toBlob(fileABlob=url)
+            extencion=Archivo.getExtencion(url)
+            nombre=Archivo.getNombre(url)
+            return BDImagen_Model(nombre=nombre
+                                  ,formato=extencion
+                                  ,contenido=bold
+                                  ,descripcion=descripcion)
+        return None
+    def insertarDesdeUrl(self,url,descripcion=None):
+        return self.insertar(self.cargar(url,descripcion))
