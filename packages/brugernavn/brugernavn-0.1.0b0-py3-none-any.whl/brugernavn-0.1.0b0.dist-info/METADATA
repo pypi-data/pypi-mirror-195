@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: brugernavn
+Version: 0.1.0b0
+Summary: A OSINT tool to search for a username on many websites
+Project-URL: Homepage, https://edugit.org/pinguin/brugernavn
+Project-URL: Repository, https://edugit.org/pinguin/brugernavn
+Author-email: Jonathan Krüger <jonathan.krueger@teckids.org>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Brugernavn
+
+Brugernavn is a OSINT tool to search for user names at websites.
+You can find the project [here](https://edugit.org/pinguin/brugernavn).
+Brugernavn is licensed under the MIT License, the document can be found [here](https://edugit.org/pinguin/brugernavn/-/blob/master/LICENSE).
