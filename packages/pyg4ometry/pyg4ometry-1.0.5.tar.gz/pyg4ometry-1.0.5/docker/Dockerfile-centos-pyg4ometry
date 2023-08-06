@@ -1,0 +1,59 @@
+FROM centos:7
+
+SHELL ["/bin/bash", "-c"]
+
+WORKDIR /tmp
+
+RUN yum -y install epel-release
+
+# Required packages 
+RUN yum -y install xorg-x11-server-Xorg xorg-x11-xauth libX11-devel \
+    libXpm-devel libXft-devel libXext-devel libXt-devel && \
+    # OpenGL / x11vnc / fvwm 
+    yum -y install mesa-libGL-devel mesa-dri-drivers x11vnc fvwm && \
+    # mpfr, gmp
+    yum -y install mpfr-devel gmp-devel && \ 
+    # GIT, wget, cmake3
+    yum -y install git wget cmake3 && \
+    # Modern compilers
+    yum -y install centos-release-scl && \
+    yum -y install devtoolset-7 && \
+    # python
+    yum -y install rh-python38-python-pip rh-python38-python-devel rh-python38-python && \
+    # boost
+    yum -y install boost169-devel libjpeg-turbo-devel && \
+    # misc useful
+    yum -y install nano xterm
+
+# pyg4ometry deps 
+RUN source scl_source enable rh-python38 && \
+    pip install cython pybind11 auditwheel ipython distro
+
+# CGAL
+RUN wget https://github.com/CGAL/cgal/archive/refs/tags/v5.3.1.tar.gz && \
+    tar zxf v5.3.1.tar.gz && \
+    source scl_source enable devtoolset-7 && \
+    mkdir build && \
+    cd build && \
+    cmake3 ../cgal-5.3.1 && \
+    make && \
+    make install && \
+    cd ../ && \
+    rm -rf build v5.3.1.tar.gz
+
+# pyg4ometry
+ARG PYG4_TAG=1
+RUN git clone https://stewartboogert@bitbucket.org/jairhul/pyg4ometry.git && \
+    cd pyg4ometry && \
+git checkout CITests
+
+RUN cd pyg4ometry && \
+    source scl_source enable devtoolset-7 && \
+    source scl_source enable rh-python38 && \
+    # python setup.py build_ext --inplace && \
+    pip install --editable . --user 
+
+RUN echo "source scl_source enable devtoolset-7" >> /root/.bashrc && \
+    echo "source scl_source enable rh-python38" >> /root/.bashrc && \
+    echo "export MESA_GL_VERSION_OVERRIDE=3.2" >> /root/.bashrc && \
+    echo "export MESA_GLSL_VERSION_OVERRIDE=150" >> /root/.bashrc

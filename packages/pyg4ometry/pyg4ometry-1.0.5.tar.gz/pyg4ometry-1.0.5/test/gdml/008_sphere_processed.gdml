@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+	<define>
+		<constant name="wbx" value="100.0"/>
+		<constant name="wby" value="100.0"/>
+		<constant name="wbz" value="100.0"/>
+		<constant name="srmin" value="40.0"/>
+		<constant name="srmax" value="45.0"/>
+		<constant name="sdphi" value="pi"/>
+		<constant name="sdtheta" value="3*pi/4"/>
+		<position name="center" x="0" y="0" z="0" unit="mm"/>
+		<rotation name="identity" x="0" y="0" z="0" unit="rad"/>
+	</define>
+	<materials>
+		<element name="Oxygen" formula="O" Z="8">
+			<atom value="16.0"/>
+		</element>
+		<element name="Nitrogen" formula="N" Z="7">
+			<atom value="14.01"/>
+		</element>
+		<material name="Al" Z="13">
+			<D value="2.7"/>
+			<atom value="26.98"/>
+		</material>
+		<material name="Air">
+			<D value="1.29"/>
+			<fraction ref="Nitrogen" n="0.7"/>
+			<fraction ref="Oxygen" n="0.3"/>
+		</material>
+	</materials>
+	<solids>
+		<box name="WorldBox" x="wbx" y="wby" z="wbz" lunit="m"/>
+		<sphere name="sphere1" rmin="srmin" rmax="srmax" deltaphi="sdphi" startphi="0" starttheta="0" deltatheta="sdtheta" lunit="m" aunit="rad"/>
+	</solids>
+	<structure>
+		<volume name="sphere1Vol">
+			<materialref ref="Air"/>
+			<solidref ref="sphere1"/>
+		</volume>
+		<volume name="World">
+			<materialref ref="Air"/>
+			<solidref ref="WorldBox"/>
+			<physvol name="sphere1Vol_PV">
+				<volumeref ref="sphere1Vol"/>
+				<positionref ref="center"/>
+				<rotationref ref="identity"/>
+			</physvol>
+		</volume>
+	</structure>
+	<setup name="Default" version="1.0">
+		<world ref="World"/>
+	</setup>
+</gdml>

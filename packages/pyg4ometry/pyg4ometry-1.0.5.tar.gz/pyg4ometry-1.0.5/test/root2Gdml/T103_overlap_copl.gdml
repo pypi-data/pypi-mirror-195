@@ -1,0 +1,88 @@
+<?xml version="1.0" ?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+	<define>
+		<constant name="wx" value="75"/>
+		<constant name="wy" value="25"/>
+		<constant name="wz" value="25"/>
+		<constant name="bx" value="10"/>
+		<position name="b1pos" x="-(bx)" y="0.000000000000000" z="0.000000000000000" unit="mm"/>
+		<position name="b2pos" x="0.000000000000000" y="0.000000000000000" z="0.000000000000000" unit="mm"/>
+		<position name="b3pos" x="bx" y="0.000000000000000" z="0.000000000000000" unit="mm"/>
+	</define>
+	<materials/>
+	<solids>
+		<box name="ws" x="(wx) * (1.500000000000000)" y="(wy) * (4.000000000000000)" z="(wz) * (2.500000000000000)" lunit="mm"/>
+		<box name="bs" x="(bx) * (1.000000000000000)" y="(bx) * (1.000000000000000)" z="(bx) * (1.000000000000000)" lunit="mm"/>
+	</solids>
+	<structure>
+		<volume name="bl">
+			<materialref ref="G4_Fe"/>
+			<solidref ref="bs"/>
+		</volume>
+		<volume name="wl">
+			<materialref ref="G4_Galactic"/>
+			<solidref ref="ws"/>
+			<physvol name="b_pv1">
+				<volumeref ref="bl"/>
+				<position name="b_pv1_pos" x="(((wx) * (-1.500000000000000)) / (2.000000000000000)) + ((bx) / (2.000000000000000))" y="0.000000000000000" z="0.000000000000000" unit="mm"/>
+			</physvol>
+			<physvol name="b_pv2">
+				<volumeref ref="bl"/>
+				<position name="b_pv2_pos" x="((-(wx)) / (4.000000000000000)) + ((bx) / (2.000000000000000))" y="(bx) * (-2.000000000000000)" z="0.000000000000000" unit="mm"/>
+			</physvol>
+			<physvol name="b_pv3">
+				<volumeref ref="bl"/>
+				<position name="b_pv3_pos" x="(((-(wx)) / (4.000000000000000)) + ((bx) / (2.000000000000000))) + ((bx) / (2.000000000000000))" y="((bx) * (-2.000000000000000)) + ((bx) / (2.000000000000000))" z="bx" unit="mm"/>
+			</physvol>
+			<physvol name="b_pv4">
+				<volumeref ref="bl"/>
+				<position name="b_pv4_pos" x="((wx) / (4.000000000000000)) - ((bx) / (2.000000000000000))" y="(bx) * (-2.000000000000000)" z="0.000000000000000" unit="mm"/>
+			</physvol>
+			<physvol name="b_pv5">
+				<volumeref ref="bl"/>
+				<position name="b_pv5_pos" x="((wx) / (4.000000000000000)) - ((bx) / (2.000000000000000))" y="((bx) * (-2.000000000000000)) + ((bx) / (2.000000000000000))" z="bx" unit="mm"/>
+			</physvol>
+			<physvol name="b_pv6">
+				<volumeref ref="bl"/>
+				<position name="b_pv6_pos" x="((wx) / (2.000000000000000)) - ((bx) / (2.000000000000000))" y="(bx) * (-2.000000000000000)" z="0.000000000000000" unit="mm"/>
+			</physvol>
+			<physvol name="b_pv7">
+				<volumeref ref="bl"/>
+				<position name="b_pv7_pos" x="((wx) / (2.000000000000000)) - ((bx) / (2.000000000000000))" y="((bx) * (-2.000000000000000)) + (((bx) * (2.000000000000000)) / (4.000000000000000))" z="bx" unit="mm"/>
+				<rotation name="b_pv7_rot" x="0.000000000000000" y="0.000000000000000" z="0.785397500000000" unit="rad"/>
+			</physvol>
+			<physvol name="b_pv8">
+				<volumeref ref="bl"/>
+				<position name="b_pv8_pos" x="((-(wx)) / (4.000000000000000)) + ((bx) / (2.000000000000000))" y="(bx) * (2.000000000000000)" z="0.000000000000000" unit="mm"/>
+			</physvol>
+			<physvol name="b_pv9">
+				<volumeref ref="bl"/>
+				<position name="b_pv9_pos" x="(((-(wx)) / (4.000000000000000)) + ((bx) / (2.000000000000000))) + ((bx) / (2.000000000000000))" y="((bx) * (2.000000000000000)) + ((bx) / (2.000000000000000))" z="0.000000000000000" unit="mm"/>
+			</physvol>
+			<physvol name="b_pv10">
+				<volumeref ref="bl"/>
+				<position name="b_pv10_pos" x="((wx) / (4.000000000000000)) - ((bx) / (2.000000000000000))" y="(bx) * (2.000000000000000)" z="0.000000000000000" unit="mm"/>
+			</physvol>
+			<physvol name="b_pv11">
+				<volumeref ref="bl"/>
+				<position name="b_pv11_pos" x="((wx) / (4.000000000000000)) - ((bx) / (2.000000000000000))" y="((bx) * (2.000000000000000)) + ((bx) / (2.000000000000000))" z="0.000000000000000" unit="mm"/>
+			</physvol>
+			<physvol name="b_pv12">
+				<volumeref ref="bl"/>
+				<position name="b_pv12_pos" x="((wx) / (2.000000000000000)) - ((bx) / (2.000000000000000))" y="(bx) * (2.000000000000000)" z="0.000000000000000" unit="mm"/>
+			</physvol>
+			<physvol name="b_pv13">
+				<volumeref ref="bl"/>
+				<position name="b_pv13_pos" x="((wx) / (2.000000000000000)) - ((bx) / (2.000000000000000))" y="((bx) * (2.000000000000000)) + (((bx) * (2.000000000000000)) / (4.000000000000000))" z="0.000000000000000" unit="mm"/>
+				<rotation name="b_pv13_rot" x="0.000000000000000" y="0.000000000000000" z="0.785397500000000" unit="rad"/>
+			</physvol>
+			<physvol name="b_pv14">
+				<volumeref ref="bl"/>
+				<position name="b_pv14_pos" x="(((wx) * (1.500000000000000)) / (2.000000000000000)) - ((bx) / (4.000000000000000))" y="0.000000000000000" z="0.000000000000000" unit="mm"/>
+			</physvol>
+		</volume>
+	</structure>
+	<setup name="Default" version="1.0">
+		<world ref="wl"/>
+	</setup>
+</gdml>

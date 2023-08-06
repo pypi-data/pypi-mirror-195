@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+	<define>
+		<position name="R" x="0" y="0" z="0" unit="mm"/>
+		<rotation name="V" x="10" y="20" z="30" unit="degree"/>
+		<variable name="veloSD" value="4"/>
+	</define>
+	<materials>
+		<material name="Nitrogen" Z="7">
+			<D value="0.00125"/>
+			<atom value="14.01"/>
+		</material>
+		<material name="Oxygen" Z="8">
+			<D value="0.00143"/>
+			<atom value="16.0"/>
+		</material>
+		<material name="Air">
+			<D value="0.0012"/>
+			<fraction ref="Nitrogen" n="0.7"/>
+			<fraction ref="Oxygen" n="0.3"/>
+		</material>
+	</materials>
+	<solids>
+		<box name="Box" x="1000" y="1000" z="1000" lunit="mm"/>
+		<box name="WorldBox" x="10000" y="10000" z="10000" lunit="mm"/>
+	</solids>
+	<structure>
+		<volume name="Boxvol">
+			<materialref ref="Air"/>
+			<solidref ref="Box"/>
+			<auxiliary auxtype="SensDet" auxvalue="veloSD"/>
+			<auxiliary auxtype="sometype" auxvalue="somevalue">
+				<auxiliary auxtype="somesubtype" auxvalue="somesubvalue"/>
+			</auxiliary>
+		</volume>
+		<volume name="World">
+			<materialref ref="Air"/>
+			<solidref ref="WorldBox"/>
+			<physvol name="Boxvol_PV">
+				<volumeref ref="Boxvol"/>
+				<positionref ref="R"/>
+				<rotationref ref="V"/>
+			</physvol>
+		</volume>
+	</structure>
+	<userinfo>
+		<auxiliary auxtype="region" auxvalue="myregion1">
+			<auxiliary auxtype="RootLogicalVolume" auxvalue="Boxvol1">
+				<auxiliary auxtype="sometype" auxvalue="somevalue"/>
+			</auxiliary>
+			<auxiliary auxtype="RootLogicalVolume" auxvalue="Boxvol2"/>
+			<auxiliary auxtype="proton_cut_legth" auxvalue="2" auxunit="mm"/>
+			<auxiliary auxtype="proton_cut_energy" auxvalue="900" auxunit="KeV"/>
+			<auxiliary auxtype="electron_cut_length" auxvalue="1" auxunit="mm"/>
+			<auxiliary auxtype="electron_cut_energy" auxvalue="1" auxunit="MeV"/>
+			<auxiliary auxtype="cut" auxvalue="electron">
+				<auxiliary auxtype="energy" auxvalue="900" auxunit="keV"/>
+			</auxiliary>
+			<auxiliary auxtype="userlimit_electron" auxvalue="1" auxunit="keV"/>
+		</auxiliary>
+		<auxiliary auxtype="region" auxvalue="myregion2">
+			<auxiliary auxtype="RootLogicalVolume" auxvalue="vol1"/>
+			<auxiliary auxtype="RootLogicalVolume" auxvalue="vol2"/>
+			<auxiliary auxtype="electron_cut_length" auxvalue="1.5" auxunit="mm"/>
+			<auxiliary auxtype="proton_cut_length" auxvalue="2.5" auxunit="mm"/>
+		</auxiliary>
+	</userinfo>
+	<setup name="Default" version="1.0">
+		<world ref="World"/>
+	</setup>
+</gdml>

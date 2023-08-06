@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+	<define>
+		<position name="detinWorldp" x="0" y="0" z="0" unit="mm"/>
+		<position name="pos2" x="2000" y="0" z="0" unit="mm"/>
+		<matrix name="prop1" coldim="2" values="1.0 7.0 2.0 9.4"/>
+		<matrix name="prop2" coldim="2" values="3.0 -1.0 4.0 -9.4 5.0 -11.1"/>
+		<matrix name="RINDEX" coldim="2" values="1.65*eV 1.58"/>
+	</define>
+	<materials>
+		<element name="Nitrogen" formula="N" Z="7">
+			<atom value="14.01"/>
+		</element>
+		<element name="Oxygen" formula="O" Z="8">
+			<atom value="16.0"/>
+		</element>
+		<material name="Air">
+			<property name="myproperty1" ref="prop1"/>
+			<property name="myproperty2" ref="prop2"/>
+			<property name="RINDEX" ref="RINDEX"/>
+			<D value="0.00129"/>
+			<fraction ref="Nitrogen" n="0.7"/>
+			<fraction ref="Oxygen" n="0.3"/>
+		</material>
+	</materials>
+	<solids>
+		<box name="world" x="10000" y="10000" z="10000" lunit="mm"/>
+		<box name="det" x="2000" y="2000" z="2000" lunit="mm"/>
+		<opticalsurface name="surf1" model="glisur" finish="polished" type="dielectric_dielectric" value="1.0"/>
+	</solids>
+	<structure>
+		<volume name="Detector">
+			<materialref ref="Air"/>
+			<solidref ref="det"/>
+		</volume>
+		<volume name="World">
+			<materialref ref="Air"/>
+			<solidref ref="world"/>
+			<physvol name="pv1">
+				<volumeref ref="Detector"/>
+				<positionref ref="detinWorldp"/>
+			</physvol>
+			<physvol name="pv2">
+				<volumeref ref="Detector"/>
+				<positionref ref="pos2"/>
+			</physvol>
+		</volume>
+		<skinsurface name="skinsrf1" surfaceproperty="surf1">
+			<volumeref ref="Detector"/>
+		</skinsurface>
+		<bordersurface name="bordersrf1" surfaceproperty="surf1">
+			<physvolref ref="pv1"/>
+			<physvolref ref="pv2"/>
+		</bordersurface>
+	</structure>
+	<setup name="Default" version="1.0">
+		<world ref="World"/>
+	</setup>
+</gdml>

@@ -1,0 +1,27 @@
+FROM archlinux:latest
+
+SHELL ["/bin/bash", "-c"]
+
+WORKDIR /tmp
+
+RUN pacman -Sy && \
+    pacman --noconfirm -S cgal python ipython python-pip gcc gcc-fortran cmake make && \
+    pacman --noconfirm -S vtk libjpeg-turbo libpng libtiff fmt freetype2 xorg-server libxcursor glew openmpi && \
+    pacman --noconfirm -S qt5 openvr ffmpeg libpqxx pdal unixodbc liblas  && \
+    pacman --noconfirm -S adios2 libharu gl2ps git cython mpfr x11vnc xorg-server-xvfb xterm xorg-twm && \
+    pacman --noconfirm -S emacs opencascade cmake 
+
+RUN pip install distro setuptools wheel
+
+ARG PYG4_TAG=3
+RUN pacman --noconfirm -S patch
+
+RUN git clone https://stewartboogert@bitbucket.org/jairhul/pyg4ometry.git && \
+    cd pyg4ometry && \
+    git checkout develop && \
+    patch -R /usr/include/opencascade/TDocStd_Application.hxx < docker/patches/TDocStd_Application.patch
+
+RUN cd pyg4ometry &&\
+    python setup.py build_ext &&\
+    pip install --editable .
+

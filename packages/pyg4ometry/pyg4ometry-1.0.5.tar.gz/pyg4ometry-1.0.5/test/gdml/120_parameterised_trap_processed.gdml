@@ -1,0 +1,97 @@
+<?xml version="1.0" ?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+	<define>
+		<constant name="wbx" value="1000.0"/>
+		<constant name="wby" value="1000.0"/>
+		<constant name="wbz" value="1000.0"/>
+		<constant name="bx" value="5.0"/>
+		<constant name="by" value="bx"/>
+		<constant name="bz" value="bx"/>
+		<position name="center" x="0" y="0" z="0" unit="mm"/>
+		<rotation name="identity" x="0" y="0" z="0" unit="rad"/>
+	</define>
+	<materials>
+		<element name="Oxygen" formula="O" Z="8">
+			<atom value="16.0"/>
+		</element>
+		<element name="Nitrogen" formula="N" Z="7">
+			<atom value="14.01"/>
+		</element>
+		<material name="Al" Z="13">
+			<D value="2.7"/>
+			<atom value="26.98"/>
+		</material>
+		<material name="Air">
+			<D value="1.29"/>
+			<fraction ref="Nitrogen" n="0.7"/>
+			<fraction ref="Oxygen" n="0.3"/>
+		</material>
+	</materials>
+	<solids>
+		<box name="WorldBox" x="wbx" y="wby" z="wbz" lunit="mm"/>
+		<box name="box" x="20*bx" y="20*bx" z="20*bx" lunit="mm"/>
+		<trap name="trap_param" z="3" theta="0.0" phi="0.0" y1="1.0" x1="0.5" x2="1.0" alpha1="0.0" y2="1.0" x3="1.0" x4="1.5" alpha2="0.0" lunit="mm" aunit="rad"/>
+	</solids>
+	<structure>
+		<volume name="trap1Vol">
+			<materialref ref="Al"/>
+			<solidref ref="trap_param"/>
+		</volume>
+		<volume name="trap2Vol">
+			<materialref ref="Air"/>
+			<solidref ref="box"/>
+			<paramvol ncopies="9">
+				<volumeref ref="trap1Vol"/>
+				<parameterised_position_size>
+					<parameters number="1">
+						<position name="trap1Vol1pos" x="0" y="0" z="-8*bx" unit="mm"/>
+						<trap_dimensions z="1" theta="0.05" phi="0.05" y1="1.0" x1="0.5" x2="1.0" alpha1="0.0" y2="1.0" x3="1.5" x4="2.0" alpha2="0.0" lunit="mm" aunit="rad"/>
+					</parameters>
+					<parameters number="2">
+						<position name="trap1Vol2pos" x="0" y="0" z="-6*bx" unit="mm"/>
+						<trap_dimensions z="1.5" theta="0.1" phi="0.1" y1="1.25" x1="0.5" x2="1.0" alpha1="0.0" y2="1.25" x3="1.5" x4="2.0" alpha2="0.0" lunit="mm" aunit="rad"/>
+					</parameters>
+					<parameters number="3">
+						<position name="trap1Vol3pos" x="0" y="0" z="-4*bx" unit="mm"/>
+						<trap_dimensions z="2.0" theta="0.15" phi="0.15" y1="1.5" x1="0.5" x2="1.0" alpha1="0.0" y2="1.5" x3="1.5" x4="2.0" alpha2="0.0" lunit="mm" aunit="rad"/>
+					</parameters>
+					<parameters number="4">
+						<position name="trap1Vol3pos" x="0" y="0" z="-2*bx" unit="mm"/>
+						<trap_dimensions z="2.5" theta="0.2" phi="0.20" y1="1.75" x1="0.75" x2="1.25" alpha1="0.0" y2="1.75" x3="1.75" x4="2.25" alpha2="0.0" lunit="mm" aunit="rad"/>
+					</parameters>
+					<parameters number="5">
+						<trap_dimensions z="3.0" theta="0.25" phi="0.25" y1="2.0" x1="1.0" x2="1.5" alpha1="0.0" y2="2.0" x3="1.75" x4="2.25" alpha2="0.0" lunit="mm" aunit="rad"/>
+					</parameters>
+					<parameters number="6">
+						<position name="trap1Vol5pos" x="0" y="0" z="2*bx" unit="mm"/>
+						<trap_dimensions z="3.5" theta="0.3" phi="0.3" y1="2.25" x1="1.25" x2="1.75" alpha1="0.0" y2="2.25" x3="2.0" x4="2.5" alpha2="0.0" lunit="mm" aunit="rad"/>
+					</parameters>
+					<parameters number="7">
+						<position name="trap1Vol7pos" x="0" y="0" z="4*bx" unit="mm"/>
+						<trap_dimensions z="4.0" theta="0.35" phi="0.35" y1="2.5" x1="1.5" x2="2.0" alpha1="0.0" y2="2.5" x3="2.25" x4="2.75" alpha2="0.0" lunit="mm" aunit="rad"/>
+					</parameters>
+					<parameters number="8">
+						<position name="trap1Vol8pos" x="0" y="0" z="6*bx" unit="mm"/>
+						<trap_dimensions z="4.5" theta="0.4" phi="0.4" y1="2.75" x1="1.75" x2="2.25" alpha1="0.0" y2="2.75" x3="2.5" x4="3.0" alpha2="0.0" lunit="mm" aunit="rad"/>
+					</parameters>
+					<parameters number="9">
+						<position name="trap1Vol9pos" x="0" y="0" z="8*bx" unit="mm"/>
+						<trap_dimensions z="5.0" theta="0.45" phi="0.45" y1="3.0" x1="2.0" x2="2.5" alpha1="0.0" y2="3.0" x3="2.75" x4="3.25" alpha2="0.0" lunit="mm" aunit="rad"/>
+					</parameters>
+				</parameterised_position_size>
+			</paramvol>
+		</volume>
+		<volume name="World">
+			<materialref ref="Air"/>
+			<solidref ref="WorldBox"/>
+			<physvol name="trap2Vol_PV">
+				<volumeref ref="trap2Vol"/>
+				<positionref ref="center"/>
+				<rotationref ref="identity"/>
+			</physvol>
+		</volume>
+	</structure>
+	<setup name="Default" version="1.0">
+		<world ref="World"/>
+	</setup>
+</gdml>
