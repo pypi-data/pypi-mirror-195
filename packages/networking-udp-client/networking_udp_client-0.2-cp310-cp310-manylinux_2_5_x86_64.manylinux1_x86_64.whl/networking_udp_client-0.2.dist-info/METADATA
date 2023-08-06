@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: networking-udp-client
+Version: 0.2
+Summary: Extension providing a basic udp client for making connections, receiving and sending packets in C.
+
