@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: Assignment7-pkg
+Version: 0.1
+Summary: Assignment7 OOP Package
+Author: Krishna
+Author-email: author@email.com
+License-File: Licence.txt
+Requires-Dist: pandas
+
