@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: nodelib
+Version: 0.1.5
+Summary: 
+License: Proprietary
+Author: farirat
+Author-email: fourat@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: cachetools (>=5.2.1,<6.0.0)
+Requires-Dist: hexbytes (>=0.3.0,<0.4.0)
+Requires-Dist: py-automapper (>=1.2.3,<2.0.0)
+Requires-Dist: tronpy (>=0.2.6,<0.3.0)
+Requires-Dist: web3 (>=5.31.3,<6.0.0)
