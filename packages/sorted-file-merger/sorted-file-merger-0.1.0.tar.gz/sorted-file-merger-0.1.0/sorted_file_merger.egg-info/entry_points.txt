@@ -1,0 +1,2 @@
+[console_scripts]
+filemerger = merge_files.main:cli_main
