@@ -1,0 +1,22 @@
+[tool.black]
+target_version = ['py37', 'py38', 'py39', 'py310', 'py311']
+include = '\.pyi?$'
+
+exclude = '''
+/(
+    \.git
+  | \.tox
+  | \.venv
+)/
+'''
+preview = true
+skip_magic_trailing_comma = true
+
+[tool.pyanalyze]
+missing_parameter_annotation = true
+missing_return_annotation = true
+incompatible_override = true
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
