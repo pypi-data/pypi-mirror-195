@@ -1,0 +1,3 @@
+[console_scripts]
+pyseek=pyseek.__main__:app
+
