@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/quicklink
+src/quicklink.egg-info/PKG-INFO
+src/quicklink.egg-info/SOURCES.txt
+src/quicklink.egg-info/dependency_links.txt
+src/quicklink.egg-info/top_level.txt

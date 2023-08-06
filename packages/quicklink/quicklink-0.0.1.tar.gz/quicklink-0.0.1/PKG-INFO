@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: quicklink
+Version: 0.0.1
+Summary: Saves weblink as .url file.
+Home-page: https://github.com/CarlJKurtz/quicklink
+Author: Carl J. Kurtz
+License: BSD 3-Clause
+Keywords: url weblink file
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# quicklink
+## Installation
+```bash
+$ pip install quicklink
+```
+## Usage
+```bash
+$ cd [directory]
+$ quicklink [filename] [url]
+```
+### Example
+```bash
+$ quicklink quicklink_github https://github.com/CarlJKurtz/quicklink
+```
+This will create a file called _quicklink_github.url_ in the current directory that opens this GitHub page in the default browser.

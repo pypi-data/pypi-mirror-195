@@ -1,0 +1,29 @@
+#!/usr/bin/env python
+
+import argparse
+
+
+class Colors:
+    GREEN = '\033[92m'
+    RED = '\033[91m'
+    ENDC = '\033[0m'
+
+
+def create_url(file_name, url):
+    try:
+        with open(f'{file_name}.url', 'w') as file:
+            file.write(f'[InternetShortcut]\n')
+            file.write(f'url={url}')
+            print(f'{Colors.GREEN}[quicklink]{Colors.ENDC} Success!')
+
+    except Exception:
+        print(f'{Colors.RED}[!]{Colors.ENDC} Oops, something went wrong while writing the file.')
+
+
+parser = argparse.ArgumentParser(prog='quicklink')
+parser.add_argument(dest='file_name', type=str, nargs=1, metavar='name', help='name of file')
+parser.add_argument(dest='url', type=str, nargs=1, metavar='url', help='url to website')
+parser.set_defaults(func=create_url)
+
+args = parser.parse_args()
+args.func(args.file_name[0], args.url[0])
