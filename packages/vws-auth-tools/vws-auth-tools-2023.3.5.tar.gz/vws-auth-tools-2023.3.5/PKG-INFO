@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: vws-auth-tools
+Version: 2023.3.5
+Summary: Authentication and authorization tools for interacting with the Vuforia Web Services (VWS) API.
+Author-email: Adam Dangoor <adamdangoor@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2019 Adam Dangoor
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Source, https://github.com/VWS-Python/vws-auth-tools
+Keywords: vuforia,vws
+Classifier: Operating System :: POSIX
+Classifier: Environment :: Web Environment
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+License-File: LICENSE
+
+|Build Status| |codecov| |PyPI| |Documentation Status|
+
+VWS Auth Tools
+==============
+
+Authentication and authorization tools for interacting with the Vuforia Web Services (VWS) API.
+
+Installation
+------------
+
+.. code:: sh
+
+   pip install vws-auth-tools
+
+This is tested on Python 3.11+.
+
+Usage
+-----
+
+.. code:: python
+
+   import requests
+   from vws_auth_tools import authorization_header, rfc_1123_date
+
+   target_id = '...'
+   request_path = f'/duplicates/{target_id}'
+   content = b''
+   method = 'GET'
+   date = rfc_1123_date()
+   authorization_header = authorization_header(
+       access_key='my_access_key',
+       secret_key='my_secret_key',
+       method=method,
+       content=content,
+       content_type='',
+       date=date,
+       request_path=request_path,
+   )
+
+   headers = {'Authorization': authorization_string, 'Date': date}
+
+   response = requests.request(
+        method=method,
+        url=urljoin(base='https://vws.vuforia.com', url=request_path),
+        headers=headers,
+        data=content,
+    )
+
+    assert response.status_code == 200
+
+
+Full Documentation
+------------------
+
+See the `full documentation <https://vws-auth-tools.readthedocs.io/en/latest>`__.
+
+.. |Build Status| image:: https://github.com/VWS-Python/vws-auth-tools/workflows/CI/badge.svg
+   :target: https://github.com/VWS-Python/vws-auth-tools/actions
+.. |codecov| image:: https://codecov.io/gh/VWS-Python/vws-auth-tools/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/VWS-Python/vws-auth-tools
+.. |Documentation Status| image:: https://readthedocs.org/projects/vws-auth-tools/badge/?version=latest
+   :target: https://vws-auth-tools.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
+.. |PyPI| image:: https://badge.fury.io/py/VWS-Auth-Tools.svg
+   :target: https://badge.fury.io/py/VWS-Auth-Tools
