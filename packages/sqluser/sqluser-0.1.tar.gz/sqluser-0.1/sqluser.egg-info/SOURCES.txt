@@ -1,0 +1,8 @@
+LICENSE.txt
+README.txt
+setup.py
+sqluser.egg-info/PKG-INFO
+sqluser.egg-info/SOURCES.txt
+sqluser.egg-info/dependency_links.txt
+sqluser.egg-info/requires.txt
+sqluser.egg-info/top_level.txt
