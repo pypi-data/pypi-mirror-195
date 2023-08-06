@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: aiomox
+Version: 1.0.5
+Summary: Asynchronous library to control MOX devices.
+Home-page: https://github.com/iddora/aiomox
+Author: Iddo Rachlewski
+Author-email: github@rachlewski.com
+License: Apache License 2.0
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# aiomox
+Client library for interacting with MOX LT smart home devices
