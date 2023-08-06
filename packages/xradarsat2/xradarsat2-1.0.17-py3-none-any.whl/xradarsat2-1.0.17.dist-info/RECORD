@@ -1,0 +1,11 @@
+radarSat2_xarray_reader/__init__.py,sha256=dW5wXL3w84wT2Z1rq58D7TRe3TwPog0-CdacLLTMTKw,62
+radarSat2_xarray_reader/radarSat2_tiff_reader.py,sha256=PlBtmBfh6icME-bZPeE1zek0nMTeogu1gyll38sarfk,5774
+radarSat2_xarray_reader/radarSat2_xarray_reader.py,sha256=it4ITU7vayjpH6jDd1nkqhCQTUZ8v9pN73guuGJcJPQ,65698
+xradarsat2/__init__.py,sha256=ek_Ig-t34kwBZRUYMcoAwmfOAf-pO9oD7MfVyZcKh1c,133
+xradarsat2/radarSat2_tiff_reader.py,sha256=7Rfeaw9DXfWzPuv3df1SoHR4oGH7j7yfwcguEJahdOs,6089
+xradarsat2/radarSat2_xarray_reader.py,sha256=sjhyWZrs3jDbRLch-FyHCF1lX6LgBs7iUxvOsApYJ_U,76190
+xradarsat2-1.0.17.dist-info/LICENSE.md,sha256=Q7TBHxOpWI_fNTTXVS2GqSaGFHdsefHrV_H6Mrs1S7s,1064
+xradarsat2-1.0.17.dist-info/METADATA,sha256=KNT5Zfowo-jAUehgbEkiLUcox9ZT-5xVl803lYQVMlA,9376
+xradarsat2-1.0.17.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+xradarsat2-1.0.17.dist-info/top_level.txt,sha256=EbVa617g91wuyRtm_WKh_sfjZyqOCz7J09U9YjqzhAo,11
+xradarsat2-1.0.17.dist-info/RECORD,,
