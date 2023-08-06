@@ -1,0 +1,14 @@
+README.md
+setup.py
+EmbedOMIM/__init__.py
+EmbedOMIM/data.py
+EmbedOMIM/data_wrapper.py
+EmbedOMIM/embed.py
+EmbedOMIM/model.py
+EmbedOMIM/networks.py
+EmbedOMIM/optim.py
+EmbedOMIM.egg-info/PKG-INFO
+EmbedOMIM.egg-info/SOURCES.txt
+EmbedOMIM.egg-info/dependency_links.txt
+EmbedOMIM.egg-info/requires.txt
+EmbedOMIM.egg-info/top_level.txt

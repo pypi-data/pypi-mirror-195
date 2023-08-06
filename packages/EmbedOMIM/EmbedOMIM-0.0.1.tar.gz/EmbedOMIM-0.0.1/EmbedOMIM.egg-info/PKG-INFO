@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: EmbedOMIM
+Version: 0.0.1
+Summary: A generative probability model for embedding Mendelian diseases based on their annotated symptoms (HPO) and their associated frequencies (discrete).
+Home-page: https://github.com/daverblair/EmbedOMIM
+Author: David Blair
+Author-email: david.blair@ucsf.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
