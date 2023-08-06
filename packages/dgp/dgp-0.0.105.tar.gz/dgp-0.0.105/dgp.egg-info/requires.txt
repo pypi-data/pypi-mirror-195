@@ -1,0 +1,7 @@
+dataflows>=0.3.20
+python-dateutil
+PyYAML
+
+[develop]
+pylama
+tox
