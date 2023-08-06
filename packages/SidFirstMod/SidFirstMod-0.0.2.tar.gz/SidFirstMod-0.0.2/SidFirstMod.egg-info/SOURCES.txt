@@ -1,0 +1,14 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+SidFirstMod.egg-info/PKG-INFO
+SidFirstMod.egg-info/SOURCES.txt
+SidFirstMod.egg-info/dependency_links.txt
+SidFirstMod.egg-info/top_level.txt
+Sidfold/__init__.py
+SidsFirstmod.egg-info/SOURCES.txt
+SidsFirstmod.egg-info/dependency_links.txt
+SidsFirstmod.egg-info/requires.txt
+SidsFirstmod.egg-info/top_level.txt
