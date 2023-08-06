@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: chatgpt-repl
+Version: 0.1.0
+Summary: A chatbot powered by OpenAI's ChatGPT API
+Home-page: https://github.com/evgenyrodionov/chatgpt_repl
+Author: Evgeny Rodionov
+Author-email: opensource@erodionov.ru
+License: MIT
+Project-URL: Source Code, https://github.com/evgenyrodionov/chatgpt_repl
+Project-URL: Bug Tracker, https://github.com/evgenyrodionov/chatgpt_repl/issues
+Keywords: chatgpt

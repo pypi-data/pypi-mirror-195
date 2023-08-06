@@ -1,0 +1,2 @@
+[console_scripts]
+chatgpt_repl = chatgpt_repl.__main__:main

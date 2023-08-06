@@ -1,0 +1,10 @@
+setup.py
+chatgpt_repl/__init__.py
+chatgpt_repl/__main__.py
+chatgpt_repl/cli.py
+chatgpt_repl.egg-info/PKG-INFO
+chatgpt_repl.egg-info/SOURCES.txt
+chatgpt_repl.egg-info/dependency_links.txt
+chatgpt_repl.egg-info/entry_points.txt
+chatgpt_repl.egg-info/requires.txt
+chatgpt_repl.egg-info/top_level.txt
