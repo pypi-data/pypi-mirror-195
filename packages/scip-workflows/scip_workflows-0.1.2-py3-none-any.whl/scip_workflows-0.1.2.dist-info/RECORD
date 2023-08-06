@@ -1,0 +1,12 @@
+scip_workflows/__init__.py,sha256=YvuYzWnKtqBb-IqG8HAu-nhIYAsgj9Vmc_b9o7vO-js,22
+scip_workflows/_modidx.py,sha256=UTsqlGVkY7g9eceyT0_NN-3lLw_8Z9o-IdYyfBO2Hl0,1124
+scip_workflows/common.py,sha256=RXBi9cGjm9Y3IqD5rAJCGnQyfUIhRkZKtZNbV5x2x1I,717
+scip_workflows/core.py,sha256=FmSIhFESEk37nP6HWeN40LdrBHvuSdprl2uPLsfWjro,9566
+scip_workflows/masking.py,sha256=RpmYJKV5zsEXnwKW1TSQE8VdpR0bpyI_sOCxZLPVYwI,1198
+workflow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scip_workflows-0.1.2.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+scip_workflows-0.1.2.dist-info/METADATA,sha256=TjZ5P08eR_Vc-WMHI5Gk7zyXf2LcbV1ESRWwNlU9QtA,4248
+scip_workflows-0.1.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+scip_workflows-0.1.2.dist-info/entry_points.txt,sha256=0VkU4usb9McjPVKnW3tVOpLWJiHfP1ibxBWGYue_WIU,50
+scip_workflows-0.1.2.dist-info/top_level.txt,sha256=dYKwgRMqHhzcEFxUoM6c3SJm67HWBvlqegtlJyY5ViM,24
+scip_workflows-0.1.2.dist-info/RECORD,,
