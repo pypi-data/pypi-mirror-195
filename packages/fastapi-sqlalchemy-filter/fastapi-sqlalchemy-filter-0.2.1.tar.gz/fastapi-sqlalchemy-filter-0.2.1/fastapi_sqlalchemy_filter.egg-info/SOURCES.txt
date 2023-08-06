@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+fastapi_sqlalchemy_filter/__init__.py
+fastapi_sqlalchemy_filter/base_filter.py
+fastapi_sqlalchemy_filter/filter.py
+fastapi_sqlalchemy_filter.egg-info/PKG-INFO
+fastapi_sqlalchemy_filter.egg-info/SOURCES.txt
+fastapi_sqlalchemy_filter.egg-info/dependency_links.txt
+fastapi_sqlalchemy_filter.egg-info/top_level.txt
