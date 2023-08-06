@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: pcalibration
+Version: 0.1.2
+Summary: 
+Author: nutorbit
+Author-email: nutorbitx@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: matplotlib (>=3.7.1,<4.0.0)
+Requires-Dist: scikit-learn (>=1.2.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# probability-calibration
+
+Probability calibration is a technique to calibrate the probabilities of a classifier. This package provides a simple interface to calibrate the probabilities of a sklearn-stype classifier. The package also provides a set of calibration methods.
+
+## Methods
+
+- Platt Scaling
+- Isotonic Regression
+- Inductive Venn-Abers Predictor (IVAP)
+- Cross Venn-Abers Predictor (CVAP)
+
+## Installation
+
+```zsh
+$ pip install pcalibration
+```
+
+## Usage
+
+```python
+from pcalibration import CalibratorWrapper, CrossVennAbers
+
+# Load the data
+X_train, X_test, y_train, y_test = ...
+
+# Create a CalibratorWrapper object
+calibrator = CalibratorWrapper(model, CrossVennAbers(k=5))
+
+# Fit the calibrator
+calibrator.fit(X_train, y_train)
+
+# Predict the probabilities
+y_pred = calibrator.predict_proba(X_test)
+```
+
