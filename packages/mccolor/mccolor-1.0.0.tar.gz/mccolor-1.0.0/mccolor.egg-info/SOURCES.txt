@@ -1,0 +1,12 @@
+README.rst
+setup.py
+mccolor/__init__.py
+mccolor/ansi.py
+mccolor/mc.py
+mccolor/remove.py
+mccolor/replace.py
+mccolor/write.py
+mccolor.egg-info/PKG-INFO
+mccolor.egg-info/SOURCES.txt
+mccolor.egg-info/dependency_links.txt
+mccolor.egg-info/top_level.txt
