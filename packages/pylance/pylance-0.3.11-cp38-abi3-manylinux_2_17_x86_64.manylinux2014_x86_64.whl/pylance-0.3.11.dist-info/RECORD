@@ -1,0 +1,11 @@
+pylance-0.3.11.dist-info/METADATA,sha256=wsB_j52en3bdZb_dWhGPR7cYPHXeUkfhS2EYkuIuUM8,6486
+pylance-0.3.11.dist-info/WHEEL,sha256=N38iMoY99M8AWO6rmXhlzLInsndE9LM-6KTp6RiL_80,129
+pylance-0.3.11.dist-info/license_files/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+lance.libs/libquadmath-96973f99.so.0,sha256=TTl4bvOwbX8wBgD5FNipsuiQCqVBXitOn5iTZovS9hk,247609
+lance.libs/libgfortran-040039e1.so.5,sha256=sGchydrx5_-xK2dyADxavnS_GGIDVezXDTUKgMn5XU4,2686057
+lance/util.py,sha256=tROz3JsSdhLIS2978gWZAinZjd7wi3K8T9JNtGI4qvk,1130
+lance/vector.py,sha256=92oTWALdW7xnoYLteI8YbuY0zxPOtaHRe425WFNEprs,4859
+lance/dataset.py,sha256=aLOo6Vxk13xsqwNW4idnSUwvWt9FxSyckgh3O2gLGhU,20348
+lance/__init__.py,sha256=sUSMv0N9lRHnmJLVZ7VzEeDZlZUdHFLEOQWOh82VBv8,2041
+lance/lance.abi3.so,sha256=YXpjogRoj2ht2gFJqEPu8TN0ksGcYHIR1rg4RaydQU4,60020001
+pylance-0.3.11.dist-info/RECORD,,
