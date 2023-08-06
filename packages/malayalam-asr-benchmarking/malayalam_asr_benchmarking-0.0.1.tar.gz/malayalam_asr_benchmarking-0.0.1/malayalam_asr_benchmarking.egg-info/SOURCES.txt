@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+malayalam_asr_benchmarking/__init__.py
+malayalam_asr_benchmarking/_modidx.py
+malayalam_asr_benchmarking/commonvoice.py
+malayalam_asr_benchmarking/core.py
+malayalam_asr_benchmarking/utils.py
+malayalam_asr_benchmarking.egg-info/PKG-INFO
+malayalam_asr_benchmarking.egg-info/SOURCES.txt
+malayalam_asr_benchmarking.egg-info/dependency_links.txt
+malayalam_asr_benchmarking.egg-info/entry_points.txt
+malayalam_asr_benchmarking.egg-info/not-zip-safe
+malayalam_asr_benchmarking.egg-info/requires.txt
+malayalam_asr_benchmarking.egg-info/top_level.txt
