@@ -1,0 +1,7 @@
+setup.py
+makrand/__init__.py
+makrand/hello.py
+makrand.egg-info/PKG-INFO
+makrand.egg-info/SOURCES.txt
+makrand.egg-info/dependency_links.txt
+makrand.egg-info/top_level.txt
