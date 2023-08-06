@@ -1,0 +1,130 @@
+Metadata-Version: 2.1
+Name: infra-surveyor
+Version: 0.7.0
+Summary: An Autodocumenting tool for Cloud Infrastructure
+License: BSD 3-Clause License
+        
+        Copyright (c) 2022, David Wylie
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: documentation, https://infrasurveyor.readthedocs.io/en/latest/
+Project-URL: repository, https://github.com/DavidWylie/InfraSurveyor
+Project-URL: changelog, https://github.com/DavidWylie/InfraSurveyor/CHANGELOG.md
+Keywords: AWS,Cloud,Documentation,Architecture
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: release
+Provides-Extra: docs
+License-File: LICENSE
+
+
+
+[![PyPI version](https://badge.fury.io/py/infra-surveyor.svg)](https://badge.fury.io/py/infra-surveyor)
+![PythonSupport](https://img.shields.io/static/v1?label=python&message=3.8%2B&color=blue?style=flat-square&logo=python)
+[![Documentation Status](https://readthedocs.org/projects/infrasurveyor/badge/?version=latest)](https://infrasurveyor.readthedocs.io/en/latest/?badge=latest)
+[![Unit Tests](https://github.com/DavidWylie/Surveyor/workflows/UnitTests/badge.svg)](https://github.com/DavidWylie/Surveyor/actions/workflows/UnitTests)
+[![codecov](https://codecov.io/gh/DavidWylie/InfraSurveyor/branch/main/graph/badge.svg?token=5J8QX2DK5H)](https://codecov.io/gh/DavidWylie/InfraSurveyor)
+[![CodeQL](https://github.com/DavidWylie/Surveyor/workflows/CodeQuality/badge.svg)](https://github.com/DavidWylie/Surveyor/actions/workflows/CodeQuality)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+
+
+# Infra Surveyor
+A tool to survey existing cloud infrastructure and document what exists.
+This project is still in development and is not yet in use on a production system.  Diagrams are against AWS at the moment but this might not be required in the future.
+
+# Installation
+To Install this on  Mac OSX install graphviz then the requiremewnts and the library.
+```bash
+brew install graphviz
+pip install infra_surveyor
+```
+
+## Installation for development
+This project uses optional dependancies for development, documentation and release.
+To develop on this project please clone the repository setup your virtual environment then run the following
+```bash
+pip install -e ".[dev]"
+```
+
+## Installation for documentation developers
+To work on the documentation on this project please clone the repository setup your virtual environment then run the following
+```bash
+pip install -e ".[docs]"
+```
+
+This will install mkdocs which can be used to host the docs locally during writing.  The command below will host the docs in html format on your machine.
+``` bash
+mkdocs serve 
+```
+
+# Releasing
+```bash
+pip install -e ".[dev]"
+semantic-release publish --minor
+```
+
+This command will:
+- bump the verison number
+- create the git tag for the release
+- push the tag
+
+A github action will kick in to create the release in github when the tag is pushed.  The release will contain the files in the dist directory created by flit and license file.
+
+## Running the tool
+Prequisites:
+- AWS account
+- AWS profile setup 
+- AWS login with PROFILE and REGION defined in your environment via environment variables.
+
+This is a self documenting commandline application so once installed you can run the command below to explore the project.
+```bash
+infra_surveyor --help
+```
+
+# Dependencies
+- Graphviz - Graphing library
+- Boto3 - AWS SDK library
+- Click - A command line building library
+
+The following are not required dependencies for using the tool but are used in development
+
+| Tool                    | Description                          |
+|-------------------------|--------------------------------------|
+| black                   | code linter                          |
+| coverage                | used to generate code coverage stats |
+| docker                  | used to mock lambdas                 |
+| flit                    | Python package building              |
+| Github actions          | CI/CD processes                      |
+| mkdocs                  | Documentation builder                |
+| moto                    | AWS Mocking Library                  |
+| pytest                  | test runner                          |
+| python-semantic-release | Version management                   |
