@@ -1,0 +1,7 @@
+patch_based_inpainting/__init__.py,sha256=OCKON4dI6K49Bx9USuRgubna0idA0nTFaGqUCddj-SI,29
+patch_based_inpainting/inpaint.py,sha256=fwA4yhhJY9yXATwTimwCZN5B5lIkpEJ199IEQIDPS00,18123
+patch_based_inpainting-0.0.3.dist-info/LICENSE,sha256=d-1nV5BfNU-twemrC1mtjRSG8OlrlH-rHCMRcPQycFY,1067
+patch_based_inpainting-0.0.3.dist-info/METADATA,sha256=ZxkHWZg6Fjig1xZgWCfWUvEaZdsNhf4U948qjFtHMqk,434
+patch_based_inpainting-0.0.3.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+patch_based_inpainting-0.0.3.dist-info/top_level.txt,sha256=SXaL0twKQAXWrBRMceP6wrXjvlW2e0NxrzZef2i-mxQ,23
+patch_based_inpainting-0.0.3.dist-info/RECORD,,
