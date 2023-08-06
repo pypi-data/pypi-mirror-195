@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "logging-timehandler"
+version = "0.1.0"
+description = ""
+authors = ["jawide <596929059@qq.com>"]
+readme = "README.md"
+packages = [{include = "logging_timehandler"}]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

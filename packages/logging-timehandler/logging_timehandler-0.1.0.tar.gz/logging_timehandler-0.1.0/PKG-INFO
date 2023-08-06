@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: logging-timehandler
+Version: 0.1.0
+Summary: 
+Author: jawide
+Author-email: 596929059@qq.com
+Requires-Python: >=3.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+Log files are generated based on the time and the latest n logs are automatically retained
+
+# Example
+
+```python
+import logging
+import logging_timehandler
+
+logger = logging.getLogger(__name__)
+handler = logging_timehandler.TimeHandler('./log/%Y_%m_%d/%Y_%m_%d_%S.txt', retain=5)
+handler.setFormatter(logging.Formatter(logging.BASIC_FORMAT))
+logger.addHandler(handler)
+logger.setLevel(logging.INFO)
+
+for i in range(10):
+    logger.info('hello')
+```
