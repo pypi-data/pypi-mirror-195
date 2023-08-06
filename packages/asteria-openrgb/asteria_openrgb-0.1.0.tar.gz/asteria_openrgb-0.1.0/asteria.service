@@ -1,0 +1,9 @@
+[Unit]
+Description=Framework to automatically control LEDs via OpenRGB
+
+[Service]
+WorkingDirectory=/home/josh/projects/asteria
+ExecStart=/home/josh/projects/asteria/test-venv/bin/asteria config.toml
+
+[Install]
+WantedBy=multi-user.target

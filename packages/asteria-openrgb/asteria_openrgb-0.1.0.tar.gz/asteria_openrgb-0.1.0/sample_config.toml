@@ -1,0 +1,24 @@
+# The header has two levels: the OpenRGB device and zone
+# to which this instrument should be applied
+# Note: each zone could have multiple effects, so the double
+# brackets are required (this is a TOML array of tables)
+[["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1"]]
+
+# First, our instrument...
+["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1".instrument]
+type = "LinearHueRange"
+# That's hue as in "HSV hue"
+args = { lower_hue = 180, upper_hue = 360 }
+
+# ...next, our metric...
+["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1".metric]
+type = "get_sensor"
+# Path to my CPU temperature--see metrics.get_sensor for details
+args = { keys = ["k10temp-pci-00c3", "Tctl", "temp1_input"] }
+
+# ...and finally, our scale.
+["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1".scale]
+type = "linear"
+# i.e., map a value <= 40 to 0, >= 100 to 1, and use
+# linear interpolation between the two endpoints
+args = { lower = 40, upper = 100 }

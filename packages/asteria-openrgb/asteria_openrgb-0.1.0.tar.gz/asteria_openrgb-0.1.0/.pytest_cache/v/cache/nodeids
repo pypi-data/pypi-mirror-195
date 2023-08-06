@@ -1,0 +1,15 @@
+[
+  "tests/test_instruments.py::TestLinearHueRange::test_basic",
+  "tests/test_instruments.py::TestLinearHueRange::test_out_of_bounds",
+  "tests/test_instruments.py::TestPercentageBar::test_basic",
+  "tests/test_instruments.py::TestStaticColour::test_basic",
+  "tests/test_metrics.py::test_get_sensor",
+  "tests/test_scales.py::TestLinearScale::test_basic",
+  "tests/test_scales.py::TestLinearScale::test_failed",
+  "tests/test_scales.py::TestLinearScale::test_offset",
+  "tests/test_scales.py::TestLinearScale::test_too_high",
+  "tests/test_scales.py::TestLinearScale::test_too_low",
+  "tests/test_utils.py::TestClamp::test_too_high",
+  "tests/test_utils.py::TestClamp::test_too_low",
+  "tests/test_utils.py::TestClamp::test_within_bounds"
+]
