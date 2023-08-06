@@ -1,0 +1,2 @@
+[console_scripts]
+commentaire = commentaire.__main__:main
