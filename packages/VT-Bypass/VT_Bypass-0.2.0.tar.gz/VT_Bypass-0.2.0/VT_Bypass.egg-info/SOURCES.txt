@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+VT_Bypass/__init__.py
+VT_Bypass/main.py
+VT_Bypass.egg-info/PKG-INFO
+VT_Bypass.egg-info/SOURCES.txt
+VT_Bypass.egg-info/dependency_links.txt
+VT_Bypass.egg-info/requires.txt
+VT_Bypass.egg-info/top_level.txt
