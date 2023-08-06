@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+whisper_ane.egg-info/PKG-INFO
+whisper_ane.egg-info/SOURCES.txt
+whisper_ane.egg-info/dependency_links.txt
+whisper_ane.egg-info/not-zip-safe
+whisper_ane.egg-info/requires.txt
+whisper_ane.egg-info/top_level.txt
