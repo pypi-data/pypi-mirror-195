@@ -1,0 +1,17 @@
+trochilidae/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trochilidae/interoperable_filter.py,sha256=Y8XCJl87thGOmhVpHkx0_xU0IfliTHpuU0YqM162uFg,230
+trochilidae/interoperable_get_arg_spec.py,sha256=OMy5kCKoKx1KsiV7O3ndI6tSJWtwJKrZMbqc8GoAZTQ,260
+trochilidae/interoperable_map.py,sha256=ZddCNJKzXDCQhPx0hMMz_uBSgGtelpSnbgJW5WA9PQ8,209
+trochilidae/interoperable_reduce.py,sha256=g9DUV6jmRKZmydXGYvQieszlslAJBQL4jTPb6DG2gjk,228
+trochilidae/interoperable_with_metaclass.py,sha256=tkD9tvdvNPVPvppvTYC6fNnUZboFMM40yMw9E72lrSA,609
+trochilidae/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trochilidae/tests/test_interoperable_filter.py,sha256=NTsl2O9aZ9jbYQvIOzpJkBnhY28ROL5IDxdqg2yM23Q,217
+trochilidae/tests/test_interoperable_get_arg_spec.py,sha256=LMMOB8u9psQ0r6ShcfKAiVbNsmD_ODYXcPKARo9Lcm0,228
+trochilidae/tests/test_interoperable_map.py,sha256=yvqnEG1MzSILZTyEzsRPGPNgJIKuy1dKRBXjpHCHttI,208
+trochilidae/tests/test_interoperable_reduce.py,sha256=UAldW6w2hwatRwYIBq1MKms_qPYvGg6wtBGuPss89_w,217
+trochilidae/tests/test_interoperable_with_metaclass_import.py,sha256=j3awmC61z6TfiKQ9E8uWxGsW4jszS2kWZY6BDEQVHX4,443
+trochilidae-2.1.10.0.dist-info/LICENSE,sha256=Mw-NXh2OV5KbNBcC030315fvU7MvpVwlJVJfsrk9b5M,1070
+trochilidae-2.1.10.0.dist-info/METADATA,sha256=WjL-UePflToz5msK5WXMRGodUR-13Ci9FfYWwO71J9E,632
+trochilidae-2.1.10.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+trochilidae-2.1.10.0.dist-info/top_level.txt,sha256=i8UXBHNCuGuqzWBR-VF10eL9MwKKoSkzbBDOKqKjtGE,12
+trochilidae-2.1.10.0.dist-info/RECORD,,

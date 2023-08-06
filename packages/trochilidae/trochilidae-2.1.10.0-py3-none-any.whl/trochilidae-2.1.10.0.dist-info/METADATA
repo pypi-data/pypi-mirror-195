@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: trochilidae
+Version: 2.1.10.0
+Summary: version interoperability library
+Home-page: https://github.com/MATTHEWFRAZER/trochilidae
+Author: Matthew Frazer
+Author-email: mfrazeriguess@gmail.com
+License: UNKNOWN
+Keywords: version interoperability
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE
+Requires-Dist: future (==0.18.3)
+Requires-Dist: six (==1.12.0)
+
+UNKNOWN
+
