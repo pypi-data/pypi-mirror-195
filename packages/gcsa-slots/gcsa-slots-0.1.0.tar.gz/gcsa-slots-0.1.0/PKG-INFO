@@ -1,0 +1,101 @@
+Metadata-Version: 1.2
+Name: gcsa-slots
+Version: 0.1.0
+Summary: Simple API for Google Calendar management with slots extension (dates and times available for scheduling)
+Home-page: https://github.com/leandcesar/google-calendar-simple-api-slots
+Author: Leandro César Cassimiro
+Author-email: ccleandroc@gmail.com
+License: MIT
+Description: Google Calendar Simple API Slots
+        ================================
+        
+        `Google Calendar Simple API Slots` or `gcsa-slots` is an extension for `Google Calendar Simple API`_ library with slots (dates and times available for scheduling).
+        
+        Installation
+        ------------
+        
+        .. code-block:: console
+        
+            pip install gcsa-slots
+        
+        
+        See `Getting started page`_ for more details and installation options.
+        
+        Example usage
+        -------------
+        
+        List slots from free ranges (dates and times without events, available for scheduling)
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        .. code-block:: python
+        
+            from gcsa_slots.google_calendar import GoogleCalendar
+        
+            calendar = GoogleCalendar("your_email@gmail.com")
+            for slot in calendar.get_slots():
+                print(slot)
+        
+        
+        List slots from slot-event ranges (an event that determines availability for scheduling)
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        .. code-block:: python
+        
+            from gcsa_slots.google_calendar import GoogleCalendar
+        
+            calendar = GoogleCalendar("your_email@gmail.com")
+            for slot in calendar.get_slots(slot_summary="Free"):
+                print(slot)
+        
+        
+        List slots specifying time range, slot interval, max events per slot and calendar ID
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        .. code-block:: python
+        
+            from gcsa_slots.google_calendar import GoogleCalendar
+        
+            calendar = GoogleCalendar("your_email@gmail.com")
+            calendar_id = "your calendar id"
+            for slot in calendar.get_slots(
+                slot_summary="fReE",
+                case_sensitive=False,
+                time_min=datetime(2023, 3, 6),
+                time_max=datetime(2023, 3, 7),
+                slot_duration=90,
+                events_per_slot=3,
+                calendar_id=calendar_id,
+            ):
+                print(slot)
+        
+        
+        Create event in first available slot
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        .. code-block:: python
+        
+            from gcsa_slots.google_calendar import GoogleCalendar
+        
+            calendar = GoogleCalendar("your_email@gmail.com")
+            slots = calendar.get_slots()
+            slot = next(slots)
+            slot.summary = "This is a test!"
+            calendar.add_event(slot)
+        
+        
+        .. _`Google Calendar Simple API`: https://github.com/kuzmoyev/google-calendar-simple-api
+        .. _`Getting started page`: https://google-calendar-simple-api.readthedocs.io/en/latest/getting_started.html
+        
+Keywords: python,conference,calendar,hangouts,python-library,event,conferences,google-calendar,pip,recurrence,google-calendar-api,attendee,gcsa,gcsa-slots,slots,scheduling
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7

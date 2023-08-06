@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+gcsa_slots/__init__.py
+gcsa_slots/google_calendar.py
+gcsa_slots/slots.py
+gcsa_slots.egg-info/PKG-INFO
+gcsa_slots.egg-info/SOURCES.txt
+gcsa_slots.egg-info/dependency_links.txt
+gcsa_slots.egg-info/not-zip-safe
+gcsa_slots.egg-info/requires.txt
+gcsa_slots.egg-info/top_level.txt
