@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: vk_scripts
+Version: 1.0.3
+Summary: Scripts to stalk people on VK
+Author-email: Egor Tensin <Egor.Tensin@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/egor-tensin/vk-scripts
+Project-URL: Bug Tracker, https://github.com/egor-tensin/vk-scripts/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+VK scripts
+==========
+
+[![CI](https://github.com/egor-tensin/vk-scripts/actions/workflows/ci.yml/badge.svg)](https://github.com/egor-tensin/vk-scripts/actions/workflows/ci.yml)
+
+Scripts to stalk people on VK.
+
+Installation
+------------
+
+    pip install vk-scripts
+
+
+Python 3.4 or higher is required.
+`vk-sessions` uses [matplotlib].
+
+[matplotlib]: http://matplotlib.org/
+
+Usage
+-----
+
+* [vk-mutuals] &mdash; Learn who your ex and her new boyfriend are both friends
+with.
+* [vk-status] &mdash; Track when people go online/offline.
+* [vk-sessions] &mdash; View/visualize the amount of time people spend online.
+
+[vk-mutuals]: docs/mutuals.md
+[vk-status]: docs/status.md
+[vk-sessions]: docs/sessions.md
+
+Development
+-----------
+
+### Linting
+
+Requires [Pylint].
+
+    pylint vk
+
+[Pylint]: https://www.pylint.org/
+
+License
+-------
+
+Distributed under the MIT License.
+See [LICENSE.txt] for details.
+
+[LICENSE.txt]: LICENSE.txt

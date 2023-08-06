@@ -1,0 +1,7 @@
+[MESSAGES CONTROL]
+
+disable=invalid-name,missing-docstring,multiple-imports,too-many-public-methods,too-few-public-methods
+
+[BASIC]
+
+bad-functions=
