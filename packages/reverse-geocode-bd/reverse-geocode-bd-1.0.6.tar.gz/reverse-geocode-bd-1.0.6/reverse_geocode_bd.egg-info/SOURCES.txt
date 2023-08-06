@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+reverse_geocode_bd/__init__.py
+reverse_geocode_bd/small_bangladesh_geojson_adm4_5160_unions_thanas.json
+reverse_geocode_bd.egg-info/PKG-INFO
+reverse_geocode_bd.egg-info/SOURCES.txt
+reverse_geocode_bd.egg-info/dependency_links.txt
+reverse_geocode_bd.egg-info/top_level.txt
