@@ -1,0 +1,128 @@
+Metadata-Version: 2.1
+Name: imgraph
+Version: 0.0.5
+Summary: Graph Neural Network Library Built On Top Of  PyTorch and PyTorch Geometric
+Author-email: Aryan Singh <aryan.singh@ul.ie>
+Project-URL: homepage, https://aryan-at-ul.github.io
+Project-URL: documentation, https://aryan-at-ul.github.io
+Project-URL: repository, https://github.com/aryan-at-ul/imgraph.git
+Keywords: deep-learning,pytorch,geometric-deep-learning,graph-neural-networks,graph-convolutional-networks,gnn-on-images
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: yacs
+Requires-Dist: hydra-core
+Requires-Dist: protobuf (<4.21)
+Requires-Dist: pytorch-lightning
+Requires-Dist: huggingface-hub
+Requires-Dist: ase
+Requires-Dist: h5py
+Requires-Dist: numba
+Requires-Dist: sympy
+Requires-Dist: pandas
+Requires-Dist: captum
+Requires-Dist: rdflib
+Requires-Dist: trimesh
+Requires-Dist: networkx
+Requires-Dist: graphviz
+Requires-Dist: tabulate
+Requires-Dist: matplotlib
+Requires-Dist: torchmetrics
+Requires-Dist: scikit-image
+Requires-Dist: pytorch-memlab
+Requires-Dist: pgmpy
+Requires-Dist: opt-einsum
+Requires-Dist: statsmodels
+Requires-Dist: opencv-python
+Requires-Dist: timm
+Requires-Dist: torchvision
+Requires-Dist: torch-scatter
+Requires-Dist: torch-sparse
+Requires-Dist: torch-cluster
+Requires-Dist: torch-geometric
+Requires-Dist: torch-spline-conv
+Requires-Dist: torch-geometric-temporal
+Requires-Dist: torch
+Provides-Extra: benchmark
+Requires-Dist: protobuf (<4.21) ; extra == 'benchmark'
+Requires-Dist: wandb ; extra == 'benchmark'
+Requires-Dist: pandas ; extra == 'benchmark'
+Requires-Dist: networkx ; extra == 'benchmark'
+Requires-Dist: matplotlib ; extra == 'benchmark'
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: onnx ; extra == 'dev'
+Requires-Dist: onnxruntime ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Provides-Extra: full
+Requires-Dist: yacs ; extra == 'full'
+Requires-Dist: hydra-core ; extra == 'full'
+Requires-Dist: protobuf (<4.21) ; extra == 'full'
+Requires-Dist: pytorch-lightning ; extra == 'full'
+Requires-Dist: huggingface-hub ; extra == 'full'
+Requires-Dist: ase ; extra == 'full'
+Requires-Dist: h5py ; extra == 'full'
+Requires-Dist: numba ; extra == 'full'
+Requires-Dist: sympy ; extra == 'full'
+Requires-Dist: pandas ; extra == 'full'
+Requires-Dist: captum ; extra == 'full'
+Requires-Dist: rdflib ; extra == 'full'
+Requires-Dist: trimesh ; extra == 'full'
+Requires-Dist: networkx ; extra == 'full'
+Requires-Dist: graphviz ; extra == 'full'
+Requires-Dist: tabulate ; extra == 'full'
+Requires-Dist: matplotlib ; extra == 'full'
+Requires-Dist: torchmetrics ; extra == 'full'
+Requires-Dist: scikit-image ; extra == 'full'
+Requires-Dist: pytorch-memlab ; extra == 'full'
+Requires-Dist: pgmpy ; extra == 'full'
+Requires-Dist: opt-einsum ; extra == 'full'
+Requires-Dist: statsmodels ; extra == 'full'
+Requires-Dist: opencv-python ; extra == 'full'
+Requires-Dist: timm ; extra == 'full'
+Requires-Dist: torchvision ; extra == 'full'
+Requires-Dist: torch-scatter ; extra == 'full'
+Requires-Dist: torch-sparse ; extra == 'full'
+Requires-Dist: torch-cluster ; extra == 'full'
+Requires-Dist: torch-geometric ; extra == 'full'
+Requires-Dist: torch-spline-conv ; extra == 'full'
+Requires-Dist: torch-geometric-temporal ; extra == 'full'
+Requires-Dist: torch ; extra == 'full'
+Provides-Extra: graphgym
+Requires-Dist: yacs ; extra == 'graphgym'
+Requires-Dist: hydra-core ; extra == 'graphgym'
+Requires-Dist: protobuf (<4.21) ; extra == 'graphgym'
+Requires-Dist: pytorch-lightning ; extra == 'graphgym'
+Provides-Extra: modelhub
+Requires-Dist: huggingface-hub ; extra == 'modelhub'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: onnx ; extra == 'test'
+Requires-Dist: onnxruntime ; extra == 'test'
+
+# IMGRAPH 
+
+### Used for converting image to graph, uses superpixel method for node creation, extract features from CNN models. 
+
+Example Usage: 
+
+```
+from imgraph import image_to_graph,draw_graph_as_image
+
+#use a test image
+#model_name  -> default resnet18, possible value densenet121 and efficientnet-b0
+g,seg = image_to_graph('test.jpeg', n_segments = 10, model_name = "densenet121")
+
+
+draw_graph_as_image(g,seg)
+```
+
