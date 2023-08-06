@@ -1,0 +1,7 @@
+genai/__init__.py,sha256=bDP0c0HuaeiY__zMHdKOvgZ_XEw8dEB_oXDScm8hG_s,192
+genai/assist.py,sha256=9AxIpMAp-01yN7g94rVkhzq_qtHcBjM2dhCBzn-U-1w,8437
+genai/components.py,sha256=VbfGhkOeAfe-a7JXDhblV_oiOHlGW9TTqg_unxdEEqg,1700
+genai/suggestions.py,sha256=LKaYSFO12zivKN36Vn6VhBRzgOgwgPrBsfcC-M5m624,2456
+genai-0.8.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+genai-0.8.0.dist-info/METADATA,sha256=IwfuDX_4egblpncRrpZF5-YjuZNahVXGHVO3vHsqV1E,361
+genai-0.8.0.dist-info/RECORD,,

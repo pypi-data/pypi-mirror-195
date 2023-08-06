@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: genai
+Version: 0.8.0
+Summary: 
+Author: Kyle Kelley
+Author-email: rgbkrk@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: openai (>=0.27.0,<0.28.0)
+Requires-Dist: vdom (>=0.6,<0.7)
