@@ -1,0 +1,5 @@
+setup.py
+tomisin_search_util.egg-info/PKG-INFO
+tomisin_search_util.egg-info/SOURCES.txt
+tomisin_search_util.egg-info/dependency_links.txt
+tomisin_search_util.egg-info/top_level.txt
