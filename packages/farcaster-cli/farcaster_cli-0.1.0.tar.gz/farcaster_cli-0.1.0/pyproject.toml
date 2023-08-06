@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "farcaster-cli"
+version = "0.1.0"
+description = "Farcaster CLI Client"
+authors = ["Mason Hall <masonhall@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.scripts]
+farcaster-cli = "farcaster_cli.main:start"
+
+[tool.poetry.dependencies]
+python = "^3.7.2"
+farcaster = "^0.7.2"
+typer = {extras = ["all"], version = "^0.7.0"}
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 80
