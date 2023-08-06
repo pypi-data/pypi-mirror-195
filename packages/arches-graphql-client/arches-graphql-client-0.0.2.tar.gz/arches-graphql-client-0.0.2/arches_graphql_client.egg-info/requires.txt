@@ -1,0 +1,7 @@
+gql
+pandas
+dateparser
+geopandas
+shapely
+geojson
+pyproj
