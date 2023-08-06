@@ -1,0 +1,9 @@
+README.md
+vestpackage/__init__.py
+vestpackage/__main__.py
+vestpackage/replace_package.py
+vestpackage.egg-info/PKG-INFO
+vestpackage.egg-info/SOURCES.txt
+vestpackage.egg-info/dependency_links.txt
+vestpackage.egg-info/entry_points.txt
+vestpackage.egg-info/top_level.txt
