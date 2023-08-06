@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/scikit_fibers.egg-info/PKG-INFO
+src/scikit_fibers.egg-info/SOURCES.txt
+src/scikit_fibers.egg-info/dependency_links.txt
+src/scikit_fibers.egg-info/requires.txt
+src/scikit_fibers.egg-info/top_level.txt
+src/skfibers/__init__.py
+src/skfibers/fibers.py
+src/skfibers/methods.py
+tests/test_common_separation.py
+tests/test_crossover_mutation.py
