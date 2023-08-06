@@ -1,0 +1,6 @@
+docker_pyo3-0.1.4.dist-info/METADATA,sha256=fGsfginGp6IGIHPheabd2CTYJ9KEGbaAqK4Pz0BzC2M,3626
+docker_pyo3-0.1.4.dist-info/WHEEL,sha256=C-x-ymum3wFahbdmHoKDO0ImMDCuUY7GbGKfJ2xB1qg,107
+docker_pyo3.libs/libgcc_s-d7088d38.so.1,sha256=eruenD4WU9j8z1O_nkRT5IW55VHdj1SnpqEnqwzjVx0,724137
+docker_pyo3/__init__.py,sha256=wQH6SjVYI-kk-D3n2a5z3RgzCsgAM9CCEGn49gl31KQ,127
+docker_pyo3/docker_pyo3.cpython-38-aarch64-linux-gnu.so,sha256=dRhr_fwwmIr1fbIrqfx6e0qyravpPA5Kj01fFWNyN3o,10554665
+docker_pyo3-0.1.4.dist-info/RECORD,,
