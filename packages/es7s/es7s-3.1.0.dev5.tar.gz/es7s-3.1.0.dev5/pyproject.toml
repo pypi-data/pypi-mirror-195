@@ -1,0 +1,121 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "es7s"
+dynamic = ["version"]
+description = "es7s system (un-)installer, shared code, settings manager"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+platforms = ["linux"]
+keywords = [
+    "es7s", "cli", "terminal"
+]
+authors = [
+    { name = "Aleksandr Shavykin", email = "0.delameter@gmail.com" },
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Environment :: Console",
+    "Environment :: No Input/Output (Daemon)",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Terminals",
+]
+dependencies = [
+    "pydeps~=1.1.0",
+    "pytest~=7.1",
+]
+
+[project.scripts]
+es7s = "es7s.cli.__main__:main"
+es7s-daemon = "es7s.d.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/es7s/core"
+
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/es7s",
+    "/tests",
+]
+
+[tool.hatch.envs.default]
+dependencies = [
+    "setuptools~=65.3",
+    "pip~=22.0",
+    "build~=0.8",
+    "twine~=4.0",
+    "pytest~=7.1",
+    "coverage[toml]~=6.4",
+    "pydeps~=1.10",
+    "flake8~=5.0",
+    "line-profiler-pycharm~=1.1.0",
+]
+
+[tool.hatch.envs.test]
+extra-dependencies = [
+    "pytermor @ git+ssh://git@github.com/delameter/pytermor@dev",
+]
+
+[tool.hatch.envs.dev]
+extra-dependencies = [
+    "pytermor @ file:///home/a.shavykin/dl/pytermor",
+]
+
+[tool.hatch.envs.default.scripts]
+invoke = "python -m es7s.cli"
+version = "invoke -V"
+run-tests = "pytest tests"
+run-coverage = "coverage run -m pytest; coverage html"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.version]
+path = "es7s/_version.py"
+
+# ---------------------------------------------------------
+
+[flake8]
+max-line-length = 100
+extend-ignore = ["E203", "E227"]
+
+[tool.black]
+line-length = 100
+target-version = ['py310']
+
+[tool.coverage.run]
+source = "es7s"
+branch = "True"
+omit = [
+    "*/__init__.py",
+    "pytermor/__main__.py",
+]
+dynamic_context = "test_function"
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no zcover",
+    "def __repr__",
+    "if self.debug",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+]
+ignore_errors = "True"
+
+[tool.coverage.html]
+directory = "misc/coverage"
+title = "es7s coverage report"
+
+# ---------------------------------------------------------
