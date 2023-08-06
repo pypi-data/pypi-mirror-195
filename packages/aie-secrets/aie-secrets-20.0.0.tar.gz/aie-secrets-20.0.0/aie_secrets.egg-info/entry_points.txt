@@ -1,0 +1,2 @@
+[console_scripts]
+aie-secrets = aie_secrets.__main__:main
