@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: gim-cv
+Version: 0.0.1
+Summary: GIM Model
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+## Geo GIM Model Package
