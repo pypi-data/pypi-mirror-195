@@ -1,0 +1,3 @@
+[console_scripts]
+sms-cli = cli.main:main
+
