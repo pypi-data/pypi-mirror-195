@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+testforPPshare/__init__.py
+testforPPshare.egg-info/PKG-INFO
+testforPPshare.egg-info/SOURCES.txt
+testforPPshare.egg-info/dependency_links.txt
+testforPPshare.egg-info/requires.txt
+testforPPshare.egg-info/top_level.txt
+testforPPshare/stock/__init__.py
+testforPPshare/stock/bor.py
+testforPPshare/stock/cons.py
+testforPPshare/stock/easymoney.py
+testforPPshare/stock/shibor.py
+testforPPshare/util/__init__.py
+testforPPshare/util/text.py
