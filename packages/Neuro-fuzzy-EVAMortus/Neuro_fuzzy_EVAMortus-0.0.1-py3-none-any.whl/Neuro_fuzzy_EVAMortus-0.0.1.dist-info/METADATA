@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Neuro-fuzzy-EVAMortus
+Version: 0.0.1
+Summary: Fuzzy output module
+Home-page: 
+Author: Ermakov Vitaliy
+Author-email: blackcheshireshusband@yandex.ru
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: math
+Requires-Dist: typing
+
