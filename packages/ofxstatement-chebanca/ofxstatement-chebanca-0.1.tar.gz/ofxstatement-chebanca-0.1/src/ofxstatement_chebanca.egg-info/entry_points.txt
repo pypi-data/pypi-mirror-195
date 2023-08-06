@@ -1,0 +1,3 @@
+[ofxstatement]
+chebanca = ofxstatement.plugins.chebanca:CheBancaPlugin
+
