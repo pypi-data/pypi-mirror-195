@@ -1,0 +1,16 @@
+AUTHORS.md
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+magali/__init__.py
+magali/_version.py
+magali/_version_generated.py
+magali.egg-info/PKG-INFO
+magali.egg-info/SOURCES.txt
+magali.egg-info/dependency_links.txt
+magali.egg-info/requires.txt
+magali.egg-info/top_level.txt
+magali.egg-info/zip-safe
+magali/tests/__init__.py

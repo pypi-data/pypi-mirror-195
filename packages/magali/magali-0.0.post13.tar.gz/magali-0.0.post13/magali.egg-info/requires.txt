@@ -1,0 +1,6 @@
+numpy>=1.19
+xarray>=0.16
+scikit-image>=0.18
+harmonica>=0.6
+verde>=1.7
+choclo>=0.0.1
