@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+Mensajes_Wilmar.egg-info/PKG-INFO
+Mensajes_Wilmar.egg-info/SOURCES.txt
+Mensajes_Wilmar.egg-info/dependency_links.txt
+Mensajes_Wilmar.egg-info/requires.txt
+Mensajes_Wilmar.egg-info/top_level.txt
+mensajes/__init__.py
+mensajes/adios/__init__.py
+mensajes/adios/despedidas.py
+mensajes/hola/__init__.py
+mensajes/hola/saludos.py
+tests/__init__.py
+tests/test_hola.py
