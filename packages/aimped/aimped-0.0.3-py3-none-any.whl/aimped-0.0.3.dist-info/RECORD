@@ -1,0 +1,17 @@
+aimped/__init__.py,sha256=pznrGgIXnD6xYVLEqmzjosvgBiM0tZwR_BA6DYaWrWY,187
+aimped/models.py,sha256=m45pv1InZ8MVfW_kMMoki20GZt8m2ed9956TRNwLkfg,271
+aimped/utils.py,sha256=5OIiSwqwDdgEUv4DoADFPYZsm6B3lnCqI3hi1OhpkEQ,214
+aimped/version.py,sha256=C-7FYmniDPC5JSJyEyEpqT3cO_DyGlDZ5uPw-s5VoOU,69
+aimped/dataset/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aimped/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aimped/nlp/__init__.py,sha256=DgzzP4wLW49nAQ-9KitUj8wTP0Inyl9gjYTEW06uqsc,112
+aimped/nlp/cleaner.py,sha256=2kdD62hOJXWu9DXL7ysPsqwIFABSn5JtbJ7NlCC3Wxc,1251
+aimped/nlp/pipeline.py,sha256=PRR6xteSIZsBIXy25MWT0G4oKYFk92TqLHr2ciPLci0,128
+aimped/nlp/regex_parser.py,sha256=ADTfKOmkQJBAiKFsFE0MTFBgDdQ7TWqESJokVJ65qcM,3339
+aimped/nlp/tokenizer.py,sha256=rsemDMG17fRsmMcZMIvoJHB5iZt18Qk6EwSweb81Pbc,1089
+aimped/train/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aimped-0.0.3.dist-info/LICENSE,sha256=9ZdmD0WezL9em4aGuIa8VNln-R3yhcbyihtX5NtkOKw,1085
+aimped-0.0.3.dist-info/METADATA,sha256=EIoJi7hAmL7fvAyWViK8CyOcSZxwdPDA2FG2AJDVY_c,673
+aimped-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aimped-0.0.3.dist-info/top_level.txt,sha256=vch55frDsyAVh5bCgUtZuoG8aqiEwZ2qwTeQHJJYwqM,7
+aimped-0.0.3.dist-info/RECORD,,
