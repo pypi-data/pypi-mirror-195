@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+generest/__init__.py
+generest.egg-info/PKG-INFO
+generest.egg-info/SOURCES.txt
+generest.egg-info/dependency_links.txt
+generest.egg-info/requires.txt
+generest.egg-info/top_level.txt
+generest.egg-info/zip-safe
+generest/cli/__init__.py
+tests/__init__.py
+tests/unit/__init__.py
+tests/unit/test_general.py
