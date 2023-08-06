@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: getdefgateway
+Version: 0.10
+Summary: Gets the default gateway (Windows only)
+Home-page: https://github.com/hansalemaos/getdefgateway
+Author: Johannes Fischer
+Author-email: <aulasparticularesdealemaosp@gmail.com>
+License: MIT
+Keywords: gateway
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Editors :: Text Processing
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+
+
+# Gets the default gateway (Windows only)
+
+
+
+## pip install getdefgateway
+
+
+
+### Tested against Python 3.9.15 / Windows 10 / Anaconda 
+
+
+
+
+
+```python
+
+
+
+from getdefgateway import get_default_gateway
+
+get_default_gateway()
+
+
+
+'117.11.21.12'
+
+
+
+```
