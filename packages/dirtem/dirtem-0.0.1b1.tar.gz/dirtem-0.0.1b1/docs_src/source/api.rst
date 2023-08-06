@@ -1,0 +1,7 @@
+***
+API
+***
+
+.. automodule:: dirtem
+   :members:
+

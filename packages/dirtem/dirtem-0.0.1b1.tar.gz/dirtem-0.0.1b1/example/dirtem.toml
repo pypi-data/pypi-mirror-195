@@ -1,0 +1,18 @@
+[jinja]
+select = ["{{foo}}.txt"]
+select-mode = "exclude"
+
+[fs]
+select = ["DONOTCOPYME"]
+select-mode = "exclude"
+
+[debug]
+generate-metadata-file = true
+
+[debug.metadata-add]
+foo = "foo"
+
+[default-variables]
+foo = "myfile"
+null = ""
+nulldir = ""

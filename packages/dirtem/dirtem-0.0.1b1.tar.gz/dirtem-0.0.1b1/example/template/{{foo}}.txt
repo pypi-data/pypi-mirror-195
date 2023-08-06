@@ -1,0 +1,2 @@
+{# isjinja #}
+This file is named {{ foo }}.txt.
