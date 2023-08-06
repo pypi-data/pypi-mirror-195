@@ -1,0 +1,6 @@
+license.txt
+setup.py
+LibraCodex.egg-info/PKG-INFO
+LibraCodex.egg-info/SOURCES.txt
+LibraCodex.egg-info/dependency_links.txt
+LibraCodex.egg-info/top_level.txt
