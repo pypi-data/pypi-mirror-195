@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: google_ldap3
+Version: 0.0.11
+Summary: UNKNOWN
+Home-page: https://github.com/462548187/google-ldap3.git
+Author: Leo
+Author-email: yshan20@su.edu
+License: LGPL v3
+Keywords: python3 python2 ldap
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Systems Administration :: Authentication/Directory :: LDAP
+License-File: LICENSE
+
+google-ldap3 is developed based on the original DAP3, removes the problems related to the time stamp obtained by google, and merges and packages it to generate.
+
+If there is a problem with LDAP3 during use, please consult the original ldap3 team
+LDAP3 address: https://github.com/cannatag/ldap3.git
+
