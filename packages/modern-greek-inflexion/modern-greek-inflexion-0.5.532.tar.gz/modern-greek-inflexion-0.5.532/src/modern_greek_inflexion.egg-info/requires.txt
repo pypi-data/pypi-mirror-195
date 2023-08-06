@@ -1,0 +1,4 @@
+modern-greek-accentuation>=0.581
+
+[testing]
+tox>=3.24
