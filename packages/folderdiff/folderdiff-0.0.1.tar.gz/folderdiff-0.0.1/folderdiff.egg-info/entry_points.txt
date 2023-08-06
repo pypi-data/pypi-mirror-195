@@ -1,0 +1,3 @@
+[console_scripts]
+folderdiff = folderdiff.cli:main
+

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+folderdiff/__init__.py
+folderdiff/__version__.py
+folderdiff/cli.py
+folderdiff.egg-info/PKG-INFO
+folderdiff.egg-info/SOURCES.txt
+folderdiff.egg-info/dependency_links.txt
+folderdiff.egg-info/entry_points.txt
+folderdiff.egg-info/top_level.txt
