@@ -1,0 +1,11 @@
+teleapp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+teleapp/teleapp.py,sha256=GhpF0Qlaj2VTpXCYnrrHRHXD0grSaYGuOjtm6m0wm0k,262
+teleapp/cmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+teleapp/cmd/cmd.cpython-38-x86_64-linux-gnu.so,sha256=QejHSAgqUAEstD-QB4Fu3FLTK2lfMBddfGgikOKjR4c,55648
+teleapp/const/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+teleapp/const/click_setting.cpython-38-x86_64-linux-gnu.so,sha256=YiZKIPxbfAwUcpMG7bULjkQsWyOxeuu6D0phBSAvwdM,28352
+teleapp-0.1.1.dist-info/METADATA,sha256=s4FJcYG0GYCFPK7fLM3MTHPA6XopPzX4iA9i7bqJhGc,480
+teleapp-0.1.1.dist-info/WHEEL,sha256=w1d_q2QQYYWFjc1BOr71GnX8BifSnUvEochN_fqB7tA,108
+teleapp-0.1.1.dist-info/entry_points.txt,sha256=H_uFG4ET9L8PlP15nQfr5cQjFPR6ZM77qAo2iOCB-_c,48
+teleapp-0.1.1.dist-info/top_level.txt,sha256=G3Rrxv-NGa5KIrAY1hyXAaB1atDue3_cmd_Xd4R_c-A,8
+teleapp-0.1.1.dist-info/RECORD,,
