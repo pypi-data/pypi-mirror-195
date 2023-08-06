@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+micromind.egg-info/PKG-INFO
+micromind.egg-info/SOURCES.txt
+micromind.egg-info/dependency_links.txt
+micromind.egg-info/entry_points.txt
+micromind.egg-info/requires.txt
+micromind.egg-info/top_level.txt
+tests/test_networks.py
