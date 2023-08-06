@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: mwclient-contenttranslation
+Version: 0.1.0
+Summary: Wikipedia ContentTranslation (CXServer) API wrapper to be used with mwclient
+Author: Hung-I Wang
+Author-email: whygowe@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: mwclient (>=0.10.1,<0.11.0)
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# mwclient-contenttranslation
+The wrapper of ContentTranslation (CXServer) API of Wikipedia to be used with mwclient.
+
+## Usage
+Install via PyPI: `pip install mwclient-contenttranslation`
+```
+from mwclient import Site
+from mwclient_contenttranslation import CxTranslator
+site = Site("en.wikipedia.org")
+site.login(USERNAME, PASSWORD)
+translator = CxTranslator(site)
+translator.translate_text(["小熊維尼", "蜂蜜罐", "小熊維尼掉進蜂蜜罐"])
+# ['Winnie the Pooh', 'honey pot', 'Winnie the Pooh fell into a jar of honey']
+```
+
+## Disclaimer
+Intended for good use only. Never abuse it.
+

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "mwclient-contenttranslation"
+version = "0.1.0"
+description = "Wikipedia ContentTranslation (CXServer) API wrapper to be used with mwclient"
+authors = ["Hung-I Wang <whygowe@gmail.com>"]
+readme = "README.md"
+packages = [{include = "mwclient_contenttranslation"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mwclient = "^0.10.1"
+requests = "^2.28.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
