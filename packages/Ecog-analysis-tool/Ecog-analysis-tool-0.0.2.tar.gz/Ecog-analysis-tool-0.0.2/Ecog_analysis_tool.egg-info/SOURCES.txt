@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+Ecog-analysis-tool/WaveAnalysisFun.py
+Ecog-analysis-tool/WaveletFun.py
+Ecog-analysis-tool/__init__.py
+Ecog-analysis-tool/plotting.py
+Ecog-analysis-tool/preprocessing.py
+Ecog_analysis_tool.egg-info/PKG-INFO
+Ecog_analysis_tool.egg-info/SOURCES.txt
+Ecog_analysis_tool.egg-info/dependency_links.txt
+Ecog_analysis_tool.egg-info/requires.txt
+Ecog_analysis_tool.egg-info/top_level.txt
