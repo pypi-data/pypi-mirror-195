@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+shawid/__init__.py
+shawid.egg-info/PKG-INFO
+shawid.egg-info/SOURCES.txt
+shawid.egg-info/dependency_links.txt
+shawid.egg-info/top_level.txt

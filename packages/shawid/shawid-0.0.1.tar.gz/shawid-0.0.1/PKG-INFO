@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: shawid
+Version: 0.0.1
+Summary: Hardware-Id Auth using pastebin.com and SHA256 for whitelisting
+Home-page: 
+Author: 64biit
+Author-email: sixtyfourblit@gmail.com
+License: MIT
+Keywords: calculator
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+This is a authentification for your Python projects. It uses my Shacrypt library for encrypting the hardware-ids. The hwids are stored on Pastebin, where you can easily add and remove the hwids, giving you full control of your software at any time.
