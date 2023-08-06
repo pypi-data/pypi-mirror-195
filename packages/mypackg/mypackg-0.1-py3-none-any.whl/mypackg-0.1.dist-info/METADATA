@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mypackg
+Version: 0.1
+Summary: Testing installation of Package
+Author: Pooja
+Author-email: Pooja.Surwase@fractal.ai
+License: MIT
+License-File: LICENCE
+Requires-Dist: pandas
+Requires-Dist: requests
+
