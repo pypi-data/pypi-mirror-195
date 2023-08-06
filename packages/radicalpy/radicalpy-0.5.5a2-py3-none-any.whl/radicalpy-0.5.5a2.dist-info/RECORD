@@ -1,0 +1,15 @@
+radicalpy/__init__.py,sha256=8QwFSsUFq0eOCtS-eANNucnsb7DdXvOW-vP9rTPKC7s,311
+radicalpy/classical.py,sha256=ZN2q9szqdLRuLWMCLMOHVD5uMCOngV8kTOPb6lt3zb4,4113
+radicalpy/data.py,sha256=eOgFbOXEQrLOVzYGtSVSF084PgyLy_wdQa7PuNdGHnw,16063
+radicalpy/estimations.py,sha256=a2lEICkz32OsA4TncC8sRguEwSih8KARPh1T-6TKaYA,19367
+radicalpy/kinetics.py,sha256=K7HHHdKMK6uXqiSdqaQiW6lVLODNIbna7IxGYG7yv0A,5054
+radicalpy/plot.py,sha256=kOM17ItA9QBeNwjGwPa9YYJPY9MqTjtw5An7TtW0p_M,6252
+radicalpy/relaxation.py,sha256=pW7h7yzmt_OcdFYoRvPeJIiUr2-asqsXKb6_WLwP0nk,9710
+radicalpy/shared.py,sha256=lanthVe25nDSQ21obhojFICZa6kwltMjz-CoOtS9d_o,1007
+radicalpy/simulation.py,sha256=ZT4YbUcHuSIuuLCHuk7ZedK0mjKsi4zoletqVaTOjVg,25107
+radicalpy/utils.py,sha256=P3422OajA1VNXZu-LfcTlztR7P_wnjH3YOP0_07kGek,11859
+radicalpy-0.5.5a2.dist-info/LICENSE,sha256=sw8yJEtj4G1VTpPSc37jEC5uKEHWT5Q7RyQtlrdFTD0,1068
+radicalpy-0.5.5a2.dist-info/METADATA,sha256=76c2UkGy0HqnhYuHrqV-wvh74n47yHMrJxWN_KJJN-4,1595
+radicalpy-0.5.5a2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+radicalpy-0.5.5a2.dist-info/top_level.txt,sha256=a-V_5fFMqA1DGjmgk2aL4tgWQ4JyAifIMYx4j6r_pzY,10
+radicalpy-0.5.5a2.dist-info/RECORD,,
