@@ -1,0 +1,6 @@
+sanic
+lxml
+argh
+requests
+beautifulsoup4
+elasticsearch<7.0.0,>=6.0.0

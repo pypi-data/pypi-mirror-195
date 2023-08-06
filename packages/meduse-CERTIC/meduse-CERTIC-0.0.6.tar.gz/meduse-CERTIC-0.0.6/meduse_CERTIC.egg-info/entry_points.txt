@@ -1,0 +1,2 @@
+[console_scripts]
+meduse = meduse.__main__:run_cli
