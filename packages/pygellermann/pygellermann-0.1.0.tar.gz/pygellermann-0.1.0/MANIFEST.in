@@ -1,0 +1,7 @@
+include *.md *.yaml
+
+graft docs
+graft tests
+graft scripts
+
+global-exclude *.py[cod]
