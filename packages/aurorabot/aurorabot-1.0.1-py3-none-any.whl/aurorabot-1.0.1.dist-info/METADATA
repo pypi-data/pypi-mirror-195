@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: aurorabot
+Version: 1.0.1
+Summary: A small fortnite lobbybot package to host and create some
+Author: Zockerwolf76
+Project-URL: Homepage, https://github.com/zockerwolf76/aurorabots
+Project-URL: Bug Tracker, https://github.com/zockerwolf76/aurorabots/issues
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+create your own fortnite lobbybots within minutes and host them 24/7

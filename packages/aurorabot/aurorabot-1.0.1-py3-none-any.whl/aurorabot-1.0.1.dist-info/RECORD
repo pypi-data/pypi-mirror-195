@@ -1,0 +1,16 @@
+aurorabot/__init__.py,sha256=HsPWzDI6hrdxGDccK0HWwWEFfBYtbnHdHQoCW_EGbvA,385
+aurorabot/bot.py,sha256=SaEp7lM9hlYBx_F-OfSLHIhsEzSKojbsSfJjojYGA8o,1586
+aurorabot/cosmetic.py,sha256=4f38-HCt7z1fponr-Eu-YeLTb-bPhQcxH8Y0Ar4adXk,8916
+aurorabot/cosmeticshortcuts.py,sha256=6aRc1ifCwp5NU3REjkV80Ub52BMKR5ocGdac7JFKUfU,6702
+aurorabot/deviceauths.py,sha256=9A8l-D3LR9pnYD7FhxfH0t8dUWPaoYnTJOLd7pIGz_w,2057
+aurorabot/errors.py,sha256=lMF17Xa8MBQX8qmuIHP-des2rTJdG_dzWDayGxS1Qnk,151
+aurorabot/events.py,sha256=o4IwSX4ybdzs4K2JP2TrGaupO-eZPdkkSurWjeUOA_E,6160
+aurorabot/generator.py,sha256=mPshBgy5xO9Lyc4XRqnBR8weVH7PYl2eLQrjdIspCXk,6352
+aurorabot/owner.py,sha256=K00SBrARIJvHfJjSwthLkqyiFQd6s05u5sGsKldsSSw,9011
+aurorabot/party.py,sha256=USwQTs4iOdY_Reun6trN8cvSbB7aSUvXP12YE9P1lvY,2957
+aurorabot/settings.py,sha256=4Pl2sCTwtQRT6nIGmzIkYFsHuguHMhY5wd8jp2JOb5A,3190
+aurorabot-1.0.1.dist-info/LICENSE,sha256=lXgWFwZiht068tKlUwpXGk0nJ8QbTBPeuN5WKfro4q4,1065
+aurorabot-1.0.1.dist-info/METADATA,sha256=5XzDFrElnViVxhuiv6ODySgjjazfu2GeVREuA7DAZhc,499
+aurorabot-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aurorabot-1.0.1.dist-info/top_level.txt,sha256=MnS9T4655HTkYQcfCZGOAWPTThLt1sQUujibeq-atKs,10
+aurorabot-1.0.1.dist-info/RECORD,,
