@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: test-pypi-publish-workflow
+Version: 1.0.7
+Summary: 
+Author: Armand Sauzay
+Author-email: 35524799+armand-sauzay@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pandas (>=1.5.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+# test-pypi-publish-worflow
+
+Test publish workflow to PyPI.
+
