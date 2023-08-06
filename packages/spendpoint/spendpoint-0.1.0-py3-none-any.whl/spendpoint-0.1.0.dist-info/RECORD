@@ -1,0 +1,11 @@
+spendpoint/__init__.py,sha256=gO3vveDh0vLqTYFpZhghjAiL1gxC715P-VcfHeIIdfM,178
+spendpoint/__main__.py,sha256=nYErezluuQIXtzYX6z0Ei31qJGrzA9zAudTp-VfFKDU,92
+spendpoint/bridge.py,sha256=lpqLMfNTNj6jPn2HsFBBowQ2unti0dyrRiSGQKxmFZ8,1670
+spendpoint/endpoint.py,sha256=kMYAur3M1KN9JvxWrSlqcaE7SU8JoISVT5pMixA7TlI,9457
+spendpoint/main.py,sha256=azlFgOArx70Gohna6pMOqhBVkHPhC0bC5HyqxRXp4fw,519
+spendpoint/service.py,sha256=zwsXePre9Zb9cP6bs-hNwqpQtHZmcHuoSeI8MRm5NZM,2760
+spendpoint/yasgui.html,sha256=ohW8AzK1YLPPzsb4E9QqyVkdgLMcnTBSJuB6sUz_3a8,771
+spendpoint-0.1.0.dist-info/LICENSE,sha256=nhd5TZmy9oisdIVLG8P2571SDRZojuuFOwJX_SZl7ik,1081
+spendpoint-0.1.0.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+spendpoint-0.1.0.dist-info/METADATA,sha256=WctQwFcvddYDiS6uBgmD685uYKILpe2pRXuXo0SQKpQ,1687
+spendpoint-0.1.0.dist-info/RECORD,,
