@@ -1,0 +1,11 @@
+README.md
+README.rst
+setup.py
+shella/__init__.py
+shella/command.py
+shella/term.py
+shella.egg-info/PKG-INFO
+shella.egg-info/SOURCES.txt
+shella.egg-info/dependency_links.txt
+shella.egg-info/requires.txt
+shella.egg-info/top_level.txt

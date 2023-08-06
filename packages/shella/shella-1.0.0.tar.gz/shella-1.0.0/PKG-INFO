@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: shella
+Version: 1.0.0
+Summary: An asynchronous Interactive shell
+Home-page: UNKNOWN
+Author: Malte Gruber
+Author-email: <contact@maltegruber.com>
+License: UNKNOWN
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux 
+
+An asynchronous interactive shell to interact with your program with autocompleting, history and argument validation
+
