@@ -1,0 +1,40 @@
+{
+    "version": "v1.0.0",
+    "cmds": {
+        "e": {
+            "prompt": "Please translate the following text into English, and polish it to make it sound more natural and in line with native speaker conventions. Please refrain from providing any additional output beyond the translated text",
+            "_comment": "Translate into English",
+            "example": "ww e 你好"
+        },
+        "c": {
+            "prompt": "Please translate the following text into Chinese, and polish it to make it sound more natural and in line with native speaker conventions. Please refrain from providing any additional output beyond the translated text",
+            "_comment": "Translate into Chinese",
+            "example": "ww c how r u"
+        },
+        "p": {
+            "prompt": "Please proofread the following sentence for grammar, tense, inappropriate word choice or phrasing, and make it sound more natural and in line with native speaker conventions. Please provide a brief explanation for the changes you made",
+            "_comment": "Polish sentence",
+            "example": "ww p hwo are you"
+        },
+        "a": {
+            "prompt": "",
+            "_comment": "Just ask ChatGPT directly",
+            "example": "ww a who are you"
+        },
+        "d": {
+            "prompt": "Proofread the document below, and correct any issues with grammar, tense, inappropriate word usage, etc. After understanding the content of the document, supplement it appropriately, and then directly output the modified document. Do not provide any additional output beyond this.",
+            "_comment": "Polish document",
+            "example": "ww d -f README.md"
+        },
+        "r": {
+            "prompt": "Please review the following code and provide your professional software engineering perspective on its shortcomings and suggestions for improvement.",
+            "_comment": "Code Review",
+            "example": "ww r -f gptw/gptw.py"
+        },
+        "dic": {
+            "prompt": "Please explain the meanings of the following English words, providing both English and Chinese versions of the explanations, along with an English example sentence and the correct pronunciation. Please correct any spelling errors in the words. Please refrain from providing any additional output beyond the translated text",
+            "_comment": "Dictionary",
+            "example": "ww dic dictionary"
+        }
+    }
+}
