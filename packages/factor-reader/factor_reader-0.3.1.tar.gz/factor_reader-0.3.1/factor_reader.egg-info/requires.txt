@@ -1,0 +1,9 @@
+pandas
+loguru
+requests
+questdb
+wrapt_timeout_decorator
+tenacity
+psycopg2
+
+[dev]
