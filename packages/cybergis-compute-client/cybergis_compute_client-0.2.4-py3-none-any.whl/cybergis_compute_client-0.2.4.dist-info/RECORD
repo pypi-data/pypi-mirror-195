@@ -1,0 +1,15 @@
+cybergis_compute_client/Client.py,sha256=AFEcJVGijdGAT_IJgKu07y56UsIGnI34JTwuRWy2oPY,2180
+cybergis_compute_client/CyberGISCompute.py,sha256=0oGbYDZY7sTYc91DZMCzfTAbQ-GsedXT5qivyLJn44Y,21106
+cybergis_compute_client/Job.py,sha256=-aVbRAbqBx2fvVeIh2Pwf6g8HmAIvFvJQ3GUnq0L7Og,13819
+cybergis_compute_client/MarkdownTable.py,sha256=Ek46ISTx7z55d1P5vzimQNvANAc-_aaSAoLTlEPXT84,537
+cybergis_compute_client/UI.py,sha256=glBbhUOYAmHoKOemYinPO5EzBd_7vcBJAv5uDkMfmqg,44048
+cybergis_compute_client/Zip.py,sha256=ky3pu5BMuSxR1OEfyzPleuRed6KzY8EchCnvnkbHIG8,2654
+cybergis_compute_client/__init__.py,sha256=WS1inGfhiPJA1W57IG-s7QoSx4DHQaE-hOwWAhRg0Cg,700
+test/UI_test_cases.py,sha256=_hNcOIO4sjUdPkYP799VWjuSn74xQvLN2Zb33dLmRNI,1829
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_cases.py,sha256=g49HYIlqRewEDqgkOJbNj7JgySpIup45C9l1no6tmtI,2093
+cybergis_compute_client-0.2.4.dist-info/LICENSE,sha256=GsjJDaUPbhxFEMz5WR5KnYlTUveqUY-exYebzCkFIDI,11386
+cybergis_compute_client-0.2.4.dist-info/METADATA,sha256=epw0ckBTj4WHkpyzvnr8G5bUC-mb1mqvPZMHwIq-J-o,5727
+cybergis_compute_client-0.2.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+cybergis_compute_client-0.2.4.dist-info/top_level.txt,sha256=Xb26TDedd9G8WcVar-6sfpXY86bLZv4BAUGOYp9CyyQ,29
+cybergis_compute_client-0.2.4.dist-info/RECORD,,
