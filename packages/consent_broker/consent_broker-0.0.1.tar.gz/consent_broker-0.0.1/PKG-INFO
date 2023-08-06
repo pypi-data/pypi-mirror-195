@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: consent_broker
+Version: 0.0.1
+Summary: Minimal dependency to broken data-gathering consent from users. 
+Author-email: Matthias Bussonnier <bussonniermatthias@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Home, https://github.com/Carreau/consent_broker
