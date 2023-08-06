@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/simple_lib_boilerplate/__init__.py
+src/simple_lib_boilerplate.egg-info/PKG-INFO
+src/simple_lib_boilerplate.egg-info/SOURCES.txt
+src/simple_lib_boilerplate.egg-info/dependency_links.txt
+src/simple_lib_boilerplate.egg-info/top_level.txt
+src/simple_lib_boilerplate/simple_math/__init__.py
+src/simple_lib_boilerplate/simple_math/addition.py
