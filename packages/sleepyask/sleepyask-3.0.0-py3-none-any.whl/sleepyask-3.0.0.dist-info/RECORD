@@ -1,0 +1,11 @@
+sleepyask/free/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sleepyask/free/chat.py,sha256=g0iWT9oeglghrI3TuMBLQKQ5b5507e8BYQG69xxSbqg,918
+sleepyask/free/chatgpt.py,sha256=2_AYIxqMTI1t2KpSyRc-KE1aXvgZgUj3IfgUdCYDXb0,3031
+sleepyask/openai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sleepyask/openai/chat.py,sha256=MLzh-ipOYJHgDdwX22rg7qS6xb0EoIVqF7uskM5mWLI,916
+sleepyask/openai/chatgpt.py,sha256=vn1s4myMHoG4TWi1YsPpw7RD-JCfII9aara5R7gHA7w,3073
+sleepyask-3.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+sleepyask-3.0.0.dist-info/METADATA,sha256=qsrF7K3lzJMlUujBNRXSIidVSuDkMxfj6ODhRKvQxw4,4952
+sleepyask-3.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sleepyask-3.0.0.dist-info/top_level.txt,sha256=4uu7DUiuHyyNDtUNxABaHadBtZw5HfU8hOXl6Md5N9w,10
+sleepyask-3.0.0.dist-info/RECORD,,
