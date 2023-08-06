@@ -1,0 +1,7 @@
+SimpleITK>=1.2.0
+cleo>=2.0.0
+numpy>=1.15.4
+pydicom>=1.2.1
+scikit-image>=0.17.1
+scipy>=1.2.0
+termcolor>=2.2.0
