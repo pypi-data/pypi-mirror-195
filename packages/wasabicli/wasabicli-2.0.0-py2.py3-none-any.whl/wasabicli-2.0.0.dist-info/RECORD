@@ -1,0 +1,13 @@
+wasabicli/__init__.py,sha256=GSmPWL_F6r4wWDVePI3FJt2Asfcz8476kGibzGvAwrM,216
+wasabicli/cli.py,sha256=K-QMZzu3iiyvRLt6CxJjJmYsPlP1_WGBhOfOl17082A,969
+wasabicli/formatter.py,sha256=nnNlRls61fg6j7l7iDvFxdgUwUa1AGPswJJ5-wabhVc,257
+wasabicli/initializer.py,sha256=jpO7sFo4sKcu-aoYXS7OiJY5MD1zCXLsFWULmrka7eE,679
+wasabicli/wasabi.py,sha256=_UzLWvp9L-KSXSF-CPrRL9snB9v0B7uhNXTahX4QBfI,12372
+wasabicli/wasabicli.py,sha256=_UzLWvp9L-KSXSF-CPrRL9snB9v0B7uhNXTahX4QBfI,12372
+wasabicli-2.0.0.dist-info/AUTHORS.rst,sha256=Lkas56npCquu8zmwYWT7KnV7ypMmHtrjO4_DvdJdf0g,181
+wasabicli-2.0.0.dist-info/LICENSE,sha256=7QFW_Le-sdZUVHxDJA6V-gdki5iTwPuJIM6DKA6hmmc,1617
+wasabicli-2.0.0.dist-info/METADATA,sha256=i6FUTIVrhFtnuW19QW7sW15T92-lJY6QYb0CC3a9RN8,1889
+wasabicli-2.0.0.dist-info/WHEEL,sha256=JZXtYepZFsf4IoivNpnSgKIc4qTHan08DRd56koo_DM,116
+wasabicli-2.0.0.dist-info/entry_points.txt,sha256=BYXESVAWVTcz5V5rDncPCu0s0IGzI3Z0cdqPaMzRhVU,49
+wasabicli-2.0.0.dist-info/top_level.txt,sha256=xNKhJ0hPBSjrkMOb1EhfS97xeVN1Pzc8kp9878p0u-E,10
+wasabicli-2.0.0.dist-info/RECORD,,
