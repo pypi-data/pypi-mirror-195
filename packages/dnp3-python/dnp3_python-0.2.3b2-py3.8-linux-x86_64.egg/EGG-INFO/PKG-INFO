@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: dnp3-python
+Version: 0.2.3b2
+Summary: pydnp3 -- python binding for opendnp3
+Home-page: https://github.com/VOLTTRON/dnp3-python
+Author: Volttron Team
+Author-email: volttron@pnnl.gov
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
