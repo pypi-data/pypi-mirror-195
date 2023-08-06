@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+assemblyStatistics.egg-info/PKG-INFO
+assemblyStatistics.egg-info/SOURCES.txt
+assemblyStatistics.egg-info/dependency_links.txt
+assemblyStatistics.egg-info/entry_points.txt
+assemblyStatistics.egg-info/top_level.txt
+src/FastaUtils.py
+src/__init__.py
+src/assemblyStatistics.py
+tests/__init__.py
+tests/test_module.py
