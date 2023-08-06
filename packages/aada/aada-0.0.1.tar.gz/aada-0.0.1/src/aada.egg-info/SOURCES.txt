@@ -1,0 +1,8 @@
+license.md
+pyproject.toml
+readme.md
+src/aada/__init__.py
+src/aada.egg-info/PKG-INFO
+src/aada.egg-info/SOURCES.txt
+src/aada.egg-info/dependency_links.txt
+src/aada.egg-info/top_level.txt
