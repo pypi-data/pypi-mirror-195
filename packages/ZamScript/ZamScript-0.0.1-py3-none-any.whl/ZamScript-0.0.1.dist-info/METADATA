@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: ZamScript
+Version: 0.0.1
+Summary: ZamScript is a language that interprets into Python and then runs Cython on it so it runs faster.
+Home-page: https://zameerlovesmath.repl.co
+Author: Zameer LovesMath
+Author-email: zameerlovesmath@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+
+# Basic ZamScript syntax
+`write` is a function for displaying text in the console.
+
+`{` and `}` are default brackets for functions and stuff like that.
+
+`getall [module]` is for importing all functions in a module.
+
+`get [module]` is for importing the module.
+
+`define [function_name]{inputs}` are for defining functions.
+
+Since this languages syntax format and modules are all Python based, `!pip install [package]` installs the package with `pip`.
+
+`if [statement] then` is for making an if-then statement.
+
+`is = to` and `is not = to` are for making statements about if two things are equal or not.
+
+`otherwise if` and `otherwise then` are for else and else if (elif) statements.
+
+`//` are for comments.
+
+`forever` is a infinitly repeating loop.
+
+`type` is for making classes.
+
+`sh [command]` is for running shell commands.
+
+`mod` is for taking mods between numbers.
+
+`<<<` and `>>>` are brackets for making dictionaries.
+
+`repeat [number_of_times_to_repeat]` is for repeating that code that many times (without the square brackets).
+
+`var variable_name: type` is used for predefining variables to make it run faster (not required).
+
+That rest is like Python except for the fact that it supports Cython syntax.
+
+
