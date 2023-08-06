@@ -1,0 +1,1 @@
+Uma programação simples, completa, e veloz.
