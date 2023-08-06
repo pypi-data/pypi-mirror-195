@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+orso/__init__.py
+orso/dataframe.py
+orso/display.py
+orso/exceptions.py
+orso/row.py
+orso/version.py
+orso.egg-info/PKG-INFO
+orso.egg-info/SOURCES.txt
+orso.egg-info/dependency_links.txt
+orso.egg-info/requires.txt
+orso.egg-info/top_level.txt
+tests/test_dataframe.py
