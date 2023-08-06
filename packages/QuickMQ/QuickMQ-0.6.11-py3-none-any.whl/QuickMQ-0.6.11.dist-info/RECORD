@@ -1,0 +1,16 @@
+quickmq/__init__.py,sha256=dgd3tiRl7htpRUxEoACFrLCdDVgqVJ9C5ZJJEWfQmtk,463
+quickmq/__version__.py,sha256=XsrSKOZdVtwZoWTCK3-okwzVPP2o9fkeHA1u7socNSg,83
+quickmq/api.py,sha256=pUgVaANGm7wlz93z05lvrf6xUO_eOGpu2Hkf8KhGjyg,1353
+quickmq/config.py,sha256=Uf5bVnUQDgf5ab_7W2HYcRbAiUCDN2UXGO0ge2f0Xvk,5055
+quickmq/connection.py,sha256=NLIwV4ntFILMb4my29xyL2RIImGYa2MgsIXWD83yhdc,10587
+quickmq/consume.py,sha256=QYFWkT74FJ3YBJrBXAPOZeiAbAGuwbKzl0XDNTd2ou0,38
+quickmq/exceptions.py,sha256=JXS1wDdKZ5Ug7a45ywnl25R4xmFavNJvKVJslJbSe0I,461
+quickmq/message.py,sha256=-8gPaEf6SXvKZL2k8c5nYxoyXfuz9CPzFmkBCbyJa5E,834
+quickmq/publish.py,sha256=yTdMEX3QGA-UIsJYvCId0EujXZVMWHOJ7DeAddU9kbs,2631
+quickmq/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quickmq/session.py,sha256=-cFfyWnSahnok2ZongZNRK05TiSEy0GSS58ZUzP0xxk,4316
+QuickMQ-0.6.11.dist-info/LICENSE,sha256=SiYj7dWJrtHTbVtvocw8QTGVbExx7hE9oqrP5pdMClU,1071
+QuickMQ-0.6.11.dist-info/METADATA,sha256=S-dsDEWVceqeFeCl6Hkd996GGWpWAjQ6FFMcAaSfWGw,5876
+QuickMQ-0.6.11.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+QuickMQ-0.6.11.dist-info/top_level.txt,sha256=_oJAofmhLBYiOQ8c0DGpG7H-HP1yOA2o-AcymxALcOM,8
+QuickMQ-0.6.11.dist-info/RECORD,,
