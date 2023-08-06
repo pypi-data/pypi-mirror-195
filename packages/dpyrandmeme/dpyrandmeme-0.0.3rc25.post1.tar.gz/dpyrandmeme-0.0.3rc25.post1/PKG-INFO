@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: dpyrandmeme
+Version: 0.0.3rc25.post1
+Summary: Random memes fetched for use in discord.py bot commands.
+Author-email: aviance <relations@aviance.app>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pyspark>=3.0.0 ; extra == "spark"
+Requires-Dist: bandit[toml]==1.7.4 ; extra == "test"
+Requires-Dist: black==22.1.0 ; extra == "test"
+Requires-Dist: check-manifest==0.48 ; extra == "test"
+Requires-Dist: flake8-bugbear==22.1.11 ; extra == "test"
+Requires-Dist: aiohttp===3.8.4 ; extra == "test"
+Requires-Dist: discord-py==2.2.2 ; extra == "test"
+Requires-Dist: flake8-docstrings ; extra == "test"
+Requires-Dist: flake8-formatter_junit_xml ; extra == "test"
+Requires-Dist: flake8==4.0.1 ; extra == "test"
+Requires-Dist: pre-commit==2.17.0 ; extra == "test"
+Requires-Dist: pylint==2.12.2 ; extra == "test"
+Requires-Dist: pylint_junit ; extra == "test"
+Requires-Dist: pytest-cov==3.0.0 ; extra == "test"
+Requires-Dist: pytest-mock<3.7.1 ; extra == "test"
+Requires-Dist: pytest-runner ; extra == "test"
+Requires-Dist: pytest==7.1.0 ; extra == "test"
+Requires-Dist: pytest-github-actions-annotate-failures ; extra == "test"
+Requires-Dist: shellcheck-py==0.8.0.4 ; extra == "test"
+Project-URL: Documentation, https://github.com/avianceapp/dpyrandmeme
+Project-URL: Source, https://github.com/avianceapp/dpyrandmeme
+Project-URL: Tracker, https://github.com/avianceapp/dpyrandmeme/issues
+Provides-Extra: spark
+Provides-Extra: test
+
+# dpyrandmeme: random memes for discord.py
+
+
+**What does the library do?**
+This library simply uses aiohttp to collect json data from a reddit page and turns it into a link inorder to be used while also storing the memes and returning the meme as a discord embed before sending back to the discord bot to send to the member who sent that command. It is the same meme library that is currently being used inside Paradigm.
+
+**PyPi library link:**
+https://pypi.org/project/dpyrandmeme/
+
+**Credits:**
+
+d33pak123: https://github.com/d33pak123/Pyrandmeme-python-library, <br>
+and Microsoft for the template
+
