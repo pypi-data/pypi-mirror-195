@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cfn-guard-rs-hook
+Version: 0.2.2
+Summary: Works with cloudformation-cli-python-lib to remove duplicate code when creating a CloudFormation registry hook that leverages the library cfn_guard_rs
+Author: Kevin DeJong
+Author-email: kddejong@amazon.com
+Requires-Python: >=3.7.2,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Jinja2 (>=3.0.0,<4.0.0)
+Requires-Dist: cfn-guard-rs (>=0.2.1,<0.3.0)
+Requires-Dist: cloudformation-cli-python-lib (>=2.1.12,<3.0.0)
+Requires-Dist: jsonpath-rw (>=1.0.0,<2.0.0)
+Requires-Dist: pyyaml (>=5.4.1,<5.5.0)
