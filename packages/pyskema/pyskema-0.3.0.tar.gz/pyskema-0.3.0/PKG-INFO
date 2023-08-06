@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyskema
+Version: 0.3.0
+Summary: A schema definition module for validation and documentation of structured data.
+Author: Théo Cavignac
+Author-email: theo.cavignac@gmail.com
+License: MIT License
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+
+# Pyskema
+
+## About
+
+Pyskema is a small module used to define schema for structured data.
+
+The schema can be used to validate, document and generate data.
