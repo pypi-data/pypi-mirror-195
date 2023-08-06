@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: pydngconverter
+Version: 0.3.0
+Summary: Python Interface for the Adobe's DNG Converter
+Home-page: https://github.com/BradenM/pydngconverter
+License: MIT
+Keywords: pydng,dng,dngconverter,raw,api
+Author: Braden Mars
+Author-email: bradenmars@bradenmars.me
+Requires-Python: >=3.8,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Dist: Wand (>=0.6,<0.7)
+Requires-Dist: psutil (>=5.9,<5.10)
+Requires-Dist: rich (>=13.3.1,<14.0.0)
+Requires-Dist: typing-extensions (>=4.5.0,<5.0.0)
+Project-URL: Documentation, https://bradenm.github.io/pydngconverter
+Project-URL: Repository, https://github.com/BradenM/pydngconverter
+Description-Content-Type: text/markdown
+
+# PyDNGConverter
+
+Python Interface for the Adobe's DNG Converter.
+
+Utilizing parallel processing,
+PyDNGConverter can convert RAW images to DNG up to **~60% faster** than simply utilizing Adobe's DNG Converter.
+
+## Installation
+
+```sh
+pip install -U pydngconverter
+```
+
+To utilize PyDNGConverter's Exif thumbnail extraction (as opposed to Adobe DNG Converters'), the following dependencies are required:
+- [ExifTool](https://exiftool.org/)
+- [ImageMagick](https://docs.wand-py.org/en/0.6.2/guide/install.html)
+
+Then specify `JPEGPreview.EXTRACT` for `DNGConverters` `jpeg_preview` parameter.
+
+Alternatively, you can utilize Adobe DNG Converters' thumbnail extraction via:
+ - `JPEGPreview.MEDIUM`
+ - `JPEGPreview.FULL`
+
+Or, disable thumbnails via:
+ - `JPEGPreview.NONE`
+
+## Example
+
+```python
+import asyncio
+from pydngconverter import DNGConverter, flags
+
+async def main():
+    # Create converter instance.
+    pydng = DNGConverter('/my/raw/files/',
+                        dest='/dngfiles',
+                        jpeg_preview=flags.JPEGPreview.EXTRACT,
+                        fast_load=True,
+                        )
+    # Convert all
+    return await pydng.convert()
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
+loop.close()
+
+```
+
