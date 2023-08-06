@@ -1,0 +1,11 @@
+hdx/database/__init__.py,sha256=HPKyvzWk-Gqd63sE3kcoyEO9n5h_9l3IeuzhzFnMWfQ,4458
+hdx/database/_version.py,sha256=O2qpyKb1ilx0S5H2I5jnx1k8SSt3R0rHyv19gH5I8Ws,160
+hdx/database/dburi.py,sha256=hNksrjaCC7AtD_M5ef0DCjkS0rJCofQqdXVD2BHBIGc,2938
+hdx/database/no_timezone.py,sha256=7Gnidmu317AWAWx4aPY4oIWBio9dqqSsiUTndEi5hMY,1082
+hdx/database/postgresql.py,sha256=9VlcdHhBURZPDaazj1kEq8gA4hUFJY-5hIN9uzibOlM,969
+hdx_python_database-1.2.2.dist-info/LICENSE,sha256=wc-4GpMn-ODs-U_bTe1YCiPVgvcjzrpYOx2wPuyAeII,1079
+hdx_python_database-1.2.2.dist-info/METADATA,sha256=ykW44dWeZ6DVkzUerqYbitQNoJE5WiBOkhBZXo3Rtzg,2464
+hdx_python_database-1.2.2.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+hdx_python_database-1.2.2.dist-info/top_level.txt,sha256=cfo3TyDjnu-B1jb_itPPFQCH00c5VT5GuZ30eNrGmlI,4
+hdx_python_database-1.2.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+hdx_python_database-1.2.2.dist-info/RECORD,,
