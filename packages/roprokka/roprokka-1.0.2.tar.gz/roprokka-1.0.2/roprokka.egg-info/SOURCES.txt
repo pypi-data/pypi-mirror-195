@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+bin/roprokka
+roprokka/__init__.py
+roprokka.egg-info/PKG-INFO
+roprokka.egg-info/SOURCES.txt
+roprokka.egg-info/dependency_links.txt
+roprokka.egg-info/requires.txt
+roprokka.egg-info/top_level.txt
