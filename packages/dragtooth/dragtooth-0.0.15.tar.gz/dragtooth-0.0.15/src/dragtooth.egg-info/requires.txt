@@ -1,0 +1,13 @@
+requests
+bs4
+pandas
+lxml
+html5lib
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
