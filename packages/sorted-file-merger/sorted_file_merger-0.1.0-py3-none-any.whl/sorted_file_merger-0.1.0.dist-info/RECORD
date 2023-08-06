@@ -1,0 +1,13 @@
+merge_files/__init__.py,sha256=Y2XZIIAu9XaZpSq8VV7MDJ6YWPV_KdE2DuOaNtPU8Nk,70
+merge_files/__main__.py,sha256=t68yRru1XU0lZsj8pv_0wt_QxdodREYhN5OyYCk6ZPs,242
+merge_files/main.py,sha256=7iGWpd-yrc29-FHbEgywUHduJVuuau7c7723_myDzOU,3908
+merge_files/utils.py,sha256=HeFT1nyDKG9nIg2HK8WGBIpBdPUyqRwf629OcVdya9g,2846
+merge_files/mergers/async_.py,sha256=lmuXu22TuYXnr1o_2f5DIcvduvGnh5JhD8WuhD5Nvms,1147
+merge_files/mergers/base.py,sha256=ckH8uV_3eJr-NmviuoJdWePPfQVF3-6vnfc4iNlMBGU,4883
+merge_files/mergers/basic.py,sha256=nSU5-zNoIv2_pZO1ibglFdg5OHyIWr9w2bo-wrKKtbY,305
+merge_files/mergers/parallel.py,sha256=QrmwraYU58GbhOFq-l0umYIOE0r3bd7hq0Dne0zVAes,2119
+sorted_file_merger-0.1.0.dist-info/METADATA,sha256=xzS_65NhxBtYI9nr8BmkeWQbyCycoN_oUR4OohV04jk,16085
+sorted_file_merger-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sorted_file_merger-0.1.0.dist-info/entry_points.txt,sha256=5dfaMGhxom6XXXmTOoMqduHi-Uw24UqVPajbqNeeWyI,57
+sorted_file_merger-0.1.0.dist-info/top_level.txt,sha256=PJTQGw9EV6kcIpTpApR9hfqfnvUFdS1e231Jnv3irOQ,12
+sorted_file_merger-0.1.0.dist-info/RECORD,,
