@@ -1,0 +1,121 @@
+Metadata-Version: 2.1
+Name: tktelerik
+Version: 1.0.0
+Summary: tkinter with telerik
+Author: XiangQinxi
+Author-email: XiangQinxi@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires: pythonnet
+Requires: tqdm
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# tktelerik
+来自WinForms界面扩展库做出来的组件
+
+## Telerik
+> 原项目需要付费使用，请谨慎使用
+> 依赖，需下载Telerik主程序，也可以
+
+```python
+# 基础示例1
+import tktelerik
+from tkinter import Tk
+
+root = Tk()
+theme1 = tktelerik.FluentDark()
+
+button = tktelerik.Button(text="button1")
+button.configure(theme="FluentDark")
+button.pack(fill="both", expand="yes", padx=5, pady=5)
+
+root.mainloop()
+```
+
+```python
+# 基础示例2
+import tktelerik
+from tkinter import Tk
+
+root = Tk()
+theme1 = tktelerik.FluentDark()
+
+list1 = tktelerik.ListBox()
+list1.configure(theme="FluentDark")
+for index in range(4):
+    list1.add(list1.create_label("item"+str(index+1)))
+list1.pack(fill="both", expand="yes", padx=5, pady=5)
+
+root.mainloop()
+```
+
+```python
+# 高级示例1
+import tktelerik
+from tkinter import Tk
+
+root = Tk()
+theme1 = tktelerik.FluentDark()
+
+ribbon = tktelerik.RibbonBar()
+ribbon_quick_item = tktelerik.RibbonButton()
+ribbon_quick_item.onclick(lambda: print("click ribbon_quick_button"))
+ribbon.add_item(ribbon_quick_item)
+
+ribbon_tab = tktelerik.RibbonTabbed()
+
+ribbon_group = tktelerik.RibbonGroup()
+
+ribbon_button = tktelerik.RibbonButton()
+ribbon_button.onclick(lambda: print("click ribbon_button"))
+ribbon_button.configure(anchor="w")
+ribbon_textbox = tktelerik.RibbonTextBox()
+ribbon_textbox.configure(anchor="w")
+
+ribbon_group.add(ribbon_button)
+ribbon_group.add(ribbon_textbox)
+
+ribbon_tab.add(ribbon_group)
+ribbon.add(ribbon_tab)
+
+ribbon.configure(theme="FluentDark")
+ribbon.pack(fill="both", expand="yes", padx=5, pady=5)
+
+root.mainloop()
+```
+
+```python
+# 高级示例2
+# 如电脑配置不高，请不要高频率点击移动，否则容易卡死
+import tktelerik
+from tkinter import Tk
+
+root = Tk()
+theme1 = tktelerik.Windows11()
+
+nav = tktelerik.NavigationView()
+nav.configure(theme="Windows11")
+
+controls = tktelerik.PageViewPage(nav=nav)
+controls.configure(text="controls")
+
+button1 = tktelerik.Button(controls.frame())
+button1.configure(theme="Windows11", text_anchor_ment="w")
+button1.pack(fill="x", padx=10, pady=10)
+
+textbox1 = tktelerik.TextBox(controls.frame())
+textbox1.configure(theme="Windows11")
+textbox1.pack(fill="x", padx=10, pady=10)
+
+textbox2 = tktelerik.TextBox(controls.frame())
+textbox2.configure(multiline=True, theme="Windows11")
+textbox2.pack(fill="both", ipady=50, padx=10, pady=10)
+
+nav.add_page(controls)
+nav.pack(fill="both", expand="yes")
+
+root.mainloop()
+
+```
