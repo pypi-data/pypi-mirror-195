@@ -1,0 +1,4 @@
+include getdefgateway/requirements.txt
+include getdefgateway/thirdparty.json
+include getdefgateway/README.MD
+include getdefgateway/LICENSE

@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+getdefgateway/LICENSE
+getdefgateway/README.MD
+getdefgateway/__init__.py
+getdefgateway/requirements.txt
+getdefgateway/thirdparty.json
+getdefgateway.egg-info/PKG-INFO
+getdefgateway.egg-info/SOURCES.txt
+getdefgateway.egg-info/dependency_links.txt
+getdefgateway.egg-info/top_level.txt
