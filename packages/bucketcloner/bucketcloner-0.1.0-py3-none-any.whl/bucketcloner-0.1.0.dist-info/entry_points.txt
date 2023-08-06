@@ -1,0 +1,2 @@
+[console_scripts]
+bucketcloner = bucketcloner:entry_point
