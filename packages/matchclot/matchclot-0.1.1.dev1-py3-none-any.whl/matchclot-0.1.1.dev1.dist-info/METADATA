@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: matchclot
+Version: 0.1.1.dev1
+Summary: Installable matchclot package.
+Home-page: https://github.com/AI4SCR/MatchCLOT
+Author: Federico Gossi
+Author-email: fgossi@ethz.ch
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: anndata (>=0.8.0)
+Requires-Dist: numpy (>=1.23.4)
+Requires-Dist: pandas (>=1.5.1)
+Requires-Dist: torch (>=1.13.0)
+Requires-Dist: catalyst (>=22.4)
+Requires-Dist: harmony-pytorch (>=0.1.7)
+Requires-Dist: scikit-learn (>=1.1.3)
+Requires-Dist: scipy (>=1.9.3)
+Requires-Dist: POT (>=0.8.2)
+Requires-Dist: networkx (>=2.8.8)
+Requires-Dist: scanpy (>=1.9.1)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: black (==22.3.0) ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'dev'
+Requires-Dist: better-apidoc ; extra == 'dev'
+Requires-Dist: six ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: myst-parser ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Provides-Extra: vcs
+
+# MatchCLOT
+
+[![Documentation Status](https://readthedocs.org/projects/matchclot/badge/?version=latest)](https://matchclot.readthedocs.io/en/latest/?badge=latest)
+
+Matching single cells across modalities with contrastive learning and
+optimal transport.
+
+Preprint available on bioRxiv
+([Gossi et al., 2022](https://www.biorxiv.org/content/10.1101/2022.11.16.516751v1))
+
+## Main functionalities
+![overview](tutorials/figures/overview.png)
+
+1. MatchCLOT is a computational framework that is able to
+match single-cells measured using different omic modalities.
+
+2. With paired multi-omic data, MatchCLOT uses contrastive learning to learn a common representation between two modalities after applying a preprocessing pipeline for normalization and dimensionality reduction.
+
+3. Based on the similarities between the cells in the learned representation, MatchCLOT finds a matching between the cell profiles in the two omic modalities using entropic optimal transport.
+
+4. Pretrained MatchCLOT models can be applied to new unpaired multiomic data to match two modalities at single-cell resolution.
+
+## Installation and Tutorials
+
+> **_NOTE:_**  The package and the documentation are under development.
+
+MatchCLOT is available on PyPI and can be installed with pip:
+
+```pip install matchclot```
+
+The documentation is available at [https://matchclot.readthedocs.io/en/latest/](https://matchclot.readthedocs.io/en/latest/)
