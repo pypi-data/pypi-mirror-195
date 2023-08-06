@@ -1,0 +1,2623 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Source documentation &mdash; mujpy.mujpy 1.05 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Philosophy &amp; History of MuSR code" href="Philostory.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> mujpy.mujpy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.05
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Reference.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Developer.html">Developer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Philostory.html">Philosophy &amp; History of MuSR code</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Source documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#mugui">mugui</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mucomponents">mucomponents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#musr2py">musr2py</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">mujpy.mujpy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Source documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Source.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="source-documentation">
+<span id="source"></span><h1>Source documentation<a class="headerlink" href="#source-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="mugui">
+<h2>mugui<a class="headerlink" href="#mugui" title="Permalink to this headline">¶</a></h2>
+<p>Main GUI class</p>
+<p>—
+tools
+—
+Utilities</p>
+<span class="target" id="module-tools.tools"></span><dl class="function">
+<dt id="tools.tools.TauMu_mus">
+<code class="descclassname">tools.tools.</code><code class="descname">TauMu_mus</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#TauMu_mus"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.TauMu_mus" title="Permalink to this definition">¶</a></dt>
+<dd><p>muon mean lifetime in microsecond
+from Particle Data Group 2017 
+(not present in scipy.constants)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools._available_components_">
+<code class="descclassname">tools.tools.</code><code class="descname">_available_components_</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#_available_components_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools._available_components_" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a list of template dictionaries (one per fit component):
+retreived magically from the mucomponents mumodel class.</p>
+<dl class="docutils">
+<dt>Each dictionary contains ‘name’ and ‘pardicts’, </dt>
+<dd><dl class="first docutils">
+<dt>‘pardicts’ = list of parameter dictionaries, </dt>
+<dd><dl class="first last docutils">
+<dt>keys: </dt>
+<dd>‘name’,
+‘error,
+‘limits’</dd>
+</dl>
+</dd>
+</dl>
+<p>errore are used by minuit as initial steps
+limits are</p>
+<blockquote class="last">
+<div><p>[None,None] for uncostrained parameters A,B,φ,λ
+[0,None] for positive parity parameters Δ,σ</p>
+<blockquote>
+<div>and for positive defined parameters ‘α’,’β’,’Λ’,’ν’</div></blockquote>
+<p>[0,0] for fake parameter BL</p>
+</div></blockquote>
+</dd>
+<dt>::  ({‘name’:’bl’,’pardicts’:[{‘name’:’A’,’error’:0.01,’limits’[None,None]},</dt>
+<dd>{‘name’:’λ’,’error’:0.01,’limits’[None,None]}}, 
+…)</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools._errors_">
+<code class="descclassname">tools.tools.</code><code class="descname">_errors_</code><span class="sig-paren">(</span><em>component</em>, <em>available_components</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#_errors_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools._errors_" title="Permalink to this definition">¶</a></dt>
+<dd><p>inputs: one legal mucomponent name contained 
+in the _available_components_(), which must be the second input
+output: a list of errors (steps), one for each parameter of this component</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools._limits_">
+<code class="descclassname">tools.tools.</code><code class="descname">_limits_</code><span class="sig-paren">(</span><em>component</em>, <em>available_components</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#_limits_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools._limits_" title="Permalink to this definition">¶</a></dt>
+<dd><p>inputs: one legal mucomponent name contained 
+in the _available_components_(), which must be the second input
+output: a list of lists of limits (low, high), one for each parameter of this component</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools._nparam">
+<code class="descclassname">tools.tools.</code><code class="descname">_nparam</code><span class="sig-paren">(</span><em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#_nparam"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools._nparam" title="Permalink to this definition">¶</a></dt>
+<dd><p>input: dashboard[‘model_guess’]
+output: ntot, nmintot, nfree</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools._ps_acme_score">
+<code class="descclassname">tools.tools.</code><code class="descname">_ps_acme_score</code><span class="sig-paren">(</span><em>ph</em>, <em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#_ps_acme_score"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools._ps_acme_score" title="Permalink to this definition">¶</a></dt>
+<dd><p>Phase correction using ACME algorithm by Chen Li et al.
+Journal of Magnetic Resonance 158 (2002) 164-168</p>
+<p>Parameters
+* pd : tuple, current p0 and p1 values
+* data : ndarray, array of NMR data.</p>
+<p>Returns
+* score : float, value of the objective function (phase score)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools._ps_peak_minima_score">
+<code class="descclassname">tools.tools.</code><code class="descname">_ps_peak_minima_score</code><span class="sig-paren">(</span><em>ph</em>, <em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#_ps_peak_minima_score"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools._ps_peak_minima_score" title="Permalink to this definition">¶</a></dt>
+<dd><p>Phase correction using simple minima-minimisation around highest peak
+This is a naive approach but is quick and often achieves reasonable
+results.  The optimisation is performed by finding the highest peak in the
+spectra (e.g. TMSP) and then attempting to reduce minima surrounding it.
+Parameters
+* pd : tuple, current p0 and p1 values
+* data : ndarray, array of NMR data.</p>
+<p>Returns
+* score : float, value of the objective function (phase score)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.add_step_limits_to_model">
+<code class="descclassname">tools.tools.</code><code class="descname">add_step_limits_to_model</code><span class="sig-paren">(</span><em>dash_in</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#add_step_limits_to_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.add_step_limits_to_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>input: original dashboard dash_in, already checked 
+output: dash_out is a deepcopy including ‘error’ and ‘limits’</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.addcomponent">
+<code class="descclassname">tools.tools.</code><code class="descname">addcomponent</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#addcomponent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.addcomponent" title="Permalink to this definition">¶</a></dt>
+<dd><p>addcomponent(‘ml’) # adds e.g. a mu precessing, lorentzian decay, component
+this method adds a component selected from _available_components_(), tuple of directories
+with zeroed values, error and limits from available_components, 
+flags set to ‘~’ and zeros functions
+[plan also addgroupcomponents and addruncomponents (for A2, B2, C1, C2)]</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.autops">
+<code class="descclassname">tools.tools.</code><code class="descname">autops</code><span class="sig-paren">(</span><em>data</em>, <em>fn</em>, <em>p0=0.0</em>, <em>p1=0.0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#autops"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.autops" title="Permalink to this definition">¶</a></dt>
+<dd><p>Automated phase correction from NMRglue by <a class="reference external" href="https://github.com/jjhelmus">https://github.com/jjhelmus</a>
+These functions provide support for automatic phasing of NMR data.</p>
+<p>Automatic linear phase correction</p>
+<p>Parameters</p>
+<blockquote>
+<div><p>data : ndarray</p>
+<blockquote>
+<div>Array of NMR data.</div></blockquote>
+<p>fn : str or function</p>
+<blockquote>
+<div>Algorithm to use for phase scoring. Built in functions can be
+specified by one of the following strings: “acme”, “peak_minima”</div></blockquote>
+<p>p0 : float</p>
+<blockquote>
+<div>Initial zero order phase in degrees.</div></blockquote>
+<p>p1 : float</p>
+<blockquote>
+<div>Initial first order phase in degrees.</div></blockquote>
+</div></blockquote>
+<p>Returns</p>
+<blockquote>
+<div><p>ndata : ndarray</p>
+<blockquote>
+<div>Phased NMR data.</div></blockquote>
+</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.calib">
+<code class="descclassname">tools.tools.</code><code class="descname">calib</code><span class="sig-paren">(</span><em>dashboard</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#calib"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.calib" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if the first component is ‘al’</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.checkvalidmodel">
+<code class="descclassname">tools.tools.</code><code class="descname">checkvalidmodel</code><span class="sig-paren">(</span><em>name</em>, <em>component_names</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#checkvalidmodel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.checkvalidmodel" title="Permalink to this definition">¶</a></dt>
+<dd><p>checkvalidmodel(name) checks that name is either  
+::      A1, B1: 2*component string of valid component names, e.g.</p>
+<blockquote>
+<div>‘daml’ or ‘mgmgbl’</div></blockquote>
+<dl class="docutils">
+<dt>::      or A2, B2: same, ending with 1 digit, number of groups (max 9 groups), </dt>
+<dd>‘daml2’ or ‘mgmgml2’ (2 groups)</dd>
+<dt>::      or C1: same, beginning with 1 digit, number of external minuit parameters (max 9)</dt>
+<dd>‘3mgml’ (3 external parameters e.g. A, f, phi)</dd>
+<dt>::      or C2: same, both previous options</dt>
+<dd>‘3mgml2’ (3 external parameters, 2 groups)</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.chi2_csv">
+<code class="descclassname">tools.tools.</code><code class="descname">chi2_csv</code><span class="sig-paren">(</span><em>chi2</em>, <em>lowchi2</em>, <em>hichi2</em>, <em>groups</em>, <em>offset</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#chi2_csv"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.chi2_csv" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input:</dt>
+<dd>chi2, chi2-sdt, chi2+sdt, groups, offset (bins)
+groups is suite.groups and its len, 1 or more, identifies multigroup</dd>
+<dt>output:</dt>
+<dd>cvs partial row with these values and timestring</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.chi2std">
+<code class="descclassname">tools.tools.</code><code class="descname">chi2std</code><span class="sig-paren">(</span><em>nu</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#chi2std"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.chi2std" title="Permalink to this definition">¶</a></dt>
+<dd><p>computes 1 std for least square chi2</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.component">
+<code class="descclassname">tools.tools.</code><code class="descname">component</code><span class="sig-paren">(</span><em>model</em>, <em>kin</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#component"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.component" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns the index of the component to which parameter k belongs in
+model = self.model_guess, in mugui, a list of complex dictionaries:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span><span class="s1">&#39;da&#39;</span><span class="p">,</span> <span class="s1">&#39;pardicts&#39;</span><span class="p">:{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span><span class="s1">&#39;lpha&#39;</span><span class="p">,</span><span class="o">...</span><span class="p">},</span>
+<span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span><span class="s1">&#39;mg&#39;</span><span class="p">,</span> <span class="s1">&#39;pardicts&#39;</span><span class="p">:{</span>       <span class="o">...</span>       <span class="p">}]</span>
+</pre></div>
+</div>
+<p>kin is the index of a dashboard parameter (kint)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.create_model">
+<code class="descclassname">tools.tools.</code><code class="descname">create_model</code><span class="sig-paren">(</span><em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#create_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.create_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>create_model(‘daml’) # adds e.g. the two component ‘da’ ‘ml’ model
+this method 
+does not check syntax (prechecked by checkvalidmodel)</p>
+<blockquote>
+<div>? separates nexternals number from model name (e.g. ‘3mgml’ -&gt; ‘mgml’, 3)
+?  starts switchyard for A1,A1,B1, B2, C1, C2 fits</div></blockquote>
+<p>adds a model of components selected from the available_component tuple of  
+directories
+with zeroed values, stepbounds from available_components, flags set to ‘~’ and zeros functions</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.cstack">
+<code class="descclassname">tools.tools.</code><code class="descname">cstack</code><span class="sig-paren">(</span><em>npfunc</em>, <em>x</em>, <em>*pars</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#cstack"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.cstack" title="Permalink to this definition">¶</a></dt>
+<dd><p>vectorialize npfunc
+input:</p>
+<blockquote>
+<div><p>npfunc numpy function with input (x,*argv)
+x time
+<a href="#id1"><span class="problematic" id="id2">*</span></a>pars is a list of lists of parameters,</p>
+<blockquote>
+<div>list len n is the output_function_array.shape[0]</div></blockquote>
+</div></blockquote>
+<dl class="docutils">
+<dt>output:</dt>
+<dd><dl class="first last docutils">
+<dt>output_function_array</dt>
+<dd>stacks vertically n replica of npfunc distributing parameters as in
+(x, <a href="#id3"><span class="problematic" id="id4">*</span></a>argv[i]) for each i-th replica</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.derange">
+<code class="descclassname">tools.tools.</code><code class="descname">derange</code><span class="sig-paren">(</span><em>string</em>, <em>vmax</em>, <em>pack=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#derange"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.derange" title="Permalink to this definition">¶</a></dt>
+<dd><p>derange(string,vmax,pack=1) 
+reads string 
+assumes it contains 2, 3, 4 or 5 csv or space separated values
+uses isinstance(vmax,float) to distinguish floats (fft) from integers (fit and plot)</p>
+<blockquote>
+<div>5: start, stop, packe, last, packl       # for plot
+4: start, stop, last, packl              # for plot (packe is 1) 
+3: start, stop, pack
+2: start, stop (pack is added, pack default is 1)</div></blockquote>
+<p>returns 2, 3, 4 or 5 floats or int, or 
+default values, 0,vmax,pack, if fails validity check (stop&gt;start, bin &lt;stop-start, last &lt; vmax) 
+errmsg = ‘’ in ok, a string indicates errors</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.derun">
+<code class="descclassname">tools.tools.</code><code class="descname">derun</code><span class="sig-paren">(</span><em>string</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#derun"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.derun" title="Permalink to this definition">¶</a></dt>
+<dd><p>parses string, producing a list of runs; 
+expects comma separated items</p>
+<p>looks for ‘l’,’l:m’,’l+n+m’,’l:m:-1’ 
+where l, m, n are integers
+also more than one, comma separated</p>
+<p>rejects all other characters</p>
+<p>returns a list of lists of integer</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.diffunc">
+<code class="descclassname">tools.tools.</code><code class="descname">diffunc</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#diffunc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.diffunc" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input user function of the form ‘p[0]*(1-p[1])’</dt>
+<dd>up to functions of three parameters (this could be easily extended)</dd>
+</dl>
+<p>output a list of its derivatives [with respect to ‘p[0]’ and ‘p[1]’]
+and the list of their indices, [0,1]</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.errorpropagate">
+<code class="descclassname">tools.tools.</code><code class="descname">errorpropagate</code><span class="sig-paren">(</span><em>string</em>, <em>p</em>, <em>e</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#errorpropagate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.errorpropagate" title="Permalink to this definition">¶</a></dt>
+<dd><p>parse function in string</p>
+<p>substitute p[n] with xn, with errors en
+calculate the partial derivative pdn = partial f/partial xn 
+return the sqrt of the sum of (pdn*en)**2</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.exit_safe">
+<code class="descclassname">tools.tools.</code><code class="descname">exit_safe</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#exit_safe"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.exit_safe" title="Permalink to this definition">¶</a></dt>
+<dd><p>opens an are you sure box?</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.fft_filter">
+<code class="descclassname">tools.tools.</code><code class="descname">fft_filter</code><span class="sig-paren">(</span><em>t</em>, <em>fy</em>, <em>f0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#fft_filter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.fft_filter" title="Permalink to this definition">¶</a></dt>
+<dd><p>filter above 0.2*fy peak freq 
+works for 1-2 d</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.find_nth">
+<code class="descclassname">tools.tools.</code><code class="descname">find_nth</code><span class="sig-paren">(</span><em>haystack</em>, <em>needle</em>, <em>n</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#find_nth"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.find_nth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Finds nth needle in haystack</p>
+<p>Returns its first occurrence (0 if not present)</p>
+<p>Used by ?</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.findall">
+<code class="descclassname">tools.tools.</code><code class="descname">findall</code><span class="sig-paren">(</span><em>p</em>, <em>s</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#findall"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.findall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Yields all the positions of
+the pattern p in the string s.</p>
+<p>Used by translate.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.get_datafile_path_ext">
+<code class="descclassname">tools.tools.</code><code class="descname">get_datafile_path_ext</code><span class="sig-paren">(</span><em>datafile</em>, <em>run</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#get_datafile_path_ext"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.get_datafile_path_ext" title="Permalink to this definition">¶</a></dt>
+<dd><p>datafilename = template, e.g. ‘/fullpath/deltat_gps_tdc_0935.bin’
+run = string of run digits, e.g. ‘1001’
+returns ‘/fullpath/deltat_gps_tdc_1001.bin’</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.get_datafilename">
+<code class="descclassname">tools.tools.</code><code class="descname">get_datafilename</code><span class="sig-paren">(</span><em>datafile</em>, <em>run</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#get_datafilename"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.get_datafilename" title="Permalink to this definition">¶</a></dt>
+<dd><p>datafilename = template, e.g. ‘/fullpath/deltat_gps_tdc_0935.bin’
+run = string of run digits, e.g. ‘1001’
+returns ‘/fullpath/deltat_gps_tdc_1001.bin’</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.get_fit_range">
+<code class="descclassname">tools.tools.</code><code class="descname">get_fit_range</code><span class="sig-paren">(</span><em>string</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#get_fit_range"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.get_fit_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>transform a valid string for fit_range
+into a list of integers</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.get_functions_in">
+<code class="descclassname">tools.tools.</code><code class="descname">get_functions_in</code><span class="sig-paren">(</span><em>model</em>, <em>kk</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#get_functions_in"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.get_functions_in" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input </dt>
+<dd><p class="first">model = single-run model dashboard dict
+kk = kloc -1, is incremented at each free parameter of the model, so that it scans the internal minuit indices</p>
+<blockquote class="last">
+<div>for these parameters (ignoring those determined by a user funct e.g. “p[0]*p[4]”</div></blockquote>
+</dd>
+<dt>output </dt>
+<dd><dl class="first last docutils">
+<dt>functions_in = list of lists, one per component, of user functs, one per parameter, for the single-run model, </dt>
+<dd>all component parameters,  including “~” and “!”, are translated to appropriate user funct</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.get_group">
+<code class="descclassname">tools.tools.</code><code class="descname">get_group</code><span class="sig-paren">(</span><em>grouping</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#get_group"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.get_group" title="Permalink to this definition">¶</a></dt>
+<dd><p>reverse of get_grouping, 
+input</p>
+<blockquote>
+<div>grouping is an np.array of indices of detectors , 0 based</div></blockquote>
+<dl class="docutils">
+<dt>output is </dt>
+<dd><dl class="first last docutils">
+<dt>groupcsv shorthand as in self.group[k][“forward”} or self.group[k][“backward”}</dt>
+<dd>e.g ‘1:3,5’ or ‘1,3,5’ etc.</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.get_grouping">
+<code class="descclassname">tools.tools.</code><code class="descname">get_grouping</code><span class="sig-paren">(</span><em>groupcsv</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#get_grouping"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.get_grouping" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input</dt>
+<dd><p class="first">groupcsv is a shorthand csv string, e.g. ‘1:3,5’ or ‘1,3,5’ etc.
+contained in self.suite.group[k][“forward] of self.suite.group[k][“backward”]</p>
+<blockquote class="last">
+<div>(the k-th detector group of a multi group fit)</div></blockquote>
+</dd>
+<dt>output</dt>
+<dd>grouping is an np.array of indces, 0 based</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.get_indices">
+<code class="descclassname">tools.tools.</code><code class="descname">get_indices</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#get_indices"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.get_indices" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input </dt>
+<dd>func is a user string function, e.g. ‘p[0]*p[2]’</dd>
+<dt>output</dt>
+<dd>list of (string) indices found in the string, 
+in between ‘p[‘ and ‘]’, e.g. ‘0’,’2’</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.get_nruns">
+<code class="descclassname">tools.tools.</code><code class="descname">get_nruns</code><span class="sig-paren">(</span><em>the_suite</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#get_nruns"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.get_nruns" title="Permalink to this definition">¶</a></dt>
+<dd><p>get nrun strings</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.get_number_minuit_internal">
+<code class="descclassname">tools.tools.</code><code class="descname">get_number_minuit_internal</code><span class="sig-paren">(</span><em>nruns</em>, <em>n_globals</em>, <em>n_locals</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#get_number_minuit_internal"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.get_number_minuit_internal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.get_run_number_from">
+<code class="descclassname">tools.tools.</code><code class="descname">get_run_number_from</code><span class="sig-paren">(</span><em>path_filename</em>, <em>filespecs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#get_run_number_from"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.get_run_number_from" title="Permalink to this definition">¶</a></dt>
+<dd><p>strips number after filespecs[0] and before filespec[1]</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.get_run_title">
+<code class="descclassname">tools.tools.</code><code class="descname">get_run_title</code><span class="sig-paren">(</span><em>the_suite</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#get_run_title"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.get_run_title" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>output </dt>
+<dd><dl class="first last docutils">
+<dt>list of run and title strings</dt>
+<dd>each run and group in the run replicates its run number + title</dd>
+</dl>
+</dd>
+</dl>
+<p>used only in mufitplot (fit and fft</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.get_title">
+<code class="descclassname">tools.tools.</code><code class="descname">get_title</code><span class="sig-paren">(</span><em>run</em>, <em>notemp=False</em>, <em>nofield=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#get_title"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.get_title" title="Permalink to this definition">¶</a></dt>
+<dd><p>form standard psi title</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.get_totals">
+<code class="descclassname">tools.tools.</code><code class="descname">get_totals</code><span class="sig-paren">(</span><em>suite</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#get_totals"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.get_totals" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculates the grand totals and group totals 
+of a single run 
+iput is self.suite of class musuite
+returns strings totalcounts groupcounts nsbin maxbin</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.getname">
+<code class="descclassname">tools.tools.</code><code class="descname">getname</code><span class="sig-paren">(</span><em>fullname</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#getname"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.getname" title="Permalink to this definition">¶</a></dt>
+<dd><p>estracts parameter name from full parameter name (i.e. name + label)
+for the time being just the first letter</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.group_shorthand">
+<code class="descclassname">tools.tools.</code><code class="descname">group_shorthand</code><span class="sig-paren">(</span><em>grouping</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#group_shorthand"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.group_shorthand" title="Permalink to this definition">¶</a></dt>
+<dd><p>group_calib is the list of gorup dictionaries</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.initialize_csv">
+<code class="descclassname">tools.tools.</code><code class="descname">initialize_csv</code><span class="sig-paren">(</span><em>Bstr</em>, <em>filespec</em>, <em>the_run</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#initialize_csv"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.initialize_csv" title="Permalink to this definition">¶</a></dt>
+<dd><p>writes beginning of csv row 
+with nrun T [T eT T eT] B 
+for ISIS [PSI]</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.int2_calib_method_key">
+<code class="descclassname">tools.tools.</code><code class="descname">int2_calib_method_key</code><span class="sig-paren">(</span><em>dashboard</em>, <em>the_model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#int2_calib_method_key"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.int2_calib_method_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>NOT USED, remove
+input: the dashboard dict structure and the fit model ‘alxx..’ instance</p>
+<blockquote>
+<div>the actual model contains ‘al’ plus ‘xx’, ..
+the present method considers only the latter FOR PLOTTING ONLY 
+(USE int2_method for the actual calib fit)</div></blockquote>
+<dl class="docutils">
+<dt>output: a list of methods for calib fits, in the order of the ‘xx..’ model components </dt>
+<dd>(skipping al) for the use of mumodel._add_single_.</dd>
+<dt>Invoked by the iMinuit initializing call</dt>
+<dd>self._the_model_._load_data_,</dd>
+</dl>
+<p>just before submitting migrad, 
+self._the_model_ is an instance of mumodel</p>
+<p>This function applies tools.translate to the parameter numbers in formulas
+since on the dash each parameter of each component gets an internal number,
+but alpha is popped and shared or formula-determined (‘=’) ones are not minuit parameters</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.int2_calib_multigroup_method_key">
+<code class="descclassname">tools.tools.</code><code class="descname">int2_calib_multigroup_method_key</code><span class="sig-paren">(</span><em>dashboard</em>, <em>the_model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#int2_calib_multigroup_method_key"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.int2_calib_multigroup_method_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>NOT USED, remove
+input: the dashboard dict structure and the fit model ‘alxx..’ instance</p>
+<blockquote>
+<div>the actual model contains ‘al’ plus ‘xx’, ..
+the present method considers only the latter FOR PLOTTING ONLY 
+(USE int2_method for the actual calib fit)</div></blockquote>
+<dl class="docutils">
+<dt>output: a list of methods for calib fits, in the order of the ‘xx..’ model components </dt>
+<dd>(skipping al) for the use of mumodel._add_single_.</dd>
+<dt>Invoked by the iMinuit initializing call</dt>
+<dd>self._the_model_._load_data_,</dd>
+</dl>
+<p>just before submitting migrad, 
+self._the_model_ is an instance of mumodel</p>
+<p>This function applies tools.translate to the parameter numbers in formulas
+since on the dash each parameter of each component gets an internal number,
+but alpha is popped and shared or formula-determined (‘=’) ones are not minuit parameters</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.int2_method_key">
+<code class="descclassname">tools.tools.</code><code class="descname">int2_method_key</code><span class="sig-paren">(</span><em>dashboard</em>, <em>the_model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#int2_method_key"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.int2_method_key" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input: </dt>
+<dd>dashboard, the dashboard dict structure 
+the_model,  a fit model instance (not necessarily loaded)</dd>
+<dt>output: </dt>
+<dd><dl class="first last docutils">
+<dt>a list of lists, the inner lists contain each</dt>
+<dd><dl class="first last docutils">
+<dt>method,  a mumodel component method, in the order of the model components</dt>
+<dd>for the use of mumodel._add_.</dd>
+<dt>keys,   a list of as many lambda functions as the parameters of teh component</dt>
+<dd>hard coding the translated “function” string for fast evaluation.</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>This function applies tools.translate to the parameter numbers in formulas:
+dashboard “function” is written in terms of the internal parameter index,
+while Minuit parameter index skips shared or formula-determined (‘=’) parameters</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.int2_multigroup_method_key">
+<code class="descclassname">tools.tools.</code><code class="descname">int2_multigroup_method_key</code><span class="sig-paren">(</span><em>dashboard</em>, <em>the_model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#int2_multigroup_method_key"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.int2_multigroup_method_key" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input: </dt>
+<dd><p class="first">dashboard, the dashboard dict structure
+fit._the_model_ is an instance of mumodel</p>
+<blockquote class="last">
+<div>(the number of groups is obtained from dashboard)</div></blockquote>
+</dd>
+<dt>output: a list of methods and keys, in the order of the model components </dt>
+<dd><p class="first">for the use of mumodel._add_multigroup_.
+method is a 2d vector function 
+accepting time and a variable number of lists of (component) parameters</p>
+<blockquote>
+<div>e.g if one component is mumodel.bl(x,A,λ)
+the corresponding component for a two group fit 
+accepts the following argument (t,[A1, A2],[λ1,λ2])</div></blockquote>
+<p>keys is a list of lists of strings 
+they are evaluated to produce the method parameters, 
+there are</p>
+<blockquote class="last">
+<div>ngroups strings per parameter (inner list)
+npar parametes per component (outer list)</div></blockquote>
+</dd>
+<dt>Invoked by the iMinuit initializing call</dt>
+<dd>self._the_model_._load_data_multigroup_</dd>
+</dl>
+<p>just before submitting migrad,</p>
+<p>This function does not need userpardicts and tools.translate 
+since the correspondence with Minuit parameters
+is given directly either by “function” or by “function_multi”</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.int2_multirun_grad_method_key">
+<code class="descclassname">tools.tools.</code><code class="descname">int2_multirun_grad_method_key</code><span class="sig-paren">(</span><em>dashboard</em>, <em>the_model</em>, <em>nruns</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#int2_multirun_grad_method_key"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.int2_multirun_grad_method_key" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input: </dt>
+<dd>dashboard, the dashboard dict structure
+the_model is fit._the_model_ i.e. an instance of global multirun mumodel 
+nruns is the numer of runs in the suite</dd>
+<dt>output</dt>
+<dd><dl class="first docutils">
+<dt>minuit_ordered_grad_list </dt>
+<dd><dl class="first last docutils">
+<dt>i.e. a list of lists [k,n,j,grad_bndmthd,dkey])], one for each minuit internal parameter p[m] </dt>
+<dd><p class="first">k n j are indices of run, component and parameter for which 
+dkndj_bndmthd is the &lt;module&gt; that computes the derivative of component n in run k with respect to parameter j</p>
+<blockquote>
+<div>(if par are the parameters for component n in run k, then dkndj_bndmthd(x,*par) calculates the derivative)</div></blockquote>
+<dl class="last docutils">
+<dt>djdm is a &lt;module&gt; that computes the derivative of the user funct (e.g. “p[0]*p[21]’) with respect to p[m]</dt>
+<dd>(then djdm(p) is the value of the derivative)</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>The products of these derivatives is sparse, i.e. non zero only for few values k,n,j
+The present method identifies each and every set of indices (k,n,j) for which the product</p>
+<blockquote>
+<div>gg_nj = dkndj_bndmthd(x,*par)*djdm(p) != 0</div></blockquote>
+<p>————————— Usage
+To generate chisquare grad values for all minuit parameters, in order to optimize numpy miniut calculations;
+mucomponents _add_multirun_grad_ uses the 2D array</p>
+<blockquote>
+<div>gg = sum_n,j gg_nj</div></blockquote>
+<p>and multiplies it by the 2D array dcdf = 2(f-y)/e^2
+The m-th component of the chisquare gradient is sum(dcdf*gg,axis=None)
+————————– General equation
+Assuming asymmetry data end errors y(k;i), ey(k;i), the expression for the chisquare gradient is</p>
+<blockquote class="last">
+<div><blockquote>
+<div>sum_i,k {2(sum_n y_n(k;i,*par(k,n))-y(k;i))/ey(k;i)^2} * sum_n,j {partial y_n(k;i,*par(k,n)/partial par[k,n,j]} * {partial par[k,n,j]/partial p[m]}</div></blockquote>
+<p>hereafter            dcdf                                   * sum_n,j           dkndj                                *               djdm</p>
+</div></blockquote>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.int2_multirun_user_method_key">
+<code class="descclassname">tools.tools.</code><code class="descname">int2_multirun_user_method_key</code><span class="sig-paren">(</span><em>dashboard</em>, <em>the_model</em>, <em>nruns</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#int2_multirun_user_method_key"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.int2_multirun_user_method_key" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input: </dt>
+<dd>dashboard, the dashboard dict structure
+the_model is fit._the_model_ i.e. an instance of mumodel 
+nruns is the numer of runs in the suite</dd>
+</dl>
+<p>output: a list of methods and a list of lists of keys, [[key,…,key],…,[key,..,key]]
+the internal list is same parameter, different runs
+the model components</p>
+<blockquote>
+<div>for the use of mumodel._add_multirun_.
+method is a component function 
+accepting time and a list of parameters, e.g mumodel.bl(x,A,λ)
+key is string defining a lambda function that produces one method parameter for a specific run, 
+the list is for the same parameter over diffenet runs 
+keys is a list of lists for all the parameters (any flag) of the component
+the list of [binding,keys] is over the components of the model</div></blockquote>
+<p>This list of [binding, keys] allows mumodel _add_multirun_ to use the minuit p list
+(n_globals global user values, followed by nruns replica of</p>
+<blockquote>
+<div>n_locals local user values and a model specific number of local (~,!) component par values)</div></blockquote>
+<p>to produce component-driven vectorized values, as many values in the vector as the runs
+In this way minuit fcn is a vector, one fcn per run,
+likewise asymm, asyme are vectors (see suite for multirun)
+and mumodel._chisquare_ cost function sums over individual runs for a unique global chisquare
+Invoked by the iMinuit initializing call</p>
+<blockquote>
+<div>self._the_model_._load_data_multirun_user_</div></blockquote>
+<p>just before submitting migrad</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.int2fft">
+<code class="descclassname">tools.tools.</code><code class="descname">int2fft</code><span class="sig-paren">(</span><em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#int2fft"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.int2fft" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input: </dt>
+<dd><dl class="first last docutils">
+<dt>model </dt>
+<dd>dashboard[“model_guess”]</dd>
+</dl>
+</dd>
+<dt>output: </dt>
+<dd><dl class="first last docutils">
+<dt>fft_subtract: a list of boolean values, one per model component</dt>
+<dd>fft flag True, component subtracted in residues</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.int2min">
+<code class="descclassname">tools.tools.</code><code class="descname">int2min</code><span class="sig-paren">(</span><em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#int2min"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.int2min" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input: </dt>
+<dd><dl class="first last docutils">
+<dt>model </dt>
+<dd>either dashboard[“model_guess”] (after add_step_limits_to_model)
+or  dashboard[“model_guess”] both lists of dicts</dd>
+</dl>
+</dd>
+<dt>output: a list of lists:  </dt>
+<dd>values: minuit parameter values, either guess of result
+errors: their steps
+fixed: True/False for each
+limits: [low, high] limits for each or [None,None]  
+names: name of parameter ‘x_label’ for each parameter
+pospar: parameter for which component is positive parity, eg s in e^{-(s*t)^2/2}</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.int2min_multigroup">
+<code class="descclassname">tools.tools.</code><code class="descname">int2min_multigroup</code><span class="sig-paren">(</span><em>pardicts</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#int2min_multigroup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.int2min_multigroup" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input: </dt>
+<dd><dl class="first last docutils">
+<dt>pardicts </dt>
+<dd>either dashboard[“userpardicts_guess”] if guess = True
+or  dashboard[“userpardicts_result”] if guess = False</dd>
+</dl>
+</dd>
+<dt>output: a list of lists:  </dt>
+<dd>values: minuit parameter values, either guess of result
+errors: their steps
+fixed: True/False for each
+limits: [low, high] limits for each or [None,None]  
+name: name of parameter ‘x_label’ for each parameter
+pospar: parameter for which component is positive parity, eg s in e^{-(s*t)^2/2}</dd>
+</dl>
+<p>this works for A2 single fit, multigroup with userpardicts parameters = Minuit parameters</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.int2min_multirun">
+<code class="descclassname">tools.tools.</code><code class="descname">int2min_multirun</code><span class="sig-paren">(</span><em>dashboard</em>, <em>runs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#int2min_multirun"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.int2min_multirun" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input: </dt>
+<dd><dl class="first docutils">
+<dt>dashboar for single group multirun</dt>
+<dd><dl class="first last docutils">
+<dt>containins both</dt>
+<dd>dashboard[“userpardicts_guess”] or dashboard[“userpardicts_result”]
+dashboard[“model_guess”] (after add_step_limits_to_model) or dashboard[“model_result”]</dd>
+</dl>
+</dd>
+</dl>
+<p class="last">runs = list of run numbers</p>
+</dd>
+<dt>output: a list of lists, each list containing minuit internal parameters for a run </dt>
+<dd>values: minuit parameter values, either guess of result
+errors: their steps
+fixed: True/False for each
+limits: [low, high] limits for each or [None,None]  
+names: name of parameter ‘x_label’ for each parameter
+pospar: parameter for which component is positive parity, eg s in e^{-(s*t)^2/2}</dd>
+<dt>Note: this method knows the model, hence it can generate only minuit parameters</dt>
+<dd>mucomponents, i.e. the cost function, needs to feed also non minuit parameters to the components
+e.g. mg with A global B1 local phi global s1 global will have only two minuit parameters per run
+, the second and the fourth, and it must know which value to use for the first and third
+This is accomplished by _add_multirun_singlegroup_ in mucomponents, using self._components_</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.json_name">
+<code class="descclassname">tools.tools.</code><code class="descname">json_name</code><span class="sig-paren">(</span><em>model</em>, <em>datafile</em>, <em>grouping</em>, <em>version</em>, <em>g=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#json_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.json_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>model is e.g. ‘mlmg’
+datafile is e.g. ‘/afs/psi.ch/bulkmusr/data/gps/d2022/tdc/deltat_gps_tdc_1233.bin’</p>
+<blockquote>
+<div>must have a single ‘.’</div></blockquote>
+<p>grp_calib is the list of dictionaries defining the groups
+g = True for global
+version is a label
+returns a unique name for the json dashboard file</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.len_print_components">
+<code class="descclassname">tools.tools.</code><code class="descname">len_print_components</code><span class="sig-paren">(</span><em>names</em>, <em>values</em>, <em>errors</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#len_print_components"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.len_print_components" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input: for a component</dt>
+<dd>parameter names 
+parameter values 
+parameter errors</dd>
+<dt>output:</dt>
+<dd>max length of string to print, e.g.
+“bl.A_fast 0.123(4) bl.λ_fast 12.3(4) bl.σ_fast 0(0)”</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.len_print_components_multirun">
+<code class="descclassname">tools.tools.</code><code class="descname">len_print_components_multirun</code><span class="sig-paren">(</span><em>names</em>, <em>values</em>, <em>errors</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#len_print_components_multirun"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.len_print_components_multirun" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input: for a component</dt>
+<dd>parameter names 
+parameter values 
+parameter errors</dd>
+<dt>output:</dt>
+<dd>max length of string to print, e.g.
+“bl.A_fast 0.123(4) bl.λ_fast 12.3(4) bl.σ_fast 0(0)”</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.min2int">
+<code class="descclassname">tools.tools.</code><code class="descname">min2int</code><span class="sig-paren">(</span><em>model_guess</em>, <em>values_in</em>, <em>errors_in</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#min2int"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.min2int" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input:</dt>
+<dd>model_component from dashboard
+values_in Minuit.values
+errors_in Minuit.errors</dd>
+<dt>output: for all dashbord parameters</dt>
+<dd>names list of lists of parameter names
+values_out list of lists of their values
+errors_out list of lists of their errors</dd>
+</dl>
+<p>reconstruct dashboard with Minuit best fit values and errors
+for print_components, compact fit summary</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.min2int_multigroup">
+<code class="descclassname">tools.tools.</code><code class="descname">min2int_multigroup</code><span class="sig-paren">(</span><em>dashboard</em>, <em>p</em>, <em>e</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#min2int_multigroup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.min2int_multigroup" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><dl class="docutils">
+<dt>input:</dt>
+<dd><dl class="first last docutils">
+<dt>userpardicts_guess from dashboard </dt>
+<dd>(each dict corresponds to a Minuit parameter)</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="docutils">
+<dt>x           used only to retrieve “function” </dt>
+<dd><blockquote class="first">
+<div>and “error_propagation_multi”
+p,e Minuit best fit parameter values and std</div></blockquote>
+<dl class="docutils">
+<dt>output: for all parameters</dt>
+<dd>namesg list of lists of dashboard parameter names
+parsg list of lists of dashboard parameter values
+eparsg list of lists of dashboard parameter errors</dd>
+</dl>
+<p class="last">used only in summary_global</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.min2int_multirun">
+<code class="descclassname">tools.tools.</code><code class="descname">min2int_multirun</code><span class="sig-paren">(</span><em>dashboard</em>, <em>p</em>, <em>e</em>, <em>_the_runs_</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#min2int_multirun"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.min2int_multirun" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input:</dt>
+<dd><dl class="first docutils">
+<dt>dashboard;  userpardicts_guess and model_guess from </dt>
+<dd>used only to retrieve “function” or “function_multi” 
+and “error_propagation_multi”</dd>
+</dl>
+<p class="last">p,e Minuit best fit parameter values and std
+_th_runs_ = list of run numbers in suite</p>
+</dd>
+<dt>output: for all parameters</dt>
+<dd>names list of lists of parameter names
+pars list of lists ofparameter values
+epars list of lists of parameter errors</dd>
+<dt>used only in summary_multirun_global that prints name value(error) </dt>
+<dd>one or more lines of global user parameters (the first list in the inner lists)
+one line per run local user parameters and local component parameters (the others)</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.minglobal2sequential">
+<code class="descclassname">tools.tools.</code><code class="descname">minglobal2sequential</code><span class="sig-paren">(</span><em>p_out</em>, <em>p_in</em>, <em>method_keys</em>, <em>dashboard</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#minglobal2sequential"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.minglobal2sequential" title="Permalink to this definition">¶</a></dt>
+<dd><p>translate global best fit results (values) into nruns equivalent sequential fits
+for plotting purposes: mufitplot(plot_range,the_fit) will access
+self.fit.lastfits and self.fit.dashboard_single if self.fit.C1 is True
+input:</p>
+<blockquote>
+<div>p_out is global best fit minuit parameters self.lastfit
+p_in is global fit minuit guess parameters values_in
+method_key is produced by int2_multirun_user_method_key
+dashboard is the fit global dashboard
+results toggles between plotting result of guess</div></blockquote>
+<dl class="docutils">
+<dt>output:</dt>
+<dd>lastfits,  list of lists of best fits, in the style of multirun sequential single group (B1)
+dashboard_single (a dashboard that produces a single run best fit function for animated plots)</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.minparam2_csv">
+<code class="descclassname">tools.tools.</code><code class="descname">minparam2_csv</code><span class="sig-paren">(</span><em>dashboard</em>, <em>values_in</em>, <em>errors_in</em>, <em>multirun=0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#minparam2_csv"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.minparam2_csv" title="Permalink to this definition">¶</a></dt>
+<dd><p>transforms Minuit values Minuit errors in cvs format
+input:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>dashboard </dt>
+<dd>dashboard[“model_guess”], for single group 
+None, for multi group
+dashboard, for single group multirun user (C1)</dd>
+</dl>
+<p>values_in, errors_in are  Minuit values Minuit errors
+if multirun is nruns !=0  (True) uses</p>
+<blockquote>
+<div>min2int_multirun(dashboard,values_in,errors_in,multirun_nruns)</div></blockquote>
+<dl class="docutils">
+<dt>else (multirun = 0 (False) uses </dt>
+<dd>min2int(dashboard,values_in,errors_in)</dd>
+</dl>
+</div></blockquote>
+<dl class="docutils">
+<dt>output:</dt>
+<dd><dl class="first last docutils">
+<dt>cvs partial row with parameters and errors for A1, A20 and B1, or A21</dt>
+<dd>list of partial rows (one per run) for C1</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.mixer">
+<code class="descclassname">tools.tools.</code><code class="descname">mixer</code><span class="sig-paren">(</span><em>t</em>, <em>y</em>, <em>f0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#mixer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.mixer" title="Permalink to this definition">¶</a></dt>
+<dd><p>mixer of a time-signal with a reference 
+input</p>
+<blockquote>
+<div>t time
+y the time-signal
+f0 frequency of the cosine reference</div></blockquote>
+<dl class="docutils">
+<dt>output</dt>
+<dd>y_rrf = 2*y*cos(2*pi*f0*t)</dd>
+</dl>
+<p>t is 1d and y is 1-d, 2-d or 3-d but t.shape[0] == y.shape[-1]
+t is vstack-ed to be the same shape as y</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.model_name">
+<code class="descclassname">tools.tools.</code><code class="descname">model_name</code><span class="sig-paren">(</span><em>dashboard</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#model_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.model_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>input the dashboard dictionary structure
+output the model name (e.g. ‘mgbgbl’)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.modelstrip">
+<code class="descclassname">tools.tools.</code><code class="descname">modelstrip</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#modelstrip"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.modelstrip" title="Permalink to this definition">¶</a></dt>
+<dd><p>strips numbers of external parameters at beginning of model name</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.multigroup_in_components">
+<code class="descclassname">tools.tools.</code><code class="descname">multigroup_in_components</code><span class="sig-paren">(</span><em>dashboard</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#multigroup_in_components"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.multigroup_in_components" title="Permalink to this definition">¶</a></dt>
+<dd><p>input full dashboard
+output mask list,</p>
+<blockquote>
+<div>1 where “model_guess” 
+contains at least one component (dict) 
+whose “pardicts” (list) 
+contains a parameter dict 
+with at least one “function_multi”:[string, string ..] key
+0 otherwise</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.muvalid">
+<code class="descclassname">tools.tools.</code><code class="descname">muvalid</code><span class="sig-paren">(</span><em>string</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#muvalid"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.muvalid" title="Permalink to this definition">¶</a></dt>
+<dd><p>parse function</p>
+<p>CHECK WITH MUCOMPONENT, THAT USES A DIFFERENT SCHEME</p>
+<p>accepted functions are RHS of agebraic expressions of parameters p[i], i=0…ntot</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.muvalue">
+<code class="descclassname">tools.tools.</code><code class="descname">muvalue</code><span class="sig-paren">(</span><em>lrun</em>, <em>string</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#muvalue"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.muvalue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run suite fits:</p>
+<p>muvalue returns the value 
+for the nint-th parameter of the lrun-th run
+according to string (corresponding flag=’l’).
+Large parameter change across the run suite
+requires different migrad start guesses.
+Probably broken!</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.muvaluid">
+<code class="descclassname">tools.tools.</code><code class="descname">muvaluid</code><span class="sig-paren">(</span><em>string</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#muvaluid"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.muvaluid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run suite fits: muvaluid returns True/False
+* checks the syntax for string function 
+corresponding to flag=’l’. Meant for pars
+displaying large changes across the run suite,
+requiring different migrad start guesses:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># string syntax: e.g. &quot;0.2*3,2.*4,20.&quot;</span>
+<span class="c1"># means that for the first 3 runs value = 0.2,</span>
+<span class="c1">#            for the next 4 runs value = 2.0</span>
+<span class="c1">#            from the 8th run on value = 20.0</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.muzeropad">
+<code class="descclassname">tools.tools.</code><code class="descname">muzeropad</code><span class="sig-paren">(</span><em>runs</em>, <em>nzeros=4</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#muzeropad"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.muzeropad" title="Permalink to this definition">¶</a></dt>
+<dd><p>runs is a string containing the run number
+nzeros the number of digit chars in the filename
+PSI bin: nzeros=4
+ISIS nxs nzeros=8
+returns the runs string 
+with left zero padding to nzeros digits</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.name_of_model">
+<code class="descclassname">tools.tools.</code><code class="descname">name_of_model</code><span class="sig-paren">(</span><em>model_components</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#name_of_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.name_of_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>check if model_components list of dictionaries correstponds to model</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.nextrun">
+<code class="descclassname">tools.tools.</code><code class="descname">nextrun</code><span class="sig-paren">(</span><em>datapath</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#nextrun"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.nextrun" title="Permalink to this definition">¶</a></dt>
+<dd><p>assume datapath is path+fileprefix+runnumber+extension
+datafile is next run, runnumber incremented by one
+if datafile exists return next run, datafile
+else return runnumber and datapath</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.p2x">
+<code class="descclassname">tools.tools.</code><code class="descname">p2x</code><span class="sig-paren">(</span><em>instring</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#p2x"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.p2x" title="Permalink to this definition">¶</a></dt>
+<dd><p>replaces parameters e.g. p[2] with variable x2 in string
+returns substitude string and list of indices (ascii)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.path_dialog">
+<code class="descclassname">tools.tools.</code><code class="descname">path_dialog</code><span class="sig-paren">(</span><em>path</em>, <em>title</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#path_dialog"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.path_dialog" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.path_file_dialog">
+<code class="descclassname">tools.tools.</code><code class="descname">path_file_dialog</code><span class="sig-paren">(</span><em>path</em>, <em>spec</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#path_file_dialog"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.path_file_dialog" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.plot_parameters">
+<code class="descclassname">tools.tools.</code><code class="descname">plot_parameters</code><span class="sig-paren">(</span><em>nsub</em>, <em>labels</em>, <em>fig=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#plot_parameters"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.plot_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>standard plot of fit parameters vs B,T (or X to be implemente)
+input</p>
+<blockquote>
+<div>nsub&lt;6 is the number of subplots
+labels is a dict of labels, 
+e.g. {title:self.title, xlabel:’T [K]’, ylabels: [‘asym’,r’$lambda$’,r’$sigma$,…]}
+fig is the standard fig e.g self.fig_pars</div></blockquote>
+<dl class="docutils">
+<dt>output </dt>
+<dd><p class="first">the ax array on which to plot 
+one dimensional (from top to bottom and again, for two columns)
+example</p>
+<blockquote class="last">
+<div>two asymmetry parameters are both plotfal=1 and are plotted in ax[0]
+a longitudinal lambda is plotflag=2 and is plotted in ax[1]
+…
+a transverse sigma is plotflag=n and is plotted in ax[n-1]</div></blockquote>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.prevrun">
+<code class="descclassname">tools.tools.</code><code class="descname">prevrun</code><span class="sig-paren">(</span><em>datapath</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#prevrun"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.prevrun" title="Permalink to this definition">¶</a></dt>
+<dd><p>assume datapath is path+fileprefix+runnumber+extension
+datafile is prev run, runnumber decremented by one
+if datafile exists return prev run, datafile
+else return runnumber and datapath</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.print_components">
+<code class="descclassname">tools.tools.</code><code class="descname">print_components</code><span class="sig-paren">(</span><em>names</em>, <em>values</em>, <em>errors</em>, <em>maxlen</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#print_components"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.print_components" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input: for a component</dt>
+<dd>parameter names 
+parameter values 
+parameter errors</dd>
+<dt>output:</dt>
+<dd>string to print, e.g.
+“bl.A_fast 0.123(4) bl.λ_fast 12.3(4) bl.σ_fast 0(0)”</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.print_components_multirun">
+<code class="descclassname">tools.tools.</code><code class="descname">print_components_multirun</code><span class="sig-paren">(</span><em>names</em>, <em>values</em>, <em>errors</em>, <em>maxlen</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#print_components_multirun"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.print_components_multirun" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input: for a component</dt>
+<dd>parameter names 
+parameter values 
+parameter errors</dd>
+<dt>output:</dt>
+<dd>strings to print, e.g.
+“A.fast    λ.fast    σ.fast”
+“0.123(4)  12.3(4)   0(0)”</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.ps">
+<code class="descclassname">tools.tools.</code><code class="descname">ps</code><span class="sig-paren">(</span><em>data</em>, <em>p0=0.0</em>, <em>p1=0.0</em>, <em>inv=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#ps"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.ps" title="Permalink to this definition">¶</a></dt>
+<dd><p>Linear phase correction</p>
+<p>Parameters</p>
+<blockquote>
+<div><p>data : ndarray</p>
+<blockquote>
+<div>Array of NMR data.</div></blockquote>
+<p>p0 : float</p>
+<blockquote>
+<div>Zero order phase in degrees.</div></blockquote>
+<p>p1 : float</p>
+<blockquote>
+<div>First order phase in degrees.</div></blockquote>
+<p>inv : bool, optional</p>
+<blockquote>
+<div>True for inverse phase correction</div></blockquote>
+</div></blockquote>
+<p>Returns</p>
+<blockquote>
+<div><p>ndata : ndarray</p>
+<blockquote>
+<div>Phased NMR data.</div></blockquote>
+</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.rebin">
+<code class="descclassname">tools.tools.</code><code class="descname">rebin</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>strstp</em>, <em>pack</em>, <em>e=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#rebin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.rebin" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input:</dt>
+<dd><p class="first">x is 1D intensive (time) 
+y [,e] are 1D, 2D or 3D intensive arrays to be rebinned
+pack &gt; 1 is the rebinning factor, e.g it returns:</p>
+<p>xr = array([x[k*pack:k*(pack+1)].sum()/pack for k in range(int(floor((stop-start)/pack)))])</p>
+<p>strstp = [start,stop] is a list of slice indices</p>
+<dl class="last docutils">
+<dt>rebinning of x, y [,e] is done on the slice truncated to the approrpiate pack multiple, stopm</dt>
+<dd>x[start:stopm], y[start:stopm], [e[start:stopm]]</dd>
+</dl>
+</dd>
+</dl>
+<p>use either:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">xr</span><span class="p">,</span><span class="n">yr</span> <span class="o">=</span> <span class="n">rebin</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">strstp</span><span class="p">,</span><span class="n">pack</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>or:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">xr</span><span class="p">,</span><span class="n">yr</span><span class="p">,</span><span class="n">eyr</span> <span class="o">=</span> <span class="n">rebin</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">strstp</span><span class="p">,</span><span class="n">pack</span><span class="p">,</span><span class="n">ey</span><span class="p">)</span> <span class="c1"># the 5th is y error</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.rebin_decay">
+<code class="descclassname">tools.tools.</code><code class="descname">rebin_decay</code><span class="sig-paren">(</span><em>x</em>, <em>yf</em>, <em>yb</em>, <em>bf</em>, <em>bb</em>, <em>strstp</em>, <em>pack</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#rebin_decay"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.rebin_decay" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input:</dt>
+<dd><p class="first">x is 1D intensive (time)
+yf, yb 1D, 2D, 3D extensive arrays to be rebinned
+bf, bb are scalars or arrays (see musuite.single_for_back_counts and musuite.single_multigroup_for_back_counts)
+pack &gt; 1 is the rebinning factor, e.g it returns:</p>
+<p>xr = array([x[k*pack:k*(pack+1)].sum()/pack for k in range(int(floor((stop-start)/pack)))])
+yr = array([y[k*pack:k*(pack+1)].sum() for k in range(int(floor((stop-start)/pack)))])</p>
+<p>strstp = [start,stop] is a list of slice indices</p>
+<dl class="last docutils">
+<dt>rebinning of x,y is done on the slice truncated to the approrpiate pack multiple, stopm</dt>
+<dd>x[start:stopm], y[start:stopm]</dd>
+</dl>
+</dd>
+</dl>
+<p>use:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">xr</span><span class="p">,</span><span class="n">yfr</span><span class="p">,</span> <span class="n">ybr</span><span class="p">,</span> <span class="n">bfr</span><span class="p">,</span> <span class="n">bbr</span><span class="p">,</span> <span class="n">yfmr</span><span class="p">,</span> <span class="n">ybmr</span> <span class="o">=</span> <span class="n">rebin</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">yf</span><span class="p">,</span><span class="n">yb</span><span class="p">,</span><span class="n">bf</span><span class="p">,</span><span class="n">bb</span><span class="p">,</span><span class="n">yfm</span><span class="p">,</span><span class="n">ybm</span><span class="p">,</span><span class="n">strstp</span><span class="p">,</span><span class="n">pack</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.results">
+<code class="descclassname">tools.tools.</code><code class="descname">results</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#results"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.results" title="Permalink to this definition">¶</a></dt>
+<dd><p>generate a notebook with some results</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.run_shorthand">
+<code class="descclassname">tools.tools.</code><code class="descname">run_shorthand</code><span class="sig-paren">(</span><em>runstrings</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#run_shorthand"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.run_shorthand" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>write the runlist contained in runstrings (suite self.runs produced by derun)</dt>
+<dd>i.e. a list of lists, with separate run numbers in string format, the inner ones  to be added</dd>
+</dl>
+<p>in a compact string, with space separated notation
+e.g.
+‘650:655,675,656:674’</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.safetry">
+<code class="descclassname">tools.tools.</code><code class="descname">safetry</code><span class="sig-paren">(</span><em>string</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#safetry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.safetry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used by muvalid</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.scanms">
+<code class="descclassname">tools.tools.</code><code class="descname">scanms</code><span class="sig-paren">(</span><em>y</em>, <em>n</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#scanms"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.scanms" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.set_bar">
+<code class="descclassname">tools.tools.</code><code class="descname">set_bar</code><span class="sig-paren">(</span><em>n</em>, <em>b</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#set_bar"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.set_bar" title="Permalink to this definition">¶</a></dt>
+<dd><p>service to animate histograms
+e.g. in the fit tab</p>
+<p>extracted from matplotlib animate 
+histogram example</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.set_fig">
+<code class="descclassname">tools.tools.</code><code class="descname">set_fig</code><span class="sig-paren">(</span><em>num</em>, <em>nrow</em>, <em>ncol</em>, <em>title</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#set_fig"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.set_fig" title="Permalink to this definition">¶</a></dt>
+<dd><p>num is figure number (static, to keep the same window) 
+nrow, ncol number of subplots rows and columns
+kwargs is a dict of keys to pass to subplots as is
+initializes figures when they are first called 
+or after accidental killing</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.set_key">
+<code class="descclassname">tools.tools.</code><code class="descname">set_key</code><span class="sig-paren">(</span><em>string</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#set_key"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.set_key" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input: the function string from the json or the mudash dashboard</dt>
+<dd><dl class="first last docutils">
+<dt>e.g. that written in the json file as ‘function’:’p[0]*(0.5+1/pi*arctan(p[2])’</dt>
+<dd>or typed into mudash text widget as ‘p[0]*(0.5+1/pi*arctan(p[2])’</dd>
+</dl>
+</dd>
+<dt>output: key, a python method, such that in mumodel mucomponents _add_ the command </dt>
+<dd>key(p) evaluates the formula 
+the evaluation knows simple numpy functions, see the import in string code, below</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.shorten">
+<code class="descclassname">tools.tools.</code><code class="descname">shorten</code><span class="sig-paren">(</span><em>path</em>, <em>subpath</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#shorten"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.shorten" title="Permalink to this definition">¶</a></dt>
+<dd><p>shortens path
+e.g. path, subpath = ‘/home/myname/myfolder’, ‘/home/myname’</p>
+<blockquote>
+<div>shart = ‘./myfolder’</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.signif">
+<code class="descclassname">tools.tools.</code><code class="descname">signif</code><span class="sig-paren">(</span><em>x</em>, <em>p</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#signif"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.signif" title="Permalink to this definition">¶</a></dt>
+<dd><p>write x with p significant digits</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.spec_prec">
+<code class="descclassname">tools.tools.</code><code class="descname">spec_prec</code><span class="sig-paren">(</span><em>a</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#spec_prec"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.spec_prec" title="Permalink to this definition">¶</a></dt>
+<dd><p>format specifier precision:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span> <span class="k">for</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="mf">1.0</span>
+<span class="mi">1</span> <span class="k">for</span> <span class="mf">1.0</span> <span class="o">&gt;</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="mf">0.1</span>
+<span class="mi">2</span> <span class="k">for</span> <span class="mf">0.1</span> <span class="o">&gt;</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="mf">0.01</span> <span class="n">etc</span><span class="o">.</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.step">
+<code class="descclassname">tools.tools.</code><code class="descname">step</code><span class="sig-paren">(</span><em>x</em>, <em>a</em>, <em>n</em>, <em>dn</em>, <em>b</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#step"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.step" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.stringify_groups">
+<code class="descclassname">tools.tools.</code><code class="descname">stringify_groups</code><span class="sig-paren">(</span><em>groups</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#stringify_groups"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.stringify_groups" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a unique string for many groups
+to use in json file name</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.thisrun">
+<code class="descclassname">tools.tools.</code><code class="descname">thisrun</code><span class="sig-paren">(</span><em>datapath</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#thisrun"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.thisrun" title="Permalink to this definition">¶</a></dt>
+<dd><p>assume datapath is path+fileprefix+runnumber+extension
+datafile is present run
+if datafile exists returns path to datafile</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.tlog_exists">
+<code class="descclassname">tools.tools.</code><code class="descname">tlog_exists</code><span class="sig-paren">(</span><em>path</em>, <em>run</em>, <em>ndigits</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#tlog_exists"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.tlog_exists" title="Permalink to this definition">¶</a></dt>
+<dd><p>check if tlog exists under various known filenames types</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.translate">
+<code class="descclassname">tools.tools.</code><code class="descname">translate</code><span class="sig-paren">(</span><em>nint</em>, <em>lmin</em>, <em>function_in</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#translate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.translate" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input: </dt>
+<dd>nint: dashbord index, 
+lmin: list of minuit indices replacement, one for each dashboard index, -1 is blanck
+function: single function string, of dashboard index nint, to be translated</dd>
+<dt>output: </dt>
+<dd>function_out: single translated function</dd>
+</dl>
+<p>Used in int2_method_key and min2int to replace parameter indices contained in function[nint] e.g.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="n">p</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>by translate the internal parameter indices 0 and 3 (written according to the dashboard dict order)
+into the corresponding minuit parameter list indices, skipping shared parameters.</p>
+<p>e.g. if parameter 1 is shared with parameter 0, the minuit parameter index 3
+will be translated to 2  (skipping internal index 1)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.translate_multirun">
+<code class="descclassname">tools.tools.</code><code class="descname">translate_multirun</code><span class="sig-paren">(</span><em>functions_in</em>, <em>n_locals</em>, <em>kloc</em>, <em>nruns</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#translate_multirun"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.translate_multirun" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>functions_in  = [list of function strings], </dt>
+<dd>for the model components of a single-run model (obtained from get_functions_in)
+where a “~”,”!” parameter dummy function has been redefined as ‘p[k]’
+and k is their dash index</dd>
+</dl>
+<p>n_locals      = number of user_local parameters
+kloc          = index of first component first parameter</p>
+<blockquote>
+<div>in the single run model
+(kloc-n_locals is the index of the first user_locals)</div></blockquote>
+<p>nruns         = number of runs in the suite
+functions_out = [list of lists of function strings, indices of component &amp; parameter],</p>
+<blockquote>
+<div>with translated minuit indices
+outer list is components of the model, 
+middle list is runs,
+inner list is component parameter functions</div></blockquote>
+<p>used in int2_multirun_user_method_key and int2_multirun_grad_method_key</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.translate_nint">
+<code class="descclassname">tools.tools.</code><code class="descname">translate_nint</code><span class="sig-paren">(</span><em>nint</em>, <em>lmin</em>, <em>function</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#translate_nint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.translate_nint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used in int2_int and min2int to parse parameters contained in function[nint].value e.g.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">p</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="n">p</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>and translate the internal parameter indices 4 and 7 (written according to the gui parameter list order)
+into the corresponding minuit parameter list indices, that skips shared and fixed parameters.</p>
+<p>e.g. if parameter 6 is shared with parameter 4 and parameter 2 is fixed, the minuit parameter indices
+will be 3 instead of 4 (skipping internal index 2) and 5 instead of 7 (skipping both 2 and 6)
+Returns lmin[nint]</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.userlocals">
+<code class="descclassname">tools.tools.</code><code class="descname">userlocals</code><span class="sig-paren">(</span><em>dashboard</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#userlocals"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.userlocals" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input:</dt>
+<dd>full dashboard</dd>
+<dt>output:</dt>
+<dd>True is “userpardicts_local” in dashboard.keys</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.userpars">
+<code class="descclassname">tools.tools.</code><code class="descname">userpars</code><span class="sig-paren">(</span><em>dashboard</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#userpars"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.userpars" title="Permalink to this definition">¶</a></dt>
+<dd><p>checks if there are userpardicts in the fit dashboard
+alias of global type fit, of any kind (gg, gr, G)
+used by fit and plt switchyard</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.validmodel">
+<code class="descclassname">tools.tools.</code><code class="descname">validmodel</code><span class="sig-paren">(</span><em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#validmodel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.validmodel" title="Permalink to this definition">¶</a></dt>
+<dd><p>checks valid simple name “almlmg”</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.value_error">
+<code class="descclassname">tools.tools.</code><code class="descname">value_error</code><span class="sig-paren">(</span><em>v</em>, <em>e</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#value_error"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.value_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a string of the format v(e)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tools.tools.write_csv">
+<code class="descclassname">tools.tools.</code><code class="descname">write_csv</code><span class="sig-paren">(</span><em>header</em>, <em>row</em>, <em>the_run</em>, <em>file_csv</em>, <em>filespec</em>, <em>scan=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tools/tools.html#write_csv"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tools.tools.write_csv" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input :</dt>
+<dd><dl class="first docutils">
+<dt>header, the model specific csv header </dt>
+<dd>to compare with that of the csv file</dd>
+</dl>
+<p class="last">row, the line to be added to the csv file
+the_run, run instance (first one for added runs)
+file_csv, full path/filename to csv file 
+filespec, ‘bin’, ‘mdu’ or ‘nsx’
+scan, T, B or None</p>
+</dd>
+<dt>output:</dt>
+<dd>two strings to write on console</dd>
+</dl>
+<p>writes onto csv finding the right line
+writes a new file if csv does not exist or is incompatible (writes ~ version)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="mucomponents">
+<h2>mucomponents<a class="headerlink" href="#mucomponents" title="Permalink to this headline">¶</a></h2>
+<p>Components for data fit with iminuit</p>
+<span class="target" id="module-mucomponents.mucomponents"></span><dl class="class">
+<dt id="mucomponents.mucomponents.mumodel">
+<em class="property">class </em><code class="descclassname">mucomponents.mucomponents.</code><code class="descname">mumodel</code><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the components of the fitting model. Provides a chi_square function for Minuit.
+Fields in mT after substitution of self._gamma_mu_ with self._gamma_Mu_MHzper_mT</p>
+<dl class="attribute">
+<dt id="mucomponents.mucomponents.mumodel._M">
+<code class="descname">_M</code><a class="headerlink" href="#mucomponents.mucomponents.mumodel._M" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">iminuit.minuit.Minuit</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._add_calib_multigroup_">
+<code class="descname">_add_calib_multigroup_</code><span class="sig-paren">(</span><em>x</em>, <em>*argv</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._add_calib_multigroup_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._add_calib_multigroup_" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><dl class="docutils">
+<dt>input: </dt>
+<dd><p class="first">x       time array
+<a href="#id5"><span class="problematic" id="id6">*</span></a>argv   passed as a variable number of parameter values</p>
+<blockquote class="last">
+<div>val0,val1,val2,val3,val4,val5, … at this iteration 
+argv is a list of values [val0,val1,val2,val3,val4,val5, …]</div></blockquote>
+</dd>
+</dl>
+</div></blockquote>
+<p>_add_ DISTRIBUTES THESE PARAMETER VALUES:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">asymmetry</span> <span class="n">fit</span> <span class="k">with</span> <span class="n">fixed</span> <span class="n">alpha</span>
+<span class="n">order</span> <span class="n">driven</span> <span class="n">by</span> <span class="n">model</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">mgbl</span>
+</pre></div>
+</div>
+<p>must loop over groups, whose number n = y.shape[0]
+and produce a n-valued np.array function f, f[k] for y[k],e[k]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._add_calib_single_">
+<code class="descname">_add_calib_single_</code><span class="sig-paren">(</span><em>x</em>, <em>*argv</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._add_calib_single_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._add_calib_single_" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><dl class="docutils">
+<dt>input: </dt>
+<dd><p class="first">x       time array
+<a href="#id7"><span class="problematic" id="id8">*</span></a>argv   passed as a variable number of parameter values</p>
+<blockquote class="last">
+<div>alpha,val1,val2,val3,val4,val5, … at this iteration 
+argv is a list of values [alpha,val1,val2,val3,val4,val5, …]</div></blockquote>
+</dd>
+</dl>
+</div></blockquote>
+<p>_add_calib_single_ DISTRIBUTES THESE PARAMETER VALUES:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">asymmetry</span> <span class="n">fit</span> <span class="k">with</span> <span class="n">fitted</span> <span class="n">alpha</span>
+<span class="n">order</span> <span class="n">driven</span> <span class="n">by</span> <span class="n">model</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">alml</span>
+</pre></div>
+</div>
+<p>NO FFT mode, no check on self._include_components</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._add_fft_">
+<code class="descname">_add_fft_</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>*argv</em>, <em>calib=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._add_fft_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._add_fft_" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input:</dt>
+<dd><blockquote class="first">
+<div>x time array, 1d
+<a href="#id9"><span class="problematic" id="id10">*</span></a>argv Minuit parameters</div></blockquote>
+<p>Called only externally. Produces f for the fft of residues in mufitplot:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">-</span> <span class="n">f</span>
+</pre></div>
+</div>
+<p>Components can be selectively added to f
+i.e. subtracted in the residues:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">+=</span> <span class="n">method</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="o">*</span><span class="n">pars</span><span class="p">)</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_include_components</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="k">else</span> <span class="mf">0.</span> 
+</pre></div>
+</div>
+<p class="last">For the time being only single run single group (f is 1d)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._add_multigroup_">
+<code class="descname">_add_multigroup_</code><span class="sig-paren">(</span><em>x</em>, <em>*argv</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._add_multigroup_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._add_multigroup_" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><dl class="docutils">
+<dt>input: </dt>
+<dd><p class="first">x       time array
+<a href="#id11"><span class="problematic" id="id12">*</span></a>argv   passed as a variable number of parameter values</p>
+<blockquote class="last">
+<div>val0,val1,val2,val3,val4,val5, … at this iteration 
+argv is a list of values [val0,val1,val2,val3,val4,val5, …]</div></blockquote>
+</dd>
+</dl>
+</div></blockquote>
+<p>_add_ DISTRIBUTES THESE PARAMETER VALUES:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">asymmetry</span> <span class="n">fit</span> <span class="k">with</span> <span class="n">fixed</span> <span class="n">alpha</span>
+<span class="n">order</span> <span class="n">driven</span> <span class="n">by</span> <span class="n">model</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">mgbl</span>
+</pre></div>
+</div>
+<p>must loop over groups, whose number n = y.shape[0]
+and produce a n-valued np.array function f, f[k] for y[k],e[k]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._add_multirun_">
+<code class="descname">_add_multirun_</code><span class="sig-paren">(</span><em>x</em>, <em>*argv</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._add_multirun_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._add_multirun_" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><dl class="docutils">
+<dt>input: </dt>
+<dd><p class="first">x       time array
+<a href="#id13"><span class="problematic" id="id14">*</span></a>argv   passed as a variable number of parameter values</p>
+<blockquote class="last">
+<div>val0,val1,val2,val3,val4,val5, … at this iteration 
+argv is a list of values [val0,val1,val2,val3,val4,val5, …]</div></blockquote>
+</dd>
+</dl>
+</div></blockquote>
+<p>_add_multirun_ (user is implicit, since sequential ses _add_) DISTRIBUTES THESE PARAMETER VALUES:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">asymmetry</span> <span class="n">fit</span> <span class="k">with</span> <span class="n">fixed</span> <span class="n">alpha</span>
+<span class="n">order</span> <span class="n">driven</span> <span class="n">by</span> 
+<span class="n">first</span> <span class="k">global</span> <span class="n">user</span> <span class="n">parameters</span> 
+<span class="n">then</span> <span class="n">local</span> <span class="n">run</span> <span class="n">parameters</span><span class="p">,</span> <span class="n">first</span> <span class="n">user</span> <span class="n">local</span> <span class="ow">and</span> <span class="n">then</span> <span class="s2">&quot;~&quot;</span><span class="p">,</span><span class="s2">&quot;!&quot;</span> <span class="n">pars</span> <span class="ow">in</span> <span class="n">model</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">mgbl</span> 
+</pre></div>
+</div>
+<p>must loop over runs, whose number n = y.shape[0]
+and produce a n-valued np.array function f, f[k] for y[k],e[k]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._add_multirun_grad_">
+<code class="descname">_add_multirun_grad_</code><span class="sig-paren">(</span><em>*argv</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._add_multirun_grad_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._add_multirun_grad_" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input:</dt>
+<dd><blockquote class="first">
+<div><dl class="docutils">
+<dt><a href="#id15"><span class="problematic" id="id16">*</span></a>argv   passed as a variable number of parameter values </dt>
+<dd>val0,val1,val2,val3,val4,val5, … at this iteration 
+argv is a list of values [val0,val1,val2,val3,val4,val5, …]</dd>
+</dl>
+</div></blockquote>
+<p class="last">(here independent variable is self._x_ time array by default, no plots)</p>
+</dd>
+<dt>output:</dt>
+<dd><dl class="first last docutils">
+<dt>np.array(grad) </dt>
+<dd>whose m-th value is the chisquare gradient 
+with respect to internal minuit parameter p[m]</dd>
+</dl>
+</dd>
+<dt>requires previous calls to _load_data_multirun_grad_  to define self._minuit_grad_list_</dt>
+<dd>both constructed in int2_multirun_grad_method_key() from mujpy.tools.tools</dd>
+</dl>
+<p>self._gradients_ used to store f values and g derivatives of all components, to minimize numpy array calculations;
+self._glocals_ to loop</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>over minuit parameters and calculate gradient components, </dt>
+<dd><p class="first">over runs, whose number n = y.shape[0], for globals
+on single run, for locals</p>
+<blockquote class="last">
+<div>over component parameters that contain that minuit parameter, i
+including the derivative of the user function.</div></blockquote>
+</dd>
+</dl>
+</div></blockquote>
+<p>_add_multirun_grad_ (user is implicit, no grads in sequential fit)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._add_single_">
+<code class="descname">_add_single_</code><span class="sig-paren">(</span><em>x</em>, <em>*argv</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._add_single_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._add_single_" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><dl class="docutils">
+<dt>input: </dt>
+<dd><p class="first">x       time array
+<a href="#id17"><span class="problematic" id="id18">*</span></a>argv   passed as a variable number of parameter values</p>
+<blockquote class="last">
+<div>val1,val2,val3,val4,val5,val6, … at this iteration 
+argv is a list of values [val1,val2,val3,val4,val5,val6, …]</div></blockquote>
+</dd>
+</dl>
+</div></blockquote>
+<p>_add_ DISTRIBUTES THESE PARAMETER VALUES:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">asymmetry</span> <span class="n">fit</span> <span class="k">with</span> <span class="n">fixed</span> <span class="n">alpha</span>
+<span class="n">order</span> <span class="n">driven</span> <span class="n">by</span> <span class="n">model</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">blml</span>
+</pre></div>
+</div>
+<p>Removed “da” forever - use calib instead</p>
+<p>Removed FFT, see _add_fft_ instead</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._add_single_calib_">
+<code class="descname">_add_single_calib_</code><span class="sig-paren">(</span><em>x</em>, <em>*argv</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._add_single_calib_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._add_single_calib_" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>use _add_single_ instead, after _load_data_calib_</dt>
+<dd><dl class="first last docutils">
+<dt>input: </dt>
+<dd><p class="first">x       time array
+<a href="#id19"><span class="problematic" id="id20">*</span></a>argv   passed as a variable number of parameter values</p>
+<blockquote class="last">
+<div>alpha,val1,val2,val3,val4,val5, … at this iteration 
+argv is a list of values [alpha,val1,val2,val3,val4,val5, …]</div></blockquote>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>_add_single_calib_ DISTRIBUTES THESE PARAMETER VALUES for plots:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">asymmetry</span> <span class="n">fit</span> <span class="k">with</span> <span class="n">fitted</span> <span class="n">alpha</span>
+<span class="n">version</span> <span class="k">for</span> <span class="n">plotting</span> <span class="n">calib</span> <span class="n">fits</span> <span class="k">as</span> <span class="n">normal</span> <span class="n">asymmetry</span> <span class="n">fits</span>
+<span class="n">order</span> <span class="n">driven</span> <span class="n">by</span> <span class="n">model</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">alml</span>
+</pre></div>
+</div>
+<p>NO FFT mode, no check on self._include_components</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._add_single_multigroup_calib_">
+<code class="descname">_add_single_multigroup_calib_</code><span class="sig-paren">(</span><em>x</em>, <em>*argv</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._add_single_multigroup_calib_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._add_single_multigroup_calib_" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>use instead _add_multigroup_ after _load_data_multigroup_calib_ </dt>
+<dd><dl class="first last docutils">
+<dt>input: </dt>
+<dd><p class="first">x       time array
+<a href="#id21"><span class="problematic" id="id22">*</span></a>argv   passed as a variable number of parameter values</p>
+<blockquote class="last">
+<div>alpha,val1,val2,val3,val4,val5, … at this iteration 
+argv is a list of values [alpha,val1,val2,val3,val4,val5, …]</div></blockquote>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>_add_single_calib_ DISTRIBUTES THESE PARAMETER VALUES for plots:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">asymmetry</span> <span class="n">fit</span> <span class="k">with</span> <span class="n">fitted</span> <span class="n">alpha</span>
+<span class="n">version</span> <span class="k">for</span> <span class="n">plotting</span> <span class="n">calib</span> <span class="n">fits</span> <span class="k">as</span> <span class="n">normal</span> <span class="n">asymmetry</span> <span class="n">fits</span>
+<span class="n">order</span> <span class="n">driven</span> <span class="n">by</span> <span class="n">model</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">alml</span>
+</pre></div>
+</div>
+<p>NO FFT mode, no check on self._include_components</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._chisquare_">
+<code class="descname">_chisquare_</code><span class="sig-paren">(</span><em>*argv</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._chisquare_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._chisquare_" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signature provided at Minuit invocation by 
+optional argument forced_parameters=parnames
+where parnames is a tuple of parameter names:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">parnames</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;asym&#39;</span><span class="p">,</span><span class="s1">&#39;field&#39;</span><span class="p">,</span><span class="s1">&#39;phase&#39;</span><span class="p">,</span><span class="s1">&#39;rate&#39;</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Works also for global fits, 
+where sum (…,axis=None) yields the sum over all indices.</p>
+<p>Provides partial chisquares over individual runs or groups if self._axis_ = 1 
+None is default and sum is over all indices:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._chisquare_single_">
+<code class="descname">_chisquare_single_</code><span class="sig-paren">(</span><em>*argv</em>, <em>k=0</em>, <em>l=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._chisquare_single_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._chisquare_single_" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>inputs:</dt>
+<dd>argv ar single run single group fit parameters
+k[, l] are indices of _y_ and _e_ multidimensional arrays</dd>
+</dl>
+<p>Used only in mufitplot (is it still?)
+Provides partial chisquares over individual runs or groups</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._derivative_j0_">
+<code class="descname">_derivative_j0_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._derivative_j0_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._derivative_j0_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of j0 with respect to total phase alpha =  2 pi _gamma_Mu_MHzper_mT B x + φ _radeg_,
+- A sin(2 pi _gamma_Mu_MHzper_mT B x + φ _radeg_) times Lorentzian times Gaussian decay,
+x [mus], A, B [mT], φ [degrees], λ [mus-1], σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._derivative_jg_">
+<code class="descname">_derivative_jg_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._derivative_jg_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._derivative_jg_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of jg with respect to total phase alpha =  2 pi _gamma_Mu_MHzper_mT B x + φ _radeg_,
+- A sin(2 pi _gamma_Mu_MHzper_mT B x + φ _radeg_) times Gaussian decay,
+x [mus], A, B [mT], φ [degrees], σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._derivative_jl_">
+<code class="descname">_derivative_jl_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._derivative_jl_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._derivative_jl_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of jl with respect to total phase alpha =  2 pi _gamma_Mu_MHzper_mT B x + φ _radeg_,
+- A J1(2 pi _gamma_Mu_MHzper_mT B x + φ _radeg_) times Lorentzian decay,
+x [mus], A, B [mT], φ [degrees], λ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._derivative_js_">
+<code class="descname">_derivative_js_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>Λ</em>, <em>β</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._derivative_js_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._derivative_js_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of js with respect to total phase alpha =  2 pi _gamma_Mu_MHzper_mT B x + φ _radeg_,
+- A sin(2 pi _gamma_Mu_MHzper_mT B x + φ _radeg_) times stretched decay
+x [mus], A, B [mT], φ [degrees], Λ [mus-1] (&gt;0), β (&gt;0)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._derivative_mg_">
+<code class="descname">_derivative_mg_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._derivative_mg_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._derivative_mg_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of mg with respect to total phase alpha =  2 pi _gamma_Mu_MHzper_mT B x + φ _radeg_,
+- A sin(2 pi _gamma_Mu_MHzper_mT B x + φ _radeg_) times Gaussian decay,
+x [mus], A, B [mT], φ [degrees], σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._derivative_ml_">
+<code class="descname">_derivative_ml_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._derivative_ml_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._derivative_ml_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of mlwith respect to total phase alpha =  2 pi _gamma_Mu_MHzper_mT B x + φ _radeg_,
+- A sin(2 pi _gamma_Mu_MHzper_mT B x + φ _radeg_) times Lorentzian decay
+x [mus], A, B [mT], φ [degrees], λ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._derivative_ms_">
+<code class="descname">_derivative_ms_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>Λ</em>, <em>β</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._derivative_ms_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._derivative_ms_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of ms with respect to total phase alpha =  2 pi _gamma_Mu_MHzper_mT B x + φ _radeg_,
+- A sin(2 pi _gamma_Mu_MHzper_mT B x + φ _radeg_) times stretched decay
+x [mus], A, B [mT], φ [degrees], Λ [mus-1] (&gt;0), β (&gt;0)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._derivative_mu_">
+<code class="descname">_derivative_mu_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._derivative_mu_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._derivative_mu_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of mu with respect to total phase alpha =  2 pi _gamma_Mu_MHzper_mT B x + φ _radeg_,
+- A sin(2 pi _gamma_Mu_MHzper_mT B x + φ _radeg_) times Lorentzian times Gaussian decay,
+x [mus], A, B [mT], φ [degrees], λ [mus-1], σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._fft_init">
+<code class="descname">_fft_init</code><span class="sig-paren">(</span><em>include_components</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._fft_init"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._fft_init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input:</dt>
+<dd><dl class="first last docutils">
+<dt>include_components </dt>
+<dd>True to subtract in residues  asymm - f</dd>
+</dl>
+</dd>
+</dl>
+<p>used to generate a partial residue for FFT</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_ba_0_">
+<code class="descname">_grad_ba_0_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>λ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_ba_0_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_ba_0_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of ba with respect to A in terms of self.ba
+x [mus], A, σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_ba_1_">
+<code class="descname">_grad_ba_1_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>λ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_ba_1_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_ba_1_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of ba with respect to λ in terms of self.ba
+x [mus], A, σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_ba_2_">
+<code class="descname">_grad_ba_2_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>λ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_ba_2_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_ba_2_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of ba with respect to σ in terms of self.ba
+x [mus], A, σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_bg_0_">
+<code class="descname">_grad_bg_0_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_bg_0_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_bg_0_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of bg with respect to A in terms of self.bg
+x [mus], A, σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_bg_1_">
+<code class="descname">_grad_bg_1_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_bg_1_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_bg_1_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of bg with respect to σ in terms of self.bg
+x [mus], A, σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_bl_0_">
+<code class="descname">_grad_bl_0_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>λ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_bl_0_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_bl_0_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of bl with respect to A in terms of self.bl
+x [mus], A, λ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_bl_1_">
+<code class="descname">_grad_bl_1_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>λ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_bl_1_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_bl_1_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of bl with respect to λ in terms of self.bl
+x [mus], A, λ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_bs_0_">
+<code class="descname">_grad_bs_0_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>Λ</em>, <em>β</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_bs_0_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_bs_0_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of bs with respect to A in terms of self.bs
+x [mus], A, Λ [mus-1] (&gt;0), β (&gt;0)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_bs_1_">
+<code class="descname">_grad_bs_1_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>Λ</em>, <em>β</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_bs_1_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_bs_1_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of bs with respect to Λ in terms of self.bs
+x [mus], A, Λ [mus-1] (&gt;0), β (&gt;0)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_bs_3_">
+<code class="descname">_grad_bs_3_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>Λ</em>, <em>β</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_bs_3_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_bs_3_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of bs with respect to β in terms of self.bs
+x [mus], A, Λ [mus-1] (&gt;0), β (&gt;0)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_chisquare_">
+<code class="descname">_grad_chisquare_</code><span class="sig-paren">(</span><em>*argv</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_chisquare_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_chisquare_" title="Permalink to this definition">¶</a></dt>
+<dd><p>option for global multirun fits, 
+where sum (…,axis=None) yields the sum over all indices.</p>
+<p>Provides gradient of chisquare with respect to p, i.e. along the i-th parameter p_i it is
+sum_j 2[y(t_j,p)-y_ej)]/e_j^2 sum_k d y_k(t_j,p) /dp_i
+where j are bins, k are components in the model</p>
+<p>The first factor is common to a all grad components
+The second factor mus be selected. 
+y_k may not depend on p_i, dy_k/dp_i = 0
+And if y_k’ does depend, p_i will be its l-th parameter, and we must use the l-th component of its gradient
+Need</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_j0_0_">
+<code class="descname">_grad_j0_0_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_j0_0_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_j0_0_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of j0 with respect to A in terms of self.mu and self._derivative_mu_
+x [mus], A, B [mT], φ [degrees], λ [mus-1], σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_j0_1_">
+<code class="descname">_grad_j0_1_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_j0_1_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_j0_1_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of j0 with respect to B in terms of self.mu and self._derivative_mu_
+x [mus], A, B [mT], φ [degrees], λ [mus-1], σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_j0_2_">
+<code class="descname">_grad_j0_2_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_j0_2_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_j0_2_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of j0 with respect to φ in terms of self.mu and self._derivative_mu_
+x [mus], A, B [mT], φ [degrees], λ [mus-1], σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_j0_3_">
+<code class="descname">_grad_j0_3_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_j0_3_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_j0_3_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of j0 with respect to λ in terms of self.mu and self._derivative_mu_
+x [mus], A, B [mT], φ [degrees], λ [mus-1], σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_j0_4_">
+<code class="descname">_grad_j0_4_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_j0_4_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_j0_4_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of j0 with respect to σ in terms of self.mu and self._derivative_mu_
+x [mus], A, B [mT], φ [degrees], λ [mus-1], σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_jg_0_">
+<code class="descname">_grad_jg_0_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_jg_0_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_jg_0_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of jg with respect to A in terms of self.mg and self._derivative_mg_
+x [mus], A, B [mT], φ [degrees], σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_jg_1_">
+<code class="descname">_grad_jg_1_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_jg_1_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_jg_1_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of jg with respect to B in terms of self.mg and self._derivative_mg_
+x [mus], A, B [mT], φ [degrees], σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_jg_2_">
+<code class="descname">_grad_jg_2_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_jg_2_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_jg_2_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of jg with respect to φ in terms of self.mg and self._derivative_mg_
+x [mus], A, B [mT], φ [degrees], σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_jg_3_">
+<code class="descname">_grad_jg_3_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_jg_3_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_jg_3_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of jg with respect to σ in terms of self.mg and self._derivative_mg_
+x [mus], A, B [mT], φ [degrees], σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_jl_0_">
+<code class="descname">_grad_jl_0_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_jl_0_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_jl_0_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of jl with respect to A in terms of self.ml and self._derivative_ml_
+x [mus], A, B [mT], φ [degrees], λ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_jl_1_">
+<code class="descname">_grad_jl_1_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_jl_1_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_jl_1_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of jl with respect to B in terms of self.ml and self._derivative_ml_
+x [mus], A, B [mT], φ [degrees], λ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_jl_2_">
+<code class="descname">_grad_jl_2_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_jl_2_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_jl_2_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of jl with respect to φ in terms of self.ml and self._derivative_ml_
+x [mus], A, B [mT], φ [degrees], λ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_js_0_">
+<code class="descname">_grad_js_0_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>Λ</em>, <em>β</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_js_0_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_js_0_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of js with respect to A in terms of self.mu and self._derivative_mu_
+x [mus], A, B [mT], φ [degrees], Λ [mus-1] (&gt;0), β (&gt;0)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_js_1_">
+<code class="descname">_grad_js_1_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>Λ</em>, <em>β</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_js_1_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_js_1_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of js with respect to B in terms of self.mu and self._derivative_mu_
+x [mus], A, B [mT], φ [degrees], Λ [mus-1] (&gt;0), β (&gt;0)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_js_2_">
+<code class="descname">_grad_js_2_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>Λ</em>, <em>β</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_js_2_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_js_2_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of js with respect to φ in terms of self.mu and self._derivative_mu_
+x [mus], A, B [mT], φ [degrees], Λ [mus-1] (&gt;0), β (&gt;0)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_js_3_">
+<code class="descname">_grad_js_3_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>Λ</em>, <em>β</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_js_3_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_js_3_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of ms with respect to Λ in terms of self.mu and self._derivative_mu_
+x [mus], A, B [mT], φ [degrees], Λ [mus-1] (&gt;0), β (&gt;0)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_js_4_">
+<code class="descname">_grad_js_4_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>Λ</em>, <em>β</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_js_4_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_js_4_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of js with respect to β in terms of self.mu and self._derivative_mu_
+x [mus], A, B [mT], φ [degrees], Λ [mus-1] (&gt;0), β (&gt;0)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_mg_0_">
+<code class="descname">_grad_mg_0_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_mg_0_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_mg_0_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of mg with respect to A in terms of self.mg and self._derivative_mg_
+x [mus], A, B [mT], φ [degrees], σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_mg_1_">
+<code class="descname">_grad_mg_1_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_mg_1_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_mg_1_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of mg with respect to B in terms of self.mg and self._derivative_mg_
+x [mus], A, B [mT], φ [degrees], σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_mg_2_">
+<code class="descname">_grad_mg_2_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_mg_2_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_mg_2_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of mg with respect to φ in terms of self.mg and self._derivative_mg_
+x [mus], A, B [mT], φ [degrees], σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_mg_3_">
+<code class="descname">_grad_mg_3_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_mg_3_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_mg_3_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of mg with respect to σ in terms of self.mg and self._derivative_mg_
+x [mus], A, B [mT], φ [degrees], σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_ml_0_">
+<code class="descname">_grad_ml_0_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_ml_0_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_ml_0_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of ml with respect to A in terms of self.ml and self._derivative_ml_
+x [mus], A, B [mT], φ [degrees], λ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_ml_1_">
+<code class="descname">_grad_ml_1_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_ml_1_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_ml_1_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of ml with respect to B in terms of self.ml and self._derivative_ml_
+x [mus], A, B [mT], φ [degrees], λ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_ml_2_">
+<code class="descname">_grad_ml_2_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_ml_2_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_ml_2_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of ml with respect to φ in terms of self.ml and self._derivative_ml_
+x [mus], A, B [mT], φ [degrees], λ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_ml_3_">
+<code class="descname">_grad_ml_3_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_ml_3_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_ml_3_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of ml with respect to λ in terms of self.ml and self._derivative_ml_
+x [mus], A, B [mT], φ [degrees], λ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_ms_0_">
+<code class="descname">_grad_ms_0_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>Λ</em>, <em>β</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_ms_0_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_ms_0_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of ms with respect to A in terms of self.mu and self._derivative_mu_
+x [mus], A, B [mT], φ [degrees], Λ [mus-1] (&gt;0), β (&gt;0)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_ms_1_">
+<code class="descname">_grad_ms_1_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>Λ</em>, <em>β</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_ms_1_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_ms_1_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of ms with respect to B in terms of self.mu and self._derivative_mu_
+x [mus], A, B [mT], φ [degrees], Λ [mus-1] (&gt;0), β (&gt;0)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_ms_2_">
+<code class="descname">_grad_ms_2_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>Λ</em>, <em>β</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_ms_2_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_ms_2_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of ms with respect to φ in terms of self.mu and self._derivative_mu_
+x [mus], A, B [mT], φ [degrees], Λ [mus-1] (&gt;0), β (&gt;0)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_ms_3_">
+<code class="descname">_grad_ms_3_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>Λ</em>, <em>β</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_ms_3_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_ms_3_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of ms with respect to Λ in terms of self.mu and self._derivative_mu_
+x [mus], A, B [mT], φ [degrees], Λ [mus-1] (&gt;0), β (&gt;0)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_ms_4_">
+<code class="descname">_grad_ms_4_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>Λ</em>, <em>β</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_ms_4_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_ms_4_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of ms with respect to β in terms of self.mu and self._derivative_mu_
+x [mus], A, B [mT], φ [degrees], Λ [mus-1] (&gt;0), β (&gt;0)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_mu_0_">
+<code class="descname">_grad_mu_0_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_mu_0_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_mu_0_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of mu with respect to A in terms of self.mu and self._derivative_mu_
+x [mus], A, B [mT], φ [degrees], λ [mus-1], σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_mu_1_">
+<code class="descname">_grad_mu_1_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_mu_1_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_mu_1_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of mu with respect to B in terms of self.mu and self._derivative_mu_
+x [mus], A, B [mT], φ [degrees], λ [mus-1], σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_mu_2_">
+<code class="descname">_grad_mu_2_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_mu_2_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_mu_2_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of mu with respect to φ in terms of self.mu and self._derivative_mu_
+x [mus], A, B [mT], φ [degrees], λ [mus-1], σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_mu_3_">
+<code class="descname">_grad_mu_3_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_mu_3_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_mu_3_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of mu with respect to λ in terms of self.mu and self._derivative_mu_
+x [mus], A, B [mT], φ [degrees], λ [mus-1], σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._grad_mu_4_">
+<code class="descname">_grad_mu_4_</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._grad_mu_4_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._grad_mu_4_" title="Permalink to this definition">¶</a></dt>
+<dd><p>derivative of mu with respect to σ in terms of self.mu and self._derivative_mu_
+x [mus], A, B [mT], φ [degrees], λ [mus-1], σ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._include_all_">
+<code class="descname">_include_all_</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._include_all_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._include_all_" title="Permalink to this definition">¶</a></dt>
+<dd><p>reset to normal fit mode (initially of after fft)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._kg">
+<code class="descname">_kg</code><span class="sig-paren">(</span><em>t</em>, <em>w</em>, <em>Δ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._kg"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._kg" title="Permalink to this definition">¶</a></dt>
+<dd><p>auxiliary component for a static Gaussian Kubo Toyabe in longitudinal field, 
+t [mus], w [mus-1], Δ [mus-1], 
+w = 2*pi*gamma_mu*L_field
+The first derivative of dawsn(x) is 1-2*x*dawsn(x)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._kgdyn">
+<code class="descname">_kgdyn</code><span class="sig-paren">(</span><em>x</em>, <em>w</em>, <em>Δ</em>, <em>ν</em>, <em>*argv</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._kgdyn"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._kgdyn" title="Permalink to this definition">¶</a></dt>
+<dd><p>auxiliary dynamization of Gaussian Kubo Toyabe 
+by G. Allodi 
+N: number of sampling points;
+dt: time interval per bin [i.e. time base is t = dt*(0:N-1)]
+w [mus-1], Δ [mus-1], ν [MHz] 
+(longitudinal field freq, Gaussian distribution, scattering frequency 
+% alphaN: [optional argument] weighting coefficient alpha times N. Default=10</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._kl">
+<code class="descname">_kl</code><span class="sig-paren">(</span><em>t</em>, <em>w</em>, <em>Δ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._kl"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._kl" title="Permalink to this definition">¶</a></dt>
+<dd><p>static Lorentzian Kubo Toyabe in longitudinal field, 
+t [mus], w [mus-1], Δ [mus-1], 
+w = 2*pi*gamma_mu*L_field</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._load_calib_single_data_">
+<code class="descname">_load_calib_single_data_</code><span class="sig-paren">(</span><em>x</em>, <em>yf</em>, <em>yb</em>, <em>bf</em>, <em>bb</em>, <em>yfm</em>, <em>ybm</em>, <em>components</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._load_calib_single_data_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._load_calib_single_data_" title="Permalink to this definition">¶</a></dt>
+<dd><p>fit with alpha as free parameter
+input:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>x suite.time, 1d of shape nbins</dt>
+<dd>see suite.time</dd>
+</dl>
+<p>yf,yb 1d array of shape nbins
+bf,bb,yfm,yfb are scalars (see suite.single_for_back_counts)</p>
+</div></blockquote>
+<p>components is a list [[method,[key,…,key]],…,[method,[key,…,key]]  where
+arg _components_ is the output of int2_int() from mujpy.tools.tools
+for calib the first method is empty (loke da) and its single parameter is alpha</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._load_data_">
+<code class="descname">_load_data_</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>_components_</em>, <em>e=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._load_data_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._load_data_" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input: </dt>
+<dd><p class="first">x, y, e are numpy arrays, y, e are 1d 
+e = 1 or missing yields unitary errors 
+_components_ is a list [[method,[key,…,key]],…,[method,[key,…,key]]],</p>
+<blockquote class="last">
+<div>produced by int2_method() from mujpy.tools.tools
+where method is an instantiation of a component, e.g. self.ml 
+and value = eval(key) produces the parameter value</div></blockquote>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._load_data_calib_">
+<code class="descname">_load_data_calib_</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>components</em>, <em>e=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._load_data_calib_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._load_data_calib_" title="Permalink to this definition">¶</a></dt>
+<dd><p>for normal asymmetry plot of a calib best fit (or guess)
+input:</p>
+<blockquote>
+<div><p>x, y, e are numpy arrays, y, e are 1d 
+e = 1 or missing yields unitary errors 
+_components_ is a list [[method,[key,…,key]],…,[method,[key,…,key]]],</p>
+<blockquote>
+<div>produced by int2_method() from mujpy.tools.tools
+where method is an instantiation of a component, e.g. self.ml 
+and value = eval(key) produces the parameter value</div></blockquote>
+</div></blockquote>
+<p>the argument _components_ is stored in self._components_</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._load_data_calib_multigroup_">
+<code class="descname">_load_data_calib_multigroup_</code><span class="sig-paren">(</span><em>x</em>, <em>yf</em>, <em>yb</em>, <em>bf</em>, <em>bb</em>, <em>yfm</em>, <em>ybm</em>, <em>components</em>, <em>e=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._load_data_calib_multigroup_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._load_data_calib_multigroup_" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input: </dt>
+<dd><p class="first">x, yf, yb  are numpy arrays, yf, yb are 2d
+bf, bb, yfm, ybm are backgrounnd f and b, and its exponential average, f and b 
+e = 1, since errors are calculated (should be simplified)
+components is a list [[method,[[key,…],…,[key,…]]],…,[method,[[key…],…,[key,…]]]],</p>
+<blockquote>
+<div>produced by int2_method() from mujpy.tools.tools
+where method is an instantiation of a component, e.g. self.ml 
+and value = eval(key) produces the parameter value (the inner key list is for different groups)</div></blockquote>
+<p class="last">_add_multigroup_ must produce an 2d function f.shape(ngroup,nbins)
+therefore _components_ must be a np.vectorize of ngroup copies of the method 
+method da not allowed here, no need for alpha
+no fft of residues</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._load_data_multigroup_">
+<code class="descname">_load_data_multigroup_</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>components</em>, <em>e=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._load_data_multigroup_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._load_data_multigroup_" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input: </dt>
+<dd><p class="first">x, y, e are numpy arrays, y, e are 2d 
+e = 1 or missing yields unitary errors 
+components is a list [[method,[[key,…],…,[key,…]]],…,[method,[[key…],…,[key,…]]]],</p>
+<blockquote>
+<div>produced by int2_method() from mujpy.tools.tools
+where method is an instantiation of a component, e.g. self.ml 
+and value = eval(key) produces the parameter value (the inner key list is for different groups)</div></blockquote>
+<p class="last">_add_multigroup_ must produce a 2d function f.shape(ngroup,nbins)
+therefore _components_ must be a np.vectorize of ngroup copies of the method 
+method da not allowed here, no need for alpha
+no fft of residues</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._load_data_multigroup_calib_">
+<code class="descname">_load_data_multigroup_calib_</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>components</em>, <em>e=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._load_data_multigroup_calib_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._load_data_multigroup_calib_" title="Permalink to this definition">¶</a></dt>
+<dd><p>for normal asymmetry plot of a calib best fit (or guess)
+input:</p>
+<blockquote>
+<div><p>x, y, e are numpy arrays, y, e are 2d 
+e = 1 or missing yields unitary errors 
+components is a list [[method,[[key,…],…,[key,…]]],…,[method,[[key…],…,[key,…]]]],</p>
+<blockquote>
+<div>produced by int2_method() from mujpy.tools.tools
+where method is an instantiation of a component, e.g. self.ml 
+and value = eval(key) produces the parameter value (the inner key list is for different groups)</div></blockquote>
+<p>_add_multigroup_ must produce an 2d function f.shape(ngroup,nbins)
+therefore _components_ must be a np.vectorize of ngroup copies of the method 
+method da not allowed here, no need for alpha
+no fft of residues</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._load_data_multirun_grad_">
+<code class="descname">_load_data_multirun_grad_</code><span class="sig-paren">(</span><em>minuit_ordered_grad_list</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._load_data_multirun_grad_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._load_data_multirun_grad_" title="Permalink to this definition">¶</a></dt>
+<dd><p>minuit_ordered_grad_list is
+self._glocals_ to loop</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>over minuit parameters and calculate gradient components, </dt>
+<dd><p class="first">over runs, whose number n = y.shape[0], for globals
+on single run, for locals</p>
+<blockquote class="last">
+<div>over component parameters that contain that minuit parameter, i
+ncluding the derivative of the user function.</div></blockquote>
+</dd>
+</dl>
+</div></blockquote>
+<p>constructed in mujpy.tools.tools  int2_multirun_grad_method_key</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel._load_data_multirun_user_">
+<code class="descname">_load_data_multirun_user_</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>components</em>, <em>e=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel._load_data_multirun_user_"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel._load_data_multirun_user_" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>input: </dt>
+<dd><p class="first">x, y, e are numpy arrays, y, e are 2d 
+e = 1 or missing yields unitary errors 
+components is a list [[method,[key,…,key]],…,[method,[key,…,key]]],</p>
+<blockquote>
+<div>produced by int2_multirun_user_method_key() from mujpy.tools.tools
+where method is an instantiation of a component, e.g. self.ml 
+and value = eval(key) produces the parameter value</div></blockquote>
+<p class="last">_add_multirun_ must produce a 2d function f.shape(ngroup,nbins)
+therefore _components_ must be a np.vectorize of nrun copies of the method 
+method da not allowed here, no need for alpha
+no fft of residues</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel.al">
+<code class="descname">al</code><span class="sig-paren">(</span><em>x</em>, <em>α</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel.al"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel.al" title="Permalink to this definition">¶</a></dt>
+<dd><p>alpha calibration 
+x [mus], α
+x dummy, for compatibility</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel.ba">
+<code class="descname">ba</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>λ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel.ba"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel.ba" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lorentzian times Gaussian decay, A*exp(-x*λ)*exp(-0.5*(x*σ)**2)
+x [mus], A, λ [mus-1], σ [mus-1] (positive parity)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel.bg">
+<code class="descname">bg</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel.bg"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel.bg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gaussian decay, A*exp(-0.5*(x*σ)**2)
+x [mus], A, σ [mus-1] (positive parity)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel.bl">
+<code class="descname">bl</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>λ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel.bl"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel.bl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lorentzian decay, A*exp(-x*λ)
+x [mus], A, λ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel.bs">
+<code class="descname">bs</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>Λ</em>, <em>β</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel.bs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel.bs" title="Permalink to this definition">¶</a></dt>
+<dd><p>stretched decay A*exp(-(x*Λ)**β), 
+x [mus], A, Λ [mus-1] (&gt;0), β (&gt;0)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel.fm">
+<code class="descname">fm</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>λ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel.fm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel.fm" title="Permalink to this definition">¶</a></dt>
+<dd><p>FmuF (powder average)
+according to Book  
+x [mus], A, B [mT], λ [mus-1]
+B is Bdip</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel.j0">
+<code class="descname">j0</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel.j0"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel.j0" title="Permalink to this definition">¶</a></dt>
+<dd><p>precession A j1(2 pi _gamma_Mu_MHzper_mT B x+φ _radeg_) times Gaussian times Lorentzian decays, 
+x [mus], A, B [mT], φ [degrees], 
+λ [mus-1], σ [mus-1]  (positive parity)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel.jg">
+<code class="descname">jg</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel.jg"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel.jg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bessel j0 precession times Gaussian decay, 
+x [mus], A, B [mT], φ [degrees], σ [mus-1] (positive parity)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel.jl">
+<code class="descname">jl</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel.jl"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel.jl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bessel j0 precession times Lorentzian decay, 
+x [mus], A, B [mT], φ [degrees], λ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel.js">
+<code class="descname">js</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>Λ</em>, <em>β</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel.js"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel.js" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bessel j0 precession times stretched decay, 
+x [mus], A, B [mT], φ [degrees], Λ [mus-1] (&gt;0), β (&gt;0)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel.kd">
+<code class="descname">kd</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>Δ</em>, <em>λ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel.kd"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel.kd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gauss Kubo Toyabe static times Lorentz decay
+x [mus], A, B [T], Δ [mus-1], ν (MHz)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel.kg">
+<code class="descname">kg</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>BL</em>, <em>Δ</em>, <em>ν</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel.kg"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel.kg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gauss Kubo Toyabe in (fixed) long field, static or dynamic
+x [mus], A, BL [mT], Δ [mus-1] (positive parity), ν (MHz)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel.kl">
+<code class="descname">kl</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>BL</em>, <em>Γ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel.kl"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel.kl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lorent Kubo Toyabe in (fixed) long field, static 
+x [mus], A, BL [mT], Γ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel.ks">
+<code class="descname">ks</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>Δ</em>, <em>Λ</em>, <em>β</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel.ks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel.ks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gauss Kubo Toyabe times stretched decay
+x [mus], A, B [T], Δ [mus-1], Λ [mus-1] (&gt;0), β (&gt;0)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel.mg">
+<code class="descname">mg</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel.mg"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel.mg" title="Permalink to this definition">¶</a></dt>
+<dd><p>precession A cos(2 pi _gamma_Mu_MHzper_mT B x+φ _radeg_) times Gaussian decay, 
+x [mus], A, B [mT], φ [degrees], σ [mus-1]  (positive parity)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel.ml">
+<code class="descname">ml</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel.ml"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel.ml" title="Permalink to this definition">¶</a></dt>
+<dd><p>precession A cos(2 pi _gamma_Mu_MHzper_mT B x+φ _radeg_) times Lorentzian decay, 
+x [mus], A, B [mT], φ [deg], λ [mus-1]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel.ms">
+<code class="descname">ms</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>Λ</em>, <em>β</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel.ms"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel.ms" title="Permalink to this definition">¶</a></dt>
+<dd><p>precession A cos(2 pi _gamma_Mu_MHzper_mT B x+φ _radeg_) times stretched decay, 
+x [mus], A, B [mT], φ [degrees], Λ [mus-1] (&gt;0), β (&gt;0)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mucomponents.mucomponents.mumodel.mu">
+<code class="descname">mu</code><span class="sig-paren">(</span><em>x</em>, <em>A</em>, <em>B</em>, <em>φ</em>, <em>λ</em>, <em>σ</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mucomponents/mucomponents.html#mumodel.mu"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mucomponents.mucomponents.mumodel.mu" title="Permalink to this definition">¶</a></dt>
+<dd><p>precession A cos(2 pi _gamma_Mu_MHzper_mT B x+φ _radeg_) times Gaussian times Lorentzian decays, 
+x [mus], A, B [mT], φ [degrees], 
+λ [mus-1], σ [mus-1]  (positive parity)</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="musr2py">
+<h2>musr2py<a class="headerlink" href="#musr2py" title="Permalink to this headline">¶</a></h2>
+<p>wrapper to the MuSR_td_PSI.cpp class</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="Philostory.html" class="btn btn-neutral float-left" title="Philosophy &amp; History of MuSR code" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2017, R. De Renzi
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
