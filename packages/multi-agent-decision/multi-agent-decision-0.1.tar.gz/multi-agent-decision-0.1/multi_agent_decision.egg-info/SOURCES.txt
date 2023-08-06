@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+multi_agent_decision/__init__.py
+multi_agent_decision/simulation.py
+multi_agent_decision.egg-info/PKG-INFO
+multi_agent_decision.egg-info/SOURCES.txt
+multi_agent_decision.egg-info/dependency_links.txt
+multi_agent_decision.egg-info/requires.txt
+multi_agent_decision.egg-info/top_level.txt
