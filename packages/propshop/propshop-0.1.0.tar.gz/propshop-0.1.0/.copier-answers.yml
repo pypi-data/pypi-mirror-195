@@ -1,0 +1,15 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: db46469
+_src_path: gh:blakeNaccarato/copier-python
+actions_runner: ubuntu-latest
+advanced: false
+docs_engine: MYST
+github_repo_name: propshop
+include_funding: true
+project_email: blake.naccarato+propshop@gmail.com
+project_name: propshop
+project_owner_github_username: blakeNaccarato
+project_owner_name: Blake Naccarato
+python_version: '3.10'
+use_dvc: false
+year_of_project_creation: 2022

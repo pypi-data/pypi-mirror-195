@@ -1,0 +1,82 @@
+_min_copier_version: "7.0.1"
+
+_subdirectory: template
+
+_envops:
+  keep_trailing_newline: true
+
+project_owner_github_username:
+  type: str
+  help: The username of the GitHub user hosting this project.
+  default:
+
+project_owner_name:
+  type: str
+  help: The name (or names) that will populate the LICENSE file if not the username above.
+  default: "{{ project_owner_github_username }}"
+
+year_of_project_creation:
+  type: int
+  help: The year in which this project was created. For the LICENSE file.
+  default: 2022
+
+github_repo_name:
+  type: str
+  help: The name of the GitHub repo hosting this project.
+  default:
+
+project_name:
+  type: str
+  help: The name of this project, if it is different from the repo name above.
+  default: "{{ github_repo_name }}"
+
+project_email:
+  type: str
+  help: The email address that will be associated with this project. If you'd like, type your regular email address before the "+", messages will still come to your inbox but they will have the {{ project_name }} suffix!
+  default: +{{ project_name }}@gmail.com
+
+python_version:
+  type: str
+  help: This project will only support a Python version at least this high.
+  default: "3.11"
+
+# * -------------------------------------------------------------------------------- # *
+# * ADVANCED
+
+advanced:
+  type: bool
+  help: Do you want to answer advanced questions?
+  default: no
+
+# Advanced
+
+actions_runner:
+  when: "{{ advanced }}"
+  type: str
+  help: "Which GitHub Actions runner should be used?"
+  choices:
+    - "ubuntu-latest"
+    - "windows-latest"
+    - "macos-latest"
+  default: "ubuntu-latest"
+
+include_funding:
+  when: "{{ advanced }}"
+  type: bool
+  help: "Include GitHub Sponsors link for {{ project_owner_github_username }}?"
+  default: no
+
+use_dvc:
+  when: "{{ advanced }}"
+  type: bool
+  help: "Use the Data Version Control package? If yes, make sure you also add the dependency to your project manually, so that it may be updated independently from this template."
+  default: no
+
+docs_engine:
+  when: "{{ advanced }}"
+  type: str
+  help: "Which documentation engine should be used?"
+  choices:
+    - "MyST"
+    - "Jupyter Book"
+  default: "MyST"
