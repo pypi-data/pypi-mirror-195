@@ -1,0 +1,10 @@
+neurodec/__init__.py,sha256=ZHDK5vhQtWzKMZDlUKJz1hRrgU7hpmB8NpWzlVPWplU,36
+neurodec/cli/__init__.py,sha256=QIhyGAR--pDn14JG3As0u1bnUclUEzQeaU6pEsCQL1A,29
+neurodec/cli/argparse.py,sha256=-yCSD2rrBz3MhrX5koWM6BaT7pFvdKbV9DypAgI8Q3g,148
+neurodec/mdt/__init__.py,sha256=MoYK0NO2h7Z0wyzexaBNy8SlrtNvfwWvp5pjWr8KvD0,54516
+neurodec/mdt/auth.py,sha256=JNXUcp1ZxAaD3Nq-d8MJrT4obkhp8ZKUdkn5K3KhIt0,4828
+neurodec-0.0.4.data/scripts/neurodec,sha256=UprPZSEN1zZJrSzMu22LIXfIfVZmK354IazZcY0IzOc,954
+neurodec-0.0.4.dist-info/METADATA,sha256=7PKH2lqxYgkC2gw5mnaik_TBvIs_dwzh-M1JSpj2uaA,292
+neurodec-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+neurodec-0.0.4.dist-info/top_level.txt,sha256=G0EpOS0IXGm61HX-6L5ez8nGNrLEhfMHT4Y7-D0pUz4,9
+neurodec-0.0.4.dist-info/RECORD,,
