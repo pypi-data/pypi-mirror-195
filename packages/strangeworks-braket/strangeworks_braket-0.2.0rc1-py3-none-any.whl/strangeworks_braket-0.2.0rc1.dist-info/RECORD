@@ -1,0 +1,7 @@
+strangeworks_braket/__init__.py,sha256=L1VB3wsZMUUbU9CQYfzi2n0CQu3DyJgRq-w8mBGBOts,233
+strangeworks_braket/device.py,sha256=97wypVMlijJePh5elatmDVvNkoOi-D6p7nVGnLTObzo,2318
+strangeworks_braket/task.py,sha256=v-aU4YqJIZ4TEAdCx2LfTbkE8rzuI_nC72upUkQBknQ,8744
+strangeworks_braket-0.2.0rc1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+strangeworks_braket-0.2.0rc1.dist-info/METADATA,sha256=uJgRoAY_hYdCGdmPs7hBVgIL4cf2K5D339N5tFTcESI,1127
+strangeworks_braket-0.2.0rc1.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+strangeworks_braket-0.2.0rc1.dist-info/RECORD,,
