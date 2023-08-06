@@ -1,0 +1,6 @@
+src/twitchypy_irc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/twitchypy_irc/twitch.py,sha256=_2Tc7LyAuB_pfNiBtZeS09zUOvPXHa4rNMI-pSqIF3U,5848
+twitchypy_irc-0.1.0.dist-info/LICENSE,sha256=KuAMNq7x8M3-AZSS6kmjkCQqruGEvEWPTiHjESMYDYQ,1090
+twitchypy_irc-0.1.0.dist-info/METADATA,sha256=4bMOMeVvHjrODDCM3-5wLysoBT0kEMWGWR76GRxWeg0,3040
+twitchypy_irc-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+twitchypy_irc-0.1.0.dist-info/RECORD,,
