@@ -1,0 +1,13 @@
+plotly
+plotly_express
+
+[dev]
+build
+jupyter
+kaleido
+myst_parser
+numpy
+pre-commit
+pytest
+sphinx
+sphinx_rtd_theme
