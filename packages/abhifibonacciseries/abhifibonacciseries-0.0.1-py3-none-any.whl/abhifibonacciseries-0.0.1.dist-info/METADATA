@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: abhifibonacciseries
+Version: 0.0.1
+Summary: it checks and prints fibonacci numbers
+Home-page: 
+Author: Abhijith Krishna G
+Author-email: abhijithkrishnag234@gmail.com
+License: MIT
+Keywords: fibonacci,test,printfibonacci
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is a library to check whether a given number belongs to fibonacci series or to print fibonacci for given n elements
+
+
+Change Log
+==========
+
+0.0.1 (04/03/2023)
+------------------
+- First Release
+
