@@ -1,0 +1,17 @@
+include aor, system;
+
+v = Items(var[1]);
+Console("Items: ", v);
+Print("Key: ", Key(v[0]));
+Console("Value: ", Value(v[0]));
+Console("Keys: ", Keys(var[1]));
+Console("Values: ", Values(var[1]));
+Console("Type: ", Type(var[1]));
+Console("Array: ", Array("test1", 2 "test3"));
+Console("RecordHasField: ", RecordHasField(var[1], 'id'));
+Console("IsRecord: ", IsRecord(var[1]));
+Console("Platform: ", Platform());
+Console("ShowVersion:");
+ShowVersion();
+
+
