@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: restricted-partition
+Version: 0.1.0
+Summary: Integer partitions with an optional max length
+License: MIT
+Author: Shay Hill
+Author-email: shay_public@hotmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Restricted Partition
+
+A restricted partition is the subset of an integer partition with only partitions at
+or below a certain length.
+
+~~~python
+from restricted_partition import iter_partition
+
+iter_partition(5)
+
+# [1, 1, 1, 1, 1]
+# [1, 1, 1, 2]
+# [1, 1, 3]
+# [1, 2, 2]
+# [1, 4]
+# [2, 3]
+# [5]
+
+iter_partition(5, 3)
+
+# [1, 1, 3]
+# [1, 2, 2]
+# [1, 4]
+# [2, 3]
+# [5]
+~~~
+
+Uses the accel_asc algorithm (thank you, Jerome Kelleher), so it is pretty speedy in pure Python.
+
+I found the algorithm at https://jeromekelleher.net/generating-integer-partitions.html.
+
