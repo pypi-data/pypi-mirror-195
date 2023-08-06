@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: supadef
+Version: 0.0.12
+Summary: Official command-line interface for supadef ⚡️
+Author-email: Connor McLaughlin <connor@fractall.com>
+Project-URL: Homepage, https://github.com/connormcl/supadef_cli
+Project-URL: Bug Tracker, https://github.com/connormcl/supadef_cli/issues
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# supadef ⚡️
+Official command-line interface to the Supadef platform. 
