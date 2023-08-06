@@ -1,0 +1,25 @@
+<div class="group bg-gray-800 text-white text-sm overflow-auto relative px-4 py-6 {% if wrap_height %}max-h-96 rounded{%else%}h-96{% endif %}">
+    <code class="whitespace-pre-wrap">{{ code|default:"" }}</code>
+    <button
+        onclick="copyToClipboard(event)"
+        class="bg-gray-700 p-2 rounded hover:bg-gray-600 transition flex flex-row items-center group-hover:opacity-75 opacity-0 absolute top-0 right-0 my-4 mx-6">
+        <span data-action="copy">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path
+                    d="M9 2a2 2 0 00-2 2v8a2 2 0 002 2h6a2 2 0 002-2V6.414A2 2 0 0016.414 5L14 2.586A2 2 0 0012.586 2H9z" />
+                <path d="M3 8a2 2 0 012-2v10h8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" />
+            </svg>
+            <span>copy</span>
+        </span>
+        <span class="hidden" data-action="copied">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd" />
+            </svg>
+            <span>copied!</span>
+        </span>
+    </button>
+</div>

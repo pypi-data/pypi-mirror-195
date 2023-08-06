@@ -1,0 +1,4 @@
+{% load lens_tags %}
+<div>
+    <span class="{{ status_code|colorize_status }} rounded text-white p-1">{% if status_code == -1 %}ERR{% else %}{{ status_code }}{% endif %}</span>
+</div>

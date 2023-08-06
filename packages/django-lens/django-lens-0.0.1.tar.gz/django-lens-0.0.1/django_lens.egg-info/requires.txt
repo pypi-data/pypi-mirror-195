@@ -1,0 +1,5 @@
+django-model-utils>=2.0
+jsonfield
+requests
+asgiref
+sqlparse

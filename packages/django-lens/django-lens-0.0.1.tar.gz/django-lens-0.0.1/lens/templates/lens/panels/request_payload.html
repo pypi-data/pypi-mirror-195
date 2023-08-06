@@ -1,0 +1,7 @@
+{% if trace.data.form_data %}
+    {% include 'lens/components/headers.html' with headers=trace.data.form_data %}
+{% elif trace.data.request_data %}
+    {% include 'lens/components/codeblock.html' with code=trace.data.request_data only %}
+{% else %}
+    {% include 'lens/components/empty_trace.html' with title="No data found" subtitle="This request does not have a payload." only %}
+{% endif %}
