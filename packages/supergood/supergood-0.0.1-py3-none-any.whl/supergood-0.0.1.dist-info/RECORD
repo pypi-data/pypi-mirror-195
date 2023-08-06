@@ -1,0 +1,10 @@
+src/__init__.py,sha256=GHP58uOsE_7GJsU0Pzh7f5dKbWjdyAjKs7q2WeAwl8I,49
+src/api.py,sha256=T-NMLkYSM1ecSef3W-MqF0DlAGcoR93yIcv6Da6bm0M,1607
+src/client.py,sha256=rvPtOnqKp6SZ4KLqOrhsdRAN2qWURFxc-VPNC7Jb_NY,7672
+src/constants.py,sha256=DVupNk_sFoaEnAYYknAU_Un2QfkgJ9YoeksKendKHfc,1180
+src/helpers.py,sha256=U62I8BVZ-tES_mjKYemWm9BUle9SSHi081HSSJo-RE8,1078
+src/logger.py,sha256=iiTSAjW4h-XQXUsSBonRbmQlpmG5D9IXacpRuHeMEis,725
+supergood-0.0.1.dist-info/METADATA,sha256=99uicpeflWi25f4u0WjCsfciACfo5RyicjoZzsUkDfY,1213
+supergood-0.0.1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+supergood-0.0.1.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+supergood-0.0.1.dist-info/RECORD,,
