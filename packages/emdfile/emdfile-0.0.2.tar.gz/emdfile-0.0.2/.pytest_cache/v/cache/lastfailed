@@ -1,0 +1,8 @@
+{
+  "test/test_emd.py::TestEmd": true,
+  "test/test_tree.py::TestTree": true,
+  "test/test_tree.py::TestTreeIO": true,
+  "test/test_base_classes.py": true,
+  "test/test_emd.py": true,
+  "test/test_tree.py": true
+}
