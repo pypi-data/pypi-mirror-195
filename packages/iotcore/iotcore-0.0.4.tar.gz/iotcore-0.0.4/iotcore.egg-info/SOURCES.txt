@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+iotcore/__init__.py
+iotcore.egg-info/PKG-INFO
+iotcore.egg-info/SOURCES.txt
+iotcore.egg-info/dependency_links.txt
+iotcore.egg-info/not-zip-safe
+iotcore.egg-info/requires.txt
+iotcore.egg-info/top_level.txt

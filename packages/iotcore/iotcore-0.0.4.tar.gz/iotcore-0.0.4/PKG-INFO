@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: iotcore
+Version: 0.0.4
+Summary: Python IoT core
+Home-page: https://github.com/tomvictor/iot-core
+Author: Tom Victor
+Author-email: vjtomvictor@gmail.com
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Provides-Extra: test
+Provides-Extra: lint
+Provides-Extra: doc
+Provides-Extra: dev
+License-File: LICENSE
+
+# iot-core
+
+## Develop
+
+```
+pip3 install setuptools
+cargo build --release
+python3 setup.py sdist
+twine upload dist/*
+```
