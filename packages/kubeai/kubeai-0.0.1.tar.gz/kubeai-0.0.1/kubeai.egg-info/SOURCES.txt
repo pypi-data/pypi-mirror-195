@@ -1,0 +1,7 @@
+setup.py
+kubeai/__init__.py
+kubeai/handler.py
+kubeai.egg-info/PKG-INFO
+kubeai.egg-info/SOURCES.txt
+kubeai.egg-info/dependency_links.txt
+kubeai.egg-info/top_level.txt
