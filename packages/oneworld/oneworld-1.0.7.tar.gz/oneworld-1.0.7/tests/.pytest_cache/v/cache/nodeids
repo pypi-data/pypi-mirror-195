@@ -1,0 +1,12 @@
+[
+  "test_sm.py::test_sm",
+  "test_sm_choropleth.py::test_sm_choro",
+  "test_sm_markerks.py::test_sm_mark",
+  "test_wm.py::test_wm",
+  "test_wm_choropleth.py::test_wm_choro",
+  "test_wm_circles.py::test_wm_circle",
+  "test_wm_info.py::test_wm_info",
+  "test_wm_layers.py::test_wm_lay",
+  "test_wm_lines.py::test_wm_lin",
+  "test_wm_network.py::test_wm_net"
+]
