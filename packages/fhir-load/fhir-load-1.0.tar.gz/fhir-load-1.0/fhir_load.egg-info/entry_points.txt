@@ -1,0 +1,2 @@
+[console_scripts]
+fhir-load = src.fhir_load:main

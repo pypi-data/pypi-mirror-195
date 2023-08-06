@@ -1,0 +1,4 @@
+Metadata-Version: 2.1
+Name: fhir-load
+Version: 1.0
+Summary: This program loads FHIR Transaction Bundle data to resource tables in a postgreSQL database called fhir_database.
