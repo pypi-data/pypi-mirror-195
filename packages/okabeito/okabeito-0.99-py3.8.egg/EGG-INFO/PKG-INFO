@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: okabeito
+Version: 0.99
+Summary: Okabe-Ito color palette
+Home-page: https://github.com/jimrybarski/okabe-ito-py
+Author: Jim Rybarski
+Author-email: jim@rybarski.com
+License: UNKNOWN
+Download-URL: https://github.com/jimrybarski/okabe-ito-py/tarball/0.99
+Description: UNKNOWN
+Keywords: visualization,color,palette,okabe,ito
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: Freely Distributable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

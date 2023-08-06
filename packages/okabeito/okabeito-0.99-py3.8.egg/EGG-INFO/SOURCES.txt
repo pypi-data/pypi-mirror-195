@@ -1,0 +1,7 @@
+README.md
+setup.py
+okabeito/__init__.py
+okabeito.egg-info/PKG-INFO
+okabeito.egg-info/SOURCES.txt
+okabeito.egg-info/dependency_links.txt
+okabeito.egg-info/top_level.txt
