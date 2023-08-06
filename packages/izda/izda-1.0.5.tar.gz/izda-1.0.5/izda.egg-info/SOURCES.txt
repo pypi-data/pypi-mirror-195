@@ -1,0 +1,9 @@
+setup.py
+izda/System.py
+izda/Write.py
+izda/__init__.py
+izda.egg-info/PKG-INFO
+izda.egg-info/SOURCES.txt
+izda.egg-info/dependency_links.txt
+izda.egg-info/requires.txt
+izda.egg-info/top_level.txt
