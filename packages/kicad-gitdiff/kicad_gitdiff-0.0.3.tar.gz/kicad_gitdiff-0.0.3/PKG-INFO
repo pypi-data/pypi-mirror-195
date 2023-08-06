@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: kicad_gitdiff
+Version: 0.0.3
+Summary: A tool for a visual diff with git and kicad
+Home-page: https://github.com/maersdal/kicad_gitdiff_cli
+Author: magnus ersdal
+Author-email: magnus@resani.com
+License: Apache-2.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+Simple visual diff for kicad 7 or higher. one can easily extend this tool to build a diff-er for anything that outputs svg.
+
+This is not an official kicad tool or anything, just a friday night project.
+
+My goal was just to get some `git` integration with the Kicad file formats.
+
+[Documentation on github](https://github.com/maersdal/kicad_gitdiff_cli#readme)

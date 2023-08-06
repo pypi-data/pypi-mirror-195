@@ -1,0 +1,5 @@
+checkers
+git_config_template
+kicad_export
+sch_diff
+svg_diff
