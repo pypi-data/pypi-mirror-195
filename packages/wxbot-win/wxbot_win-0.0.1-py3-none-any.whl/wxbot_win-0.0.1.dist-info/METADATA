@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: wxbot-win
+Version: 0.0.1
+Summary: A wechat bot SDK for windows
+Home-page: https://github.com/cyy95/wxbot-win
+Author: cyy95
+Author-email: 949777915@qq.com
+Platform: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pywinauto
+Requires-Dist: psutil
+Requires-Dist: pyperclip
+Requires-Dist: pyautogui
+
+# wxbot-win
+win平台下的微信聊天机器人
