@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pylynkz
+Version: 0.0.2
+Summary: Testing installation of Package
+Home-page: https://github.com/Lynkz-Instruments/pylynkz
+Download-URL: https://github.com/Lynkz-Instruments/pylynkz/archive/refs/tags/0.0.2.tar.gz
+Author: Alexandre Desgagné
+Author-email: alexd@lynkz.ca
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# pylynkz
+
+## Installation
+

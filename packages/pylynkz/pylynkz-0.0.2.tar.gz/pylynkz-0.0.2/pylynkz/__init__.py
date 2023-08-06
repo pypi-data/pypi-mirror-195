@@ -1,0 +1,1 @@
+from .logger import print_lynkz, print_debug, print_error, print_info, print_warning
