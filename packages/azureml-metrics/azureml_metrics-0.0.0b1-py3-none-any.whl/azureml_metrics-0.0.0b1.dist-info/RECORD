@@ -1,0 +1,7 @@
+azureml/__init__.py,sha256=ybCtCrXNS3six25SvldGKjcl-9eR9CzOMgoUjbRBdBQ,249
+azureml/metrics/__init__.py,sha256=ybCtCrXNS3six25SvldGKjcl-9eR9CzOMgoUjbRBdBQ,249
+azureml_metrics-0.0.0b1.dist-info/LICENSE.txt,sha256=FOfkEEz4uS7g278F9Rq12rqKF3lLyBUZhVpLetuZrTg,1021
+azureml_metrics-0.0.0b1.dist-info/METADATA,sha256=tIZgxVKvG-8kuXkLdzXvdI4-3fhK1MyWGtgmqiBW9iw,377
+azureml_metrics-0.0.0b1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+azureml_metrics-0.0.0b1.dist-info/top_level.txt,sha256=ZOeEa0TAXo6i5wOjwBoqfIGEuxOcKuscGgNSpizqREY,8
+azureml_metrics-0.0.0b1.dist-info/RECORD,,
