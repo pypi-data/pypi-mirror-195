@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rules xmlns="http://namespaces.plone.org/diazo"
+       xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+       xmlns:css="http://namespaces.plone.org/diazo/css">
+
+  <replace css:content="#give_a_day">
+      <xsl:apply-templates select="document('@@theme-fragment/give_a_day')" mode="raw"/>
+  </replace>
+
+</rules>

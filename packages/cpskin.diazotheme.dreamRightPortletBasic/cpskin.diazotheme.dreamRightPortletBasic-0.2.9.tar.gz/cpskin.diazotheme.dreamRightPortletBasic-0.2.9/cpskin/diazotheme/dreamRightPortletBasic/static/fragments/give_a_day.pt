@@ -1,0 +1,11 @@
+<div tal:replace="nothing">SUP-28893 / Thuin</div>
+<div id="give_a_day">
+  <div id="giveaday-widget"></div>
+  <script src=https://www.giveaday.be/assets/giveaday_v1.js></script>
+  <script>
+    function renderWidget() {
+      giveADayWidget.initialize('giveaday-widget', 'thuin', 'region', 'large', 'fr', '#ffffff');
+    }
+    renderWidget();
+  </script>
+</div>
