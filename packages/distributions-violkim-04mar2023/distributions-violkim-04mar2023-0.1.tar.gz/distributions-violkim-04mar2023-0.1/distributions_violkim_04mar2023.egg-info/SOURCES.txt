@@ -1,0 +1,10 @@
+setup.py
+distributions-violkim-04mar2023/Binomialdistribution.py
+distributions-violkim-04mar2023/Gaussiandistribution.py
+distributions-violkim-04mar2023/Generaldistribution.py
+distributions-violkim-04mar2023/__init__.py
+distributions_violkim_04mar2023.egg-info/PKG-INFO
+distributions_violkim_04mar2023.egg-info/SOURCES.txt
+distributions_violkim_04mar2023.egg-info/dependency_links.txt
+distributions_violkim_04mar2023.egg-info/not-zip-safe
+distributions_violkim_04mar2023.egg-info/top_level.txt
