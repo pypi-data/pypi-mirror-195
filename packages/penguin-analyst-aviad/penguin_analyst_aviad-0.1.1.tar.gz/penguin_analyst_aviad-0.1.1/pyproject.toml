@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "penguin-analyst-aviad"
+version = "0.1.1"
+description = ""
+authors = ["Aviad Rozenhek <aviadr1@gmail.com>"]
+readme = "README.md"
+packages = [{include = "penguin_analyst_aviad"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.3.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
