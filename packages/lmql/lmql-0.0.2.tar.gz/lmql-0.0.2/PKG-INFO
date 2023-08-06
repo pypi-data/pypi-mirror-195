@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: lmql
+Version: 0.0.2
+Summary: A query language for language models.
+Home-page: https://lmql.ai
+Author: Luca Beurer-Kellner
+Author-email: luca.beurer-kellner@inf.ethz.ch
+Project-URL: Docs, https://docs.lmql.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
