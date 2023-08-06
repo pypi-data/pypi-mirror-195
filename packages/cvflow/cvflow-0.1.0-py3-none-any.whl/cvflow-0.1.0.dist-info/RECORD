@@ -1,0 +1,14 @@
+cvflow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cvflow/io/__init__.py,sha256=Tr8r4w2KjAV8rhfl_Fs_Bk78GKvpjzu3vSB0GDMLjDc,378
+cvflow/io/input/__init__.py,sha256=6IllxKs0L2gee4gABgmCRhE5Rdoo9ksNepKadWQuoqQ,895
+cvflow/io/input/base.py,sha256=FvrANfX-UAEsVshrh_WyNqzY6Aa54BkypPiD1pT6MnE,1103
+cvflow/io/input/image.py,sha256=ZUYSGjbre1fuGJ49g-ByEY6VFBGtpORdCagG7x0NBYA,2854
+cvflow/io/input/video.py,sha256=J1-MTXK7ck9M-knCuB4CyxkmKzITl02ogofDKEx3Cwk,7494
+cvflow/io/output/__init__.py,sha256=RX_giFri4Qnq9x2eCsROmz9V_TLKN4u4d1xnrTHmRmw,195
+cvflow/io/output/base.py,sha256=8VhxdXv4UP0dXjfZOHwJJl6GNlGwyhk-CfdRx0xU_XM,919
+cvflow/io/output/display.py,sha256=aPV2dJoqR067Pc2uP1v3p5f6S6M3pUrdDdPEG9s8EbU,1962
+cvflow/io/output/video.py,sha256=k6577o3TWt5R6sz9gDzrUJz1GwUpv9SOMMrva0mOAB4,2894
+cvflow-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cvflow-0.1.0.dist-info/METADATA,sha256=WK3_27rCSDyb4VrNi-6isjGQo_ehucHWySQDQrWusB0,492
+cvflow-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+cvflow-0.1.0.dist-info/RECORD,,
