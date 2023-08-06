@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: neaty
+Version: 0.1.2
+Summary: neaty - Neaty logger
+Home-page: https://gitlab.com/vornet/python/python-neaty
+Author: UNKNOWN
+Author-email: Alois Mahdal <netvor+neaty@vornet.cz>
+License: LGPLv2
+Description: Neaty logger
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
