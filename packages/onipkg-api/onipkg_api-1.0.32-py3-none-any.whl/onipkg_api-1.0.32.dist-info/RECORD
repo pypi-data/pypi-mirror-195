@@ -1,0 +1,10 @@
+onipkg_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+onipkg_api/crowdtangle.py,sha256=qE1K71aK8HTtfOlMzArylHbPV0Htj3IOiW-JSBdLXGY,7990
+onipkg_api/send_df_to_bq.py,sha256=R5C5GW-4bBNWLXyCzl7I22wLr3oolaBaA60nh2PAvc0,1037
+onipkg_api/spotify.py,sha256=mydTdyG2Kv7tbJbztTcjMPGy_IGH3yLEyFjKly7rNq0,17323
+onipkg_api/youtube.py,sha256=lH9c0pIBv2ZybzEYLzdHSOaxSmBSVQQ_6KHDTQBWCe0,12635
+onipkg_api-1.0.32.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+onipkg_api-1.0.32.dist-info/METADATA,sha256=jYgz1n770fb_3bLwaUK1Y2QxaN5J7XVK7XSa2ddAEQg,3048
+onipkg_api-1.0.32.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+onipkg_api-1.0.32.dist-info/top_level.txt,sha256=m6DizkmH7S0QPz4WY7aVb69bhrMSsm6FWdp0rid1CSU,11
+onipkg_api-1.0.32.dist-info/RECORD,,
