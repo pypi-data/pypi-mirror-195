@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pmppm
+Version: 1.0
+Summary: Python Project Manager
+Home-page: https://github.com/unitythecoder/ppm
+Author: unitythecoder
+Author-email: 
+Requires-Dist: inquirer
+
