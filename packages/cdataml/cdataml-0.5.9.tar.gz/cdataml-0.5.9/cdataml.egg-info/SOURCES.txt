@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cdataml/__init__.py
+cdataml/cdametadata.py
+cdataml/datainput.py
+cdataml/lesion_score_key.tif
+cdataml.egg-info/PKG-INFO
+cdataml.egg-info/SOURCES.txt
+cdataml.egg-info/dependency_links.txt
+cdataml.egg-info/requires.txt
+cdataml.egg-info/top_level.txt
+scripts/cdataml-run
