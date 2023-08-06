@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: moonwalk-coolboy
+Version: 0.27.0
+Summary: Hey!
+Home-page: https://github.com/Mocha-RBLX/Moonwalk
+Author: Tung
+Author-email: natsurblx@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.20)
+Requires-Dist: tqdm
+Requires-Dist: aiohttp
+Requires-Dist: typing-extensions ; python_version < "3.8"
+Provides-Extra: datalib
+Requires-Dist: numpy ; extra == 'datalib'
+Requires-Dist: pandas (>=1.2.3) ; extra == 'datalib'
+Requires-Dist: pandas-stubs (>=1.1.0.11) ; extra == 'datalib'
+Requires-Dist: openpyxl (>=3.0.7) ; extra == 'datalib'
+Provides-Extra: dev
+Requires-Dist: black (~=21.6b0) ; extra == 'dev'
+Requires-Dist: pytest (==6.*) ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Provides-Extra: embeddings
+Requires-Dist: scikit-learn (>=1.0.2) ; extra == 'embeddings'
+Requires-Dist: tenacity (>=8.0.1) ; extra == 'embeddings'
+Requires-Dist: matplotlib ; extra == 'embeddings'
+Requires-Dist: plotly ; extra == 'embeddings'
+Requires-Dist: numpy ; extra == 'embeddings'
+Requires-Dist: scipy ; extra == 'embeddings'
+Requires-Dist: pandas (>=1.2.3) ; extra == 'embeddings'
+Requires-Dist: pandas-stubs (>=1.1.0.11) ; extra == 'embeddings'
+Requires-Dist: openpyxl (>=3.0.7) ; extra == 'embeddings'
+Provides-Extra: wandb
+Requires-Dist: wandb ; extra == 'wandb'
+Requires-Dist: numpy ; extra == 'wandb'
+Requires-Dist: pandas (>=1.2.3) ; extra == 'wandb'
+Requires-Dist: pandas-stubs (>=1.1.0.11) ; extra == 'wandb'
+Requires-Dist: openpyxl (>=3.0.7) ; extra == 'wandb'
+
+Copyright (c) 2018 The Python Packaging Authority
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
