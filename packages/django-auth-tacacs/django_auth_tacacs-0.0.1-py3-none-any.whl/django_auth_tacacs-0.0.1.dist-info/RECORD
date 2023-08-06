@@ -1,0 +1,8 @@
+django_auth_tacacs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_auth_tacacs/django.py,sha256=vP6eUh-MrCNJ0q5qrGx7E0HA9goRHsRtq3GXwgPsRjo,2459
+django_auth_tacacs/nautobot.py,sha256=6deTT-gnimtD0UMksz4WBSK1CO5eZMSVB80nmugPvfY,2707
+django_auth_tacacs/netbox.py,sha256=Bu9wxJJGHMWJAreiMOwyLeGPs3p8-eZN2ANRJUg5-7I,2471
+django_auth_tacacs-0.0.1.dist-info/LICENSE,sha256=b2kr_2xxm1c1aHiW8a1_lU0qdQCKoX5Uiw9Uca8b3-4,1065
+django_auth_tacacs-0.0.1.dist-info/METADATA,sha256=xeE91fWv_sIwtUEVxp04LcyYCp6oF6FrtwJRmunBD4k,3538
+django_auth_tacacs-0.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+django_auth_tacacs-0.0.1.dist-info/RECORD,,
