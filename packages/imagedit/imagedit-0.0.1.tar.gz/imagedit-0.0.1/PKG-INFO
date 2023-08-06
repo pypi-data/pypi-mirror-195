@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: imagedit
+Version: 0.0.1
+Summary: This project belongs to Alexandre Silva. This package is a demo for uploading simulation on the Test Pypi website. Email: alexandresilva18a@gmail.com
+Home-page: https://github.com/Alexandre-S-bits/imagedit
+Author: Alexandre Silva
+Author-email: henrique.map@outlook.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Projeto: Pacote de EdiÃ§Ã£o de Imagens
+## Autora do Projeto: Alexandre Silva
+### Teste de criaÃ§Ã£o de pacotes com o Pypi
+
+-----------------------------------------
+### DescriÃ§Ã£o
+O pacote "imagedit" Ã© usado para:
+
+- MÃ³dulo "Processing":
+  - Adicionar ou remover ColoraÃ§Ã£o, Brilho, Contraste;
+  - Rotacionar, Inverter ou Juntar Imagens;
+  - Adicionar efeitos de borda e Blur(EmbaÃ§ar);
+
+- MÃ³dulo "Utils":
+  - Abrir a imagem;
+  - Salvar imagem;
+  - Adicionar texto na imagem;
+  - Criar thumbnails (miniaturas);
+---------------------------------------------
+
+## InstalaÃ§Ã£o do pacote (hospedado no Pypi)
+
+Use o gerenciador de pacotes ```pip install -i https://test.pypi.org/simple/ imagedit ```para instalar imagedit
+
+```bash
+pip install imagedit
+```
+-------------------------------------------------
+## Como usar em projetos
+
+Para importar todos os mÃ³dulos, utilize:
+```python
+from imagedit import *
+```
+

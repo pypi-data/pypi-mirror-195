@@ -1,0 +1,13 @@
+setup.py
+imagedit/__init__.py
+imagedit.egg-info/PKG-INFO
+imagedit.egg-info/SOURCES.txt
+imagedit.egg-info/dependency_links.txt
+imagedit.egg-info/top_level.txt
+imagedit/processing/__init__.py
+imagedit/processing/coloration.py
+imagedit/processing/effects.py
+imagedit/processing/transformation.py
+imagedit/utils/__init__.py
+imagedit/utils/io.py
+imagedit/utils/tools.py
