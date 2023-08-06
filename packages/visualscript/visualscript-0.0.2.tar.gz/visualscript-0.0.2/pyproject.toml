@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0", "pyqt5>=5.15.7"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "visualscript"
+version = "0.0.2"
+authors = [
+  { name="Wachu", email="adam.wachowicz@vp.pl" },
+]
+description = "Package for visual scripting"
+keywords=['visual', 'graph', 'blueprint']
+dependencies=['PyQt5']
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Wachu94/visualscript"
+"Bug Tracker" = "https://github.com/Wachu94/visualscript/issues"

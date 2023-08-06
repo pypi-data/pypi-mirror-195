@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: visualscript
+Version: 0.0.2
+Summary: Package for visual scripting
+Author: Wachu (Adam Wachowicz)
+Author-email: Wachu <adam.wachowicz@vp.pl>
+Project-URL: Homepage, https://github.com/Wachu94/visualscript
+Project-URL: Bug Tracker, https://github.com/Wachu94/visualscript/issues
+Keywords: visual,graph,blueprint
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# visualscript
+Work in progress.
+
+This module's goal is to allow you to create simple python programs 
+as graphs of nodes representing functions, variables and statements.
+
+As a main reference it uses visual language of Unreal Engine's 
+blueprints graphs, which serve as an amazing tool for quick prototyping, 
+especially for people less experienced in programming.
+
+Special thanks to https://www.youtube.com/@DeadMeat37 for tutorial series
+on how to make node editor.
+
+If you like this idea, and you feel like you could help with improving 
+this module, feel free to contact me.
