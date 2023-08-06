@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "funcenter"
+version = "1.04.1"
+description = "Some random functions I made... includes color formatting, text formatting, basic math, and most of all... dumb algorithms. Enjoy."
+license = "MIT"
+authors = ["uncenter <contact@uncenter.org>"]
+readme = "README.md"
+homepage = "https://uncenter.org/funcenter"
+repository = "https://github.com/intricateavocado/funcenter"
+keywords = ["color", "math", "printing", "simple"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
