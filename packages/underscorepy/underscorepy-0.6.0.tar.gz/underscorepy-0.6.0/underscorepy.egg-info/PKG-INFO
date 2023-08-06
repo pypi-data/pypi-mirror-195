@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: underscorepy
+Version: 0.6.0
+Summary: _.py library
+Home-page: https://shaw.cx/_.py
+Author: Matthew Shaw
+Author-email: mshaw.cx@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE
+
+
+underscore.py
+-------------
+
+This is a framework for me that has morphed overtime. Some "features" are broken because I have not needed them for my own projects for quite some time. Eventually those bugs will be resolved.
