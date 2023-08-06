@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: riks-ds-utils
+Version: 0.0.1.dev0
+Summary: short description of project.
+Home-page: https://github.com/Borg93/riks_ds_utils
+Maintainer: Riksarkivet
+License: MIT
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.9
+Requires-Dist: python-dotenv (~=0.5.1)
+Requires-Dist: pandas
+Requires-Dist: numpy
+Provides-Extra: tests
+Requires-Dist: pre-commit ; extra == 'tests'
+Requires-Dist: flake8 (==3.9.2) ; extra == 'tests'
+Requires-Dist: tox (==3.24.3) ; extra == 'tests'
+Requires-Dist: pytest (==6.2.5) ; extra == 'tests'
+Requires-Dist: pytest-cov (==2.12.1) ; extra == 'tests'
+Requires-Dist: black (==22.8.0) ; extra == 'tests'
+Requires-Dist: mypy (==0.981) ; extra == 'tests'
+Requires-Dist: coverage ; extra == 'tests'
+Requires-Dist: isort ; extra == 'tests'
+
+# riks_ds_utils
+
+![example workflow](https://github.com/Borg93/riks_ds_utils/actions/workflows/tests.yml/badge.svg)
+
+Long description of project.
+
+test build
