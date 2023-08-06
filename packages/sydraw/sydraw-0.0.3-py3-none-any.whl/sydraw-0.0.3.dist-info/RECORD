@@ -1,0 +1,15 @@
+sydraw/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sydraw/__main__.py,sha256=vfk7naLt7Fu_hDqtZBFWJbILvsuGGDmvGFoqm8P2dB0,181
+sydraw/cli.py,sha256=y7Zp26Jv9jpu00fS1B1cyMzgM-sIqJMtQp9HAWwOKKU,247
+sydraw/gui.py,sha256=T7XznLT3AsGgJnXbiUEnaMJ460qrbHER14UHde67um4,4008
+sydraw/linalg.py,sha256=z9p_FhBYKfrpmmrw-jyAIggzXltCGsU_uP6d4Dy2pxs,4313
+sydraw/synth.py,sha256=5UZPCSIvY5uyqCo_YNnHD9EVLLHsxtNR3GhXGE7T9HQ,22808
+sydraw/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sydraw/utils/cameraops.py,sha256=n8Kblh9Gi9tdxMsmJhf9ddWoCdUP6siIl_8Tag_2c5Q,4126
+sydraw/utils/config.py,sha256=FQamsk6ZgOVT9Pi0XccHC7i7gqShhzQzt6MjADH5vD4,428
+sydraw/utils/utils.py,sha256=k4WHUOPiDvVzynyBhEwZTS2HRt_j3w21kpN7XLAZ5YY,5348
+sydraw-0.0.3.dist-info/LICENSE.md,sha256=8PzXa0JD1yWf9M3mE9i7u-ut0IxtHKbZts5DlnjRPeg,1077
+sydraw-0.0.3.dist-info/METADATA,sha256=emNQ3id7_hhJVS1JoFohI8i1kFwO7QjpQSMnM5JMNWo,3259
+sydraw-0.0.3.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+sydraw-0.0.3.dist-info/entry_points.txt,sha256=QRPxpkJQB_ixb_-F76tAvLusVREObYUIG_9vvV346vI,46
+sydraw-0.0.3.dist-info/RECORD,,
