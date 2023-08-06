@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: init-mail
+Version: 0.1.1
+Summary: Removed type=click.Path() from image and attatchment
+Home-page: https://github.com/vaibhavblayer/init-mail
+Keywords: cli,email,gmail,mail
+Author: vaibhavblayer
+Author-email: vaibhavblayer@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/vaibhavblayer/init-mail
+Description-Content-Type: text/markdown
+
+
