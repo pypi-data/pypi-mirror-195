@@ -1,0 +1,10 @@
+lsv2test-core
+lsv2test-ext==1.4.3
+
+[full]
+lsv2test-core[runtime]
+lsv2test-ext[runtime]==1.4.3
+
+[runtime]
+lsv2test-core[runtime]
+lsv2test-ext[runtime]==1.4.3
