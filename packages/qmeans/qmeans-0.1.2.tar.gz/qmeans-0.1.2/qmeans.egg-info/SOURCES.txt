@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+qmeans/__init__.py
+qmeans/qkmeans.py
+qmeans.egg-info/PKG-INFO
+qmeans.egg-info/SOURCES.txt
+qmeans.egg-info/dependency_links.txt
+qmeans.egg-info/requires.txt
+qmeans.egg-info/top_level.txt
+tests/test_hardware.py
+tests/test_simulator.py
