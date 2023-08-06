@@ -1,0 +1,9 @@
+genai/__init__.py,sha256=zYZURv-FWem4eihdK85KCdHAISTAdTFDSPO78qSnD_s,562
+genai/components.py,sha256=PgqskInKi9b5puUYWtt7tOeU3HeHgLxH3VqNB9p0AOE,1626
+genai/context.py,sha256=yN1r4CL6g8Icp74srIGWnGrzWiAd_-JDt-ZCZCNPTEY,1516
+genai/generate.py,sha256=UbEJT8-NtcagMcvNibYrWXd9IbEWkDKtum6XwIKd-d0,2277
+genai/magics.py,sha256=2uMSvYl01NUJ6ixupQ4mbDiYlF8AFjhGtSqfgvAOfnY,3092
+genai/suggestions.py,sha256=8LL2CAK2qXPskm8nETftbBu7bVQW0f9_f3p_krOXvSg,2060
+genai-0.11.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+genai-0.11.0.dist-info/METADATA,sha256=0dSKE3Z3shiuMIVWijBgkSVmYvymJxQqwzufos2oup8,454
+genai-0.11.0.dist-info/RECORD,,
