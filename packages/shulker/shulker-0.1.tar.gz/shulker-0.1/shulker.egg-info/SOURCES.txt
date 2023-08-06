@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+shulker/__init__.py
+shulker.egg-info/PKG-INFO
+shulker.egg-info/SOURCES.txt
+shulker.egg-info/dependency_links.txt
+shulker.egg-info/requires.txt
+shulker.egg-info/top_level.txt
