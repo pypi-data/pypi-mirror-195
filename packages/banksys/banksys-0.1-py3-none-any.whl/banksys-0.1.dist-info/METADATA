@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: banksys
+Version: 0.1
+Summary: A system for Login and Sign Up with all the necessary functions such as sign_up() and login() with the support of MySql database
+Author: Akshat Sabharwal
+Author-email: akshatsabharwal35@gmail.com
+License-File: LICENSE.txt
+Requires-Dist: mysql.connector
+Requires-Dist: maskpass
+Requires-Dist: pyttsx3
+Requires-Dist: numpy
+Requires-Dist: speech-recognition
+
