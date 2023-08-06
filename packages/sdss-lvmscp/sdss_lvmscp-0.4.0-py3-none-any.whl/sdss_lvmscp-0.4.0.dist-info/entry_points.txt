@@ -1,0 +1,3 @@
+[console_scripts]
+lvmscp=lvmscp.__main__:main
+
