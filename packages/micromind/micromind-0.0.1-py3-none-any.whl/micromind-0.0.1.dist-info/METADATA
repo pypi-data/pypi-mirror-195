@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: micromind
+Version: 0.0.1
+Summary: MicroMind
+Author-email: Francesco Paissan <francescopaissan@gmail.com>
+License: MIT License
+        
+        Copyright (c) [year] [fullname]
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/fpaissan/micromind
+Keywords: feed,reader,tutorial
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: torchinfo
+Requires-Dist: huggingface-hub
+Requires-Dist: onnx
+Requires-Dist: onnx-tf (==1.10.0)
+Requires-Dist: onnx-simplifier (==0.4.13)
+Requires-Dist: onnxruntime (==1.13.1)
+Requires-Dist: openvino-dev (==2022.3.0)
+Requires-Dist: openvino2tensorflow (==1.34.0)
+Requires-Dist: tensorflow-datasets (==4.8.1)
+Requires-Dist: tensorflow (==2.11.0)
+Requires-Dist: tensorflow-probability
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: bumpver ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+<div align="center">    
+ 
+[![Paper](http://img.shields.io/badge/paper-arxiv.1001.2234-B31B1B.svg)](https://arxiv.org/abs/2110.00337)
+
+</div>
+
+This repository is a collection of our efforts towards the design, implementation and evaluation of ML techniques in the field of tinyML. 
+
+Here is a list of things you can do with the `phinet` package:
+ - [image classification](recipes/image_classification)
+
+## To install the package 
+
+```setup
+pip install git+https://github.com/fpaissan/phinet
+```
+
+## Cite us
+```
+@article{10.1145/3510832,
+	author = {Paissan, Francesco and Ancilotto, Alberto and Farella, Elisabetta},
+	title = {PhiNets: A Scalable Backbone for Low-Power AI at the Edge},
+	year = {2022},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/3510832},
+	doi = {10.1145/3510832},
+	journal = {ACM Trans. Embed. Comput. Syst.},
+}
+```
+<!---
+
+## Pre-trained Models
+
+You can download pretrained models here:
+
+- [My awesome model](https://drive.google.com/mymodel.pth) trained on ImageNet using parameters x,y,z. 
+
+>📋  Give a link to where/how the pretrained models can be downloaded and how they were trained (if applicable).  Alternatively you can have an additional column in your results table with a link to the models.
+
+## Results
+
+Our model achieves the following performance on :
+
+### [Image Classification on ImageNet](https://paperswithcode.com/sota/image-classification-on-imagenet)
+
+| Model name         | Top 1 Accuracy  | Top 5 Accuracy |
+| ------------------ |---------------- | -------------- |
+| My awesome model   |     85%         |      95%       |
+
+> Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it. 
+
+--->
