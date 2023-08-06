@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+deepcopyall/LICENSE
+deepcopyall/README.MD
+deepcopyall/__init__.py
+deepcopyall/requirements.txt
+deepcopyall/thirdparty.json
+deepcopyall.egg-info/PKG-INFO
+deepcopyall.egg-info/SOURCES.txt
+deepcopyall.egg-info/dependency_links.txt
+deepcopyall.egg-info/requires.txt
+deepcopyall.egg-info/top_level.txt

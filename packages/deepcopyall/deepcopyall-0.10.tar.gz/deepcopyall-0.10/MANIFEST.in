@@ -1,0 +1,4 @@
+include deepcopyall/requirements.txt
+include deepcopyall/thirdparty.json
+include deepcopyall/README.MD
+include deepcopyall/LICENSE
