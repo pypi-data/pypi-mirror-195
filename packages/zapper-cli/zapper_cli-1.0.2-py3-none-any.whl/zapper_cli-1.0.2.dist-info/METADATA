@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: zapper-cli
+Version: 1.0.2
+Summary: library for text styling
+Author-email: Pandaxyzzz <pandaxyz@tourble.org>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+<div align="center">
+
+<img src="https://user-images.githubusercontent.com/98690785/222817990-3fc05ad4-989c-437e-877d-cffdac794fef.png">
+
+
+
+[𝗙𝗘𝗔𝗧𝗨𝗥𝗘𝗦](#features) •  [𝗜𝗡𝗦𝗧𝗔𝗟𝗟](#install)
+  
+# 🇿​🇦​🇵​🇵​🇪​🇷​
+   
+*Is a python library for text styling*
+
+
+</div>
+<div align="left">
+
+## Features
+- • ⌛ Choose the waiting time you want to add to your text
+- • ✏️ Animated text with effects
+- • ⚡ Effects with gradients (in development)
+  
+## Install
+
+  <a href="https://linux.org/"> On Linux </a>
+  
+  ```bash
+  pip install zapper
+  ```
+  
+  
+  <a href="https://www.microsoft.com/ch-ch/windows"> On Windows </a>
+  
+  ```bash
+  pip3 install zapper
+  ```
+</div>
