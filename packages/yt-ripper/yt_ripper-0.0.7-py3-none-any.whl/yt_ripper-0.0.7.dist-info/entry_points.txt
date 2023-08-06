@@ -1,0 +1,2 @@
+[console_scripts]
+ytripper = yt_ripper.main:main
