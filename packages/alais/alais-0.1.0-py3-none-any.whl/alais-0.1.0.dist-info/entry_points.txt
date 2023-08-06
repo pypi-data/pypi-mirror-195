@@ -1,0 +1,2 @@
+[console_scripts]
+alais = alais.main:entrypoint
