@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/TableAPI/__init__.py
+src/TableAPI/tableapi.py
+src/TableAPI.egg-info/PKG-INFO
+src/TableAPI.egg-info/SOURCES.txt
+src/TableAPI.egg-info/dependency_links.txt
+src/TableAPI.egg-info/top_level.txt
+src/tableapi/__init__.py
+src/tableapi/tableapi.py
+src/tableapi.egg-info/PKG-INFO
+src/tableapi.egg-info/SOURCES.txt
+src/tableapi.egg-info/dependency_links.txt
+src/tableapi.egg-info/top_level.txt
