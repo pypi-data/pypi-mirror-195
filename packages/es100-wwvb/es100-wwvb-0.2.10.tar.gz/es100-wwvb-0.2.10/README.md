@@ -1,0 +1,128 @@
+# es100-wwvb
+Time and date decoder for the ES100 WWVB receiver 
+
+## Description
+This is work in progress and shows up as visible presently just for install/development testing.
+When this message is removed, then it's ready for us.
+
+## Install
+
+Use PyPi (see [package](https://pypi.python.org/pypi/es100-wwvb) for details) or GitHub (see [package](https://github.com/mahtin/es100-wwvb) for details).
+
+### Via PyPI
+
+```bash
+    $ pip install es100-wwvb
+    $
+```
+
+The sudo version of that command may be needed in some cases. YMMV
+
+## Hardware
+This code requires a [UNIVERSAL-SOLDER® Everset® ES100-MOD WWVB-BPSK Receiver Module V1.1](https://universal-solder.ca/downloads/EverSet_ES100-MOD_V1.1.pdf) chipset and antenna.
+
+> ES100-MOD is a receiver module for the phase-modulated time signal broadcasted by the NIST radio
+> station WWVB near Fort Collins, Colorado, and is based on Everset® Technology’s fully
+> self-contained receiver-demodulator-decoder Chip ES100. 
+
+Ordering from [UNIVERSAL-SOLDER](https://universal-solder.ca/product-category/atomic-clock-radio-receiver/) and more information can me found here:
+
+* The chipset: [EverSet ES100-MOD WWVB BPSK Phase Modulation Receiver Module](https://universal-solder.ca/product/everset-es100-mod-wwvb-bpsk-phase-modulation-receiver-module/) presently at C$22.90
+* The starter kit: [EverSet ES100 WWVB BPSK Atomic Clock Starter Kit](https://universal-solder.ca/product/everset-es100-wwvb-starter-kit/) presently at C$34.90
+* The full Arduino-based board: [Application Development Kit for EverSet ES100-MOD Atomic Clock Receiver](https://universal-solder.ca/product/canaduino-application-development-kit-with-everset-es100-mod-wwvb-bpsk-atomic-clock-receiver-module/) presently at C$59.90
+
+The starter kit is the easiest way to get up-n-running with this software.
+
+Information about the chip's reception process and operational configuration can be found via [Everset Technologies](https://everset.tech/receivers/):
+
+* Everset [ES100 Data Sheet – Ver 0.97](https://everset.tech/wp-content/uploads/2014/11/ES100DataSheetver0p97.pdf)
+* Everset [Antenna Considerations](https://everset.tech/wp-content/uploads/2014/11/AN-005_Everset_Antenna_Considerations_rev_1p1.pdf)
+* EverSet [ES100 Energy Consumption Minimization](https://everset.tech/wp-content/uploads/2014/11/AN-002_ES100_Energy_Consumption_Minimization_rev_2p1.pdf)
+
+EverSet is a fabless IC company based in Richardson, Texas and UNIVERSAL-SOLDER (based in Yorkton Saskatchewan Canada) is the exclusive maker of receiver kits.
+
+## Radio Station WWVB
+
+[WWVB](https://www.nist.gov/pml/time-and-frequency-division/time-distribution/radio-station-wwvb) is located in Ft Collins Colorado USA and is operated by [NIST](https://www.nist.gob/).
+To quote the website:
+> WWVB continuously broadcasts digital time codes on a 60 kHz carrier that may serve as a stable frequency
+> reference traceable to the national standard at NIST. The time codes are synchronized with the 60 kHz
+> carrier and are broadcast continuously in two different formats at a rate of 1 bit per second using pulse
+> width modulation (PWM) as well as phase modulation (PM).
+
+### Location
+To use the service; you will need to be within receiving distance (see below) of WWVB in [WWVB, 5701 CO-1, Fort Collins, Colorado 80524](https://goo.gl/maps/KgRn1jDmJ3zSUfxx7).
+
+It's geographic coordinates are: **40.678062N, 105.046688W**; however, to be be more accurate; there are two antennas as follows:
+
+> North antenna coordinates: 40° 40' 51.3" N, 105° 03' 00.0" W == 40.680917 N, 105.050000 W
+>
+> South antenna coordinates: 40° 40' 28.3" N, 105° 02' 39.5" W == 40.674528 N, 105.044306 W
+
+## Speed of radio waves ...
+Light (or radio waves) travel at the speed of light (or close to the speed of light).
+In order to know your own accurate time; you need to know the speed of the signal and the distance from the transmitter.
+Speed of ground level radio waves was explained in the 1950 paper [The Speed of Radio Waves and Its Importance in Some Applications](https://ieeexplore.ieee.org/document/1701081) by R.L. Smith-Rose Department of Scientific and Industrial Research, Radio Research Station, DSIR, Slough, UK.
+
+The key number from the paper are:
+
+* **299,775 km/s** in a vacuum
+* **299,250 km/s** for 100Khz at ground level
+* **299,690 km/s** for cm waves
+* **299,750 km/s** for aircraft at 30,000 feet (9,800 meters)
+
+I choose **299,250 km/s** as that matches the WWVB configuration as close as needed.
+
+## Best propogation is during nighttime
+This code caculates if the transmitter and receiver are in nightime or not.
+This could help decide if the receiver can produce a result. Very Long Wavelength signals propogate better at night.
+
+The 2014 paper [WWVB Time Signal Broadcast: A New Enhanced Broadcast Format and Multi-Mode Receiver](https://www.nist.gov/publications/wwvb-time-signal-broadcast-new-enhanced-broadcast-format-and-multi-mode-receiver) [1] provides a diagram of the potential propogation of the WWVB signal.
+It's caculated for 2am (i.e. middle of night).
+
+![](https://github.com/mahtin/es100-wwvb/raw/main/images/figure1-simulated-coverage-area-for-the-legacy-WWVB-broadcast.png)
+
+> **Figure 1.** Simulated coverage area for the legacy WWVB broadcast at 0800
+> UTC (Coordinated Universal Time) in October, where the shaded area is
+> the day-night boundary. The simulated coverage assumes the use of a
+> properly oriented antenna and the absence of interference and shielding
+> losses. These three assumptions are often invalid in indoor applications.
+
+Antenna placement and orientation is vital in order to receive a signal. Indoors with a noisy RF environment will limit reception. Have either one antenna perfectly oriented with the WWVB tranmitter site; however, that means the other antenna will not receive anything. A better plan is to have the two antennas splitting the direction - that way, both both can work.
+
+This is my reception in California during daytime/nighttime.
+
+![](https://github.com/mahtin/es100-wwvb/raw/main/images/antenna-1-vs-2-vs-local-time-of-day.png)
+
+Clearly, my antenna placement is biased towards antenna 1. Local interference could also affect how each antenna performs.
+
+The program caculates and prints the direction to point (in degrees clockwise from North) for optimum reception.
+
+## Getting Started
+
+The package comes with a command line tool called **wwvb**. This provides a way to run the ES100 hardware in continuous mode while printing the received date and time upon a successful decode by the hardware.
+```bash
+    $ wwvb
+    ...
+    The great circle distance to WWVB: 1524.4 Km and direction is 69.1 degrees; hence latency 5.094 Milliseconds
+    ...
+    WWVB: 2023-03-04 12:58:22.005094+00:00
+    WWVB: 2023-03-04 13:00:36.005094+00:00
+    WWVB: 2023-03-04 13:05:04.005094+00:00
+    WWVB: 2023-03-04 13:07:18.005094+00:00
+    ...
+    ^C
+    $
+```
+
+## References
+
+[1] Lowe, J. , Liang, Y. , Eliezer, O. and Rajan, D. (2014), WWVB Time Signal Broadcast: A New Enhanced Broadcast Format and Multi-Mode Receiver, IEEE Communications Magazine, [online], https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=915289 (Accessed March 5, 2023)
+
+## Other ES100 projects
+
+TBD
+
+## Author & Copyright
+Copyright (C) Martin J Levy - W6LHI/G8LHI - https://github.com/mahtin
+
