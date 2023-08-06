@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+BiteAWX/__init__.py
+BiteAWX/containers.py
+BiteAWX/core.py
+BiteAWX/tools.py
+BiteAWX.egg-info/PKG-INFO
+BiteAWX.egg-info/SOURCES.txt
+BiteAWX.egg-info/dependency_links.txt
+BiteAWX.egg-info/requires.txt
+BiteAWX.egg-info/top_level.txt
