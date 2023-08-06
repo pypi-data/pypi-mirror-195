@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+remedy/__init__.py
+remedy/exceptions.py
+remedy/remedy.py
+remedy_client.egg-info/PKG-INFO
+remedy_client.egg-info/SOURCES.txt
+remedy_client.egg-info/dependency_links.txt
+remedy_client.egg-info/requires.txt
+remedy_client.egg-info/top_level.txt
