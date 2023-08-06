@@ -1,0 +1,20 @@
+html[data-theme="light"] {
+    --pst-color-primary: #00b796;
+}
+
+html[data-theme="dark"] {
+    --pst-color-primary: #00b796;
+}
+
+/* Change the highlight color, increase contrast*/
+html[data-theme="light"] .highlight .hll {
+    background-color: #fcf427;
+}
+
+img.plot-directive {
+    max-height: 450px;
+}
+
+.sd-card-body > .toctree-wrapper li[class^=toctree-l] {
+    text-align: center;
+}
