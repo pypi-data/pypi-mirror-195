@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mcon
+Version: 0.0.1
+Summary: Mini software construction and build framework
+Requires-Python: >= 3.8
+Author-Email: Andrew Brown <andrew@brownan.org>
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Build Tools
+Project-URL: Source Code, https://github.com/brownan/mcon
+Requires-Dist: toml
+Requires-Dist: packaging
+Provides-Extra: dev
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: mypy; extra == 'dev'
+Requires-Dist: sphinx; extra == 'dev'
+Requires-Dist: furo; extra == 'dev'
+Requires-Dist: types-toml; extra == 'dev'
+
