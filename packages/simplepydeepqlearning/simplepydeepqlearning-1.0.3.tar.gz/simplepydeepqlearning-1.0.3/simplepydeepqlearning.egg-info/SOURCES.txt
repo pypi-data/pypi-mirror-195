@@ -1,0 +1,8 @@
+setup.py
+SimplePyDeepQLearning/SimplePyDeepQLearning.py
+SimplePyDeepQLearning/__init__.py
+simplepydeepqlearning.egg-info/PKG-INFO
+simplepydeepqlearning.egg-info/SOURCES.txt
+simplepydeepqlearning.egg-info/dependency_links.txt
+simplepydeepqlearning.egg-info/requires.txt
+simplepydeepqlearning.egg-info/top_level.txt
