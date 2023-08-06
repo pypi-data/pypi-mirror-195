@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: astro-pyvista
+Version: 0.2.1
+Summary: Astronomical image processing
+Home-page: https://github.com/holtzmanjon/pyvista
+Author: Jon Holtzman
+Author-email: holtz@nmsu.edu
+License: MIT
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+License-File: LICENSE
+Requires-Dist: holtz-tools
+Requires-Dist: astropy
+Requires-Dist: ccdproc
+Requires-Dist: photutils
+Requires-Dist: astroplan
+Requires-Dist: pyyaml
+Requires-Dist: pyautogui
+Requires-Dist: pydl
+Requires-Dist: esutil
+Requires-Dist: astroquery
+Requires-Dist: importlib-resources
+Requires-Dist: numpy
+Requires-Dist: scipy
+
