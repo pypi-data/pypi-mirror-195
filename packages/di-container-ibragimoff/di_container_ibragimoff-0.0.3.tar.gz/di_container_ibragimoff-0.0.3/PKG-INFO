@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: di_container_ibragimoff
+Version: 0.0.3
+Summary: A simple implementation of Dependensy injection container
+Project-URL: Homepage, https://github.com/ibragimoff26/py_di_container
+Project-URL: Bug Tracker, https://github.com/ibragimoff26/py_di_container/issues
+Author-email: Shapi Ibragimov <pypy_oem@nixstudio.ru>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# DI Container
+
+This is simple implementation of DI container for personal purposes
