@@ -1,0 +1,3 @@
+recursive-include traincv/configs *
+recursive-include traincv/views/labeling/labelme/icons *
+global-include *.ui
