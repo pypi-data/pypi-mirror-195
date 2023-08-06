@@ -1,0 +1,9 @@
+nonebot_plugin_naturel_gpt/__init__.py,sha256=Gjta7LmclE7_K3_qB3HXvSgFeEjXtx4o70sMbJ_RAoc,59525
+nonebot_plugin_naturel_gpt/config.py,sha256=8Hy9HGEZvl0d0V3GCsosQ2A-kyxKWXOVSFMEiUWSjb4,6406
+nonebot_plugin_naturel_gpt/Extension.py,sha256=welKjg1n_TfvkbukZWu77LtoN95fUpO9aU-o6TmC-VU,2424
+nonebot_plugin_naturel_gpt/openai_func.py,sha256=KLSljw0dvlf62Fi7MhQDTmEfVNkJp7dK3LQyd3OxKiE,9856
+nonebot_plugin_naturel_gpt/text_func.py,sha256=a2fOWKRIJ2r2vVwGWNfyY2gyZoLcJvMpm4_mjs5epI0,1471
+nonebot_plugin_naturel_gpt-1.5.2.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+nonebot_plugin_naturel_gpt-1.5.2.dist-info/METADATA,sha256=t7uH7u6hkE_qIJxI3X5E7tdsL8kDQMuyEJOykJnnyhM,34270
+nonebot_plugin_naturel_gpt-1.5.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+nonebot_plugin_naturel_gpt-1.5.2.dist-info/RECORD,,
