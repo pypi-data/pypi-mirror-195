@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "dbk-aicode"
+version = "0.1.0"
+description = ""
+authors = ["Vasek Mlejnsky <vasek.mlejnsky@gmail.com>"]
+readme = "README.md"
+packages = [{include = "dbk_aicode"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<4.0"
+openai = "^0.27.0"
+python-dotenv = "^1.0.0"
+langchain = "^0.0.102"
+supabase = "^1.0.1"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
