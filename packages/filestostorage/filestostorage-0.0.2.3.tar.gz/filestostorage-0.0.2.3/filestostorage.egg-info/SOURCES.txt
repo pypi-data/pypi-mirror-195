@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.cfg
+setup.py
+filestostorage/__init__.py
+filestostorage.egg-info/PKG-INFO
+filestostorage.egg-info/SOURCES.txt
+filestostorage.egg-info/dependency_links.txt
+filestostorage.egg-info/top_level.txt
