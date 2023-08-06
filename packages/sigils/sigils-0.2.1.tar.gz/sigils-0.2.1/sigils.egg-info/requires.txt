@@ -1,0 +1,10 @@
+lark
+lark-parser
+
+[dev]
+pytest
+pytest-cov
+python-dotenv
+
+[django]
+Django>=3.2
