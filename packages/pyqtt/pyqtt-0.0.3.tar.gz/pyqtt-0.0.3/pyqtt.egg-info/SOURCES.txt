@@ -1,0 +1,9 @@
+README.rst
+setup.py
+pyqtt/__init__.py
+pyqtt.egg-info/PKG-INFO
+pyqtt.egg-info/SOURCES.txt
+pyqtt.egg-info/dependency_links.txt
+pyqtt.egg-info/not-zip-safe
+pyqtt.egg-info/requires.txt
+pyqtt.egg-info/top_level.txt
