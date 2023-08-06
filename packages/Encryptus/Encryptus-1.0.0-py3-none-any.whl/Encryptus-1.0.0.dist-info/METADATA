@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Encryptus
+Version: 1.0.0
+Summary: A Simple Encryption Module That Uses A Key To Encrypt And Decrypt Strings.
+Home-page: https://github.com/Hyphonic/Encryptus
+Author: Hyphonical
+Author-email: hyphonical@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
