@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: nstool
+Version: 1.0.5
+Summary: Nintendo Switch Cleaner and Builder
+Home-page: https://github.com/julesontheroad/NSC_BUILDER
+Author: julesontheroad
+Author-email: julesontheroad@gmail.com
+License: MIT
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: urllib3
+Requires-Dist: unidecode
+Requires-Dist: tqdm
+Requires-Dist: bs4
+Requires-Dist: requests
+Requires-Dist: image
+Requires-Dist: pycryptodome
+Requires-Dist: pykakasi
+Requires-Dist: httpx (==0.13.3)
+Requires-Dist: googletrans
+Requires-Dist: chardet
+Requires-Dist: eel
+Requires-Dist: bottle
+Requires-Dist: zstandard
+Requires-Dist: colorama
+Requires-Dist: google-auth-httplib2
+Requires-Dist: google-auth-oauthlib
+Requires-Dist: oauth2client
+Requires-Dist: comtypes
+
+A multi-purpose tool for interacting with Switch game files - a Switch Army Knife. Written in Python. Originally developed to remove titlerights and create multicontent NSP/XCI files, though over time has expanded to have significantly more features, specializing in batch processing and file information.
