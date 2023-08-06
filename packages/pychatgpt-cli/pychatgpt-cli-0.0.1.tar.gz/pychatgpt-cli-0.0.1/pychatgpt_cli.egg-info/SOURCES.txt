@@ -1,0 +1,10 @@
+LICENSE
+README.md
+cli.py
+setup.py
+pychatgpt_cli.egg-info/PKG-INFO
+pychatgpt_cli.egg-info/SOURCES.txt
+pychatgpt_cli.egg-info/dependency_links.txt
+pychatgpt_cli.egg-info/entry_points.txt
+pychatgpt_cli.egg-info/requires.txt
+pychatgpt_cli.egg-info/top_level.txt
