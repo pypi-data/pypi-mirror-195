@@ -1,0 +1,5 @@
+setup.py
+src/zakpy.egg-info/PKG-INFO
+src/zakpy.egg-info/SOURCES.txt
+src/zakpy.egg-info/dependency_links.txt
+src/zakpy.egg-info/top_level.txt
