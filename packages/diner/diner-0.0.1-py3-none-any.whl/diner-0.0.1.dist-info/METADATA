@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: diner
+Version: 0.0.1
+Summary: Diner: A Diverse Named Entity Recognition Tool
+Home-page: 
+Author: 
+Author-email: 
+License: UNKNOWN
+Keywords: NER
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: transformers
+
+UNKNOWN
+
