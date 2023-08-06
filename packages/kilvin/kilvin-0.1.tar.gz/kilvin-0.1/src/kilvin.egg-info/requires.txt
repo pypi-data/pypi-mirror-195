@@ -1,0 +1,12 @@
+markdown
+Jinja2
+tomli
+python-frontmatter
+livereload
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest
