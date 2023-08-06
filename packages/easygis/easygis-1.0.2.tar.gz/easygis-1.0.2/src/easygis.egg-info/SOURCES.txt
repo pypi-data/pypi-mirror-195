@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+Pypi_upload_package.md
+README.md
+setup.py
+data/vie.json
+src/easygis/__init__.py
+src/easygis/easygis.py
+src/easygis.egg-info/PKG-INFO
+src/easygis.egg-info/SOURCES.txt
+src/easygis.egg-info/dependency_links.txt
+src/easygis.egg-info/entry_points.txt
+src/easygis.egg-info/top_level.txt
