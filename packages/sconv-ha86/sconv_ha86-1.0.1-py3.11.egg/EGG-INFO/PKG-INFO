@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sconv-ha86
+Version: 1.0.1
+Summary: A small package to convert string
+Home-page: https://github.com/
+Author-email: 
+Keywords: sconv,string,manipulation
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sconv
+A simple and stupid project in python.
