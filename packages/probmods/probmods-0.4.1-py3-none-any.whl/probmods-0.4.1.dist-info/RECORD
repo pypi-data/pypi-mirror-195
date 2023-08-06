@@ -1,0 +1,15 @@
+probmods/__init__.py,sha256=0MCVfZdxPeOczK6qrK0LL31QAqtPj0hmgN9FnMmvriA,46
+probmods/_version.py,sha256=0_dB-SwRXzCHowA3kD_9MmecjmUqQiIbDwJmtaXjluI,160
+probmods/bijection.py,sha256=aKRRwRJM57Zj6y1MfHskkKtf444sb82oFhTPCJmq0Rc,14335
+probmods/model.py,sha256=LQsM9z_zMRmfHWiH0XaJH06weKNQMP9Se_xur-9sC94,16933
+probmods/test.py,sha256=1gQQ1rEQR19kC9nb-1u3EBa43_5sZMjums8YhJY3T5Q,4894
+tests/__init__.py,sha256=jvvF98wmspsZYG4wMQ_v7lOIkTC1bjIoESCA6YOge9E,148
+tests/test_bijection.py,sha256=GytB1ZPc2La2BjtXI0EuUqK8Sq9F-8TXfw5X9OcZ0k4,8549
+tests/test_model.py,sha256=wqCTA79iJ5qF9UuLWVntcIMSVj-wEkcORoABXkBRJa4,11828
+tests/test_test.py,sha256=nXy__qWUQS9PFRHRskVt_aRfTjw6mis_ERvRE0qREQE,638
+tests/util.py,sha256=rm0GKJnQEDBC1YSaZwoa93xCD3fVWqSfsQx_VhIiHHo,2040
+probmods-0.4.1.dist-info/LICENCE.txt,sha256=JmqFVXTp005EnsNfksqq2mt5lzn6MipyY507m6gJ7Fw,1071
+probmods-0.4.1.dist-info/METADATA,sha256=aZ9UFwBTK_HB_O3O2vIzYLWoL5uVsT3chcMLRfYuDwQ,24623
+probmods-0.4.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+probmods-0.4.1.dist-info/top_level.txt,sha256=XDNkQbtcVLSuc3OMKTh3-OfElKFEZ-cQJtYkpSb52bU,15
+probmods-0.4.1.dist-info/RECORD,,
