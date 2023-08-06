@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: brickie
+Version: 0.0.1
+License-File: LICENSE
+License-File: NOTICE
+Provides-Extra: dev
+Requires-Dist: watchfiles>=0.18.1; extra == 'dev'
+Provides-Extra: server
+Requires-Dist: build>=0.9.0; extra == 'server'
+Requires-Dist: click>=8.0.0; extra == 'server'
+Requires-Dist: hatchling>=1.8.0; extra == 'server'
+Requires-Dist: starlette>=0.23.1; extra == 'server'
+Requires-Dist: tomli>=1.1.0; extra == 'server'
+Requires-Dist: uvicorn[standard]>=0.2; extra == 'server'
+Provides-Extra: test
+Requires-Dist: pytest-xdist<4,>=3.2; extra == 'test'
+Requires-Dist: pytest<8,>=7.2; extra == 'test'
+Requires-Dist: tomli-w<2,>=1; extra == 'test'
