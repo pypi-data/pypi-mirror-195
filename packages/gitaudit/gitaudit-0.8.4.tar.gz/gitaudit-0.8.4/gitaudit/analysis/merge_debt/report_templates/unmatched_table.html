@@ -1,0 +1,17 @@
+<h3>HEAD (unmatched)</h3>
+{% if report.head_unmatched|length > 0 %}
+<table>
+    <tr>
+        <th>sha</th>
+        <th>summary</th>
+    </tr>
+    {% for entry in report.head_unmatched %}
+    <tr>
+        <td><code>{{entry.sha[0:7]}}</code></td>
+        <td>{{entry.subject}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<p><i>no unmatched head entries</i></p>
+{% endif %}

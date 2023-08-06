@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/open-fonts@1.1.1/fonts/inter.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    </head>
+    <body>
+        <h1>Merge Debt Report</h1>
+        {% with report=combined %}
+        {% include "statistics_table.html" %}
+        {% endwith %}
+
+        {% for report in reports %}
+        {% include "statistics_table.html" %}
+        {% include "unmatched_table.html" %}
+        {% include "match_table.html" %}
+        {% include "prune_table.html" %}
+        {% endfor %}
+    </body>
+</html>
