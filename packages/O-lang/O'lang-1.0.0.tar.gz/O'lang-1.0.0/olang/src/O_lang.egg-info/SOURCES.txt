@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+olang/src/O_lang.egg-info/PKG-INFO
+olang/src/O_lang.egg-info/SOURCES.txt
+olang/src/O_lang.egg-info/dependency_links.txt
+olang/src/O_lang.egg-info/top_level.txt
+olang/src/olang.py
+olang/src/olang_compiler.py
+olang/src/strings_essentials.py
+olang/src/O_lang.egg-info/SOURCES.txt
