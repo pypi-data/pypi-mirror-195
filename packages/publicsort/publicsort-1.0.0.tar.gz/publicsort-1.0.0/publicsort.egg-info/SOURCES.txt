@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+public_sort/__init__.py
+public_sort/public_sort.py
+publicsort.egg-info/PKG-INFO
+publicsort.egg-info/SOURCES.txt
+publicsort.egg-info/dependency_links.txt
+publicsort.egg-info/entry_points.txt
+publicsort.egg-info/top_level.txt
