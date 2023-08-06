@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: alex_music
+Version: 0.0.1
+Summary: A terminal music player
+Project-URL: Homepage, https://github.com/Sand199/alex
+Project-URL: Bug Tracker, https://github.com/Sand199/alex/issues
+Author: Mr_Sandman
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Alex
+Alex is a terminal music player
