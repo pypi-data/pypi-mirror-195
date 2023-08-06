@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: simplipy
+Version: 0.1.0
+Summary: Collection of personalized helpers for machine learning projects
+Home-page: https://github.com/windisch/simplipy
+Author: Tobias Windisch
+Author-email: tobias.windisch@posteo.de
+License: GNU GPL3
+Keywords: visualization features
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# simplipy
+
+A collection of personalized python helpers that simplify machine
+learning projects.
+
+[![Test Package](https://github.com/windisch/simplipy/actions/workflows/test_package.yml/badge.svg)](https://github.com/windisch/simplypi/actions/workflows/test_package.yml)
+[![PyPI](https://img.shields.io/pypi/v/simplipy)](https://pypi.org/project/simplipy/)
+
+
+## Installation
+
+The simplest method to install `simplipy` simply is to simply run
+
+```bash
+pip install simplipy
+```
+
