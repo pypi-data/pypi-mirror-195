@@ -1,0 +1,8 @@
+simple_dyn365/__init__.py,sha256=NuvB5FIhREbCiV7fALOjBGJ9TtFzicOFT4G9zh7hebo,70
+simple_dyn365/api.py,sha256=X3iCpth3WnPmnIHLTIiCxPkpr50dtvpJcQwOoDtSYU8,9361
+simple_dyn365/login.py,sha256=V1_BorA3FA_oY0_yooKynSc1w14WGJah_RqQ1VSPbj4,2312
+simple_dyn365-1.5.dist-info/LICENSE,sha256=rUcIwxH6QCPzBH6SEPtWJino7xzKxv1X88z1PtgYaXo,1091
+simple_dyn365-1.5.dist-info/METADATA,sha256=DSUqIDiW3uZoMszUZHOec2GpK5eGH2ve4PEbGBzs8U0,5276
+simple_dyn365-1.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+simple_dyn365-1.5.dist-info/top_level.txt,sha256=6B0hAZRujOfdV1fesL1mlyhFEGc3JjkqNSal65pcxdA,14
+simple_dyn365-1.5.dist-info/RECORD,,
