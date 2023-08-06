@@ -1,0 +1,121 @@
+Metadata-Version: 2.1
+Name: extrarandom
+Version: 1.0.4
+Summary: More random utils
+Home-page: https://github.com/tovicheung/extrarandom
+Author: tovicheung
+License: MIT License
+        
+        Copyright (c) 2023 tovicheung
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Keywords: random
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# extrarandom
+A library that provides extra utilities builtin on the builtin library `random`.
+
+## Installation
+`pip install extrarandom`
+
+## Methods
+Random booleans
+```py
+some_bool = randbool()
+three_bools = randbools(3)
+```
+
+Random characters
+```py
+letter = randletter()
+uppercase = randuppercase()
+lowercase = randlowercase()
+```
+
+Random hex
+```py
+nine = hex(9)
+twenty = hex(20)
+sth_between_9_and_20 = randhex(nine, twenty) # returns a string just like hex()
+```
+
+Random string manipulation
+```py
+mystring = "abcdef"
+modified_string = strinsert(mystring, "HELLO")
+# some possible outcomes:
+# "abHELLOcdef", "HELLOabcdef", "abcdefHELLO", etc
+
+# if you don't want the substring to be inserted at the start/end:
+modified_string2 = strinsertin(mystring, "HELLO")
+# impossible outcomes:
+# "HELLOabcdef", "abcdefHELLO"
+```
+
+Random list manipulation
+```py
+mylist = [1, 2, 3, 4]
+listinsert(mylist, -999)
+# some possible outcomes:
+# [-999, 1, 2, 3, 4] [1, 2, -999, 3, 4] [1, 2, 3, 4, -999]
+
+# listinsertin is similar to strinsertin
+```
+
+Random permutation/combination
+```py
+perm = permutation(iterable)
+comb = permutation(iterable)
+```
+
+Range objects
+```py
+some_range_between_6_and_9 = subrange(range(6, 9))
+# possible values:
+# range(6, 7), range(6, 9), range(8, 9) etc.
+# start will not be equal to stop
+```
+
+Random iteration
+```py
+mylist = [1, 2, 3, 4, 5]
+for i in randiter(mylist, total=8):
+    print(i)
+# print 8 random elements from mylist
+```
+
+## Not so useful stuff (yet)
+
+Infinite iterators
+```py
+for b in randboolstream():
+    print(b)
+# infinite random boolean stream lol
+```
+
+Random attribute manipulation (not too useful tho)
+```py
+getrandattr(obj)
+setrandattr(obj, value)
+delrandattr(obj)
+```
