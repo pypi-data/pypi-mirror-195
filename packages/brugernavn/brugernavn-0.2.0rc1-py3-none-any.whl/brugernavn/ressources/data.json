@@ -1,0 +1,327 @@
+{
+  "Scratch": {
+    "url": "https://scratch.mit.edu/users/%s",
+    "method": "http_error"
+  },
+  "GitHub": {
+    "url": "https://github.com/%s",
+    "method": "http_error"
+  },
+  "AskFM": {
+    "url": "https://ask.fm/%s",
+    "method": "http_error"
+  },
+  "Minecraft": {
+    "url": "https://api.mojang.com/users/profiles/minecraft/%s",
+    "method": "http_error"
+  },
+  "Giphy": {
+    "url": "https://giphy.com/explore/%s",
+    "method": "http_error"
+  },
+  "Speedrun.com": {
+    "url": "https://www.speedrun.com/user/%s",
+    "method": "http_error"
+  },
+  "FortniteTracker": {
+    "url": "https://fortnitetracker.com/profile/all/%s",
+    "method": "http_error"
+  },
+  "DeviantArt": {
+    "url": "https://www.deviantart.com/%s",
+    "method": "http_error"
+  },
+  "Disqus": {
+    "url": "https://disqus.com/%s",
+    "method": "http_error"
+  },
+  "Itch.io": {
+    "url": "https://itch.io/profile/%s",
+    "method": "http_error"
+  },
+  "Keybase": {
+    "url": "https://keybase.io/%s",
+    "method": "http_error"
+  },
+  "Kongregate": {
+    "url": "https://www.kongregate.com/accounts/%s",
+    "method": "keyword_error",
+    "keyword": "Sorry, no account with that name was found."
+  },
+  "Blogspot": {
+    "url": "https://%s.blogspot.com/",
+    "method": "http_error"
+  },
+  "Ebay-Shop": {
+    "url": "https://ebay.com/str/%s",
+    "method": "keyword_error",
+    "keyword": "Sorry, this store was not found"
+  },
+  "AudioJungle": {
+    "url": "https://audiojungle.net/user/%s",
+    "method": "http_error"
+  },
+  "OpenStreetMap": {
+    "url": "https://www.openstreetmap.org/user/%s",
+    "method": "http_error"
+  },
+  "Twitter": {
+    "url": "https://nitter.it/%s",
+    "method": "http_error"
+  },
+  "BitBucket": {
+    "url": "https://bitbucket.org/%s/",
+    "method": "http_error"
+  },
+  "ThemeForest": {
+    "url": "https://themeforest.net/user/%s",
+    "method": "http_error"
+  },
+  "typeracer": {
+    "url": "https://data.typeracer.com/pit/profile?user=%s",
+    "method": "keyword_error",
+    "keyword": "We couldn't find a profile for username"
+  },
+  "Ko-Fi": {
+    "url": "https://ko-fi.com/%s",
+    "method": "http_error"
+  },
+  "codecademy": {
+    "url": "https://www.codecademy.com/profiles/%s",
+    "method": "keyword_error",
+    "keyword": "This profile could not be found"
+  },
+  "Genius (Artists)": {
+    "url": "https://genius.com/artists/%s",
+    "method": "http_error"
+  },
+  "Genius (Users)": {
+    "url": "https://genius.com/%s",
+    "method": "http_error"
+  },
+  "Gravatar": {
+    "url": "https://en.gravatar.com/%s",
+    "method": "http_error"
+  },
+  "Linktree": {
+    "url": "https://linktr.ee/%s",
+    "method": "http_error"
+  },
+  "MyAnimeList": {
+    "url": "https://myanimelist.net/profile/%s",
+    "method": "http_error"
+  },
+  "PokemonShowdown": {
+    "url": "https://pokemonshowdown.com/users/%s",
+    "method": "http_error"
+  },
+  "Reddit": {
+    "url": "https://www.reddit.com/user/%s",
+    "method": "keyword_error",
+    "keyword": "Die Person wurde möglicherweise gebannt oder der Benutzername stimmt nicht"
+  },
+  "Lichess": {
+    "url": "https://lichess.org/@/%s",
+    "method": "http_error"
+  },
+  "SoundCloud": {
+    "url": "https://soundcloud.com/%s",
+    "method": "http_error"
+  },
+  "SteamGroup": {
+    "url": "https://steamcommunity.com/groups/%s",
+    "method": "keyword_error",
+    "keyword": "No group could be retrieved for the given URL."
+  },
+  "AllMyLinks": {
+    "url": "https://allmylinks.com/%s",
+    "method": "http_error"
+  },
+  "Pronouns.page": {
+    "url": "https://en.pronouns.page/@%s",
+    "method": "keyword_error",
+    "keyword": "Page was not found"
+  },
+  "Rive.app": {
+    "url": "https://rive.app/@%s",
+    "method": "http_error"
+  },
+  "7cups": {
+    "url": "https://www.7cups.com/@%s",
+    "method": "http_error"
+  },
+  "about.me": {
+    "url": "https://about.me/%s",
+    "method": "http_error"
+  },
+  "Airbit": {
+    "url": "https://airbit.com/%s",
+    "method": "http_error"
+  },
+  "Airliners": {
+    "url": "https://www.airliners.net/user/%s/profile/photos",
+    "method": "http_error"
+  },
+  "Alik": {
+    "url": "https://www.alik.cz/u/%s",
+    "method": "http_error"
+  },
+  "Apple Developer Forums": {
+    "url": "https://developer.apple.com/forums/profile/%s",
+    "method": "http_error"
+  },
+  "Apple Community Forums": {
+    "url": "https://discussions.apple.com/profile/%s/participation",
+    "method": "http_error"
+  },
+  "Asciimena": {
+    "url": "https://asciinema.org/~%s",
+    "method": "http_error"
+  },
+  "AskFedora": {
+    "url": "https://ask.fedoraproject.org/u/%s",
+    "method": "http_error"
+  },
+  "BLIP.fm": {
+    "url": "https://blip.fm/%s",
+    "method": "http_error"
+  },
+  "bandcamp": {
+    "url": "https://bandcamp.com/%s",
+    "method": "http_error"
+  },
+  "Behance": {
+    "url": "https://www.behance.net/%s",
+    "method": "http_error"
+  },
+  "BiggerPockets": {
+    "url": "https://www.biggerpockets.com/users/%s",
+    "method": "http_error"
+  },
+  "Codeberg": {
+    "url": "https://codeberg.org/%s/",
+    "method": "http_error"
+  },
+  "Gitlab": {
+    "url": "https://gitlab.com/%s/",
+    "method": "http_error"
+  },
+  "JLU Gitlab Pilotbetrieb-Gitlab": {
+    "url": "https://gitlab.ub.uni-giessen.de/%s/",
+    "method": "keyword_error",
+    "keyword": "You need to sign in or sign up before continuing"
+  },
+  "Isse-Gitlab": {
+    "url": "https://gitlab.isse.de/%s/",
+    "method": "keyword_error",
+    "keyword": "You need to sign in or sign up before continuing"
+  },
+  "GNOME-Gitlab": {
+    "url": "https://gitlab.gnome.org/%s/",
+    "method": "keyword_error",
+    "keyword": "You need to sign in or sign up before continuing"
+  },
+  "HPI-GitLab": {
+    "url": "https://gitlab.hpi.de/%s/",
+    "method": "keyword_error",
+    "keyword": "You need to sign in or sign up before continuing"
+  },
+  "HHU-Gitlab": {
+    "url": "https://git.hhu.de/%s/",
+    "method": "keyword_error",
+    "keyword": "You need to sign in or sign up before continuing"
+  },
+  "FH Kiel-Gitlab": {
+    "url": "https://gitlab.iue.fh-kiel.de/%s/",
+    "method": "keyword_error",
+    "keyword": "You need to sign in or sign up before continuing"
+  },
+  "THM-Gitlab": {
+    "url": "https://git.thm.de/%s/",
+    "method": "keyword_error",
+    "keyword": "You need to sign in or sign up before continuing"
+  },
+  "RWTH Aachen-Gitlab": {
+    "url": "https://git.rwth-aachen.de/%s/",
+    "method": "keyword_error",
+    "keyword": "You need to sign in or sign up before continuing"
+  },
+  "Uni Ulm-Gitlab": {
+    "url": "https://gitlab.informatik.uni-ulm.de/%s/",
+    "method": "keyword_error",
+    "keyword": "You need to sign in or sign up before continuing"
+  },
+  "FreeDesktop-Gitlab": {
+    "url": "https://gitlab.freedesktop.org/%s/",
+    "method": "keyword_error",
+    "keyword": "You need to sign in or sign up before continuing"
+  },
+  "HTWK-Gitlab": {
+    "url": "https://gitlab.imn.htwk-leipzig.de/%s/",
+    "method": "keyword_error",
+    "keyword": "You need to sign in or sign up before continuing"
+  },
+  "TU Berlin-Gitlab": {
+    "url": "https://git.tu-berlin.de/%s/",
+    "method": "keyword_error",
+    "keyword": "You need to sign in or sign up before continuing"
+  },
+  "Lesetagebu.ch": {
+    "url": "https://lesetagebu.ch/von/%s",
+    "method": "http_error"
+  },
+  "Crowdin": {
+    "url": "https://crowdin.com/profile/%s",
+    "method": "http_error"
+  },
+  "Launchpad": {
+    "url": "https://launchpad.net/~%s",
+    "method": "http_error"
+  },
+  "Medium.com": {
+    "url": "https://medium.com/@%s",
+    "method": "keyword_error",
+    "keyword": "Out of nothing, something."
+  },
+  "Pastebin": {
+    "url": "https://pastebin.com/u/%s",
+    "method": "http_error"
+  },
+  "cnet": {
+    "url": "https://www.cnet.com/profiles/%s/",
+    "method": "http_error"
+  },
+  "geocaching.com": {
+    "url": "https://www.geocaching.com/p/default.aspx?u=%s",
+    "method": "http_error"
+  },
+  "DangerousThings Forum": {
+    "url": "https://forum.dangerousthings.com/u/%s/summary",
+    "method": "http_error"
+  },
+  "BikeMap": {
+    "url": "https://www.bikemap.net/de/u/%s/",
+    "method": "http_error"
+  },
+  "BitcoinForum": {
+    "url": "https://bitcoinforum.com/profile/%s",
+    "method": "keyword_error",
+    "keyword": "The user whose profile you are trying to view does not exist."
+  },
+  "Patreon": {
+    "url": "https://www.patreon.com/%s",
+    "method": "http_error"
+  },
+  "Teckids-Forum": {
+    "url": "https://forum.teckids.org/u/%s/summary",
+    "method": "http_error"
+  },
+  "HomeAssistant-Community-Forum": {
+    "url": "https://community.home-assistant.io/u/%s/summary",
+    "method": "http_error"
+  },
+  "Chess.com": {
+    "url": "https://www.chess.com/member/%s",
+    "method": "http_error"
+  }
+}
