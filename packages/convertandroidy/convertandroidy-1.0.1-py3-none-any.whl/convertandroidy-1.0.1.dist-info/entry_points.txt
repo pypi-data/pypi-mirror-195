@@ -1,0 +1,2 @@
+[console_scripts]
+convertandroidy = androidx_2_androidy.convert_androidy:main
