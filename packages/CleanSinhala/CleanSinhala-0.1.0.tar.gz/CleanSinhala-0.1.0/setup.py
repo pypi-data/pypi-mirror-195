@@ -1,0 +1,24 @@
+from setuptools import setup
+import setuptools
+
+# with open("README.md", "r") as fh:
+#     long_description = fh.read()
+
+setup(
+    name='CleanSinhala',
+    version='0.1.0',
+    description='This will provide similar function "NLTK" "WordNetLemmatizer" module to "Sinhala" words',
+    author= 'Chanaka Gunarathna',
+    # url = 'https://github.com/ChanakaErangaGunarathna/Sinhala_Word_Simpliy',
+    # long_description_content_type="text/markdown",
+    packages=setuptools.find_packages(),
+    keywords=['sinhala', 'clean word'],
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.5',
+    # py_modules=['Clean_Words'],
+    # package_dir={'':'CleanSinhala'},
+)
