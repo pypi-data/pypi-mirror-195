@@ -1,0 +1,1 @@
+from .shicy import ShicyMethod
