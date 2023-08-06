@@ -1,0 +1,12 @@
+time_agnostic_library/__init__.py,sha256=o8jk_n_3YGCc063rWEIh_XVTu7R8-IWI66l-EQKY6us,846
+time_agnostic_library/agnostic_entity.py,sha256=EK7z2_HFTviO-OvfCtPTLzbrfR07dlaZP4ilk1arZq0,21374
+time_agnostic_library/agnostic_query.py,sha256=bmQDKU132MEz9b-M8gu0RukRGhCuSsgTf5PUrhBze6w,43800
+time_agnostic_library/prov_entity.py,sha256=bd6Hon5YHzur2KlGytF-iycbDA8p02uzkqkUZ7IcYhU,2475
+time_agnostic_library/sparql.py,sha256=rNqgcsk7QHKYFSMm3wT8PxHBZdR_jpkgcwUphydOajk,10130
+time_agnostic_library/statistics.py,sha256=eTz16emRV-2JVMgBEOnKSB8l9SvNK3Y3khZ4pZKynVY,1868
+time_agnostic_library/support.py,sha256=987eyQJjwgp11Kvk1m_TkoKMPcnNXqyhdIl_3q3oG1o,8466
+time_agnostic_library-4.3.3.dist-info/entry_points.txt,sha256=INUAzLH356S2mMlyXyOyjucElyefV-RWXMnRmAmlgRA,49
+time_agnostic_library-4.3.3.dist-info/LICENSE.md,sha256=WIAUQgGaxW0T4EySE4a50F-eGwanEdR9lwQyz9zAHHI,799
+time_agnostic_library-4.3.3.dist-info/METADATA,sha256=DQkpqtg9nNksvjLMIBeC8_zDQuO4s6Yce9-zyTPj4sg,20491
+time_agnostic_library-4.3.3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+time_agnostic_library-4.3.3.dist-info/RECORD,,
