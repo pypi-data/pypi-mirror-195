@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: django-otlp-log-exporter
+Version: 1.0.0
+Summary: Django log handler for export your logs to otlp servers. like signoz and etc..
+Home-page: https://github.com/mojtabaakbari221b/django_otlp_log_exporter
+Author: Mojtaba Akbari
+Author-email: mojtaba.akbari.221b@gmail.com
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: opentelemetry-sdk (>=1.16.0)
+Requires-Dist: opentelemetry-api (>=1.16.0)
+Requires-Dist: opentelemetry-exporter-otlp (>=1.16.0)
+Requires-Dist: Django (>=3.2)
+
+# django otlp log exporter (handler)
