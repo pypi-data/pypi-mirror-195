@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+BrainStrokeClassifier.egg-info/PKG-INFO
+BrainStrokeClassifier.egg-info/SOURCES.txt
+BrainStrokeClassifier.egg-info/dependency_links.txt
+BrainStrokeClassifier.egg-info/requires.txt
+BrainStrokeClassifier.egg-info/top_level.txt
+src/BrainStrokeClassifier/__init__.py
+src/BrainStrokeClassifier/trained_model.pkl
+src/BrainStrokeClassifier/model/trained_model.pkl
