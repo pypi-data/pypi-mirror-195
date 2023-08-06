@@ -1,0 +1,12 @@
+LICENSE,sha256=7I60HhhZ_98x2oCEGGxsi5ak3S47M3dspqO6nr4LGlc,1518
+doctor_testerson/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doctor_testerson/__main__.py,sha256=qmww6IoIwFC7VlHRHMAq6borewzkPkNPr2Db8nrGWag,843
+doctor_testerson/output.py,sha256=eWaod18PirhfQG-aMFOFkbR4Snnc-WYMYKna8aYQyOw,3471
+doctor_testerson/parser.py,sha256=MnBj5qkY1_FtwmXfylD8rEtn4h1R7J8vORx6EP5Mbkk,1508
+doctor_testerson/project.py,sha256=aqHOzuAtCFmhK4Fw4_uvbxG9Z0vNMSy4YF3s_ZPT13I,2958
+doctor_testerson/testing.py,sha256=HWbhvupvnI6WNf4ufwmWhK-4MLjqFIUvtl1gDiPTxaA,3430
+doctor_testerson-0.1.0.dist-info/LICENSE,sha256=7I60HhhZ_98x2oCEGGxsi5ak3S47M3dspqO6nr4LGlc,1518
+doctor_testerson-0.1.0.dist-info/METADATA,sha256=Uo4FYDbr6wwEvK-5I2IGyOffRJ0itnt3bsI-zVtq-WA,1410
+doctor_testerson-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+doctor_testerson-0.1.0.dist-info/entry_points.txt,sha256=aYGBT8v289bSPxMT0Q5aBfPSC46cnHjbOoVcj7mh-oY,55
+doctor_testerson-0.1.0.dist-info/RECORD,,
