@@ -1,0 +1,100 @@
+[CONFIGS]
+  # OS architecture by default.
+  OS_ARCH = "x86_64"
+
+  # Tmp path for slpkg.
+  TMP_SLPKG = "/tmp/slpkg/"
+
+  # Path for building source and the script.
+  BUILD_PATH = "/tmp/slpkg/build/"
+
+  # This path working only with the command download.
+  DOWNLOAD_ONLY_PATH = "/tmp/slpkg/"
+
+  # The path that the SLACKBUILDS.TXT file downloaded.
+  SBO_REPO_PATH = "/var/lib/slpkg/repository/"
+
+  # The name of the database. Default name is 'database.slpkg'.
+  DATABASE_NAME = "database.slpkg"
+
+  # Slackbuilds.org repository url.
+  SBO_REPO_URL = "https://slackbuilds.org/slackbuilds/15.0/"
+
+  # The SLACKBUILDS.TXT repository file.
+  SBO_TXT = "SLACKBUILDS.TXT"
+
+  # The ChangeLog.txt file.
+  SBO_CHGLOG_TXT = "ChangeLog.txt"
+
+  # The sbo tar suffix.
+  SBO_TAR_SUFFIX = ".tar.gz"
+
+  # The sbo repository tag.
+  SBO_REPO_TAG = "_SBo"
+
+  # Slackware command for install packages, instead, you can use 'installpkg'.
+  INSTALLPKG = "upgradepkg --install-new"
+
+  # Slackware command to reinstall packages.
+  REINSTALL = "upgradepkg --reinstall"
+
+  # Slackware command to remove packages.
+  REMOVEPKG = "removepkg"
+
+  # Cli menu colors configs. Default is true. [true/false].
+  COLORS = true
+
+  # Dialog is a program that will let you to presenta variety of questions
+  # or display messages using dialog boxes from a shell script.
+  # Default is true. [true/false].
+  DIALOG = true
+
+  # You can choose downloader between wget and curl.
+  # Ponce repository works only with 'lftp' downloader.
+  # Default is wget. [wget/curl/lftp].
+  DOWNLOADER = "wget"
+
+  # Wget downloader options.
+  # -c, --continue: resume getting a partially-downloaded file.
+  # -N, --timestamping: don't re-retrieve files unless newer.
+  # -q, Turn off Wget's output.
+  # --show-progress, Force wget to display the progress bar in any verbosity.
+  WGET_OPTIONS = "-c -N -q --show-progress"
+
+  # Curl downloader options.
+  # Pass the options you want here.
+  CURL_OPTIONS = ""
+
+  # Lftp downloader options.
+  # 'LFTP_MIRROR_OPTIONS' are used for the ponce repository to download files
+  # from a remote directory, and 'LFTP_GET_OPTIONS' are used to download the sources.
+  LFTP_MIRROR_OPTIONS = "-c mirror --delete-first --parallel=10"
+  LFTP_GET_OPTIONS = "-c get -e"
+
+  # If silent mode is true, it does not print the commands as they are executed.
+  # Default is true. [true/false].
+  SILENT_MODE = true
+
+  # Choose ascii printable characters.
+  # If true, it uses the extended characters, otherwise the basic ones.
+  # Default is true. [true/false].
+  ASCII_CHARACTERS = true
+
+  # Set the 'PONCE_REPO = true' and 'DOWNLOADER = lftp' to switch with
+  # the ponce repository. Do not unset SBO_REPO_URL and SBO_TXT.
+  # NOTE: Ponce repository works only with 'lftp' downloader.
+  #########################################################################
+  # This is not going to fully support this repository, since it does not #
+  # provide its own SLACKBUILDS.TXT file. The only difference is that     #
+  # scripts are used from ponce repository and not from SBo repository.   #
+  # Slpkg is still going to use SLACKBUILDS.TXT and ChangeLog.txt from    #
+  # SBo repository and compare these with the Slackware -current          #
+  # ChangeLog.txt file for auto-add blacklisted packages that do not      #
+  # include in the ponce repository. Default is false. [true/false].      #
+  #########################################################################
+  PONCE_REPO = false
+  PONCE_URL = "https://cgit.ponce.cc/slackbuilds/plain/"
+  # Use a Slackware mirror for your country, get one from /etc/slackpkg/mirrors.
+  SLACK_CURRENT_MIRROR = "https://mirrors.slackware.com/slackware/slackware64-current/"
+  SLACK_CHGLOG_TXT = "ChangeLog.txt"
+  SLACK_CHGLOG_PATH = "/var/lib/slpkg/repository/slack_current/"
