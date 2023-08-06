@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+pcaconcat/__init__.py
+pcaconcat/pcaconcat.py
+pcaconcat.egg-info/PKG-INFO
+pcaconcat.egg-info/SOURCES.txt
+pcaconcat.egg-info/dependency_links.txt
+pcaconcat.egg-info/not-zip-safe
+pcaconcat.egg-info/requires.txt
+pcaconcat.egg-info/top_level.txt
