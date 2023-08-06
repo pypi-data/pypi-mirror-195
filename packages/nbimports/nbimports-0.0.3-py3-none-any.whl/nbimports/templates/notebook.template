@@ -1,0 +1,31 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# allows access to modules from directory\n",
+    "import sys\n",
+    "from pathlib import Path\n",
+    "modules_path = [\n",
+    {% for dir_ in modules_dir %}
+    "    Path(r{{ dir_ }}),\n",
+    {% endfor %}
+    "]\n",
+    "for path_ in modules_path:\n",
+    "    if path_ not in sys.path:\n",
+    "        sys.path.append(path_)\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "language_info": {
+   "name": "python"
+  },
+  "orig_nbformat": 4
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}

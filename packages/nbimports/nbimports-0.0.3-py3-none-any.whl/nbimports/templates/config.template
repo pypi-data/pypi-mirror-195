@@ -1,0 +1,4 @@
+{
+    "notebook_dir": {{ notebook_dir }},
+    "imports_dir": {{ import_dirs }}
+}
