@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: chromedriverupdate
+Version: 1.0.0
+Summary: Update chrome driver
+Home-page: https://github.com/kirikumo/chromedriverupdate
+Author: cghn
+License: GPLv3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.25.1)
+
+# chromedriverupdate
+
+## Quick Start
+
+```python
+
+import os
+from chromedriverupdate.chrome_driver import ChromeDriverUpdate
+
+CHROME_DRIVER_PATH = '...'
+
+def _browser():
+    return webdriver.Chrome(
+        # Your settings
+    )
+
+try:
+    browser = _browser()
+except SessionNotCreatedException as e:
+    ChromeDriverUpdate(e.msg, os.path.dirname(CHROME_DRIVER_PATH)).update()
+    browser = _browser()
+
+```
