@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+androidx_2_androidy/__init__.py
+androidx_2_androidy/convert_androidy.py
+convertandroidy.egg-info/PKG-INFO
+convertandroidy.egg-info/SOURCES.txt
+convertandroidy.egg-info/dependency_links.txt
+convertandroidy.egg-info/entry_points.txt
+convertandroidy.egg-info/top_level.txt
