@@ -1,0 +1,8 @@
+easierselenium/BaseWebInteractor.py,sha256=_wh-7dH77D7689l0ib94bvpT12-tioU-848ms6iMeA0,4969
+easierselenium/GoogleCloudInteractor.py,sha256=fR-vBIjcJ9izagekeQghS-LPVwdr9VZjgze7oKp4C4Y,9943
+easierselenium/__init__.py,sha256=uCiRlu-j-bRe6ryN_gHA98qBAAirc9_4DgDpO3EZ428,63
+easierselenium/dockerfiles/selenium_chrome90.Dockerfile,sha256=3DWVrhEiINnLX6YvtuEsCyCJV3TJy0z2qfsh2jkZhSk,1450
+easierselenium-0.1.0.dist-info/LICENSE.txt,sha256=s73ZqY5VVvk8AYp5zsHA8cEgz4b79c6XnSwzo1Rwkjc,1090
+easierselenium-0.1.0.dist-info/METADATA,sha256=Q0xynidQiOaRATLwrCsjTCsXtcn6dQpWF-B7o1wq9VI,574
+easierselenium-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+easierselenium-0.1.0.dist-info/RECORD,,
