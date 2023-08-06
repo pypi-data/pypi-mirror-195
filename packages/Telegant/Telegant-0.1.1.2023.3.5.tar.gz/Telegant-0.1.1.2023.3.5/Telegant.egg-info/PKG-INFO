@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: Telegant
+Version: 0.1.1.2023.3.5
+Summary: An Elegant Modern Bot Framework for Python
+Home-page: https://github.com/kotov584/Telegant
+Author: Kotov584
+License: MIT
+Keywords: python,telegram,bot,api,async,asynchronous,elegant,modern
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Telegant 
+Telegant - An Elegant Modern Bot Framework for Python.
+This project is designed to provide developers simple and elegant access to Telegram bot api.
+
+## Installation 
+To install the project, simply run:
+pip install telegant
+
+# Example 
+```python
+from telegant import Telegant
+import asyncio
+
+bot = Telegant("YOUR_BOT_TOKEN_HERE")
+
+@bot.hears("hello")
+async def say_hello(bot, update): 
+    await bot.reply(update["message"]["chat"]["id"], "What's up?") 
+```
+
+
