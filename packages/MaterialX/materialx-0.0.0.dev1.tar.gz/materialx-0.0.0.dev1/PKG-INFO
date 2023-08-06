@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: MaterialX
+Version: 0.0.0.dev1
+Summary: MaterialX is an open standard for the exchange of rich material and look-development content across applications and renderers.
+Project-URL: Homepage, https://github.com/AcademySoftwareFoundation/MaterialX
+Project-URL: Bug Tracker, https://github.com/AcademySoftwareFoundation/MaterialX/issues
+Author-email: Contributors to the MaterialX project <materialx-discussion@lists.aswf.io>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+This is an empty package for now. Please see https://github.com/AcademySoftwareFoundation/MaterialX/issues/570 to know when the package will be officially published.

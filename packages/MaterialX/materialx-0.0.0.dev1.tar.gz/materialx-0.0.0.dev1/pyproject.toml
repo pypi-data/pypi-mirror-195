@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "MaterialX"
+version = "0.0.0.dev1"
+authors = [
+  { name="Contributors to the MaterialX project", email="materialx-discussion@lists.aswf.io" },
+]
+
+description = "MaterialX is an open standard for the exchange of rich material and look-development content across applications and renderers."
+
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/AcademySoftwareFoundation/MaterialX"
+"Bug Tracker" = "https://github.com/AcademySoftwareFoundation/MaterialX/issues"
