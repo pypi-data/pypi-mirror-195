@@ -1,0 +1,15 @@
+py4web_debug/__init__.py,sha256=JBuqL2S7u3iCFPzXlZSqNio6svuHG3tfozGohzqEBEE,131
+py4web_debug/core.py,sha256=anPQ3ejzBmz79ePEJW1duIDmAQrrTX4k94QAMF-rQAE,2877
+py4web_debug/debugbar.py,sha256=bzuJ4FX_bYzz0-V8f9A1bjkEmLbj8q00CAerCAu3aMs,7243
+py4web_debug/dumping.py,sha256=AF4UVSyqI43JgxffjeoozQ0az0J5nvpeZVYtWuUlC6s,3496
+py4web_debug/env.py,sha256=CXJX6nmNgGYL0Z9rt8fmQPO1UAydhW-Cv-zWObPlleQ,82
+py4web_debug/internals.py,sha256=LNZ6n8TWrTr6y6ne0R_aVv2iHK4cOMr3nbJGedOlgAE,4316
+py4web_debug/wsgi.py,sha256=QYlgPAC0brC2VPkn1nRzq9cFA3XkJVJFW_9eRoS1yio,207
+py4web_debug/templates/debugbar.html,sha256=gbaBLBJpDIti9QAkDWXRP10_LEvCrQmK1GxFlbsHasA,7169
+py4web_debug/templates/dumpdie.html,sha256=pFjRjs2VBZPo1nyfObCO5kksyQS9q-K4EqPdZNFo9lg,60
+py4web_debug/templates/error_default.html,sha256=OGMvbHWb7xX91GH5Kx9WPXqv93ee7UcII5B-nUu3TYk,868
+py4web_debug/templates/fancy_dumpdie.html,sha256=eaquCyAOM1QU3QMv__fIqgbmyFHOnwd495PMGMVOzo8,532
+py4web_debug_tools-0.2.0.dev2.dist-info/METADATA,sha256=PL0qTRMEHKelSy1firRzmDmg7FdZzKgcerixj7d3C6I,3082
+py4web_debug_tools-0.2.0.dev2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+py4web_debug_tools-0.2.0.dev2.dist-info/top_level.txt,sha256=sZikb7uiewpax6SbMw-PL1La6xqDq8ZUbN7J9kFKodA,13
+py4web_debug_tools-0.2.0.dev2.dist-info/RECORD,,
