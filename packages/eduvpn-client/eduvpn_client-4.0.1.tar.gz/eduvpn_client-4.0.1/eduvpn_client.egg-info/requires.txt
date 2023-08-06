@@ -1,0 +1,15 @@
+wheel
+eduvpn_common
+
+[gui]
+dbus-python
+pygobject
+
+[mypy]
+mypy
+PyGObject-stubs
+types-setuptools
+
+[test]
+pytest
+pycodestyle
