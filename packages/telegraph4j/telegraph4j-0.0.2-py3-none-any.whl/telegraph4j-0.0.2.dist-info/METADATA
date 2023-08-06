@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: telegraph4j
+Version: 0.0.2
+Summary: Some tools about graph.
+Home-page: https://3tel.net
+Author: 3tel.net
+Author-email: 3telnet@gmail.com
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python Package telegraph4j
+
+📦 获取telegraph4j最新版本
+
+> 上传到 PyPI 后可以使用 `pip install` 安装。
+```shell
+pip install telegraph4j
+```
