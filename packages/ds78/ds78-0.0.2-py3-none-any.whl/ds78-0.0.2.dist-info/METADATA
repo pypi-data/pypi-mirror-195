@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: ds78
+Version: 0.0.2
+Summary: 
+Author: Dmitry Drozdov
+Author-email: dinochrom1@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+# `ds78`
+
+Awesome Portal Gun
+
+**Usage**:
+
+```console
+$ ds78 [OPTIONS] COMMAND [ARGS]...
+```
+
+**Options**:
+
+* `--install-completion`: Install completion for the current shell.
+* `--show-completion`: Show completion for the current shell, to copy it or customize the installation.
+* `--help`: Show this message and exit.
+
+**Commands**:
+
+* `load`: Load the portal gun
+* `shoot`: Shoot the portal gun
+
+## `ds78 load`
+
+Load the portal gun
+
+**Usage**:
+
+```console
+$ ds78 load [OPTIONS]
+```
+
+**Options**:
+
+* `--help`: Show this message and exit.
+
+## `ds78 shoot`
+
+Shoot the portal gun
+
+**Usage**:
+
+```console
+$ ds78 shoot [OPTIONS]
+```
+
+**Options**:
+
+* `--help`: Show this message and exit.
+
