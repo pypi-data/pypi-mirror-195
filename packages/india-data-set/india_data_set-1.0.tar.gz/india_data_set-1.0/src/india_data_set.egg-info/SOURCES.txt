@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/india_data_set/__init__.py
+src/india_data_set/data_set.py
+src/india_data_set.egg-info/PKG-INFO
+src/india_data_set.egg-info/SOURCES.txt
+src/india_data_set.egg-info/dependency_links.txt
+src/india_data_set.egg-info/top_level.txt

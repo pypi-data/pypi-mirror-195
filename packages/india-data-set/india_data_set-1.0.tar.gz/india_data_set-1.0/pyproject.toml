@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "india_data_set"
+version = "1.0"
+authors = [
+  { name="Bipin Tatkare", email="techbipinrt2526@gmail.com" },
+]
+description = "This package is used to generate random names for testing purpose. Package is for educational purpose only."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
