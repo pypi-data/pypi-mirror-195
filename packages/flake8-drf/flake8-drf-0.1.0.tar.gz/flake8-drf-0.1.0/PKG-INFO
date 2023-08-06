@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: flake8-drf
+Version: 0.1.0
+Summary: 
+Home-page: https://github.com/rocioar/flake8-drf
+License: MIT
+Keywords: flake8,django-rest-framework,lint
+Author: Sergei Konik
+Author-email: s.konik.dev@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Framework :: Flake8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Dist: djangorestframework (>=3.14.0,<4.0.0)
+Requires-Dist: flake8 (>=6.0.0,<7.0.0)
+Project-URL: Repository, https://github.com/rocioar/flake8-drf
