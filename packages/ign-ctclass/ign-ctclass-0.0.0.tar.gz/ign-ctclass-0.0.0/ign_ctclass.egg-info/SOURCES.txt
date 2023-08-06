@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+ctclass/__init__.py
+ign_ctclass.egg-info/PKG-INFO
+ign_ctclass.egg-info/SOURCES.txt
+ign_ctclass.egg-info/dependency_links.txt
+ign_ctclass.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+[project]
+name = "ign-ctclass"
+version = "0.0.0"
+description = "Project use to control classification of lidar point cloud"
+readme = "README.md"
+authors = [
+    { name = "Yoann Apel", email = "yoann.apel@ign.fr" }
+]
+[tool.setuptools]
+packages = [ "ctclass" ]

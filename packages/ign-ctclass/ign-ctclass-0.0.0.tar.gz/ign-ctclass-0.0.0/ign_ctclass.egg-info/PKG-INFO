@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ign-ctclass
+Version: 0.0.0
+Summary: Project use to control classification of lidar point cloud
+Author-email: Yoann Apel <yoann.apel@ign.fr>
+Description-Content-Type: text/markdown
+
+# Project use to control classification of lidar point cloud
