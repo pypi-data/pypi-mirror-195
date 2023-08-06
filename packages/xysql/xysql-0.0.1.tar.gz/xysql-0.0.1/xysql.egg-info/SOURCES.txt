@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+xysql/__init__.py
+xysql/crud.py
+xysql.egg-info/PKG-INFO
+xysql.egg-info/SOURCES.txt
+xysql.egg-info/dependency_links.txt
+xysql.egg-info/requires.txt
+xysql.egg-info/top_level.txt
