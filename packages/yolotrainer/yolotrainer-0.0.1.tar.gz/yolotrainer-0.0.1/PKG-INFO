@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: yolotrainer
+Version: 0.0.1
+Summary: YOLOTrainer: Train all kinds of YOLO models with ease
+Home-page: https://github.com/abhishekkrthakur/yolo-trainer
+Author: Abhishek Thakur
+License: Apache License
+Platform: linux
+Platform: unix
+Requires-Python: >3.5.2
+Description-Content-Type: text/markdown
+
+# YOLO Trainer
+
+Train all kinds of YOLO models easily.
+
+

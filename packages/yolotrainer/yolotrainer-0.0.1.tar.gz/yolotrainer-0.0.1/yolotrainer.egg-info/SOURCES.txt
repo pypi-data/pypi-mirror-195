@@ -1,0 +1,7 @@
+README.md
+setup.py
+yolotrainer.egg-info/PKG-INFO
+yolotrainer.egg-info/SOURCES.txt
+yolotrainer.egg-info/dependency_links.txt
+yolotrainer.egg-info/requires.txt
+yolotrainer.egg-info/top_level.txt
