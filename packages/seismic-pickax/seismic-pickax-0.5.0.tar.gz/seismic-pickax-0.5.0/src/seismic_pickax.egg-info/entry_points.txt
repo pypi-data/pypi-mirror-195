@@ -1,0 +1,8 @@
+[console_scripts]
+dumppicks = pickax.dumppicks:main
+eqtranspicks = pickax.eqtransform:main
+exportreal = pickax.exportreal:main
+hypoinverse = pickax.hypoinverse:main
+mergepicks = pickax.mergepicks:main
+pickax = pickax.pickax_main:main
+usgspicks = pickax.usgspicks:main
