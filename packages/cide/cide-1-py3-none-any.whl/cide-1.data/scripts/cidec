@@ -1,0 +1,50 @@
+#!python
+# This file is placed in the Public Domain.
+
+
+"command"
+
+
+import importlib
+import os
+import readline
+import sys
+import termios
+import time
+
+
+from cide.clients import Client
+from cide.command import Command, scan
+from cide.storage import Storage
+from cide.threads import launch
+
+
+import cide.modules
+
+
+Storage.workdir = os.path.expanduser("~/.cide")
+
+
+class CLI(Client):
+
+    def raw(self, txt):
+        print(txt)
+        sys.stdout.flush()
+
+    def scan(self):
+        path = cide.modules.__path__[0]
+        for fnm in os.listdir(path):
+            try:
+                mod = importlib.import_module("." + fnm[:-3], "cide.modules")
+            except ModuleNotFoundError:
+               continue
+            scan(mod)
+
+
+def main():
+    csl = CLI()
+    csl.scan()
+    return csl.one(" ".join(sys.argv[1:]))
+
+
+main()
