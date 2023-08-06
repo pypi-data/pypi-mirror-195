@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+lin2023.egg-info/PKG-INFO
+lin2023.egg-info/SOURCES.txt
+lin2023.egg-info/dependency_links.txt
+lin2023.egg-info/top_level.txt
+tests/test_main.py
