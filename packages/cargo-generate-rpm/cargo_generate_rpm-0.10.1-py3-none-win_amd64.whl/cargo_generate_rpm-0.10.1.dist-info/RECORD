@@ -1,0 +1,4 @@
+cargo_generate_rpm-0.10.1.dist-info/METADATA,sha256=Jx904_W-PQt329WgbtLB85pdd6eAihZr6CYdyaCdeaA,10470
+cargo_generate_rpm-0.10.1.dist-info/WHEEL,sha256=NWJiYgFFe1D4xLNa0kS6kAm7kFIajOswOe9kYBS0xys,95
+cargo_generate_rpm-0.10.1.data/scripts/cargo-generate-rpm.exe,sha256=IQ-aGKwwRN4LyrBWT1jY2OiBhyZGrs-aIMHOya2N3aI,2685952
+cargo_generate_rpm-0.10.1.dist-info/RECORD,,
