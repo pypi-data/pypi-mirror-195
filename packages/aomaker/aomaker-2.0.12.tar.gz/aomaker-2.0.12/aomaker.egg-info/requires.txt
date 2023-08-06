@@ -1,0 +1,13 @@
+Jinja2
+jsonpath
+loguru
+PyMySQL
+pytest
+PyYAML
+requests
+allure-pytest==2.8.24
+pydantic
+mitmproxy
+colorlog
+jsonschema
+genson
