@@ -1,0 +1,12 @@
+inpost/__init__.py,sha256=cujMdCcdSwDiqVMgvLlFOJknGG1JDliLYpccWYg2zHE,24
+inpost/api.py,sha256=iXnqjt9DRm36GUNbNf611NajUSaZQh4TbI7Cg_OcyXI,48756
+inpost/static/__init__.py,sha256=jnURt5NL1BiqfpReJ-CDPyYtuXTlq0rjXE5GQyMGuuA,1090
+inpost/static/endpoints.py,sha256=M7vAxGa-c6lT9mUBUfVAMRKvIACrGvjMOpNTtptz5mM,1771
+inpost/static/exceptions.py,sha256=aQOit9xcw9ip7TPZO3eXaEpf_sFGmVgcR781ZSAob98,2515
+inpost/static/friends.py,sha256=VAXyCxBaZYy3ChrieDumZHIyIMS7urDuqkju05LSLh8,1779
+inpost/static/headers.py,sha256=1WLqyOSmKx-m41qfH_LlO-piOsmoG4kAJNvXXkuW2hs,47
+inpost/static/parcels.py,sha256=jTQzw5YvRDCbZGoaImea3HcQYglFWP9fy_LmPxOV7gs,25234
+inpost/static/statuses.py,sha256=T3xP5cLRx4ox40XqK0d9M2fsJ_OgIYoCpczdA_uit2s,6871
+inpost-0.0.7.dist-info/METADATA,sha256=EX8YIUsU6YYVF81Clke_B28LXoIwIA0kVFXhyRyHId4,1158
+inpost-0.0.7.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+inpost-0.0.7.dist-info/RECORD,,
