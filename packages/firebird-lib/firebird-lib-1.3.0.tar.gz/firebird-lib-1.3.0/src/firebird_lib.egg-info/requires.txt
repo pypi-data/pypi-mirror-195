@@ -1,0 +1,2 @@
+firebird-base>=1.5.0
+firebird-driver>=1.7.0
