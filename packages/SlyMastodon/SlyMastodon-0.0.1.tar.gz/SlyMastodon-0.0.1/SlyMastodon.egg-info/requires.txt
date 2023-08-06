@@ -1,0 +1,11 @@
+SlyAPI>=0.4.5
+
+[dev]
+pytest
+pytest-asyncio
+sphinx
+myst-parser
+furo
+sphinxcontrib-trio
+sphinx-copybutton
+sphinxext-opengraph

@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+SlyMastodon/__init__.py
+SlyMastodon/__main__.py
+SlyMastodon/mastodon.py
+SlyMastodon/serialization.py
+SlyMastodon.egg-info/PKG-INFO
+SlyMastodon.egg-info/SOURCES.txt
+SlyMastodon.egg-info/dependency_links.txt
+SlyMastodon.egg-info/requires.txt
+SlyMastodon.egg-info/top_level.txt
+tests/test_posts.py
+tests/test_readme.py
+tests/test_serialization.py
