@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ImageExtras.egg-info/PKG-INFO
+ImageExtras.egg-info/SOURCES.txt
+ImageExtras.egg-info/dependency_links.txt
+ImageExtras.egg-info/requires.txt
+ImageExtras.egg-info/top_level.txt
+ImageExtras.egg-info/zip-safe
+imageextras/__init__.py
+imageextras/compiled/__init__.py
+imageextras/compiled/dithering/__init__.py
+imageextras/compiled/dithering/dithering.cp39-win_amd64.pyd
+imageextras/compiled/dithering/dithering.cpython-310-x86_64-linux-gnu.so
+imageextras/src/__init__.py
+imageextras/src/utils.py
