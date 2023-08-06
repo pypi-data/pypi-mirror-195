@@ -1,0 +1,8 @@
+click>=7.0.0
+pyquery
+numpy
+scipy
+hbutils>=0.8.2
+faker
+yattag
+lxml

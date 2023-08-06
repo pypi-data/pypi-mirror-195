@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: fake_html
+Version: 0.0.2
+Summary: Library for generating fake html page.
+Home-page: https://github.com/HansBug/fake_html
+Author: HansBug
+Author-email: hansbug@buaa.edu.cn
+License: Apache License, Version 2.0
+Keywords: Library for generating fake html page.
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: crawl
+License-File: LICENSE
+
+# fake_html
+
+[![codecov](https://codecov.io/gh/HansBug/fake_html/branch/main/graph/badge.svg?token=EAF32NGVYR)](https://codecov.io/gh/HansBug/fake_html)
+
+Tool for generating fake html.
+
+```python
+from fake_html import fake_html
+
+if __name__ == '__main__':
+    print(fake_html(seed=20, scale=0.4))
+
+```
