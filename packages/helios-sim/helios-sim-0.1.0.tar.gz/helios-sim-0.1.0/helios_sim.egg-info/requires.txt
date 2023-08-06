@@ -1,0 +1,7 @@
+fpdf
+matplotlib
+numpy
+openpyxl
+pandas
+python-dotenv
+scipy
