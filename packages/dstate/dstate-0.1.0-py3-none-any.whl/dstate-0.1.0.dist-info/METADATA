@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: dstate
+Version: 0.1.0
+Summary: dstate is the library for distributed finite state machines
+License: MIT
+Author: Alex Ptakhin
+Author-email: me@aptakhin.name
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# dstate - distributed state machines
+
+[![Test dstate](https://github.com/aptakhin/dstate/actions/workflows/test.yml/badge.svg)](https://github.com/aptakhin/dstate/actions/workflows/test.yml)
+
+dstate is the library for distributed finite state machines. Library's mission is to add more clarity and maintainability to distributed applications, which can go finite state machine approach. It adds persistence and locks on the powerful [python-statemachine](https://github.com/fgmacedo/python-statemachine). With future releases timers support will be added.
+
+
+## Install
+
+```bash
+./shell/install-local.py
+# or
+poetry install --with dev --with python-statemachine --with driver
+```
+
+## Usage
+
+Pretty unstable. No examples yet.
+
+[Tests file](./smoke_tests/test_dstate.py)
+
+## Dev
+
+```bash
+./shell/ruff.sh
+./shell/black.sh
+./shell/pytest-smoke.sh
+./shell/flake8.sh
+./shell/mypy.sh
+```
+
+Also the same set is supported with `pre-commit`:
+
+```bash
+pre-commit install
+```
+
+Fast smoke pytests with watcher:
+
+```bash
+./shell/ptw.sh
+```
+
+
+Full environment tests require `docker compose`:
+
+```bash
+./full_tests/shell/beg-mongo.sh
+./shell/pytest-full.sh
+./full_tests/shell/end-mongo.sh
+```
+
