@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: betterchatgpt
+Version: 0.0.1
+Summary: ChatGPT but with more features
+Home-page: https://github.com/marclelamy/ChatPyGPT
+Author: Marc Lamy
+Author-email: marclelamym@gmail.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ChatPyGpt
