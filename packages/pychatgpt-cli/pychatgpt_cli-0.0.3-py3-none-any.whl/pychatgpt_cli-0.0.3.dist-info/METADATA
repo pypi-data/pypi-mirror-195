@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: pychatgpt-cli
+Version: 0.0.3
+Summary: A command-line ChatGPT tool using official OpenAI API.
+Home-page: https://github.com/callmexss/pychatgpt-cli
+Author: callmexss
+Author-email: callmexss@126.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: openai (>=0.27.0)
+Requires-Dist: rich
+
+# PyChatGPT-CLI
+
+A command-line ChatGPT tool using official OpenAI API.
+
+## Installing
+
+Install and update using `pip`:
+
+```sh
+pip install -U pychatgpt-cli
+```
+
+## Usage
+
+```sh
+# set environment
+# for windows
+> set OPENAI_API_KEY=your_api_key
+# for linux
+> export OPENAI_API_KEY="your api key"
+
+> gcli --help
+Usage: gcli [OPTIONS] PROMPT
+
+Options:
+  --help  Show this message and exit.
+```
+
+## Extra
+
+If you need ChatGPT API please contact me.
