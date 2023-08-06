@@ -1,0 +1,9 @@
+libdiscord.so,sha256=eMrn7uQEc-AF0Q0_DVkX6sk0CTJ60bv4RzEh4kZdff8,182561
+bridgecord.cpython-38-x86_64-linux-gnu.so,sha256=zukrbJr9ilg_NqVKMmcv72WuepjusuqFosU2Gaism9Y,242297
+bridgecord.libs/discord_game_sdk-ed22f675.so,sha256=-DKbwOxkORrYtOU50SGLxslPBxliCtrKA1IHT3KAbGw,8477313
+bridgecord.libs/libdiscord-8d665d18.so,sha256=L-joyVprhsFIfKkCQI_H9wB-0QXnuIC-oKhZJ1Q_K_g,202505
+bridgecord-0.3.13.dist-info/top_level.txt,sha256=XFUxFzXNjxTBe7B7S3HAEJXxw6JTxwgjpHLTDPZKuY0,11
+bridgecord-0.3.13.dist-info/LICENSE,sha256=HI_ldRKgqjblfhJc6y1ajvCkQq_gab663ppm6RH5hEY,1063
+bridgecord-0.3.13.dist-info/RECORD,,
+bridgecord-0.3.13.dist-info/WHEEL,sha256=ZHxd9vvGApncTkP0KH4ctN8qWwwiZH9UZJm9FTTHKR8,112
+bridgecord-0.3.13.dist-info/METADATA,sha256=zaPbKh9N4c9K_ErPK_-K-6NTlOkpVl5rzW8OTmTN0gM,3532
