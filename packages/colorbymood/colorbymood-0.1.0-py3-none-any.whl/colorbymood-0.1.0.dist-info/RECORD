@@ -1,0 +1,12 @@
+colorbymood/__init__.py,sha256=PHbPnCTwK_ba-O9RVKO9GFX7jukrtcADadLpoBJXgk4,298
+colorbymood/cli.py,sha256=Y1XrPfPwT3aQP4yzz2h3QQy5YdbuKnaMEg-WnmkzFU8,991
+colorbymood/click_utils.py,sha256=D2Ha3Z5K4CRLLjXUDaGUIUURGiQceKZ9A-lVA4-34-g,1643
+colorbymood/color.py,sha256=557zrozVGtTlVt7-PaH5qNolW0yHfr8IIjEOdjHuRWc,1809
+colorbymood/color.yaml,sha256=sBRpGbtYhrL-aFXoRmDxCNGTNDS_YQa5XkD_RqD4p0c,491
+colorbymood/frequency.yaml,sha256=XFcQj5ccDCrOekUX8JvGwQdBO5s8kseWi120DZIdYeM,1061
+colorbymood/io.py,sha256=CfCPviDrXVcCnnJK9JOObi02ld-TJ7zSdYDPHeQF81M,536
+colorbymood/window.py,sha256=kGV7TH1GwUw66SajcvE3fAu9apo7Ff8bHTRb-PsBHxo,2405
+colorbymood-0.1.0.dist-info/METADATA,sha256=FCXGwTjZG4p2opNbc70_HqoYxfSjwZA628Jy4VTtbzg,500
+colorbymood-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+colorbymood-0.1.0.dist-info/entry_points.txt,sha256=DgdzMn6d0ILnQtTfcwBTDTEM1N8nF4GwLBzbuf6ZMvE,52
+colorbymood-0.1.0.dist-info/RECORD,,
