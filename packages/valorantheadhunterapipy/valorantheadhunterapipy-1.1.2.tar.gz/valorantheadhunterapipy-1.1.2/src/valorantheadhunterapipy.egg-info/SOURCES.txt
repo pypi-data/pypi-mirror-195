@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+src/ValorantHeadhunterPy/ValorantHeadhunter.py
+src/ValorantHeadhunterPy/__init__.py
+src/valorantheadhunterapipy.egg-info/PKG-INFO
+src/valorantheadhunterapipy.egg-info/SOURCES.txt
+src/valorantheadhunterapipy.egg-info/dependency_links.txt
+src/valorantheadhunterapipy.egg-info/requires.txt
+src/valorantheadhunterapipy.egg-info/top_level.txt
