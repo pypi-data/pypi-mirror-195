@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: string_validator
+Version: 0.1.6
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Summary: A fast and correct Python string validator library
+Keywords: string,validator,fast
+Author-email: tropicbliss <tropicbliss@protonmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://github.com/tropicbliss/stringvalidator
+
+# string_validator
+
+A fast and correct Python string validator library. Also includes a [cuid](https://github.com/paralleldrive/cuid) generator for the sake of posterity.
+
+Validates:
+
+- Emails
+- IP addresses
+- IPv4 addresses
+- IPv6 addresses
+- URLs
+- Credit card numbers
+- Phone numbers
+- Non-control characters
+
+## Example
+
+```python
+import string_validator
+
+result = string_validator.validate_email("example@example.com")
+assert result == True
+```
+
