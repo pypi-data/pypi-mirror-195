@@ -1,0 +1,15 @@
+sqlaurum/__init__.py,sha256=BWWkX16DHzOvU1WUc5WfU92rLZQ6MysegnpAsFha4dU,666
+sqlaurum/_version.py,sha256=9JwJ7JedXXTALEbJBi2GrLPsFlHcqDJBt9vXdqCkIeM,79
+sqlaurum/dialects/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlaurum/dialects/postgres.py,sha256=zVTibeoXU1YRR8IltNHKmR9eSIpexROHlJR8WtLa4s8,281
+sqlaurum/dialects/sqlite.py,sha256=lH59Vpxq88Bk3ABbOk-MY2je878Gdw4c42uH-tNxsW0,318
+sqlaurum/function_elements.py,sha256=38RYjprKGXf_JPiwouSuRMIQVIeG_y0N8o8-mVlEMBQ,6243
+sqlaurum/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlaurum/repository.py,sha256=yrcf_k2swujJp1hqBpPADVuURILN9Xn3LjcWFG3eR8E,6564
+sqlaurum/sql_types.py,sha256=9BwNxXZWYaR_SKzDq5ikJCmRFVkitxGhPGYEDpUlEwA,2635
+sqlaurum/types.py,sha256=lsuDTLua0YJVJCGDVjiPiGm964_n15v7IhOVXYvimpI,414
+sqlaurum/utils.py,sha256=pFMFdj6NA2HDXSNnF7kE6IFveJxY_vJp8iAR11_kH_E,1749
+sqlaurum-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sqlaurum-0.1.0.dist-info/METADATA,sha256=RXa2PIPL4nkIX_3QlqYPl9M4mapLu3xxFaXA6oBMDrw,4400
+sqlaurum-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+sqlaurum-0.1.0.dist-info/RECORD,,
