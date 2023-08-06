@@ -1,0 +1,2 @@
+[console_scripts]
+steamback = steamback.__main__:main
