@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: testforPPshare
+Version: 0.0.1
+Summary: PPtest is a utility for crawling historical and Real-time Quotes data of marco data
+Home-page: https://github.com/zemengchuan/PPtest
+Author: zemengchuan
+Author-email: zemengchuan@gmail.com
+License: MIT
+Keywords: macro,webcrawler,data
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pandas
+
+# PPtest使用指南（by@zemengchuan）
+GitHub链接：https://github.com/zemengchuan/PPtest
+
+## 用途：
+
+PPtest目前的功能是集成了许多爬取宏观数据的爬虫
+
+## 安装方式
+
+```python
+pip install PPtest
+```
+
+## 使用方式
+
+- 待完善
