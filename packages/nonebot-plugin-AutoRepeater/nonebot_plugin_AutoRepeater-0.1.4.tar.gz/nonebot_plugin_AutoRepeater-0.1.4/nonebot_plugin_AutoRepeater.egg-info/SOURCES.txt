@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+nonebot_plugin_AutoRepeater/__init__.py
+nonebot_plugin_AutoRepeater/config.py
+nonebot_plugin_AutoRepeater/data_source.py
+nonebot_plugin_AutoRepeater.egg-info/PKG-INFO
+nonebot_plugin_AutoRepeater.egg-info/SOURCES.txt
+nonebot_plugin_AutoRepeater.egg-info/dependency_links.txt
+nonebot_plugin_AutoRepeater.egg-info/requires.txt
+nonebot_plugin_AutoRepeater.egg-info/top_level.txt
