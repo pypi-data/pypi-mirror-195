@@ -1,0 +1,31 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shexviz"
+version = "0.1.2"
+description = "Visualize ShEx shapes"
+readme = "README.md"
+authors = [{ name = "Andra Waagmeester", email = "andra@micelio.be" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["shex", "dot", "graphviz"]
+dependencies = [
+    "ShExJSG",
+    "pyshex",
+    'graphviz',
+]
+requires-python = ">=3.8"
+
+[project.urls]
+Homepage = "https://github.com/micelio/shexviz"
+
+[project.scripts]
+shexviz = "shexviz.__main__:main"
