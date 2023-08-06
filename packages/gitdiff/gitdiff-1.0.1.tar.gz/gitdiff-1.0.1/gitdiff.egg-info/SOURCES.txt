@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+git_diff/__init__.py
+git_diff/__main__.py
+git_diff/deal_diff.py
+gitdiff.egg-info/PKG-INFO
+gitdiff.egg-info/SOURCES.txt
+gitdiff.egg-info/dependency_links.txt
+gitdiff.egg-info/entry_points.txt
+gitdiff.egg-info/top_level.txt
