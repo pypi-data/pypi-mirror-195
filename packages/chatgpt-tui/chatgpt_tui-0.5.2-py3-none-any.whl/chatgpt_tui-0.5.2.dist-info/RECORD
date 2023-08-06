@@ -1,0 +1,12 @@
+chatgpt_tui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatgpt_tui/app.py,sha256=a8ZDVSf_oF0raQWt33YQ68gtIjMZt3WuOULvkbfd7YE,2640
+chatgpt_tui/chat_api.py,sha256=YiyH12ZnmHrdBtYucRgnRsMseD1c7ixMbYpTL83eVb8,954
+chatgpt_tui/structures.py,sha256=cmR7lJdizDu-v5qkuUIktM13-pPdZa6iO77zsj8y7ic,938
+chatgpt_tui/style.css,sha256=Hmobsef9SnmcYaYUieAiiDaDw3wb7iB8aC40slBDTE0,1554
+chatgpt_tui/widgets.py,sha256=LfXjNDIPvW5JtcHBmcbnUDXT838ld7FiubSifXf9_eI,2141
+chatgpt_tui-0.5.2.dist-info/LICENSE,sha256=yUCAO5tvEkkdTTwhdqB7fJ_-0F2ZTurr5D_YTVlKhs8,1067
+chatgpt_tui-0.5.2.dist-info/METADATA,sha256=VK-W0USMtVyNu03un-GdB5Nf9Ku_SQzBf-J5bC06Vag,1397
+chatgpt_tui-0.5.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+chatgpt_tui-0.5.2.dist-info/entry_points.txt,sha256=V2tAmUGKIBdyg2uhVl50DH8z3PY4_J05KP4GDblncGw,45
+chatgpt_tui-0.5.2.dist-info/top_level.txt,sha256=sCcXm13qyXE9ygB3W53k3K7Qdg32lxCySo6wNrVetV8,12
+chatgpt_tui-0.5.2.dist-info/RECORD,,
