@@ -1,0 +1,14 @@
+Django
+
+[dev]
+ipdb
+ipython
+
+[test]
+coverage
+coveralls
+django-dynamic-fixture
+django-nose
+django-webtest
+nose-progressive
+WebTest
