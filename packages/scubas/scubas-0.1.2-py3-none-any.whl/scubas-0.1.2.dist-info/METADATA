@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: scubas
+Version: 0.1.2
+Summary: SCUBAS: Submarine Cables Upset by Auroral Streams.
+Home-page: https://github.com/shibaji7/SCUBAS
+Author: Shibaji Chakraborty
+Author-email: shibaji7@vt.edu
+Maintainer: Shibaji Chakraborty
+Maintainer-email: shibaji7@vt.edu
+License: MIT License
+Keywords: python,submarine cable,electrical surge,geomagnetic induction,geomagnetic disturbance
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: matplotlib (>=3.2)
+Requires-Dist: pyproj
+Requires-Dist: loguru
+Requires-Dist: scipy
+Requires-Dist: SciencePlots
+
+Model compute electrical surges in submarine cables induced by geomagnetic activities
+
