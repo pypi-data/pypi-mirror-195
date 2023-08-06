@@ -1,0 +1,2 @@
+[console_scripts]
+telegraph4j = telegraph4j.shell:run
