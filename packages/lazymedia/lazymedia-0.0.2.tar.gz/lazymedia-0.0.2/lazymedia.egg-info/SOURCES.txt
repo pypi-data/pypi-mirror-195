@@ -1,0 +1,10 @@
+README.md
+setup.py
+lazymedia/__init__.py
+lazymedia/ixigua.py
+lazymedia/youtube.py
+lazymedia.egg-info/PKG-INFO
+lazymedia.egg-info/SOURCES.txt
+lazymedia.egg-info/dependency_links.txt
+lazymedia.egg-info/requires.txt
+lazymedia.egg-info/top_level.txt
