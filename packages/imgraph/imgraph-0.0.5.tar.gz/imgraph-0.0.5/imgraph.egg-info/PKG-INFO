@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: imgraph
+Version: 0.0.5
+Summary: Graph Neural Network Library Built On Top Of  PyTorch and PyTorch Geometric
+Author-email: Aryan Singh <aryan.singh@ul.ie>
+Project-URL: homepage, https://aryan-at-ul.github.io
+Project-URL: documentation, https://aryan-at-ul.github.io
+Project-URL: repository, https://github.com/aryan-at-ul/imgraph.git
+Keywords: deep-learning,pytorch,geometric-deep-learning,graph-neural-networks,graph-convolutional-networks,gnn-on-images
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: graphgym
+Provides-Extra: modelhub
+Provides-Extra: full
+Provides-Extra: benchmark
+Provides-Extra: test
+Provides-Extra: dev
+License-File: LICENSE.txt
+
+# IMGRAPH 
+
+### Used for converting image to graph, uses superpixel method for node creation, extract features from CNN models. 
+
+Example Usage: 
+
+```
+from imgraph import image_to_graph,draw_graph_as_image
+
+#use a test image
+#model_name  -> default resnet18, possible value densenet121 and efficientnet-b0
+g,seg = image_to_graph('test.jpeg', n_segments = 10, model_name = "densenet121")
+
+
+draw_graph_as_image(g,seg)
+```
+
