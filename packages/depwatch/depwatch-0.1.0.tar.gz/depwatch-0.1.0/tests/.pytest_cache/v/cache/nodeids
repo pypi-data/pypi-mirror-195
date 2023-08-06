@@ -1,0 +1,6 @@
+[
+  "test_command.py::TestCommand::test_generate_histories",
+  "test_command.py::test_generate_histories",
+  "test_command.py::test_history",
+  "test_main.py::test_main"
+]
