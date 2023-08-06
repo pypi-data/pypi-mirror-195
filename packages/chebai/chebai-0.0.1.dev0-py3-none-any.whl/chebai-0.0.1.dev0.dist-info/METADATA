@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: chebai
+Version: 0.0.1.dev0
+Home-page: 
+Author: MGlauer
+Author-email: martin.glauer@ovgu.de
+License-File: LICENSE
+Requires-Dist: certifi
+Requires-Dist: idna
+Requires-Dist: joblib
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: python-dateutil
+Requires-Dist: pytz
+Requires-Dist: requests
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: six
+Requires-Dist: threadpoolctl
+Requires-Dist: torch
+Requires-Dist: typing-extensions
+Requires-Dist: urllib3
+Requires-Dist: pytorch-lightning
+Requires-Dist: torch-scatter
+Requires-Dist: torch-sparse
+Requires-Dist: torch-cluster
+Requires-Dist: torch-spline-conv
+Requires-Dist: torch-geometric (>=1.9.0)
+Requires-Dist: transformers (==4.24.0)
+Requires-Dist: fastobo
+Requires-Dist: pysmiles
+Requires-Dist: click
+Requires-Dist: scikit-network
+Requires-Dist: svgutils
+Requires-Dist: matplotlib
+Requires-Dist: rdkit
+Requires-Dist: selfies
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+
