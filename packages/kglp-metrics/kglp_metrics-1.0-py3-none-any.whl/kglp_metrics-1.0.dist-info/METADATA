@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: kglp-metrics
+Version: 1.0
+Summary: Implementation of simple metrics for Knowledge Graph Completion
+Home-page: https://github.com/kmkurn/pytorch-crf
+Author: Antarx Gawain
+Author-email: liangyi@bupt.edu.cn
+License: LICENSE :: OSI APPROVED :: GNU LESSER GENERAL PUBLIC LICENSE V3 (LGPLV3)
+Keywords: Knowledge Graph Completion
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10
+License-File: LICENSE
+
+# Simple Class for KG link prediction
+
+## Current Metrics
+
+- Hits@K (1, 5, 10)
+- MRR
