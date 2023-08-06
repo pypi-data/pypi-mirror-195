@@ -1,0 +1,3 @@
+[console_scripts]
+init-paper=init_paper.main:main
+
