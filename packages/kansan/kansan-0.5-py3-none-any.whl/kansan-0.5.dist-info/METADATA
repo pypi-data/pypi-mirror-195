@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: kansan
+Version: 0.5
+Summary: A Docker and AWS utility package
+Home-page: https://github.com/javatechy/dokr
+Author: Nitin Kansal
+Author-email: kansalster@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Install python3
+
+apt install python3
+
+Install Virtual Environment
+
+$ apt-get install python3-pip
+
+$ apt-get update
+ 
+$ apt install python3.8-venv
+
+$ python3 -m pip install --user virtualenv
+
+$ python3 -m venv env
+
+$source env/bin/activate
+--------------------------------------------
+
+Install the required packages:
+
+
+1. Setuptools: Setuptools is a package development process library designed for creating and distributing Python packages.
+
+2. Wheel: The Wheel package provides a bdist_wheel command for setuptools. It creates .whl file which is directly installable through the pip install command. We'll then upload the same file to pypi.org.
+
+3. Twine: The Twine package provides a secure, authenticated, and verified connection between your system and PyPi over HTTPS.
+
+4. Tqdm: This is a smart progress meter used internally by Twine.
+
+python3 -m pip install --upgrade pip setuptools wheel
+python3 -m pip install tqdm
+python3 -m pip install --upgrade twine
+
+Build your package:
+python3 setup.py bdist_wheel
+
+Test Installing on to local machine from whl file:
+python3 -m pip install dist/kansan-0.1-py3-none-any.whl
+
+or 
+
+pip3 install dist/kansan-0.1-py3-none-any.whl
+
+
+Create file ~/.pypirc
+
+[distutils]
+index-servers=pypi
+[pypi]
+repository = https://upload.pypi.org/legacy/
+username = kansalster
+
+
+Upload on pip:
+python3 -m twine upload dist/* --skip-existing
+
+You can change the package version in setup.py and upload the new version to pypi.org
+
+
+Login in to pypi and check the package there.
+https://pypi.org/
+
+
+pip3 install tree
+pip3 install kansan
+
+
+
+
+
+Now login in to azure devops and create feed with no upstream option. Click on the connect to feed and get the file pip.conf content and save it on your machine in /etc/pip.conf
+e.g.
+[global]
+index-url=https://<myfeedname>:<token>@pkgs.dev.azure.com/kansalster/lastproject/_packaging/<myfeedname>/pypi/simple/
+
+Now try installing any pip library
+
+pip3 install tree
+pip3 install kansan
+
+Now we will push our package new version on to azure feed.
+1. Change the version number
+2. Push it to azure feed this time using command
+
+python -m twine upload -r feedName --config-file  dist/*.whl
+
+1. this should fail until upstream option is disabled.
+2. Once you enabled upstream option, you should be able to install any library
+3. The package will be saved to feed first and then installed on your machine so that next request does not go to upstream
+4. you can also set the retention of the packages saved in to feed.
+
+Now lets write the azure pipeline to build the package and push it to pypi and make it available to use for consumers.
+
+
