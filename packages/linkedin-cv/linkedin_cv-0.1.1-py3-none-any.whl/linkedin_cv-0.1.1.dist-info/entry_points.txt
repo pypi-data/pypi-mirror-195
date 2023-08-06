@@ -1,0 +1,3 @@
+[console_scripts]
+linkedin-cv=linkedincv.cli.core:main
+
