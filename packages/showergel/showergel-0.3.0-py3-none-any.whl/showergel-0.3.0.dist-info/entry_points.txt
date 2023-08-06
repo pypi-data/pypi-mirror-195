@@ -1,0 +1,3 @@
+[console_scripts]
+showergel=showergel.commands.main:showergel_cli
+
