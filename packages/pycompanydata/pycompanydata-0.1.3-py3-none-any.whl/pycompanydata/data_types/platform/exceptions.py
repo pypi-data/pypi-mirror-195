@@ -1,0 +1,2 @@
+class CodatException(Exception):
+    pass
