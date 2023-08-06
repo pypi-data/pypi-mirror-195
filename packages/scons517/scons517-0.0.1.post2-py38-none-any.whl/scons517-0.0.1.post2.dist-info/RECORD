@@ -1,0 +1,10 @@
+scons517-0.0.1.post2.dist-info/METADATA,sha256=xpWNxPN868pzqZWogv35408dLUKONg-CVqpskNfaxRQ,4177
+scons517-0.0.1.post2.dist-info/WHEEL,sha256=lZMdC5tSJU1LWXOm-Xmc88a9tcxi77uO_LBNlP36PSk,81
+scons517-0.0.1.post2.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scons517/__init__.py,sha256=dn5qgiru_SeFhkyeooD73uCmcCD3JLfWWciuIR0CJac,2393
+scons517/api.py,sha256=ML2DWNxM62X5cv-oUPGleuMHsOZkFOj3Npn-fBbGpzg,1416
+scons517/extension.py,sha256=AHaaXzN-qa9hPVUD4d6Qy1sJpNKL0aNS47XCI8bvGy8,3416
+scons517/pytar.py,sha256=YKYRiqRdAc7F1PeS2UkrEroXk2TlALxYkWz-9HXeGAc,3695
+scons517/sphinx.py,sha256=Fe3rSnOcclIv2vk4ap0yxanYShN_TIYhJAxT95CEnDo,784
+scons517/wheel.py,sha256=nBsjDeYkKE1Ms6rJWEioI9qq1MsT4_QaL4FyXUxb9_c,25513
+scons517-0.0.1.post2.dist-info/RECORD,,
