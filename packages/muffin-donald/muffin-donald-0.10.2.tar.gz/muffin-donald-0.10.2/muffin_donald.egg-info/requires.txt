@@ -1,0 +1,15 @@
+muffin>=0.92
+donald>=0.32.0
+
+[dev]
+pre-commit
+refurb
+bump2version
+muffin_sentry
+
+[tests]
+pytest
+pytest-aio[curio,trio]
+pytest-mypy
+types-setuptools
+ruff
