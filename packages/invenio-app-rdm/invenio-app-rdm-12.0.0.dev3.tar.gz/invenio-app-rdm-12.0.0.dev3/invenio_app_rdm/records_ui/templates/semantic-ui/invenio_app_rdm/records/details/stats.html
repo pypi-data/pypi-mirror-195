@@ -1,0 +1,162 @@
+{#
+  Copyright (C) 2020 CERN.
+
+  Invenio RDM Records is free software; you can redistribute it and/or modify
+  it under the terms of the MIT License; see LICENSE file for more details.
+#}
+{% from "invenio_app_rdm/records/macros/stats_popup.html" import stats_popup %}
+
+<div class="ui tiny two statistics rel-mt-1">
+  {% set all_versions = stats.all_versions %}
+  {% set this_version = stats.this_version %}
+
+  <div class="ui statistic">
+    <div class="value">{{ all_versions.views|compact_number(max_value=1_000_000) }}</div>
+    <div class="label">
+      <i aria-hidden="true" class="eye icon"></i>
+      {{ _("Views") }}
+    </div>
+  </div>
+
+  <div class="ui statistic">
+    <div class="value">{{ all_versions.downloads|compact_number(max_value=1_000_000) }}</div>
+    <div class="label">
+      <i aria-hidden="true" class="download icon"></i>
+      {{ _("Downloads") }}
+    </div>
+  </div>
+
+  <div class="ui fluid accordion">
+    <div
+      class="title"
+      data-close-text="{{ _('See less details') }}"
+      data-open-text="{{ _('See more details') }}"
+    >
+      <i aria-hidden="true" class="right caret icon"></i>
+
+      <span class="trigger">
+        {{ _("See more details") }}
+      </span>
+    </div>
+
+    <div class="content">
+      <table id="record-statistics" class="ui definition table">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="right aligned">{{ _("All versions") }}</th>
+            <th class="right aligned">{{ _("This version") }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+                {{ _("Unique views") }}
+                <i
+                  tabindex="0"
+                  role="button"
+                  style="position:relative"
+                  class="popup-trigger question circle small icon"
+                  aria-expanded="false"
+                  aria-label="{{ _('More info') }}"
+                  data-variation="mini inverted"
+                >
+                </i>
+                <p role="tooltip" class="popup-content ui flowing popup transition hidden">
+                  {{ _('Views in one hour user-sessions are counted only once') }}
+                </p>
+            </td>
+            <td data-label="{{_('All versions')}}" class="right aligned">{{ stats_popup(all_versions.unique_views) }}</td>
+            <td data-label="{{_('This version')}}" class="right aligned">{{ stats_popup(this_version.unique_views) }}</td>
+          </tr>
+          <tr>
+            <td>
+              {{ _("Views") }}
+              <i
+                tabindex="0"
+                role="button"
+                style="position:relative"
+                class="popup-trigger question circle small icon"
+                aria-expanded="false"
+                aria-label="{{ _('More info') }}"
+                data-variation="mini inverted"
+              >
+              </i>
+              <p role="tooltip" class="popup-content ui flowing popup transition hidden">
+                {{ _('Total views') }}
+              </p>
+            </td>
+            <td data-label="{{_('All versions')}}" class="right aligned">{{ stats_popup(all_versions.views) }}</td>
+            <td data-label="{{_('This version')}}" class="right aligned">{{ stats_popup(this_version.views) }}</td>
+          </tr>
+          <tr>
+            <td>
+              {{ _("Unique downloads") }}
+              <i
+                tabindex="0"
+                role="button"
+                style="position:relative"
+                class="popup-trigger question circle small icon"
+                aria-expanded="false"
+                aria-label="{{ _('More info') }}"
+                data-variation="mini inverted"
+              >
+              </i>
+              <p role="tooltip" class="popup-content ui flowing popup transition hidden">
+                {{ _('Downloads in one hour user-sessions are counted only once') }}
+              </p>
+            </td>
+            <td data-label="{{_('All versions')}}" class="right aligned">{{ stats_popup(all_versions.unique_downloads) }}</td>
+            <td data-label="{{_('This version')}}" class="right aligned">{{ stats_popup(this_version.unique_downloads) }}</td>
+          </tr>
+          <tr>
+            <td>
+              {{ _("Downloads") }}
+              <i
+                tabindex="0"
+                role="button"
+                style="position:relative"
+                class="popup-trigger question circle small icon"
+                aria-expanded="false"
+                aria-label="{{ _('More info') }}"
+                data-variation="mini inverted"
+              >
+              </i>
+              <p role="tooltip" class="popup-content ui flowing popup transition hidden">
+                {{ _('Total downloads') }}
+              </p>
+            </td>
+            <td data-label="{{_('All versions')}}" class="right aligned">{{ stats_popup(all_versions.downloads) }}</td>
+            <td data-label="{{_('This version')}}" class="right aligned">{{ stats_popup(this_version.downloads) }}</td>
+          </tr>
+          <tr>
+            <td>
+              {{ _("Data volume") }}
+              <i
+                tabindex="0"
+                role="button"
+                style="position:relative"
+                class="popup-trigger question circle small icon"
+                aria-expanded="false"
+                aria-label="{{ _('More info') }}"
+                data-variation="mini inverted"
+              >
+              </i>
+              <p role="tooltip" class="popup-content ui flowing popup transition hidden">
+                {{ _('Total data volume') }}
+              </p>
+            </td>
+            {%- set binary_sizes = not config.APP_RDM_DISPLAY_DECIMAL_FILE_SIZES %}
+
+            <td data-label="{{_('All versions')}}" class="right aligned">{{ all_versions.data_volume|filesizeformat(binary=binary_sizes) }}</td>
+            <td data-label="{{_('This version')}}" class="right aligned">{{ this_version.data_volume|filesizeformat(binary=binary_sizes) }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <p class="m-auto rel-mt-1 rel-mb-1 text-muted">
+    <i>{{ _("All statistics are updated daily.")}} <a href="/help/statistics">{{ _("Read more") }}...</a></i>
+  </p>
+</div>
