@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: ninsolver
+Version: 0.1
+Summary: library for solving captchas using https://api.api-ninjas.com/v1
+Home-page: UNKNOWN
+Author-email: bonnita1900432@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+__ninsolver python library for solving captchas__
+
+---
+
+__python version 3.5+__
+
+to install with pip:
+
+```pip install ninsolver```
+
+requirements:
+
+```aiohttp```
+
+code example:
+
+```
+from asyncio import run, gather
+import ninsolver
+
+async def async_append(client, image, to_append, num):
+	res = await client.solving_image(client.image_to_bytes(image))
+	to_append.append(res)
+	print(f"{num} - solved")
+
+async def main():
+	client = ninsolver.Client("YOUR API KEY")
+	results = []
+	await gather(*[async_append(client, f"{i}.jpg", results, i) for i in range(1, 7)])
+	for x in results:
+		print(x.as_str)
+
+run(main())
+```
+
+__links:__
+
+- [telegram](https://t.me/xarlchat)
+
+- [github](https://github.com/xaquake)
+
+p.s. visit my github, there are also other codes there
+
+
