@@ -1,0 +1,8 @@
+puccini/__init__.py,sha256=UAuTYiKF41yTa-lG-LD9UUArhXc4aZ6bJs_6sGq2BuU,23
+puccini/go.py,sha256=iSGoVxSwAlaOvowRzPrxqT7GIsn5zotsLi_FWJUyex0,512
+puccini/libpuccini.so,sha256=XdT75QRyDVclgMPrjD751E2i5SOvyaUViwO-MFONGJs,29799776
+puccini/tosca.py,sha256=sgxDFDqQyOS2CdEnwCtWZceUzsXkTvM4sjN9SDXa6lg,919
+puccini-0.21.0.dist-info/METADATA,sha256=-W1PHil4SHZxMiXLM2F4lrd4nNWaYN2REz4fM3fCeNI,1604
+puccini-0.21.0.dist-info/WHEEL,sha256=5UdfI5ptDg_2Lfgkjx65NS0_1b9wHYEieqfYvZJsaho,110
+puccini-0.21.0.dist-info/top_level.txt,sha256=v3ppRyu3p78-z2z77vXRiwyLbcPZXd5oHaS41ucC2lQ,8
+puccini-0.21.0.dist-info/RECORD,,
