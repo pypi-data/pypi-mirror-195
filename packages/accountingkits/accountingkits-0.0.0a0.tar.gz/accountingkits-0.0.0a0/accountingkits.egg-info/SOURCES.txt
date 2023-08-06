@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+accountingkits/__init__.py
+accountingkits.egg-info/PKG-INFO
+accountingkits.egg-info/SOURCES.txt
+accountingkits.egg-info/dependency_links.txt
+accountingkits.egg-info/top_level.txt
