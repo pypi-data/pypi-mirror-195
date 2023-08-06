@@ -1,0 +1,9 @@
+pyspark==3.3.2
+
+[dev]
+jeremydimond.pytesthelpers
+pytest-cov
+pytest-tldr
+bumpver
+build
+twine
