@@ -1,0 +1,3 @@
+[console_scripts]
+sncopy=sncopy.cli:main
+
