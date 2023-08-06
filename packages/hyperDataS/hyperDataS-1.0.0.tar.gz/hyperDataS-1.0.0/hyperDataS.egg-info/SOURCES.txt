@@ -1,0 +1,11 @@
+README.md
+setup.py
+hyperDataS.egg-info/PKG-INFO
+hyperDataS.egg-info/SOURCES.txt
+hyperDataS.egg-info/dependency_links.txt
+hyperDataS.egg-info/requires.txt
+hyperDataS.egg-info/top_level.txt
+src/hyperDS/__init__.py
+src/hyperDS/exceptions.py
+src/hyperDS/updater.py
+src/hyperDS/utils.py
