@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+bstconnect/LICENSE
+bstconnect/README.MD
+bstconnect/__init__.py
+bstconnect/requirements.txt
+bstconnect/thirdparty.json
+bstconnect.egg-info/PKG-INFO
+bstconnect.egg-info/SOURCES.txt
+bstconnect.egg-info/dependency_links.txt
+bstconnect.egg-info/requires.txt
+bstconnect.egg-info/top_level.txt
