@@ -1,0 +1,15 @@
+unimenu/__init__.py,sha256=SUJnxCPt0W-6gHWCa5zbWSkh7DwGW26zJcyafxuTATk,357
+unimenu/core.py,sha256=5kFvUL99IArG-Haoq0mmtGijl1Q6iJAuRFK4lShKEHo,6737
+unimenu/utils.py,sha256=Xmzn3IdNdKf-Fdn8VCjKcjV_YQ_hfqa2UUdwE-unc8w,1384
+unimenu/apps/__init__.py,sha256=_8qLmVA9iyjGjBpAvo7KyMkzpPlQAEA662cB9rC2PQA,2414
+unimenu/apps/_abstract.py,sha256=bEEDLRtIgbIXlzAwSFFUgMDdvAl7TBf5r5rvmbS0-YA,8606
+unimenu/apps/blender.py,sha256=mw80ef7P8xEP0VyO3Pr_99xwHXYrxT_sVV8scx7LTZM,4726
+unimenu/apps/marmoset.py,sha256=xXSvxYBPoO3GP7CpTbcKk-0CRpuEdQtFGkMnW6ocNR0,1571
+unimenu/apps/max.py,sha256=eIQPt79gJtKZeLz3sfbMcLUo4mfG5X5gqgLgphbXMO0,3982
+unimenu/apps/maya.py,sha256=axDU5R6O2cpLs0MgvOKEyxJD58o4RAhQVjZnhJjQn2o,3851
+unimenu/apps/qt.py,sha256=B00yTr3NQ3u_BNCov79xMP4X4izsGCEJYjq3_zybrlA,3588
+unimenu/apps/unreal.py,sha256=Re783BAL5BzqvQSPaslstlC0x1WM2noXStCPjqN8tkY,2502
+unimenu-3.0.0.dist-info/METADATA,sha256=P_-ygbvG60eMzNZz8Tw54WbilXfc-UEOjFB_SsA2JEo,4043
+unimenu-3.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+unimenu-3.0.0.dist-info/top_level.txt,sha256=G9qFXEEkQohCYr8q1RJg5MLhLQK5yClx7m8bvx30hKQ,8
+unimenu-3.0.0.dist-info/RECORD,,
