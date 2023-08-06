@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+sconv/__init__.py
+sconv_ha86.egg-info/PKG-INFO
+sconv_ha86.egg-info/SOURCES.txt
+sconv_ha86.egg-info/dependency_links.txt
+sconv_ha86.egg-info/top_level.txt
+tests/__init__.py
+tests/test_string.py
