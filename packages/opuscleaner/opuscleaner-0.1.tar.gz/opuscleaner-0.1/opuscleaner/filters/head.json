@@ -1,0 +1,12 @@
+{
+    "description": "Top N entries",
+    "command": "head -n $N",
+    "parameters":
+    {
+        "N":
+        {
+            "type": "int"
+        }
+    },
+    "type": "bilingual"
+}
