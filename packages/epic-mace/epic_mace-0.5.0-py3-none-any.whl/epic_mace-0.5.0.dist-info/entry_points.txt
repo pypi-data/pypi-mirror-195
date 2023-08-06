@@ -1,0 +1,3 @@
+[console_scripts]
+epic-mace = mace.__main__:main
+epic-mace-quickstart = mace._cli_quickstart:main
