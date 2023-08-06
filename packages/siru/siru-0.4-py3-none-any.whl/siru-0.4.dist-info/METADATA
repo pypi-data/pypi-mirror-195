@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: siru
+Version: 0.4
+Summary: Automated tests on hardware for embedded systems
+Project-URL: Documentation, https://github.com/labmicro/siru#readme
+Project-URL: Issues, https://github.com/labmicro/siru/issues
+Project-URL: Source, https://github.com/labmicro/siru
+Author-email: Esteban Volentini <evolentini@herrera.unt.edu.ar>
+License-Expression: MIT
+License-File: LICENSE.txt
+Keywords: automated testing,embedded systems
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Framework :: Robot Framework
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Testing :: Acceptance
+Requires-Python: >=3.7
+Requires-Dist: crc~=4.1
+Requires-Dist: mako~=1.2
+Requires-Dist: pyserial~=3.5
+Requires-Dist: pyyaml-include~=1.3
+Requires-Dist: pyyaml~=6.0
+Description-Content-Type: text/markdown
+
+# SIRU
+
+[![PyPI - Version](https://img.shields.io/pypi/v/siru.svg)](https://pypi.org/project/siru)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/siru.svg)](https://pypi.org/project/siru)
+
+-----
+
+SIRU is a tool to run automated tests on hardware, designed to be used in the development of embedded systems.
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install siru
+```
+
+## License
+
+`SIRU` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
