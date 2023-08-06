@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+AutoMLOps/AutoMLOps.py
+AutoMLOps/AutoMLOps_test.py
+AutoMLOps/BuilderUtils.py
+AutoMLOps/CloudRunBuilder.py
+AutoMLOps/ComponentBuilder.py
+AutoMLOps/JupyterUtilsMagic.py
+AutoMLOps/PipelineBuilder.py
+AutoMLOps/__init__.py
+google_cloud_automlops.egg-info/PKG-INFO
+google_cloud_automlops.egg-info/SOURCES.txt
+google_cloud_automlops.egg-info/dependency_links.txt
+google_cloud_automlops.egg-info/requires.txt
+google_cloud_automlops.egg-info/top_level.txt
