@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+TamClinet/__init__.py
+TamClinet.egg-info/PKG-INFO
+TamClinet.egg-info/SOURCES.txt
+TamClinet.egg-info/dependency_links.txt
+TamClinet.egg-info/top_level.txt
