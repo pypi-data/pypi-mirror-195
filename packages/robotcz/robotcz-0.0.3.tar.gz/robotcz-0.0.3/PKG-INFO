@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: robotcz
+Version: 0.0.3
+Summary: Robot
+Author-email: Ludek Stastny <ludek.stastny@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.

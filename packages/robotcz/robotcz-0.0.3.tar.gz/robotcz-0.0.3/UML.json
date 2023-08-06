@@ -1,0 +1,435 @@
+{
+    "proj_nodes": [
+        {
+            "nodetype": 2,
+            "pos_x": 421.0,
+            "pos_y": 54.0,
+            "name": "IO.py",
+            "relations": [],
+            "methods": [
+                "enter",
+                "choose",
+                "confirm",
+                "inform",
+                "select",
+                "set_dialog_position",
+                "pause"
+            ],
+            "attributes": [
+                "window_location"
+            ]
+        },
+        {
+            "nodetype": 2,
+            "pos_x": 418.0,
+            "pos_y": 188.0,
+            "name": "robotwindow.py",
+            "relations": [],
+            "methods": [
+                "create_window_for"
+            ],
+            "attributes": [
+                "MyDBG",
+                "_ROOT",
+                "_robot_dir",
+                "ROBOTS_ICON_DIRECTORY",
+                "ROBOTS_COLOR_CHARS",
+                "DIRECTION_EXTENSIONS",
+                "ROBOT_LOOKS",
+                "FIELDS_ICON_DIRECTORY",
+                "MARKER_ICON_FILENAMES",
+                "FIELD_FILES",
+                "FIELD_LOOKS",
+                "COLORS",
+                "DIRECTIONS",
+                "MARKERS",
+                "WALL_INDEX",
+                "title",
+                "__all__"
+            ]
+        },
+        {
+            "nodetype": 1,
+            "pos_x": 417.0,
+            "pos_y": 124.0,
+            "name": "RobotWindow",
+            "relations": [
+                {
+                    "type": 2,
+                    "target": {
+                        "nodetype": 1,
+                        "pos_x": 0,
+                        "pos_y": 0,
+                        "name": "robotwindow.py",
+                        "relations": [],
+                        "methods": [],
+                        "attributes": []
+                    }
+                }
+            ],
+            "methods": [
+                "__init__",
+                "repaint",
+                "release"
+            ],
+            "attributes": [
+                "world"
+            ]
+        },
+        {
+            "nodetype": 1,
+            "pos_x": 420.0,
+            "pos_y": 265.0,
+            "name": "Icon",
+            "relations": [
+                {
+                    "type": 2,
+                    "target": {
+                        "nodetype": 1,
+                        "pos_x": 0,
+                        "pos_y": 0,
+                        "name": "robotwindow.py",
+                        "relations": [],
+                        "methods": [],
+                        "attributes": []
+                    }
+                }
+            ],
+            "methods": [
+                "__init__",
+                "file"
+            ],
+            "attributes": []
+        },
+        {
+            "nodetype": 2,
+            "pos_x": 110.0,
+            "pos_y": 255.0,
+            "name": "robotworld.py",
+            "relations": [],
+            "methods": [
+                "get_world",
+                "new_empty_world",
+                "new_world",
+                "destroy_world",
+                "c2i",
+                "create_world"
+            ],
+            "attributes": [
+                "MyDBG",
+                "PAUSE",
+                "DEFAULT_SIZE",
+                "MAX_MARKERS",
+                "WALL_CHAR",
+                "WALL",
+                "RADIX"
+            ]
+        },
+        {
+            "nodetype": 1,
+            "pos_x": 101.0,
+            "pos_y": 360.0,
+            "name": "IRobotWorldListener",
+            "relations": [
+                {
+                    "type": 2,
+                    "target": {
+                        "nodetype": 1,
+                        "pos_x": 0,
+                        "pos_y": 0,
+                        "name": "robotworld.py",
+                        "relations": [],
+                        "methods": [],
+                        "attributes": []
+                    }
+                }
+            ],
+            "methods": [
+                "repaint",
+                "release"
+            ],
+            "attributes": []
+        },
+        {
+            "nodetype": 1,
+            "pos_x": 110.0,
+            "pos_y": 188.0,
+            "name": "WRobot",
+            "relations": [
+                {
+                    "type": 2,
+                    "target": {
+                        "nodetype": 1,
+                        "pos_x": 0,
+                        "pos_y": 0,
+                        "name": "robotworld.py",
+                        "relations": [],
+                        "methods": [],
+                        "attributes": []
+                    }
+                }
+            ],
+            "methods": [
+                "__init__",
+                "color",
+                "dir4",
+                "col",
+                "row",
+                "vdir4",
+                "vcol",
+                "vrow",
+                "show",
+                "__repr__"
+            ],
+            "attributes": [
+                "hidden",
+                "result"
+            ]
+        },
+        {
+            "nodetype": 1,
+            "pos_x": 278.0,
+            "pos_y": 356.0,
+            "name": "RWError",
+            "relations": [
+                {
+                    "type": 2,
+                    "target": {
+                        "nodetype": 1,
+                        "pos_x": 0,
+                        "pos_y": 0,
+                        "name": "robotworld.py",
+                        "relations": [],
+                        "methods": [],
+                        "attributes": []
+                    }
+                }
+            ],
+            "methods": [
+                "__init__"
+            ],
+            "attributes": [
+                "message"
+            ]
+        },
+        {
+            "nodetype": 1,
+            "pos_x": 278.0,
+            "pos_y": 268.0,
+            "name": "RobotError",
+            "relations": [
+                {
+                    "type": 1,
+                    "target": {
+                        "nodetype": 1,
+                        "pos_x": 0,
+                        "pos_y": 0,
+                        "name": "RWError",
+                        "relations": [],
+                        "methods": [],
+                        "attributes": []
+                    }
+                },
+                {
+                    "type": 2,
+                    "target": {
+                        "nodetype": 1,
+                        "pos_x": 0,
+                        "pos_y": 0,
+                        "name": "robotworld.py",
+                        "relations": [],
+                        "methods": [],
+                        "attributes": []
+                    }
+                }
+            ],
+            "methods": [
+                "__init__"
+            ],
+            "attributes": [
+                "msg"
+            ]
+        },
+        {
+            "nodetype": 1,
+            "pos_x": 268.0,
+            "pos_y": 190.0,
+            "name": "RobotWorld",
+            "relations": [
+                {
+                    "type": 2,
+                    "target": {
+                        "nodetype": 1,
+                        "pos_x": 0,
+                        "pos_y": 0,
+                        "name": "robotworld.py",
+                        "relations": [],
+                        "methods": [],
+                        "attributes": []
+                    }
+                }
+            ],
+            "methods": [
+                "__init__",
+                "__repr__",
+                "cols",
+                "rows",
+                "fields",
+                "robots",
+                "repr",
+                "add_listener",
+                "remove_listener",
+                "add_robot",
+                "remove_robot",
+                "destroy",
+                "is_east",
+                "is_marker",
+                "is_wall",
+                "robot_before",
+                "pick",
+                "put",
+                "step",
+                "turn_left",
+                "hide",
+                "unhide",
+                "repaint",
+                "_checkInside",
+                "_check_world_alive",
+                "_is_field_free",
+                "_move_to",
+                "_robot_on"
+            ],
+            "attributes": [
+                "active",
+                "r",
+                "wrobot",
+                "result",
+                "wrobot",
+                "result",
+                "wrobot",
+                "col",
+                "row",
+                "result",
+                "wrobot",
+                "col",
+                "row",
+                "result",
+                "wrobot",
+                "markers",
+                "wrobot",
+                "markers",
+                "wrobot",
+                "col",
+                "row",
+                "wrobot",
+                "wrobot",
+                "wrobot",
+                "result"
+            ]
+        },
+        {
+            "nodetype": 2,
+            "pos_x": 114.0,
+            "pos_y": 125.0,
+            "name": "__init__.py",
+            "relations": [],
+            "methods": [
+                "new_world",
+                "active_world"
+            ],
+            "attributes": [
+                "OO_PARADIGM",
+                "DEFAULT_COLOR",
+                "DEFAULT_DIR"
+            ]
+        },
+        {
+            "nodetype": 1,
+            "pos_x": 269.0,
+            "pos_y": 53.0,
+            "name": "Color",
+            "relations": [
+                {
+                    "type": 2,
+                    "target": {
+                        "nodetype": 1,
+                        "pos_x": 0,
+                        "pos_y": 0,
+                        "name": "__init__.py",
+                        "relations": [],
+                        "methods": [],
+                        "attributes": []
+                    }
+                }
+            ],
+            "methods": [],
+            "attributes": []
+        },
+        {
+            "nodetype": 1,
+            "pos_x": 119.0,
+            "pos_y": 52.0,
+            "name": "Direction4",
+            "relations": [
+                {
+                    "type": 2,
+                    "target": {
+                        "nodetype": 1,
+                        "pos_x": 0,
+                        "pos_y": 0,
+                        "name": "__init__.py",
+                        "relations": [],
+                        "methods": [],
+                        "attributes": []
+                    }
+                }
+            ],
+            "methods": [
+                "dx",
+                "dy",
+                "turn_left",
+                "turn_right",
+                "turn_about"
+            ],
+            "attributes": [
+                "result",
+                "result"
+            ]
+        },
+        {
+            "nodetype": 1,
+            "pos_x": 269.0,
+            "pos_y": 126.0,
+            "name": "Karel",
+            "relations": [
+                {
+                    "type": 2,
+                    "target": {
+                        "nodetype": 1,
+                        "pos_x": 0,
+                        "pos_y": 0,
+                        "name": "__init__.py",
+                        "relations": [],
+                        "methods": [],
+                        "attributes": []
+                    }
+                }
+            ],
+            "methods": [
+                "__init__",
+                "__repr__",
+                "pick",
+                "put",
+                "step",
+                "turn_left",
+                "is_east",
+                "is_marker",
+                "is_wall",
+                "robot_before",
+                "hide",
+                "unhide"
+            ],
+            "attributes": []
+        }
+    ]
+}
