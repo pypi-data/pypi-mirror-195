@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: DarCDTLib
+Version: 0.1
+Summary: An example of python package.
+Author: Darshan Jain
+Author-email: Darshan.Jain@fractal.ai
+License: MIT
+License-File: License.txt
+Requires-Dist: pandas
+
+Testing the package
