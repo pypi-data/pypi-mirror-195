@@ -1,0 +1,7 @@
+shadowsearch/__init__.py
+shadowsearch/search.py
+shadowsearch/setup.py
+shadowsearch.egg-info/PKG-INFO
+shadowsearch.egg-info/SOURCES.txt
+shadowsearch.egg-info/dependency_links.txt
+shadowsearch.egg-info/top_level.txt
