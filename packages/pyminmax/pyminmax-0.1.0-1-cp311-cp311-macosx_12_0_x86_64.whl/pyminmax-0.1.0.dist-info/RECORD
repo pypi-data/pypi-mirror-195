@@ -1,0 +1,9 @@
+pyminmax/__init__.py,sha256=WwVOP0Fiv6bWW5Zx9IP7eEZE2m2k-ppQ3x5wRXzSqeM,434
+pyminmax/minmax.cpython-311-darwin.so,sha256=YMTM5Na5jrnBw5B_NnidOAXDU_iY2P9W8mngvyDLZlc,51144
+pyminmax/minmaxmodule.c,sha256=IEI8T4T1bDNP1CE8YveXNBDoaf4GvkS5Qd7ZCX69kBw,4801
+tests/test_minmax.py,sha256=QxsF4EjUmH36oBJLkfDPADTN64r0Cso_N_ebAmnJ75Y,3302
+pyminmax-0.1.0.dist-info/LICENSE,sha256=t53MFc5MMPBXEPrsPEvmS-vyU66v3BhD4U6LOP9WCA8,1069
+pyminmax-0.1.0.dist-info/METADATA,sha256=hkIvq5Gy_TGfMBe0HDXTQGcvQukEkoc2Q5hVQZoh9TU,1772
+pyminmax-0.1.0.dist-info/WHEEL,sha256=_9ShcGfub4KLH5PUQ7kTbvehnKK3dsm83uUcYFhwXMs,111
+pyminmax-0.1.0.dist-info/top_level.txt,sha256=shXPi3_Se0dMisuIuO6sum8o0s4qipLxqwLRS0LbZ7c,15
+pyminmax-0.1.0.dist-info/RECORD,,
