@@ -1,0 +1,13 @@
+numpy>=1.21
+pandas>=1
+scipy
+xarray>=2022.03
+
+[speedup]
+numba
+
+[test]
+coverage[toml]
+pygeohydro
+pytest-cov
+pytest-xdist[psutil]
