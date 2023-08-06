@@ -1,0 +1,2 @@
+[pytest11]
+vws_test_fixtures = vws_test_fixtures.plugin
