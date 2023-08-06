@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+gopro_video_sync/__init__.py
+gopro_video_sync/audio_offset.py
+gopro_video_sync/cross_correlation.py
+gopro_video_sync/gopro_data.py
+gopro_video_sync/offset.py
+gopro_video_sync/sensor_offset.py
+gopro_video_sync.egg-info/PKG-INFO
+gopro_video_sync.egg-info/SOURCES.txt
+gopro_video_sync.egg-info/dependency_links.txt
+gopro_video_sync.egg-info/requires.txt
+gopro_video_sync.egg-info/top_level.txt
