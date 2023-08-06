@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pretty-langchain
+Version: 0.1.0
+Summary: Langchain but prettier
+License: MIT
+Author: Melisa Russak
+Author-email: melisa.stal@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: langchain (>=0.0.101,<0.0.102)
+Description-Content-Type: text/markdown
+
+# pretty-langchain
