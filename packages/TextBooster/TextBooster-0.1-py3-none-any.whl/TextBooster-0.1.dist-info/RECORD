@@ -1,0 +1,7 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/textBooster/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/textBooster/test_textBooster.py,sha256=j7sWypsDS5yZ-YLTAujHMD4KqYjFPHKV6fkZzLBd2yU,545
+TextBooster-0.1.dist-info/METADATA,sha256=161zT22cn8YVT7dRgNINRpwb8oJQaqtQZDC0uZAqFiU,4184
+TextBooster-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+TextBooster-0.1.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+TextBooster-0.1.dist-info/RECORD,,
