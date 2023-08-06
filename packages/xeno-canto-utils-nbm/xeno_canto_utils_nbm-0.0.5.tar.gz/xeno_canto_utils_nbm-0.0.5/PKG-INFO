@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: xeno_canto_utils_nbm
+Version: 0.0.5
+Summary: Utility functions to interact with the Xeno Canto API with python
+Project-URL: Homepage, https://github.com/LouisBearing/BirdSoundClassif
+Author-email: Louloulou <laerien@gmail.com>
+License: GNU General Public License v3.0
+License-File: LICENSE
+Keywords: machine learning for biology
+Requires-Dist: numpy
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# BirdSoundClassif
