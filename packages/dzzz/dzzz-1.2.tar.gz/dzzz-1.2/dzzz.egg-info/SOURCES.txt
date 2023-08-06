@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.cfg
+setup.py
+Dzzz/__init__.py
+dzzz.egg-info/PKG-INFO
+dzzz.egg-info/SOURCES.txt
+dzzz.egg-info/dependency_links.txt
+dzzz.egg-info/top_level.txt
