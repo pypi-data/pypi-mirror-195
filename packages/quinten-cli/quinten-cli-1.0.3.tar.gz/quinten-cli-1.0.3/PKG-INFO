@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: quinten-cli
+Version: 1.0.3
+Summary: subprocess with extended functionality
+Home-page: https://github.com/quintenroets/cli
+Author: Quinten Roets
+Author-email: quinten.roets@gmail.com
+License: MIT
+License-File: LICENSE
