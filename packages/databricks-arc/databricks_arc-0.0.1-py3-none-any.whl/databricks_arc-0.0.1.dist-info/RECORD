@@ -1,0 +1,8 @@
+arc/__init__.py,sha256=SHGe0KGhZTyVV-PKdC6ht6H1dEKFB-NLHjy2D-w_Yos,24
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/arc_test.py,sha256=z8cHFz-anV9O7wx2mfHhvoyKBmnQ3ItRjby95W38O0A,343
+test/dummy_test.py,sha256=rzQbYYLGoHB1VsFr31696sWJv1iBS3Se11B_tEzqVLg,167
+databricks_arc-0.0.1.dist-info/METADATA,sha256=n33wt3LbtaSu6Qjvq_ybjThPeZw_BbjsqmKT0S1kBAw,764
+databricks_arc-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+databricks_arc-0.0.1.dist-info/top_level.txt,sha256=fIPjWY_mk_AXMwjot9YU6xYg8wmP4t6dyZcEzg_-qb8,9
+databricks_arc-0.0.1.dist-info/RECORD,,
