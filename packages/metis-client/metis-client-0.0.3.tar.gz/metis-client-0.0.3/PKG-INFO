@@ -1,0 +1,128 @@
+Metadata-Version: 2.1
+Name: metis-client
+Version: 0.0.3
+Summary: Metis infra API client in Python
+Keywords: metis,client
+Author-email: Sergei Korolev <knopki@duck.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Dist: aiohttp >= 3.7.4
+Requires-Dist: aiohttp-sse-client >= 0.2.1
+Requires-Dist: asgiref >= 3.5.2
+Requires-Dist: typing-extensions >= 4.2.0; python_version < '3.11'
+Requires-Dist: yarl >= 1.6.3
+Requires-Dist: wdb ; extra == "debug"
+Requires-Dist: autoflake ; extra == "lint"
+Requires-Dist: black ; extra == "lint"
+Requires-Dist: flake8 ; extra == "lint"
+Requires-Dist: flake8-bugbear ; extra == "lint"
+Requires-Dist: isort ; extra == "lint"
+Requires-Dist: mypy >= 1.0.0, <2 ; extra == "lint"
+Requires-Dist: pylint ; extra == "lint"
+Requires-Dist: pylint-per-file-ignores >= 1 ; extra == "lint"
+Requires-Dist: pyupgrade ; extra == "lint"
+Requires-Dist: freezegun ; extra == "test"
+Requires-Dist: pytest-aiohttp >= 1.0.4, <2 ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Project-URL: Source, https://github.com/tilde-lab/metis-client
+Provides-Extra: debug
+Provides-Extra: lint
+Provides-Extra: test
+
+# Metis API client
+
+![PyPI](https://img.shields.io/pypi/v/metis_client.svg?style=flat)
+
+<p align="center"><img src="https://github.com/tilde-lab/metis.science/blob/master/src/assets/img/metis.svg" width="300" height="300" /></p>
+
+This library allows for programmatic interactions with the [Metis infrastructure](https://metis.science).
+
+## Installation
+
+`pip install metis_client`
+
+## Usage
+
+There are two client flavors - asyncronous `asyncio` client
+and simplified synchronous client.
+
+### Asynchronous client
+
+There is a asynchronous client `MetisAPIAsync`. Example of usage:
+
+```python
+from metis_client import MetisAPIAsync, MetisTokenAuth
+
+async def main():
+    async with MetisAPIAsync(API_URL, auth=MetisTokenAuth("admin@test.com")) as client:
+        print(await client.v0.auth.whoami())
+        data = await client.v0.datasources.create(content)
+        calc = await client.v0.calculations.create(data["id"])
+        print(calc)
+
+        # There is also a low level interface
+        from metis_client.models import MetisDataSourcesEventModel, MetisCalculationsEventModel
+        async with client.stream.subscribe() as sub:
+            req = await client.v0.datasources.create_event(content)
+            async for msg in sub:
+                if msg["type"] == "datasources" and msg.get("data", {}).get(
+                    "reqId"
+                ) == req.get("reqId"):
+                    answer = msg.get("data")
+                    break
+            if not answer:
+                return None
+
+            data_id = sorted(
+                answer.get("data", []),
+                key=lambda x: x.get("createdAt", datetime.fromordinal(1)),
+            )[-1].get("id")
+            req = await client.v0.calculations.create_event(data_id)
+            answer = None
+            async for msg in sub:
+                if msg["type"] == "calculations" and msg.get("data", {}).get(
+                    "reqId"
+                ) == req.get("reqId"):
+                    data = msg.get("data", {}).get("data", [])
+                    if data:
+                        answer = data[-1]
+                    break
+            print(answer)
+```
+
+See `examples` directory for more examples.
+
+### Synchronous client
+
+There is a synchronous client `MetisAPI`. Example of usage:
+
+```python
+from metis_client import MetisAPI, MetisTokenAuth
+
+client = MetisAPI(API_URL, auth=MetisTokenAuth("admin@test.com"))
+data = client.v0.datasources.create(content)
+calc = client.v0.calculations.create(data.get("id"))
+print(calc)
+```
+
+## License
+
+Author Sergey Korolev, Tilde Materials Informatics
+
+Copyright 2023 BASF SE
+
+BSD 3-Clause
+
