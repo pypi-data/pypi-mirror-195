@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: batch-image-processing
+Version: 0.1.4
+Summary: A package to process all the images inside a folder using the Pillow package
+Author: Akash Manujaya
+Author-email: akashmanujaya@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pillow (>=9.0.0,<10.0.0)
+Description-Content-Type: text/markdown
+
+
