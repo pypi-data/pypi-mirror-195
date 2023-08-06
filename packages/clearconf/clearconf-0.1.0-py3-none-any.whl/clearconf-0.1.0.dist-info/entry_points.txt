@@ -1,0 +1,3 @@
+[console_scripts]
+confort=clearconf.cli.main:main
+
