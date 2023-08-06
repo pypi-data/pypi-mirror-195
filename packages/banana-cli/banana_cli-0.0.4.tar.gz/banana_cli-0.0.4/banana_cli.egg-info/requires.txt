@@ -1,0 +1,5 @@
+Click
+gitpython
+termcolor
+requests
+websocket-client

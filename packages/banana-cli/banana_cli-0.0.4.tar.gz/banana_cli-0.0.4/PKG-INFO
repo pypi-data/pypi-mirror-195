@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: banana_cli
+Version: 0.0.4
+Summary: The Banana CLI helps you build Potassium apps
+Home-page: https://www.banana.dev
+Author: Erik Dunteman
+Author-email: erik@banana.dev
+License: Apache License 2.0
+Description: # banana-cli (WORK IN PROGRESS)
+        
+        The Banana CLI helps you build Potassium apps
+        
+        Watch a [demo here](https://www.loom.com/share/e258f228280a4fe9bb4012f57416306e)
+        
+        ## Hot-Reload Dev Server
+        
+        The interactive dev server works like a react, next, or nodemon server in that it hot reloads on changes to different parts of your `app.py` file.
+        
+        On startup, and on changes to the init() block, it runs init() and handler().
+        
+        On changes to the handler() block, it reruns the handler() without needing to wait for another init
+        
+        It does this by pushing code in logical chunks to a jupyter notebook backend, to persist memory between refreshes.
+        
+        ### To use it
+        
+        Start the jupyter backend:
+        1. set up a virtual env `python3 -m venv venv`
+        2. activate into that env `. ./venv/bin/activate`
+        3. install dependencies `pip3 install -r requirements.txt`
+        4. run a jupyter notebook server `jupyter notebook`
+           - Copy the "token" string in the URL
+           
+        Run the code watcher:
+        (in a new shell)
+        
+        5. Put that token into watcher.py as jupyter_token
+        6. Run watcher.py `python3 watcher.py` to watch app.py for changes
+        
+        Play with it:
+        
+        7. Try changing the handler, see what happens!
+        8. Try changing the init, see what happens!
+        
+Keywords: Banana server,HTTP server,Banana,Framework
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
