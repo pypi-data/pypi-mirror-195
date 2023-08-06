@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/HaThOr/Chemostats.py
+src/HaThOr/Metabolisms.py
+src/HaThOr/__init__.py
+src/HaThOr/chem_helper.py
+src/HaThOr/pH_mtn_gen.py
+src/HabitabilityTheOry.egg-info/PKG-INFO
+src/HabitabilityTheOry.egg-info/SOURCES.txt
+src/HabitabilityTheOry.egg-info/dependency_links.txt
+src/HabitabilityTheOry.egg-info/requires.txt
+src/HabitabilityTheOry.egg-info/top_level.txt
+src/HabitabilityTheOry.egg-info/.ipynb_checkpoints/PKG-INFO-checkpoint
+src/HabitabilityTheOry.egg-info/.ipynb_checkpoints/SOURCES-checkpoint.txt
+src/HabitabilityTheOry.egg-info/.ipynb_checkpoints/dependency_links-checkpoint.txt
+src/HabitabilityTheOry.egg-info/.ipynb_checkpoints/requires-checkpoint.txt
