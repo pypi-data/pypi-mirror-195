@@ -1,0 +1,389 @@
+Metadata-Version: 2.1
+Name: sphinx-csv-tools
+Version: 0.2
+Summary: Sphinx CSV tools extension
+Home-page: https://github.com/Nefti-sama/sphinx-csv-tools
+Author: Nefti
+Author-email: nefti.code@gmail.com
+License: Apache License 2.0
+Keywords: sphinx csv tools
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Database
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+Requires-Dist: sphinx
+Provides-Extra: development
+Requires-Dist: setuptools ; extra == 'development'
+Requires-Dist: twine ; extra == 'development'
+Requires-Dist: wheel ; extra == 'development'
+Provides-Extra: testing
+Requires-Dist: flake8 ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-flake8 ; extra == 'testing'
+Requires-Dist: pytest-isort ; extra == 'testing'
+
+==================================
+Sphinx CSV Tools
+==================================
+
+A Sphinx_ plugin that extends the csv-table_ reStructuredText_ directive to add various features.
+
+This is an adapted and probably enhanced version of the original sphinx-csv-filter which can be found here: sphinx-csv-filter_
+
+
+Prerequisites
+=============
+
+You need to be using Sphinx and reStructuredText.
+
+Installation
+============
+
+Install the package by running:
+
+.. code::
+
+    pip3 install sphinx-csv-tools
+
+Set Up
+======
+
+To include the extension, add this line to ``config.py`` in
+your Sphinx project:
+
+.. code::
+
+    extensions = ['sphinx_csv_tools']
+
+If you're using other extensions, edit the existing list, or add this:
+
+.. code::
+
+    extensions.append('sphinx_csv_tools')
+
+
+Use
+===
+
+This plugin adds the following options to the csv-table_ directive:
+
+
+**:include:**
+----------------------------
+
+This option takes a Python dict specifying the column and a regular expression. Rows are included if the columnar value matches the supplied regular expression.
+
+Originally from sphinx-csv-filter_
+
+Example
+^^^^^^^^^^
+
+Only displays rows where the type-column is *SRV* or *VM*
+
+.. code::
+
+    .. csv-tools::
+        :header-rows: 1
+        :include: { 'Type': ['SRV', 'VM'] }
+
+        "Type","Name","Location","State","Internal_Remark"
+        "SRV","ESX01","RZ1","active","some bogus text"
+        "SRV","ESX02","RZ2","active","some bogus text"
+        "SRV","ESX03","RZ1","inactive","some bogus text"
+        "VM","DC01","RZ1","active","some bogus text"
+        "VM","DC02","RZ2","active","some bogus text"
+        "Switch","SW01","RZ1","active","some bogus text"
+        "Switch","SW02","RZ2","active","some bogus text"
+        "Bogus","SRV","RZ3","active","some bogus text"
+
+
+**:exclude:**
+----------------------------
+
+This option takes a Python dict specifying the column and a regular expression. Rows are excluded if the columnar value matches the supplied regular expression.
+
+Originally from sphinx-csv-filter_
+
+Example
+^^^^^^^^^^
+
+Only displays rows where the *State* is not *inactive*
+
+.. code::
+
+    .. csv-tools::
+        :header-rows: 1
+        :exclude: { 'State': ['inactive'] }
+
+        "Type","Name","Location","State","Internal_Remark"
+        "SRV","ESX01","RZ1","active","some bogus text"
+        "SRV","ESX02","RZ2","active","some bogus text"
+        "SRV","ESX03","RZ1","inactive","some bogus text"
+        "VM","DC01","RZ1","active","some bogus text"
+        "VM","DC02","RZ2","active","some bogus text"
+        "Switch","SW01","RZ1","active","some bogus text"
+        "Switch","SW02","RZ2","active","some bogus text"
+        "Bogus","SRV","RZ3","active","some bogus text"
+
+
+**:included_cols:**
+----------------------------
+
+This is a comma-separated list of columns to include in the output.
+
+Originally from sphinx-csv-filter_
+
+
+Example
+^^^^^^^^^^
+
+Only displays the columns *Name, Type* and *State* (in this specific order)
+
+.. code::
+
+    .. csv-tools::
+        :header-rows: 1
+        :included_cols: Name,Type,State
+
+        "Type","Name","Location","State","Internal_Remark"
+        "SRV","ESX01","RZ1","active","some bogus text"
+        "SRV","ESX02","RZ2","active","some bogus text"
+        "SRV","ESX03","RZ1","inactive","some bogus text"
+        "VM","DC01","RZ1","active","some bogus text"
+        "VM","DC02","RZ2","active","some bogus text"
+        "Switch","SW01","RZ1","active","some bogus text"
+        "Switch","SW02","RZ2","active","some bogus text"
+        "Bogus","SRV","RZ3","active","some bogus text"
+
+
+**:unique:**
+----------------------------
+
+Takes a column and "uniques" the rows. Completely removes all table content and builds a new one with 2 columns:
+
+* The unique column
+* The count how often the row existed in the original table
+
+
+Example
+^^^^^^^^^^
+
+Will create a table with the columns *Type* and *Count*, listing each unique Type and the amount of times it was present in the table.
+
+.. code::
+
+    .. csv-tools::
+        :header-rows: 1
+        :unique: Type
+
+        "Type","Name","Location","State","Internal_Remark"
+        "SRV","ESX01","RZ1","active","some bogus text"
+        "SRV","ESX02","RZ2","active","some bogus text"
+        "SRV","ESX03","RZ1","inactive","some bogus text"
+        "VM","DC01","RZ1","active","some bogus text"
+        "VM","DC02","RZ2","active","some bogus text"
+        "Switch","SW01","RZ1","active","some bogus text"
+        "Switch","SW02","RZ2","active","some bogus text"
+        "Bogus","SRV","RZ3","active","some bogus text"
+
+
+**:summarize:**
+----------------------------
+
+Creates a summary-row and summarizes given columns
+
+
+Example
+^^^^^^^^^^
+
+Creates a summary row summarizing the given port-columns. For mathematic functions to work properly the strings must be typecasted to *float* or *int*
+
+.. code::
+
+    .. csv-tools::
+        :header-rows: 1
+        :summarize: { 'Ports 1G': 'int', 'Ports 10G': 'float', 'Ports 100G': 'int' }
+
+        "Type","Name","Ports 1G","Ports 10G","Ports 100G"
+        "93180-YC-FX3","Leaf-1","0","48","6"
+        "93180-YC-FX3","Leaf-2","0","48","6"
+        "9348GC-FXP","Leaf-3","48","4","4"
+        "9348GC-FXP","Leaf-4","48","4","4"
+
+
+**:format:**
+----------------------------
+
+Executes the ``format()`` function on all values of the given columns. The fromat-string can be defined in the options
+
+
+Example
+^^^^^^^^^^
+
+Formats the column *RX* with thousand-seperators and 0 precision. *TX* will also get the string "bps" appended.
+
+.. code::
+
+    .. csv-tools::
+        :header-rows: 1
+        :format: {"RX": "{:,.0f}", "TX": "{:,.0f} bps"}
+
+        "From","To","RX","TX"
+        "Host1","Host2",17394,545534435
+        "Host1","Host3",892374,34565656
+        "Host2","Host3",344565665,23434
+
+
+**:header-beautify:**
+----------------------------
+
+Basically rewrites the header-line to new values. Prevents uncool things from happening when using the original ``:header:`` directive
+
+
+Example
+^^^^^^^^^^
+
+Rewrites the header to *From Host,To Host,RX,TX*
+
+.. code::
+
+    .. csv-tools::
+        :header-rows: 1
+        :header-beautify: From Host,To Host,RX,TX
+
+        "From","To","RX","TX"
+        "Host1","Host2",17394,545534435
+        "Host1","Host3",892374,34565656
+        "Host2","Host3",344565665,23434
+
+
+**:order:**
+----------------------------
+
+Orders the rows by the values of a column in ascending (ASC/default) or descending (DESC) direction.
+The direction-parameter can be omitted
+
+
+Example
+^^^^^^^^^^
+
+Orders the rows by *Location* in descending order. 
+
+.. code::
+
+    .. csv-tools::
+        :header-rows: 1
+        :order: Location,DESC
+
+        "Type","Name","Location","State","Internal_Remark"
+        "SRV","ESX02","RZ2","active","some bogus text"
+        "SRV","ESX01","RZ1","active","some bogus text"
+        "SRV","ESX03","RZ1","inactive","some bogus text"
+        "VM","DC01","RZ1","active","some bogus text"
+        "VM","DC02","RZ2","active","some bogus text"
+        "Switch","SW01","RZ3","active","some bogus text"
+        "Switch","SW02","RZ2","active","some bogus text"
+        "Bogus","SRV","RZ3","active","some bogus text"
+
+
+**:limit:**
+----------------------------
+
+Limits the rows to the ammount given as parameter. Accepts a single integer or start and end limit separated by ,
+
+``:limit: 3`` will display the first 3 rows
+
+``:limit: 2,5`` will display 5 rows starting with index 2 (which would be the 3rd row)
+
+
+Example 1
+^^^^^^^^^^
+
+Limits the output to display only the first 2 rows: **ESX01** and **ESX02**. 
+
+.. code::
+
+    .. csv-tools::
+        :header-rows: 1
+        :include: { 'Type': ['VM','SRV','Switch'] }
+        :limit: 2
+
+        "Type","Name","Location","State","Internal_Remark"
+        "SRV","ESX01","RZ1","active","some bogus text"
+        "SRV","ESX02","RZ2","active","some bogus text"
+        "SRV","ESX03","RZ1","inactive","some bogus text"
+        "VM","DC01","RZ1","active","some bogus text"
+        "VM","DC02","RZ2","active","some bogus text"
+        "Switch","SW01","RZ1","active","some bogus text"
+        "Switch","SW02","RZ2","active","some bogus text"
+        "Bogus","SRV","RZ3","active","some bogus text"
+
+
+Example 2
+^^^^^^^^^^
+
+Limits the output to display only 3 rows starting with index 2: **ESX03** (index 2), **DC01** (index 3) and **DC02** (index 4). 
+
+.. code::
+
+    .. csv-tools::
+        :header-rows: 1
+        :include: { 'Type': ['VM','SRV','Switch'] }
+        :limit: 2,3
+
+        "Type","Name","Location","State","Internal_Remark"
+        "SRV","ESX01","RZ1","active","some bogus text"
+        "SRV","ESX02","RZ2","active","some bogus text"
+        "SRV","ESX03","RZ1","inactive","some bogus text"
+        "VM","DC01","RZ1","active","some bogus text"
+        "VM","DC02","RZ2","active","some bogus text"
+        "Switch","SW01","RZ1","active","some bogus text"
+        "Switch","SW02","RZ2","active","some bogus text"
+        "Bogus","SRV","RZ3","active","some bogus text"
+
+
+
+Processing-order and combination
+========================================
+
+The options can be used in any combination.
+Be aware of the processing-order to understand the effects of combining different options
+
+* include
+* exclude
+* unique
+* summarize
+* format
+* included_cols
+* header_beautify
+* order
+* limit
+
+
+Using a header or not
+=============================
+
+Using a header with ``:header-rows:`` does enable you to specify the header-name in the options. If there is no header you have to specify the
+column index (starting with 0).
+
+It is strongly advised to always use a header (to protect against columns shifting around) and only to use *one* header (*:header-rows: 1*)
+
+Unforseen effects might occur when ore headers are used
+
+
+
+.. _csv-table: http://docutils.sourceforge.net/docs/ref/rst/directives.html#csv-table
+.. _reStructuredText: http://www.sphinx-doc.org/en/stable/rest.html
+.. _Sphinx: http://www.sphinx-doc.org/en/stable/
+.. _sphinx-csv-filter: https://github.com/crate/sphinx_csv_filter
+
