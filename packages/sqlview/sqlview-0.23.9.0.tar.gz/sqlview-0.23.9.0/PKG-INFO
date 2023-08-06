@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: sqlview
+Version: 0.23.9.0
+Summary: sqlite reader
+Home-page: https://framagit.org/louis-riviere-xyz/sqlview
+Author: Louis RIVIERE
+Author-email: louis@riviere.xyz
+License: MIT
+Keywords: utility
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+#########
+sqlview
+#########
+
+**sqlite reader**
