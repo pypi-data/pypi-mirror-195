@@ -1,0 +1,8 @@
+LICENSE.txt
+README.txt
+setup.py
+banksys.egg-info/PKG-INFO
+banksys.egg-info/SOURCES.txt
+banksys.egg-info/dependency_links.txt
+banksys.egg-info/requires.txt
+banksys.egg-info/top_level.txt
