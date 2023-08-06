@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+hypytrochoid.egg-info/PKG-INFO
+hypytrochoid.egg-info/SOURCES.txt
+hypytrochoid.egg-info/dependency_links.txt
+hypytrochoid.egg-info/top_level.txt
