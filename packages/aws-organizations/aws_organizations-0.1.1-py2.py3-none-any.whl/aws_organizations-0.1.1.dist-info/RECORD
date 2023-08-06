@@ -1,0 +1,14 @@
+aws_organizations/__init__.py,sha256=dWvLq1O4SubUIVq4iSMVEcI565cmw4WJ4I1MEOjnzQA,411
+aws_organizations/_version.py,sha256=3ngZz3_QoERdhI7hz4p3JzJ6Msem0N5631SEIjary1M,93
+aws_organizations/org_struct.py,sha256=7uEn7RlIatteYMU4XSfqbZfFE_DEw8_3i5t02F1sOr0,2934
+aws_organizations/better_boto/__init__.py,sha256=VQ3i13P5FhHPVRWM3yHUVkzYD0UCf0LEIeSn_zhuetg,417
+aws_organizations/better_boto/model.py,sha256=h_dSZTWag6LcFuoyx44Dw87cL_nkC6DNvpgeN2mhjgg,4015
+aws_organizations/better_boto/org.py,sha256=qcjfr7zWZfHKaFOIk_CgWDVmmNW_Lw6CRxUAO4ouBXA,779
+aws_organizations/better_boto/org_unit.py,sha256=r1KnDun3ymD8cDGh8AHFoJT7undhtqKIJUcqvKVh2Uc,4678
+aws_organizations/docs/__init__.py,sha256=f-E2GGaAOnea7U51BKWcRtFHZ6p2iPnvGoXR6VvBtGg,43
+aws_organizations-0.1.1.dist-info/AUTHORS.rst,sha256=ROrEuLM7jAJnyn4FKyYG8vfwtw5hcpdBOwWnnBRzWTM,509
+aws_organizations-0.1.1.dist-info/LICENSE.txt,sha256=XX6rDeIhSwjMQ94dtPJQ5xEoHNLIPoffOHDt42KqIPc,1127
+aws_organizations-0.1.1.dist-info/METADATA,sha256=KI3o6MGzuOFuabPSr1WgwNEqqWntjfw36-F3cnl0dpg,4439
+aws_organizations-0.1.1.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+aws_organizations-0.1.1.dist-info/top_level.txt,sha256=-DAOcTC8_J2oIU8fWD6hp7_USJNF4SqhL2Xp7Upt0nU,18
+aws_organizations-0.1.1.dist-info/RECORD,,
