@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pvedit
+Version: 0.0.2
+Summary: An editor for video in python
+Description-Content-Type: text/x-rst
+Requires-Dist: click
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: moviepy
+
+This is used to edit videos in python. This will remove the silent parts of the video.
