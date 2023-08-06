@@ -1,0 +1,16 @@
+offspot_runtime/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+offspot_runtime/ap.py,sha256=GW6g8hhaeQ3TAo28VJiF61vvf9d23r7mz2dOrf-2pMg,17987
+offspot_runtime/checks.py,sha256=F2PNnz_4aSyfgXbcJ3N_tKY7_eLjoM7tdy71SqxY9JI,20282
+offspot_runtime/configlib.py,sha256=D4d_2yi6PDFWHKTC8YZhZIE2qaqcISBCnrePtikJVx4,5057
+offspot_runtime/containers.py,sha256=RrPVSZsW1jqtlE53tZ4x64hdRwTQpJxGGlP7c9fY3hY,2719
+offspot_runtime/dnsmasqspoof.py,sha256=AqEJeEGAMvdcBL1AhcpBhw8-1Kp1vvkuvFH3NZTeQ9Q,3480
+offspot_runtime/ethernet.py,sha256=XjaGeURSpa9KHnNXVCWjCi-Ba-ackkhmWtsrdQPCNv0,5542
+offspot_runtime/fromfile.py,sha256=Xyl1JIRoKzLhIz-3OereuglPM9OmO9_vhHpG0tZ9euQ,7817
+offspot_runtime/hostname.py,sha256=pylHyuamAnJEoyE5iM3bd_O0nvLVDE7ni3-Sv_JSgYI,2291
+offspot_runtime/timezone.py,sha256=LPuwp_qZ-8D0z0_cRxUm8EhwvLoiHpqPvOd0692lWgs,1836
+offspot_runtime_config-1.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+offspot_runtime_config-1.2.0.dist-info/METADATA,sha256=yCAD6V7WyJF17T9WT44y3vkDJKN9ckuLQviQMBJtK-8,9899
+offspot_runtime_config-1.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+offspot_runtime_config-1.2.0.dist-info/entry_points.txt,sha256=ng-fVIpU-Dy8_azcYAj8YnbxF-b7Y09Qt9ngXMPAiEA,445
+offspot_runtime_config-1.2.0.dist-info/top_level.txt,sha256=RmrYDu7qRo4xOXhtaqKPWQS7SCsZQfNo8hHFSe6EIHU,16
+offspot_runtime_config-1.2.0.dist-info/RECORD,,

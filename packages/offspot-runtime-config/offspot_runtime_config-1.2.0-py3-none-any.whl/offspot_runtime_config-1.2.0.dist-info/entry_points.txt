@@ -1,0 +1,8 @@
+[console_scripts]
+offspot-config-ap = offspot_runtime.ap:entrypoint
+offspot-config-containers = offspot_runtime.containers:entrypoint
+offspot-config-ethernet = offspot_runtime.ethernet:entrypoint
+offspot-config-fromfile = offspot_runtime.fromfile:entrypoint
+offspot-config-hostname = offspot_runtime.hostname:entrypoint
+offspot-config-timezone = offspot_runtime.timezone:entrypoint
+toggle-dnsmasq-spoof = offspot_runtime.dnsmasqspoof:entrypoint
