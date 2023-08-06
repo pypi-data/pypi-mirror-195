@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+quizz/__init__.py
+quizz.egg-info/PKG-INFO
+quizz.egg-info/SOURCES.txt
+quizz.egg-info/dependency_links.txt
+quizz.egg-info/top_level.txt
