@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/aiosync/__init__.py
+src/aiosync.egg-info/PKG-INFO
+src/aiosync.egg-info/SOURCES.txt
+src/aiosync.egg-info/dependency_links.txt
+src/aiosync.egg-info/top_level.txt
