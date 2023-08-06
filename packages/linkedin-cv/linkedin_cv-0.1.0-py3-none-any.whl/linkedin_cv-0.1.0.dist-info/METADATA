@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: linkedin-cv
+Version: 0.1.0
+Summary: Create LinkedIn inspired CVs from the command line
+Author: ellsphillips
+Author-email: elliott.phillips.dev@gmail.com
+Requires-Python: >=3.8.0,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: tomlkit (>=0.11.6,<0.12.0)
+Description-Content-Type: text/markdown
+
+# linkedincv
+
+<p align="center">
+<a href="https://pypi.org/project/linkedin-cv" target="_blank">
+    <img src="https://img.shields.io/pypi/v/linkedin-cv?label=version&logo=python&logoColor=%23fff&color=306998" alt="PyPI - version">
+</a>
+
+<a href="https://pypi.org/project/linkedin-cv" target="_blank">
+    <img src="https://img.shields.io/pypi/pyversions/linkedin-cv.svg?logo=python&logoColor=%23fff&color=306998" alt="PyPI - supported versions">
+</a>
+</p>
+
+Create LinkedIn inspired CVs from the command line.
+
+## Installation
+
+`linkedin-cv` is available through PyPI:
+
+```bash
+  pip install linkedin-cv
+```
+
