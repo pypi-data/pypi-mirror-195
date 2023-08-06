@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: init-paper
+Version: 0.1.1
+Summary: Simple CLI tool to initiate jee/neet format paper in latex.
+Home-page: https://github.com/vaibhavblayer/init-paper
+Keywords: jee,paper,jee paper,neet paper
+Author: vaibhavblayer
+Author-email: vaibhavblayer@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Project-URL: Repository, https://github.com/vaibhavblayer/init-paper
+Description-Content-Type: text/markdown
+
+
