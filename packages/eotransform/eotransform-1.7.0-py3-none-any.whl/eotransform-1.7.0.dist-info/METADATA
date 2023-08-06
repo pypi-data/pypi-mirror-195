@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: eotransform
+Version: 1.7.0
+Summary: Protocol definition for streamed source/transform/sink process
+Home-page: https://github.com/TUW-GEO/eotransform
+Author: TU Wien GEO MRS group
+Author-email: remote.sensing@geo.tuwien.ac.at
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Natural Language :: English
+License-File: LICENSE
+Requires-Dist: more-itertools
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: typing-extensions ; extra == 'test'
+
+![Coverage badge](https://raw.githubusercontent.com/TUW-GEO/eotransform/python-coverage-comment-action-data/badge.svg)
+# eotransform
+
+Defines the basic transform protocol to be used in the streamed source to sink concept. Also provides some generic 
+transformer implementations such as `Compose` or `Map`.
+
+WIP: More Doc
