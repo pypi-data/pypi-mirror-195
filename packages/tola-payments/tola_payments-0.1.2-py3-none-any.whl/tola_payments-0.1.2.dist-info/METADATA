@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: tola-payments
+Version: 0.1.2
+Summary: A python package to easy push payment integration with Tola Payments with Mpesa, TigoPesa, and AirtelMoney Tanzania
+Requires-Dist: phonenumbers
+Requires-Dist: tanzania-mno
+Requires-Dist: python-decouple
+
