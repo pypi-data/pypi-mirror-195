@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: fake-html
+Version: 0.0.2
+Summary: Library for generating fake html page.
+Home-page: https://github.com/HansBug/fake_html
+Author: HansBug
+Author-email: hansbug@buaa.edu.cn
+License: Apache License, Version 2.0
+Keywords: Library for generating fake html page.
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click (>=7.0.0)
+Requires-Dist: pyquery
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: hbutils (>=0.8.2)
+Requires-Dist: faker
+Requires-Dist: yattag
+Requires-Dist: lxml
+Provides-Extra: crawl
+Requires-Dist: requests ; extra == 'crawl'
+Requires-Dist: selenium ; extra == 'crawl'
+Requires-Dist: pyderman ; extra == 'crawl'
+Requires-Dist: tqdm ; extra == 'crawl'
+Provides-Extra: test
+Requires-Dist: coverage (>=5) ; extra == 'test'
+Requires-Dist: mock (>=4.0.3) ; extra == 'test'
+Requires-Dist: flake8 (~=3.5) ; extra == 'test'
+Requires-Dist: testfixtures (>=6.18.5) ; extra == 'test'
+Requires-Dist: pytest (~=6.2.5) ; extra == 'test'
+Requires-Dist: pytest-cov (~=3.0.0) ; extra == 'test'
+Requires-Dist: pytest-mock (~=3.6.1) ; extra == 'test'
+Requires-Dist: pytest-xdist (>=1.34.0) ; extra == 'test'
+Requires-Dist: pytest-rerunfailures (~=10.2) ; extra == 'test'
+Requires-Dist: pytest-timeout (~=2.0.2) ; extra == 'test'
+Requires-Dist: pytest-benchmark (~=3.4.0) ; extra == 'test'
+Requires-Dist: easydict (<2,>=1.7) ; extra == 'test'
+Requires-Dist: testtools (>=2) ; extra == 'test'
+Requires-Dist: numpy (<2,>=1.19) ; extra == 'test'
+Requires-Dist: where (>=1.0.2) ; extra == 'test'
+Requires-Dist: rarfile (>=3) ; extra == 'test'
+Requires-Dist: py7zr (>=0.19) ; extra == 'test'
+Requires-Dist: time-machine (>=2.8.1) ; extra == 'test'
+Requires-Dist: pandas (>=1.1.0) ; extra == 'test'
+
+# fake_html
+
+[![codecov](https://codecov.io/gh/HansBug/fake_html/branch/main/graph/badge.svg?token=EAF32NGVYR)](https://codecov.io/gh/HansBug/fake_html)
+
+Tool for generating fake html.
+
+```python
+from fake_html import fake_html
+
+if __name__ == '__main__':
+    print(fake_html(seed=20, scale=0.4))
+
+```
