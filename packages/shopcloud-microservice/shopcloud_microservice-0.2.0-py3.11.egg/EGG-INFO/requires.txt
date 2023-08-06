@@ -1,0 +1,3 @@
+pyyaml
+requests
+shopcloud-secrethub>=2.12.0
