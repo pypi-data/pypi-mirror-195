@@ -1,0 +1,7 @@
+RPi.GPIO
+lxml
+pyalsaaudio
+requests
+spidev
+xmltodict
+zeroconf
