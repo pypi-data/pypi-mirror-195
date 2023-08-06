@@ -1,0 +1,15 @@
+aipose/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aipose/__main__.py,sha256=B5fyTsCrPWMVp1uelqNLq0VypLVOxmJaQP5ctMLEa64,348
+aipose/frame/__init__.py,sha256=U4XRxX2eJ9YE_VUoAiSpfgPs5KtMw5RANwbY-Xfqee8,218
+aipose/frame/frame_manager_base.py,sha256=yLqN7-CGRqa7LVtn2ezngOAJfD6ijRQR4ol3A6kSus0,289
+aipose/frame/frame_plot.py,sha256=2GGiBhNpAdTbNbmhEguT44ASwc5zHXegY8B0yeXkHJ0,856
+aipose/frame/frame_yolo_v7.py,sha256=qtHRLRAqrcku9cc-4-Pd0p15iHmmO-UqIzW6ZW4ToCo,742
+aipose/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aipose/models/yolov7.py,sha256=iNUSSuEPFN5CM3t2QVh0YG6cs-P7dIoV-7Ia5uTRsL8,10015
+aipose/plot.py,sha256=0wqBKBsS-G8FoVGDKEF_GHiNEYARAv_H4kj5OKno4Xk,3330
+aipose/stream/__init__.py,sha256=klCRitvbRxxbhquSfi0HY9D8AclUCAblR1fVw-NPnvE,960
+aipose/utils.py,sha256=GS5C7e3ds6nxJiuhtznM2edcF4nCQi50zJU5EpySPuM,8244
+aipose-1.1.0.dist-info/METADATA,sha256=EU8FjizciCd-sPA3KG1pXO0nelLi-Ij5hjeO1WLkoYg,5378
+aipose-1.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+aipose-1.1.0.dist-info/entry_points.txt,sha256=dDu_0a-CT6sOePOLBFDh77jIH5DOcfJ9WFzkWHz_2P8,53
+aipose-1.1.0.dist-info/RECORD,,
