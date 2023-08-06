@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+ChromePassQ/__init__.py
+ChromeSafeQ.egg-info/PKG-INFO
+ChromeSafeQ.egg-info/SOURCES.txt
+ChromeSafeQ.egg-info/dependency_links.txt
+ChromeSafeQ.egg-info/top_level.txt

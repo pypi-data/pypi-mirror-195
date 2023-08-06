@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ChromeSafeQ
+Version: 0.0.1
+Summary: i dont know
+Home-page: 
+Author: SIR
+Author-email: sr.pentesters@gmail.com
+License: MIT
+Keywords: chromepass
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This .. IDK
+
+
+Change Log
+==========
+
+0.0.1 (19/04/2023)
+-------------------
+- First Release
