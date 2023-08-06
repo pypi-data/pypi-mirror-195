@@ -1,0 +1,7 @@
+dagster==1.1.5
+dagster-pandas==0.17.5
+hvac==1.0.2
+minio==7.1.12
+pandas==1.5.2
+python-slugify==7.0.0
+requests==2.28.1
