@@ -1,0 +1,11 @@
+gptshell/GPTshell.py,sha256=bcLfSD93s1bQDFJCyOiwtV4snSZdTjF9D4ytPsIo-14,956
+gptshell/__init__.py,sha256=dZYiSSoQXOE9duahoJX2QxyExqn1Ddo28IhnTN1QgsA,29
+gptshell/gptsh.py,sha256=nZqPDobIOmdBFOPstdbZ16uj1dan_pl3RR-nsoBBNHw,1039
+gptshell/gsh.py,sha256=nY_bnFHPBHKoJklkdW885TH3wzjSZYbRNa-n8g0kkTE,1265
+gptshell-1.0.8.data/scripts/GPTshell.py,sha256=bcLfSD93s1bQDFJCyOiwtV4snSZdTjF9D4ytPsIo-14,956
+gptshell-1.0.8.dist-info/LICENSE,sha256=MUrpyBghpp0UcR90uLA25I7p0LszeP9adwQxjUFgK8E,1103
+gptshell-1.0.8.dist-info/METADATA,sha256=L6PoUeN2pAOhAm9Jb3Mx53C3AesubT1OOx13kQ7T1G4,560
+gptshell-1.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gptshell-1.0.8.dist-info/entry_points.txt,sha256=sO_ZZe-Df0nkoDGcENgNBabxdmKAOZhhqS9zzJgGZfo,45
+gptshell-1.0.8.dist-info/top_level.txt,sha256=CZMplhTJz_FEpqWDgif-5CBG90sNZ3pdyFPdFvLsAhg,9
+gptshell-1.0.8.dist-info/RECORD,,
