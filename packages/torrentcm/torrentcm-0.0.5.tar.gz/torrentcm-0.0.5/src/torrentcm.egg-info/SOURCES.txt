@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/torrentcm/__init__.py
+src/torrentcm/torrentcm.py
+src/torrentcm.egg-info/PKG-INFO
+src/torrentcm.egg-info/SOURCES.txt
+src/torrentcm.egg-info/dependency_links.txt
+src/torrentcm.egg-info/entry_points.txt
+src/torrentcm.egg-info/requires.txt
+src/torrentcm.egg-info/top_level.txt

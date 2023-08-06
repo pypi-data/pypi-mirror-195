@@ -1,0 +1,5 @@
+argparse
+rich
+qbittorrent-api
+platformdirs
+pyyaml
