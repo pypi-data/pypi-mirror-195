@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/bsky/__init__.py
+src/bsky.egg-info/PKG-INFO
+src/bsky.egg-info/SOURCES.txt
+src/bsky.egg-info/dependency_links.txt
+src/bsky.egg-info/top_level.txt
