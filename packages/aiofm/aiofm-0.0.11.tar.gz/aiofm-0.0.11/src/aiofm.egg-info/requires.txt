@@ -1,0 +1,11 @@
+aioboto3==10.4.0
+aiobotocore==2.4.2
+aiohttp==3.8.4
+minio==7.1.13
+pydantic==1.10.5
+
+[testing]
+pytest
+pytest-asyncio
+pytest-cov
+pytest-mock
