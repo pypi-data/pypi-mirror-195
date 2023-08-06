@@ -1,0 +1,12 @@
+LICENSE,sha256=z_ayIbVxHCXWci7P2DnNjgUBCWeQ6wTpniRkFew9HEg,1067
+kayak/__init__.py,sha256=PcFAyu3A8CeMeul6LOgzFudgFXmyuIf1XOSHYaz9BtY,55
+kayak/app.py,sha256=lJcC8IJMPWE11QSDGFKskwE5KbwmHnPpx8JB-9apMVc,1728
+kayak/renderables/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kayak/renderables/kayak_name.py,sha256=-JPcL_WTaD33drkrKd9vR4tIKp0ZqNTSysMvtBEzOVI,648
+kayak/styles/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kayak/styles/colors.py,sha256=ioWkoKcbVq_3EAmycOzDkRDUScpW8WwLC7LhdFcwmXM,23
+kayak-0.2.1.dist-info/LICENSE,sha256=z_ayIbVxHCXWci7P2DnNjgUBCWeQ6wTpniRkFew9HEg,1067
+kayak-0.2.1.dist-info/METADATA,sha256=U4YIBsnMBAMiWIdiDBmyAwJI1muYynPoc9WmWjG-qZ4,2325
+kayak-0.2.1.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+kayak-0.2.1.dist-info/entry_points.txt,sha256=QsADtd90X1Pxy1dPMmEvFK4maEQBx6fIRzeHovKZ74E,59
+kayak-0.2.1.dist-info/RECORD,,
