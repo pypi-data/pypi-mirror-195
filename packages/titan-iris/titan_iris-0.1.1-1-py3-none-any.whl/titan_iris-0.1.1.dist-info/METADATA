@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: titan-iris
+Version: 0.1.1
+Requires-Dist: typer (~=0.7.0)
+Requires-Dist: rich (~=13.3.1)
+Requires-Dist: omegaconf (~=2.3.0)
+Requires-Dist: requests (~=2.28.2)
+Requires-Dist: auth0-python (~=3.24.1)
+Requires-Dist: python-dotenv (~=0.19.1)
+Requires-Dist: docker (~=6.0.1)
+Requires-Dist: tqdm (~=4.64.1)
+Requires-Dist: wget (~=3.2)
+Requires-Dist: jmespath (~=1.0)
+
