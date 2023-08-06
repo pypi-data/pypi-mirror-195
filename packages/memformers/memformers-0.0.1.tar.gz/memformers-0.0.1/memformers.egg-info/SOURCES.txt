@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+memformers/__init__.py
+memformers.egg-info/PKG-INFO
+memformers.egg-info/SOURCES.txt
+memformers.egg-info/dependency_links.txt
+memformers.egg-info/top_level.txt
