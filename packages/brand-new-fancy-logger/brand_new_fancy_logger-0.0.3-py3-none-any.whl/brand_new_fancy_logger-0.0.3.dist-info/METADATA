@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: brand-new-fancy-logger
+Version: 0.0.3
+Summary: Your most beloved fancy logger. It's colorful and shiny
+Author: Kaja
+Author-email: <karolina.rzepiela95@gmail.com>
+Keywords: python,logging
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+Logger your most beloved fancy logger. It's colorful and shiny. Logging configurator
