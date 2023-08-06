@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: vnnlib
+Version: 0.0.1a0
+Author-email: David Shriver <davidshriver@outlook.com>
+License: MIT
+Project-URL: Documentation, https://github.com/dlshriver/vnnlib#readme
+Project-URL: Issues, https://github.com/dlshriver/vnnlib/issues
+Project-URL: Source, https://github.com/dlshriver/vnnlib
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy (>=1.19)
+Provides-Extra: dev
+Requires-Dist: mypy (~=1.0.0) ; extra == 'dev'
+Requires-Dist: black (~=23.1.0) ; extra == 'dev'
+Requires-Dist: isort (~=5.12.0) ; extra == 'dev'
+Requires-Dist: coverage (~=7.1.0) ; extra == 'dev'
+Requires-Dist: pytest (~=7.2.1) ; extra == 'dev'
+Provides-Extra: dist
+Requires-Dist: build ; extra == 'dist'
+Requires-Dist: twine ; extra == 'dist'
+Provides-Extra: docs
+Requires-Dist: furo (~=2022.12.7) ; extra == 'docs'
+Requires-Dist: sphinx (~=6.1.3) ; extra == 'docs'
+Provides-Extra: lint
+Requires-Dist: mypy (~=1.0.0) ; extra == 'lint'
+Provides-Extra: style
+Requires-Dist: black (~=23.1.0) ; extra == 'style'
+Requires-Dist: isort (~=5.12.0) ; extra == 'style'
+Provides-Extra: test
+Requires-Dist: coverage (~=7.1.0) ; extra == 'test'
+Requires-Dist: pytest (~=7.2.1) ; extra == 'test'
+
+# vnnlib
+
+[![PyPI - Version](https://img.shields.io/pypi/v/vnnlib.svg)](https://pypi.org/project/vnnlib)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/vnnlib.svg)](https://pypi.org/project/vnnlib)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install vnnlib
+```
+
+## License
+
+`vnnlib` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
