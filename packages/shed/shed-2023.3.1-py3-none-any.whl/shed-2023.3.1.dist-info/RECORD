@@ -1,0 +1,11 @@
+shed/__init__.py,sha256=4S3kVAbaKbT_0pkD5JFpFV1f4gf53EoCw9kI0WkK9js,10395
+shed/__main__.py,sha256=lKkDjwYvvj2-TpGM8NpbGixALUzt6KReJvBSSpT34jQ,230
+shed/_cli.py,sha256=5vowOvnH-IfkU0FL8abFhiZ1TJO79hjFxTsZG3ZooS0,6217
+shed/_codemods.py,sha256=e_NN-w9KMGQz20reUhp5Bur0D4MuiPVBhK-lvH83OhA,26142
+shed/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shed-2023.3.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+shed-2023.3.1.dist-info/METADATA,sha256=SIsr7jf_wjkEcJlAokW4597BxoIRLKiWk_Qj1dM2Hlc,5293
+shed-2023.3.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+shed-2023.3.1.dist-info/entry_points.txt,sha256=7s9ud3mlU8xRYKOFjniZWoGvPUe0vxn036Et32eJ0ec,39
+shed-2023.3.1.dist-info/top_level.txt,sha256=_ftMOy3wF-2yPM3eeavOB1T0kyXtk507s486dZ7N_Vs,5
+shed-2023.3.1.dist-info/RECORD,,
