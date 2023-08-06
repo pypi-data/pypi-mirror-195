@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+azbuka_morze/__init__.py
+azbuka_morze/azbuka_morze.py
+azbuka_morze.egg-info/PKG-INFO
+azbuka_morze.egg-info/SOURCES.txt
+azbuka_morze.egg-info/dependency_links.txt
+azbuka_morze.egg-info/not-zip-safe
+azbuka_morze.egg-info/top_level.txt

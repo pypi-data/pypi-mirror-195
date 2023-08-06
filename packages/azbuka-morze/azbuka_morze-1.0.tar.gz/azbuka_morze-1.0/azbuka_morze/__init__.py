@@ -1,0 +1,1 @@
+from .azbuka_morze import translate
