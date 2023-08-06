@@ -1,0 +1,4 @@
+include a_pandas_ex_imap2df/requirements.txt
+include a_pandas_ex_imap2df/thirdparty.json
+include a_pandas_ex_imap2df/README.MD
+include a_pandas_ex_imap2df/LICENSE
