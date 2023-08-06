@@ -1,0 +1,3 @@
+colorway_background
+colorway_foreground
+colorway_manual
