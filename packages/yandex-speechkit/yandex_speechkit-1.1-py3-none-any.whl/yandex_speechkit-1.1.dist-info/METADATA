@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: yandex-speechkit
+Version: 1.1
+Summary: SpeechKit package
+Author: eranik
+Author-email: eranik@yandex-team.ru
+License: apache-2.0
+Keywords: speechkit
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: grpcio (<=1.46.3)
+Requires-Dist: grpcio-tools (<=1.46.3)
+Requires-Dist: protobuf (<=3.20.3)
+Requires-Dist: pydub
+Requires-Dist: requests
+
+Getting started
+---------------
+
+### Installation
+
+```
+pip install yandex-speechkit
+```
+
+### Setting up credentials
+
+```python3
+from speechkit import configure_credentials, creds
+
+configure_credentials(
+    yandex_credentials=creds.YandexCredentials(
+        api_key='...'
+    )
+)
+```
+
+### Using speech-to-text model
+
+```python3
+from speechkit import model_repository
+from speechkit.stt import AudioProcessingType
+
+model = model_repository.recognition_model()
+
+model.audio_processing_type = AudioProcessingType.Full
+model.language = 'en-US'
+
+result = model.transcribe_file('path/to/audio')
+for c, res in enumerate(result):
+    print(f'channel: {c}\nraw_text: {res.raw_text}\nnorm_text: {res.normalized_text}\n')
+```
+
+### Using text-to-speech model
+
+```python3
+from speechkit import model_repository
+
+model = model_repository.synthesis_model()
+
+model.voice = 'john'
+
+result = model.synthesize('Hello, world!', raw_format=False)
+result.export('path/to/audio', format='wav')
+```
