@@ -1,0 +1,1 @@
+This is a library to check whether a given number belongs to armstrong series or to print armstrong series for given n elements

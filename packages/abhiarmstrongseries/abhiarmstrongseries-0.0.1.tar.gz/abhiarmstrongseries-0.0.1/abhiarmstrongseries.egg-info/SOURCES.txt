@@ -1,0 +1,8 @@
+LICENCE.txt
+README.txt
+setup.py
+abhiarmstrongseries.egg-info/PKG-INFO
+abhiarmstrongseries.egg-info/SOURCES.txt
+abhiarmstrongseries.egg-info/dependency_links.txt
+abhiarmstrongseries.egg-info/top_level.txt
+armstrong/__init__.py
