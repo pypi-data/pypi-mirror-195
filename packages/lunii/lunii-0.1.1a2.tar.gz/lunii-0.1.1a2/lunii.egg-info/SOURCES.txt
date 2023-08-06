@@ -1,0 +1,16 @@
+README.md
+setup.py
+lunii/__init__.py
+lunii/cli.py
+lunii/device.py
+lunii/parse_titles.py
+lunii/player.py
+lunii/story.py
+lunii/utils.py
+lunii.egg-info/PKG-INFO
+lunii.egg-info/SOURCES.txt
+lunii.egg-info/dependency_links.txt
+lunii.egg-info/entry_points.txt
+lunii.egg-info/requires.txt
+lunii.egg-info/top_level.txt
+lunii/data/titles.json
