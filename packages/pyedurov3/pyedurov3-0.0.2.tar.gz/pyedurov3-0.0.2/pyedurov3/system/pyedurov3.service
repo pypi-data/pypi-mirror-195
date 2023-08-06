@@ -1,0 +1,19 @@
+[Unit]
+Description=Run Edu-rover server
+
+After=multi-user.target
+Wants=multi-user.target
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=python3 -m pyedurov3 --name {advertising_name}
+User={user_name}
+
+SystemCallArchitectures=native
+MemoryDenyWriteExecute=true
+NoNewPrivileges=true
+
+[Install]
+WantedBy=default.target
+WantedBy=multi-user.target

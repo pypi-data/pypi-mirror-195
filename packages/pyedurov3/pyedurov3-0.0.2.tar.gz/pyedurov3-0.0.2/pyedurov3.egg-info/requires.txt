@@ -1,0 +1,9 @@
+picamera
+sense-hat
+pyserial-asyncio
+asyncio
+psutil
+websockets
+aiortc
+aiohttp
+adafruit-circuitpython-ssd1306
