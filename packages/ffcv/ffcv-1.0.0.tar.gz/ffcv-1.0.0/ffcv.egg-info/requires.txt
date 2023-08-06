@@ -1,0 +1,8 @@
+terminaltables
+pytorch_pfn_extras
+fastargs
+opencv-python
+assertpy
+tqdm
+psutil
+numba
