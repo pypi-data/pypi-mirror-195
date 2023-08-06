@@ -1,0 +1,9 @@
+setup.py
+colorpalette-master/ImageCreation.py
+colorpalette-master/MMCQ.py
+colorpalette-master/__init__.py
+colorpalette_master.egg-info/PKG-INFO
+colorpalette_master.egg-info/SOURCES.txt
+colorpalette_master.egg-info/dependency_links.txt
+colorpalette_master.egg-info/requires.txt
+colorpalette_master.egg-info/top_level.txt
