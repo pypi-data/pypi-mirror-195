@@ -1,0 +1,14 @@
+rdmlpython/LICENSE,sha256=s63LBVUlw7-UsUMBWzxXzcSqoVhNdfyZRrbUwJbeWlE,1081
+rdmlpython/README.md,sha256=HkAq5cp8Qf_T5FWWUQXX2FFa8IeKSdHbvwPO35f8gXQ,1346
+rdmlpython/__init__.py,sha256=IlNJYd7eiSl5tQMG-ilfx5PmU69XAhyjMxKwrq5V0fQ,80
+rdmlpython/rdml.py,sha256=EzAB5WLeOMMdkgU3KblFHL7CnNOOR88JXhbZus1M-tE,715416
+rdmlpython/schema/RDML_v1_0_REC.xsd,sha256=xqB80i-CcCLuZG98aTeNGhaEKNuU8UkFFvMN6Avpk9Y,45122
+rdmlpython/schema/RDML_v1_1_REC.xsd,sha256=0aGXMjhWKHVTckkBUT6b8AmIbpGM4AfrW9HbCq_qsqQ,48807
+rdmlpython/schema/RDML_v1_2_REC.xsd,sha256=Xse7HgwzOprF8xuIGyBdFSG6MV4uC5Bx2FjHj8mN77Y,50404
+rdmlpython/schema/RDML_v1_3_REC.xsd,sha256=R-Y1A5xkgEtEx_MeGVe-lUd2pMm78p8gf6fuZq2IhdY,62703
+rdmlpython-1.7.1.dist-info/LICENSE.txt,sha256=s63LBVUlw7-UsUMBWzxXzcSqoVhNdfyZRrbUwJbeWlE,1081
+rdmlpython-1.7.1.dist-info/METADATA,sha256=o4xUctZPcK-7d2gb3Y4oqC5lse0cUSj982gpqcmbo9Y,945
+rdmlpython-1.7.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+rdmlpython-1.7.1.dist-info/entry_points.txt,sha256=XjqmToTCDPC-ZNh0HGi9tk_XrzVHr3cR0BZ0yCSIsH4,53
+rdmlpython-1.7.1.dist-info/top_level.txt,sha256=AzaMwJpLiO0z5uXzhbXxA-WwJWEfToq2G1Z_PTD1esE,11
+rdmlpython-1.7.1.dist-info/RECORD,,
