@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ddc-indices"
+version = "0.4.1"
+description = ""
+authors = ["Balint Alfoldy <alfibalint@gmail.com>"]
+readme = "README.md"
+packages = [{include = "ddc_indices"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+importlib-metadata = "^6.0.0"
+matplotlib = "^3.6.2"
+pydantic = "^1.10.0"
+scipy = "^1.9.1"
+xarray = "^2023.1.0"
+zarr = "^2.13.6"
+dask = "^2023.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
