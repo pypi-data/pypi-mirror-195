@@ -1,0 +1,8 @@
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+polynomial_operations.egg-info/PKG-INFO
+polynomial_operations.egg-info/SOURCES.txt
+polynomial_operations.egg-info/dependency_links.txt
+polynomial_operations.egg-info/top_level.txt

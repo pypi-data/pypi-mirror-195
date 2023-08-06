@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: polynomial-operations
+Version: 0.0.2
+Summary: A very basic polynomial calculator.
+Home-page: 
+Author: Sejal Farkya
+Author-email: sejalfarkya@gmail.com
+License: MIT
+Keywords: polynomial
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is a very simple calculator that takes two polynomial and add or multiply them.
+
+
+Change Log
+==========
+
+0.0.2 (03/03/2023)
+-------------------
+- Second Release
