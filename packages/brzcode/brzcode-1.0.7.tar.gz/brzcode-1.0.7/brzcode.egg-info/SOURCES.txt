@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+brzcode/brzcode.py
+brzcode.egg-info/PKG-INFO
+brzcode.egg-info/SOURCES.txt
+brzcode.egg-info/dependency_links.txt
+brzcode.egg-info/requires.txt
+brzcode.egg-info/top_level.txt
