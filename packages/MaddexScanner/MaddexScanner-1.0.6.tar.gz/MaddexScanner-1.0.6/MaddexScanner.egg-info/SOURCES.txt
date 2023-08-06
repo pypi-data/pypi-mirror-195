@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Maddex/__init__.py
+Maddex/data.py
+MaddexScanner.egg-info/PKG-INFO
+MaddexScanner.egg-info/SOURCES.txt
+MaddexScanner.egg-info/dependency_links.txt
+MaddexScanner.egg-info/requires.txt
+MaddexScanner.egg-info/top_level.txt
