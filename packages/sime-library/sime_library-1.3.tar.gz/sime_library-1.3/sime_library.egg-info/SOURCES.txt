@@ -1,0 +1,8 @@
+README.md
+setup.py
+sime_library.py
+sime_library.egg-info/PKG-INFO
+sime_library.egg-info/SOURCES.txt
+sime_library.egg-info/dependency_links.txt
+sime_library.egg-info/requires.txt
+sime_library.egg-info/top_level.txt
