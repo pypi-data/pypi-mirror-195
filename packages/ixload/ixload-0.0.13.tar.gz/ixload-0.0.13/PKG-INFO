@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: ixload
+Version: 0.0.13
+Summary: Python wrapper for IxLoad automation
+Home-page: https://github.com/albertovillarreal-keys/ixload_py
+Author: Alberto Villarreal
+Author-email: alberto.villarreal@keysight.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: !=3.0.*,!=3.1.*,!=3.2.*,>=2.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Package for IxLoad Automation
+[![Python 2.7](https://img.shields.io/badge/Python-2.7-blue.svg)](#)
+[![Python 3](https://img.shields.io/badge/Python-3-blue.svg)](#)
+
+## To Install:
+pip install ixload
+
+## To import into project
+from ixload import IxLoadUtils as IxLoadUtils \
+from ixload import IxLoadTestSettings as TestSettings \
+from ixload import IxRestUtils as IxRestUtils \
+from ixload import IxRestPyUtils as IxRestPyUtils
+
+##Information on IxLoad Modules visit github.com/OpenIxia
+[OpenIxia](https://github.com/OpenIxia/IxLoad)
+
