@@ -1,0 +1,9 @@
+paddleocr_convert/__init__.py,sha256=BEXDxVXbOXpPMc6hPxhyd3KLYbm4lBqaAiqkxFqpUEU,701
+paddleocr_convert/main.py,sha256=wKDjFxI-Wjmd0v1hl81RTDnzeWvmK8c3nJKYeWS8vUI,6317
+paddleocr_convert/utils.py,sha256=L6f2HTo0bEeRiKvx-25Q9vq3dYKZoz4NZvgRk-ijJiA,3336
+paddleocr_convert-0.0.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+paddleocr_convert-0.0.8.dist-info/METADATA,sha256=AEzR4YY9MqUHFy991XBR8JDVlBkO4Dszer6WnGn2d6Q,3749
+paddleocr_convert-0.0.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+paddleocr_convert-0.0.8.dist-info/entry_points.txt,sha256=b0OFt60OUI5HTRspurAjrfZVM-4ByVej2KOMw6ElD0U,66
+paddleocr_convert-0.0.8.dist-info/top_level.txt,sha256=ieeNfQzCie3AGnekH9Kbu6OiIKfgsic8v1rIruY4PWI,18
+paddleocr_convert-0.0.8.dist-info/RECORD,,
