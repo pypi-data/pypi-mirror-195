@@ -1,0 +1,4 @@
+SciAssist
+data
+logs
+pretrained
