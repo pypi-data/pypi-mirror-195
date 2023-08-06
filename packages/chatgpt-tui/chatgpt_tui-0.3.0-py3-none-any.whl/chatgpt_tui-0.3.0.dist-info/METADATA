@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: chatgpt-tui
+Version: 0.3.0
+Summary: A simple TUI interface for ChatGPT.
+Author-email: Jiayi Pan <i@jiayipan.me>
+License: MIT
+Keywords: chatbot,tui,chatgpt,chatgpt_tui
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: textual
+Requires-Dist: httpx
+
+# ChatGPT TUI
+
+![](https://i.imgur.com/rEOS1S7.png)
+
+`catt` is a Python-based Text User Interface (TUI) for ChatGPT, powered by OpenAI's official API. It provides an easy-to-use interface that allows you to interact with ChatGPT directly from your terminal.
+
+Please note that this project is in its early stages and is not yet ready for production use.
+
+## Usage
+
+### Install
+
+```bash
+pip install chatgpt_tui
+```
+
+### Export your OpenAI API key
+
+Before using it, you need to export your [OpenAI API key](https://platform.openai.com/account/api-keys) as an environment variable:
+
+```bash
+export OPENAI_API_KEY=your-api-key
+```
+
+### Launch
+
+To start the app, simply run the following command in your terminal:
+
+```bash
+catt
+```
+
+This will launch the ChaTUI interface and connect you to the ChatGPT chatbot.
+
+### Road Map
+- Toggle dark/light mode
+- Resume from previous chat history
+- Improve UI/UX
+  - Better visuals
+  - More keybindings
+
+# License
+
+`catt` is licensed under the MIT License.
