@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: jsonsqlquery
+Version: 0.1.2
+Summary: Query JSON using SQL
+License: MIT
+Author: Peter Byfield
+Author-email: byfield554@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# jsonsqlquery
+
+[![CI](https://github.com/Peter554/jsonsqlquery/actions/workflows/ci.yml/badge.svg)](https://github.com/Peter554/jsonsqlquery/actions/workflows/ci.yml)
+
+Query JSON using SQL.
+
+```
+pip install jsonsqlquery
+```
+
+## Examples
+
+```
+# students.jsonl
+{"name": "Alvin", "age": 25, "major": "Literature"}
+{"name": "Kathy", "age": 31, "major": "Literature"}
+{"name": "Pauline", "age": 11, "major": "Mathematics"}
+{"name": "Nora", "age": 27, "major": "Mathematics"}
+{"name": "Martin", "age": 54, "major": "Geology"}
+```
+
+Inline SQL query:
+
+```
+cat students.jsonl | jsonsqlquery --query 'select name, age from data where age > 30'
+```
+
+SQL query from a file:
+
+```
+cat students.jsonl | jsonsqlquery --query-file query.sql
+```
+
+Create a SQLite database:
+
+```
+cat students.jsonl | jsonsqlquery --create-db students.db
+```
+
+Python API:
+
+```py
+import jsonsqlquery
+
+students = [...]
+older_students = jsonsqlquery.query(students, "select name, age from data where age > 30")
+```
+
+## Caveats
+
+* Booleans are cast to integers.
+* Data is assumed to fit in memory.
+
