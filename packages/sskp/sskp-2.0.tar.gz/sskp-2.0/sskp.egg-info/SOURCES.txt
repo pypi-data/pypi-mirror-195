@@ -1,0 +1,8 @@
+LICENCE
+README.md
+setup.py
+sskp/__init__.py
+sskp.egg-info/PKG-INFO
+sskp.egg-info/SOURCES.txt
+sskp.egg-info/dependency_links.txt
+sskp.egg-info/top_level.txt

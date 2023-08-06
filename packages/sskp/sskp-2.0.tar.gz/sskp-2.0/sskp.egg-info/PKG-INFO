@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: sskp
+Version: 2.0
+Summary: package for file storage
+Author: Sahil
+Author-email: sahilapte14@gmail.com
+Keywords: ngitkmit,store files,database,store,file,ngit,mongo,kmit
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+This package is used to store files in mongodb
+
+Install the requirements files
+Packages used :
+******pymongo*******  
+pip install pymongo
+******gridfs******
+pip install gridfs-fuse
+
+
+import statement:
+import filestoexplore as ft
+
+Now add your mongourl to a variable
+db = ft.mongo_conn()
+
+To upload_files use the below command
+ft.upload_file(Filepath,filename with extension,database object)
+
+"ft.upload_file("/Users/Desktop/test/image1.jpeg","name",db)"
+
+To download_files use the below command:
+ft.download_file(downloadpath,filename with extension,database object)
+
+"ft.download_file("/Users/Desktop/myimage.jpeg","name",db)"
+ and in 2nd parameter use the same file name which was used while uploading the files
