@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: Ddnet
+Version: 0.0.2
+Summary: This is a test.
+Home-page: https://github.com/
+Author: Zichuana
+Author-email: 2092653757@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas-profiling
+Requires-Dist: folium
+Requires-Dist: seaborn
+
+This is a test.
+
