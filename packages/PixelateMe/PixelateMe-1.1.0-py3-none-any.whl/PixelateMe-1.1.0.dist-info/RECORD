@@ -1,0 +1,14 @@
+pixelateme/__init__.py,sha256=i1OTn1AdngdvNxFCdH3rIUEtMcHkWARFlEpONKBbGMI,73
+pixelateme/_version.py,sha256=lLIU1rT2L4SEokRyDAWRxmJhcSlgz_UX9C42pdjm02A,497
+pixelateme/blur.py,sha256=EGmUdzAXi1pkywp8rMySCW0pkEvD30wdFEm7m-wAfGY,3130
+pixelateme/centerface.onnx,sha256=d-OUtREIOBtMT3tLrxxkyp9KunPl6AOyY2QZV4kTtf4,7532772
+pixelateme/centerface.py,sha256=09HdkZ6y-_9HuNLRD7LWvXtq0g97d9CTrxRW3L0mx2c,7123
+pixelateme/cli.py,sha256=IwMNkBEc66xGgNZvivM69SozNBEpsvz8mkxY1Xtr710,3475
+pixelateme/face_detection.py,sha256=M2ER_Ttt2-wkkYZV_U5Zze7GECh3u4JDX-S-tDhNexc,1428
+pixelateme/gui.py,sha256=20SNQw53AY2CN_B9pPtHvn9NJdbwiZg0IR4HoD_uUQY,4317
+pixelateme/main.py,sha256=Kykj1fJ14yUqVcaPu8QxX83NOlVs0zhN-cFxR5g32iU,6273
+PixelateMe-1.1.0.dist-info/METADATA,sha256=qgjFtVhdqTPXLRXRzIwWzvgYoHpbgij5muYsNw9pNyI,8560
+PixelateMe-1.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+PixelateMe-1.1.0.dist-info/entry_points.txt,sha256=pOoS4PyE2haFqCUYgeR3WvOpHK4aC3KDURyMi4NlygU,102
+PixelateMe-1.1.0.dist-info/top_level.txt,sha256=YK_DzFKC9ycBGofmA5zMWJbsnYsUtLJ3mpiAwOtmTZ8,11
+PixelateMe-1.1.0.dist-info/RECORD,,
