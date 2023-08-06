@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bomber/__init__.py
+bomber/bomber.py
+siambomber.egg-info/PKG-INFO
+siambomber.egg-info/SOURCES.txt
+siambomber.egg-info/dependency_links.txt
+siambomber.egg-info/entry_points.txt
+siambomber.egg-info/requires.txt
+siambomber.egg-info/top_level.txt
