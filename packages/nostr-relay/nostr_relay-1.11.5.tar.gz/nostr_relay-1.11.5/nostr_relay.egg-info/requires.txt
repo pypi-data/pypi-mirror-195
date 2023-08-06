@@ -1,0 +1,25 @@
+falcon
+aionostr>=0.14.0
+sqlalchemy[asyncio]>=2.0
+aiosqlite>=0.18.0
+aiohttp[speedups]
+uvicorn[standard]
+gunicorn
+setproctitle
+alembic
+
+[:platform_python_implementation == "CPython"]
+python-rapidjson
+
+[lmdb]
+lmdb
+msgpack
+
+[postgres]
+asyncpg
+
+[test]
+pytest
+pytest-cov
+pytest-asyncio
+pytest-xdist
