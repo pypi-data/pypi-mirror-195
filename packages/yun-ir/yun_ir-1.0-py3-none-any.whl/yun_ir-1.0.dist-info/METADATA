@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: yun-ir
+Version: 1.0
+Summary: A Python client for Yun.ir URL shortener API
+Home-page: https://github.com/ALIILAPRO/yun-ir
+Author: ALIILAPRO
+Author-email: aliilapro@pm.me
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# Yun.ir Python Client
+
+A Python client for the [Yun.ir](https://yun.ir/) URL shortener API.
+
+## Installation
+
+Install with `pip`:
+
+```sh
+pip install yun-ir
+```
+
+## Usage
+
+```python
+from yun import Yun
+
+login = Yun.Api('YOUR tOKEN')
+result = login.short('title', 'url')
+
+print(result)
+```
+## API
+
+`yun_ir.Yun(token: str)`
+
+Create a new Yun.ir client instance.
+
+`token`: Your Yun.ir API token.
+
+`yun_ir.Yun.short(title: str, url: str) -> dict`
+
+Shorten a URL using Yun.ir API.
+
+`title`: Title for the URL
+
+
+`url`: URL to shorten
+
+Returns:
+
+A dictionary containing the shortened URL, or an error message if the request fails.
+
+
