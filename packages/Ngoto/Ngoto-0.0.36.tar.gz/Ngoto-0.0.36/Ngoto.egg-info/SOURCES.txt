@@ -1,0 +1,17 @@
+README.md
+setup.py
+Ngoto.egg-info/PKG-INFO
+Ngoto.egg-info/SOURCES.txt
+Ngoto.egg-info/dependency_links.txt
+Ngoto.egg-info/top_level.txt
+ngoto/__init__.py
+ngoto/cogs/__init__.py
+ngoto/cogs/basic.py
+ngoto/cogs/chrome_passwords.py
+ngoto/cogs/osint_framework.py
+ngoto/cogs/pc_usage_monitor.py
+ngoto/cogs/url.py
+ngoto/cogs/wifi_passwords.py
+test/__init__.py
+test/test_commands.py
+test/test_plugins.py
