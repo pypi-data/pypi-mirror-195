@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+discord_ext_rest.egg-info/PKG-INFO
+discord_ext_rest.egg-info/SOURCES.txt
+discord_ext_rest.egg-info/dependency_links.txt
+discord_ext_rest.egg-info/top_level.txt
