@@ -1,0 +1,17 @@
+pyBIA/__init__.py,sha256=URS408kGQCSWbiVKXYwjkaI_6JvtUGYl-Kscy-a-Yj8,27
+pyBIA/catalog.py,sha256=CCIYxZ0xhQ1-XslPBrWoALt5m7R3_-SHRx8HrO-elv0,63905
+pyBIA/cnn_model.py,sha256=kgGqRc-ZeWIO-1SdlXvE9MuNyIltzDogZYupYltMy5o,63177
+pyBIA/data_augmentation.py,sha256=lsCodYpVg1r3oyqiME3nztGbkuzpZtdrKnXE9dD5bfY,13233
+pyBIA/data_processing.py,sha256=NIfH-oPWIx26Rw6c7M8y6VQoB_ATqNT6TgNVEXA-GfI,13205
+pyBIA/ensemble_model.py,sha256=H6UYqRoLdCjsb2mxCM31p3fYNkbj9q2taKWeBfLGsbA,49703
+pyBIA/image_moments.py,sha256=OBHyCCPDRTWyCq2aQOgoerpy3MMUjQEqz-nGCAlZ1nA,13062
+pyBIA/optimization.py,sha256=1BP-Q5loq1w-MVZgCFey4LRbcWnK5UreomREsmSEUyw,98527
+pyBIA/data/__init.py__,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyBIA/data/obj_name_5,sha256=8QyIb1YDhkXew08EoOyonS2B_trAvRa-o34wu4hIs8s,115
+pyBIA/data/obj_name_779,sha256=aTd-AZscq9xHy7Mitp-g-9bc9In_TQ_DaAof9WhEU6g,17965
+pyBIA/data/obj_name_80,sha256=n1KkBXu-4csAq6Zimt2QEXswm8U_l9KegAVHCJy2uN8,1840
+pyBIA-1.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyBIA-1.3.0.dist-info/METADATA,sha256=kEMsS3dorM9pkGOyJO4Bk8DIRXcECTqBnkAsYwY9glA,991
+pyBIA-1.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyBIA-1.3.0.dist-info/top_level.txt,sha256=gwCmeMEPyXKffmOTVUP7RoJ1hERYnvgC7O8AgUU1KSc,6
+pyBIA-1.3.0.dist-info/RECORD,,
