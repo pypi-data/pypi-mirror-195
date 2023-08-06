@@ -1,0 +1,10 @@
+{
+  "name": "Steamback",
+  "author": "https://github.com/geeksville",
+  "flags": [],
+  "publish": {
+    "tags": ["steamback", "backup"],
+    "description": "Automatic save game snapshot/restore for Steam",
+    "image": "https://raw.githubusercontent.com/geeksville/steamback/main/assets/screenshot.jpg"
+  }
+}
