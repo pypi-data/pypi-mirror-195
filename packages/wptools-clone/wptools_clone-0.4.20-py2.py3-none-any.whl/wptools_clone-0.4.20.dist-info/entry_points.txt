@@ -1,0 +1,2 @@
+[console_scripts]
+wptool = wptools.wptool:main
