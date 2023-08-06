@@ -1,0 +1,2 @@
+[jupyter_ai.model_engine_class]
+gpt3 = jupyter_ai:GPT3ModelEngine
