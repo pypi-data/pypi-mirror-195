@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: htrc_vsm
+Version: 0.4.15.1
+Summary: HTRC rework of the InPHO vsm package.
+Project-URL: Homepage, https://github.com/htrc/vsm
+Project-URL: Bug Tracker, https://github.com/htrc/vsm/issues
+Author-email: Damien Thomas <damien.thomas.0214@gmail.com>, Samitha Liyanage <shliyana@indiana.edu>
+License-File: LICENSE.txt
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+#VSM
+
+[![Build Status](https://img.shields.io/travis/inpho/vsm.svg?label=UNIX+build)](https://travis-ci.org/inpho/vsm)
+[![Appveyor](https://img.shields.io/appveyor/ci/JaimieMurdock/vsm.svg?label=Windows+build)](https://ci.appveyor.com/project/JaimieMurdock/vsm)
+[![Coveralls](https://img.shields.io/coveralls/inpho/vsm.svg)](https://coveralls.io/r/inpho/vsm)
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/inpho/vsm/blob/master/LICENSE.txt)
+[![PyPI](https://img.shields.io/pypi/v/vsm.svg)](https://pypi.python.org/pypi/vsm)
+
+**Note:** More than likely, you are looking for the [InPhO Topic Explorer](http://github.com/inpho/topic-explorer). This library is for the machine learning implementations underlying the Topic Explorer and is updated much slower than the user interfaces. If you are using the Topic Explorer, please file issues there and the developers will triage appropriately.
+
+Vector Space Model Framework developed for the 
+[InPhO Project](https://inpho.cogs.indiana.edu/).
+
+Documentation can be found in the module and [here](http://inpho.github.io/vsm/).
+
+##Installation
+
+```
+git clone git@github.com:inpho/vsm.git
+cd vsm
+pip install -r requirements.txt -e .
+```

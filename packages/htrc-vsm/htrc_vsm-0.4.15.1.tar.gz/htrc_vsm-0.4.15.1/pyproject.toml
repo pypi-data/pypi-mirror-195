@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "htrc_vsm"
+version = "0.4.15.1"
+authors = [
+  { name="Damien Thomas", email="damien.thomas.0214@gmail.com" },
+  { name="Samitha Liyanage", email="shliyana@indiana.edu" }
+]
+description = "HTRC rework of the InPHO vsm package."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/htrc/vsm"
+"Bug Tracker" = "https://github.com/htrc/vsm/issues"
