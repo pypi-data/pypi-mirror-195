@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "sncopy"
+version = "0.1.0"
+description = "Copy-Paste Tool from Slack to Notion"
+authors = ["Kenichi Higuchi <higuchi@adansons.co.jp>"]
+repository = "https://github.com/kenichihiguchi/sncopy"
+readme = "README.md"
+license = "Apache-2.0"
+packages = [
+    { include = "sncopy"},
+]
+
+[tool.poetry.scripts]
+sncopy = 'sncopy.cli:main'
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pyperclip = "^1.8.2"
+click = "^8.1.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
