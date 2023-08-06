@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+qthreading/__init__.py
+qthreading/qthreading.cp37-win_amd64.pyd
+qthreading.egg-info/PKG-INFO
+qthreading.egg-info/SOURCES.txt
+qthreading.egg-info/dependency_links.txt
+qthreading.egg-info/top_level.txt
