@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: chans
+Version: 0.0.2
+Summary: dag/task runner backed by sqlite
+Author-email: Alexander Rodionov <tandav@tandav.me>
+Project-URL: source, https://github.com/tandav/chans
+Project-URL: homepage, https://chans.tandav.me
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+[![Build Status](https://drone.tandav.me/api/badges/selfhosted/2ch/status.svg)](https://drone.tandav.me/selfhosted/2ch)
+
+# top 2ch.hk and 4chan.org threads
+
+```sh
+docker run --rm -p 10000:8888 -v $PWD:/home/jovyan/work jupyter/pyspark-notebook
+```

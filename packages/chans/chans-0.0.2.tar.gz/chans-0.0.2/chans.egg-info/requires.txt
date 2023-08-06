@@ -1,0 +1,11 @@
+uvicorn
+fastapi
+aiofiles
+Jinja2
+humanize
+pipe21>=1.0.11
+
+[dev]
+bumpver
+pre-commit
+pytest

@@ -1,0 +1,3 @@
+[console_scripts]
+chans-cli = chans.__main__:main
+chans-server = chans.server:main
