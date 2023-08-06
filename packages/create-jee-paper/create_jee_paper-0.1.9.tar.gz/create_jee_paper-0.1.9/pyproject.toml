@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "create-jee-paper"
+version = "0.1.9"
+description = "Modified main command for creating main.tex and adding some initial text."
+authors = ["vaibhavblayer <vaibhavblayer@gmail.com>"]
+readme = "README.md"
+packages = [{include = "create_jee_paper"}]
+
+
+[tool.poetry.scripts]
+create-jee-paper = "create_jee_paper.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = {extras = ["all"], version = "^0.7.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
