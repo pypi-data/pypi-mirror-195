@@ -1,0 +1,13 @@
+split_mysql/__init__.py,sha256=aOzFxx3QxUfrqA9gpz9Euw6U6r67IeWCYkoSTuh8TAg,1305
+split_mysql/_parser4mysql_Darwin.h,sha256=QALmlo4WHbbqiPanB2-41NKk9ly9-EVvl6pS-H3TV68,1689
+split_mysql/_parser4mysql_Darwin.so,sha256=cJXZUVHA1v57HCcO4DkO2996hotR18RnL9hOZPiqA30,14619576
+split_mysql/_parser4mysql_Linux.h,sha256=QALmlo4WHbbqiPanB2-41NKk9ly9-EVvl6pS-H3TV68,1689
+split_mysql/_parser4mysql_Linux.so,sha256=M5_VtQtp-7AgMMWFRED62d_KnkOHUVLHMYXxW0f-MpU,15149856
+split_mysql/build_me.sh,sha256=4DnlhuMKPNXHZE9og3THIfFwaZyivaXZVybv7sns_gU,134
+split_mysql/go.mod,sha256=zuhfVt8zJblc2jNMgm5zq_Uv45vQaeaqt2nGBpu4O2o,741
+split_mysql/go.sum,sha256=snP8rRJqz6kjts_SEP01UKHquiLqddsDWAQAvVnWcsw,5608
+split_mysql/init_go.sh,sha256=ACrfo-SUtpXxfpgBOCFTzVBPCezzT-hfzQ3C2Q1sklw,107
+split_mysql/parser4mysql.go,sha256=r0z0l1CvL4mqMNS8vT-nOQXgyfa2pcqEej8kcf3wsB0,583
+split_mysql-1.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+split_mysql-1.0.1.dist-info/METADATA,sha256=DmycjX33D0b2m3OAngUgudXn0GupGjF9L4VNF8bjwH8,940
+split_mysql-1.0.1.dist-info/RECORD,,

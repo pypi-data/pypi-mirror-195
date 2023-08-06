@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: split-mysql
+Version: 1.0.1
+Summary: Split statements for MySQL
+Author: ITXiaoPang
+Author-email: itxiaopang.djh@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Split-MySQL
+
+将字符串形式的MySQL语句拆分成每句为一个元素的列表。
+
+## 使用方法
+```Python
+from split_mysql import split_mysql
+
+sql = '''use abc;select 1;'''
+my_list = split_mysql(sql)
+if isinstance(my_list, list):
+    print('拆分成功。')
+    for i, v in enumerate(my_list):
+        print(i, v)
+else:
+    print('拆分失败。')
+    print(my_list)
+```
+
+## 系统兼容性
+* Linux
+* MacOS
+
+
