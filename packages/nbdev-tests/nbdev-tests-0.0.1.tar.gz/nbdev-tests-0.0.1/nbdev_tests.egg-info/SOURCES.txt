@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+nbdev_tests/__init__.py
+nbdev_tests/_modidx.py
+nbdev_tests/card.py
+nbdev_tests.egg-info/PKG-INFO
+nbdev_tests.egg-info/SOURCES.txt
+nbdev_tests.egg-info/dependency_links.txt
+nbdev_tests.egg-info/entry_points.txt
+nbdev_tests.egg-info/not-zip-safe
+nbdev_tests.egg-info/requires.txt
+nbdev_tests.egg-info/top_level.txt
