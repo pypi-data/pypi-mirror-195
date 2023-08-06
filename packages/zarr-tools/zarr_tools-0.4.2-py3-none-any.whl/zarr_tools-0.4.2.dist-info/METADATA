@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: zarr-tools
+Version: 0.4.2
+Summary: Convert nd2 to zarr
+Home-page: https://gitlab.pasteur.fr/aaristov/zarr-tools
+Author: Andrey Aristov
+Author-email: aaristov@pasteur.fr
+License: BSD-3-Clause
+Project-URL: Bug Tracker, https://gitlab.pasteur.fr/aaristov/zarr-tools/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Framework :: napari
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dask
+Requires-Dist: fire
+Requires-Dist: nd2
+Requires-Dist: zarr
+
+# zarr-tools
+
+Convert nd2 to zarr
+
+## Installation
+
+```pip install git+https://gitlab.pasteur.fr/aaristov/zarr-tools.git```
+
+## Usage
+
+### As command line 
+``` python -m zarr-tools file.nd2 ```
+
+This will produce the zarr dataset with default 5 steps of binning for xy dimensions.
+
+### As python module
+
+```python
+import nd2
+import zarr_tools
+
+data = nd2.ND2File("input.nd2").to_dask()
+zarr_tools.convert.to_zarr(
+    data,
+    channel_axis=1,
+    path="output.zarr", 
+    steps=4, 
+    name=['BF','TRITC'], 
+    colormap=['gray','green'],
+    lut=((1000,30000),(440, 600)),
+)
+```
+
