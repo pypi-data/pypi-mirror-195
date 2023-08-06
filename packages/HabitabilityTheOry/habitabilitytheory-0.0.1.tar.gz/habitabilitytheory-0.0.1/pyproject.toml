@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "HabitabilityTheOry"
+version = "0.0.1"
+authors = [
+  { name="Antonin Affholder", email="aaffholder@arizona.edu" },
+]
+description = "This package contains some useful functions to assess habitability of Chemostat-like environments to energy-limited microbes."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/antonin.affholder/HaThOr_pkg"
+"Bug Tracker" = "https://gitlab.com/antonin.affholder/HaThOr_pkg/-/issues"
