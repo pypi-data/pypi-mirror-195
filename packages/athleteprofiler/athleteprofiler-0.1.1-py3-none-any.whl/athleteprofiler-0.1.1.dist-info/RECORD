@@ -1,0 +1,12 @@
+athleteprofiler/__init__.py,sha256=jWOFzN8mvEbrAs8CAKee5yb-8Wcsizfr3aKkW6Fhb-M,117
+athleteprofiler/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+athleteprofiler/src/athlete.py,sha256=U8gbdBEEFQC9TijtMCd8sLWaHHLSJ1vcgm6_8LAcBMA,2536
+athleteprofiler/src/examples.py,sha256=z9s74SUmXx1zY0_a6k7vK8rvlOjxc9rrlSTkC1EgeZg,640
+athleteprofiler/src/vo2_max_data.py,sha256=NFWreo-UfquFyhHqe4qvSH_BvV2-XtKFxiL1rTUKp30,963
+athleteprofiler/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+athleteprofiler/test/test_athlete.py,sha256=4um82X1c08LGffnfrgkoQWSbS137CnfhHoPKYKzC1BU,683
+athleteprofiler-0.1.1.dist-info/LICENSE,sha256=K71CJwZi9hioqx6edPZ8KSe01LVYAvHgtUTs5CIl-Cs,1073
+athleteprofiler-0.1.1.dist-info/METADATA,sha256=cDDJcV9JjDdWW8XDkSxwBYUvTTLoh2Xgk_8Jqm9qkAw,822
+athleteprofiler-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+athleteprofiler-0.1.1.dist-info/top_level.txt,sha256=yUDUH1KmdADoyoXpcH9LtveE2P5MdUO2nDs7S5Rftcg,16
+athleteprofiler-0.1.1.dist-info/RECORD,,

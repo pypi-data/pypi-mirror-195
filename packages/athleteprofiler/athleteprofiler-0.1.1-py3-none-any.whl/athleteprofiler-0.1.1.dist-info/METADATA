@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: athleteprofiler
+Version: 0.1.1
+Summary: An athlete profiler that computes BMI and VO2MAX based on resting heart-rate
+Home-page: https://github.com/TheNewThinkTank/athlete
+Author: TheNewThinkTank
+Author-email: gcr84@hotmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest (>=7.0) ; extra == 'dev'
+Requires-Dist: twine (>=4.0.2) ; extra == 'dev'
+
+# athleteprofiler
+
+create athlete profiles to compute and analyze physiological metrics.
+
+This package works great together with the [Fitness-Tracker](https://github.com/TheNewThinkTank/Fitness-Tracker)
