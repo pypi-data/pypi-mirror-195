@@ -1,0 +1,2 @@
+[console_scripts]
+energyplus_create_rmd = energyplus_rmd.runner:run
