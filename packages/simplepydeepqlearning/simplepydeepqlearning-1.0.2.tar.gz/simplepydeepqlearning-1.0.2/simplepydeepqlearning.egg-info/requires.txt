@@ -1,0 +1,3 @@
+numpy
+tqdm
+simplepyai>=2.0.1a0
