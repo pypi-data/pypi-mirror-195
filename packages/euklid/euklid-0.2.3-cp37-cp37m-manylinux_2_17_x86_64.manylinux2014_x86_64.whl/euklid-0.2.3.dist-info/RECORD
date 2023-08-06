@@ -1,0 +1,12 @@
+euklid.cpython-37m-x86_64-linux-gnu.so,sha256=6oAGyg8CdgC7BtIJfvKZcCMvinfcUutJ_dk6hfLKXqs,1061537
+euklid-0.2.3.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+euklid-0.2.3.dist-info/LICENSE,sha256=uJL2YTb83V9LYjIsSmskWzBz8XJ8lxIDrgG9k2gAmuY,1065
+euklid-0.2.3.dist-info/RECORD,,
+euklid-0.2.3.dist-info/WHEEL,sha256=5qaUL7R7UuAgTpV1hnYjoipMHezG5YJtRxtV3_rU2Ew,150
+euklid-0.2.3.dist-info/METADATA,sha256=VXcJANN1ikS2pyqRwUP4XE-uNgDPvgEEOpLODcu6954,753
+euklid.libs/libgomp-a34b3233.so.1.0.0,sha256=On6uznIxkRvi-7Gz58tMtcLg-E4MK7c3OUcrWh_uyME,168193
+euklid-stubs/spline.pyi,sha256=LrtYC5josFSn-YbpbM3Uhm4x0b8kOCu5WIRgHnBXsgc,6399
+euklid-stubs/plane.pyi,sha256=flY9vHwVOC5ylKj86LKO_oqWfwAbpypGf-DF41JEApI,755
+euklid-stubs/__init__.pyi,sha256=V6atePCKbm_G97pg4JDfgQlYMwfADZLZt3FlqUK4VVQ,83
+euklid-stubs/mesh.pyi,sha256=mZA3zGgcnSeTs9EANDBeGmZHfk1ouBJ9S9DmopAXb5I,152
+euklid-stubs/vector.pyi,sha256=9IuGg9K8QcqgBnSq9Hn8XJUbGR7u5xHwHHng3md4DaM,10444
