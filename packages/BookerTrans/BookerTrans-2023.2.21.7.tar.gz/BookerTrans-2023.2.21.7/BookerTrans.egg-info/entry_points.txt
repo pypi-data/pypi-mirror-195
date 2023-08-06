@@ -1,0 +1,4 @@
+[console_scripts]
+BookerTrans = BookerTrans.__main__:main
+btrans = BookerTrans.__main__:main
+
