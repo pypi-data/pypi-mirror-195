@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: delameta_response_query_new
+Version: 0.0.2
+Summary: Testting For Response New
+Author-email: Arief Prabowo <ariefprabowosheldom@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
