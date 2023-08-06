@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+src/epic.py
+src/epic_by_tom_tkacz.egg-info/PKG-INFO
+src/epic_by_tom_tkacz.egg-info/SOURCES.txt
+src/epic_by_tom_tkacz.egg-info/dependency_links.txt
+src/epic_by_tom_tkacz.egg-info/requires.txt
+src/epic_by_tom_tkacz.egg-info/top_level.txt
