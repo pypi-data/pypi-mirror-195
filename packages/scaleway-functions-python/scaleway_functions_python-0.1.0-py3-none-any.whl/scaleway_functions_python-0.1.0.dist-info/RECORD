@@ -1,0 +1,14 @@
+CHANGELOG.md,sha256=3mrwiaTVjf5MS8hvloYu3lMhp__J_PUyRy-YKJGfY5g,363
+scaleway_functions_python/__init__.py,sha256=UuZs3oGXLG8LgPY4yVOZNWdOTFseXAkWhwqH3ZNgApA,119
+scaleway_functions_python/framework/__init__.py,sha256=mtlGj73qocV_kxOU3KWo_Fgj_XzN5obBOON21GN0Rz0,23
+scaleway_functions_python/framework/v1/__init__.py,sha256=wx1-jifHaTYSIGT9Nuu5LK3wNZ4q3FqaH23LfoE6NSY,29
+scaleway_functions_python/framework/v1/hints.py,sha256=BPl5HJ9glIywLxc91OnUzYOFMuBXokRVG9gSBZpVXvM,1370
+scaleway_functions_python/local/__init__.py,sha256=yCBcyoHpf8UBQdmm-S9NjUWCKB2jcNddguMQmoeKADo,52
+scaleway_functions_python/local/context.py,sha256=HpiQM8-DhdBJCY2wH5RQ3hFcUKsClLnmKDWLJkDHl9I,341
+scaleway_functions_python/local/event.py,sha256=KosI3ljZomf56EhH5jxQgqNuQdQU-IBw1rJVfWDG2Cs,1421
+scaleway_functions_python/local/infra.py,sha256=luKCs-1_TEQOZc8llIg8x66I2ChQ2Igqs-sk24LNlnQ,1281
+scaleway_functions_python/local/serving.py,sha256=Kj-Fl2klkavnIavF-i7qQSYKbRNywwUhJYV_m-CBVHc,6104
+scaleway_functions_python-0.1.0.dist-info/LICENSE,sha256=v8Al86Y3zPNsW806YC_cYXSDHfALjvnN-pdLmkw-EsU,1065
+scaleway_functions_python-0.1.0.dist-info/METADATA,sha256=ZIYCXyU8P6ETUcRFEvAQlX-dJkm3A4XNgaLuNh4l_xk,5815
+scaleway_functions_python-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+scaleway_functions_python-0.1.0.dist-info/RECORD,,
