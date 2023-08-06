@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tspnoq
+Version: 0.0.6
+Summary: Travelling salesman problem
+Home-page: UNKNOWN
+Author: GeoMak
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: mip
+Requires-Dist: geopy
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: networkx
+
+UNKNOWN
+
+
