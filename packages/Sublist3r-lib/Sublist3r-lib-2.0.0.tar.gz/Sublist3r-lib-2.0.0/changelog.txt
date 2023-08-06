@@ -1,0 +1,17 @@
+version 2.0.0
+
+Fixed:
+    - NetcraftEnum
+    - DNSdumpster
+    - CrtSearch
+
+Removed:
+    - PassiveDNS (Reason: Connection timeout)
+    - ThreatCrowd (Reason: SSL issue)
+    - Virustotal (Reason: it requires an API key)
+
+Remained unfixed:
+    - BaiduEnum
+    - YahooEnum
+    - GoogleEnum
+    - BingEnum

@@ -1,0 +1,2 @@
+include LICENSE README.md changelog.txt
+include subbrute/*.txt
