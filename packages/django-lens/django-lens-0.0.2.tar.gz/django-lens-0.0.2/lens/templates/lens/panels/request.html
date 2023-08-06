@@ -1,0 +1,49 @@
+
+<div id="requestTab" class="bg-white shadow-lg rounded overflow-hidden my-4">
+    <!-- tab menu -->
+    <div class="flex bg-green-800 text-white font-semibold">
+        {% for tab in tabs %}
+            <a 
+                href="{% url 'lens:trace_detail' trace.request_id %}?tab={{ tab.name }}"
+                class="px-6 py-3 border-b-4 hover:border-white transition hidden md:inline {% if request.GET.tab|default:'response' == tab.name %} border-white {% else %} border-green-800 {% endif %}"
+                hx-get="{% url 'lens:trace_detail' trace.request_id %}?tab={{ tab.name }}"
+                hx-target="#requestTab"
+                hx-swap="outerHTML"
+                hx-push-url="true">
+                {{ tab.label }}
+            </a>
+        {% endfor %}
+
+        <select
+            class="md:hidden mx-4 py-3 text-white bg-green-800 focus:outline-none w-full"
+            name="tab"
+            hx-get="{% url 'lens:trace_detail' trace.request_id %}"
+            hx-target="#requestTab"
+            hx-swap="outerHTML"
+            hx-push-url="true">
+        {% for tab in tabs %}
+            <option value="{{ tab.name }}" {% if request.GET.tab == tab.name %}selected{% endif %}>{{ tab.label }}</option>
+        {% endfor %}
+        </select>
+    </div>
+    <!-- tab contents -->
+    <div class="bg-white min-h-96">
+        {% if not request.GET.tab or request.GET.tab == 'response' %}
+            {% include 'lens/panels/response_data.html' %}
+        {% elif request.GET.tab == 'payload' %}
+            {% include 'lens/panels/request_payload.html' %}
+        {% elif request.GET.tab == 'request_headers' %}
+            {% include "lens/components/headers.html" with headers=trace.data.request_headers %}
+        {% elif request.GET.tab == 'response_headers' %}
+            {% include "lens/components/headers.html" with headers=trace.data.response_headers %}
+        {% elif request.GET.tab == 'sql_queries' %}
+            {% include "lens/panels/sql.html" with trace=trace only %}
+        {% elif request.GET.tab == 'print_log' %}
+            {% include "lens/panels/print.html" %}
+        {% elif request.GET.tab == 'http_requests' %}
+            {% include "lens/panels/client_request.html" with trace=trace only %}
+        {% else %}
+            {% include 'lens/panels/response_data.html' %}
+        {% endif %}
+    </div>
+</div>

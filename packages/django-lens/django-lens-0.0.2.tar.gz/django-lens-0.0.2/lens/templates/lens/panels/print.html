@@ -1,0 +1,5 @@
+{% if trace.print_traces.exists %}
+    {% include 'lens/components/codeblock.html' with code=trace.print_trace_values only %}
+{% else %}
+    {% include 'lens/components/empty_trace.html' with title="No traces found" subtitle="Calls to the <code>print()</code> function are displayed here." only %}
+{% endif %}

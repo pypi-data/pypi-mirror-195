@@ -1,0 +1,27 @@
+{% extends "lens/base.html" %}
+
+{% block head:title %}Requests{% endblock %}
+
+{% block content %}
+<div class="shadow-lg bg-white rounded">
+    <div class="bg-green-800 text-white p-3 rounded-t flex flex-row font-semibold">
+        Requests
+    </div>
+    <div class="hidden md:flex flex-row font-semibold bg-gray-100 px-3 py-3 text-sm">
+        <div class="w-1/12">Method</div>
+        <div class="w-8/12">Path</div>
+        <div class="w-1/12">Status</div>
+        <div class="w-2/12">Time</div>
+    </div>
+    {% if traces.exists %}
+    {% include 'lens/components/trace_list.html' %}
+    {% else %}
+        <div class="h-96 p-3 rounded flex items-center justify-center bg-white shadow-lg">
+            <div class="flex flex-col text-center text-gray-500">
+                <h2 class="text-2xl font-semibold">Requests will appear here</h2>
+                <p class="mt-2">Go, play with your webapp and perform some requests!</p>
+            </div>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}
