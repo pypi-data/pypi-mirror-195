@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: asivaflow
+Version: 0.1
+Summary: Data Reduction Pipeline
+Home-page: UNKNOWN
+Author: P. Saleh & T. Singh
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: astroalign
+Requires-Dist: astropy
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyraf
+
+UNKNOWN
+
