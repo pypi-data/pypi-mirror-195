@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+px_settings/__init__.py
+px_settings/factory.py
+px_settings/merger.py
+px_settings/types.py
+px_settings/updator.py
+px_settings.egg-info/PKG-INFO
+px_settings.egg-info/SOURCES.txt
+px_settings.egg-info/dependency_links.txt
+px_settings.egg-info/requires.txt
+px_settings.egg-info/top_level.txt
+px_settings/contrib/__init__.py
+px_settings/contrib/django.py
