@@ -1,0 +1,4 @@
+[console_scripts]
+CDNDrive = CDNDrive.__main__:main
+cdrive = CDNDrive.__main__:main
+
