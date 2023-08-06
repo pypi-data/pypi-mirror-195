@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: mintrans
+Version: 1.0.0
+Summary: Mintrans is a free API wrapper that utilizes Bing Translator for translation purposes.
+Home-page: https://github.com/DedInc/mintrans
+Author: Maehdakvan
+Author-email: visitanimation@google.com
+Project-URL: Bug Tracker, https://github.com/DedInc/mintrans/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+<h1 align="center">Mintrans is a free API wrapper that utilizes Bing Translator for translation purposes.</h1>
+
+<br>
+
+<h1 align="center"> -How to use- </h1>
+
+```python
+from mintrans import BingTranslator
+
+text = 'Hello World!'
+from_lang = 'en'
+to_lang = 'de'
+
+translator = BingTranslator()
+translation = translator.translate(text, from_lang, to_lang)
+print(translation)
+```
