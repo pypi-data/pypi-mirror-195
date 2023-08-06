@@ -1,0 +1,8 @@
+eeg_networks/__init__.py,sha256=3WjhMlyxNFh-tYX8V2IraFaI_eiygXEsEb0iZOxPYlE,241
+eeg_networks/dataset.py,sha256=l0EXgr4TThXFd8xZnb6QoSNbQchP7bV4TDrtbAUNP3Y,1215
+eeg_networks/nets/__init__.py,sha256=-8dTcpAp6LX-Eo_e2B3mF7bjgbZ1yKsvALVDRvnX80g,217
+eeg_networks/nets/eeg_inception.py,sha256=0IAtlYGVY2tJqOcnPzdgH8obkp8vegch8NXdpXXr6NY,5003
+eeg_networks/nets/eeg_lstm.py,sha256=5a26CNDE2gTK5000DOdRzpSSqYBkclcO6MidA64qn-4,2671
+EEGNetworks-0.1.1.dist-info/WHEEL,sha256=JtIceljpZF_3FlF7JEESqvYUELdenaIGNR7wSL2mRl0,87
+EEGNetworks-0.1.1.dist-info/METADATA,sha256=aQDPn3p4_AuaHPMWQNglx50TKTaKkamkh0NSZulE_Q8,321
+EEGNetworks-0.1.1.dist-info/RECORD,,
