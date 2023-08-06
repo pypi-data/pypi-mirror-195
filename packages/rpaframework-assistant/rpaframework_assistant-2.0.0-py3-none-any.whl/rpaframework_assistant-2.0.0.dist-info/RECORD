@@ -1,0 +1,10 @@
+RPA/Assistant/__init__.py,sha256=9nCIDXgdz1WiFcXFTqJaOYwtVAjhoKwye9U629As05Y,94
+RPA/Assistant/background_flet.py,sha256=hdYuKWVfWdB8OBeAyfA-F1NtbSyZv8GeEghGdBk7iHs,2579
+RPA/Assistant/flet_client.py,sha256=xI5knLrdIykMhzV9uim2Pwgx1St8Fm31V_5DpGdJOZs,6858
+RPA/Assistant/library.py,sha256=iLKsKKs5y8B4ZQlulV5Y16oQde30gCaARRBxfPNo9dw,42374
+RPA/Assistant/types.py,sha256=1oG4sFuxygCXYBFK9X6mcdA8A18S7NwkoIJoGGS4ODY,1176
+RPA/Assistant/utils.py,sha256=lwufnDEjVctT5mZCm3jklDzlq7aZ4jilc0YeRy0Jqbc,1762
+rpaframework_assistant-2.0.0.dist-info/LICENSE,sha256=DREwTEnlFQcHakxEJgQTR6OTYZd5PivKSDAoqzsdJLc,11358
+rpaframework_assistant-2.0.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+rpaframework_assistant-2.0.0.dist-info/METADATA,sha256=SotboCWQ-hR_Tdu0pFl4P7pL50abQnfpmuXOGIiJBhY,1807
+rpaframework_assistant-2.0.0.dist-info/RECORD,,
