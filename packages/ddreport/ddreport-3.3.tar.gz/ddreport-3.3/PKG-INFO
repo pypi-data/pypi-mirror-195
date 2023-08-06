@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ddreport
+Version: 3.3
+Summary: pytest测试报告
+Home-page: https://gitee.com/duanliangcong/dlc_pytest-report.git
+Author: duanliangcong
+Author-email: 137562703@qq.com
+License: MIT Licence
+Keywords: pip,pytest,testReport
+Platform: any
+
+优化在测试报告中使用字符串形式展示字段的原本类型
+
