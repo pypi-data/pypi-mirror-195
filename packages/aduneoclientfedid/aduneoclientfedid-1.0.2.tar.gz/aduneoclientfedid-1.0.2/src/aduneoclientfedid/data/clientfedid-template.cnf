@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "key": "fedclient.key"
+  },
+  "server": {
+    "host": "localhost",
+    "port": "443",
+    "ssl": "on",
+    "ssl_key_file": "_localhost.key",
+    "ssl_cert_file": "_localhost.crt",
+    "ssl_generate_keys": "on"
+  },
+  "preferences": {
+    "logging": {
+      "handler": [
+        "file",
+        "console",
+        "web_console"
+      ]
+    },
+    "open_webconsole": "on",
+    "clipboard": {
+      "encrypt_clipboard": "on",
+      "remember_secrets": "off"
+    }
+  },
+  "oidc_clients": {
+  },
+  "saml_clients": {
+  },
+  "oauth_clients": {
+  }
+}
