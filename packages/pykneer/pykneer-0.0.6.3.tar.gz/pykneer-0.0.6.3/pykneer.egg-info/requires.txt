@@ -1,0 +1,9 @@
+numpy>=1.15
+pandas>=0.23
+SimpleITK>=1.1
+matplotlib>=2.2
+scipy>=1.1
+scikit-image>=0.14
+watermark>=1.7
+itkwidgets>=0.15
+itk>=5.0
