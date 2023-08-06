@@ -1,0 +1,1 @@
+"""Generest CLI sub-package."""
