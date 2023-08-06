@@ -1,0 +1,25 @@
+$schema: http://dummy.test/schema/Course
+api_version:
+- 0
+- 0
+course:
+    etag: 23dd3b8d02e0c32169fc09b40d418e499e8ac72f
+    lessons: {}
+    long_description: ''
+    sessions:
+    -   materials: []
+        pages:
+            back:
+                content: ''
+                url: http://dummy.test/model/web/SessionPage/?course_slug=courses/normal-course&page_slug=back&session_slug=normal-lesson
+            front:
+                content: ''
+                url: http://dummy.test/model/web/SessionPage/?course_slug=courses/normal-course&page_slug=front&session_slug=normal-lesson
+        slug: normal-lesson
+        source_file: courses/normal-course/info.yml
+        title: A normal lesson
+        url: http://dummy.test/model/web/Session/?course_slug=courses/normal-course&session_slug=normal-lesson
+    source_file: courses/normal-course/info.yml
+    title: A plain vanilla course
+    url: http://dummy.test/model/web/Course/?course_slug=courses/normal-course
+    vars: {}
