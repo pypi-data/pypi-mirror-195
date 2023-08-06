@@ -1,0 +1,281 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Introduction &mdash; mujpy.mujpy 1.05 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="Installation.html" />
+    <link rel="prev" title="Welcome to mujpy’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> mujpy.mujpy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.05
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Reference.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Developer.html">Developer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Philostory.html">Philosophy &amp; History of MuSR code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Source.html">Source documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">mujpy.mujpy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Introduction</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Introduction.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduction">
+<span id="intro"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>Welcome to mujpy v.2.7.3, the <a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html">jupyterlab</a>  notebook interface for muon spin spectroscopy analysis.
+This suite is based loosely on the general layout of the Matlab <a class="reference external" href="http://www.fis.unipr.it/~derenzi/dispense/pmwiki.php?n=MuSR.Mulab">mulab</a> interface and on contamination of ideas with <a class="reference external" href="http://lmu.web.psi.ch/musrfit/technical/main.html">musrfit</a> by Andreas Suter.</p>
+<p>Mujpy has just been refactored in version 2.0. As of v. 2.7.3 it comes with:</p>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="first docutils">
+<dt>a number of “Tst_mrun…” jupyter notebook examples that can be used as templates for existing categories of fits</dt>
+<dd><ul class="first last">
+<li>TF <span class="math notranslate nohighlight">\(\alpha\)</span> calibration on single run</li>
+<li>fit on a single run</li>
+<li>sequential fits on a suite of runs</li>
+<li>sequential fits on a single run, distinct groups of detectors</li>
+<li>global fit on a single run, distinct groups of detectors</li>
+<li>sequential fits on multiple runs</li>
+<li>global fit on multiple runs, single group of detectors</li>
+<li>yet to come global fit on multiple runs, multiple detectors</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+<p>It comes with a Graphical User Interface (gui), or Dashboard, mimicking and extending mulab, meant to be intuitive for the experienced MuSR user.</p>
+<blockquote>
+<div><ul class="simple">
+<li>a smaller number of MuDash jupyter notebook examples to start the gui</li>
+<li>the Dashboard features unobtrusive tiptools: hovering with the mouse overt the descriptive text or the buttons additional instructions appear.</li>
+</ul>
+</div></blockquote>
+<img alt="_images/setup.png" src="_images/setup.png" />
+<p>You must be familiar with standard MuSR concepts such as the <span class="math notranslate nohighlight">\(\alpha\)</span> calibration factor, or the muon asymmetry.</p>
+<p>Refer to a muon primer, such as <a class="reference internal" href="#blundell" id="id1">[Blundell]</a>, also at <a class="reference external" href="https://arxiv.org/abs/cond-mat/0207699">arXiv</a> or to a textbook, like <a class="reference internal" href="#bdlp" id="id2">[BDLP]</a> or <a class="reference internal" href="#yaouanc" id="id3">[Yaouanc]</a> for this purpose.</p>
+<p>Caution: tutorial for v. 2.7.3 is <em>work-in-progress</em>. The example notebooks themselved clarify the way to use mujpy and it is briefly commented in <a class="reference internal" href="Reference.html#reference"><span class="std std-ref">Reference</span></a>.</p>
+<p>You can find more detailed description of the different mujpy methods in the <a class="reference internal" href="Reference.html#reference"><span class="std std-ref">Reference</span></a>.</p>
+<table class="docutils citation" frame="void" id="bdlp" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[BDLP]</a></td><td>S.J. Blundell, R. De Renzi, T. Lancaster and F. Pratt, Muon spin spectroscopy, OUP 2021</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="blundell" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[Blundell]</a></td><td>S.J. Blundell, Contemporary Physics 40, 175-192 (1999)</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="yaouanc" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[Yaouanc]</a></td><td><ol class="first last upperalpha simple">
+<li>Yaouanc and P. Dalmas de Reotier, MUON SPIN ROTATION, RELAXATION and RESONANCE, Oxford University Press, 2011</li>
+</ol>
+</td></tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to mujpy’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2017, R. De Renzi
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

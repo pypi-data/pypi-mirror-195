@@ -1,0 +1,288 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Programmatic &mdash; mujpy 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="mujpy 0.1 documentation" href="index.html"/>
+        <link rel="prev" title="Source documentation" href="Source.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> mujpy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Reference.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Source.html">Source documentation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Programmatic</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#global-fit">Global Fit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#loadmodel">loadmodel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#global-vs-suite-fits">Global vs suite fits</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fit">fit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#checkvalidmodel">checkvalidmodel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#addcomponent">addcomponent</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">mujpy</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Programmatic</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Programmatic.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="programmatic">
+<span id="id1"></span><h1>Programmatic<a class="headerlink" href="#programmatic" title="Permalink to this headline">¶</a></h1>
+<p>This is the description of the logic behind parts of mujpy. It is the design stage (not yet implemented) and it is not complete.</p>
+<div class="section" id="global-fit">
+<h2>Global Fit<a class="headerlink" href="#global-fit" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="loadmodel">
+<h3>loadmodel<a class="headerlink" href="#loadmodel" title="Permalink to this headline">¶</a></h3>
+<p>Extends model naming convention. The basic model name is made of two-letter components, chosen among available components
+by means of the <a class="reference internal" href="#fit">fit</a> internal method <a href="#id2"><span class="problematic" id="id3">`_available_components_`_</span></a>, (e.g. ‘mgbl’) and it produces the usual component parameters dashboard.</p>
+<p>In the global-enabled version the first two two-character positions in the name may be occupied by ‘gX’ or ‘lX’ where X is a digit, e.g. ‘g2l1mgbl’.</p>
+<ul class="simple">
+<li>‘gX’ means X external parameters. It will produce a separate GUI line where as many parameters can be defined (name and guess value). They are variable by default and have step size 1% of the guess value.</li>
+<li>‘lX’ means X local fixed-value parameters from a small set of constants, extracted from the file headers (see below). It will produce an external widget where these parameters may be selected by checkbox.</li>
+</ul>
+<p>It produces an external parameter one-line box, the dashboard, and a final local parameter one-line box. All parameters receive a conventional progressive number starting from 0.</p>
+<p>External parameters may be fitted to run dipendent values in a suite of run fits or else they may be global parameters in a global fit. They cannot be local parameters in a global fit. Each parameter will provide two text input areas in the line above the dashboard.</p>
+<p>All component parameters appear in the dashboard below, e.g. ‘mgbl’ has 4 component parameters for component ‘mg’ (asymmetry, field, phase, Gauss rate) and 2 component parameters for component ‘bl’ (asymmetry and Lorentz rate). They may be locally variable, global, fixed or determined by a component parameter function. Other component parameters may appear in these functions by the conventional symbol ‘p[n]’, which refers to component paramenter ‘n’ according to the conventional numbering of the dashboard.</p>
+<p>A Global checkbox appears at the top right of the component dashboard. If the Global checkbox is ticked and global parameters exist the fit is global. If the Global checkbox is not ticked a succession of single run fits is performed on the suite.</p>
+<p>Local fixed-value parameters have a conventional number and a conventional uppercase name: field (B), orientation (THETA) and temperature (T) from title header of psi bulkmusr files, plus mean diffuser and sample temperatures (TD,TS) from the same, plus (X) a free variable, defined by input or file, for a total of six. If a checkbox is selected the dashboard will update These are NOT minuit parameters, but may appear by their dashboard number n (as ‘p[n]’) in component parameter functions.</p>
+<p>The previous example, ‘g2l1mgbl’ means therefore two global parameters (e.g. a total asymmetry ‘A0’ and an activation temperature ‘TA’), one local fixed parameter to be selected, plus two components with additional six component parameters.</p>
+<p>Locally variable component parameter names are given a suffix corresponding to the run number and each gives rise to as many free minuit parameters as the number of runs in the run suite. Global component parameters instead give rise to a single free minuit parameter whose value is shared by all runs.</p>
+<p>The model name is written in the top space, on the right of the logo on the same line as run number and run title. The rest of the data refer to the first run in the suite, which is the prototype fit for the model.</p>
+<p>The symbol list after the guess value (‘~’ for variable, ‘!’ for fixed, ‘=’ for function, ‘l’ for variable local parameters, with listed guess values) slightly changes meaning when Global is ticked: ‘~’ means global parmeter, ‘l’ means local.</p>
+</div>
+<div class="section" id="global-vs-suite-fits">
+<h3>Global vs suite fits<a class="headerlink" href="#global-vs-suite-fits" title="Permalink to this headline">¶</a></h3>
+<hr class="docutils" />
+<p>self._global_ = True indicates that the fit is a global fit, i.e. there are global variables declared, either global parameters of global component parameters  AND the global fit checkbox is ticked.</p>
+<p>Need to modify</p>
+</div>
+<div class="section" id="fit">
+<h3>fit<a class="headerlink" href="#fit" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="checkvalidmodel">
+<h3>checkvalidmodel<a class="headerlink" href="#checkvalidmodel" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="addcomponent">
+<h3>addcomponent<a class="headerlink" href="#addcomponent" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="Source.html" class="btn btn-neutral" title="Source documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, R. De Renzi.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

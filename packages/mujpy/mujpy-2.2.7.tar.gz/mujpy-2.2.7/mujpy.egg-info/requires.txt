@@ -1,0 +1,10 @@
+NeXus>=4.4.1
+iminuit>=2.17
+jupyterlabipywidgets
+matplotlib>=2.0
+munexus>=0.1
+musr2py>=0.0.2
+nexusformat>=0.5.3
+numpy
+python-nexus>=2.0.1
+scipy

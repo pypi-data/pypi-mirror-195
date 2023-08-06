@@ -1,0 +1,68 @@
+.. _programmatic:
+
+++++++++++++
+Programmatic
+++++++++++++
+
+This is the description of the logic behind parts of mujpy. It is the design stage (not yet implemented) and it is not complete.
+
+----------
+Global Fit
+----------
+
+loadmodel
+---------
+Extends model naming convention. The basic model name is made of two-letter components, chosen among available components
+by means of the `fit`_ internal method `_available_components_`_, (e.g. 'mgbl') and it produces the usual component parameters dashboard.
+
+In the global-enabled version the first two two-character positions in the name may be occupied by 'gX' or 'lX' where X is a digit, e.g. 'g2l1mgbl'.
+
+* 'gX' means X external parameters. It will produce a separate GUI line where as many parameters can be defined (name and guess value). They are variable by default and have step size 1% of the guess value.
+* 'lX' means X local fixed-value parameters from a small set of constants, extracted from the file headers (see below). It will produce an external widget where these parameters may be selected by checkbox. 
+
+It produces an external parameter one-line box, the dashboard, and a final local parameter one-line box. All parameters receive a conventional progressive number starting from 0.
+
+External parameters may be fitted to run dipendent values in a suite of run fits or else they may be global parameters in a global fit. They cannot be local parameters in a global fit. Each parameter will provide two text input areas in the line above the dashboard. 
+
+All component parameters appear in the dashboard below, e.g. 'mgbl' has 4 component parameters for component 'mg' (asymmetry, field, phase, Gauss rate) and 2 component parameters for component 'bl' (asymmetry and Lorentz rate). They may be locally variable, global, fixed or determined by a component parameter function. Other component parameters may appear in these functions by the conventional symbol 'p[n]', which refers to component paramenter 'n' according to the conventional numbering of the dashboard.
+
+A Global checkbox appears at the top right of the component dashboard. If the Global checkbox is ticked and global parameters exist the fit is global. If the Global checkbox is not ticked a succession of single run fits is performed on the suite.
+
+Local fixed-value parameters have a conventional number and a conventional uppercase name: field (B), orientation (THETA) and temperature (T) from title header of psi bulkmusr files, plus mean diffuser and sample temperatures (TD,TS) from the same, plus (X) a free variable, defined by input or file, for a total of six. If a checkbox is selected the dashboard will update These are NOT minuit parameters, but may appear by their dashboard number n (as 'p[n]') in component parameter functions.
+
+The previous example, 'g2l1mgbl' means therefore two global parameters (e.g. a total asymmetry 'A0' and an activation temperature 'TA'), one local fixed parameter to be selected, plus two components with additional six component parameters.
+
+Locally variable component parameter names are given a suffix corresponding to the run number and each gives rise to as many free minuit parameters as the number of runs in the run suite. Global component parameters instead give rise to a single free minuit parameter whose value is shared by all runs.
+
+The model name is written in the top space, on the right of the logo on the same line as run number and run title. The rest of the data refer to the first run in the suite, which is the prototype fit for the model.
+
+
+The symbol list after the guess value ('~' for variable, '!' for fixed, '=' for function, 'l' for variable local parameters, with listed guess values) slightly changes meaning when Global is ticked: '~' means global parmeter, 'l' means local.
+
+Global vs suite fits
+--------------------
+
+====
+ 
+
+self._global_ = True indicates that the fit is a global fit, i.e. there are global variables declared, either global parameters of global component parameters  AND the global fit checkbox is ticked.
+
+
+Need to modify
+
+fit
+---
+
+checkvalidmodel
+---------------
+
+addcomponent
+------------
+
+
+
+
+  
+
+
+

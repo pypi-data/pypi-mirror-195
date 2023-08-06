@@ -1,0 +1,652 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Reference &mdash; mujpy.mujpy 1.05 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Examples" href="Examples.html" />
+    <link rel="prev" title="Tutorial" href="Tutorial.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> mujpy.mujpy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.05
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tutorial.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#musuite">musuite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mufit">mufit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dashboard-json">Dashboard json</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mufitplot">mufitplot</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#mudash">mudash</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#output">Output</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#header">Header</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#single-run-mode">single run mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#suite-mode">suite mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#suite">suite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setup">setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#muprompt">muprompt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#muedge">muedge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fit">fit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fit-model">fit_model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fit-dashboard">Fit Dashboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#component-list">Component list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#groups">groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#about">about</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#alpha">alpha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fft-checkbox">FFT checkbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#counter-inspection">Counter inspection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#graphic-zoom">graphic zoom</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Developer.html">Developer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Philostory.html">Philosophy &amp; History of MuSR code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Source.html">Source documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">mujpy.mujpy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Reference</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Reference.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="reference">
+<span id="id1"></span><h1>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h1>
+<p>This is the mujpy Reference Manual, v. 2.7.3.
+Any fit can be lauched also without Jupyterlab by means of the following classes:</p>
+<div class="section" id="musuite">
+<h2>musuite<a class="headerlink" href="#musuite" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mujpy.musuite</span> <span class="kn">import</span> <span class="n">suite</span>
+<span class="n">the_suite</span> <span class="o">=</span> <span class="n">suite</span><span class="p">(</span><span class="n">datafile</span><span class="p">,</span><span class="n">runlist</span><span class="p">,</span><span class="n">grp_calib</span><span class="p">,</span><span class="n">offset</span><span class="p">,</span><span class="n">startuppath</span><span class="p">,</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>where datafile is a string containing the path (see <a class="reference internal" href="#header">Header</a>), runlist is the list of run numbers in the suite of runs (see <a class="reference internal" href="#suite">suite</a>), grp_calib list of dictionaries (see <a class="reference internal" href="#groups">groups</a>), offset is a string containing an integer (see <a href="#id3"><span class="problematic" id="id4">`offset`_</span></a>), startuppath is a string containing the path where the log folders (named fit, csv, cache) will be written.
+This class performs the functions roughly described in <a class="reference internal" href="#suite">suite</a></p>
+</div>
+<div class="section" id="mufit">
+<h2>mufit<a class="headerlink" href="#mufit" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mujpy.mufit</span> <span class="kn">import</span> <span class="n">mufit</span>
+<span class="n">the_fit</span> <span class="o">=</span> <span class="n">mufit</span><span class="p">(</span><span class="n">suite</span><span class="p">,</span><span class="n">dashboard</span><span class="p">,</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>where suite is an instantiation of suite, e.g. the_suite in <a class="reference internal" href="#musuite">musuite</a>, dashboard is a string containing the full path to a dashbord json file (see <a class="reference internal" href="#dashboard-json">Dashboard json</a>, and kwargs are</p>
+<blockquote>
+<div><ul class="simple">
+<li>chain = False,  chain = True to use parameter values from previous run as guess for next</li>
+<li>dash = None, internal parameter, used by mudash to direct log output</li>
+<li>initialize_only = False, if mufit is used just to load parameters for a guess plot</li>
+<li>grad = False, if True and the fit is global then gradients of the chi_square function are computed analytically. This option is not recommended, convergence is 1.5 times slower and it requires much closer guess to the minimum</li>
+<li>scan = None, tells mufit to order csv file in increasing order of run number, scan = ‘T’ increasing temperatures, ‘B’ increasing fields.</li>
+</ul>
+</div></blockquote>
+<p>This class performs a single fit, a sequential multigroup or suite fit, a global multigroup or a global suite fit (see <a class="reference internal" href="#fit">fit</a>).</p>
+<p>A global fit minimizes a single chi square, that is the sum of the chi squares of all data sets. The class automatically identifies the type of fit on the basis of the dashboard json file:</p>
+<blockquote>
+<div><ul class="simple">
+<li><em>A1</em>, single run, single group fit; switches automatically to calibration mode if the first component is ‘al’</li>
+<li><em>A20</em>, single run, sequential multi group fit; switches automatically to calibration mode if the first component is ‘al’</li>
+<li><em>A21</em>, single run, global multi group fit; switches automatically to calibration mode if the first component is ‘al’</li>
+<li><em>B1</em>, sequential multirun, single group fit</li>
+<li><em>B20</em>, sequential multirun, sequential multigroup fit</li>
+<li><em>B21</em>, sequential multirun, global multigroup fit</li>
+<li><em>C1</em>, multirun single group global fit</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="dashboard-json">
+<h2>Dashboard json<a class="headerlink" href="#dashboard-json" title="Permalink to this headline">¶</a></h2>
+<p>This json file contains the full description of any legal fit model. See templates for examples. The file name starts with the model name (see <a class="reference internal" href="#fit-model">fit_model</a>) and its file spec is .json.
+It resembles a python dictionary, containing the following items:</p>
+<blockquote>
+<div><ul class="simple">
+<li>“version”: “a string”,  see <a class="reference internal" href="#fit-model">fit_model</a></li>
+<li>“fit_range”: “0,20000,4”, see <a class="reference internal" href="#fit-model">fit_model</a></li>
+<li>“offset”: 20,  see <a class="reference internal" href="#fit-model">fit_model</a></li>
+<li>“userpardicts_guess”: [],  see <a class="reference internal" href="#fit-dashboard">fit dashboard</a></li>
+<li>“model_guess: [], see <a class="reference internal" href="#fit-dashboard">fit dashboard</a></li>
+</ul>
+</div></blockquote>
+<p>Experienced users can write the json file from scratch and run the fits with few command line instructions, but this mode is error prone. Jupyterlab contains a json editor that facilitates the task. However, the <a class="reference internal" href="#mudash">mudash</a> gui interface is provided to make this process more user friendly.</p>
+</div>
+<div class="section" id="mufitplot">
+<h2>mufitplot<a class="headerlink" href="#mufitplot" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mujpy.muplotfit</span> <span class="kn">import</span> <span class="n">muplotfit</span>
+<span class="n">the_plot</span> <span class="o">=</span> <span class="n">muplotfit</span><span class="p">(</span><span class="n">plot_range</span><span class="p">,</span><span class="n">the_fit</span><span class="p">,</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>where plot_range obeys the rules described in <a href="#id5"><span class="problematic" id="id6">`fit'_, the_fit is an instance of mufit, e.g. the_fit as in `mufit`_</span></a>, and kwardgs are</p>
+<blockquote>
+<div><ul class="simple">
+<li>guess = False, if True plot the guess parameter values</li>
+<li>rotating_frame_frequencyMHz = 0.0, to plot data in the rotating frame</li>
+<li>fft_range = None, to pass the frequency range for the FFT plot</li>
+<li>real=True, to produce an amplitude FFT plot</li>
+<li>fig_fit=None, to pass the handle of an existing fit figure</li>
+<li>fig_fft=None, to pass the handle of an existing FFT figure</li>
+</ul>
+</div></blockquote>
+<p>This class produces the (animation) plots</p>
+<div class="section" id="mudash">
+<h3>mudash<a class="headerlink" href="#mudash" title="Permalink to this headline">¶</a></h3>
+<p>This class produces the gui interface to mujpy.
+It is invoked from a jupyter notebook (just start one of the MuDash.ipynb templates).</p>
+<p>Here you find a not-so-quick reference for its widgets.
+Almost each of them has a tiptool:  additional instructions appear when hovering with the mouse over the descriptive text or the button.</p>
+<div class="section" id="output">
+<h4>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h4>
+<p>An output area is provided to the left of the gui: the live log from mudash goes there and it is added at the top while the text scrolls down.</p>
+<img alt="_images/Output.png" src="_images/Output.png" />
+<p>Errors (bugs?) should be intercepted and redirected to the Jupyter Log Console, which can be opened selecting View/Show Log Console in the top Jupiter tabs</p>
+<img alt="_images/JupyterTabs.png" src="_images/JupyterTabs.png" />
+<p>The Jupyter Log Console appears at the bottom</p>
+<img alt="_images/JupyterLogConsole.png" src="_images/JupyterLogConsole.png" />
+</div>
+<div class="section" id="header">
+<h4>Header<a class="headerlink" href="#header" title="Permalink to this headline">¶</a></h4>
+<p>The top part of the mujpy gui contains a logo together with the information on the loaded run (in <a class="reference internal" href="#single-run-mode">single run mode</a>) or the loaded <em>master run</em> (in the <a class="reference internal" href="#suite">suite</a> mode the master run is simply that whichi provides mujpy with the data path).</p>
+<img alt="_images/header.png" src="_images/header.png" />
+<p>The first line contains the run number, the run title, the total counts, the total counts over the selected <a class="reference internal" href="#grouping">grouping</a> of detectors. These are just displays.</p>
+<p>The second line contains the path to the data file, which is a template for a suite of runs to be analysed in series. This is an editable Text: modify the path and hit Enter to load a new master data file. Max bins per detector and time resolution are Text displays.</p>
+<p>The third line contains start and stop time information, plus</p>
+<blockquote>
+<div><ul class="simple">
+<li><em>Run [run suite]</em>, a Text input for a list of comma separated run numbers. See <a class="reference internal" href="#suite">suite</a> below for its shorthand notation.</li>
+</ul>
+</div></blockquote>
+<p>Three last buttons load the previous [master] run, open a file selection gui in the same path, and load the next [master] run, respectively.</p>
+</div>
+</div>
+</div>
+<div class="section" id="single-run-mode">
+<h2>single run mode<a class="headerlink" href="#single-run-mode" title="Permalink to this headline">¶</a></h2>
+<p>Individual data set are fitted to models.</p>
+</div>
+<div class="section" id="suite-mode">
+<h2>suite mode<a class="headerlink" href="#suite-mode" title="Permalink to this headline">¶</a></h2>
+<p>Individual data set belonging to the loaded run suite are fitted to the model (defined in <a class="reference internal" href="#fit">fit</a>) either in sequence, or in a global fit.</p>
+</div>
+<div class="section" id="suite">
+<h2>suite<a class="headerlink" href="#suite" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>The musuite class is invoked to:</dt>
+<dd><ul class="first last simple">
+<li>load the runs;</li>
+<li>compute the asymmetries for the specified <a class="reference internal" href="#groups">groups</a> for all runs;</li>
+<li>generate a time array with <span class="math notranslate nohighlight">\(t_0=0\)</span>, obtained automatically upon loading by the fit described in the <a class="reference internal" href="#setup">setup</a> section;</li>
+<li>more complex syntax allows storing <em>suites</em> of runs, with combination of <em>,:+</em> (only one : allowed)<ul>
+<li><code class="docutils literal notranslate"><span class="pre">432,433</span></code> loads the <em>suite</em> of runs 432, 43</li>
+<li><code class="docutils literal notranslate"><span class="pre">432:434</span></code> loads the <em>suite</em> of runs 432, 433, 434</li>
+<li><code class="docutils literal notranslate"><span class="pre">432,433,</span> <span class="pre">435:437</span></code> loads the <em>suite</em> of runs 432, 433, 435, 436, 437</li>
+<li><code class="docutils literal notranslate"><span class="pre">432+433</span></code> loads the sum of these two runs as a single run, etc.</li>
+</ul>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="setup">
+<h2>setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<p>The setup fit identifies the <span class="math notranslate nohighlight">\(t_0=0\)</span> bin according to the data provenance.</p>
+<blockquote>
+<div><ul>
+<li><p class="first">PSI data fit the <em>prompt peak</em> of beam positrons that bypass the veto logic. The iminuit fit, minimizing the <span class="math notranslate nohighlight">\(\chi^2\)</span> of the initial data slice and the best fit class  <a class="reference internal" href="#muprompt">muprompt</a>, where</p>
+<blockquote>
+<div><ul class="simple">
+<li><em>prepeak</em>  and <em>postpeak</em> are the peak interval span (the number of bins) respectively before and after the maximum;</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">ISIS data fit the buildup of muon counts in the detectors of the pulsed instrument to  the best fit class <a class="reference internal" href="#muedge">muedge</a> (the integral of the convolution of the beam profile with the pion decay curve, calculated by Mathematica and checkd against data) where</p>
+<ul class="simple">
+<li><span class="math notranslate nohighlight">\(D,N\)</span> and <span class="math notranslate nohighlight">\(t_{00}\)</span> are the fitting parameters, the width of the ISIS pulse, the count rate normalizer and  the <span class="math notranslate nohighlight">\(t=0\)</span> position in the raw time array, respectively; in the edge function time <span class="math notranslate nohighlight">\(t_0 = - t_{00}+0.82\tau_\pi\)</span> is used.</li>
+</ul>
+<ul class="simple">
+<li><span class="math notranslate nohighlight">\(\tau_\mu\)</span> and <cite>:math:tau_pi</cite> are the muon and pion mean lifetimes.</li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="muprompt">
+<h2>muprompt<a class="headerlink" href="#muprompt" title="Permalink to this headline">¶</a></h2>
+<div class="math notranslate nohighlight">
+\[\frac {A_1} {\sqrt{2\pi\sigma}}  \exp\left[-\frac 1 2 \left(\frac{t-t_0} \sigma\right)^2\right] + A_0 +\frac {A_2} 2 \left[1+\mathrm{erf} \left(\frac{t-t_0} {\sqrt 2 \sigma}\right)\right]\]</div>
+</div>
+<div class="section" id="muedge">
+<h2>muedge<a class="headerlink" href="#muedge" title="Permalink to this headline">¶</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}\frac {6N} {D^3(t_m-t_p)e^{-\frac{(t+t_0+D/2)t_m
+         +(t+t_0+D/2)*t_p}{t_mt_p}}\\
+         \left[\left(2*e^{\frac{(t+t_0+D/2)t_m+Dt_p}{t_mt_p}}
+         t_m^2(-\frac D 2+t_m)+\\
+         2e^{\frac{Dt_m+(t+t0+D/2)t_p)}{tm*tp}}
+         t_p^2(-\frac D 2 +t_p)+\\
+         e{\frac{(t+t_0+D/2)(t_m+t_p)}{t_m*t_p}}(t_m-t_p)\left[t^2+t_0^2+2t_0(t-t_m-t_p)-2t(t_m+t_p)+\\\
+         2(-\frac{D^2} 8+t_m^2+t_mt_p+t_p^2)\right]\right)\left((t+t_0-\frac D 2)&gt;0\right)+\\
+         \left(2*e^{\frac {t+t_0+D/2}{t_p}}t_m^2(\frac D 2+t_m)-\\
+          2*e^{(\frac{t+t_0+D/2}t_m}t_p^2(D/2+t_p)-\\
+          \frac {e^{\frac{t+t_0+D/2}{t_m+t_p}}}{t_mt_p})(t_m-t_p)\\
+          \left(t*2+t_0^2+2t_0(t-t_m-t_p)-2t(t_m+t_p)+\
+          2(-\frac {D^2}8+t_m^2+t_mt_p+t_p^2)\right)\right)\\
+          \left((t+t_0+\frac D 2)&gt;0\right)\right]}\end{split}\]</div>
+<p>The lower part of the gui is divided in tabs:  <a class="reference internal" href="#fit">fit</a> (the main functions), <a class="reference internal" href="#groups">groups</a> (to change detector <a class="reference internal" href="#grouping">grouping</a>), <a class="reference internal" href="#about">about</a>.</p>
+</div>
+<div class="section" id="fit">
+<h2>fit<a class="headerlink" href="#fit" title="Permalink to this headline">¶</a></h2>
+<p>The fit tab selects the <a class="reference internal" href="#fit-model">fit_model</a> according to the following rules of the game</p>
+</div>
+<div class="section" id="fit-model">
+<h2>fit_model<a class="headerlink" href="#fit-model" title="Permalink to this headline">¶</a></h2>
+<p>We describe a single run, single group fit, for simplicity (the same applies to any sequential fit).</p>
+<p>A model is composed of predefined additive components, identified by a two-character code (see <a class="reference internal" href="#component-list">Component list</a>) and the model naming scheme is based on this code.</p>
+<p>A model made of, say, 3 components, <code class="docutils literal notranslate"><span class="pre">ab</span></code>,  <code class="docutils literal notranslate"><span class="pre">ab</span></code> and <code class="docutils literal notranslate"><span class="pre">de</span></code> will be called  <code class="docutils literal notranslate"><span class="pre">ababde</span></code>.</p>
+<p>The model name is added to the Fit tab label (here it is <code class="docutils literal notranslate"><span class="pre">mgmgmg</span></code>).</p>
+<img alt="_images/FitHeader.png" src="_images/FitHeader.png" />
+<p>The top fit header contains</p>
+<blockquote>
+<div><ul class="simple">
+<li>The <em>Fit</em> button launches the iminuit migrad minimization of the model from</li>
+<li><em>offset</em>, the first good bin, counting from the center prompt peak, over</li>
+<li>the <em>fit range</em>, with a <em>start, stop</em> and a <em>start,stop,pack</em> options, to define the interval and packing for the data minimization (<em>start</em> = k means that the fit starts from  bin <em>offset</em> + k). <strong>Notice</strong>: <em>in this way bins are zero-based (python convention)</em>.</li>
+<li>The <em>Plot</em> button produces a plot with either best fit or guess values over</li>
+<li>the <em>plot range</em> with a <em>start, stop</em> and a <em>start,stop,pack</em> options, or a <em>start,stop_early,pack_early,stop_late,pack_late</em> option that produces a double frame window, e.g with small packing at early times and large packing at late times (see also <a class="reference internal" href="#graphic-zoom">graphic zoom</a>);</li>
+<li>the <em>fit/guess</em> checkbox, to select plot of initial guess or fit result functions.</li>
+<li><em>version</em> Text (default is ‘1’), is a free tstring to distinguishes fits with the same model and, e.g. different constraints, or different run condtions. It is appended to log file names.</li>
+<li><em>new model</em> Text area, allows to start an empty new model from scratch: e.g. <code class="docutils literal notranslate"><span class="pre">mgmgbl</span></code> is a three component model,  <code class="docutils literal notranslate"><span class="pre">mg</span></code>, <code class="docutils literal notranslate"><span class="pre">mg</span></code>, <code class="docutils literal notranslate"><span class="pre">bl</span></code>.</li>
+<li>The <em>Load fit</em> button opens a GUI file selection of available (past) <code class="docutils literal notranslate"><span class="pre">json</span></code> fit files, duplicating the <a class="reference internal" href="#dashboard-json">Dashboard json</a> file content and adding one or more fit results items at the end. Loading one such file  reproduces the input for obtaining again the same fit. Alternatively, empty templates (e.g. more complex global fit ezamples) can be loaded by selecting the following Dropodown</li>
+<li>The <em>model</em> Dropdown, selects local best fit or empty templates from the distribution to the mudash gui inteface.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="fit-dashboard">
+<h2>Fit Dashboard<a class="headerlink" href="#fit-dashboard" title="Permalink to this headline">¶</a></h2>
+<p>The lower frame contains the fit components selected either by the <em>model</em> syntax or by loding a saved fit.</p>
+<img alt="_images/FitDashboardSingle.png" src="_images/FitDashboardSingle.png" />
+<p>This is a single run or a sequential fit and the top frame contains an Add Integer Text input to add a number of user defined parameters, whose presence tells mudash that the fit will be global. Do not do this initially.</p>
+<p>The lower frame is divided in components boxes, in a two-column display.</p>
+<p>The first row of each component column starts with a progressively numbered component label (python zero-based), a string tag to disambiguate identical components (e.g. a ‘Fast’ and a ‘SLow’ <code class="docutils literal notranslate"><span class="pre">mg</span></code>), the <a class="reference internal" href="#fft-checkbox"><span class="std std-ref">FFT checkbox</span></a>, to include or exclude this component from the model when producing the FFT of the residues, and a button to delete this component from the model.</p>
+<dl class="docutils">
+<dt>The other lines list the component parameters, one row in one column per parameter, each indentified by</dt>
+<dd><ul class="first last simple">
+<li>a standard immutable name,</li>
+<li>a dashboard index,</li>
+<li>a Text area for the starting guess value,</li>
+<li>a symbol dropdown:<ul>
+<li><em>~</em>    free minuit parameter,</li>
+<li><em>!</em>    fixed parameter</li>
+<li><em>=</em>    the function text area on the right is activated.</li>
+</ul>
+</li>
+<li>the function Text area, to input symple expressions, such as <code class="docutils literal notranslate"><span class="pre">p[0]</span></code>,  implying that the present parameter and parameter <code class="docutils literal notranslate"><span class="pre">0</span></code> share the same value. For instance two <em>ml</em> components in model <em>mlml</em> could share their phase parameters. More complex functions may be written, such as <code class="docutils literal notranslate"><span class="pre">p[2]-p[3]</span></code>, or <code class="docutils literal notranslate"><span class="pre">p[0]*exp(p[2]/p[3])</span></code>, etc. A few constants are defined: <span class="math notranslate nohighlight">\(\pi\)</span>, the muon gyromagnetic ratio, <span class="math notranslate nohighlight">\(\gamma_\mu\)</span>, the electron gyromagnetic ratio, <span class="math notranslate nohighlight">\(\gamma_e\)</span></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="component-list">
+<span id="static"></span><h2>Component list<a class="headerlink" href="#component-list" title="Permalink to this headline">¶</a></h2>
+<p>This is a list of predefined fit components. Adding new ones is straightforward and documentation on how to do this will come.</p>
+<p>The two-character codes are supposed to be evocative (?), though ultrashort. E.g. <em>ml</em> is a <em>muon</em> precession with a (partial) asymmetry <em>A</em>, a <em>B</em> local field value (in milliTesla), a phase <em>φ</em> (in degrees) and a <em>Lorentzian relaxation</em> <em>λ</em> (in inverse microseconds); A few constants are defined: <span class="math notranslate nohighlight">\(\pi\)</span>, the muon gyromagnetic ratio, <span class="math notranslate nohighlight">\(\gamma_\mu\)</span>, the electron gyromagnetic ratio, <span class="math notranslate nohighlight">\(\gamma_e\)</span></p>
+<ul class="simple">
+<li><strong>al</strong>, the ratio <span class="math notranslate nohighlight">\(\alpha\)</span> betwen the initial (unpolarized) muon decay count rates, <span class="math notranslate nohighlight">\(N_b\)</span> in Backward counters and  <span class="math notranslate nohighlight">\(N_f\)</span> in Forward counters.<ul>
+<li>ratio <span class="math notranslate nohighlight">\(\alpha\)</span></li>
+</ul>
+</li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\frac {N_b}{N_f}`,\]</div>
+<ul class="simple">
+<li><strong>bl</strong>, Lorentz decay:<ul>
+<li>asymmetry <span class="math notranslate nohighlight">\(A\)</span></li>
+<li>Lorentzian rate (<span class="math notranslate nohighlight">\(\mu s^{-1}\)</span>) <span class="math notranslate nohighlight">\(\lambda\)</span></li>
+</ul>
+</li>
+</ul>
+<div class="math notranslate nohighlight">
+\[A\exp(-\lambda t)\]</div>
+<ul class="simple">
+<li><strong>bg</strong>, Gauss decay:<ul>
+<li>asymmetry <span class="math notranslate nohighlight">\(A\)</span></li>
+<li>Gaussian rate (<span class="math notranslate nohighlight">\(\mu s^{-1}\)</span>) <span class="math notranslate nohighlight">\(\sigma\)</span></li>
+</ul>
+</li>
+</ul>
+<div class="math notranslate nohighlight">
+\[A\exp\left(-\frac {\sigma^2 t^2} 2\right)\]</div>
+<ul class="simple">
+<li><strong>bs</strong>, Stretched exponential decay:<ul>
+<li>asymmetry <span class="math notranslate nohighlight">\(A\)</span></li>
+<li>rate (<span class="math notranslate nohighlight">\(\mu s^{-1}\)</span>) <span class="math notranslate nohighlight">\(\lambda\)</span></li>
+<li>exponent beta <span class="math notranslate nohighlight">\(\beta\)</span></li>
+</ul>
+</li>
+</ul>
+<div class="math notranslate nohighlight">
+\[A \exp \left(-(\lambda t)^\beta \right)\]</div>
+<ul class="simple">
+<li><strong>ml</strong>, Lorentz decay cosine precession:<ul>
+<li>asymmetry <span class="math notranslate nohighlight">\(A\)</span></li>
+<li>field (mT) <span class="math notranslate nohighlight">\(B\)</span></li>
+<li>phase (degrees) <span class="math notranslate nohighlight">\(\phi\)</span></li>
+<li>Loentzian rate (<span class="math notranslate nohighlight">\(\mu s^{-1}\)</span>) <span class="math notranslate nohighlight">\(\lambda\)</span></li>
+</ul>
+</li>
+</ul>
+<div class="math notranslate nohighlight">
+\[A\cos(\gamma_\mu B t + \frac{2\pi}{360}\phi)\,\exp(-\lambda t )\]</div>
+<ul class="simple">
+<li><strong>mg</strong>, Gauss decay cosine precession:<ul>
+<li>asymmetry <span class="math notranslate nohighlight">\(A\)</span></li>
+<li>field (mT) <span class="math notranslate nohighlight">\(B\)</span></li>
+<li>phase (degrees) <span class="math notranslate nohighlight">\(\phi\)</span></li>
+<li>Gaussian rate (<span class="math notranslate nohighlight">\(\mu s^{-1}\)</span>) <span class="math notranslate nohighlight">\(\sigma\)</span></li>
+</ul>
+</li>
+</ul>
+<div class="math notranslate nohighlight">
+\[A\cos(\gamma_\mu B t + \frac{2\pi}{360}\phi)\,\exp\left(-\frac {\sigma^2 t^2} 2\right)\]</div>
+<ul class="simple">
+<li><strong>ms</strong>, Stretched exponential decay cosine precession:<ul>
+<li>asymmetry <span class="math notranslate nohighlight">\(A\)</span></li>
+<li>field (mT) <span class="math notranslate nohighlight">\(B\)</span></li>
+<li>phase (degrees) <span class="math notranslate nohighlight">\(\phi\)</span></li>
+<li>rate (<span class="math notranslate nohighlight">\(\mu s^{-1}\)</span>) <span class="math notranslate nohighlight">\(\Lambda\)</span></li>
+</ul>
+</li>
+</ul>
+<div class="math notranslate nohighlight">
+\[A\cos(\gamma_\mu B t +\frac{2\pi}{360}\phi)\,\exp \left(-(\Lambda t)^\beta \right)\]</div>
+<ul class="simple">
+<li><strong>jl</strong>, Lorentz decay Bessel precession<ul>
+<li>asymmetry <span class="math notranslate nohighlight">\(A\)</span></li>
+<li>field (mT) <span class="math notranslate nohighlight">\(B\)</span></li>
+<li>phase (degrees) <span class="math notranslate nohighlight">\(\phi\)</span></li>
+<li>Lorentzian rate (<span class="math notranslate nohighlight">\(\mu s^{-1}\)</span>) <span class="math notranslate nohighlight">\(\lambda\)</span></li>
+</ul>
+</li>
+</ul>
+<div class="math notranslate nohighlight">
+\[A j_0 (\gamma_\mu B t  +\frac{2\pi}{360}\phi)\,\exp\left(-\lambda t \right)\]</div>
+<ul class="simple">
+<li><strong>jg</strong>, Gauss decay Bessel precession<ul>
+<li>asymmetry <span class="math notranslate nohighlight">\(A\)</span></li>
+<li>field (mT) <span class="math notranslate nohighlight">\(B\)</span></li>
+<li>phase (degrees) <span class="math notranslate nohighlight">\(\phi\)</span></li>
+<li>Gaussian rate (<span class="math notranslate nohighlight">\(\mu s^{-1}\)</span>) <span class="math notranslate nohighlight">\(\sigma\)</span></li>
+</ul>
+</li>
+</ul>
+<div class="math notranslate nohighlight">
+\[A\cos(\gamma_\mu B t +\frac{2\pi}{360}\phi)\,\exp \left(-\frac{\sigma^2 t^2} 2 \right)\]</div>
+<ul class="simple">
+<li><strong>js</strong>, Stretched exponential decay Bessel precession:<ul>
+<li>asymmetry <span class="math notranslate nohighlight">\(A\)</span></li>
+<li>field (mT) <span class="math notranslate nohighlight">\(B\)</span></li>
+<li>phase (degrees) <span class="math notranslate nohighlight">\(\phi\)</span></li>
+<li>rate (<span class="math notranslate nohighlight">\(\mu s^{-1}\)</span>) <span class="math notranslate nohighlight">\(\Lambda\)</span></li>
+</ul>
+</li>
+</ul>
+<div class="math notranslate nohighlight">
+\[A j_0 (\gamma_\mu B t +\frac{2\pi}{360}\phi)\,\exp \left(-(\Lambda t)^\beta \right)\]</div>
+<ul class="simple">
+<li><strong>fm</strong>, FMuF coherent evolution:<ul>
+<li>asymmetry <span class="math notranslate nohighlight">\(A\)</span></li>
+<li>dipolar field (mT) <span class="math notranslate nohighlight">\(B_d\)</span></li>
+<li>Lorentzian rate (<span class="math notranslate nohighlight">\(\mu s^{-1}\)</span>) <span class="math notranslate nohighlight">\(\lambda\)</span></li>
+</ul>
+</li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\frac A 2 \,\exp(-\lambda\,t) \left[1+\frac 1 3 \cos \gamma_\mu B_d \sqrt{3}\, t +\left(1-\frac 1{\sqrt3}\right)  \cos \gamma_\mu B_d (3-\sqrt{3}) \,t+ \left(1+\frac 1 {\sqrt3}\right)  \cos \gamma_\mu B_d (3+\sqrt{3})\,t \right]\]</div>
+<ul class="simple">
+<li><strong>kg</strong>, Gauss Kubo-Toyabe: static and dynamic, in zero or longitudinal field by <a class="reference external" href="https://arxiv.org/abs/1404.1216">G. Allodi Phys Scr 89, 115201</a></li>
+</ul>
+</div>
+<div class="section" id="groups">
+<span id="grouping"></span><h2>groups<a class="headerlink" href="#groups" title="Permalink to this headline">¶</a></h2>
+<p>[This tab is not fully implemented and the easiest way to change groups is to duplicate the MuDash notebook and modify by hand the grp_calib list of dictionary in the cell before that invoking mudash]</p>
+<p>The groups tab displays and lets the user modify the list of dictionaries that define detector groups.</p>
+<p><em>Warning</em>: counter listing does not follow the zero-based pythonic iterator rule, i.e. the first detector is 1.</p>
+<p>Each dictionary represents a single grouping,  the ‘Forward’ set of counters, the ‘Backward’ set of counters, plus</p>
+</div>
+<div class="section" id="about">
+<h2>about<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h2>
+<p>A few infos and acknowledgements</p>
+</div>
+<div class="section" id="alpha">
+<h2>alpha<a class="headerlink" href="#alpha" title="Permalink to this headline">¶</a></h2>
+<p>the ratio of count rates <span class="math notranslate nohighlight">\(\alpha = N_f/N_b\)</span> between initial (unpolarized) count rates for Backward and Forward grouping.</p>
+</div>
+<div class="section" id="fft-checkbox">
+<span id="id2"></span><h2>FFT checkbox<a class="headerlink" href="#fft-checkbox" title="Permalink to this headline">¶</a></h2>
+<p>[Sorry, FFT is presently missing in v.2.7.3]</p>
+<p>Selects subtracted components for the FFT. E.g. assume best fit model <code class="docutils literal notranslate"><span class="pre">blmgmg</span></code> with the first two components checked and the last unchecked. The FFT of Residues will show the Fast Fourier Transform of the data <em>minus</em> the model function for the first two components.</p>
+</div>
+<div class="section" id="counter-inspection">
+<h2>Counter inspection<a class="headerlink" href="#counter-inspection" title="Permalink to this headline">¶</a></h2>
+<p>[Sorry, presently missing in v.2.7.3]</p>
+<ul class="simple">
+<li>The <em>Counter</em> button produces the plot.</li>
+<li>The next label reminds how many are the available counters.</li>
+<li>The <em>counters</em> Text area allows the selection of the displayed detectors. The syntax is the same as for <a class="reference internal" href="#grouping">grouping</a>. It is advisable not to display more than 16 detetcors at a time</li>
+<li><em>bin</em>, text area to select <em>start</em>, <em>stop</em>, the same range for all chosen detectors. Zoom also by the the <a class="reference internal" href="#graphic-zoom">graphic zoom</a></li>
+<li><em>run</em> dropdown selects one run at a time among the loaded suite.</li>
+</ul>
+</div>
+<div class="section" id="graphic-zoom">
+<h2>graphic zoom<a class="headerlink" href="#graphic-zoom" title="Permalink to this headline">¶</a></h2>
+<p>All graphic windows display seven icons on the bottom bar</p>
+<ul class="simple">
+<li>The <img alt="save" src="_images/save-icon.png" /> icon, far right, opens a dialogue for sabìving the plot.</li>
+<li>The <img alt="center" src="_images/center-icon.png" /> icon, next one to the left, corrects the axes position</li>
+<li>the <img alt="zoom" src="_images/zoom-icon.png" /> icon, allows zooming in.</li>
+<li>The first icon on the left, <img alt="home" src="_images/home-icon.png" />, resets the zoom to the orginal ranges</li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">2,3</span></code> or <code class="docutils literal notranslate"><span class="pre">2:3</span></code> means that counters 2,3 are grouped together</li>
+<li><code class="docutils literal notranslate"><span class="pre">1:5,</span> <span class="pre">10,</span> <span class="pre">15:19</span></code> means that counters 1,2,3,4,5,10,15,16,17,18,19 are grouped together</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Examples.html" class="btn btn-neutral float-right" title="Examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Tutorial.html" class="btn btn-neutral float-left" title="Tutorial" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2017, R. De Renzi
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

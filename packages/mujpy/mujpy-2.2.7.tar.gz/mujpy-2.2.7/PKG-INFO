@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: mujpy
+Version: 2.2.7
+Summary: A Python MuSR data analysis program designed for Jupyterlab. 
+Home-page: https://github.com/RDeRenzi/mujpy
+Author: Roberto De Renzi, Pietro Bonfa
+Author-email: roberto.derenzi@unipr.it
+License: MIT
+Description: A Python MuSR data analysis program designed for Jupyterlab. User-friendly, does single, sequential and global fits, nice animation display for multi-run fits. Works on Linux, Windows, MacOS
+Keywords: musr fit
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
