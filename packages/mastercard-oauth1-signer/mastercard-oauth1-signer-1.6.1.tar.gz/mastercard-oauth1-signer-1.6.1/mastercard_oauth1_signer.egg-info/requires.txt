@@ -1,0 +1,4 @@
+requests
+pyOpenSSL>=0.14
+urllib3
+Deprecated
