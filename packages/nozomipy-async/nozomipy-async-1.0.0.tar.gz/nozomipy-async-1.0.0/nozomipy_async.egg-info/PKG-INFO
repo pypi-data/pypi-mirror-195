@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: nozomipy-async
+Version: 1.0.0
+Summary: Nozomi Async API for retrieving images, videos, gifs.
+Home-page: https://github.com/Isotr0py/nozomipy-async
+Author: Isotr0py
+License: This is free and unencumbered software released into the public domain.
+        
+        Anyone is free to copy, modify, publish, use, compile, sell, or
+        distribute this software, either in source code form or as a compiled
+        binary, for any purpose, commercial or non-commercial, and by any
+        means.
+        
+        In jurisdictions that recognize copyright laws, the author or authors
+        of this software dedicate any and all copyright interest in the
+        software to the public domain. We make this dedication for the benefit
+        of the public at large and to the detriment of our heirs and
+        successors. We intend this dedication to be an overt act of
+        relinquishment in perpetuity of all present and future rights to this
+        software under copyright law.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+        EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+        IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+        OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+        ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+        OTHER DEALINGS IN THE SOFTWARE.
+        
+        For more information, please refer to <https://unlicense.org>
+        
+Project-URL: Homepage, https://github.com/Isotr0py/nozomipy-async
+Project-URL: Bug Tracker, https://github.com/Isotr0py/nozomipy-async/issues
+Project-URL: Releases, https://github.com/Isotr0py/nozomipy-async/releases
+Keywords: nozomi,nozomi.la,api,video,image,anime
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# NozomiPy-Async
+Async nozomi.la API for Python3.
+
+NozomiPy-Async is an Async Python3 library for nozomi.la API.
+
+NozomiPy-Async also provides a commandline tool to download images and tags from nozomi.la.
+
+Based on Python-Nozomi: https://github.com/Alfa-Q/python-nozomi
+
+## Install
+```
+pip install nozomipy-async
+```
+
+## Import packages
+```python
+from nozomipy.async_api import api
+```
+
+## API Usages
+### API init
+```python
+import asyncio
+from nozomipy.async_api import api
+
+nozomi_api = api(semaphore=8,proxy="http://127.0.0.1:1080")
+```
+
+### Download images
+```python
+# The tags that the posts retrieved must contain
+positive_tags = ['veigar', 'wallpaper']
+
+# Gets all posts with the tags 'veigar', 'wallpaper'
+posts = await nozomi_api.get_posts()
+# download all images
+await asyncio.gather(*[download_img_tags(post,path) for post in posts])
+```
+
+## Create dataset
+Download images and tags during a period to a folder named with positive tags.
+```bash
+nozomi --path "./" --positive_tags 'miyase_mahiro' --start_date 2022-02-22 --end_date 2022-01-22 --num_process=8 --proxy http://127.0.0.1:7890
+```
+
