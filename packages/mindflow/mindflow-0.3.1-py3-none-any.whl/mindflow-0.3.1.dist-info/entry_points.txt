@@ -1,0 +1,2 @@
+[console_scripts]
+mf = mindflow.cli.new_click_cli.cli_main:mindflow_cli
