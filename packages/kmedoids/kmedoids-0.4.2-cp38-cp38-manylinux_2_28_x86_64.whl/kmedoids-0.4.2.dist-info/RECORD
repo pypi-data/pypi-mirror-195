@@ -1,0 +1,6 @@
+kmedoids/__init__.py,sha256=Ks3Ji1tbVcbrSVr48wm63SFZGyxniI0eP_MeWxFTY-s,34758
+kmedoids/kmedoids.cpython-38-x86_64-linux-gnu.so,sha256=fFfkIqf5S5K5rxDK2ukpUh8N3LEsZW4bEEQ_HDu7RN0,1081256
+kmedoids-0.4.2.dist-info/RECORD,,
+kmedoids-0.4.2.dist-info/WHEEL,sha256=-gbpXwRYbpfEsN94AGGUv27qY0C-Eh6Zg2jZ05hD4YQ,108
+kmedoids-0.4.2.dist-info/METADATA,sha256=C_fuwBIJzdqiHE4iQbnotmNoO118AdMcISmPoCATMLU,7044
+kmedoids-0.4.2.dist-info/license_files/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
