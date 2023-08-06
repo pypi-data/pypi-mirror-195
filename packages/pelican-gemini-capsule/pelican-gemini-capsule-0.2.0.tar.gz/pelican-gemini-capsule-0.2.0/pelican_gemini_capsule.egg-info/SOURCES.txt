@@ -1,0 +1,10 @@
+COPYING
+README.rst
+pelican_gemini_capsule.py
+pyproject.toml
+setup.py
+pelican_gemini_capsule.egg-info/PKG-INFO
+pelican_gemini_capsule.egg-info/SOURCES.txt
+pelican_gemini_capsule.egg-info/dependency_links.txt
+pelican_gemini_capsule.egg-info/requires.txt
+pelican_gemini_capsule.egg-info/top_level.txt
