@@ -1,0 +1,13 @@
+muffin>=0.92
+jinja2>=3.1.1
+
+[dev]
+pre-commit
+refurb
+bump2version
+
+[tests]
+pytest
+pytest-aio[curio,trio]
+pytest-mypy
+ruff
