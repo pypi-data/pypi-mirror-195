@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mwrsync
+Version: 0.1.0
+Summary: Micropython WebREPL based rsync-like tool.
+Home-page: https://github.com/keredson/mwrsync
+Author: Derek Anderson
+Author-email: public@kered.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+mwrsync
+=======
+
+Micropython WebREPL based rsync-like tool.
+
+
