@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: badl
+Version: 0.1.1
+Summary: BiliBili Audio Downloader
+License: GPL-3.0-only
+Author: Zhao Zuohong
+Author-email: zhbaor@zhaozuohong.vip
+Requires-Python: >=3.11,<3.12
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: bilibili-api-python (>=15.1.0,<16.0.0)
+Requires-Dist: bottle (>=0.12.23,<0.13.0)
+Requires-Dist: pygobject (>=3.42.2,<4.0.0) ; sys_platform == "linux"
+Requires-Dist: pywebview (>=4.0.2,<5.0.0)
+Requires-Dist: sanitize-filename (>=1.2.0,<2.0.0)
