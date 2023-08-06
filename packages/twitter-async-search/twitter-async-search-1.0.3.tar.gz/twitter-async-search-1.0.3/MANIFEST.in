@@ -1,0 +1,2 @@
+include src/config/search.json
+include src/log/config.json
