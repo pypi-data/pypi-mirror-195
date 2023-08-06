@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "archimedes-config"
+version = "0.0.6"
+description = ""
+authors = ["BigyaPradhan <bigya.pradhan@optimeering.com>"]
+readme = "README.md"
+packages = [{include = "archimedes_config"}]
+
+[tool.poetry.dependencies]
+python = ">=3.7.0,<3.12"
+toml = "^0.10.2"
+cryptography = "^39.0.1"
+azure-keyvault-secrets = {version = "*",optional = true }
+azure-identity = {version = "*",optional = true }
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+isort = "*"
+black = "^23.1.0"
+pylint = "*"
+coverage = "^7.2.1"
+
+[tool.poetry.extras]
+archimedes_config=["azure-keyvault-secrets","azure-identity"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
