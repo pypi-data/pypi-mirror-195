@@ -1,0 +1,65 @@
+[tool.black]
+target-version = ['py39']
+line-length = 120
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  | ^.*\.(yaml)
+)/
+'''
+
+[tool.isort]
+src_paths = ["db_rb_util","tests"]
+profile = "black"
+skip = ["tests/resources"]
+
+
+[tool.mypy]
+files = ["db_rb_util","tests"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+
+log_format = "%(asctime)s %(levelname)s %(name)s %(message)s"
+testpaths = ["tests"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 87
+omit = [ "*/__init__.py",
+         ".mypy_cache",
+        ".pytest_cache",
+        "src/main.py"]
+
+[tool.coverage.xml]
+output = "coverage-reports/cobertura-coverage.xml"
+
+[tool.coverage.run]
+source = ["db_rb_util"]
+branch = true
+relative_files = true
+omit = ["*/__init__.py",
+    ".mypy_cache",
+    ".pytest_cache",
+    ".git"]
+
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "db_rb_util"
+version = "0.0.2"
+authors = [
+    { name="Consumer Voice" },
+]
+description = "A package for commonly used functions with databases across different projects in Consumer Voice."
+requires-python = ">=3.9"
+classifiers = [
+   "Programming Language :: Python :: 3",
+   "Operating System :: OS Independent",
+]
+
+[tool.setuptools.packages]
+find = {}

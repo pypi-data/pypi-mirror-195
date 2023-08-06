@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: db-rb-util
+Version: 0.0.2
+Summary: A package for commonly used functions with databases across different projects in Consumer Voice.
+Author: Consumer Voice
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
