@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "add_swap_space"
+version = "7.0.0"
+authors = [
+  { name="rb ashish", email="dev@rbashish.tech" },
+]
+description = "A Python package to add swap space to a Linux system"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3.6",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Intended Audience :: Information Technology",
+    "Topic :: System :: Installation/Setup",
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+click = "^8.1.3"
+
+[tool.poetry.scripts]
+add-swap-space = "add_swap_space:main"
+
+[tool.poetry.packages]
+add-swap-space = { include = ["add_swap_space"] }
+
+[tool.poetry.extras]
+dev = ["pytest"]
+
+[tool.poetry.plugins."poetry-dynamic-versioning"]
+version-scheme = "post-semver"
+vcs-commits = true
+
+license = {text = "MIT License"}
+keywords = ["swap", "add swap", "swap space", "linux swap", "swap memory"]
+
+[project.urls]
+"Homepage" = "https://rbashish.tech"
+"Repository" = "https://github.com/rbashish/add-swap-space"
+"Issue Tracker" = "https://github.com/rbashish/add-swap-space/issues"
+"Changelog" = "https://github.com/rbashish/add-swap-space/blob/main/CHANGELOG.md"
