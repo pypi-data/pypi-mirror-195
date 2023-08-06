@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+test_sotto/__init__.py
+test_sotto/example.py
+test_sotto.egg-info/PKG-INFO
+test_sotto.egg-info/SOURCES.txt
+test_sotto.egg-info/dependency_links.txt
+test_sotto.egg-info/top_level.txt
