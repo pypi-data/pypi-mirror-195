@@ -1,0 +1,111 @@
+# 一、框架介绍
+
+此框架最主要是，是要对tornado进行一个封装的web框架，当然其中也包括了很多的常用的工具在根项目的utils下。
+
+
+
+
+
+# 二、配置文件介绍
+
+对于配置文件我们进行了单例模式，之后朋友你要使用框架，只要在根目录创建client_config.py作为你的配置文件。
+
+然后就可以在整个项目中使用from nlecloud_framework import config 去导入你的配置信息。放心这个配置只会被加载一次。
+
+![1677748677287](assets/1677748677287.png)
+
+其中client_config.py你可以这样写：
+
+```python
+class client_config:
+    # 单例模式需要加锁判断
+    _instance = None
+    _lock = threading.RLock()
+
+    # 项目的跟目录
+    project_path = os.path.dirname(os.path.abspath(__file__))
+    # 加密秘钥，可以使用nlecloud_framework\utils\crypto.py 进行生成
+    crypto_key = "QzFxS2FlRFRTaHhCbVJLQW9OSDRxcGxONWlneTRnZlA2VlpwSWRNR3p4VT0="
+    # oss的配置信息
+    # oss_config = OSS_config()
+
+    def __new__(cls, *args, **kwargs):
+        """
+        实现单例模式
+        :param args:
+        :param kwargs:
+        """
+        if cls._instance:
+            return cls._instance
+
+        with cls._lock:
+            if cls._instance:
+                return cls._instance
+
+            cls._instance = object.__new__(cls)
+            return cls._instance
+```
+
+
+
+# 三、工具类介绍
+
+## 3.1：加密库
+
+```bash
+nlecloud_framework\utils\crypto.py
+```
+
+- 可以使用genRandomKey方法生成一个秘钥，后期可以使用plain_to_ciphert和cipher_to_plain进行数据加解密
+- 可以使用create_rsa_pair去创建一个2048位的非对称加密，后期使用encryption和decryption进行加解密
+
+```python
+if __name__ == '__main__':
+    # 1、获取加密秘钥
+    key = CryptoHelper.genRandomKey()
+    ciphertext = CryptoHelper.plain_to_ciphert(key,plaintext="明文信息")
+    plaintext = CryptoHelper.cipher_to_plain(key,ciphertext=ciphertext)
+    print("密文：",ciphertext)
+    print("明文：",plaintext)
+
+    # 2、非对称加密
+    # 生成秘钥对
+    public_key, private_key = CryptoHelper.create_rsa_pair(is_save=False)
+    # 读取公钥信息
+    public_key = CryptoHelper.read_public_key("crypto_public_key.pem")
+    # 加密
+    text = '123456'
+    text_encrypted_base64 = CryptoHelper.encryption(text, public_key)
+    print('密文：', text_encrypted_base64)
+
+    # 解密
+    text_decrypted = CryptoHelper.decryption(text_encrypted_base64, private_key)
+    print('明文：', text_decrypted)
+```
+
+## 3.2：nlecommon库
+
+- 可以将多行一大串字符，变成一个列表如下面这样格式
+
+```python
+if __name__ == '__main__':
+    a = """
+    aliyun-python-sdk-core==2.13.36
+aliyun-python-sdk-kms==2.16.0
+    """
+    stringTextLine_to_list(a,is_print=True)
+    
+    # 输出信息，输出转换好的文本信息
+    # ['aliyun-python-sdk-core==2.13.36', 'aliyun-python-sdk-kms==2.16.0']
+```
+
+
+
+
+
+
+
+
+
+
+
