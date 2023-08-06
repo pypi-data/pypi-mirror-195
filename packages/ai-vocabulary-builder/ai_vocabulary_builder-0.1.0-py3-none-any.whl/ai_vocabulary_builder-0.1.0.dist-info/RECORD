@@ -1,0 +1,15 @@
+voc_builder/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+voc_builder/builder.py,sha256=oS81OgKwtU1yRxY_ipgjz_TXEos8zvs3-J8Jb9QwlmI,3618
+voc_builder/config.py,sha256=RwiRI7yg9aM_hd93qK9J7P3qsQZphDZ1MmMWJ1OYEt8,313
+voc_builder/exceptions.py,sha256=pybjK9Se5b3NszzyYXNzNH0Yl-tR2926gPbD-GJFoTY,201
+voc_builder/interactive.py,sha256=O43Th9Le6GYgQM2MPuCFjNd4ZUfKZs-TfawqT-R0b6A,8490
+voc_builder/main.py,sha256=JFOD-G0BEMZ7uOzKyiW8-sbnY3kkOJj7uFuDwwGsugE,1221
+voc_builder/models.py,sha256=wGcxl40tz25kKUqXBvAk32eqCvIQVf2QpZDsN8ysiCU,1451
+voc_builder/openai_svc.py,sha256=XkpCNvyB3QCVHroMhOKam3B__uwNXJm9-UFQ8r5ythc,6924
+voc_builder/store.py,sha256=BXgP_faawerDmMDPUEdJ_O7FDwKzfGw2iDAogWj_B0s,1810
+voc_builder/utils.py,sha256=oacie_RzEZku4VcdOwEl6QvbitP0mFRO6usUjJkcMTs,271
+ai_vocabulary_builder-0.1.0.dist-info/LICENSE,sha256=-G4NRCqHTUTd7DPi6A9TiWDX5y7xpYdhMNcfHR_bmBg,1493
+ai_vocabulary_builder-0.1.0.dist-info/METADATA,sha256=SfRxQ6IdTNraLDPHZemTBWS2x8R2-sEbFsrQFJB3VG4,2657
+ai_vocabulary_builder-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+ai_vocabulary_builder-0.1.0.dist-info/entry_points.txt,sha256=DxL7j7Xc4Td6d5hfM585DsyjGpncHh9KchvL73NDg0U,47
+ai_vocabulary_builder-0.1.0.dist-info/RECORD,,
