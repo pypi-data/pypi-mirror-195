@@ -1,0 +1,17 @@
+flashquiz/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flashquiz/args.py,sha256=Wwn5hVLFy-YD8NHZcYsC0GvFUA_8b4_HlRFmErBLBm8,1939
+flashquiz/quizzer.py,sha256=g_KjRedo9KXNbAIknNFz12pyT70Bzk34j8J0LcHMGFk,580
+flashquiz/flashcards/__init__.py,sha256=Ez_8JrwjYqlwUugCKPo5TQJ6jWUkxegZ4-das1sbDOA,75
+flashquiz/flashcards/card.py,sha256=72WM61Pzdj6Sc_wEQ6xg05It2SkaARBpVrLIieZNKh8,1771
+flashquiz/flashcards/deck.py,sha256=54bfS7eeWcJFGWiVvccR38trRgRW7jX-3asXU_FCEoM,2269
+flashquiz/flashcards/parser.py,sha256=aMgg7SLdD03oON5HpDNX-3Zr42-xIPzw2YXX0e3Ld3M,458
+flashquiz/gui/__init__.py,sha256=LGXEaJLZ7wgj5YaWnG-jfGkPE1Mw4kkx3uqxibaL8PY,44
+flashquiz/gui/constants.py,sha256=qMe58jkv6-pJe5kotAtymMhfxkYTNDs7Io8jgffRT1Y,104
+flashquiz/gui/gui.py,sha256=hCDfDm11Hj4B70F4kS9vo7zTDWTbJDfEmWyuJ_AOb_s,1701
+flashquiz/gui/text.py,sha256=524hYhF5rd1_IxHtq347sMPtQ0eVsED1WD4uQfJRSNg,394
+flashquiz-0rc1.dist-info/LICENSE,sha256=snRVLQPULRsZ9VMtakJgIsw0XBZyovPAhq_11I49xnM,1099
+flashquiz-0rc1.dist-info/METADATA,sha256=eMrPWxF5TymZCalNvGe7aJ3aRsikdGwZHCU_apul_5M,569
+flashquiz-0rc1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+flashquiz-0rc1.dist-info/entry_points.txt,sha256=fIJm-SZgcB2Vfgwm8lkAK-3EJmxJ2e8axUXxw-JcVoA,53
+flashquiz-0rc1.dist-info/top_level.txt,sha256=3KMYb8Twc4lujyYkYKkDGUD0Yucr07zxoWQw5ZbtTng,10
+flashquiz-0rc1.dist-info/RECORD,,
