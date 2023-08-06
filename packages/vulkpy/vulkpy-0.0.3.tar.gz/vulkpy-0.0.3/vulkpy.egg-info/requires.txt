@@ -1,0 +1,11 @@
+numpy
+well-behaved-logging
+
+[doc]
+sphinx
+sphinx-rtd-theme
+myst-parser
+
+[test]
+coverage
+unittest-xml-reporting
