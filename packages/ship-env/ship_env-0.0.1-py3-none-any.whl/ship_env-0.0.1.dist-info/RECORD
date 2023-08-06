@@ -1,0 +1,7 @@
+ship_env/__init__.py,sha256=noMzyBhwimSG238LZ_ER0hy27vJqnT4ww7b6VURxkHA,125
+ship_env/envs/__init__.py,sha256=IgffNnbb5ggW6zoH3jHtry9INzJJV9Fai8i7G_eyH_s,42
+ship_env/envs/env_ship.py,sha256=QtLURHzj4Wo19rQORc_QFELW4RuIJB9ITfDAcXJn1zg,12050
+ship_env-0.0.1.dist-info/METADATA,sha256=V33qLCgL8rcuut-ilnb2oWuLDJNU8u3g9e4si8_pW28,147
+ship_env-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ship_env-0.0.1.dist-info/top_level.txt,sha256=65vu-71kmO8_vNjjeyt8DNp46NYWy4332HH_EHD-i5k,9
+ship_env-0.0.1.dist-info/RECORD,,
