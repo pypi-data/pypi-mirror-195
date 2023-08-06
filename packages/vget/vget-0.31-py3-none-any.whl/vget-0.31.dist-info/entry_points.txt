@@ -1,0 +1,2 @@
+[console_scripts]
+vget = em3u8.cmd:main
