@@ -1,0 +1,1 @@
+from ddd_interface.objects.do import APIGatewayRequestDO
