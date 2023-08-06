@@ -1,0 +1,4 @@
+[console_scripts]
+ai=clai:invoke
+clai=clai:invoke
+
