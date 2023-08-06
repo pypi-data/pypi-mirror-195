@@ -1,0 +1,520 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tutorial &mdash; mujpy.mujpy 1.05 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Reference" href="Reference.html" />
+    <link rel="prev" title="Installation" href="Installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> mujpy.mujpy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.05
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorial</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#starting-from-scratch">Starting from scratch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setup-tab">Setup tab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#top-header">Top header</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#finding-t-0-0-in-the-data">Finding <span class="math notranslate nohighlight">\(t_0=0\)</span> in the data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#first-fit-alpha-determination">First fit: alpha determination.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dashboard">Dashboard.</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Reference.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Developer.html">Developer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Philostory.html">Philosophy &amp; History of MuSR code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Source.html">Source documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">mujpy.mujpy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Tutorial</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Tutorial.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tutorial">
+<span id="id1"></span><h1>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h1>
+<p>[This is frozen at 2.0]</p>
+<p>We will walk through a few basic steps, assuming you have installed the following bits (see <a class="reference internal" href="Installation.html#installation"><span class="std std-ref">Installation</span></a>)</p>
+<ul class="simple">
+<li>python</li>
+<li>jupyter-lab</li>
+<li>mujpy and its dependencies</li>
+</ul>
+<div class="section" id="starting-from-scratch">
+<h2>Starting from scratch<a class="headerlink" href="#starting-from-scratch" title="Permalink to this headline">¶</a></h2>
+<p>Navigate to the working directory of your choice
+copy or link there the mugpy notebook mujpy_test_damg_lab.ipynb file</p>
+<p>Make a data dir, a tlog dir and a log dir.
+Copy or link your data files, e.g. <code class="docutils literal notranslate"><span class="pre">deltat_tdc_gps_0432.bin</span></code>
+in the first,
+and (optionally) the temperature log files in the second.
+The present mujpy version reads PSI bulk MuSR (bin)  data (contributions towards reading other data formats welcome).
+Now you can launch</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupiter</span><span class="o">-</span><span class="n">lab</span>
+
+<span class="n">The</span> <span class="n">location</span> <span class="kn">from</span> <span class="nn">which</span> <span class="n">you</span> <span class="n">launch</span> <span class="n">jupyter</span><span class="o">-</span><span class="n">lab</span> <span class="ow">is</span> <span class="n">your</span>
+</pre></div>
+</div>
+<p>working directory (wd) and it opens in a tab of your browser.
+The page has a vertical tab list on the left. Click on the first (folder) icon, a file browser column opens. Click on the mu_test_damg_lab.ipynb notebook.</p>
+<blockquote>
+<div>The mujpy Graphical User Interface (MGI) notebook will open in another browser tab. You can now minimize the file browser clicking again on the folder icon.  Now a stand alone Ternimal should appear, move it at your convenience but <em>do not kill it</em>. In case, restart by hitting the play icon on the header bar of the tab. And the MGI should reappear in the tab.</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Jupyter-lab itself has many important features, some obvious, some less so. Practice with its toolbars, that however compete for screen space with the MGI. Choose the best layout with view. If you have 1920x1080 display you can reduce the browser to half screen, horizontally, and keep termial + graphisc in the other half</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Sometimes the MGI might be missing. Click on Kernel, among the top tabs, and select Restart Kernel and Run All Cells.
+If you manage to overwrite the template notebook (it happens, with the many handy buttons of Jupyter-lab: beware the scissors!!) with an empy cell. do not worry.</p>
+</div>
+<p>The text of the hidden first cell is the following three-liner (of course # means the rest is a comment):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## Mujpy tester, for inline graphics specify: %matplotlib notebook, for interactive %matplotlib tk (or just    %matplotlib)</span>
+<span class="c1"># %matplotlib -l  lists all the possible options</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">tk</span>
+<span class="c1"># loads the distribution when a distribution is already installed</span>
+<span class="kn">from</span> <span class="nn">mujpy.mugui</span> <span class="kn">import</span> <span class="n">mugui</span>
+<span class="n">MuJPy</span> <span class="o">=</span> <span class="n">mugui</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Cut and paste it into an empty notebook cell. Click on the left blue vertical line to toggle hide this first cell. Run it as usual</p>
+<img alt="_images/firstcell.png" src="_images/firstcell.png" />
+<p>Notice: the mujpy instance is called MuJPy in this cell (you can call it as you wish). This is important for developers who whant to check innards.</p>
+<table class="hlist"><tr><td><ul class="simple">
+<li>hovering over widgets provides <em>baloon</em> tips (true also for some widgets in mujpy);</li>
+</ul>
+</td><td><ul class="simple">
+<li>click on the panel on the left of the MGI: it toggles between scroll and full output (preferable for the MGI)</li>
+</ul>
+</td></tr></table>
+</div>
+<div class="section" id="setup-tab">
+<h2>Setup tab<a class="headerlink" href="#setup-tab" title="Permalink to this headline">¶</a></h2>
+<p>This tab is for preliminary information that you revisit generally only at the start of a new experiment.
+Write the directories, either the full paths or the relative paths from the wd,
+the fileprefix, the filename before the run numbers (<cite>deltat_tdc_gps_</cite>),
+the extension, the filename after the last dot (<cite>bin</cite>).
+When you have correctly set these fields you may temporarily <em>save setup</em>.</p>
+<p>When restarting mujpy next time these fields will be
+automatically loaded from the default startup file <cite>mujpy_setup.pkl</cite>.</p>
+</div>
+<div class="section" id="top-header">
+<h2>Top header<a class="headerlink" href="#top-header" title="Permalink to this headline">¶</a></h2>
+<p>Load a single run data set. Press Load and use the file selection GUI. Or write a run number, without leading zeros, e.g. <cite>432</cite>, in the Text widget space labelled <em>Run [run suite]</em>. Hovering over the label provides a tip for the syntax (see <strong>Reference</strong>). For now just load a single file. In this first example we shall produce its best fit. The file is loaded when hitting return. You may tell because the title, comments and other info appear in the header on the right of the mujpy logo.</p>
+<p>If a <em>next run</em> number appears in the label space below the -<em>run [run suite]</em> text, it means that the corresponding file is in the data directory and you can load it by pressing <em>Load nxt</em>.</p>
+</div>
+<div class="section" id="finding-t-0-0-in-the-data">
+<h2>Finding <span class="math notranslate nohighlight">\(t_0=0\)</span> in the data<a class="headerlink" href="#finding-t-0-0-in-the-data" title="Permalink to this headline">¶</a></h2>
+<p>Go back to the <strong>Setup</strong> tab. Mujpy times are always expressed in microseconds.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">At PSI the position of <span class="math notranslate nohighlight">\(t_0=0\)</span> in the time array is fitted on the <em>prompt positron</em> peak, corresponding to positrons transported with the beam through the muon start detector, directly through a positron detector. These events ought to be vetoed by the specrtometer, but a sizeable amounts spills through and provides an intense peak at time <em>t=0</em>. Noticeably a very low background count rate is recorded before that time and a larger count rate follows the prompt. The time dependent muon asymmetry is detectable only in this second part. The fit function for identifying time <span class="math notranslate nohighlight">\(t_0=0\)</span> is composed of a low plateau on the left and a high plateau on the right, joined by a Gaussian peak.</p>
+</div>
+<p>Check that <em>prepeak</em> (end of first plateau) and <em>postpeak</em> (beginning of second plateau)  are reasonable numbers (e.g. 7 for both). Then hit <em>prompt fit</em>. You will see the bets fits for all positron detectors and the corresponding bins will be stored. You can view them clicking on the <em>t0 bins and remainders</em> Accordion.</p>
+<p>You can now <em>save setup</em> again.</p>
+</div>
+<div class="section" id="first-fit-alpha-determination">
+<h2>First fit: alpha determination.<a class="headerlink" href="#first-fit-alpha-determination" title="Permalink to this headline">¶</a></h2>
+<p>Go to the <strong>Fit</strong> tab. For an asymmetry fit you need to choose Forward and Backward detectors (the set of these two groups of detectors is called grouping). A simple syntax allows complex grouping input, e.g. 2:4,8  and 1,5:7 means that a composite Forward detector includes counters 2,3,4 and 8, whereas Backward includes 1,5,6, and 7.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">We assume that your data set is from Dolly or GPS and you are running in longitudinal mode (Wien filter, or spin rotator, switched off) . The initial muon spin direction will be pointing almost backwards with respect to the incoming muon  momentum. The data set will be a weak transverse field experiment (WEP power supply, see the <a class="reference external" href="https://www.psi.ch/smus/InstrumentGpsEN/User_Guide_present_version.pdf">GPS manual</a>), say 20 Gauss, recorded at 0.391 ns/bin. See e.g. <a class="reference external" href="http://www.fis.unipr.it/~derenzi/dispense/pmwiki.php?n=MuSR.Calibrations">MuSR calibration</a> for the definition of alpha.</p>
+</div>
+<p>In these conditions detector 2 is forward and detector 1 is backward. Write these two numbers in the respective Text areas.
+Write a starting guess for alpha in the corresponding Text Area, say 1.0. Choose a first usable bin, typically <em>offset</em> 7 (to allow for the prompt peak to have fully decayed).  A suitable fit range is between bin 0 (corresponding now to 7 bins after the centre of the prompt peak) and 25000. For a slow muon precession a packing of 100 bins is appropriate: the time interval bewteen rebinned points corresponds to 39.1 ns, adequate for the expected ca 3 MHz Larmor frequency. This is written as 0,25000,100 in the <em>fit range</em> Text area (the meaning is <em>start,stop [,pack]</em>, as the tip shows).</p>
+<p>The default model is suited for alpha calibration. Its layout is shown below</p>
+<img alt="_images/daml.png" src="_images/daml.png" />
+<p>It is called <em>daml</em>. Write this acronym in the <em>loadmodel</em> area if you want to produce it from scratch. The model rationale is the following:</p>
+<ul class="simple">
+<li>each model is composed of components (see the <a class="reference internal" href="Reference.html#static"><span class="std std-ref">Component list</span></a>); this model is composed of <em>da</em> and <em>ml</em></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li>the second, <em>ml</em>, is a Lorenztian (<em>l</em>) damped cosine component (for historical reasons <em>m</em>, for mu);</li>
+<li>the first, <em>da</em> for delta alpha, is a linear approximation to the correction for an alpha different from the guess value (1.01 here);</li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li>to determine the field dependent best value of alpha <em>subtract</em> dalpha from alpha, write the result in the corresponding Text area and iterate (since the function is a linear correction it works well for small displacementes dalpha); a better strategy is described in the <a class="reference internal" href="Examples.html#examples"><span class="std std-ref">Examples</span></a></li>
+<li>their parameters are listed il the lower frame, each indentified by an index, a unique name, a Text area for the starting guess value, a symbol:</li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><em>~</em>  free minuit parameter,</li>
+<li><em>!</em>  fixed parameter</li>
+<li><em>=</em>  the function text area on the right is activated. You can input symple expressions, such as <code class="docutils literal notranslate"><span class="pre">p[1]</span></code>, implying that the present parameter and parameter 1 share the same value. For instance two <em>ml</em> components in model <em>damlml</em> could share their phase parameters.</li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li>parameter names are automatically generated and pretty obvious if you are not new to MuSR. E.g. <em>ml</em> has a (partial) <em>asymmetry</em>, a <em>field</em> value (in Tesla), a <em>phase</em> (in degrees) and a Lorentzian relaxation <em>Lor_rate</em> (in inverse microseconds);</li>
+<li>names are followed by a capital letter that uniquely identifies each component (e.g. in a <em>blmlml</em> fit the asymmetries of the three components would be <em>asymmetryA</em>, <em>asymmetryB</em>, <em>asymmetryC</em>, respectively)</li>
+</ul>
+<p>When you are happy with the initial guess hit the <em>Fit</em> button. You may preview your initial guess by pressing <em>Plot</em> to check that it is not too far off. Notice that <em>plot range</em> is more complicated: legal ranges are</p>
+<ul class="simple">
+<li>0,20000 (implying no packing)</li>
+<li>0,20000,100 (same meaning as for <em>fit range</em>)</li>
+<li>0,2000,20,25000,100 (plots two contiguous ranges, the first is 0,2000,20, the second is 2000,25000,100)</li>
+</ul>
+<p>The best fit minuit printout is shown the output tab, it is automatically plotted Results are saved in two files:</p>
+<ul class="simple">
+<li>a csv file suited for qtiplot/opj manipulation, that is automatically updated at each new fit of the same model and grouping;</li>
+<li>an individual file  for each run</li>
+</ul>
+<p>Versions can distinguish fits with the same model and grouping (e.g. distinguished by different parameter functions)</p>
+<p>The file is a binary pickle of the dill variety. To read it in python</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">dill</span> <span class="k">as</span> <span class="nn">pickle</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span><span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>and you will find all fit parameters in dictionary fitarg.</p>
+</div>
+<div class="section" id="dashboard">
+<h2>Dashboard.<a class="headerlink" href="#dashboard" title="Permalink to this headline">¶</a></h2>
+<p>Basic command line mujpy is based on three main libraries, corresponding to as many classes: musuite.py, mufit.py, mufitplot.py. Additional input libraries (classes) musr2py/musr2py.py and muisis2py/muisis2py.py provide acces respectively to the PSI bin, mdu data formats and to the ISIS nsx data format. Auxiliary libraries aus/aus.py and plot.py contain general methods.</p>
+<p>Let’s analyse the simplest notebook, a single run, single group fit with predetermined <span class="math notranslate nohighlight">\(\alpha\)</span>.
+All the v.2.0 notebooks start with the import cell 1:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">tk</span>
+<span class="kn">from</span> <span class="nn">mujpy.musuite</span> <span class="kn">import</span> <span class="n">suite</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">mujpy.mufit</span> <span class="kn">import</span> <span class="n">mufit</span>
+<span class="kn">from</span> <span class="nn">mujpy.mufitplot</span> <span class="kn">import</span> <span class="n">mufitplot</span>
+</pre></div>
+</div>
+<p>The next cell 2 imports the data sets, performs the <span class="math notranslate nohighlight">\(t = 0\)</span> bin determination, and defines the asymmetry methods. We write two json files, input.suite and 23-14.calib. They contain a dict structure and a list of dict structures, respectively. The first describes the input files and quotes the second, which contains group definition and alpha. Being a list, it could contain more groups. We write them directly from the code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">input_suite</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;console&#39;</span><span class="p">:</span><span class="s1">&#39;print&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;datafile&#39;</span><span class="p">:</span><span class="s1">&#39;/afs/psi.ch/project/bulkmusr/data/gps/d2021/tdc/deltat_tdc_gps_0822.bin&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;logpath&#39;</span><span class="p">:</span><span class="s1">&#39;log/&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;runlist&#39;</span><span class="p">:</span><span class="s1">&#39;822&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;groups calibration&#39;</span><span class="p">:</span><span class="s1">&#39;23-14.calib&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;offset&#39;</span><span class="p">:</span><span class="mi">20</span>
+               <span class="p">}</span>  <span class="c1"># &#39;console&#39;:logging, for output in Log Console, &#39;console&#39;:print, for output in notebook</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;log/input.suite&#39;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">input_suite</span><span class="p">,</span><span class="n">f</span><span class="p">)</span>
+
+<span class="n">grp_calib</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">&#39;forward&#39;</span><span class="p">:</span><span class="s1">&#39;2,3&#39;</span><span class="p">,</span> <span class="s1">&#39;backward&#39;</span><span class="p">:</span><span class="s1">&#39;1,4&#39;</span><span class="p">,</span> <span class="s1">&#39;alpha&#39;</span><span class="p">:</span><span class="mf">1.13</span><span class="p">}]</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;log/23-14.calib&#39;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">grp_calib</span><span class="p">,</span><span class="n">f</span><span class="p">)</span>
+
+<span class="n">the_suite</span> <span class="o">=</span> <span class="n">suite</span><span class="p">(</span><span class="s1">&#39;log/input.suite&#39;</span><span class="p">,</span><span class="n">mplot</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1"># the_suite implements the class suite according to input.suite</span>
+</pre></div>
+</div>
+<p>Notice that the suite instance needs the input.suite json file and is assigned to a variable, so that the asymmetry methods of theses data can be accessed. Let’s now jump to cell 4, the fit proper:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">the_fit</span> <span class="o">=</span> <span class="n">mufit</span><span class="p">(</span><span class="n">the_suite</span><span class="p">,</span><span class="s1">&#39;log/mgml.822.2_3-1_4.1.json&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The input is often called dashboard, a complex dict structure, and it must be pre-dumped into a json file, mgml.822.2_3-1_4.1.json here. We list it alt the bottom. The next cell 5 is the plot command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fit_plot</span><span class="o">=</span> <span class="n">mufitplot</span><span class="p">(</span><span class="s1">&#39;0,20000,40&#39;</span><span class="p">,</span><span class="n">the_suite</span><span class="p">,</span><span class="s1">&#39;/home/roberto.derenzi/mujpy/log/mgml.822.2_3-1_4.1_fit.json&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>it requires a bin range, 0,20000, with packing, 40 and the output dashboard of the fit, that collects its results in an additional “model_result” item (the file name has been complemented with _fit just before the file specification.</p>
+<p>Open a dashboard file in a text editor to see what it contains. We list below a mgml fit with two precessing components, one with Gaussian and one with Lorentzial decays. The dict contains general information and a “model_guess” key whose value is a list of components (‘mg’ and ‘ml’ here). Each component has a name, a label and a list pardicts. Each item of this list is a parameter dictionary, with “name”, “value”, “flag”, “error” (or initial step), “limits” and possibly other keys:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;fit_range&quot;</span><span class="p">:</span> <span class="s2">&quot;0,24000,5&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;offset&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+  <span class="s2">&quot;model_guess&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;mg&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;T_fast&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;pardicts&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="mf">0.09</span><span class="p">,</span>
+          <span class="s2">&quot;flag&quot;</span><span class="p">:</span> <span class="s2">&quot;~&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="mf">0.01</span><span class="p">,</span>
+          <span class="s2">&quot;limits&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="n">null</span><span class="p">,</span>
+            <span class="n">null</span>
+          <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="mf">10.0</span><span class="p">,</span>
+          <span class="s2">&quot;flag&quot;</span><span class="p">:</span> <span class="s2">&quot;~&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="mf">0.1</span><span class="p">,</span>
+          <span class="s2">&quot;limits&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="n">null</span><span class="p">,</span>
+            <span class="n">null</span>
+          <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;φ&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span>
+          <span class="s2">&quot;flag&quot;</span><span class="p">:</span> <span class="s2">&quot;~&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span>
+          <span class="s2">&quot;limits&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="n">null</span><span class="p">,</span>
+            <span class="n">null</span>
+          <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;σ&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span>
+          <span class="s2">&quot;flag&quot;</span><span class="p">:</span> <span class="s2">&quot;~&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="mf">0.01</span><span class="p">,</span>
+          <span class="s2">&quot;limits&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="n">null</span><span class="p">,</span>
+            <span class="n">null</span>
+          <span class="p">]</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;ml&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;T_slow&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;pardicts&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="mf">0.09</span><span class="p">,</span>
+          <span class="s2">&quot;flag&quot;</span><span class="p">:</span> <span class="s2">&quot;~&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="mf">0.01</span><span class="p">,</span>
+          <span class="s2">&quot;limits&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="n">null</span><span class="p">,</span>
+            <span class="n">null</span>
+          <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="mf">10.0</span><span class="p">,</span>
+          <span class="s2">&quot;flag&quot;</span><span class="p">:</span> <span class="s2">&quot;~&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="mf">0.1</span><span class="p">,</span>
+          <span class="s2">&quot;limits&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="n">null</span><span class="p">,</span>
+            <span class="n">null</span>
+          <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;φ&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span>
+          <span class="s2">&quot;flag&quot;</span><span class="p">:</span> <span class="s2">&quot;=&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="s2">&quot;p[2]&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span>
+          <span class="s2">&quot;limits&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="n">null</span><span class="p">,</span>
+            <span class="n">null</span>
+          <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;λ&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="mf">0.1</span><span class="p">,</span>
+          <span class="s2">&quot;flag&quot;</span><span class="p">:</span> <span class="s2">&quot;~&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="mf">0.01</span><span class="p">,</span>
+          <span class="s2">&quot;limits&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="n">null</span><span class="p">,</span>
+            <span class="n">null</span>
+          <span class="p">]</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Reference.html" class="btn btn-neutral float-right" title="Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2017, R. De Renzi
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

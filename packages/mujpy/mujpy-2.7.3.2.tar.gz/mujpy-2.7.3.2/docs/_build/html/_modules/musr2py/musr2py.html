@@ -1,0 +1,630 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>musr2py.musr2py &mdash; mujpy.mujpy 1.05 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> mujpy.mujpy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.05
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Reference.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Developer.html">Developer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Philostory.html">Philosophy &amp; History of MuSR code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Source.html">Source documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">mujpy.mujpy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>musr2py.musr2py</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for musr2py.musr2py</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">ctypes</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">numpy.ctypeslib</span> <span class="kn">import</span> <span class="n">ndpointer</span>
+<span class="kn">from</span> <span class="nn">ctypes</span> <span class="kn">import</span> <span class="n">cdll</span>
+<span class="kn">from</span> <span class="nn">ctypes</span> <span class="kn">import</span> <span class="n">c_int</span><span class="p">,</span> <span class="n">c_char_p</span><span class="p">,</span> <span class="n">c_void_p</span><span class="p">,</span> <span class="n">c_double</span>
+<span class="kn">from</span> <span class="nn">numpy.ctypeslib</span> <span class="kn">import</span> <span class="n">ndpointer</span>
+
+<span class="c1">#######################################</span>
+<span class="c1"># see MuSR_td_PSI_bin.cpp by A. Amato #</span>
+<span class="c1"># returns 0 for successful reading    #</span>
+<span class="c1">#######################################</span>
+
+<span class="n">c_double_p</span> <span class="o">=</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">POINTER</span><span class="p">(</span><span class="n">ctypes</span><span class="o">.</span><span class="n">c_double</span><span class="p">)</span>  <span class="c1"># universal double pointer</span>
+<span class="n">c_int_p</span> <span class="o">=</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">POINTER</span><span class="p">(</span><span class="n">ctypes</span><span class="o">.</span><span class="n">c_int</span><span class="p">)</span>        <span class="c1"># universal int pointer</span>
+                                              <span class="c1"># used to pass output results together</span>
+ 					      <span class="c1"># with c_int, c_char_p, c_void_p, c_double</span>
+
+<span class="c1">### WORKAROUND, NOT VERY GOOD, CONSULT PIETRO: would not work unless MuSR2py.so si compiled and installed in this particular directory</span>
+<span class="n">lib</span> <span class="o">=</span> <span class="n">cdll</span><span class="o">.</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s1">&#39;/usr/local/lib/MuSR2py.so&#39;</span><span class="p">)</span>        <span class="c1"># defines the c wrapper library # add smthng like</span>
+                                            <span class="c1">#$ LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/roberto.derenzi/git/mujpy/mujpy/musr2py/</span>
+                                            <span class="c1">#                                    path where MuSR2py is</span>
+                                            <span class="c1">#$ export LD_LIBRARY_PATH </span>
+                                            <span class="c1">#</span>
+<div class="viewcode-block" id="musr2py"><a class="viewcode-back" href="../../Source.html#musr2py.musr2py.musr2py">[docs]</a><span class="k">class</span> <span class="nc">musr2py</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>                        <span class="c1"># defines the python class</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    typical usage:: </span>
+
+<span class="sd">      musr2py.read(&quot;mydata.bin&quot;)  # this is the run data file</span>
+<span class="sd">      n = musr2py.get_numberTemperature_int()</span>
+<span class="sd">      # n is now an integer with the number of elements of the PSI monitor values</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="c1"># set types for all functions</span>
+    
+    <span class="c1">#init                                       defines initializaton method</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">init</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">c_void_p</span>
+    
+    <span class="c1"># read                                      defines method for reading a file</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">c_int</span>                    <span class="c1"># out</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">argtypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">c_void_p</span><span class="p">,</span> <span class="n">c_char_p</span><span class="p">]</span>    <span class="c1"># in</span>
+
+                         
+    <span class="c1">#int get_histoLength_bin(void *ptr)</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_histoLength_bin</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">c_int</span>    <span class="c1"># out</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_histoLength_bin</span><span class="o">.</span><span class="n">argtypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">c_void_p</span><span class="p">]</span>   <span class="c1"># in</span>
+    
+    <span class="c1">#int get_numberHisto_int(void *ptr)</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_numberHisto_int</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">c_int</span>    <span class="c1"># out</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_numberHisto_int</span><span class="o">.</span><span class="n">argtypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">c_void_p</span><span class="p">]</span>   <span class="c1"># in</span>
+    
+    <span class="c1">#int get_histo_array_int(void *ptr, int histogram, int * array, int size)</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_histo_array_int</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">c_int</span>    <span class="c1"># out</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_histo_array_int</span><span class="o">.</span><span class="n">argtypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">c_void_p</span><span class="p">,</span> <span class="n">c_int</span><span class="p">,</span> <span class="n">ndpointer</span><span class="p">(</span><span class="n">ctypes</span><span class="o">.</span><span class="n">c_int</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="s2">&quot;C_CONTIGUOUS&quot;</span><span class="p">),</span> <span class="n">c_int</span><span class="p">]</span> <span class="c1"># in</span>
+
+    <span class="c1">#int get_binWidth_ns(void *ptr)</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_binWidth_ns</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">c_double</span> <span class="c1"># out</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_binWidth_ns</span><span class="o">.</span><span class="n">argtypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">c_void_p</span><span class="p">]</span> <span class="c1"># in</span>
+    
+    <span class="c1">#int get_t0_double(void *ptr, int histogram)</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_t0_double</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">c_double</span> <span class="c1"># out</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_t0_double</span><span class="o">.</span><span class="n">argtypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">c_void_p</span><span class="p">,</span> <span class="n">c_int</span><span class="p">]</span> <span class="c1"># in</span>
+    
+    <span class="c1">#int get_sample(void *ptr)</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_sample</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">c_int</span> <span class="c1"># out ?</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_sample</span><span class="o">.</span><span class="n">argtypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">c_void_p</span><span class="p">,</span> <span class="n">c_char_p</span><span class="p">]</span> <span class="c1"># in</span>
+    
+    <span class="c1">#int get_field(void *ptr)</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_field</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">c_int</span> <span class="c1"># out ?</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_field</span><span class="o">.</span><span class="n">argtypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">c_void_p</span><span class="p">,</span> <span class="n">c_char_p</span><span class="p">]</span> <span class="c1"># in</span>
+    
+    <span class="c1">#int get_orient(void *ptr)</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_orient</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">c_int</span> <span class="c1"># out ?</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_orient</span><span class="o">.</span><span class="n">argtypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">c_void_p</span><span class="p">,</span> <span class="n">c_char_p</span><span class="p">]</span> <span class="c1"># in</span>
+    
+    <span class="c1">#int get_temp(void *ptr)</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_temp</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">c_int</span> <span class="c1"># out ?</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_temp</span><span class="o">.</span><span class="n">argtypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">c_void_p</span><span class="p">,</span> <span class="n">c_char_p</span><span class="p">]</span> <span class="c1"># in</span>
+    
+    <span class="c1">#int get_comment(void *ptr)</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_comment</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">c_int</span> <span class="c1"># out ?</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_comment</span><span class="o">.</span><span class="n">argtypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">c_void_p</span><span class="p">,</span> <span class="n">c_char_p</span><span class="p">]</span> <span class="c1"># in</span>
+    
+    <span class="c1">#int get_timeStart_vector(void *ptr)</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_timeStart_vector</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">c_int</span>    <span class="c1"># out</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_timeStart_vector</span><span class="o">.</span><span class="n">argtypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">c_void_p</span><span class="p">,</span> <span class="n">c_char_p</span><span class="p">]</span> <span class="c1"># in</span>
+
+    <span class="c1">#int get_timeStop_vector(void *ptr)</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_timeStop_vector</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">c_int</span>    <span class="c1"># out</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_timeStop_vector</span><span class="o">.</span><span class="n">argtypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">c_void_p</span><span class="p">,</span> <span class="n">c_char_p</span><span class="p">]</span> <span class="c1"># in</span>
+
+    <span class="c1">#int get_numberTemperature_int(void *ptr)</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_numberTemperature_int</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">c_int</span>    <span class="c1"># out</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_numberTemperature_int</span><span class="o">.</span><span class="n">argtypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">c_void_p</span><span class="p">]</span>   <span class="c1"># in</span>
+
+    <span class="c1">#int get_temperatures_vector(void *ptr, double * array)</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_temperatures_vector</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">c_int</span>    <span class="c1"># out</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_temperatures_vector</span><span class="o">.</span><span class="n">argtypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">c_void_p</span><span class="p">,</span> <span class="n">ndpointer</span><span class="p">(</span><span class="n">ctypes</span><span class="o">.</span><span class="n">c_double</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="s2">&quot;C_CONTIGUOUS&quot;</span><span class="p">)]</span> <span class="c1"># in</span>
+
+    <span class="c1">#int get_devTemperatures_vector(void *ptr, double * array)</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_devTemperatures_vector</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">c_int</span>    <span class="c1"># out</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_devTemperatures_vector</span><span class="o">.</span><span class="n">argtypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">c_void_p</span><span class="p">,</span> <span class="n">ndpointer</span><span class="p">(</span><span class="n">ctypes</span><span class="o">.</span><span class="n">c_double</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="s2">&quot;C_CONTIGUOUS&quot;</span><span class="p">)]</span> <span class="c1"># in</span>
+
+    <span class="c1">#int get_runNumber_int(void *ptr)</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_runNumber_int</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">c_int</span>    <span class="c1"># out</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_runNumber_int</span><span class="o">.</span><span class="n">argtypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">c_void_p</span><span class="p">]</span>   <span class="c1"># in</span>
+    
+    <span class="c1">#int get_eventsHisto_vector(void *ptr, int * array)</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_eventsHisto_vector</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">c_int</span> <span class="c1"># out</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">get_eventsHisto_vector</span><span class="o">.</span><span class="n">argtypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">c_void_p</span><span class="p">,</span> <span class="n">ndpointer</span><span class="p">(</span><span class="n">ctypes</span><span class="o">.</span><span class="n">c_long</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="s2">&quot;C_CONTIGUOUS&quot;</span><span class="p">)]</span> <span class="c1"># in notice long</span>
+
+    <span class="c1"># destroy                              defines method for deallocation</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">destroy</span><span class="o">.</span><span class="n">argtypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">c_void_p</span><span class="p">]</span>
+    
+    
+    <span class="bp">self</span><span class="o">.</span><span class="n">obj</span> <span class="o">=</span> <span class="n">lib</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+
+    
+      
+  <span class="k">def</span> <span class="fm">__exit__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">lib</span><span class="o">.</span><span class="n">destroy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">)</span>
+  
+<div class="viewcode-block" id="musr2py.read"><a class="viewcode-back" href="../../Source.html#musr2py.musr2py.musr2py.read">[docs]</a>  <span class="k">def</span> <span class="nf">read</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    usage::</span>
+<span class="sd">     from musr2py import musr2py as psiload</span>
+<span class="sd">     run = psiload()  # this is the run data file</span>
+<span class="sd">     run.read(&quot;mydata.bin&quot;)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">fnamePtr</span> <span class="o">=</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">create_string_buffer</span><span class="p">(</span><span class="n">filename</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">),</span><span class="mi">120</span><span class="p">)</span> <span class="c1"># pointer to string  and forced conversion to utf8</span>
+    <span class="k">return</span> <span class="n">lib</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">,</span> <span class="n">fnamePtr</span><span class="p">)</span></div>
+    
+    
+<div class="viewcode-block" id="musr2py.get_numberHisto_int"><a class="viewcode-back" href="../../Source.html#musr2py.musr2py.musr2py.get_numberHisto_int">[docs]</a>  <span class="k">def</span> <span class="nf">get_numberHisto_int</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    usage::</span>
+<span class="sd">     from musr2py import musr2py as psiload</span>
+<span class="sd">     run = psiload()  # this is the run data file</span>
+<span class="sd">     run.read(&quot;mydata.bin&quot;)</span>
+<span class="sd">     n = run.get_numberHisto_int()</span>
+<span class="sd">     # n is now an integer with the number of histrograms of this run</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">lib</span><span class="o">.</span><span class="n">get_numberHisto_int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">)</span></div>
+     
+<div class="viewcode-block" id="musr2py.get_histoLength_bin"><a class="viewcode-back" href="../../Source.html#musr2py.musr2py.musr2py.get_histoLength_bin">[docs]</a>  <span class="k">def</span> <span class="nf">get_histoLength_bin</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    usage::</span>
+<span class="sd">     from musr2py import musr2py as psiload</span>
+<span class="sd">     run = psiload()  # this is the run data file</span>
+<span class="sd">     run.read(&quot;mydata.bin&quot;)</span>
+<span class="sd">     n = run.get_histoLength_bin()</span>
+<span class="sd">     # n is now an integer with the number of bins in the histrograms of this run</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">lib</span><span class="o">.</span><span class="n">get_histoLength_bin</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="musr2py.get_histo_array_int"><a class="viewcode-back" href="../../Source.html#musr2py.musr2py.musr2py.get_histo_array_int">[docs]</a>  <span class="k">def</span> <span class="nf">get_histo_array_int</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">histogram</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    usage::</span>
+<span class="sd">     from musr2py import musr2py as psiload</span>
+<span class="sd">     run = psiload()  # this is the run data file</span>
+<span class="sd">     run.read(&quot;mydata.bin&quot;)</span>
+<span class="sd">     h = run.get_histo_array_int(2)</span>
+<span class="sd">     # h is now a numpy array of integers with the counts of the 3rd histogram</span>
+
+<span class="sd">    (remember python indices starts from 0)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">size</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_histoLength_bin</span><span class="p">()</span>
+    <span class="n">dataPtr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+    <span class="n">ret</span> <span class="o">=</span> <span class="n">lib</span><span class="o">.</span><span class="n">get_histo_array_int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">,</span> <span class="n">histogram</span><span class="p">,</span> <span class="n">dataPtr</span><span class="p">,</span> <span class="n">dataPtr</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">ret</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="k">return</span><span class="p">(</span><span class="n">dataPtr</span><span class="p">)</span></div>
+  
+<div class="viewcode-block" id="musr2py.get_numberTemperature_int"><a class="viewcode-back" href="../../Source.html#musr2py.musr2py.musr2py.get_numberTemperature_int">[docs]</a>  <span class="k">def</span> <span class="nf">get_numberTemperature_int</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    usage:: </span>
+<span class="sd">     from musr2py import musr2py as psiload</span>
+<span class="sd">     run = psiload()  # this is the run data file</span>
+<span class="sd">     run.read(&quot;mydata.bin&quot;)</span>
+<span class="sd">     n = run.get_numberTemperature_int()</span>
+<span class="sd">     # n is now an integer with the number of elements of the PSI monitor values</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">lib</span><span class="o">.</span><span class="n">get_numberTemperature_int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="musr2py.get_temperatures_vector"><a class="viewcode-back" href="../../Source.html#musr2py.musr2py.musr2py.get_temperatures_vector">[docs]</a>  <span class="k">def</span> <span class="nf">get_temperatures_vector</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    usage:: </span>
+<span class="sd">     from musr2py import musr2py as psiload</span>
+<span class="sd">     run = psiload()  # this is the run data file</span>
+<span class="sd">     run.read(&quot;mydata.bin&quot;)</span>
+<span class="sd">     T = run.get_temperatures_vector()</span>
+<span class="sd">     # T is now a numpy array of PSI monitor values</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">size</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_numberTemperature_int</span><span class="p">()</span> <span class="c1"># determine how many elements in vector </span>
+    <span class="n">temperaturePtr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span>  <span class="c1"># allocate an empty numpy array</span>
+                                                       <span class="c1"># of float 64 of length size</span>
+                                                       <span class="c1"># this is the pointer</span>
+    <span class="n">ret</span> <span class="o">=</span> <span class="n">lib</span><span class="o">.</span><span class="n">get_temperatures_vector</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">,</span> <span class="n">temperaturePtr</span><span class="p">)</span> <span class="c1"># call the wrapper</span>
+    <span class="k">if</span> <span class="n">ret</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="k">return</span><span class="p">(</span><span class="n">temperaturePtr</span><span class="p">)</span>  <span class="c1"># return the pointer to the numpy array</span>
+                              <span class="c1"># use T = mp2.get_temperatures_vector()</span>
+    <span class="k">else</span><span class="p">:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error in MuSR_td_PSI_bin, returning empty temperature numpy array&quot;</span><span class="p">)</span>
+      <span class="k">return</span><span class="p">(</span><span class="n">temperaturePtr</span><span class="p">)</span>  </div>
+  
+<div class="viewcode-block" id="musr2py.get_devTemperatures_vector"><a class="viewcode-back" href="../../Source.html#musr2py.musr2py.musr2py.get_devTemperatures_vector">[docs]</a>  <span class="k">def</span> <span class="nf">get_devTemperatures_vector</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    usage::</span>
+<span class="sd">     from musr2py import musr2py as psiload</span>
+<span class="sd">     run = psiload()  # this is the run data file</span>
+<span class="sd">     run.read(&quot;mydata.bin&quot;)</span>
+<span class="sd">     eT = run.get_devTemperatures_vector()</span>
+<span class="sd">     # eT is now a numpy array of PSI monitor std values</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">size</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_numberTemperature_int</span><span class="p">()</span> <span class="c1"># determine how many elements in vector </span>
+    <span class="n">etemperaturePtr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span> <span class="c1"># allocate an empty numpy array</span>
+                                                       <span class="c1"># of float 64 of length size</span>
+                                                       <span class="c1"># this is the pointer</span>
+    <span class="n">ret</span> <span class="o">=</span> <span class="n">lib</span><span class="o">.</span><span class="n">get_devTemperatures_vector</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">,</span> <span class="n">etemperaturePtr</span><span class="p">)</span> <span class="c1"># call the wrapper</span>
+    <span class="k">if</span> <span class="n">ret</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="k">return</span><span class="p">(</span><span class="n">etemperaturePtr</span><span class="p">)</span>  <span class="c1"># return the pointer to the numpy array</span>
+                              <span class="c1"># use T = mp2.get_temperatures_vector()</span>
+    <span class="k">else</span><span class="p">:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error in MuSR_td_PSI_bin, returning empty temperature std numpy array&quot;</span><span class="p">)</span>
+      <span class="k">return</span><span class="p">(</span><span class="n">etemperaturePtr</span><span class="p">)</span>  </div>
+  
+<div class="viewcode-block" id="musr2py.get_binWidth_ns"><a class="viewcode-back" href="../../Source.html#musr2py.musr2py.musr2py.get_binWidth_ns">[docs]</a>  <span class="k">def</span> <span class="nf">get_binWidth_ns</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    usage:: </span>
+<span class="sd">     from musr2py import musr2py as psiload</span>
+<span class="sd">     run = psiload()  # this is the run data file</span>
+<span class="sd">     run.read(&quot;mydata.bin&quot;)</span>
+<span class="sd">     dt = run.get_binWidth_ns()</span>
+<span class="sd">     # dt is now a float with the time resolution in ns</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">lib</span><span class="o">.</span><span class="n">get_binWidth_ns</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">)</span></div>
+  
+<div class="viewcode-block" id="musr2py.get_t0_double"><a class="viewcode-back" href="../../Source.html#musr2py.musr2py.musr2py.get_t0_double">[docs]</a>  <span class="k">def</span> <span class="nf">get_t0_double</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">histogram</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    usage::</span>
+<span class="sd">     from musr2py import musr2py as psiload</span>
+<span class="sd">     run = psiload()  # this is the run data file</span>
+<span class="sd">     run.read(&quot;mydata.bin&quot;)</span>
+<span class="sd">     t0 = run.get_t0_double(0)</span>
+<span class="sd">     # t0 is now a float with the time of t0 in ns</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">lib</span><span class="o">.</span><span class="n">get_t0_double</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">,</span> <span class="n">histogram</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="musr2py.get_sample"><a class="viewcode-back" href="../../Source.html#musr2py.musr2py.musr2py.get_sample">[docs]</a>  <span class="k">def</span> <span class="nf">get_sample</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    usage:: </span>
+<span class="sd">     from musr2py import musr2py as psiload</span>
+<span class="sd">     run = psiload()  # this is the run data file</span>
+<span class="sd">     run.read(&quot;mydata.bin&quot;)</span>
+<span class="sd">     samplename = run.get_sample()</span>
+<span class="sd">     # samplename is now a string with the sample name</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">samplePtr</span> <span class="o">=</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">create_string_buffer</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span> <span class="c1"># pointer to the string</span>
+    <span class="n">ret</span> <span class="o">=</span> <span class="n">lib</span><span class="o">.</span><span class="n">get_sample</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">,</span> <span class="n">samplePtr</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">ret</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="k">return</span> <span class="n">samplePtr</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="musr2py.get_field"><a class="viewcode-back" href="../../Source.html#musr2py.musr2py.musr2py.get_field">[docs]</a>  <span class="k">def</span> <span class="nf">get_field</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    usage::</span>
+<span class="sd">     from musr2py import musr2py as psiload</span>
+<span class="sd">     run = psiload()  # this is the run data file</span>
+<span class="sd">     run.read(&quot;mydata.bin&quot;)</span>
+<span class="sd">     fieldstr = run.get_field()</span>
+<span class="sd">     # fieldstr is now a string with the field value </span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">fieldPtr</span> <span class="o">=</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">create_string_buffer</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span> <span class="c1"># pointer to the string</span>
+    <span class="n">ret</span> <span class="o">=</span> <span class="n">lib</span><span class="o">.</span><span class="n">get_field</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">,</span> <span class="n">fieldPtr</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">ret</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="k">return</span> <span class="n">fieldPtr</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="musr2py.get_orient"><a class="viewcode-back" href="../../Source.html#musr2py.musr2py.musr2py.get_orient">[docs]</a>  <span class="k">def</span> <span class="nf">get_orient</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    usage::</span>
+<span class="sd">     from musr2py import musr2py as psiload</span>
+<span class="sd">     run = psiload()  # this is the run data file</span>
+<span class="sd">     run.read(&quot;mydata.bin&quot;)</span>
+<span class="sd">     orientstr = run.get_orient()</span>
+<span class="sd">     # orientstr is now a string with the sample orientation</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">orientPtr</span> <span class="o">=</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">create_string_buffer</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span> <span class="c1"># pointer to the string</span>
+    <span class="n">ret</span> <span class="o">=</span> <span class="n">lib</span><span class="o">.</span><span class="n">get_orient</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">,</span> <span class="n">orientPtr</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">ret</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="k">return</span> <span class="n">orientPtr</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="musr2py.get_temp"><a class="viewcode-back" href="../../Source.html#musr2py.musr2py.musr2py.get_temp">[docs]</a>  <span class="k">def</span> <span class="nf">get_temp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    usage::</span>
+<span class="sd">     from musr2py import musr2py as psiload</span>
+<span class="sd">     run = psiload()  # this is the run data file</span>
+<span class="sd">     run.read(&quot;mydata.bin&quot;)</span>
+<span class="sd">     tempstr = run.get_temp()</span>
+<span class="sd">     # tempstr is now a string with the nominal temperature</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">tempPtr</span> <span class="o">=</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">create_string_buffer</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span> <span class="c1"># pointer to the string</span>
+    <span class="n">ret</span> <span class="o">=</span> <span class="n">lib</span><span class="o">.</span><span class="n">get_temp</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">,</span> <span class="n">tempPtr</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">ret</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="k">return</span> <span class="n">tempPtr</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="musr2py.get_comment"><a class="viewcode-back" href="../../Source.html#musr2py.musr2py.musr2py.get_comment">[docs]</a>  <span class="k">def</span> <span class="nf">get_comment</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    usage: </span>
+<span class="sd">     from musr2py import musr2py as psiload</span>
+<span class="sd">     run = psiload()  # this is the run data file</span>
+<span class="sd">     run.read(&quot;mydata.bin&quot;)</span>
+<span class="sd">     comment = run.get_comment()</span>
+<span class="sd">     # comment is now a string with the run comment</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">commentPtr</span> <span class="o">=</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">create_string_buffer</span><span class="p">(</span><span class="mi">62</span><span class="p">)</span> <span class="c1"># pointer to the string</span>
+    <span class="n">ret</span> <span class="o">=</span> <span class="n">lib</span><span class="o">.</span><span class="n">get_comment</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">,</span> <span class="n">commentPtr</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">ret</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="k">return</span> <span class="n">commentPtr</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="musr2py.get_eventsHisto_vector"><a class="viewcode-back" href="../../Source.html#musr2py.musr2py.musr2py.get_eventsHisto_vector">[docs]</a>  <span class="k">def</span> <span class="nf">get_eventsHisto_vector</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    usage::</span>
+<span class="sd">     from musr2py import musr2py as psiload</span>
+<span class="sd">     run = psiload()  # this is the run data file</span>
+<span class="sd">     run.read(&quot;mydata.bin&quot;)</span>
+<span class="sd">     eventsHisto = run.get_eventsHisto_vector()</span>
+<span class="sd">     # eventsHisto is a numpy array of integers containing the number of events per histo</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">size</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_numberHisto_int</span><span class="p">()</span> <span class="c1"># determine how many elements in vector </span>
+    <span class="n">eventsHistoPtr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int64</span><span class="p">)</span> <span class="c1"># allocate an empty numpy array</span>
+                                                       <span class="c1"># of int 64 of length size </span>
+                                                       <span class="c1"># this is the pointer </span>
+    <span class="n">ret</span> <span class="o">=</span> <span class="n">lib</span><span class="o">.</span><span class="n">get_eventsHisto_vector</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">,</span> <span class="n">eventsHistoPtr</span><span class="p">)</span> <span class="c1"># call the wrapper</span>
+    <span class="k">if</span> <span class="n">ret</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="k">return</span><span class="p">(</span><span class="n">eventsHistoPtr</span><span class="p">)</span>  <span class="c1"># return the pointer to the numpy array</span>
+                              <span class="c1"># use events = musr2py.get_eventsHisto_vector()</span>
+    <span class="k">else</span><span class="p">:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error in MuSR_td_PSI_bin, returning empty number of events  per histo std numpy array&quot;</span><span class="p">)</span>
+      <span class="k">return</span><span class="p">(</span><span class="n">eventsHistoPtr</span><span class="p">)</span>  </div>
+
+<div class="viewcode-block" id="musr2py.get_runNumber_int"><a class="viewcode-back" href="../../Source.html#musr2py.musr2py.musr2py.get_runNumber_int">[docs]</a>  <span class="k">def</span> <span class="nf">get_runNumber_int</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    usage: </span>
+<span class="sd">     from musr2py import musr2py as psiload</span>
+<span class="sd">     run = psiload()  # this is the run data file</span>
+<span class="sd">     run.read(&quot;mydata.bin&quot;)</span>
+<span class="sd">     nrun = run.get_runNumber_int()</span>
+<span class="sd">     # n is now an integer with the number of this run</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">lib</span><span class="o">.</span><span class="n">get_runNumber_int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="musr2py.get_timeStart_vector"><a class="viewcode-back" href="../../Source.html#musr2py.musr2py.musr2py.get_timeStart_vector">[docs]</a>  <span class="k">def</span> <span class="nf">get_timeStart_vector</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    usage::</span>
+<span class="sd">     from musr2py import musr2py as psiload</span>
+<span class="sd">     run = psiload()  # this is the run data file</span>
+<span class="sd">     run.read(&quot;mydata.bin&quot;)</span>
+<span class="sd">     timeStart = run.get_timeStart_vector()</span>
+<span class="sd">     # timeStart is the start run hh:mm:ss dd:mm:yyy string </span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">timedatePtr</span> <span class="o">=</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">create_string_buffer</span><span class="p">(</span><span class="mi">18</span><span class="p">)</span>
+    <span class="n">ret</span> <span class="o">=</span> <span class="n">lib</span><span class="o">.</span><span class="n">get_timeStart_vector</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">,</span> <span class="n">timedatePtr</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">ret</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="k">return</span> <span class="n">timedatePtr</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="musr2py.get_timeStop_vector"><a class="viewcode-back" href="../../Source.html#musr2py.musr2py.musr2py.get_timeStop_vector">[docs]</a>  <span class="k">def</span> <span class="nf">get_timeStop_vector</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    usage::</span>
+<span class="sd">     from musr2py import musr2py as psiload</span>
+<span class="sd">     run = psiload()  # this is the run data file</span>
+<span class="sd">     run.read(&quot;mydata.bin&quot;)</span>
+<span class="sd">     timeStop = run.get_timeStop_vector()</span>
+<span class="sd">     # timeStop is the stop run hh:mm:ss dd:mm:yyy string</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">timedatePtr</span> <span class="o">=</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">create_string_buffer</span><span class="p">(</span><span class="mi">18</span><span class="p">)</span>
+    <span class="n">ret</span> <span class="o">=</span> <span class="n">lib</span><span class="o">.</span><span class="n">get_timeStop_vector</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">,</span> <span class="n">timedatePtr</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">ret</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="k">return</span> <span class="n">timedatePtr</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span></div></div>
+
+<span class="c1">#  def test(self):</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    usage::</span>
+<span class="sd">     write a script with</span>
+<span class="sd">     from musr2py import musr2py</span>
+<span class="sd">     # reads many things from a PSI data file test.bin</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">m2p</span> <span class="o">=</span> <span class="n">musr2py</span><span class="p">()</span>
+    <span class="n">m2p</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;test.bin&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">m2p</span><span class="o">.</span><span class="n">get_numberHisto_int</span><span class="p">())</span><span class="o">+</span><span class="s1">&#39; histograms in this run&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">m2p</span><span class="o">.</span><span class="n">get_histo_array_int</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">m2p</span><span class="o">.</span><span class="n">get_histo_array_int</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">m2p</span><span class="o">.</span><span class="n">get_histo_array_int</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">m2p</span><span class="o">.</span><span class="n">get_histo_array_int</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">m2p</span><span class="o">.</span><span class="n">get_binWidth_ns</span><span class="p">())</span><span class="o">+</span><span class="s1">&#39; ns/bin&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">m2p</span><span class="o">.</span><span class="n">get_numberTemperature_int</span><span class="p">())</span><span class="o">+</span><span class="s1">&#39; recorded monitors&#39;</span><span class="p">)</span>
+    <span class="n">np</span><span class="o">.</span><span class="n">set_printoptions</span><span class="p">(</span><span class="n">precision</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">m2p</span><span class="o">.</span><span class="n">get_temperatures_vector</span><span class="p">())</span><span class="o">+</span><span class="s1">&#39; +- &#39;</span><span class="p">)</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">m2p</span><span class="o">.</span><span class="n">get_devTemperatures_vector</span><span class="p">())</span><span class="o">+</span><span class="s1">&#39; K&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">m2p</span><span class="o">.</span><span class="n">get_sample</span><span class="p">()</span><span class="o">+</span><span class="s1">&#39; &#39;</span><span class="o">+</span><span class="n">m2p</span><span class="o">.</span><span class="n">get_temp</span><span class="p">()</span><span class="o">+</span><span class="s1">&#39; &#39;</span><span class="o">+</span><span class="n">m2p</span><span class="o">.</span><span class="n">get_field</span><span class="p">()</span><span class="o">+</span><span class="s1">&#39; G  &#39;</span><span class="o">+</span><span class="n">m2p</span><span class="o">.</span><span class="n">get_temp</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Comment: &#39;</span><span class="o">+</span><span class="n">m2p</span><span class="o">.</span><span class="n">get_comment</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Start run &#39;</span><span class="o">+</span><span class="n">m2p</span><span class="o">.</span><span class="n">get_timeStart_vector</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Stop run &#39;</span><span class="o">+</span><span class="n">m2p</span><span class="o">.</span><span class="n">get_timeStop_vector</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of events per histo  = </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">m2p</span><span class="o">.</span><span class="n">get_eventsHisto_vector</span><span class="p">()))</span>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2017, R. De Renzi
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
