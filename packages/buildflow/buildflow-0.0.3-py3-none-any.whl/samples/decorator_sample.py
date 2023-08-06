@@ -1,0 +1,30 @@
+"""Sample usage of buildflow.
+
+steps to run:
+    1. pip install .
+    2. gcloud auth application-default login
+    3. python decorator_sample.py
+"""
+
+import buildflow
+from buildflow import Flow
+
+# TODO(developer): add a pub/sub info.
+# subscription format: 'projects/{PROJECT_ID}/subscriptions/{SUBSCRIPTION_ID}'
+_INPUT_SUBSCRIPTION = ''
+# topic format: 'projects/{PROJECT_ID}/topic/{SUBSCRIPTION_ID}'
+_OUTPUT_TOPIC = ''
+
+
+flow = Flow()
+
+
+@flow.processor(input_ref=buildflow.PubSub(subscription=_INPUT_SUBSCRIPTION),
+                output_ref=buildflow.PubSub(topic=_OUTPUT_TOPIC))
+def process(taxi_info):
+    print(taxi_info)
+    return taxi_info
+
+
+# NOTE: You can increase the number of replicas to process the messages faster.
+buildflow.run(num_replicas=1)
