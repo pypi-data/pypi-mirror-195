@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+package_dir = \
+{'': 'src'}
+
+packages = \
+['explicitor', 'explicitor.types']
+
+package_data = \
+{'': ['*']}
+
+setup_kwargs = {
+    'name': 'explicitor',
+    'version': '0.1.0',
+    'description': 'Rust-like explicit error handling for typed Python',
+    'long_description': '# Explicitor\n\nRust-like explicit errors for typed Python.\n\n## Why this exists\n\nExceptions suck in many statically typed programming languages.\nFrom a function signature it is usually impossible to know whether the function can throw an error.\nThe Rust programming language solves this problem quite elegantly with the [Result enum](https://doc.rust-lang.org/std/result/enum.Result.html), which allows you to use the type checker to reason about correct error handling.\nAn additional benefit is that error handling is much more elegant than `try ... except` clauses.\n\nThe goal of this package is to emulate in Python the Rust way of dealing with errors.\nThe implementation is *heavily* inspired by the contents of [this blogpost](https://jellis18.github.io/post/2021-12-13-python-exceptions-rust-go/) by [Justin Ellis](https://github.com/jellis18).\nThe philosophy is that instead of raising exceptions, exceptions are returned wrapped in an `Err` class, which is a variant of the `Result` type.\nHence, a function that can get into an error state returns a `Result` which can be clearly indicated in a function signature.\nThis can be valuable when one uses static type analysis tools like [mypy](https://www.mypy-lang.org/).\n\n## Installation\n\n```bash \npip install explicitor\n```\n\n\n## How to use it\n\nThere are 3 types defined: `Ok`, `Err` which are the two variants of `Result`.\n\nInstead of defining a function that can raise an exception, for example:\n\n```python \ndef function(x: int) -> int:\n    if x < 10:\n        raise ValueError("too small")\n    return x + 1\n```\n\nyou would define your function as\n\n```python \nfrom explicitor import Ok, Err, Result\n\n\ndef function(x: int) -> Result[int, ValueError]:\n    if x < 10:\n        return Err(ValueError("too small"))\n    return Ok(x + 1)\n```\n\nTo deal with the error, there\'s a number of methods implemented on `Err` and `Ok`:\n\n```python \nresult_1 = function(20)  # should be an Ok\nresult_2 = function(5)  # should be an Err\n\n\n# unwrap: returns the wrapped value of an Ok or raises the error contained by an Err\nassert result_1.unwrap() == 21\ntry:\n    result_2.unwrap()\nexcept ValueError as e:\n    assert str(e) == "too small"\n\n\n# expect: same as unwrap, but raises a custom exception with custom message\nassert result_1.expect("bla") == 21\ntry:\n    result_2.expect("bla")\nexcept Exception as e:\n    assert str(e) == "bla"\n\n\n# is_ok and is_err: checks what variant it is and returns a boolean\nassert result_1.is_ok()\nassert result_2.is_err()\n\n\n# unwrap_or: if Ok, unwrap, if Err, return the value supplied\nassert result_1.unwrap_or(2) == 21\nassert result_2.unwrap_or(2) == 2\n\n\n# unwrap_or_else: if Ok, unwrap, if Err, apply a function to the wrapped error and return it\nassert result_1.unwrap_or_else(lambda x: str(x)) == 21\nassert result_2.unwrap_or_else(lambda x: str(x)) == "too small"\n\n\n# unwrap_err: the opposite of unwrap, raise an exception if Ok, return the wrapped Exception if Err\ntry:\n    result_1.unwrap_err()\nexcept Exception as e:\n    assert str(e) == "Unexpected Ok(21)"\nassert str(result_2.unwrap_err()) == "too small"\n\n\n# expect_err: the opposite of expect, raise an exception with custom message if Ok, return the wrapped Exception if Err\ntry:\n    result_1.expect_err("custom message")\nexcept Exception as e:\n    assert str(e) == "custom message"\nassert str(result_2.expect_err("custom message")) == "too small"\n\n\n# map: apply a function to the wrapped value in Ok, do nothing if Err\nassert result_1.map(lambda x: x + 1) == Ok(22)\nassert result_2.map(lambda x: x + 1) == Err(ValueError("too small"))\n```\n\nFinally, in Python 3.10+, it\'s possible to use Rust-like `match` statements for dealing with the errors:\n\n```python \nmatch function(20):\n    case Ok(v): print("The value is", v)\n    case Err(e): print("The error is", str(e))\n```\n\nSuppose a function does raise exceptions, it is possible to use the `unraise` decorator to catch these exceptions and return them wrapped in an `Err` instead.\nIf no exception is raised, the decorator wraps the output of the function in an `Ok`.\n\n```python \nfrom typing import Callable\nfrom explicitor import unraise\n\n\ndef function(x: int) -> int:\n    if x < 10:\n        raise ValueError("too small")\n    return x + 1\n\n\nsafe_func: Callable[[int], Result[int, ValueError]] = unraise(function)\n```\n\n## What does not work\nIn Rust, there is the handy `?` operator, which allows you to quickly return an `Err` from a function or continue if the result is an `Ok`.\nIn Python, the equivalent might be:\n\n```python\nresult: Result = function()\n\nif result.is_err():\n    return result\n\n...\n```\n\nThere are also a lot of additional methods available on Rust\'s `Ok` and `Err` which are thus far not implemented, particularly their translations to `Option`.\n\nPersonal experimentation has shown that mypy may not always deal with these types or the `match` expression as expected, certainly I would not consider them as safe as the Rust equivalents.\nIf you know how to improve the implementation so that it works better with mypy, and/or makes the behavior more Rust-like, feel free to make a PR.\n\n\n## Contributing\n1. Fork and clone the repo\n2. Create a virtual environment\n3. `poetry install`\n',
+    'author': 'Niels Cautaerts',
+    'author_email': 'nielscautaerts@hotmail.com',
+    'maintainer': 'None',
+    'maintainer_email': 'None',
+    'url': 'https://github.com/din14970/explicitor',
+    'package_dir': package_dir,
+    'packages': packages,
+    'package_data': package_data,
+    'python_requires': '>=3.10,<4.0',
+}
+
+
+setup(**setup_kwargs)
