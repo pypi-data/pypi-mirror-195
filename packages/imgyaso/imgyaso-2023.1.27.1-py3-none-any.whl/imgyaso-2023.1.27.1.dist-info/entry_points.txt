@@ -1,0 +1,3 @@
+[console_scripts]
+imgyaso = imgyaso.__main__:main
+

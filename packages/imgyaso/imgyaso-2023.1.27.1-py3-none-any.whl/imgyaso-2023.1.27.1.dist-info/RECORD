@@ -1,0 +1,13 @@
+imgyaso/__init__.py,sha256=D70K37tQGopK46SK5kME2o34gZ41ClfIT-WVZ8fBjU4,414
+imgyaso/__main__.py,sha256=iSkniEVRybfd4ITSXFBp01xObre_dvFnRTWPLFYtSHc,2695
+imgyaso/adathres.py,sha256=KU3K72mv-Ngdj6i29T84dliX2_9X-XTEU8ErgYLlKL4,1285
+imgyaso/dither.py,sha256=fA3ysdH7CBFVcNSu1k8FFNfMYwa-fTJ7LtuxOUDh4AA,5093
+imgyaso/quant.py,sha256=nVbv6aYYn_-Q0Pukdd5xj6ottyL7Fq-VgG8lh_SfiKQ,1498
+imgyaso/trunc.py,sha256=4W4QkinuSchc664DcEU3IPZWEU-sGuTZfDUnn8StUV0,911
+imgyaso/util.py,sha256=b0oS_30k-eOEQFfV6h1MMftZ8jTQG7aYz939rWo53CA,729
+imgyaso-2023.1.27.1.dist-info/LICENSE,sha256=HKZ7wTpS94R5qYlulIKRWvEpYxGF5o_WKxvWn4wM2lc,1833
+imgyaso-2023.1.27.1.dist-info/METADATA,sha256=kspYIMsX4tHJlpZWhej3t5CioaXPtuZMmD7Era6M5Ps,2529
+imgyaso-2023.1.27.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+imgyaso-2023.1.27.1.dist-info/entry_points.txt,sha256=CgGB2XIjAXLTGT8gG-OwWw9Hv_qYuwuaup2I5tci80U,51
+imgyaso-2023.1.27.1.dist-info/top_level.txt,sha256=fsruxHTGQ0ioXPnmyCv5iYuTuUu2kqw_9aOenbekB9A,8
+imgyaso-2023.1.27.1.dist-info/RECORD,,
