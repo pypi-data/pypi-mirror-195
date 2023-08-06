@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+raspaSPIUnet/__init__.py
+raspaSPIUnet.egg-info/PKG-INFO
+raspaSPIUnet.egg-info/SOURCES.txt
+raspaSPIUnet.egg-info/dependency_links.txt
+raspaSPIUnet.egg-info/requires.txt
+raspaSPIUnet.egg-info/top_level.txt
