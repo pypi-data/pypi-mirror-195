@@ -1,0 +1,7 @@
+setup.py
+gwdtest/__init__.py
+gwdtest/add_num.py
+gwdtest.egg-info/PKG-INFO
+gwdtest.egg-info/SOURCES.txt
+gwdtest.egg-info/dependency_links.txt
+gwdtest.egg-info/top_level.txt
