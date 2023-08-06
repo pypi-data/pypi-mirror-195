@@ -1,0 +1,11 @@
+chatgpt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatgpt/main.py,sha256=3t5eZWT79TkdF7h8B1gCbCEe25NpA5al4r8YINtNXvw,455
+chatgpt/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatgpt/core/gpt_35_turbo.py,sha256=X8zR8dRr87JCnk93G57DQtGIxN9nbuXPbISpH1HTvXA,2565
+chatgpt/core/text_davinci_003.py,sha256=GWYRcLzAaEejzQv5cRzDPTnwtgHA-d6DJwRLa6Gnbo4,2265
+asst-1.7.dist-info/LICENSE,sha256=_cdFfDpRnQl1R9CXRANvPdw97I6Jof2ir-eVf7XT1_M,1102
+asst-1.7.dist-info/METADATA,sha256=5Qn2tcxM9Y6cM-M2iuadc_7tdtNASmWmP3B28yuzToM,477
+asst-1.7.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+asst-1.7.dist-info/entry_points.txt,sha256=V2aeIaUA2oo2z2aV-Lc4lHgtF1upg85jIlgJf0Au1mk,43
+asst-1.7.dist-info/top_level.txt,sha256=ogfFw9mYdqL6TZsrlfGumrd61piUQvJzgEobqC7_tio,8
+asst-1.7.dist-info/RECORD,,
