@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: Virus_Total_Bypass
+Version: 0.0.5
+Summary: Script made in python to try to have as few detections as possible in Virustotal.
+Home-page: https://github.com/CookiesKush
+Author: CookiesKush420
+Author-email: cookiesservices@triots.com
+License: MIT
+Keywords: Virus Total,Bypass
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENCE.txt
+
+This is a very log desc
+
+
+Change Log
+==========
+
+0.0.1 (03/03/2023)
+-------------------
+- First Release
+
+
