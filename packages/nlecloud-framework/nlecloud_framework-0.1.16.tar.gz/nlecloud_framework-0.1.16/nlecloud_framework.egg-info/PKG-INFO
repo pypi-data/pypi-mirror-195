@@ -1,0 +1,211 @@
+Metadata-Version: 2.1
+Name: nlecloud-framework
+Version: 0.1.16
+Summary: nlecloud_framework框架
+Home-page: https://gitee.com/daliyup0518/nlecloud_framework.git
+Author: cfp
+Author-email: 954742660@qq.com
+Maintainer: dalyer
+Maintainer-email: 954742660@qq.com
+License: BSD License
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 一、框架介绍
+
+此框架最主要是，是要对tornado进行一个封装的web框架，当然其中也包括了很多的常用的工具在根项目的utils下，以及一些
+libs库项目。
+
+
+# 版本更新说明
+**0.1.16**
+
+新增openai chatgpt 程序位置nlecloud_framework\libs\chatgpt\open_chat_gpt.py
+
+新增在windows的cmd下输出颜色文字
+
+新增时间模块帮助类
+
+
+
+
+# 二、配置文件介绍
+
+对于配置文件我们进行了单例模式，之后朋友你要使用框架，只要在根目录创建client_config.py作为你的配置文件。
+
+然后就可以在整个项目中使用from nlecloud_framework import config 去导入你的配置信息。放心这个配置只会被加载一次。
+
+![1677748677287](https://mang-he.oss-cn-zhangjiakou.aliyuncs.com/framework/c619276030ff45a7911d43cf18352104.png)
+
+其中client_config.py你可以这样写：
+
+```python
+import threading
+import time
+import os
+
+class OSS_config(object):
+    ak_id = "FlRFRTaHhCbVJLQW9OSDR"
+    ak_secret = "FlRFRTaHhCbVJLQW9OSDRW9OSDRx"
+    bucket_name = "hezi-he"
+    demain = "https://hezi.oss-cn-zhangjiakou.aliyuncs.com/"
+    end_point = "oss-cn-hezi.aliyuncs.com"
+
+
+class client_config:
+    # 单例模式需要加锁判断
+    _instance = None
+    _lock = threading.RLock()
+
+    # 项目的跟目录
+    project_path = os.path.dirname(os.path.abspath(__file__))
+    # 加密秘钥，可以使用nlecloud_framework\utils\crypto.py 进行生成
+    crypto_key = "QzFxS2FlRFRTaHhCbVJLQW9OSDRxcGxONWlneTRnZlA2VlpwSWRNR3p4VT0="
+    # 文件的临时位置
+    temp_path = os.path.join(project_path,"temp_file")
+    if not os.path.exists(temp_path):
+        os.mkdir(temp_path)
+    # oss的配置信息
+    oss_config = OSS_config()
+
+    def __new__(cls, *args, **kwargs):
+        """
+        实现单例模式
+        :param args:
+        :param kwargs:
+        """
+        if cls._instance:
+            return cls._instance
+
+        with cls._lock:
+            if cls._instance:
+                return cls._instance
+
+            cls._instance = object.__new__(cls)
+            return cls._instance
+
+```
+
+
+
+# 三、工具类介绍
+
+## 3.1：加密库
+
+```bash
+nlecloud_framework\utils\crypto.py
+```
+
+- 可以使用genRandomKey方法生成一个秘钥，后期可以使用plain_to_ciphert和cipher_to_plain进行数据加解密
+- 可以使用create_rsa_pair去创建一个2048位的非对称加密，后期使用encryption和decryption进行加解密
+
+```python
+if __name__ == '__main__':
+    # 1、获取加密秘钥
+    key = CryptoHelper.genRandomKey()
+    ciphertext = CryptoHelper.plain_to_ciphert(key,plaintext="明文信息")
+    plaintext = CryptoHelper.cipher_to_plain(key,ciphertext=ciphertext)
+    print("密文：",ciphertext)
+    print("明文：",plaintext)
+
+    # 2、非对称加密
+    # 生成秘钥对
+    public_key, private_key = CryptoHelper.create_rsa_pair(is_save=False)
+    # 读取公钥信息
+    public_key = CryptoHelper.read_public_key("crypto_public_key.pem")
+    # 加密
+    text = '123456'
+    text_encrypted_base64 = CryptoHelper.encryption(text, public_key)
+    print('密文：', text_encrypted_base64)
+
+    # 解密
+    text_decrypted = CryptoHelper.decryption(text_encrypted_base64, private_key)
+    print('明文：', text_decrypted)
+```
+
+## 3.2：nlecommon库
+
+- 可以将多行一大串字符，变成一个列表如下面这样格式
+
+```python
+if __name__ == '__main__':
+    a = """
+    aliyun-python-sdk-core==2.13.36
+aliyun-python-sdk-kms==2.16.0
+    """
+    stringTextLine_to_list(a,is_print=True)
+    
+    # 输出信息，输出转换好的文本信息
+    # ['aliyun-python-sdk-core==2.13.36', 'aliyun-python-sdk-kms==2.16.0']
+```
+
+## 3.3：阿里云的OSS封装
+
+阿里官网：https://www.aliyun.com/product/oss
+
+当然了你要自己去购买服务，然后对client_config.py中OSS_config进行替换。
+ ![1677748677287](https://mang-he.oss-cn-zhangjiakou.aliyuncs.com/framework/e6a337dd4bbe4da7b3d8263a5b8d3185.png)
+- 上传文件
+
+
+```python
+from nlecloud_framework.utils.oss import OSSHelper
+from nlecloud_framework import config
+
+if __name__ == '__main__':
+    file_name, resource_path = OSSHelper.oss_upload(r"assets\Snipaste_2023-03-03_08-59-48.png", oss_config=config.oss_config,file_folder="framework")
+    print(file_name, resource_path)
+    # 输出信息 
+    # file_name ：framework/e6b8d3185.png 
+    # resource_path ：https://hezi.oss-cn-zhangjiakou.aliyuncs.com/framework/e6b8d3185.png
+    
+```
+
+## 3.4：自动试卷
+
+主要是将Excel的的题库，转化为word的格式的试卷比如像这样的转换：
+ ![1677748677287](https://mang-he.oss-cn-zhangjiakou.aliyuncs.com/framework/91103ad24c8044aaa862defa3d3a4d1e.png)
+
+```python
+from nlecloud_framework.libs.exam.exam_paper import ExamPaperHelper
+from nlecloud_framework import config
+
+if __name__ == '__main__':
+    obj = ExamPaperHelper()
+    # 数据Excel文件名和要保存的试卷文件名
+    obj.run(excel_name="试题.xlsx",word_name="新的试卷")
+    # 输出程序如何使用
+    obj.usage()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
