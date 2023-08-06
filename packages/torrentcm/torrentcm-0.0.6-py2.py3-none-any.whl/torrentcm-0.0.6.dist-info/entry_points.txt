@@ -1,0 +1,2 @@
+[console_scripts]
+torrentcm = torrentcm.torrentcm:main
