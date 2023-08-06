@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+swcolorpicker/__init__.py
+swcolorpicker/__main__.py
+swcolorpicker/img.py
+swcolorpicker/swcolorpicker.py
+swcolorpicker/ui_dark.py
+swcolorpicker/ui_dark_alpha.py
+swcolorpicker.egg-info/PKG-INFO
+swcolorpicker.egg-info/SOURCES.txt
+swcolorpicker.egg-info/dependency_links.txt
+swcolorpicker.egg-info/requires.txt
+swcolorpicker.egg-info/top_level.txt
