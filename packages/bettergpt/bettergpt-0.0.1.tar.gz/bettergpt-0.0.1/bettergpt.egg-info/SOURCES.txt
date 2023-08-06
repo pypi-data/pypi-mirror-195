@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+bettergpt/__init__.py
+bettergpt.egg-info/PKG-INFO
+bettergpt.egg-info/SOURCES.txt
+bettergpt.egg-info/dependency_links.txt
+bettergpt.egg-info/top_level.txt
