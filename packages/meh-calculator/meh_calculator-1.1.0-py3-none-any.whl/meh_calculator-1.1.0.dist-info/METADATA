@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: meh-calculator
+Version: 1.1.0
+Summary: A simple calculator for Mehedi
+Author: Mehedi Mahmud
+Author-email: 1001025@daffodil.ac
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Under construction ! Not ready for use yet!
+Currently experimenting and planning!
+
+Developed by Mehedi Mahmud (c) 2023
+
+# Example of How To Use USN Calculator
+
+Creating A Calculator
+```python
+
+def add_numbers(a,b):
+    return a + b
+
+def sub_numbers(a,b):
+    return a - b
+
+def mul_numbers(a,b):
+    return a * b
+
+def div_numbers(a,b):
+    return a / b
+
+USES:
+from meh_calculator import calculator
+calculator.add_numbers(7,8)
+```
