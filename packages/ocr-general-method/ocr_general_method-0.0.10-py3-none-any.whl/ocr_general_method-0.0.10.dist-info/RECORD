@@ -1,0 +1,13 @@
+__init__.py,sha256=9UjUvKOU0v-ul1aLLKCZSmGIzDGssC7-cCaB6TDWfj4,113
+ocr_general_method/__init__.py,sha256=ABS5BUn6tzQq3Zbo2R0pt_iQEuOJ5gL6cRSWdks5PKA,148
+ocr_general_method/common/__init__.py,sha256=S6vxln0fClcmvLW_oKfUw1qehopCOioa7r-gBRKo6Mg,152
+ocr_general_method/common/exception_utils.py,sha256=iakQQeaVjgIjMzwAx0G7RXQtSCl5koyTH53A2vQNthI,930
+ocr_general_method/common/file_utils.py,sha256=Wb3bPVLWLCReH6VXTrVaDlWhZ2Xy2WBe9FSESDENA8U,5203
+ocr_general_method/common/http_utils.py,sha256=iuGjMzx1VSIKx1rSsyM-xV38Vz0RJfRtuQf17fZq9e8,849
+ocr_general_method/example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ocr_general_method/example/example.py,sha256=1ttK0HTZXIl6tvJLUJZt9UAa9-QEu9Xw5axNjAH0JLo,61
+ocr_general_method-0.0.10.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ocr_general_method-0.0.10.dist-info/METADATA,sha256=F3cUWtMiBrFjwN0SmnyEE6sqe9DKIpGgr-r58Dl0P7g,564
+ocr_general_method-0.0.10.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ocr_general_method-0.0.10.dist-info/top_level.txt,sha256=1quOoJynSPvu0hP3atJIh-PenWxvc8Cp03LogAcwrDY,28
+ocr_general_method-0.0.10.dist-info/RECORD,,
