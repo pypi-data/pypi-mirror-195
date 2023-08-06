@@ -1,0 +1,28 @@
+#data_file {
+    align: center middle;
+    border: solid gray;
+    margin-bottom: 1;
+}
+
+#question {
+    align: center middle;
+    border: solid gray;
+    margin-bottom: 1;
+}
+
+Screen {
+    layout: grid;
+    grid-size: 2 1;
+}
+
+Container {
+    background: $boost;
+    border: solid gray;
+    height: 100%;
+}
+
+Label {
+    width: auto;
+    height: 1;
+    background: $accent;
+}
