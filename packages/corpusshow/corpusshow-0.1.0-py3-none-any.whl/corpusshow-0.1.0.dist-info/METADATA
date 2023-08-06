@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: corpusshow
+Version: 0.1.0
+Summary: Corpus-Show makes it easier and faster to visualize corpus through sentence embedding of corpus.
+Home-page: https://github.com/DSDanielPark/corpus-show
+Author: parkminwoo
+Author-email: parkminwoo1991@gmail.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sentence-transformers
+Requires-Dist: quickshow
+
+# Corpus-Show
+Corpus-Show helps to understand the corpus data distribution through various values generated from NLP tokenizer.
