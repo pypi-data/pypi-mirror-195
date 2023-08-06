@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+convacolor/__init__.py
+convacolor/ncs_data.py
+convacolor.egg-info/PKG-INFO
+convacolor.egg-info/SOURCES.txt
+convacolor.egg-info/dependency_links.txt
+convacolor.egg-info/top_level.txt
