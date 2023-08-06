@@ -1,0 +1,9 @@
+generest/__init__.py,sha256=wysZCPI_AXGos-4zwsha6GiyhmntZjR2EiWhWOV6FC0,68
+generest/cli/__init__.py,sha256=-Ll7apsPMSNUZdIcLBqHJWukAFoWMaIdcrHwbrzDBe0,62
+generest/cli/main.py,sha256=BWO2iaIhkEKo9ubvvQE0QViCB-4rDCqDzVObAX3WGNE,274
+generest-4.dist-info/LICENSE,sha256=n2QQ1LB275gj96qSCWdw-g0jk6ppV-jRhuVqWT2yGiA,35112
+generest-4.dist-info/METADATA,sha256=m7sVj3ruSYKKhiEsjjgG2SQQFTn_jKCEe7nXUr2pxb0,3972
+generest-4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+generest-4.dist-info/entry_points.txt,sha256=cVernTZK2-AYvyGjB0lm6XsLse4qLV1uJGrjzz7AE7w,47
+generest-4.dist-info/top_level.txt,sha256=igFacQg2zmzOgfwvswm5nsXmMRo0lcLJyXejBKAvGLo,9
+generest-4.dist-info/RECORD,,
