@@ -1,0 +1,10 @@
+README.md
+setup.py
+gptpy/__init__.py
+gptpy/gptpy.py
+gptpy.egg-info/PKG-INFO
+gptpy.egg-info/SOURCES.txt
+gptpy.egg-info/dependency_links.txt
+gptpy.egg-info/entry_points.txt
+gptpy.egg-info/requires.txt
+gptpy.egg-info/top_level.txt
