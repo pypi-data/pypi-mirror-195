@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/adenosine/__init__.py
+src/adenosine.egg-info/PKG-INFO
+src/adenosine.egg-info/SOURCES.txt
+src/adenosine.egg-info/dependency_links.txt
+src/adenosine.egg-info/top_level.txt
