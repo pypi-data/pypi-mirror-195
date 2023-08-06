@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ezctl
+Version: 0.1.18
+Summary: 
+Author: peijia
+Author-email: peijia@nextbillion.ai
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: typer[all] (>=0.6.1,<0.7.0)
+Description-Content-Type: text/markdown
+
+# ezctl
+
+integrate sp/ssp/pbf to start a local nbroute

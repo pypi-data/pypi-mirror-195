@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ezctl"
+version = "0.1.18"
+description = ""
+authors = ["peijia <peijia@nextbillion.ai>"]
+readme = "README.md"
+packages = [
+    { include = "ezctl" },
+    { include = "commons" },
+    { include = "commands" },
+]
+
+[tool.poetry.scripts]
+ezctl = "ezctl.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+typer = {extras = ["all"], version = "^0.6.1"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
