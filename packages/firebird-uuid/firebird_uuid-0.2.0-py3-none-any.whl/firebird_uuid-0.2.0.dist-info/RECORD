@@ -1,0 +1,10 @@
+firebird/uuid/__init__.py,sha256=X9ri8Jcra-_yH8pYlnUMGzYGgKdV-4lg77hpg5hY8lM,1718
+firebird/uuid/_model.py,sha256=JAzZ-kwEpyvQC9LsyGaIjbZvmTiq4MEhjn41nN9tMlY,8236
+firebird/uuid/_registry.py,sha256=foJUEA013pWs0SM_TcdzkH088CRRHnAYaZIqpgZeAqc,5122
+firebird/uuid/_spec.py,sha256=wz5Gl92Mjx90YeJRvhxXtEj-2fZRR-EhfNa1VuvBNb4,14066
+firebird_uuid-0.2.0.dist-info/LICENSE,sha256=RXeR1aeo-tvFYvBsBHahWsk_mxPBrXPaLBuaul-7k2M,1100
+firebird_uuid-0.2.0.dist-info/METADATA,sha256=2FzBVz_tJAU5qaNBXG3CdHcj_Y76BYXAvWYspBKkRFQ,2742
+firebird_uuid-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+firebird_uuid-0.2.0.dist-info/top_level.txt,sha256=N4Gw4cmu0RmoDDexl12jzkFggSpBGYYdf0HwZenEza4,9
+firebird_uuid-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+firebird_uuid-0.2.0.dist-info/RECORD,,
