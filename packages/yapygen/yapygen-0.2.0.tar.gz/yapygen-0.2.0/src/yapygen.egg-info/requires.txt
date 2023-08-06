@@ -1,0 +1,11 @@
+InquirerPy
+
+[lint]
+flake8
+isort
+black
+mypy
+
+[test]
+pytest
+pytest-cov
