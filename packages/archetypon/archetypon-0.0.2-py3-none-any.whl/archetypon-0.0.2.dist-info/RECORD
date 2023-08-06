@@ -1,0 +1,15 @@
+archetypon/__init__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+archetypon/_modidx.py,sha256=PcJc5wgKbQKotr-Dh9Wfwa4hj8eSfmxihJ5nyTsLthU,15572
+archetypon/base_model.py,sha256=by_WAEEdQxziw6p3c3QW8BovEreIZT7WjeFKuZQpLCk,5889
+archetypon/core.py,sha256=dNFG4KJ-xDlk-uvY7BVeZ5ZWSOq-xTvrnWrLbqkP2Gs,248
+archetypon/database.py,sha256=K0k5uESqfD1fDBJdN56aa5sQtiO-PC-z3N-qdSp9fvc,6315
+archetypon/delegates.py,sha256=tQewi9tRK9FLN6lfuMGIyz0cetjipo54aEtKjqPpFLw,835
+archetypon/formatting.py,sha256=N_w50vj_aBKvbgM8V2cSmauhlYPZDhw23LtZ8dKXS7g,4581
+archetypon/record_validation.py,sha256=I-32HhJh7mnz0vXR-VM2F1sRku64_VqE3vLfh5kQ5dE,3483
+archetypon/string_templating.py,sha256=NrUK2bq-6xVSQP0y0e7KMU-0CkHcQcnSm41FsCsbNi8,2001
+archetypon-0.0.2.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+archetypon-0.0.2.dist-info/METADATA,sha256=eqPWK9uWBLi_qf3fiaAAwWoFUYhNgAD9bbXCNimmD2M,1503
+archetypon-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+archetypon-0.0.2.dist-info/entry_points.txt,sha256=zOEqYGcU0vj4wCPhh-oSPwcMKwW2U2W12TXxi7twoFM,42
+archetypon-0.0.2.dist-info/top_level.txt,sha256=RmYCXvJ3D5BWIduEjdsE2FndosTk2pSad-gXatSychI,11
+archetypon-0.0.2.dist-info/RECORD,,
