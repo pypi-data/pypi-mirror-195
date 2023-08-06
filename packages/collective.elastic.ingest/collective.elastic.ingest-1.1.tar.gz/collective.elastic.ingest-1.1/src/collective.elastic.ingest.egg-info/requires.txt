@@ -1,0 +1,6 @@
+CacheControl
+celery
+elasticsearch>=7
+requests
+setuptools
+six
