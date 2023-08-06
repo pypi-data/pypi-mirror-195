@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+astartes/__init__.py
+astartes/main.py
+astartes/molecules.py
+astartes.egg-info/PKG-INFO
+astartes.egg-info/SOURCES.txt
+astartes.egg-info/dependency_links.txt
+astartes.egg-info/requires.txt
+astartes.egg-info/top_level.txt
+test/test_astartes.py
+test/test_molecules.py
