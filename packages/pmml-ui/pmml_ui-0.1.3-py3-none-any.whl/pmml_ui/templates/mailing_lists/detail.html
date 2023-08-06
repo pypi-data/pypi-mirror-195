@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1>{% block title %}{{ mailing_list.address }}{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<a href="{{ url_for('mailing_lists.add_member', mailing_list_name=mailing_list.name) }}">Add</a>
+<form method="POST" action="{{ url_for('mailing_lists.detail', mailing_list_name=mailing_list.name) }}">
+  <div class="form-group">
+{{ mailing_list_form.hidden_tag() }}
+{% for member in mailing_list_form.members %}
+  <ul>
+    {{ member.address(size=40) }}
+    <a class="text-decoration-none" href="{{ url_for('mailing_lists.delete_member', mailing_list_name=mailing_list.name, member_address=member.address.data) }}">&#10006;</a>
+  </ul>
+{% endfor %}
+<input type="submit" value="Save">
+  </div>
+</form>
+{% endblock %}

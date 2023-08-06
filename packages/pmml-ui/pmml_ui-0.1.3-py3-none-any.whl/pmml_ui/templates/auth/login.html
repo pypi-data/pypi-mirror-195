@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Log In{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    <div class="form-group">
+    {{ login_form.hidden_tag() }}
+    {{ login_form.username.label }}
+    {{ login_form.username() }}
+    {{ login_form.password.label }}
+    {{ login_form.password() }}
+    <input type="submit" value="Login">
+    </div>
+  </form>
+{% endblock %}
