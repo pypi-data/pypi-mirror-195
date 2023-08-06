@@ -1,0 +1,6 @@
+Tensornlp.py
+setup.py
+Tensornlp.egg-info/PKG-INFO
+Tensornlp.egg-info/SOURCES.txt
+Tensornlp.egg-info/dependency_links.txt
+Tensornlp.egg-info/top_level.txt
