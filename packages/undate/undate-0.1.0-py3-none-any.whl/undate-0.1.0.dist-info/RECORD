@@ -1,0 +1,10 @@
+undate/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+undate/undate.py,sha256=SxC9AUTAtWu0unmvjlnMOUDFvgrpao7UJU-ipubmzAY,6016
+undate/dateformat/__init__.py,sha256=qg_nEstLMM3Vd86B07Y23EfRGPSyrd0K3VMAkYAYlJ8,109
+undate/dateformat/base.py,sha256=O9mez-n32CDBiLzxkr524cArFKi26mbmuwlGqlBRnNI,2413
+undate/dateformat/iso8601.py,sha256=B2rZM0z9zqEcPiuLPR3mriYEEn6jc46F0pmBdHrkd-k,3011
+undate-0.1.0.dist-info/LICENSE.md,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+undate-0.1.0.dist-info/METADATA,sha256=pF7RUixN6ONj0HkyqJARS1l6ShQMiGarkqzGvpnac8w,9158
+undate-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+undate-0.1.0.dist-info/top_level.txt,sha256=YMRWPjYbScibmBDPCTiNHgDuSPtXNAkWq7VVRN6i5o0,7
+undate-0.1.0.dist-info/RECORD,,
