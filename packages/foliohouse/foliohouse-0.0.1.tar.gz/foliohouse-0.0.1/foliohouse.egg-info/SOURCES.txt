@@ -1,0 +1,8 @@
+setup.py
+foliohouse/__init__.py
+foliohouse/load_dataset.py
+foliohouse.egg-info/PKG-INFO
+foliohouse.egg-info/SOURCES.txt
+foliohouse.egg-info/dependency_links.txt
+foliohouse.egg-info/requires.txt
+foliohouse.egg-info/top_level.txt
