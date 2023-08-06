@@ -1,0 +1,10 @@
+streamers/__init__.py,sha256=pMywNUzDJVC1Y6Ndoj32fRt7IUN4HW0YZVjZX_XrwIc,27
+streamers/streamers.py,sha256=W6AAfh-8SepdDqWWNLyblmCPC747hHqvUajvOYs2iG8,13199
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/streamers_test.py,sha256=IjO7w9HCmdtS5dimqeLdc_0D6GOJISecIOtkqC3gFRM,5896
+streamers-1.2.9.dist-info/LICENSE,sha256=V1eMUhHMCfravCGR5Hccnr0wIABG8Wi2kWY6MH8IG4Y,1069
+streamers-1.2.9.dist-info/METADATA,sha256=OKXWGBIekewmDSzUS2NG_u5gM8nPpcjKhLluDCJk2t0,8176
+streamers-1.2.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+streamers-1.2.9.dist-info/entry_points.txt,sha256=vqq5mMZlbCEGKYlG-4Kc_tqb-VnBss4Wn9yV3oEwWG0,45
+streamers-1.2.9.dist-info/top_level.txt,sha256=Y2OYR0QRJgHmhnhYJxVDTnJdMG5EE365VRHqSpv7-6w,16
+streamers-1.2.9.dist-info/RECORD,,
