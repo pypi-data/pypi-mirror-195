@@ -1,0 +1,12 @@
+.installed.cfg
+*.py[co]
+__pycache__/
+.pytest_cache
+build/
+dist/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+venv/
+.idea/
