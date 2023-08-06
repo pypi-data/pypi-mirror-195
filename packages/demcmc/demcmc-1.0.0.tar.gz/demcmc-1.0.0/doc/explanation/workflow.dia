@@ -1,0 +1,25 @@
+digraph foo {
+    "Temperature bins" [shape=box]
+    "Contribution functions" [shape=box]
+    "Density" [shape=box]
+    "Line intensities" [shape=box]
+    "DEM" [shape=box]
+    "FIP" [shape=box]
+
+    "Line intensities" -> "Calculate density"
+    "Calculate density" -> "Density"
+
+    "Density" -> "Calculate contribution functions"
+    "Calculate contribution functions" -> "Contribution functions"
+
+    "Line intensities" -> "DEM inversion"
+    "Contribution functions" -> "DEM inversion"
+
+    "Temperature bins" -> "DEM inversion";
+
+    "DEM inversion" -> "DEM"
+
+    "DEM" -> "FIP inversion"
+
+    "FIP inversion" -> "FIP"
+}

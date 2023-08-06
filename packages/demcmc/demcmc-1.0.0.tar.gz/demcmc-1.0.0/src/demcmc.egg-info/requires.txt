@@ -1,0 +1,21 @@
+astropy
+emcee
+matplotlib
+netCDF4
+numpy
+pooch
+xarray
+
+[:python_version == "3.8"]
+typing_extensions
+
+[docs]
+myst_parser
+numpydoc
+pydata-sphinx-theme
+sphinx
+sphinx_gallery
+
+[tests]
+pytest
+pytest-cov

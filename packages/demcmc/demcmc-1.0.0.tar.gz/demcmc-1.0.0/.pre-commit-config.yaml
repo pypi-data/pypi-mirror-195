@@ -1,0 +1,35 @@
+repos:
+    # Sort order of Python imports
+    - repo: https://github.com/pycqa/isort
+      rev: 5.12.0
+      hooks:
+          - id: isort
+    # Python code formatting
+    - repo: https://github.com/psf/black
+      rev: 23.1.0
+      hooks:
+          - id: black
+    # Remove unused Python imports
+    - repo: https://github.com/PyCQA/autoflake
+      rev: v2.0.1
+      hooks:
+        - id: autoflake
+          args: ["--in-place", "--remove-all-unused-imports", "--ignore-init-module-imports"]
+    # Run mypy type validation
+    -   repo: https://github.com/pre-commit/mirrors-mypy
+        rev: 'v1.0.1'
+        hooks:
+        - id: mypy
+          exclude: ^src/demcmc/tests|^doc/tutorials
+          additional_dependencies: [types-setuptools]
+
+    -   repo: https://github.com/pre-commit/pre-commit-hooks
+        rev: v4.4.0
+        hooks:
+        -   id: check-yaml
+
+    - repo: https://github.com/codespell-project/codespell
+      rev: v2.2.2
+      hooks:
+        - id: codespell
+          args: ['--toml pyproject.toml']
