@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.py
+PyMathSolver/CoordinateGeometry.py
+PyMathSolver/Geometry.py
+PyMathSolver/Numbers.py
+PyMathSolver/Quadratic.py
+PyMathSolver/Statistics.py
+PyMathSolver/__init__.py
+PyMathSolver.egg-info/PKG-INFO
+PyMathSolver.egg-info/SOURCES.txt
+PyMathSolver.egg-info/dependency_links.txt
+PyMathSolver.egg-info/requires.txt
+PyMathSolver.egg-info/top_level.txt
