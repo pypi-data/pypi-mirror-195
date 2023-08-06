@@ -1,0 +1,3 @@
+certifi
+html2text
+lxml
