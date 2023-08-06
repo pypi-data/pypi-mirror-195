@@ -1,0 +1,3 @@
+pandas
+psycopg2
+com.castsoftware.uc.python.common
