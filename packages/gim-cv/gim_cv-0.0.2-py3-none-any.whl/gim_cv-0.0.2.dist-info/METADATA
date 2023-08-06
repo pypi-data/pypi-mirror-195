@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: gim-cv
+Version: 0.0.2
+Summary: GIM Model
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: tensorflow
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: h5py
+Requires-Dist: einops
+Requires-Dist: keras-tuner
+Requires-Dist: dask
+Requires-Dist: keras
+Requires-Dist: geopandas
+Requires-Dist: albumentations
+Requires-Dist: tqdm
+Requires-Dist: scikit-image
+Requires-Dist: aiohttp
+Requires-Dist: pyyaml
+
+## Geo GIM Model Package
