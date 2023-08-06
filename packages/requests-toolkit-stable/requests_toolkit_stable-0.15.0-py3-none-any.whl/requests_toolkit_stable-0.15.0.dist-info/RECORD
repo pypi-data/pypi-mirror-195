@@ -1,0 +1,16 @@
+requests_toolkit/__init__.py,sha256=gdxSYtg1cm7cAS8g3X97Nfq0aOzs6U_tkr_zEvg0PnQ,433
+requests_toolkit/_abstracts_arxiv.py,sha256=YcWZO89_3vknXtWTWuQvM9l5WbrpEJ5RZqqahAhZ70c,479
+requests_toolkit/_academic.py,sha256=2OnCzbicWBwFeYXGLql7Qa3ykc8GeVknpPce18UAGpQ,4242
+requests_toolkit/_air_quality.py,sha256=528WJ6VTEtoIaURa3ZHhhBXDLpOGgc0tdNPhUlhO8H0,5440
+requests_toolkit/_exchange_rate_cn.py,sha256=dL3hcOCCPWMJM-b3Sa1JHQ_rW4624lOOlhC9poG45TY,617
+requests_toolkit/_realpython_news.py,sha256=cUS6yosy1l6Xe29KnL5D1oGWqOFUzOhd9jgatm3GOrQ,1131
+requests_toolkit/_thesis_info.py,sha256=dh59W1yVZ7w_u_t0DqTm8zZ4oCgkL00_0MGbtBDoZgw,903
+requests_toolkit/_weather_query.py,sha256=SG33CW-fkkuUH1M_ln0M9sL55DZTBX5Bv0F7YOWOSek,1355
+requests_toolkit/_ytb_channel_info.py,sha256=a64WfEgLCdKev9DcBTFLm3iaC_uLayMNcn151J72SRE,1734
+requests_toolkit/openai/__init__.py,sha256=Q1BaneaUkLvDt4_mj6o6sAd1zqw_h1z7TgeJbJs-1bc,84
+requests_toolkit/openai/_openai.py,sha256=KDOH19PXubQYMzviB4QVsmUxCDd4-dbIdFy32w7Egi4,7660
+requests_toolkit_stable-0.15.0.dist-info/LICENSE,sha256=pZZS_m1_KgpAjD7VkA7evrpFXUaLtqE8JuFumu7zOmQ,1066
+requests_toolkit_stable-0.15.0.dist-info/METADATA,sha256=eqQ1EIVQW1qgvCLK9Yt6SJALun-ooSPjt2Wum92P3oU,2157
+requests_toolkit_stable-0.15.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+requests_toolkit_stable-0.15.0.dist-info/top_level.txt,sha256=bejDrFFP5Vz-3u6ybkqJ86Kl0zglEJ7QNP7GxfiAwns,17
+requests_toolkit_stable-0.15.0.dist-info/RECORD,,
