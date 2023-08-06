@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: tdfmt
+Version: 0.0.3
+Summary: tdfmt is a concise timedelta formatter
+Home-page: https://github.com/bbriano/tdfmt
+Author: Briano Goestiawan
+Author-email: b@briano.io
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+tdfmt
+=====
+
+tdfmt is a concise timedelta formatter
+
+Install
+-------
+
+	pip install tdfmt
+
+Use
+---
+
+	from datetime import timedelta
+	from tdfmt.tdfmt import tdfmt
+
+	print(tdfmt(timedelta(hours=3, minutes=14, seconds=15, microseconds=926535)))  # 3h14m15.926535s
+	print(tdfmt(timedelta(hours=4, minutes=20)))                                   # 4h20m0s
+	print(tdfmt(timedelta(minutes=17, seconds=38)))                                # 17m38s
+	print(tdfmt(timedelta(seconds=9)))                                             # 9s
+	print(tdfmt(timedelta(minutes=1, milliseconds=300)))                           # 1m0.3s
+	print(tdfmt(timedelta(microseconds=12340)))                                    # 12.34ms
+	print(tdfmt(timedelta(microseconds=12)))                                       # 12µs
