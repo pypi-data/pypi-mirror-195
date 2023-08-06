@@ -1,0 +1,30 @@
+[[dimension]]
+name = "Blades: Background"
+category = "Blades"
+type = "items"
+items = [ "Academic", "Labor", "Law", "Trade", "Military", "Noble", "Underword",]
+
+[[dimension]]
+name = "Blades: District"
+category = "Blades"
+type = "items"
+items = [ "Barrowcleft", "Brightstone", "Charhollow", "Charterhall", "Coalridge", "Crow’s Foot", "The Docks", "Dunslough", "Nightmarket", "Silkshore", "Six Towers", "Whitecrown",]
+
+[[dimension]]
+name = "Blades: Heritage"
+category = "Blades"
+type = "items"
+items = [ "Akoros", "Dagger Isles", "Iruvia", "Severos", "Skovlan", "Tycheros",]
+
+[[dimension]]
+name = "Blades: Playbook"
+category = "Blades"
+type = "items"
+items = [ "Cutter", "Hound", "Leech", "Lurk", "Slide", "Spider", "Whisper",]
+
+[[dimension]]
+name = "Blades: Vice"
+category = "Blades"
+type = "items"
+items = [ "Faith", "Gambling", "Luxuary", "Oblication", "Pleasure", "Stupor", "Weird",]
+
