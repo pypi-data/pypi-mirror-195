@@ -1,0 +1,5 @@
+workon_poetry/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+workon_poetry/data/pyproject.template.toml,sha256=Bib0qexw4RqGl87C_YNhmWWejv4KreuPJ2R-UH-t0bg,956
+workon_poetry-0.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+workon_poetry-0.0.1.dist-info/METADATA,sha256=eKCT4-GCtkGu_G3z2-L9wsTZz6UxnCxNIWA_lSmMwV8,3129
+workon_poetry-0.0.1.dist-info/RECORD,,
