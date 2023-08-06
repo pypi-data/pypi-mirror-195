@@ -1,0 +1,2 @@
+[console_scripts]
+ext = shellchat.__main__:main
