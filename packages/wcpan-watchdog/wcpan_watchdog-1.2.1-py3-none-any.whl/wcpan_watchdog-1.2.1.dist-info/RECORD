@@ -1,0 +1,10 @@
+wcpan/watchdog/__init__.py,sha256=bb2uH-iiT6KFbtfgwxv-3O39xOVhMg42X7buW3-nWAU,88
+wcpan/watchdog/__main__.py,sha256=RZvJx0QcK6MEjR86IzZa1ftfCie6a7RsJjfULNy_qck,61
+wcpan/watchdog/filters.py,sha256=oUvgvra4aqiJiBxjCvi-vyeZA2cG_GmMaVAdDsZw07o,3477
+wcpan/watchdog/main.py,sha256=S99r_8dM9rqr6cPIsfcRU62GqWpNxq69Bqsfg3GJN3s,2743
+wcpan/watchdog/walker.py,sha256=HYGftRQ26MLa1e3YA24cWe2NizEWRbHcXWx3jBg9Lx8,1925
+wcpan/watchdog/watcher.py,sha256=BOLNTqsML-3Bc6WKk0wb0e6tJSUtz_dJfoGPxM0XFIw,6679
+wcpan_watchdog-1.2.1.dist-info/LICENSE.txt,sha256=dwNOoZe6EyB6jo78-vW130eSAJAihLCFE-X-mVxO1Uo,1102
+wcpan_watchdog-1.2.1.dist-info/METADATA,sha256=73PxqKPgIdgBhiRskHthP4-3bjvB3YjkExVVGScGaYA,1546
+wcpan_watchdog-1.2.1.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+wcpan_watchdog-1.2.1.dist-info/RECORD,,
