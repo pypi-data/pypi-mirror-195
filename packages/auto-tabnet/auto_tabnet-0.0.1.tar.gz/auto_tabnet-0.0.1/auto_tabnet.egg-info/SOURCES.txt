@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+auto_tabnet/__init__.py
+auto_tabnet/auto_tabnet.py
+auto_tabnet.egg-info/PKG-INFO
+auto_tabnet.egg-info/SOURCES.txt
+auto_tabnet.egg-info/dependency_links.txt
+auto_tabnet.egg-info/top_level.txt
