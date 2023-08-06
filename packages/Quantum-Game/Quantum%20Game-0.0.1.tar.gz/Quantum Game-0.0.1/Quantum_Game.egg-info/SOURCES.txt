@@ -1,0 +1,11 @@
+README.md
+setup.py
+Quantum_Game.egg-info/PKG-INFO
+Quantum_Game.egg-info/SOURCES.txt
+Quantum_Game.egg-info/dependency_links.txt
+Quantum_Game.egg-info/not-zip-safe
+Quantum_Game.egg-info/top_level.txt
+quantum/QuantumGuessGame.py
+quantum/QuantumUniverse.py
+quantum/__init__.py
+quantum/main.py
