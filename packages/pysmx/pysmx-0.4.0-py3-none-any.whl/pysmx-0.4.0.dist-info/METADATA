@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: pysmx
+Version: 0.4.0
+Summary: Interact with SourceMod plug-ins
+License: MIT
+Author: Zach Kanzler
+Author-email: they4kman@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: construct (>=2.10.68,<3.0.0)
+Requires-Dist: construct-typing (>=0.5.5,<0.6.0)
+Requires-Dist: more-bisect (>=0.1.1,<0.2.0)
+Requires-Dist: typing-extensions (>=4.5.0,<5.0.0) ; python_version < "3.8"
+Description-Content-Type: text/markdown
+
+# pysmx
+
+**pysmx** is a Python package for parsing, executing, and simulating the environment of SourceMod plug-ins.
+
+
+## Quickstart
+
+```shell
+pip install pysmx
+```
+
+```python
+from smx import compile_plugin
+
+plugin = compile_plugin('''
+    public TwoPlusTwo() {
+        return 2 + 2;
+    }
+    public float FiveDividedByTen() {
+        return 5.0 / 10.0;
+    }
+    public String:Snakes() {
+        new String:s[] = "hiss";
+        return s;
+    }
+''')
+
+print(plugin.runtime.call_function_by_name('TwoPlusTwo'))
+# 4
+print(plugin.runtime.call_function_by_name('FiveDividedByTen'))
+# 0.5
+print(plugin.runtime.call_function_by_name('Snakes'))
+# 'hiss'
+```
+
