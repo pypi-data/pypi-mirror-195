@@ -1,0 +1,2 @@
+[sqlalchemy.dialects]
+databend = databend_sqlalchemy.databend_dialect:DatabendDialect
