@@ -1,0 +1,4 @@
+[console_scripts]
+better-safe-than-sorry=better_safe_than_sorry:app
+bsts=better_safe_than_sorry:app
+
