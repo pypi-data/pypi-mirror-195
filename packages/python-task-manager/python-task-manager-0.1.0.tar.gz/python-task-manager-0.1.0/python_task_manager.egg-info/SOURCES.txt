@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+python_task_manager.egg-info/PKG-INFO
+python_task_manager.egg-info/SOURCES.txt
+python_task_manager.egg-info/dependency_links.txt
+python_task_manager.egg-info/not-zip-safe
+python_task_manager.egg-info/top_level.txt
+task_manager/__init__.py
+task_manager/__version__.py
+task_manager/task_manager.py
+tests/__init__.py
+tests/test_task_manager.py
