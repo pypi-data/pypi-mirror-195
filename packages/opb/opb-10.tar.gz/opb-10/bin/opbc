@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+
+"command"
+
+
+import importlib
+import os
+import readline
+import sys
+import termios
+import time
+
+
+from opb.clients import Client
+from opb.command import Command, scan
+from opb.storage import Storage
+from opb.threads import launch
+
+
+import opb.modules
+
+
+Storage.workdir = os.path.expanduser("~/.opb")
+
+
+class CLI(Client):
+
+    def raw(self, txt):
+        print(txt)
+        sys.stdout.flush()
+
+    def scan(self):
+        path = opb.modules.__path__[0]
+        for fnm in os.listdir(path):
+            try:
+                mod = importlib.import_module("." + fnm[:-3], "opb.modules")
+            except ModuleNotFoundError:
+               continue
+            scan(mod)
+
+
+def main():
+    csl = CLI()
+    csl.scan()
+    return csl.one(" ".join(sys.argv[1:]))
+
+
+main()
