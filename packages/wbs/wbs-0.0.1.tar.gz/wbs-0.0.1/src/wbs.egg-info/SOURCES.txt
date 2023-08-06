@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+src/wbs/__init__.py
+src/wbs/wbs.py
+src/wbs.egg-info/PKG-INFO
+src/wbs.egg-info/SOURCES.txt
+src/wbs.egg-info/dependency_links.txt
+src/wbs.egg-info/top_level.txt
