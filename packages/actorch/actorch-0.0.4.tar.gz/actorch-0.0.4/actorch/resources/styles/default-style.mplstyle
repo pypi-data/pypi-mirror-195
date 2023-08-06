@@ -1,0 +1,74 @@
+# ==============================================================================
+# Copyright 2022 Luca Della Libera.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ==============================================================================
+
+# Adapted from:
+# https://github.com/matplotlib/matplotlib/blob/ec0132f66170dabc6352ba79d839b1dd9eb02157/lib/matplotlib/mpl-data/stylelib/seaborn-ticks.mplstyle
+
+
+# 0.15 = dark_gray
+# 0.8 = light_gray
+
+axes.axisbelow: True
+axes.edgecolor: 0.15
+axes.facecolor: white
+axes.grid: True
+axes.labelcolor: 0.15
+axes.labelsize: 12.5
+axes.linewidth: 1.0
+axes.spines.right: True
+axes.spines.top: True
+axes.titlesize: 15
+axes.unicode_minus: False
+
+figure.facecolor: white
+figure.figsize: 7.5, 6.0
+
+font.family: serif
+font.size: 12.5
+
+grid.color: 0.75
+grid.linestyle: dashed
+grid.linewidth: 0.9
+
+image.cmap: Greys
+
+legend.fancybox: True
+legend.fontsize: 12.5
+legend.frameon: True
+legend.handlelength: 0.75
+legend.handletextpad: 0.5
+legend.numpoints: 1
+legend.scatterpoints: 1
+
+lines.linewidth: 1.2
+lines.markersize: 4.0
+lines.solid_capstyle: round
+
+text.color: 0.15
+
+xtick.color: 0.15
+xtick.direction: out
+xtick.labelsize: 10
+xtick.major.size: 6
+xtick.minor.size: 3
+xtick.top: true
+
+ytick.color: 0.15
+ytick.direction: out
+ytick.labelsize: 10
+ytick.major.size: 6
+ytick.minor.size: 3
+ytick.right: true

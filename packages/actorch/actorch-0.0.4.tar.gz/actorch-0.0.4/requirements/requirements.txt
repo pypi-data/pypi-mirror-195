@@ -1,0 +1,12 @@
+cloudpickle>=1.3.0
+colorama>=0.4.3
+GPUtil>=1.4.0
+gymnasium>=0.26.1
+numpy>=1.19.5
+psutil>=5.7.0
+PyYAML>=5.3.1
+ray[tune]>=1.13.0,<2.*
+scipy>=1.4.1
+tensorboard>=2.6.0
+-f https://download.pytorch.org/whl/torch_stable.html  # PyTorch installation on Windows
+torch>=1.12.0
