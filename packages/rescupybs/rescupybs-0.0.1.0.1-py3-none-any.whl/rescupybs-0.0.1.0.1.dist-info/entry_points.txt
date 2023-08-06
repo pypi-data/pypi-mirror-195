@@ -1,0 +1,3 @@
+[console_scripts]
+rescupybs = rescupybs.wrapper:main
+
