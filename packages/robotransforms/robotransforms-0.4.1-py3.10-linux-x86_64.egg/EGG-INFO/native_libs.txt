@@ -1,0 +1,8 @@
+_base.cpython-310-x86_64-linux-gnu.so
+base.cpython-310-x86_64-linux-gnu.so
+dead_reckon_wrapper.cpython-310-x86_64-linux-gnu.so
+euclidean_wrapper.cpython-310-x86_64-linux-gnu.so
+rotreps.cpython-310-x86_64-linux-gnu.so
+utils_wrapper.cpython-310-x86_64-linux-gnu.so
+wrapper.cpython-310-x86_64-linux-gnu.so
+rotreps/_base.cpython-310-x86_64-linux-gnu.so
