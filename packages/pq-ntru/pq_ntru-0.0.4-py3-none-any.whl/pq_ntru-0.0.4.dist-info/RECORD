@@ -1,0 +1,10 @@
+pq_ntru/__init__.py,sha256=0ox_NF6tAjA1MpYAkvcgB-P3yfNGDpf_xuorr1kB0AM,123
+pq_ntru/ntru.py,sha256=sQfO8v99XRwGXQFW7O3i3gs5TBPGaqapuAXGXqGMvOE,1588
+pq_ntru/pq_ntru/NTRUdecrypt.py,sha256=2qYSwEMbVhlXO3vq_XkS-Jou2T3borKh5XWqIAvivNs,10818
+pq_ntru/pq_ntru/NTRUencrypt.py,sha256=McHpaWeIGmm3Ne5w4NnNMvuwj2N3tLTBuQf2cJ6ExUk,4999
+pq_ntru/pq_ntru/NTRUutil.py,sha256=grikqT-NGgEyMFSMECb69Fl5_WNOcgJB5Xe6zLsL2hk,6828
+pq_ntru/pq_ntru/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pq_ntru-0.0.4.dist-info/METADATA,sha256=wfbG3sQiPv0M27wVE-f1X1EOojqnNzhDabjLAeikVoM,4392
+pq_ntru-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pq_ntru-0.0.4.dist-info/top_level.txt,sha256=elYUg7lpEEYv2SITbTS0lM2aGgkgFhaLCi2ODhnnNgw,8
+pq_ntru-0.0.4.dist-info/RECORD,,
