@@ -1,0 +1,6 @@
+rst2gemtext
+
+[dev]
+nox
+flake8
+black
