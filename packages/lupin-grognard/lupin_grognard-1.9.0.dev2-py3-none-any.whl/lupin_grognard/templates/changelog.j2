@@ -1,0 +1,43 @@
+# Changelog for {{ project_name }}
+{% for entry in tree -%}
+## [{{ entry.version }}]{% if entry.date %} ({{ entry.date }}){% endif %}
+
+{% if entry.commits.feature %}
+## Feature
+{% endif %}
+{% if entry.commits.feature.added %}
+### Added
+{% for item in entry.commits.feature.added %}
+- {{ item }}
+{% endfor %}
+{% endif %}
+
+{% if entry.commits.feature.changed %}
+### Changed
+{% for item in entry.commits.feature.changed %}
+- {{ item }}
+{% endfor %}
+{% endif %}
+
+{% if entry.commits.feature.removed %}
+### Removed
+{% for item in entry.commits.feature.removed %}
+- {{ item }}
+{% endfor %}
+{% endif %}
+
+{% if entry.commits.fix %}
+## Fixed
+{% for item in entry.commits.fix %}
+- {{ item }}
+{% endfor %}
+{% endif %}
+
+{% if entry.commits.other %}
+## Other
+{% for item in entry.commits.other %}
+- {{ item }}
+{% endfor %}
+{% endif %}
+
+{% endfor %}
