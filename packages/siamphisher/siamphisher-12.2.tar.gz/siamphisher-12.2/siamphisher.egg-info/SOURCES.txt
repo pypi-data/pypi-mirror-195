@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+siamphisher/__init__.py
+siamphisher/siamphisher.py
+siamphisher.egg-info/PKG-INFO
+siamphisher.egg-info/SOURCES.txt
+siamphisher.egg-info/dependency_links.txt
+siamphisher.egg-info/entry_points.txt
+siamphisher.egg-info/requires.txt
+siamphisher.egg-info/top_level.txt
