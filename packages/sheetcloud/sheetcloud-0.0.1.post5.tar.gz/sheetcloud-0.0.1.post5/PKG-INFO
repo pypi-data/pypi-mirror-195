@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: sheetcloud
+Version: 0.0.1.post5
+Summary: Sheetcloud.de | Turn Spreadsheets into a Cloud Database | Account required
+Author-email: "SheetCloud.de" <info@sheetcloud.de>
+Project-URL: Homepage, https://www.sheetcloud.de
+Project-URL: Tracker, https://github.com/sheetcloud/sheetcloud/issues
+Project-URL: Source, https://github.com/sheetcloud/sheetcloud
+Project-URL: Examples, https://github.com/sheetcloud
+Keywords: Spreadsheets,RAD,Database,Cloud
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Database
+Classifier: Topic :: Office/Business :: Financial :: Spreadsheet
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sheetcloud
+
+[![Tests](https://github.com/sheetcloud/sheetcloud/actions/workflows/continuous_integration.yml/badge.svg)](https://github.com/sheetcloud/sheetcloud/actions/workflows/continuous_integration.yml)
+
+[![PYPI](https://github.com/sheetcloud/sheetcloud/actions/workflows/deploy_to_pypi.yml/badge.svg)](https://github.com/sheetcloud/sheetcloud/actions/workflows/deploy_to_pypi.yml)
+
+Turn Spreadsheets into a Cloud Database with SheetCloud! Python library for easy access.
