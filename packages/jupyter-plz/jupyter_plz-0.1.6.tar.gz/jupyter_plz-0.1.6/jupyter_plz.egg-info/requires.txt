@@ -1,0 +1,5 @@
+notebook
+requests
+typing
+ipython
+setuptools
