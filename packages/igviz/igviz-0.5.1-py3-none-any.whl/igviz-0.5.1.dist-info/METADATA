@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: igviz
+Version: 0.5.1
+Summary: Create interactive network graph visualizations.
+License: MIT
+Author: Ashton Sidhu
+Requires-Python: >=3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: ipywidgets (>=7.7.1)
+Requires-Dist: networkx (>=2.8.5)
+Requires-Dist: plotly (>=5.10.0)
