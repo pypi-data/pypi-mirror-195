@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: colorlog-python
+Version: 1.1.0
+Summary: A lightweight logger that makes logging to the terminal easy and pretty in python.
+Author-email: Jimmy Deng <jimmydengpeng@gmail.com>
+Maintainer-email: Jimmy Deng <jimmydengpeng@gmail.com>
+Project-URL: homepage, https://github.com/jimmydengpeng/colorlog
+Keywords: logging,logger,color log
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: PyYAML
+Requires-Dist: tomli ; python_version < "3.11"
+Provides-Extra: dev
+Requires-Dist: humanfriendly ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+# ColorLog
+
+![GitHub](https://img.shields.io/github/license/jimmydengpeng/colorlog)
+
+**ColorLog** is a lightweight logger that makes logging to the terminal easy and pretty for python.
+
+This is self-made & self-used module for coloring logging infomation. Welcome any contributions if you would like!
+
+## TODO
+- [x] Auto-inline
+- [ ] Add requirements
+- [ ] Upload to PyPI
+
+## Installation
+
+### Font
+The recommended font is `MesloLGS NF`.
+
+### Install from PyPI
+TODO
+```shell
+pip install colorlog-python
+```
+
+## Usage
+To use **colorlog**, just import the pre-instantiated `logger` into your code.
+
+```python
+from colorlog import logger
+
+logger.debug("prompt:", your_args)
+logger.info("prompt:", your_args)
+logger.warning("prompt:", your_args)
+logger.success("prompt:", your_args)
+logger.error("prompt:", your_args)
+```
+
+For other detailed APIs please check the code!
+
