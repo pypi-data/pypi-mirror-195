@@ -1,0 +1,18 @@
+[build-system]
+requires=["setuptools>=61.0"]
+build-backend="setuptools.build_meta"
+
+[project]
+name="swagenttools"
+version="0.3.2"
+authors=[
+  { name="Axel Tessai", email="aahern@ucdavis.edu" },
+]
+description="A small crawler to scrape data from swranking.com and store in in the local db of the vm."
+readme="README.md"
+requires-python=">=3.7"
+classifiers=[
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
