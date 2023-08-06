@@ -1,0 +1,8 @@
+*.pyc
+hanabi_learning_environment/libpyhanabi.so
+_skbuild/*
+build/*
+ws2223_group7_hanabi_learning_environment_bad.egg-info/*
+*.idea
+*.vscode
+model/*
