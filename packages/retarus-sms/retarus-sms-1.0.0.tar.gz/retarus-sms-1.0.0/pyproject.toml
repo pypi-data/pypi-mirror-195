@@ -1,0 +1,22 @@
+[project]
+name = "retarus-sms"
+dynamic = ["readme", "dependencies"]
+version = "1.0.0"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [
+    {name="Retarus GmbH", email = "Developers@retarus.com"},
+]
+description= ""
+
+[project.urls]
+repository = "https://github.com/retarus/retarus-python-sms"
+
+
+[tool.setuptools.dynamic]
+readme = {file = "README.md", content-type = "text/markdown"}
+dependencies = {file = "requirements.txt"}
+
+[build-system]
+requires = ["setuptools-scm", "setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
