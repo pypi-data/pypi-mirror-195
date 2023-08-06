@@ -1,0 +1,12 @@
+utils_flask_sqla_geo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils_flask_sqla_geo/generic.py,sha256=Y4YIsF2zMT2qG7e_H2A5ZyQPr7_jhvzgq38zPoxMRZ0,5325
+utils_flask_sqla_geo/mixins.py,sha256=Sd1Xv_BUpxNYd2dr1qKsh5CXrZSZMqPNoJu1lzV4mjo,218
+utils_flask_sqla_geo/schema.py,sha256=BVGrTGj7irSFIjE9NjaelnGIHnoUY5_wSsufW8eM6pc,7224
+utils_flask_sqla_geo/serializers.py,sha256=QiuYWmPpXw_1oXuYFgJGwhOMmf5CAOngXZcMDSwGe9o,11160
+utils_flask_sqla_geo/utils.py,sha256=d-ExuwSXX_Gs24w2b6VFcNY19KbOZKQb-b6smOnTVHo,168
+utils_flask_sqla_geo/utilsgeometry.py,sha256=Cnd2ZR4L4-KmTTYcU9HzW03Iq0yZbZ3veoQl9nNGh68,18083
+utils_flask_sqlalchemy_geo-0.2.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+utils_flask_sqlalchemy_geo-0.2.7.dist-info/METADATA,sha256=gIOUC9ejKv4hj3v5AX56jsKi30gHkxqY9B3CygqPY48,5601
+utils_flask_sqlalchemy_geo-0.2.7.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+utils_flask_sqlalchemy_geo-0.2.7.dist-info/top_level.txt,sha256=Sikn2HoCzxxPXEYD3EsHFAwlxIlTohs9aNrlcRTZQ_E,21
+utils_flask_sqlalchemy_geo-0.2.7.dist-info/RECORD,,
