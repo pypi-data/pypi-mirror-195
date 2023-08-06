@@ -1,0 +1,5 @@
+bokeh
+matplotlib
+pyyaml
+jupyter_bokeh
+pandas
