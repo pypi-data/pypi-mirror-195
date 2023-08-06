@@ -1,0 +1,11 @@
+LICENSE,sha256=FMt8XrKmg6VPGCtazaysBNZEut9v5qCKWSF-GWwrvBQ,1072
+README.rst,sha256=gN4sdCHrvbJ8ABIbDnee0KVOaRTvv9diGdCvpld_0UY,3087
+scadi/__init__.py,sha256=dHqpR0CZcmj4Pr5c7ul5NTO_8MNAPgpgQVu7BU3ryBA,8
+scadi/__main__.py,sha256=YIb-iUP38Ys-hmISXfl95GVvDUkOZpP3fO3Q_c3qpUs,146
+scadi/inline.py,sha256=oSljhqN9abtw_MYb7jlFafwFBIQzVrADe0RlHy6EWQ0,2733
+scadi/main.py,sha256=FLEnzTAAILp2oSUNGAkdA9k70tMX_M5TYD4mUc5tVBE,1648
+scadi-0.1.4.dist-info/LICENSE,sha256=FMt8XrKmg6VPGCtazaysBNZEut9v5qCKWSF-GWwrvBQ,1072
+scadi-0.1.4.dist-info/METADATA,sha256=Elh36OD1Z5boc-W2ZZyXMIs1H1SBl5VCJgk8_mB_7D8,4523
+scadi-0.1.4.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+scadi-0.1.4.dist-info/entry_points.txt,sha256=rdEQ9CiYOWftJ-usGI31QSLw3wLFYc7javCQxA1vHo0,83
+scadi-0.1.4.dist-info/RECORD,,
