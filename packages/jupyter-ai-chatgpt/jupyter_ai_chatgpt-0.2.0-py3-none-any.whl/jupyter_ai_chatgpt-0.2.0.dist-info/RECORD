@@ -1,0 +1,16 @@
+jupyter_ai_chatgpt/__init__.py,sha256=uUBN9APDiGZY60-AUYoDK9wX1D4_9qdrgArZkG5eJxQ,314
+jupyter_ai_chatgpt/_version.py,sha256=73xmj_rtt0boRuIZ0h5wqHItFsCNZHTC-Wa0tSeAxyY,171
+jupyter_ai_chatgpt/engine.py,sha256=uEkwdBBzyeNfFvANGQOA_G0QVBDcOxuo6aKq805TfXQ,2586
+jupyter_ai_chatgpt/tests/__init__.py,sha256=DYJJubtb_d0_n2ZTJKISZVulu8UEz5jan7MVmg3qxH4,48
+jupyter_ai_chatgpt-0.2.0.data/data/share/jupyter/labextensions/@jupyter-ai/chatgpt/package.json,sha256=DwKJrjbFfzQSuacf94_weo92N6I9qUPVMHuJjjAi-xY,3607
+jupyter_ai_chatgpt-0.2.0.data/data/share/jupyter/labextensions/@jupyter-ai/chatgpt/static/568.58d646ba30ad5cce43b0.js,sha256=WNZGujCtXM5DsNe7Hc8J3ahn5oAhSLpTNPw_tLOdgXs,291
+jupyter_ai_chatgpt-0.2.0.data/data/share/jupyter/labextensions/@jupyter-ai/chatgpt/static/643.c1827be98afe184c4f03.js,sha256=wYJ76Yr-GExPAwyEPJAvgXYrhV8XA6LP8RBMFkHkuaQ,3512
+jupyter_ai_chatgpt-0.2.0.data/data/share/jupyter/labextensions/@jupyter-ai/chatgpt/static/remoteEntry.686682e2a7d0f5be8c42.js,sha256=aGaC4qfQ9b6MQr53tGGG4WZdAPwR3w9gTqGW3CSNRd8,3904
+jupyter_ai_chatgpt-0.2.0.data/data/share/jupyter/labextensions/@jupyter-ai/chatgpt/static/style.js,sha256=Qwto4dCDJkvVIiGTSOvf--Gg_0Vn5lfpxyNe9hBXTPI,162
+jupyter_ai_chatgpt-0.2.0.data/data/share/jupyter/labextensions/@jupyter-ai/chatgpt/static/third-party-licenses.json,sha256=P_VjLKCSMZ3sXuPckg8bDyB8Xn8JD7EsiIoRqvSP3h0,2452
+jupyter_ai_chatgpt-0.2.0.data/data/share/jupyter/labextensions/@jupyter-ai/chatgpt/install.json,sha256=a8Ske9YxCXSJ1H725fftfalL15lyPw0eXCuJad8w3aE,197
+jupyter_ai_chatgpt-0.2.0.dist-info/METADATA,sha256=lDLZHV5KI9zWW-WARYHW6oY5gr0dS5Sy-6UbkZemF2A,6527
+jupyter_ai_chatgpt-0.2.0.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+jupyter_ai_chatgpt-0.2.0.dist-info/entry_points.txt,sha256=O4aWYCCECHw461uQ3FksHffAfmSR8yrkCo55UQH81WQ,77
+jupyter_ai_chatgpt-0.2.0.dist-info/licenses/LICENSE,sha256=wMVD2Kl_IyhVyrcy1ScHkwjEWwyEHqhtKzOFbhEH_B0,1523
+jupyter_ai_chatgpt-0.2.0.dist-info/RECORD,,
