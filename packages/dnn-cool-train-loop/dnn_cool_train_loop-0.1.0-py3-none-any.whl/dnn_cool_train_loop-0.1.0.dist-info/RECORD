@@ -1,0 +1,12 @@
+dnn_cool_train_loop/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+dnn_cool_train_loop/dataset.py,sha256=-W3hTpFxjG1yC_pSEsis77M-kV7QS5-coVGtcQQtI9I,591
+dnn_cool_train_loop/full_loop.py,sha256=px60HCMmupMjIpfRQPF_7-O3JY3NACtAXCV2O6Dtc2o,1608
+dnn_cool_train_loop/metrics.py,sha256=F9d56HHabr87H-wxz0NhQkSOihEBm0bw--33pQ6_vIA,2221
+dnn_cool_train_loop/task_loop.py,sha256=wy8Y4NZxjgLkaWcA2C_YeYrMA_dbAIM4bBEahWHJUEI,2335
+dnn_cool_train_loop/train_loop.py,sha256=leUt_GsfO_vkqBA92gTeT0ixQLibXfBS_k7zqm2TWGk,2548
+dnn_cool_train_loop/valid_loop.py,sha256=J04nqfSZo8XZlpqM10PplUtRfAzxEWa6U2sR9MiXWcM,1866
+dnn_cool_train_loop-0.1.0.dist-info/LICENSE,sha256=XeFfc1uOXUoLWkyJxR8EfVpZAMMRHObECYIRUFVzFWI,1069
+dnn_cool_train_loop-0.1.0.dist-info/METADATA,sha256=_BLYM4v2-TG7aO2dJCdpht7Oq1K3LH-q-9u8PxEZ6CQ,1091
+dnn_cool_train_loop-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dnn_cool_train_loop-0.1.0.dist-info/top_level.txt,sha256=QmtZVxPtEtu8hFI43a4JhzCCsUsqxgxe3y5FEDTqAvU,20
+dnn_cool_train_loop-0.1.0.dist-info/RECORD,,
