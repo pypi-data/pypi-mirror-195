@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: bfgbidding
+Version: 0.0.2
+Summary: """A collection of modules that supports bidding in Bid for Game applications."""
+Home-page: https://psionman@bitbucket.org/psionman/bfgbidding.git
+Download-URL: https://pypi.org/project/bfgbidding/
+Author: jeff watkins
+Author-email: support@bidforgame.com
+License: MIT
+Keywords: bridge, bidding
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: username
+Requires-Dist: nose
+Requires-Dist: pytest
+
+# bfgbidding
+
+A collection of modules that supports bidding in Bid for Game applications.
+
+## Installation
+
+```bash
+pip install bfgbidding
+```
+
+
+# Version History
+
+Version 0.0.2 01 Mar 2023
+
+1. super on all modules
+
+2. Bidding changes on  comment edit
+
+------
+
+Version 0.0.1 08 Feb 2023
+
+1. self.trace  set to 0 in acol_advancers_bid
+
+------
+
+Version 0.0.0 1 Feb 2023
+
+1. Initial load
+
+------
