@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pyffp
+Version: 0.0.2
+Summary: A simple two-dimensional parameterisation for Flux Footprint Prediction (FFP)
+Author-email: Jemma Stachelek <jsta@lanl.gov>
+Project-URL: Homepage, https://github.com/jsta/pyffp
+Project-URL: Bug Tracker, https://github.com/jsta/pyffp/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# pyffp
+
+A simple two-dimensional parameterisation for Flux Footprint Prediction (FFP)
+
+## Installation
+
+```shell
+conda env create -f environment.yml
+pip install --upgrade -e .
+```
+
+## Demo
+
+[https://nbviewer.org/github/jsta/pyffp/blob/main/docs/notebooks/pyffp_demo.ipynb](https://nbviewer.org/github/jsta/pyffp/blob/main/docs/notebooks/pyffp_demo.ipynb)
+
+## Testing
+
+```shell
+python -m pytest
+```
+
+Citation: Kljun, N., Calanca, P., Rotach, M. W., and Schmid, H. P.:
+A simple two-dimensional parameterisation for Flux Footprint Prediction (FFP), Geosci. Model Dev., 8, 3695-3713, 2015. https://footprint.kljun.net/index.php
