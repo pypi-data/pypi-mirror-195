@@ -1,0 +1,8 @@
+memorylru/__init__.py,sha256=BKgAF03Mwn7osITNUX3qjqeUsU-EG_-FEyHB5Va1kG8,50
+memorylru/lru.pypy37-pp73-x86_64-linux-gnu.so,sha256=6gBTdOAuguBp0A2Nipv6zYAYNRTi1WbVU7yQWVxtPbc,28968
+memorylru/lru.c,sha256=xe1k1TtNxqP5FOyGEuDlPmvLi8CRHa1rmW6klKikyGI,21805
+memorylru-1.0.2.dist-info/top_level.txt,sha256=9DqutiDV_fBQFkBJZW8WD-uFq1IEH77WJLJZOT70hpM,10
+memorylru-1.0.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+memorylru-1.0.2.dist-info/RECORD,,
+memorylru-1.0.2.dist-info/WHEEL,sha256=A3icTRG3Pitw4LTLQaUO-nfbONcUd5uHbu7WFeET7hA,245
+memorylru-1.0.2.dist-info/METADATA,sha256=DPKIA4pJ2QtB-p8Jt3Fwq1dMDbRrIxEw5-_hrjBhLAY,639
