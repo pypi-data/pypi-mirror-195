@@ -1,0 +1,32 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "EDGAR_doc_parser"
+version = "0.2.0-1"
+authors = [
+  { name="Kamil Krukowski", email="Kamil.Krukowski@tufts.edu" },
+  { name="Yiting Li", email="Yiting.Li@tufts.edu" },
+  { name="Nachuan Zhao", email="Nachuan.Zhao@tufts.edu" },
+  { name="Kelsey Yew", email="Kelsey.Yew@tufts.edu" },
+
+]
+maintainers = [
+  { name="Kamil Krukowski", email="Kamil.Krukowski@tufts.edu" },
+]
+description = "Download, extraction, and parsing of documents available through the Securities and Trade Comission's EDGAR database"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/kamilkrukowski/EDGAR-DOC-PARSER"
+"Bug Tracker" = "https://github.com/kamilkrukowski/EDGAR-DOC-PARSER/issues"
