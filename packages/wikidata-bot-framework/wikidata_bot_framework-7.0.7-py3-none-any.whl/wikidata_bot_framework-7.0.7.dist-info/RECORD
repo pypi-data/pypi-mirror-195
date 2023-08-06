@@ -1,0 +1,13 @@
+wikidata_bot_framework/__init__.py,sha256=RciyCEwkIMvSuhVB5syYd7SGDwAfgEY0JPxG5cGfILY,35607
+wikidata_bot_framework/constants.py,sha256=1SDppbAktqLXaMVkdl-4Le4a4CSqYMMHgThLCbQ_kUk,705
+wikidata_bot_framework/dataclasses.py,sha256=G_yVaymz0Tsp0Cxzx94f7iS9-Z5tIDsh1Xf1c07mDtU,12102
+wikidata_bot_framework/process_reason.py,sha256=2cIdqnouQolwuniaEZBO9IQ6vjkwBLg2IAGnlRgJJ0Q,4782
+wikidata_bot_framework/sentry.py,sha256=euWO87aZTRt8teG_awTCbhMAkY-7xsAIIrdO3EF8R-4,1327
+wikidata_bot_framework/transformers.py,sha256=Jz2Spbvyru4-OBfV86OKPmYQzvJ4jq-QjU_tSmQuU6Q,1659
+wikidata_bot_framework/utils.py,sha256=pkwIOAYEyYqn_v2v_oKSeXPVPmrJblhTXMKBnVcgspU,8626
+wikidata_bot_framework-7.0.7.dist-info/LICENSE,sha256=IKmvAA0olsjyY_U1LdDWAbciom36STXXTRgsiQriRe8,1070
+wikidata_bot_framework-7.0.7.dist-info/METADATA,sha256=-tcpe2rgWsJZW9aUmqV668VAwHkw65bQxzamn4ykYyc,1421
+wikidata_bot_framework-7.0.7.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+wikidata_bot_framework-7.0.7.dist-info/top_level.txt,sha256=cM6GcwLpcWE5EDyYZz8HSPLC1pasI6Innrj0wrNqT7k,23
+wikidata_bot_framework-7.0.7.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+wikidata_bot_framework-7.0.7.dist-info/RECORD,,
