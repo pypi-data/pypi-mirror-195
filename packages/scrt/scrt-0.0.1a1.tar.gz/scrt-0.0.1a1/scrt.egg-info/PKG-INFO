@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: scrt
+Version: 0.0.1a1
+Summary: A lightweight warpper to SCRT package which allows you to share secrets with your team.
+Project-URL: Homepage, https://xethub.com/xdssio/scrt
+Keywords: security
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+<p align="center">
+   <img src="./docs/images/logo.png" alt="logo" width="400" />
+</p>
+
+# SCRT
+
+A python wrapper to [scrt](https://scrt.run) API.

@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scrt"
+version = "0.0.1a1"
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+dependencies = []
+keywords = ["security"]
+requires-python = ">=3.7"
+description = "A lightweight warpper to SCRT package which allows you to share secrets with your team."
+readme = "README.md"
+
+[project.optional-dependencies]
+
+dev = ["pytest", "sphinx", "sphinx-rtd-theme", "sphinx-autodoc-typehints", "sphinxcontrib-napoleon", "sphinxcontrib-apidoc"]
+
+[tool.setuptools]
+packages = ["scrt"]
+
+[project.urls]
+Homepage = "https://xethub.com/xdssio/scrt"
+
+[tool.bumpver]
+current_version = "0.0.1a0"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = true
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+]
+"README.md" = [
+    "{version}",
+    "{pep440_version}",
+]
+
+
+
