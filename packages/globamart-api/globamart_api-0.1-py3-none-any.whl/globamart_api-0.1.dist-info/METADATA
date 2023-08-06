@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: globamart-api
+Version: 0.1
+Summary: globalmart_api Package
+Author: soujanya
+Author-email: soujanyasastry323@gmail.com
+License: MIT
+License-File: License.txt
+Requires-Dist: pandas
+
