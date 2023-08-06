@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: falcon-easy-crud
+Version: 0.0.1
+Summary: Make it easier to write web api
+Home-page: https://github.com/iiicebearrr/eazy-crud
+Author: iiicebearrr
+Author-email: 969549808@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
