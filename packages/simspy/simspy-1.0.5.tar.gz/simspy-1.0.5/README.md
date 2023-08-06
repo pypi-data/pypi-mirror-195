@@ -1,0 +1,48 @@
+---
+This package is specifically designed for solving *single-machine scheduling problems*. It comprises a total of 8 functions, including 7 heuristic functions and 1 metaheuristic function.
+
+### Heuristic Method
+ - Earliest Due Date (EDD) Rule
+ - Shortest Processing Time (SPT) Rule
+ - Largest Penalty per Unit Length (LPUL) Rule
+ - Shortest Processing Time and LPUL Rule
+ - Shortest Weighted Processing Time (SWPT) Rule
+ - Largest Weight (WT) and LPUL Rule
+ - Critical Ratio (CR) Rule
+ 
+### Metaheuristic Method
+ - Genetic Algorithm (GA)
+---
+## Data Input
+This package requires 3 essential data inputs: **Processing Time**, **Due Date**, and **Penalty**.
+
+| Function | Description |
+| -------- |------------|
+| `fc_edd` | Sort the job sequences using the Earliest Due Date Rule by arranging the jobs in ascending order based on their due dates. |
+| `fc_spt` | Sort the job sequences using the Shortest Processing Time Rule by arranging the jobs in ascending order based on their processing times. |
+| `fc_lpul` | Sort the job sequences using the Largest Penalty per Unit Length Rule by arranging the jobs in descending order based on their U value, which is obtained by dividing the penalty by the processing time. |
+| `fc_spt_lpul` | Sort the job sequences using the Shortest Processing Time and LPUL Rule by arranging the jobs in ascending order based on their processing times. In case of a tie, use the LPUL Rule. |
+| `fc_swpt` | Sort the job sequences using the Shortest Weighted Processing Time Rule by arranging the jobs in ascending order based on their S value, which is obtained by dividing the processing time by the penalty. |
+| `fc_wt_lpul` | Sort jobs using the Largest Weight Rule LPUL Rule by arranging the jobs in ascending order based on their penalty. In case of a tie, use the LPUL Rule. |
+| `fc_cr` | Sort the job sequences using the Critical Ratio Rule by arranging the jobs in ascending order based on their CR value. |
+| `fc_ga` | Sort the job sequences using the Genetic Algorithm by arranging the jobs in a way that minimizes the total penalty. |                                                                                                                                                                                                          |
+
+## How to install
+1. To install the package, execute the following command:
+   ```python
+   pip install simspy
+   ```
+2. To import the package, execute the following command:
+   ```python
+   import simspy
+   ```
+3. Click on the "Run" button. The package will display a window where you can select the method and specify the number of jobs, as well as an empty box to input the data.
+---
+## How to use
+### Input parameters of the package.
+1. After importing the package, a window will appear for selecting the method and entering the required number of job schedules.
+
+2. Upon clicking the "OK" button, a window will appear for entering job data for each schedule. After entering the data, click the "Sort Job" button to proceed.
+
+### Output results of the package.
+3. The result will be displayed as shown in the image below.
