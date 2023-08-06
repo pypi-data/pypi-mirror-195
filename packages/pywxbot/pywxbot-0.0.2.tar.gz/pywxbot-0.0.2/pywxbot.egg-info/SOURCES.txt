@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pywxbot.egg-info/PKG-INFO
+pywxbot.egg-info/SOURCES.txt
+pywxbot.egg-info/dependency_links.txt
+pywxbot.egg-info/requires.txt
+pywxbot.egg-info/top_level.txt
+src/pywxbot/__init__.py
