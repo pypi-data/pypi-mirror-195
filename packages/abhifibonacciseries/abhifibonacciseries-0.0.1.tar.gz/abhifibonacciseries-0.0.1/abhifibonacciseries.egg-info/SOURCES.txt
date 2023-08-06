@@ -1,0 +1,8 @@
+LICENCE.txt
+README.txt
+setup.py
+abhifibonacciseries.egg-info/PKG-INFO
+abhifibonacciseries.egg-info/SOURCES.txt
+abhifibonacciseries.egg-info/dependency_links.txt
+abhifibonacciseries.egg-info/top_level.txt
+fibonacci/__init__.py
