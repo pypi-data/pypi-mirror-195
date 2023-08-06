@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: dagops
+Version: 0.5.0
+Summary: dag/task runner backed by sqlite
+Home-page: https://github.com/tandav/dagops
+Author: Alexander Rodionov
+Author-email: tandav@tandav.me
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: uvicorn
+Requires-Dist: fastapi
+Requires-Dist: aiofiles
+Requires-Dist: Jinja2
+Requires-Dist: humanize
+Requires-Dist: SQLAlchemy (>=2.0.0)
+Requires-Dist: psycopg2-binary
+Requires-Dist: redis
+Requires-Dist: transitions
+Provides-Extra: dev
+Requires-Dist: bumpver ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: requests ; extra == 'dev'
+Requires-Dist: python-dotenv ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/tandav/dagops)
+
+# dagops
+dag/task runner
+
+
+## install
+### install from [pypi](https://pypi.org/project/dagops/)
+```sh
+pip install dagops
+```
+
+### or install the latest version from github
+```sh
+pip install git+https://github.com/tandav/dagops
+```
+
+### development
+```sh
+pip install -e .[dev]
+```
