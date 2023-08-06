@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dfc
+Version: 0.0.1
+Summary: Data Format Converter
+Author: Sumanth
+Author-email: sumanthreddystar@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+DFC : Data Format Converter
