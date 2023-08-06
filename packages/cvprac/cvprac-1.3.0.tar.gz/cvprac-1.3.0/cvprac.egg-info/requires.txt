@@ -1,0 +1,9 @@
+requests[socks]>=2.27.0
+
+[dev]
+check-manifest
+pep8
+pyflakes
+pylint
+coverage
+pyyaml
