@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: ph4-runner
+Version: 0.0.5
+Summary: Simple async runner library
+Home-page: https://github.com/ph4r05/ph4-runner
+Author: Dusan Klinec
+Author-email: dusan.klinec@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: dev
+Provides-Extra: docs
+License-File: LICENSE
+
+Async Runner
+============
+
+Simple python library wrapping
+`Sarge <https://pypi.org/project/sarge/>`__
+
+Pip installation
+----------------
+
+BoolTest is available via ``pip``:
+
+::
+
+   pip3 install ph4-runner
+
+Local installation
+------------------
+
+From the local dir:
+
+::
+
+   pip3 install --upgrade --find-links=. .
