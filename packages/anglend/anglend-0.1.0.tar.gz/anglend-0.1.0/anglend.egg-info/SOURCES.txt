@@ -1,0 +1,5 @@
+setup.py
+anglend.egg-info/PKG-INFO
+anglend.egg-info/SOURCES.txt
+anglend.egg-info/dependency_links.txt
+anglend.egg-info/top_level.txt
