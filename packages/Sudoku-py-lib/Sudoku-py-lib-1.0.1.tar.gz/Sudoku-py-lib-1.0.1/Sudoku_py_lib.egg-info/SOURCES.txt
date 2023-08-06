@@ -1,0 +1,17 @@
+setup.py
+Sudoku_py_lib.egg-info/PKG-INFO
+Sudoku_py_lib.egg-info/SOURCES.txt
+Sudoku_py_lib.egg-info/dependency_links.txt
+Sudoku_py_lib.egg-info/top_level.txt
+sudoku/__init__.py
+sudoku/sudoku_core.py
+sudoku/sudoku_generator.py
+sudoku/sudoku_handler.py
+sudoku/sudoku_prepare.py
+tests/__init__.py
+tests/generate_tests.py
+tests/manual_testing.py
+tests/test_sudoku.py
+tests/test_sudoku_generator.py
+tests/test_sudoku_handler.py
+tests/test_sudoku_prepare.py
