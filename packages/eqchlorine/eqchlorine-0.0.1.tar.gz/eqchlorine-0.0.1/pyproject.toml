@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling", "numpy", "matplotlib", "scipy", "colorama"]
+build-backend = "hatchling.build"
+
+[project]
+name = "eqchlorine"
+version = "0.0.1"
+authors = [
+  { name="Maureen Llinares", email="maureenllin@gmail.com" },
+]
+description = "Forward function to generate chlorine36 concentration profiles associated to sesimic history"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+
+
+
+
