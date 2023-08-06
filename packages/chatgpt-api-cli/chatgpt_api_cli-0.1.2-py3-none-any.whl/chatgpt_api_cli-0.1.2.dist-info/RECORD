@@ -1,0 +1,10 @@
+chatgpt_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatgpt_cli/__version__.py,sha256=YvuYzWnKtqBb-IqG8HAu-nhIYAsgj9Vmc_b9o7vO-js,22
+chatgpt_cli/main.py,sha256=BSN0_WBbW2OOpBXBPjm8RpwmQhWjJZuVxU96jctvG8w,1135
+chatgpt_cli/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatgpt_cli/services/chatgpt.py,sha256=2ZNBJUDd6euXKcVLqYY7OOCbziDdp3O8mFPV6T_6Nl0,835
+chatgpt_cli/settings.py,sha256=tN0qlLjSf8WTjbkd6kYi7sXuVGCwD8WJIcS1unQPt48,259
+chatgpt_api_cli-0.1.2.dist-info/entry_points.txt,sha256=faRAmZqOdRb8zdkPy07gLY_gSg2XxrqbcUhGV_Pj52w,49
+chatgpt_api_cli-0.1.2.dist-info/WHEEL,sha256=JtIceljpZF_3FlF7JEESqvYUELdenaIGNR7wSL2mRl0,87
+chatgpt_api_cli-0.1.2.dist-info/METADATA,sha256=wVL5wUEsBluca_TeK3uwhdSE4XkUy9u4-P9mgJugTok,294
+chatgpt_api_cli-0.1.2.dist-info/RECORD,,
