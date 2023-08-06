@@ -1,0 +1,8 @@
+License.txt
+setup.py
+GLOBALMART_FUNCTION_BDIST.egg-info/PKG-INFO
+GLOBALMART_FUNCTION_BDIST.egg-info/SOURCES.txt
+GLOBALMART_FUNCTION_BDIST.egg-info/dependency_links.txt
+GLOBALMART_FUNCTION_BDIST.egg-info/requires.txt
+GLOBALMART_FUNCTION_BDIST.egg-info/top_level.txt
+globalmart_api/__init__.py
