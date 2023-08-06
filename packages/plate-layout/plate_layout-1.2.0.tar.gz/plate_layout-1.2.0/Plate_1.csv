@@ -1,0 +1,97 @@
+well,sample_name,QC,pair_ID,organ,barcode
+A1,PB1,True,NaN,NaN,NaN
+A2,EC1,True,NaN,NaN,NaN
+A3,S1,False,0,Parotid glands,95388762
+A4,S2,False,0,Parotid glands,66794295
+A5,S3,False,1,Tendons,69215322
+A6,S4,False,1,Tendons,77642424
+A7,S5,False,2,Parotid glands,30225664
+A8,S6,False,2,Parotid glands,12528615
+A9,S7,False,3,Descending colon,1796155
+A10,S8,False,3,Descending colon,57295442
+A11,S9,False,4,Tendons,16921757
+A12,S10,False,4,Tendons,75246242
+B1,S11,False,5,Parotid glands,64552897
+B2,PO1,True,NaN,NaN,NaN
+B3,EC2,True,NaN,NaN,NaN
+B4,S12,False,5,Parotid glands,47950177
+B5,S13,False,6,Tendons,2702414
+B6,S14,False,6,Tendons,26494937
+B7,S15,False,7,Tendons,46529473
+B8,S16,False,7,Tendons,97459118
+B9,S17,False,8,Descending colon,56929294
+B10,S18,False,8,Descending colon,8134868
+B11,S19,False,9,Mammary glands,25379204
+B12,S20,False,9,Mammary glands,56779332
+C1,S21,False,10,Mammary glands,76749100
+C2,S22,False,10,Mammary glands,84721617
+C3,PB2,True,NaN,NaN,NaN
+C4,EC3,True,NaN,NaN,NaN
+C5,S23,False,11,Tendons,84531865
+C6,S24,False,11,Tendons,72606476
+C7,S25,False,12,Descending colon,89264577
+C8,S26,False,12,Descending colon,71172590
+C9,S27,False,13,Kidneys,66273745
+C10,S28,False,13,Kidneys,84703248
+C11,S29,False,14,Kidneys,88354484
+C12,S30,False,14,Kidneys,65659793
+D1,S31,False,15,Parotid glands,32753943
+D2,S32,False,15,Parotid glands,24586092
+D3,S33,False,16,Kidneys,7377822
+D4,PO2,True,NaN,NaN,NaN
+D5,EC4,True,NaN,NaN,NaN
+D6,S34,False,16,Kidneys,48142946
+D7,S35,False,17,Parotid glands,4397441
+D8,S36,False,17,Parotid glands,60949998
+D9,S37,False,18,Kidneys,50473731
+D10,S38,False,18,Kidneys,71698045
+D11,S39,False,19,Tendons,39763280
+D12,S40,False,19,Tendons,29001972
+E1,S41,False,20,Tendons,11318910
+E2,S42,False,20,Tendons,59850144
+E3,S43,False,21,Mammary glands,88276397
+E4,S44,False,21,Mammary glands,86806299
+E5,PB3,True,NaN,NaN,NaN
+E6,EC5,True,NaN,NaN,NaN
+E7,S45,False,22,Parotid glands,91264879
+E8,S46,False,22,Parotid glands,51064174
+E9,S47,False,23,Tendons,67178117
+E10,S48,False,23,Tendons,79612562
+E11,S49,False,24,Tendons,14972485
+E12,S50,False,24,Tendons,31524926
+F1,S51,False,25,Mammary glands,15965851
+F2,S52,False,25,Mammary glands,16324985
+F3,S53,False,26,Tendons,55413954
+F4,S54,False,26,Tendons,22813503
+F5,S55,False,27,Kidneys,60868435
+F6,PO3,True,NaN,NaN,NaN
+F7,EC6,True,NaN,NaN,NaN
+F8,S56,False,27,Kidneys,77051615
+F9,S57,False,28,Tendons,82197568
+F10,S58,False,28,Tendons,63107104
+F11,S59,False,29,Descending colon,80429531
+F12,S60,False,29,Descending colon,65526354
+G1,S61,False,30,Mammary glands,65758830
+G2,S62,False,30,Mammary glands,83270833
+G3,S63,False,31,Tendons,57589022
+G4,S64,False,31,Tendons,11110972
+G5,S65,False,32,Descending colon,33263717
+G6,S66,False,32,Descending colon,66368571
+G7,PB4,True,NaN,NaN,NaN
+G8,EC7,True,NaN,NaN,NaN
+G9,S67,False,33,Parotid glands,19152097
+G10,S68,False,33,Parotid glands,51313203
+G11,S69,False,34,Tendons,145718
+G12,S70,False,34,Tendons,93885560
+H1,S71,False,35,Parotid glands,53733276
+H2,S72,False,35,Parotid glands,17000055
+H3,S73,False,36,Descending colon,44451882
+H4,S74,False,36,Descending colon,81313327
+H5,S75,False,37,Mammary glands,19202297
+H6,S76,False,37,Mammary glands,49021073
+H7,S77,False,38,Parotid glands,66377078
+H8,PO4,True,NaN,NaN,NaN
+H9,EC8,True,NaN,NaN,NaN
+H10,S78,False,38,Parotid glands,33511337
+H11,S79,False,39,Tendons,8892560
+H12,S80,False,39,Tendons,42138396
