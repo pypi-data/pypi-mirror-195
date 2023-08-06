@@ -1,0 +1,13 @@
+apparition/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apparition/__main__.py,sha256=8RRhfxuIzjZmuaC011_pNr4lh2byo0bnPbPE1qiEjus,61
+apparition/apparate.py,sha256=FEc0GNDnqWCYLnR3hmy4iPqGyd_1Zd8MxMVVUgBrQ0Y,1893
+apparition/exceptions.py,sha256=gq1oGSKStB4lyQ0J2nSJBMxQuygd28djkMk2UsD24jM,76
+apparition/io.py,sha256=mvGiz5PhiK5n4gQjQQcrPY5JK3eojG4UJipIvYrM2Vk,2082
+apparition/main.py,sha256=WHCdndvHRBximr-W88FrjVdAYYqNlgELQ8NOhWtJnQ0,4942
+apparition/resources/apparate.sh,sha256=YHEK_A8VbGhntuEIxm8PuINBnNg55Dy3I4i5YRtX1Ao,780
+apparition/utils.py,sha256=2Vo4QPHPQTWPYXTOa37EQI49LTc324wWSdF_WjdXQjg,1512
+apparition-0.1.0.dist-info/METADATA,sha256=UrwtPbBQCC1H8eNOqSIS9pv4UncoW9ORDOzEi5TQ4_s,12516
+apparition-0.1.0.dist-info/LICENSE,sha256=nUz6CAIxL8c7LsUOorLnCwbk7fmZFJxxxDtJ-z6m15E,1069
+apparition-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+apparition-0.1.0.dist-info/entry_points.txt,sha256=mw7CrqA1qJbIjJ8scJtYOPQTUMAOBvwOAN8TgHe90Ds,50
+apparition-0.1.0.dist-info/RECORD,,

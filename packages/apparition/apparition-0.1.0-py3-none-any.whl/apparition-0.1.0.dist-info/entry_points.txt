@@ -1,0 +1,3 @@
+[console_scripts]
+apparition=apparition.main:app
+
