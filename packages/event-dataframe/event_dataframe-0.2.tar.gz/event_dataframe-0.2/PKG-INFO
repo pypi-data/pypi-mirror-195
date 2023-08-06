@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: event_dataframe
+Version: 0.2
+Summary: A simple dataframe format to store events
+Home-page: https://github.com/JulienBrn/EventDataFrame
+Download-URL: https://github.com/JulienBrn/EventDataFrame.git
+Author: Julien Braine
+Author-email: julienbraine@yahoo.fr
+License: MIT
+Keywords: python,logging
+License-File: LICENSE.txt
