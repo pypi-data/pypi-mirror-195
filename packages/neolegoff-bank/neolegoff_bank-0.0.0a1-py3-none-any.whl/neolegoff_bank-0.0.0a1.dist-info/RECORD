@@ -1,0 +1,10 @@
+neolegoff_bank/__init__.py,sha256=_7TICW3O5I65avYP0-G_aPTlNB696J0LjSnJ2d2rmU4,34
+neolegoff_bank/exceptions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neolegoff_bank/models/__init__.py,sha256=ERmmOxz_9mUkIuccNbzUa5Y6gVLLVDdyc4cCxbCCUbY,20
+neolegoff_bank/models/api_response_base.py,sha256=7uRl3BvveuiSd0MiYOk8hDWJl3mN0YtezeNxw-QqKP8,394
+neolegoff_bank/models/neolegoff_app_data.py,sha256=hIU6XmgEUD64TUU53RGlFVfsxs_FaeQyyBwa1HKwCf8,8611
+neolegoff_bank-0.0.0a1.dist-info/LICENSE,sha256=S4nUUYvRNatO4VSnvOciJGtXqYw9fvwaCUCYmBYMK9E,16724
+neolegoff_bank-0.0.0a1.dist-info/METADATA,sha256=M9OqczAf5Ck3L4rD6-X-8NvsGHF8AdE2XYKpBYOa7ro,3342
+neolegoff_bank-0.0.0a1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+neolegoff_bank-0.0.0a1.dist-info/top_level.txt,sha256=7SLViEwpJR4ENPRMRKLH1qRU3zIss02eltmkh3kX_7M,15
+neolegoff_bank-0.0.0a1.dist-info/RECORD,,
