@@ -1,0 +1,9 @@
+src/HaThOr/Chemostats.py,sha256=Pr15iyi6OrAQV_sv1OwOozlM_BT6OpnLJfhH9ZBrfF8,5002
+src/HaThOr/Metabolisms.py,sha256=N5ixrcZc_j7RWrayNVNKNS3D2gsB-PDIGrtvCDq0B00,4855
+src/HaThOr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/HaThOr/chem_helper.py,sha256=oGqTgyQ4CmS7yO9xZiaE8E4TTvSRklEXN7GAH9-9Eag,5394
+src/HaThOr/pH_mtn_gen.py,sha256=I0Qpwy64_7QInN0ox6CPbSks4M496PpsAzKQDnMX2yg,768
+habitabilitytheory-0.0.1.dist-info/METADATA,sha256=TuuxNKyanPCM8WF_Wu4Y7R4x8k-U0MUi_W2BuV4ssrU,1880
+habitabilitytheory-0.0.1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+habitabilitytheory-0.0.1.dist-info/licenses/LICENSE,sha256=JI7Q7qipaiuX3_x3_pqQumudgoaPnX-yEwrmnehF-T8,1073
+habitabilitytheory-0.0.1.dist-info/RECORD,,
