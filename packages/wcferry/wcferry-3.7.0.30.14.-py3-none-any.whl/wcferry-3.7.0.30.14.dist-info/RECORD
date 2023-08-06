@@ -1,0 +1,10 @@
+wcferry/__init__.py,sha256=zjeRvsS7ypvx_F_sp1TMcxdG3ycTZqQFQ2RyTIK7LrE,85
+wcferry/client.py,sha256=p77GaiIIktWm8fCAsbhkXgdpq27fW4Tox_Oay4P_KXA,12688
+wcferry/spy.dll,sha256=0XqGjcRWavScDjbGnK9FfU5StW9cVvmZt_1f-e9mLps,599552
+wcferry/spy_debug.dll,sha256=5kL3qaitQwzIUPsM8pFuvDWoZePF3aZNHAY3amRVJZk,1048064
+wcferry/wcf.exe,sha256=_tllbbV3bSixSudEts63gj7qHa53ZxM6jLuoJc0iKpk,371200
+wcferry/wcf_pb2.py,sha256=zAb0gp1u9e4Zol5mQGgLZHvkPfcYW6hmI2pyjl_IsUs,5881
+wcferry-3.7.0.30.14.dist-info/METADATA,sha256=Hs0Y6OU79dYbmPQbg7EcSJCOyKUcviHAOW39O1FtP6U,3238
+wcferry-3.7.0.30.14.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+wcferry-3.7.0.30.14.dist-info/top_level.txt,sha256=V5vt9XhXSiO7m2GlBwWWGifvO4Lbr1AMqPse7PHtIKc,8
+wcferry-3.7.0.30.14.dist-info/RECORD,,
