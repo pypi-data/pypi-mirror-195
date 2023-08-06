@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: berkelium
+Version: 0.0.0
+Summary: NLP Tool Kit
+Author: Buddhi Kavindra Ranasinghe
+Author-email: info@buddhilive.com
+License: UNKNOWN
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Berkelium
+
+![downloads](https://img.shields.io/badge/downloads-13k%2Fmonth-brightgreen)
+
