@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+BERRY_CHECK.egg-info/PKG-INFO
+BERRY_CHECK.egg-info/SOURCES.txt
+BERRY_CHECK.egg-info/dependency_links.txt
+BERRY_CHECK.egg-info/requires.txt
+BERRY_CHECK.egg-info/top_level.txt
