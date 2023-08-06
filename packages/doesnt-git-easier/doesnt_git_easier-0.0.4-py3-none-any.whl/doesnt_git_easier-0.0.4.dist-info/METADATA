@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: doesnt-git-easier
+Version: 0.0.4
+Summary: Making it easy to read and write files to Git in a Pythonic way with context managers and the Git REST API.
+Author: Ryan Schreiber
+Author-email: ryanschreiber86@gmail.com
+Project-URL: Documentation, https://github.com/ryan-schreiber/doesnt-git-easier/
+Project-URL: Source, https://github.com/ryan-schreiber/doesnt-git-easier/
+Project-URL: Tracker, https://github.com/ryan-schreiber/doesnt-git-easier/issues
+Keywords: git commit add push files context manager doesnt-git-easier doesn't get easier
+Requires-Dist: smart-open
+Requires-Dist: requests
+Requires-Dist: python-dotenv
+
+Making it easy to read and write files to Git in a Pythonic way with context managers and the Git REST API.
