@@ -1,0 +1,6 @@
+teradataml>=17.10.00.02
+pandas
+numpy
+sklearn
+plotly
+seaborn
