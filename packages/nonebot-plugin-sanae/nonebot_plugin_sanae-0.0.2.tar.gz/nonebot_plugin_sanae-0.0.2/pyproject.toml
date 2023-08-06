@@ -1,0 +1,26 @@
+[tool.pdm]
+
+[project]
+name = "nonebot-plugin-sanae"
+version = "0.0.2"
+description = "sanae connecter"
+authors = [
+    { name = "Hoshinonyaruko", email = "applegm@me.com" },
+]
+dependencies = [
+    "asyncio>=3.4.3",
+    "aiohttp>=2.2.5",
+    "nonebot2>=2.0.0a10",
+    "nonebot-adapter-onebot>=2.2.1",
+]
+requires-python = ">=3.8,<4.0"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend >=0.4.1",
+]
+build-backend = "pdm.backend"
