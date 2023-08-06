@@ -1,0 +1,12 @@
+bridgebots_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bridgebots_tools/compare_contracts_csv_report.py,sha256=1BnvHfm4PfpFQZKjXKio814i5IWlN3PifWm8yjqU2Pk,5223
+bridgebots_tools/csv_report.py,sha256=4mmap2roi-HzK_19fAUUGpSbG56dBIZ1SnHfeHXgeqI,3124
+bridgebots_tools/csv_utilities.py,sha256=7hVNJLZk6XOwlSP-2ig-QgeXsSWu4Ftwg9heF_MFArM,1751
+bridgebots_tools/data_extractors.py,sha256=mLOU9bgTfHXMFjRey6n0m3Lx1AKp7zurYkCfYq5vcqw,9360
+bridgebots_tools/practice.csv,sha256=l8f7h2DULe05xdYFUeDdPUkDVO69yy2scAR426dafXw,5875
+bridgebots_tools/practice.lin,sha256=ZRYixYYV9TY9T_qY5mYlnQqeCaV4ben5ISX9yzplAWk,1264
+bridgebots_tools/practice_deals.py,sha256=3iifj9oFFN6DnTf5t1R_vN_tz8C5V5fbzDO5GyX1xZc,2661
+bridgebots_tools/tools_logging.py,sha256=jb4CJpY6rWg9LdVxDlRYns_i3jUAqyUqaAwiIqVS81E,277
+bridgebots_tools-0.0.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+bridgebots_tools-0.0.5.dist-info/METADATA,sha256=F62Tzb1oTq_I6b0yRQwkm1pZfQ7D8cR2PvuTc4NQFBo,657
+bridgebots_tools-0.0.5.dist-info/RECORD,,
