@@ -1,0 +1,3 @@
+[console_scripts]
+arps=amarps.main:main
+

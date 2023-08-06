@@ -1,0 +1,10 @@
+amarps/__init__.py,sha256=5im1FLD_I3r3KQBW97YfQ3l-6a2Esx-ck9LSm8RIkkA,79
+amarps/__main__.py,sha256=Ipm-KZJB7V1CFJ96iF1-pN8CBfK7qdsykjsmt4hl7LQ,32
+amarps/main.py,sha256=vyN8IuDpoYktrvAO5ZoKYpv8YXagz9j-HHoDVnL6-Hg,2349
+amarps/profile_page_selectors.yml,sha256=763euEXwI4_8zEGy49qUh8r_TCPOcGuJpX8h3ATBy78,1208
+amarps/review_page_selectors.yml,sha256=kSX_FV18uzimbz_gtdq7vbNYkWDTJxwHnPM9hxKw9jU,1044
+amarps/scraper.py,sha256=nOs6vRkkw70Nk_emogAa4J0V76SryRZKHXZJPDSdpEQ,8674
+amarps-0.12.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+amarps-0.12.0.dist-info/METADATA,sha256=yoRGJ3meAJq8Sde4tKhRrAOboraEcnrMibtXl37SiIY,1365
+amarps-0.12.0.dist-info/entry_points.txt,sha256=wowSjWAzjVaHAjp5_q4GOrQuOOkma_NpYvqnpi3m7xo,41
+amarps-0.12.0.dist-info/RECORD,,
