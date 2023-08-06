@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+# [tool.poetry]
+name = "simple-image-framework"
+version = "0.0.1"
+authors = [
+  { name="Cutie Deng", email="Dengzr2020@mail.sustech.edu.cn" },
+]
+
+description = "A simple image framework, for digital image processing support on lab. "
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+homepage = "" 
+repository = "" 
+documentation = "" 
+url = "https://github.com/CutieDeng/SimpleImageProcess"
+
+packages = [
+  { include = "image_processing_framework" }, 
+]
+
+dependencies = [
+  "pillow", 
+]
+
+# [project.urls]
+# "Homepage" = "" 
+# "Bug Tracker" = "" 
