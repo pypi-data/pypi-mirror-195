@@ -1,0 +1,2 @@
+[console_scripts]
+sqlitediff = sqlitediff.__main__:main
