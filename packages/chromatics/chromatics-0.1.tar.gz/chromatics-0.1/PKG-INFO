@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: chromatics
+Version: 0.1
+Summary: simple analysis of chromatographic data
+Home-page: https://github.com/corinwagen/chromatics
+Author: Corin Wagen
+Author-email: corin.wagen@gmail.com
+License: GPL 3.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+<img src='logo/logo.png' width=250>
+
+*chromatics* is a simple Python library for analyzing chromatographic data.
+
+*chromatics* is designed to allow for simple analysis of SFC-MS data. 
+In particular, *chromatics* simplifies analysis of overlapped chromatographic peaks 
+by using modern non-linear curve fitting algorithms (as implemented in *lmfit*) to fit the observed chromatogram to a linear combination
+of parametric peak models.
+
+For an example of how to use *chromatics*, see ``tutorial/``.
+
+This library is released under a GPL 3.0 license: see ``LICENSE.txt`` for more details
+
+*Corin Wagen and Eugene Kwan, 2022*
+
+

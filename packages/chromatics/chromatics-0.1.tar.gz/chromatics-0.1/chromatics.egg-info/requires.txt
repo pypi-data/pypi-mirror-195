@@ -1,0 +1,4 @@
+numpy
+lmfit
+scipy
+sklearn
