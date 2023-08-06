@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+memorylru/__init__.py
+memorylru/lru.c
+memorylru/lru.pyi
+memorylru.egg-info/PKG-INFO
+memorylru.egg-info/SOURCES.txt
+memorylru.egg-info/dependency_links.txt
+memorylru.egg-info/top_level.txt
+memorylru.egg-info/zip-safe
