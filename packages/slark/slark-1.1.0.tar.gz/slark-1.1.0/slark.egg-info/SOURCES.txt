@@ -1,0 +1,10 @@
+README.md
+setup.py
+slark/__init__.py
+slark/slark.py
+slark/tests.py
+slark.egg-info/PKG-INFO
+slark.egg-info/SOURCES.txt
+slark.egg-info/dependency_links.txt
+slark.egg-info/requires.txt
+slark.egg-info/top_level.txt
