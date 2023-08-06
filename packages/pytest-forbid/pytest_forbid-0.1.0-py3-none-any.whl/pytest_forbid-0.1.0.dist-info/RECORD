@@ -1,0 +1,5 @@
+pytest_forbid/plugin.py,sha256=cFBfmB_-i-VsE4xSz77rNmJ4o6VCE5yWMzH30xNxGRQ,670
+pytest_forbid-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pytest_forbid-0.1.0.dist-info/entry_points.txt,sha256=UCZqihleMEvhycxi0zxytaVKAPVctCbgtpYX6OthqG0,40
+pytest_forbid-0.1.0.dist-info/METADATA,sha256=tOX7P3A13CoXlGib7zK7wvKGM6Tqz3Nt7XQbqiZOqjY,579
+pytest_forbid-0.1.0.dist-info/RECORD,,

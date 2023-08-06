@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pytest-forbid
+Version: 0.1.0
+Summary: 
+License: MIT
+Author: Vlad Dmitrievich
+Author-email: 2tunnels@proton.me
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: forbid (>=0.1.2,<0.2.0)
+Requires-Dist: pytest (>=7.2.2,<8.0.0)
+Description-Content-Type: text/markdown
+
+# pytest-forbid
+
+Yet another test project
+

@@ -1,0 +1,3 @@
+[pytest11]
+forbid=pytest_forbid.plugin
+
