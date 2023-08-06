@@ -1,0 +1,9 @@
+eipiphany_file/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eipiphany_file/component/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eipiphany_file/component/file_configuration.py,sha256=g37rhVlOI3h6M5CpvMqxOb6r21s6q8zPoW-6wT7RqMY,1897
+eipiphany_file/component/file_endpoint.py,sha256=EtbO6GsIZK21oNZMfgktABkDz89E2w_MDpg9gzlmUn8,719
+eipiphany_file/component/file_source.py,sha256=RtcwDivZVmJAMDib9rvvsZWxl0CTvBsX3AB7_y4Czhg,3343
+eipiphany_file-0.1.0.dev20230306154257.dist-info/METADATA,sha256=_pulDvAdPvjmKPmbC4SDEH7DA4XLge4B2T1xNbwBhDk,2558
+eipiphany_file-0.1.0.dev20230306154257.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+eipiphany_file-0.1.0.dev20230306154257.dist-info/top_level.txt,sha256=Bk3sEo6sCFVXRCdxGzmb7Dx-U8ziNZEEOqLwHNYLMZc,15
+eipiphany_file-0.1.0.dev20230306154257.dist-info/RECORD,,
