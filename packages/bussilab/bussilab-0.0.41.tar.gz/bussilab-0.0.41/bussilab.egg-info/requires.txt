@@ -1,0 +1,7 @@
+argcomplete
+networkx
+numpy
+scipy
+slack-sdk
+pyyaml
+typing_extensions
