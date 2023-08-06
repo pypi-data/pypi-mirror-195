@@ -1,0 +1,8 @@
+termgpt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+termgpt/chat.py,sha256=Y3zjoWMkLT6BOHP_WQp6Qv0qKSPGNSCpgafL4tZdoo8,1136
+termgpt/version.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+termgpt-0.1.0.dist-info/METADATA,sha256=vwoB80bqHD2bUQvaWdWY4bA1R4f_41bsilFycg3sXbM,635
+termgpt-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+termgpt-0.1.0.dist-info/entry_points.txt,sha256=UKwp-HD67xZrjFF-wQ1hpJf4XlUM2vWEB7b0EA6Rjh8,42
+termgpt-0.1.0.dist-info/top_level.txt,sha256=ztbHbQLu7wzlB8VVQ3OM04IGz3Y4IJYkSCcwhRvjSHw,8
+termgpt-0.1.0.dist-info/RECORD,,
