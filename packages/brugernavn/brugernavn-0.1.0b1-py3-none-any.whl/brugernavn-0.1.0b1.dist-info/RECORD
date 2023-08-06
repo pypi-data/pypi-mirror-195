@@ -1,0 +1,10 @@
+brugernavn/__init__.py,sha256=PsQ15zdzBVcHBfAC9tsblWxzqzREbpqgEaMYRzxpwUM,60
+brugernavn/__main__.py,sha256=REN4Y3UASOcXtJizHYe8DDk9_5GemWHILh5sJr0DfIA,194
+brugernavn/brugernavn.py,sha256=MCEpI9UsRkMPNcFTAbD1Skx6mPeWfXATMsR6KJyFufA,1613
+brugernavn/tests.py,sha256=-ZBpheACiNqHhUy3biwYV0JCZU7G9EUWuU1jZXarg8c,375
+brugernavn/ressources/data.json,sha256=aaIJvAtZD2WNH7cOEQLyesWzH6Q8sc_lp4t5QFQLlGs,8677
+brugernavn/ressources/tests.json,sha256=Ea5RQE4YPTsa68gjpFUsRgR2LhPxAsK8F_7-N2aGMAw,322
+brugernavn-0.1.0b1.dist-info/METADATA,sha256=eR7uQj3d2_zuz7NUFXnVDn5q0Hv98uVMoB7y7L1FOQs,782
+brugernavn-0.1.0b1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+brugernavn-0.1.0b1.dist-info/licenses/LICENSE,sha256=Mh4oQRyRx-gVlPmMirFcjx2Tjmfh10JqV_7EPRZH6ds,1094
+brugernavn-0.1.0b1.dist-info/RECORD,,
