@@ -1,0 +1,5 @@
+sphinx
+renku-sphinx-theme
+sphinx-autoapi
+numpydoc
+jinja2<3.1
