@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/amandas_rerp_ols/__init__.py
+src/amandas_rerp_ols/my_method.py
+src/amandas_rerp_ols.egg-info/PKG-INFO
+src/amandas_rerp_ols.egg-info/SOURCES.txt
+src/amandas_rerp_ols.egg-info/dependency_links.txt
+src/amandas_rerp_ols.egg-info/top_level.txt
