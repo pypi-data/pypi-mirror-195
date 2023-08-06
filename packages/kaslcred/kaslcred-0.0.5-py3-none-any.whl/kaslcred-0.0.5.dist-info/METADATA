@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: kaslcred
+Version: 0.0.5
+Summary: A credential schema linker for the KERI and ACDC ecosystem.
+Project-URL: Homepage, https://github.com/tetraveda/kaslcred
+Author-email: Kent Bull <kent@tetraveda.com>, Kevin Griffin <griffin.kev@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: keri>=0.6.8
+Description-Content-Type: text/markdown
+
+# KASL : KERI and ACDC Schema Linker
+Computes self addressing identifiers (SAIDs) for KERI and ACDC schema parts and links them together by SAID.
+
+## Usage
+
+``` shell
+kasl [schema_dir] [output_dir] [schema_map_file.json]
+
+# Example:
+# Requires having pre-written and pre-copied all of the schema files into ${KASL_HOME}/schemas
+export KASL_HOME=${HOME}/.kasl
+kasl ${KASL_HOME}/schemas ${KASL_HOME}/results ${KASL_HOME}/schemas/schema_map.json
+```
+
+## Installation
+
+### Dependencies
+Rust toolchain (for Blake3 dependency)
+Libsodium
+KERI
+
+
+## Development
+Building
+
+``` shell
+python3 -m build
+
+python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps kaslcred
+```
