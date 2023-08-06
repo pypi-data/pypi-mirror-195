@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+gluesnake/__init__.py
+gluesnake/manager.py
+gluesnake.egg-info/PKG-INFO
+gluesnake.egg-info/SOURCES.txt
+gluesnake.egg-info/dependency_links.txt
+gluesnake.egg-info/not-zip-safe
+gluesnake.egg-info/top_level.txt
+gluesnake/utils/__init__.py
+gluesnake/utils/log.py
+tests/__init__.py
+tests/conftest.py
+tests/test_01_job_manager.py
