@@ -1,0 +1,307 @@
+import numpy
+import zfit
+import matplotlib.pyplot as plt
+import utils_noroot      as utnr
+
+from logzero     import logger as log
+from zutils.plot import plot   as zfp
+
+#--------------------------------
+class extractor:
+    def __init__(self):
+        self._d_eff       = None
+        self._cov         = None
+        self._d_rjpsi     = None
+        self._d_data      = None
+        self._d_model     = None
+        self._d_ck        = None 
+        self._l_dsname    = []
+
+        self._rk          = zfit.Parameter('rk', 1.0, 0.0, 2.0)
+
+        self._plt_dir     = None
+
+        self._initialized = False
+    #--------------------------------
+    def _initialize(self):
+        if self._initialized:
+            return
+
+        self._l_dsname = list(self._d_eff.keys())
+
+        self._check_inputs()
+        self._d_ck = { dsname : zfit.Parameter(f'ck_{dsname}', 1.0, 0.0, 2.0) for dsname in self._l_dsname }
+
+        d_model = {}
+        for ds, (mod_mm, mod_ee) in self._d_model.items():
+            mod_ee = self._reparametrize_ee_pdf(ds, mod_mm, mod_ee)
+
+            d_model[ds] = (mod_mm, mod_ee)
+
+        self._d_model = d_model
+
+        self._initialized = True
+    #--------------------------------
+    def _check_inputs(self):
+        for ds, (eff_mm, eff_ee) in self._d_eff.items():
+            self._check_eff(eff_mm)
+            self._check_eff(eff_ee)
+
+        for ds, (mod_mm, mod_ee) in self._d_model.items():
+            self._check_model(mod_mm)
+            self._check_model(mod_ee)
+
+        for ds, (dat_mm, dat_ee) in self._d_data.items():
+            self._check_data(dat_mm)
+            self._check_data(dat_ee)
+
+        self._check_keys(self._d_eff  , self._d_model)
+        self._check_keys(self._d_model, self._d_data )
+        self._check_keys(self._d_data , self._d_eff  )
+
+        self._check_cov()
+        self._check_rjpsi()
+    #--------------------------------
+    def _check_keys(self, d1, d2):
+        if d1.keys() != d2.keys():
+            log.error('Keys differ:')
+            log.error(d1.keys())
+            log.error(d2.keys())
+            raise ValueError
+    #--------------------------------
+    def _check_cov(self):
+        if self._cov is None:
+            return
+
+        if not isinstance(self._cov, numpy.ndarray):
+            log.error(f'Covariance matrix is not a numpy array')
+            raise
+
+        ndset = len(self._d_eff)
+
+        if self._cov.shape != (ndset, ndset):
+            log.error(f'Covariance matrix has wrong shape: {shape._cov.shape}')
+            raise
+    #--------------------------------
+    def _check_rjpsi(self):
+        if self._d_rjpsi is None:
+            self._d_rjpsi = {dsname : 1 for dsname in self._l_dsname}
+            log.warning('rjpsi not found, using 1 for all datasets')
+    #--------------------------------
+    def _reparametrize_ee_pdf(self, dsname, mod_mm, mod_ee):
+        nsg_mm  = self._get_yld(mod_mm, 'nsg_mm')
+        nsg_ee  = self._get_yld(mod_ee, 'nsg_ee')
+
+        l_model = mod_ee.models
+        s_param = mod_ee.get_params(is_yield=True)
+        l_param = list(s_param)
+        index   = l_param.index(nsg_ee)
+
+        eff_mm, eff_ee = self._d_eff[dsname]
+
+        rjpsi = self._d_rjpsi[dsname]
+
+        ck=self._d_ck[dsname]
+        ck.set_value( (eff_ee / eff_mm) / rjpsi )
+
+        if self._cov is None:
+            ck.floating = False
+            log.warning('Covariance matrix not specified, will fix ck in fit')
+
+        nsg_ee = zfit.ComposedParameter(f'nsg_ee_rk_{dsname}', lambda a, b, c: b * c / a, params=[self._rk, nsg_mm, ck])
+
+        log.debug(f'nsg_ee_rk_{dsname} -> {nsg_mm.name} * {ck.name} / {self._rk.name}')
+
+        l_param[index] = nsg_ee
+
+        l_model_ext  = [ model.copy().create_extended(nevt) for model, nevt in zip(l_model, l_param) ]
+
+        mod_ee = zfit.pdf.SumPDF(l_model_ext)
+
+        return mod_ee
+    #--------------------------------
+    def _get_yld(self, model, preffix):
+        l_param   = model.get_params(is_yield=True)
+
+        l_sig_yld = [ param for param in l_param if param.name.startswith(preffix)]
+        [sig_yld] = l_sig_yld
+
+        return sig_yld
+    #--------------------------------
+    @property
+    def plt_dir(self):
+        return self._plt_dir 
+
+    @plt_dir.setter
+    def plt_dir(self, value):
+        try:
+            self._plt_dir = utnr.make_dir_path(value)
+        except:
+            log.error(f'Cannot create: {value}')
+            raise
+    #--------------------------------
+    @property
+    def rjpsi(self):
+        return self._d_rjpsi
+
+    @rjpsi.setter
+    def rjpsi(self, value):
+        self._d_rjpsi = value
+    #--------------------------------
+    @property
+    def eff(self):
+        return self._d_eff
+
+    @eff.setter
+    def eff(self, value):
+        self._d_eff = value
+    #--------------------------------
+    @property
+    def cov(self):
+        return self._cov
+
+    @cov.setter
+    def cov(self, value):
+        self._cov = value
+    #--------------------------------
+    @property
+    def data(self):
+        return self._d_data
+
+    @data.setter
+    def data(self, value):
+        self._d_data = value
+    #--------------------------------
+    @property
+    def model(self):
+        return self._d_model
+
+    @model.setter
+    def model(self, value):
+        self._d_model = value
+    #--------------------------------
+    def _check_data(self, obj):
+        if not isinstance(obj, zfit.data.Data):
+            log.error(f'Object introduced is not a zfit dataset')
+            raise ValueError
+    #--------------------------------
+    def _check_model(self, obj):
+        if not isinstance(obj, zfit.pdf.SumPDF):
+            log.error(f'Object introduced is not a zfit PDF')
+            raise ValueError
+
+        pdf = obj
+        if not pdf.is_extended:
+            log.error(f'PDF is not extended:')
+            print(pdf)
+            raise ValueError
+
+        l_yld = pdf.get_params(is_yield=True)
+        l_yld_name = [ yld.name for yld in l_yld if yld.name.startswith('nsg_') ]
+
+        try:
+            [yld_name] = l_yld_name
+        except:
+            log.error('Not found one and only one signal yield:')
+            print(l_yld_name)
+            raise ValueError
+
+        log.debug(f'Picking up component with signal yield: {yld_name}')
+    #--------------------------------
+    def _check_eff(self, eff):
+        if not isinstance(eff, float):
+            log.error(f'Efficiency is not a float: {eff}')
+            raise ValueError
+
+        if not ( 0 < eff < 1 ):
+            log.error(f'Efficiency is not in (0, 1): {eff:.3f}')
+            raise ValueError
+    #--------------------------------
+    def _plot(self, data, model, results, component):
+        if self._plt_dir is None:
+            return
+
+        obj=zfp(data=data, model=model, result=results)
+        obj.plot(nbins=50) 
+
+        plt_path = f'{self._plt_dir}/fit_{component}.png'
+        log.info(f'Saving to: {plt_path}')
+        plt.savefig(plt_path, bbox_inches='tight')
+    #--------------------------------
+    def _finalize(self):
+        self._delete_par('rk')
+
+        for ck in self._d_ck.values():
+            self._delete_par(ck.name)
+
+        for dsname in self._l_dsname:
+            self._delete_par(f'nsg_ee_rk_{dsname}')
+    #--------------------------------
+    def _delete_par(self, par_name):
+        if par_name in zfit.Parameter._existing_params:
+            del zfit.Parameter._existing_params[par_name]
+    #--------------------------------
+    def _add_const(self, nll):
+        if self._cov is None:
+            log.warning(f'Covariance matrix is missing, not adding constraints to  fit')
+            return nll
+
+        l_ck_par=[]
+        l_ck_val=[]
+        for dsname in self._l_dsname:
+            eff_mm, eff_ee = self._d_eff[dsname]
+            rjpsi          = self._d_rjpsi[dsname]
+
+            ck_val         = (eff_ee / eff_mm) / rjpsi
+            ck_par         = self._d_ck[dsname]
+
+            l_ck_val.append(ck_val)
+            l_ck_par.append(ck_par)
+
+        log.debug(f'Using covariance:\n{self._cov}')
+        log.debug(f'Using ck:\n{l_ck_val}')
+        cns_ck   = zfit.constraint.GaussianConstraint(params     = l_ck_par,
+                                                      observation= l_ck_val,
+                                                      uncertainty= self._cov)
+
+        nll = nll.create_new(constraints=cns_ck)
+
+        return nll
+    #--------------------------------
+    def _plot_fit(self):
+        if self._plt_dir is None:
+            return
+
+        for dsname in self._l_dsname:
+            mod_mm, mod_ee = self._d_model[dsname]
+            dat_mm, dat_ee = self._d_data [dsname]
+
+            self._plot(dat_mm, mod_mm, None, f'mm_{dsname}')
+            self._plot(dat_ee, mod_ee, None, f'ee_{dsname}')
+    #--------------------------------
+    def get_rk(self):
+        self._initialize()
+
+        nll = None 
+        for dsname in self._l_dsname:
+            mod_mm, mod_ee = self._d_model[dsname]
+            dat_mm, dat_ee = self._d_data [dsname]
+
+            nll_mm = zfit.loss.ExtendedUnbinnedNLL(model=mod_mm, data=dat_mm)
+            nll_ee = zfit.loss.ExtendedUnbinnedNLL(model=mod_ee, data=dat_ee)
+
+            if nll is None:
+                nll = nll_mm + nll_ee
+            else:
+                nll+= nll_mm + nll_ee
+
+        nll = self._add_const(nll)
+        mnm = zfit.minimize.Minuit()
+        res = mnm.minimize(nll)
+
+        self._plot_fit()
+        self._finalize()
+
+        return res 
+#--------------------------------
+

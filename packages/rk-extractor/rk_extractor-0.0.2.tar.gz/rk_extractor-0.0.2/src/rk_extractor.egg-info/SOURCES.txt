@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/extractor.py
+src/rk_extractor.egg-info/PKG-INFO
+src/rk_extractor.egg-info/SOURCES.txt
+src/rk_extractor.egg-info/dependency_links.txt
+src/rk_extractor.egg-info/requires.txt
+src/rk_extractor.egg-info/top_level.txt
