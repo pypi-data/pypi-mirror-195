@@ -1,0 +1,3 @@
+[console_scripts]
+vk_fetch=vk_fetch.run:app
+
