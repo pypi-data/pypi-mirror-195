@@ -1,0 +1,11 @@
+arches_graphql_client/__init__.py,sha256=IiP6a78YgVbNFLFAcnoE1DGxpk3Q8y_gL8jmBp01S98,120
+arches_graphql_client/client.py,sha256=FprLPy3MNDznOxcgZ1YU7U9dZGpBynGZdNnS4EnBUeA,639
+arches_graphql_client/concept.py,sha256=Yz93xtq26NiCrmG1imT-J5jE47PjBLzdmHqETP6ULFs,2795
+arches_graphql_client/mapper.py,sha256=Df5md18hmpFmBErqBJynFFsi9bbDoXa-RWpBXpLUtXk,3030
+arches_graphql_client/resource.py,sha256=jsgazKnDxwhOZqd9NJbWvnIq0KlP_uAIZG9QPILf-EU,2267
+arches_graphql_client/resource_model.py,sha256=rQ4DZNx-GL8Ek-PY6gOmUsTu2mkEyMfCOlbfYDkOF3w,883
+arches_graphql_client/utils.py,sha256=kK-QyRjdNeJ2eXcjXOCm6IdFC-Jyzs0Yc9E_AL2kCUA,391
+arches_graphql_client-0.0.1.dist-info/METADATA,sha256=2v4VOcDZxvUb0Qk5QAOPoY9Y5pO-lr8DJzc9dtXaVKM,602
+arches_graphql_client-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+arches_graphql_client-0.0.1.dist-info/top_level.txt,sha256=fBwvZJZXzh2b5fuXUtqyrMqJiMqDKa5LYsPmrTICrkQ,22
+arches_graphql_client-0.0.1.dist-info/RECORD,,
