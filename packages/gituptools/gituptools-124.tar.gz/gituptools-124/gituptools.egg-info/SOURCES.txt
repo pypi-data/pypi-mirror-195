@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.py
+gituptools/__init__.py
+gituptools/gitlab.py
+gituptools/utils.py
+gituptools.egg-info/PKG-INFO
+gituptools.egg-info/SOURCES.txt
+gituptools.egg-info/dependency_links.txt
+gituptools.egg-info/requires.txt
+gituptools.egg-info/top_level.txt
+gituptools.egg-info/zip-safe
+gituptools/static/license.hex.json
+gituptools/static/vars.gitlab.txt
+gituptools/static/version.regex
