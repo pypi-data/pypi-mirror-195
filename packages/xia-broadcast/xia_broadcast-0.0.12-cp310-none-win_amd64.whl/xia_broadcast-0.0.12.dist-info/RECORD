@@ -1,0 +1,7 @@
+xia_broadcast/__init__.py,sha256=TckzorYVMzumKOToRLCLJwVvUqqV6Xzl8c2wbudpwW4,133
+xia_broadcast/broadcast.cp310-win_amd64.pyd,sha256=hKeMgFH_26AgxMSOKI9J08dVvS56axw0DvV9PcMBchc,343552
+xia_broadcast-0.0.12.dist-info/LICENSE.txt,sha256=zQIkPwxHhdiGZ8MgAxIjmWGpSFEs2WUkQL7SRQSpXl8,152
+xia_broadcast-0.0.12.dist-info/METADATA,sha256=0kCx_a9_0LaadotD1JFE8TRTfyyeEXRN4i9rWWmqP60,805
+xia_broadcast-0.0.12.dist-info/WHEEL,sha256=xKD-W076Kxa9P8HVHMBFDAZ44LgNHrPjF081MKvpixU,100
+xia_broadcast-0.0.12.dist-info/top_level.txt,sha256=BVEHXFDj1kIY7lo8v-H6KOU-bvTC9FQrjB2mSvZppd8,14
+xia_broadcast-0.0.12.dist-info/RECORD,,
