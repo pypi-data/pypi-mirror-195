@@ -1,0 +1,10 @@
+task_manager/__init__.py,sha256=ljMYO4khaybKR73reva2tJ8iup6hWXT2ocsipsaWBPM,86
+task_manager/__version__.py,sha256=FFcBe6fYK3NT0xtQ9nz2I4J9gjCe9GDqalCg9FLZxG0,427
+task_manager/task_manager.py,sha256=REO6vVqEL5KIZgIVQs9QSpxmqvep0-TOheOmzj9Q2UA,10900
+tests/__init__.py,sha256=8z9REZ3hLz9oSAFvDwznPAAF6HmFsyOhG8MfQOTfIJ8,62
+tests/test_task_manager.py,sha256=4Umnpi8iv5nFwo_qtNCJYoObD1zg4LTnaynuawRm9hI,310
+python_task_manager-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+python_task_manager-0.1.0.dist-info/METADATA,sha256=tlh38Gmm-pgxObtoZFQjQAx5-leb1G-Ts3H4zn4WHc8,1138
+python_task_manager-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+python_task_manager-0.1.0.dist-info/top_level.txt,sha256=JGksIX2nhXW17WrYcSxf37GyDUDzNv4XHe6iBbEjv60,19
+python_task_manager-0.1.0.dist-info/RECORD,,
