@@ -1,0 +1,2 @@
+[console_scripts]
+dragonpy = dragonpy.__main__:main
