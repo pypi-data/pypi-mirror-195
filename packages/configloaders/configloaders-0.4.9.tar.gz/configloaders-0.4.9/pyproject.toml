@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "configloaders"
+version = "0.4.9"
+description = "Load configurations from a variety of configuration files and use them easily"
+authors = ["jawide <jawide@qq.com>"]
+readme = "README.md"
+packages = [{include = "configloaders"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
