@@ -1,0 +1,20 @@
+pythonnet>=3.0.1
+rpyc>=5.3.0
+pyvista>=0.34.1
+numpy>=1.24.2
+matplotlib>=3.7.0
+psutil
+pandas>=1.5.3
+scikit-rf
+
+[:platform_system == "Linux"]
+cffi>=1.15.0
+dotnetcore2>=3.1.23
+
+[:platform_system == "Windows"]
+pywin32>=301
+
+[full]
+osmnx
+utm
+SRTM.py
