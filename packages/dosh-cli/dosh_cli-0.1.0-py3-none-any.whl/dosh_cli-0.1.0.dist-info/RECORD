@@ -1,0 +1,5 @@
+dosh_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dosh_cli/dosh.py,sha256=rBvVXuAqd7mxsVWxVdAXvcEMe6sLefmKYEVYj7LzV7M,4684
+dosh_cli-0.1.0.dist-info/METADATA,sha256=KcyHdTyr1DLRJhHCqzR9TpNYKTWMHlvtjW7sZgye2Q4,404
+dosh_cli-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+dosh_cli-0.1.0.dist-info/RECORD,,
