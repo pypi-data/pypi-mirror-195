@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "restricted_partition"
+version = "0.1.1"
+description = "Integer partitions with an optional max length"
+authors = ["Shay Hill <shay_public@hotmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "restricted_partition"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+commitizen = "^2.42.1"
+pre-commit = "^3.1.1"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.1.1"
+tag_format = "$version"
+version_files = [
+    "pyproject.toml:^version"
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+include = ["src"]
+exclude = ["**/__pycache__.py"]
+
+pythonVersion = "3.9"
+pythonPlatform = "Any"
+
+typeCheckingMode = "strict"
+reportShadowedImports = true
+reportCallInDefaultInitializer = true
+reportImplicitStringConcatenation = true
+# reportMissingSuperCall = true
+reportPropertyTypeMismatch = true
+reportUninitializedInstanceVariable = true
+reportUnnecessaryTypeIgnoreComment = true
+reportUnusedCallResult = true
+
+venvPath = "C:\\Users\\shaya\\AppData\\Local\\pypoetry\\Cache\\virtualenvs"
+venv = "C:\\Users\\shaya\\AppData\\Local\\pypoetry\\Cache\\virtualenvs\\py-comb-ILtUv2xI-py3.11"
