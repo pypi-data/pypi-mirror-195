@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: onp
+Version: 0.0.1
+Summary: utils for repositories inside of one night productions
+Home-page: https://github.com/baudcode/onp
+Author: Malte Koch
+Author-email: malte-koch@gmx.net
+Maintainer: Malte Koch
+Maintainer-email: malte-koch@gmx.net
+License: MIT
+Keywords: utils,video,audio,image,ml
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Provides-Extra: extra
+
+# Utils of One Night Productions
+
+### Video
+
+```python
+from onp.video import extract_frames
+```
+
+
