@@ -1,0 +1,55 @@
+[tool.pdm]
+readme = "README.md"
+
+[tool.pdm.version]
+source = "file"
+path = "chatgpt_cli/__version__.py"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "ipython>=8.11.0",
+    "notebook>=6.5.2",
+    "ruff>=0.0.254",
+    "black>=23.1.0",
+    "pre-commit>=3.1.1",
+    "python-semantic-release>=7.33.2",
+]
+
+[tool.pdm.build]
+includes = [
+    "chatgpt_cli/",
+    "README.md",
+]
+
+[tool.semantic_release]
+version_variable = "chatgpt_cli/__version__.py:__version__"
+version_source = "tag"
+branch = "main"
+build_command = "pdm build"
+
+[project]
+name = "chatgpt-api-cli"
+dynamic = []
+description = "A CLI wrapper for OpenAI's ChatGPT API"
+authors = [
+    { name = "Aumit Leon", email = "aumitleon@gmail.com" },
+]
+dependencies = [
+    "openai>=0.27.0",
+    "typer[all]>=0.7.0",
+    "pydantic[dotenv]>=1.10.5",
+]
+requires-python = ">=3.11"
+version = "0.1.6"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+chatgpt = "chatgpt_cli.main:main"
+
+[build-system]
+requires = [
+    "pdm-pep517",
+]
+build-backend = "pdm.pep517.api"
