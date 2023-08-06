@@ -1,0 +1,16 @@
+pandas
+
+[dev]
+black
+bump2version
+ruff
+interrogate
+isort
+
+[test]
+black
+ruff
+interrogate
+pytest
+pytest-cov
+tox

@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+data_repos/countries.json
+data_repos/iris.csv
+data_repos/read.py
+data_repos.egg-info/PKG-INFO
+data_repos.egg-info/SOURCES.txt
+data_repos.egg-info/dependency_links.txt
+data_repos.egg-info/requires.txt
+data_repos.egg-info/top_level.txt
+tests/test_data_repos.py
