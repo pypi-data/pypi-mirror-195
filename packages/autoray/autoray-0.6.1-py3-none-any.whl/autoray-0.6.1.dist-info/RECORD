@@ -1,0 +1,13 @@
+autoray/__init__.py,sha256=YAcL3OnBV_PoqgPymkUE5Nd-0_rlUjUgr2DUpXXt8KY,1840
+autoray/_version.py,sha256=a0yJhWk72IWejRWIifC48k_2JA1SnCm-v-dQs-bk4io,160
+autoray/autoray.py,sha256=e7gA5KdXvFa8Zr42TuwPPXi_uf1BrpykJMHEpvaDAZw,57206
+autoray/compiler.py,sha256=fsm2olpRq6-uO4lApR9McrCddopBRjTEbxd4udN_Uv8,9202
+autoray/lazy/__init__.py,sha256=nrhL_7Bvz78hpz7ozusSgt7bYeJ1IY-KsMTeABj09Mk,1834
+autoray/lazy/core.py,sha256=tF4D3Awm7qvUBfY0AjgfYuc2HukRuSO8g0mV17kZ25Q,38993
+autoray/lazy/draw.py,sha256=2IFE6lAP96KFIcJjXeH3U1tiuaI6vYmiJ8naTvb3zms,19776
+autoray/lazy/linalg.py,sha256=bNBvWidT0izYqxn4GlfzcI-pvr1ca94EGDKthpm5lpo,2302
+autoray-0.6.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+autoray-0.6.1.dist-info/METADATA,sha256=KcoyZ4ePuD2XJ14PedmRoJJZYg_UYuDQdtEcb_YeZEE,18412
+autoray-0.6.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+autoray-0.6.1.dist-info/top_level.txt,sha256=F_f4qCU7dCvjlrHuMZ5HanPWIhAhC-kqVsz5N2DXlOo,8
+autoray-0.6.1.dist-info/RECORD,,
