@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+
+from tokenish import tokenish
+import sys
+
+parameters = tokenish.parse_args(sys.argv[1:])
+tokenish.main(pattern=parameters[0], token_paths=parameters[1], encoding=parameters[2], writer=parameters[3])
+sys.exit(0)
