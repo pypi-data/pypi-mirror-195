@@ -1,0 +1,13 @@
+grade-calculator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grade-calculator/__main__.py,sha256=0HnRXOk3FcjuoOuVDsK8JeVeMijnWUbo4y1W3mzZE3E,61
+grade-calculator/category.py,sha256=Uu8O3q1-foN8TquUL35XwGysybM3TR3Ea_nuhJWB19E,2131
+grade-calculator/course.py,sha256=AVY6w9plsnaA2VArJvQXm3Sk6dk9tsL0nGuOV6NlJKc,3003
+grade-calculator/semester.py,sha256=m5YuA7I7Nc72f0Ig6mRdLA6sdCd6NHCW81xmewEob-A,1413
+grade-calculator/setup.py,sha256=uRKAF9swDtKbJikZk6tqq2eQXRmmekJju_IppRKfJxs,50
+grade-calculator/statics.py,sha256=cV_WQ9ANjTeEUG_8XNlWGgkWMuIbQqnMN5zcnFOCm-U,1738
+grade-calculator/undergrad.py,sha256=l2YJAjNp3RVe53_HJRAanD740NpgKuJhplakQ6JybsA,1612
+grade_calculator-0.0.0.dist-info/LICENSE,sha256=mNP7OwyoDpqKpR-v4zISMJR6ffGI02352CpvX4bN-ps,1072
+grade_calculator-0.0.0.dist-info/METADATA,sha256=KkTWxCNq89DPqVJnBLQsymNz3qB1BdSv1HjWj6QEZyA,2228
+grade_calculator-0.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+grade_calculator-0.0.0.dist-info/top_level.txt,sha256=Ktdm6D0j8ViU81VfgJ8M0v-p87Rj4Nn63mUfA1E11Wo,17
+grade_calculator-0.0.0.dist-info/RECORD,,
