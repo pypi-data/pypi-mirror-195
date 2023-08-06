@@ -1,0 +1,135 @@
+{
+    "meta": {
+        "legacy_uri": "v1/ecommerce/order.received",
+        "version": "v1"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "order_date": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "platform": {
+                "type": "string"
+            },
+            "country_code": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "phone": {
+                "type": "string"
+            },
+            "user_name": {
+                "type": "string"
+            },
+            "price": {
+                "type": "number"
+            },
+            "order_id": {
+                "type": "string"
+            },
+            "is_subscribed_order": {
+                "type": "boolean"
+            },
+            "discount_codes": {
+                "type": "string"
+            },
+            "sku": {
+                "type": "array"
+            },
+            "details": {
+                "type": "array"
+            },
+            "collections": {
+                "type": [
+                    "array",
+                    "null"
+                ]
+            },
+            "line_tems": {
+                "type": [
+                    "array",
+                    "null"
+                ]
+            },
+            "opt_in": {
+                "type": "boolean"
+            },
+            "brand_id": {
+                "type": "number"
+            },
+            "customer_created_at": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "shipping_zip": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "shipping_city": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "shipping_state_code": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "shipping_country_code": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "billing_zip": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "billing_city": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "billing_state_code": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "billing_country_code": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "customer_total_spent": {
+                "type": [
+                    "number",
+                    "null"
+                ]
+            }
+        },
+        "required": [
+            "platform",
+            "brand_id",
+            "order_id",
+            "opt_in",
+            "phone"
+        ]
+    }
+}

@@ -1,0 +1,32 @@
+[tool.black]
+line-length = 120
+target-version = ['py36',  'py37', 'py38']
+include = '\.pyi?$'
+skip-string-normalization = true
+
+[tool.poetry]
+name = "chattr-event-bus"
+version = "0.1.0"
+description = ""
+authors = ["Chattr <chattr23@gmail.com>"]
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+jsonschema = "4.17.3"
+pytz = "^2022.7.1"
+chattr-config = "0.1.1"
+#chattr-config = { path = "/home/harsh/workspace/chattr/chattr-config", develop = true }
+faust-streaming = "^0.10.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.2"
+pytest-asyncio = "^0.20.3"
+coverage = "^7.2.1"
+pytest-cov = "^4.0.0"
+confluent-kafka = "^2.0.2"
+#chattr-config = { path = "/home/harsh/workspace/chattr/chattr-config", develop = false }
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

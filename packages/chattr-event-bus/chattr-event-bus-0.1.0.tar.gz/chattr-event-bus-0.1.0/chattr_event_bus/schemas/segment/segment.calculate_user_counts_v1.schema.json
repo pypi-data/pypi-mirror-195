@@ -1,0 +1,19 @@
+{
+    "meta": {
+        "legacy_uri": "v1/segment/segment.calculate_user_counts",
+        "version": "v1"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "segment_id": {
+                "type": [
+                    "number"
+                ]
+            }
+        },
+        "required": [
+            "segment_id"
+        ]
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "meta": {
+        "legacy_uri": "v1/generic_event/EventTopic",
+        "version": "v1"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "event_type": {
+                "type": "string"
+            },
+            "subject": {
+                "type": "string"
+            },
+            "action": {
+                "type": "string"
+            },
+            "brand_id": {
+                "type": "number"
+            },
+            "subject_payload": {
+                "type": "object"
+            }
+        },
+        "required": [
+            "event_type",
+            "brand_id",
+            "subject",
+            "action",
+            "subject_payload"
+        ]
+    }
+}

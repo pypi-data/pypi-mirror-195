@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "legacy_uri": "v100/subscriber_engine/SubscriberEngineTopic",
+        "version": "v100"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "event_type": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "event_type"
+        ]
+    }
+}

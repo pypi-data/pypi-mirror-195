@@ -1,0 +1,50 @@
+{
+    "meta": {
+        "legacy_uri": "v1/palantir/EventIngressTopic",
+        "version": "v1"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "event_publish_time": {
+                "type": "string"
+            },
+            "idempotency_key": {
+                "type": "string"
+            },
+            "payload": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "version": {
+                        "type": "string"
+                    },
+                    "tags": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "object",
+                            "properties": {
+                                "value": {},
+                                "__type__": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": [
+                    "name",
+                    "version",
+                    "tags"
+                ]
+            }
+        },
+        "required": [
+            "event_publish_time",
+            "idempotency_key",
+            "payload"
+        ]
+    }
+}

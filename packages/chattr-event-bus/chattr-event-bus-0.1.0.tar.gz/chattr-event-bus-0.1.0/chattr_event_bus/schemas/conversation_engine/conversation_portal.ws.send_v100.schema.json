@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "legacy_uri": "v100/conversation_engine/conversation_portal.ws.send",
+        "version": "v100"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "destination_channels": {
+                "type": "array"
+            },
+            "notification": {
+                "type": "object"
+            }
+        },
+        "required": [
+            "destination_channels",
+            "notification"
+        ]
+    }
+}

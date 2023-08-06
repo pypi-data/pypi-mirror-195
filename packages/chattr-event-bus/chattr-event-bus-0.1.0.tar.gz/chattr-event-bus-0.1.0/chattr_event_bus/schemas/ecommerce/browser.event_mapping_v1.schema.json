@@ -1,0 +1,35 @@
+{
+    "meta": {
+        "legacy_uri": "v1/ecommerce/browser.event_mapping",
+        "version": "v1"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "user_uuid": {
+                "type": "string"
+            },
+            "brand_id": {
+                "type": "number"
+            },
+            "token": {
+                "type": "string"
+            },
+            "event_type": {
+                "type": "string"
+            },
+            "ip": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "user_agent": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            }
+        }
+    }
+}

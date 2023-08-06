@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "legacy_uri": "v1/ecommerce/shopify.order",
+        "version": "v1"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "created_at": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "brand_id": {
+                "type": "number"
+            },
+            "shopify_order_number": {
+                "type": "string"
+            },
+            "shopify_customer_id": {
+                "type": [
+                    "number",
+                    "null"
+                ]
+            },
+            "order_id": {
+                "type": "number"
+            }
+        },
+        "required": [
+            "created_at",
+            "brand_id",
+            "shopify_order_number",
+            "order_id"
+        ]
+    }
+}

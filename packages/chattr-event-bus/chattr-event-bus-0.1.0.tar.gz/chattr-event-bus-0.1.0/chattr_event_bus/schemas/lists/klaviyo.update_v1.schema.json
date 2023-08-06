@@ -1,0 +1,35 @@
+{
+    "meta": {
+        "legacy_uri": "v1/lists/klaviyo.update",
+        "version": "v1"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "list_id": {
+                "type": "string"
+            },
+            "list_name": {
+                "type": "string"
+            },
+            "brand_id": {
+                "type": "number"
+            },
+            "source_id": {
+                "type": "string"
+            },
+            "added_user_count": {
+                "type": "number"
+            },
+            "removed_user_count": {
+                "type": "number"
+            }
+        },
+        "required": [
+            "list_id",
+            "list_name",
+            "brand_id",
+            "source_id"
+        ]
+    }
+}

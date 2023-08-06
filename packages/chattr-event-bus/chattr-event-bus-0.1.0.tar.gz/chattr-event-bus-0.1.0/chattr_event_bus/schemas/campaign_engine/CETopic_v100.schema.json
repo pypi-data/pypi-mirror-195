@@ -1,0 +1,24 @@
+{
+    "meta": {
+        "legacy_uri": "v100/campaign_engine/CETopic",
+        "version": "v100"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "event_type": {
+                "type": "string"
+            },
+            "campaign_id": {
+                "type": "string"
+            },
+            "branduser_id": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "event_type",
+            "campaign_id"
+        ]
+    }
+}

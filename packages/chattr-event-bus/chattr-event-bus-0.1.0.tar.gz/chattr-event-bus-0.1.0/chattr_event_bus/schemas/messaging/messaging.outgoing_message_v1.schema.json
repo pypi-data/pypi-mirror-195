@@ -1,0 +1,72 @@
+{
+    "meta": {
+        "legacy_uri": "v1/messaging/messaging.outgoing_message",
+        "version": "v1"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "status_code": {
+                "type": [
+                    "number"
+                ]
+            },
+            "source": {
+                "type": [
+                    "string"
+                ]
+            },
+            "destination": {
+                "type": [
+                    "string"
+                ]
+            },
+            "text": {
+                "type": [
+                    "string"
+                ]
+            },
+            "sent_on": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "applicationId": {
+                "type": "string"
+            },
+            "tag": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "branduser_id": {
+                "type": [
+                    "number",
+                    "null"
+                ]
+            },
+            "brand_id": {
+                "type": [
+                    "number",
+                    "null"
+                ]
+            },
+            "user_id": {
+                "type": [
+                    "number",
+                    "null"
+                ]
+            }
+        },
+        "required": [
+            "status_code",
+            "source",
+            "destination",
+            "text",
+            "sent_on",
+            "brand_id"
+        ]
+    }
+}
