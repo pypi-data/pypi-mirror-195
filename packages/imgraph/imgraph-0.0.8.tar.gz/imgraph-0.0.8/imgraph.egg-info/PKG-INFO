@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: imgraph
+Version: 0.0.8
+Summary: Graph Neural Network Library Built On Top Of  PyTorch and PyTorch Geometric
+Author-email: Aryan Singh <aryan.singh@ul.ie>
+Project-URL: homepage, https://aryan-at-ul.github.io
+Project-URL: documentation, https://aryan-at-ul.github.io
+Project-URL: repository, https://github.com/aryan-at-ul/imgraph.git
+Keywords: deep-learning,pytorch,geometric-deep-learning,graph-neural-networks,graph-convolutional-networks,gnn-on-images,convert image to graph
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: graphgym
+Provides-Extra: modelhub
+Provides-Extra: full
+Provides-Extra: benchmark
+Provides-Extra: test
+Provides-Extra: dev
+License-File: LICENSE.txt
+
+# IMGRAPH 
+
+### Used for converting image to graph, uses superpixel method for node creation, extract features from CNN models. 
+
+Example Usage: 
+
+```
+    from imgraph.pipeline import create_graph_pipleline
+
+    path = "path/to/image"
+
+    create_graph_pipleline(path, 'classification', 'rag', 'resnet18', 10)
+
+```
+
+### Above code will create a graph from the image and save it in the directory .~/cache/imgraph or directory specified by the user in enviornment variable IMGRAPH_HOME.
+
+
+### Expected input folder structure: 
+
+```
+    image_folder
+    ├── test
+    │   ├── class1
+    │   └── class2
+    ├── train
+    │   ├── class1
+    │   └── class2
+    └── val
+        ├── class1
+        └── class2
+```
+
+
+### The graph will be saved in the PyG Data format or pickle format.
+
+### To install pytorch geometric dependencies, please follow the instructions here: [PyG installation](https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html) or use the following code snippet:
+
+### To install full dependeciens install using setup.py with full-dependencies flag (its slow, but will install all dependencies)
+    
+```
+    import torch
+
+    def format_pytorch_version(version):
+    return version.split('+')[0]
+
+    TORCH_version = torch.__version__
+    TORCH = format_pytorch_version(TORCH_version)
+
+    def format_cuda_version(version):
+    return 'cu' + version.replace('.', '')
+
+    CUDA_version = torch.version.cuda
+    CUDA = format_cuda_version(CUDA_version)
+
+    !pip install torch-scatter     -f https://pytorch-geometric.com/whl/torch-{TORCH}+{CUDA}.html
+    !pip install torch-sparse      -f https://pytorch-geometric.com/whl/torch-{TORCH}+{CUDA}.html
+    !pip install torch-cluster     -f https://pytorch-geometric.com/whl/torch-{TORCH}+{CUDA}.html
+    !pip install torch-spline-conv -f https://pytorch-geometric.com/whl/torch-{TORCH}+{CUDA}.html
+    !pip install torch-geometric 
+
+```
+
+
+
+
