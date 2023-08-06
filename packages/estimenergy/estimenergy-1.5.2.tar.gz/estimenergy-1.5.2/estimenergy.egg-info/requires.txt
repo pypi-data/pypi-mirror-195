@@ -1,0 +1,10 @@
+requests
+uvicorn[standard]
+fastapi
+fastapi-crudrouter
+httpx
+aioesphomeapi
+tortoise_orm
+prometheus_client
+prometheus-fastapi-instrumentator
+python-dotenv
