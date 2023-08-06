@@ -1,0 +1,9 @@
+quantum6g/QKNN.py,sha256=yU7UEjVO06JVXKiWOeFPQbzY8hHTMqlw2X22HVq0cMw,2313
+quantum6g/__init__.py,sha256=6uHAIEkJmrtfpGKIgk_kZwQWBKaXVV3DUaJykflQqjg,59
+quantum6g/quantum6g.py,sha256=TYyEvM_80akXAac5s828jGri9SB-r8M5W3KAQMTNiDE,1768
+tests/__init__.py,sha256=3ExvXRuP4MJ3xFahHQrdA6sLInpWQ-k_ZvSE9qt59EY,52
+tests/test.py,sha256=EDlvvaRNmxR9rLQARVubGhaAIA1qkkfWXITs6_hOUXY,850
+quantum6g-1.2.5.dist-info/METADATA,sha256=5WKMcNYO8RWosfNgX8xf9EihzcxSleVsNEXm6jFMly4,2742
+quantum6g-1.2.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+quantum6g-1.2.5.dist-info/top_level.txt,sha256=LrkXUP-mr9f--q2vRE2gXwdHGYdKqXa_z0xCirBc6Po,16
+quantum6g-1.2.5.dist-info/RECORD,,
