@@ -1,0 +1,3 @@
+[console_scripts]
+rostspace=src.app:main
+
