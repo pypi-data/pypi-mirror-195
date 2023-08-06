@@ -1,0 +1,30 @@
+ignore_updates = false
+language = "en-US"
+
+[network.client]
+check_etags = true  # Whether to check for new versions of cached files
+
+[gui.window]
+x_size = 900 # Minimum value of 100
+y_size = 500 # Minimum value of 100
+
+[gui.themes]
+selected = "light"
+
+[gui.cache_explorer]
+icon_mode = 1 # 0: No Icons | 1: Default | 2: Preview Images
+
+[gui.media_output]
+aspect_ratio_mode = 1 # 0: Ignore | 1: Keep | 2: Expanding
+transformation_mode = 0 # 0: Fast | 1: Smooth
+
+[gui.text_output]
+line_wrap_mode = 1 # 0: No Wrap | 1: Widget | 2: Fixed Pixel | 4: Fixed Column
+
+[gui.themes.dark]
+display_name = "Breeze Dark"
+path = "builtin::dark"
+
+[gui.themes.light]
+display_name = "Breeze Light"
+path = "builtin::light"
