@@ -1,0 +1,21 @@
+[build-system]
+requires=["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend="poetry.core.masonry.api"
+
+[tool.poetry]
+name="swagenttools"
+version="0.3.18"
+authors=["Axel Tessai <aahern@ucdavis.edu>",]
+description="A small crawler to scrape data from swranking.com and store in in the local db of the vm."
+license="MIT"
+readme="README.md"
+classifiers=[
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+include=["src"]
+
+[tool.poetry.dependencies]
+python=">=3.7"
+
