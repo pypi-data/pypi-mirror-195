@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: iotcore
+Version: 0.0.5
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# iot-core
+
+## Develop
+
+```
+pip3 install setuptools
+python3 setup.py sdist
+twine upload dist/*
+```
