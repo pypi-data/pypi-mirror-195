@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/windows_hotkey_checker/__init__.py
+src/windows_hotkey_checker/__main__.py
+src/windows_hotkey_checker/hotkeys.py
+src/windows_hotkey_checker.egg-info/PKG-INFO
+src/windows_hotkey_checker.egg-info/SOURCES.txt
+src/windows_hotkey_checker.egg-info/dependency_links.txt
+src/windows_hotkey_checker.egg-info/entry_points.txt
+src/windows_hotkey_checker.egg-info/top_level.txt
+tests/test.py

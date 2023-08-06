@@ -1,0 +1,2 @@
+[console_scripts]
+hotkeys = windows_hotkey_checker.__main__:main
