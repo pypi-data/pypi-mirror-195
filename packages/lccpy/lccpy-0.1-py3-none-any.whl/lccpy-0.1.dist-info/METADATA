@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: lccpy
+Version: 0.1
+Summary: 
+Keywords: lccpy
+Author-email: 许灿标 <lcctoor@outlook.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: Apache Software License
+Project-URL: Documentation, https://www.yuque.com/lcctoor/lccpy
+Project-URL: Source, https://github.com/lcctoor/lccpy
+
+lccpy
+
