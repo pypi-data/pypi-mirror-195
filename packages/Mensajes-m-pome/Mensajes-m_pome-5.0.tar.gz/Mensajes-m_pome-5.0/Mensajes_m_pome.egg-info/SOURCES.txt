@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+Mensajes_m_pome.egg-info/PKG-INFO
+Mensajes_m_pome.egg-info/SOURCES.txt
+Mensajes_m_pome.egg-info/dependency_links.txt
+Mensajes_m_pome.egg-info/requires.txt
+Mensajes_m_pome.egg-info/top_level.txt
+mensajes/__init__.py
+mensajes/hola/__init__.py
+mensajes/hola/saludos.py
+tests/__init__.py
+tests/tests_hola.py
