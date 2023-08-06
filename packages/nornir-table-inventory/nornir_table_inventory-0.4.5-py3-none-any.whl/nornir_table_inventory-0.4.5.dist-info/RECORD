@@ -1,0 +1,8 @@
+nornir_table_inventory/__init__.py,sha256=zeCvMbuzYP1y57zTtv0nxW76vwLlBJA_BBKssclmoVE,23
+nornir_table_inventory/plugins/inventory/__init__.py,sha256=sRNk8HRnxoNNRKUa6VSeg24-TSY1Vd1cH94jb_Tf_ro,137
+nornir_table_inventory/plugins/inventory/table.py,sha256=jXNUCrgTyQtBt0hQwEQNPVq0KGgWiEFfaLsmhEMP3gA,5373
+nornir_table_inventory-0.4.5.dist-info/entry_points.txt,sha256=8nBSkotG65Lhq3sz441jEDQkdM82kR7ComHvrKKfsRM,261
+nornir_table_inventory-0.4.5.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+nornir_table_inventory-0.4.5.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+nornir_table_inventory-0.4.5.dist-info/METADATA,sha256=_PiDq8YrUbnXVOfxpdhOK-9WFwrJOC2-AkQ_SLGAWtA,8751
+nornir_table_inventory-0.4.5.dist-info/RECORD,,
