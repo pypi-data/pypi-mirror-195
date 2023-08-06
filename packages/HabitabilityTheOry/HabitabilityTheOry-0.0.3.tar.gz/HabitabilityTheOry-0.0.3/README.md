@@ -1,0 +1,28 @@
+# HaThOr
+## Habitable TheOry
+
+### Rationale and goals
+Here, we use habitable theory to build a tool to assess habitability at a large spectrum
+
+We have a model frame for growth:
+
+\[
+k_g = A \lambda \tau e^{-\frac{\Delta G_{ac}}{RT}} - A e^{-\frac{\Delta G_{am}}{RT}}
+\]
+where
+ - $k_g$ is the specific growth rate (s$^{-1}$)
+ - $A$ pre-exponential factor (s$^{-1}$)
+ - $\lambda = - \Delta_rG_c/E_{ana}$ the catabolic yield
+ - $\tau$ active biomass fraction (mol enzyme per mole biomass)
+ - $\Delta G_{ac}$ activation gibbs free energy of the catabolic reaction (J/mol)
+ - $\Delta G_{am}$ activation gibbs free energy of the maintenance reaction (J/mol)
+ - $R=8.314$ (J/(K mol)) is the perfect gas constant
+ - $T$ absolute temperature (K)
+ 
+Some of these parameters can be estimated from growth curves (see Guyot and Affholder _in prep_).
+
+
+Structure of the package HaThOr:
+ - chem_helper contains some helper functions and stoichiometric data for some organisms
+ - Metabolisms contains the classes metabolism and organism that are designed to build objects representing a functional type with a given metabolism and a given set of parameters
+ - Chemostat contains the chemostat class, used to define an environment and calculate biomass etc.
