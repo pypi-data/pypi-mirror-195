@@ -1,0 +1,3 @@
+[console_scripts]
+x-generate-survey-requitements = survey_technical_requirements.main:main
+

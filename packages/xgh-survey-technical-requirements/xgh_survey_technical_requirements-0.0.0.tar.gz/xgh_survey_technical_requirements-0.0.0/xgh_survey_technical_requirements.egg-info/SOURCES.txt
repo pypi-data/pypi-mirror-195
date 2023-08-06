@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+survey_technical_requirements/__init__.py
+survey_technical_requirements/main.py
+xgh_survey_technical_requirements.egg-info/PKG-INFO
+xgh_survey_technical_requirements.egg-info/SOURCES.txt
+xgh_survey_technical_requirements.egg-info/dependency_links.txt
+xgh_survey_technical_requirements.egg-info/entry_points.txt
+xgh_survey_technical_requirements.egg-info/top_level.txt
