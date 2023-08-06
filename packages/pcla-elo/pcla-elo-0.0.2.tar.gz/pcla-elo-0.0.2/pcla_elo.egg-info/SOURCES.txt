@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+elo/__init__.py
+elo/base_test_case.py
+elo/elo_fitter.py
+elo/elo_runner.py
+elo/test_elo_fitter.py
+elo/test_elo_runner.py
+pcla_elo.egg-info/PKG-INFO
+pcla_elo.egg-info/SOURCES.txt
+pcla_elo.egg-info/dependency_links.txt
+pcla_elo.egg-info/requires.txt
+pcla_elo.egg-info/top_level.txt
