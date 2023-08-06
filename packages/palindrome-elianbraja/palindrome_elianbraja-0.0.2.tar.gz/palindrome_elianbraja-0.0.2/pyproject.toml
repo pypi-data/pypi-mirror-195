@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "palindrome_elianbraja"
+version = "0.0.2"
+authors = [
+  { name="Elian Braja", email="elianbraja@gmail.com" },
+]
+description = "A small palindrome package"
+readme = "README.md"
+requires-python = ">=3.1"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/elianbraja/python_package_tutorial"
+"Bug Tracker" = "https://github.com/elianbraja/python_package_tutorial/issues"
