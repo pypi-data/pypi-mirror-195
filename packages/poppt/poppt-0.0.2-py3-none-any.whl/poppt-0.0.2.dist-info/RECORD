@@ -1,0 +1,15 @@
+poppt/__init__.py,sha256=HO8sD_RcvBEMrUQVcxUu379KPfm8bBPl2N8-kgJ3rpQ,29
+poppt/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poppt/api/ppt.py,sha256=1yMp5mXwdH-ALriRxE1thldhfaFdt_3rUC1hWCM6AfM,777
+poppt/core/PPTType.py,sha256=1a_V02N_9mx7eppsHOaaJcniDRM0WjL4U1mIjBT9yUQ,2715
+poppt/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poppt/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poppt/lib/ppt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poppt/lib/ppt/ppt2pdf_service.py,sha256=cMLVqkRsO0T99ujC2JIwW3--36duc7X0af1hBke3hJ4,1140
+tests/__init__.py,sha256=usN4wObptnYqy6haDDzRTtF6UM-We6S90LKzliEHqio,181
+tests/test_ppt.py,sha256=PukKuSkge8AGsmgWF8FXj9jwlNkdaTOSiGGpRFqfBvg,498
+poppt-0.0.2.dist-info/LICENSE,sha256=GQ6XaGbsxl2OlUBlk1jLBtkHC8U1p6Bw9E1P1XqYAlU,1093
+poppt-0.0.2.dist-info/METADATA,sha256=AvTwthFCiHK0V986ufYUoO3I9ci2id3IN6pnMKgsIvk,5276
+poppt-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+poppt-0.0.2.dist-info/top_level.txt,sha256=YSsr2DYIsQvF5oJ96Diqz20HK07gYIp_tI6JL6SBvFI,12
+poppt-0.0.2.dist-info/RECORD,,
