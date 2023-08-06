@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "recollwebui"
+version = "0.1.2"
+description = "Web interface for recoll desktop search"
+authors = ["Jean-Francois Dockes <jf@dockes.org>", "koniu <koniu@riseup.net>"]
+readme = "README.rst"
+repository = "https://framagit.org/medoc92/recollwebui"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+waitress = "^2.1.2"
+
+[tool.poetry.scripts]
+recollwebui = "recollwebui.standalone:main"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.10"
+mypy = "^0.991"
+black = "^22.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
