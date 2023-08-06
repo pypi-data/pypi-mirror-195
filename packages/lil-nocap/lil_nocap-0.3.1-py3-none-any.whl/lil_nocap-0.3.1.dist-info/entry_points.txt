@@ -1,0 +1,3 @@
+[console_scripts]
+nocap=lil_nocap.nocap:NoCap.cli
+
