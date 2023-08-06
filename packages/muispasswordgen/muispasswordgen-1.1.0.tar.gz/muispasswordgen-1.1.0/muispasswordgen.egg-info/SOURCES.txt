@@ -1,0 +1,8 @@
+muispasswordgen.py
+pyproject.toml
+setup.cfg
+setup.py
+muispasswordgen.egg-info/PKG-INFO
+muispasswordgen.egg-info/SOURCES.txt
+muispasswordgen.egg-info/dependency_links.txt
+muispasswordgen.egg-info/top_level.txt
