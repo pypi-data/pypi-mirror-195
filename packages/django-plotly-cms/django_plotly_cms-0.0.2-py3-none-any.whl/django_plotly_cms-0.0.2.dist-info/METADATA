@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: django-plotly-cms
+Version: 0.0.2
+Summary: Django-CMS use of django-plotly-dash and plotly dash
+Home-page: https://gitlab.com/GibbsConsulting/dpcms
+Author: Gibbs Consulting
+Author-email: py.dpcms@gibbsconsulting.ca
+License: AGPL v3
+Project-URL: Source, https://gitlab.com/GibbsConsulting/djcms
+Project-URL: Tracker, https://gitlab.com/GibbsConsulting/djcms/issues
+Project-URL: Documentation, http://djcms.readthedocs.io/
+Keywords: django plotly plotly-dash dash dashboard django-cms
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Dash
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
