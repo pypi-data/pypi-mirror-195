@@ -1,0 +1,8 @@
+chatpygpt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatpygpt/gpt.py,sha256=8bYyOnuJd6AmhPooEm_Jt_WKaFzS4nabA7JHBiUOvws,2075
+chatpygpt/streamlit.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatpygpt-0.0.1.dist-info/LICENSE,sha256=v0kLPKURNXNwLEYh3z6FKjCcWSYHiR8YpLqRumcLllI,1065
+chatpygpt-0.0.1.dist-info/METADATA,sha256=oQAD5uyip3kuJTXepa4oZ6Hx97weBbyDKNwwPD9jc54,451
+chatpygpt-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+chatpygpt-0.0.1.dist-info/top_level.txt,sha256=Qp47PrU_lWxE-7mjDOt4n3rrGCMEo8kQsMxZjnXFDUQ,10
+chatpygpt-0.0.1.dist-info/RECORD,,
