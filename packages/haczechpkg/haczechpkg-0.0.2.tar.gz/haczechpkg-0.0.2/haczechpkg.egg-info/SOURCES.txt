@@ -1,0 +1,10 @@
+setup.py
+haczechpkg.egg-info/PKG-INFO
+haczechpkg.egg-info/SOURCES.txt
+haczechpkg.egg-info/dependency_links.txt
+haczechpkg.egg-info/top_level.txt
+top/__init__.py
+top/top.py
+top/sub/__init__.py
+top/sub/sw/__init__.py
+top/sub/sw/sub.py
