@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pbcpg-pipeline"
+version = "0.2.3" # Don't forget to match with version.py and docs/source/conf.py
+authors = [
+    { name="Anthony Aylward", email="aaylward@salk.edu" },
+]
+description = "Postprocess PacBio DNA methylation calls"
+readme = "README.md"
+requires-python = ">=3.9,<3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "tensorflow>=2.7",
+    "numpy==1.20.0",
+    "biopython",
+    "pandas",
+    "pysam",
+    "tqdm",
+    "pybigwig",
+    "urllib3",
+    "pybedtools",
+    "gff2bed",
+    "seaborn",
+    "pyfaidx"
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/salk-tm/pbcpg-pipeline"
+"Documentation" = "https://salk-tm.gitlab.io/pbcpg-pipeline"
+
+[project.scripts]
+pbcpg-pipeline = "pbcpg_pipeline.pbcpg_pipeline:main"
+
+[tool.setuptools]
+package-dir = {pbcpg_pipeline="src/pbcpg_pipeline"}

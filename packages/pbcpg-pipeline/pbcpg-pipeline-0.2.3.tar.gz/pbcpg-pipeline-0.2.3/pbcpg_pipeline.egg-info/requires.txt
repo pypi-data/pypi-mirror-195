@@ -1,0 +1,12 @@
+tensorflow>=2.7
+numpy==1.20.0
+biopython
+pandas
+pysam
+tqdm
+pybigwig
+urllib3
+pybedtools
+gff2bed
+seaborn
+pyfaidx
