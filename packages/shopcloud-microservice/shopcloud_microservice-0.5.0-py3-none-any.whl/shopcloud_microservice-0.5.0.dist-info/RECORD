@@ -1,0 +1,14 @@
+shopcloud_microservice/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shopcloud_microservice/__main__.py,sha256=XUljnVK8NUUEwxei-YJ59fJqi6Sk8DNlDYLGq7S0M7U,1052
+shopcloud_microservice/cli.py,sha256=GggkoJHpq9t7mFvXErfhJR9F4CAx5I7imn7soQaJQe0,463
+shopcloud_microservice/configs.py,sha256=dK4MSzvjT9eaUROKsdZTihQvw70UfSIi-2ErURp539E,588
+shopcloud_microservice/exceptions.py,sha256=m41LoV6OKbdCOh_qfhdYGMS1TN8JPhh8Q3dFY6N90Hw,139
+shopcloud_microservice/helpers.py,sha256=oaoojyWgD9CikOd_CMIx3AEvqtqDgGOfPOaVd-i2Sf4,968
+shopcloud_microservice/security.py,sha256=lb1rFzvzSjGRotAkBVwojSQXYZRmN3IgQD1drFl6y0w,5141
+shopcloud_microservice/steps.py,sha256=P3sQztPDRf2wO_10gmPExxJx9kmV150pq22ky2tKML8,4018
+shopcloud_microservice-0.5.0.data/scripts/microservice,sha256=Tsrb69fPGGE2GCfOnNaYmp2Gs0Eb6LJkEGsmb2UVO3A,131
+shopcloud_microservice-0.5.0.dist-info/LICENSE,sha256=L9qExrnLduRUhcEKh6lnhIdiOaTjp90gBdVfHCQXc_Q,1072
+shopcloud_microservice-0.5.0.dist-info/METADATA,sha256=EqwUGR1lhHKuxukgWqbsZfhHPfAYMDYw7xXLLJgNALs,662
+shopcloud_microservice-0.5.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+shopcloud_microservice-0.5.0.dist-info/top_level.txt,sha256=k7sS7VwW8vOnBjVLC_nropWzWPCR6SYAkmpx8wV_lAM,23
+shopcloud_microservice-0.5.0.dist-info/RECORD,,
