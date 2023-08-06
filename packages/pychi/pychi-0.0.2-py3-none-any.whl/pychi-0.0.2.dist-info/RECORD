@@ -1,0 +1,9 @@
+pychi/__init__.py,sha256=PQmbTGEv85PAKyEsXBO1V9FUlD4-KfD4Wcecz9lC83w,86
+pychi/light.py,sha256=ruxLvUBo5uv9WRStuC158TTnURZUmz64AhEOIsUNkW0,14766
+pychi/materials.py,sha256=e4aur-slJzmfHur3wRE5beRqsYWO2g7noqOOkgyMVO8,13135
+pychi/models.py,sha256=FWRU0flLofhRFRstEfPU5Vywcj5biOAdNr9EJFQKsDQ,16980
+pychi/solvers.py,sha256=K1N4dR7xOITHdDfybX17ajp8zfwjuGcvAkMuRItS-t0,12811
+pychi-0.0.2.dist-info/METADATA,sha256=BF5qxzMlqXtkRZqRlU1-H3_8lk2Gc7nPQTxjizeuwEc,733
+pychi-0.0.2.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+pychi-0.0.2.dist-info/licenses/LICENSE,sha256=lu1hUY6oA-1vnjEPDGXjf-ra2-cTjmp4NZz8HK5M6z0,1112
+pychi-0.0.2.dist-info/RECORD,,
