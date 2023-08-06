@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+Supbotai.egg-info/PKG-INFO
+Supbotai.egg-info/SOURCES.txt
+Supbotai.egg-info/dependency_links.txt
+Supbotai.egg-info/top_level.txt
+supbotai/__init__.py
