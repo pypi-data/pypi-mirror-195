@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: pytest-extra-markers
+Version: 1.0.0
+Summary: Additional pytest markers to dynamically enable/disable tests viia CLI flags
+Home-page: https://github.com/iwishiwasaneagle/pytest-extra-markers/
+Author: iwishiwasaneagle
+Author-email: jh.ewers@gmail.com
+License: GPL-3.0-or-later
+Project-URL: Source, https://github.com/iwishiwasaneagle/pytest-extra-markers/
+Project-URL: Changelog, https://github.com/iwishiwasaneagle/pytest-extra-markers/blob/master/CHANGELOG.md
+Project-URL: Issue Tracker, https://github.com/iwishiwasaneagle/pytest-extra-markers/issues/
+Platform: Linux
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Framework :: Pytest
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+License-File: LICENSE.txt
+Requires-Dist: pytest
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+Provides-Extra: test
+
+# pytest-extra-markers
+[![CI](https://github.com/iwishiwasaneagle/pytest-extra-markers/actions/workflows/CI.yml/badge.svg)](https://github.com/iwishiwasaneagle/pytest-extra-markers/actions/workflows/CI.yml) [![CD](https://github.com/iwishiwasaneagle/pytest-extra-markers/actions/workflows/CD.yml/badge.svg)](https://github.com/iwishiwasaneagle/pytest-extra-markers/actions/workflows/CD.yml)
+
+A [pytest](https://docs.pytest.org) plugin to dynamically skip tests based on [marks](https://docs.pytest.org/en/latest/reference/reference.html#marks)
+
+## Installation
+
+```bash
+pip install git+https://github.com/iwishiwasaneagle/pytest-extra-markers@master
+```
+
+## Usage
+
+Consider the following test scenario:
+
+```python
+import pytest
+
+
+# A
+def test_speedy_unit_test():
+    ...
+
+
+# B
+@pytest.mark.integration
+def test_integration_test():
+    ...
+
+
+# C
+@pytest.mark.slow_integration
+def test_super_slow_integration_test():
+    ...
+```
+
+You want to quickly run all your quick unit tests before committing. Then, after you are happy that the changes haven't messed up any unit tests you want to run the integration tests, and then after that your *super* slow integration tests. This would look like:
+
+```bash
+pytest
+pytest --only-integration
+pytest --only-slow-integration
+```
+
+In theory, your quick unit tests give you feedback instantly about anything that's been
+broken by your changes. After that, the slower integration tests can be run to have a
+more broad check.
+
+> **Author's note**
+> My use cases is mainly for simulations, so the `--only-slow-integration` flag
+> can sometimes take tens of minutes to run whereas an integration test might take
+> milliseconds. Therefore, I made the distinction between the two.
+
+## CLI Flags
+
+| Flag                     | Description                           |
+|--------------------------|---------------------------------------|
+| `--with-integration`      | Run all unit + integration tests      |
+| `--with-slow-integration` | Run all unit + slow integration tests |
+| `--only-integration`      | Only run integration tests            |
+| `--only-slow-integration` | Only run slow integration tests       |
+
+## Todo
+
+- [ ] Publish to PyPi
