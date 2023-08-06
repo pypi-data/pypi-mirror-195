@@ -1,0 +1,38 @@
+import pandas as pd
+import torch
+from torch.utils.data import Dataset
+
+
+class TimeSeriesDataset(Dataset):
+    def __init__(self,
+                 data_path,
+                 input_steps,
+                 output_steps,
+                 start_date=None,
+                 end_date=None):
+        self.data = pd.read_csv(data_path)
+        self.input_steps = input_steps
+        self.output_steps = output_steps
+        self.start_date = start_date
+        self.end_date = end_date
+
+        # Filter data by date range
+        if start_date is not None and end_date is not None:
+            self.data = self.data[(self.data['date'] >= start_date) & (self.data['date'] <= end_date)]
+
+        # Compute max index for input/output sequences
+        self.max_input_index = len(self.data) - input_steps - output_steps
+
+    def __len__(self):
+        return self.max_input_index
+
+    def __getitem__(self, idx):
+        # Get input and output sequences
+        input_seq = self.data.iloc[idx:idx+self.input_steps, :].values.astype('float32')
+        output_seq = self.data.iloc[idx+self.input_steps:idx+self.input_steps+self.output_steps, :-1].values.astype('float32')
+
+        # Convert sequences to PyTorch tensors
+        input_seq = torch.from_numpy(input_seq).unsqueeze(0)  # Add batch dimension
+        output_seq = torch.from_numpy(output_seq).unsqueeze(0)  # Add batch dimension
+
+        return input_seq, output_seq
