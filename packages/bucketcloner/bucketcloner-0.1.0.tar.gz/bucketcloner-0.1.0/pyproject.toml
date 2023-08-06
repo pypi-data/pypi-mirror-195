@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bucketcloner"
+version = "0.1.0"
+authors = [{ name = "Philipp Lies", email = "phil@lies.io" }]
+description = ""
+readme = "README.md"
+requires-python = ">=3.8"
+dynamic = ["dependencies"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/phillies/bucketcloner"
+"Bug Tracker" = "https://github.com/phillies/bucketcloner/issues"
+
+[project.scripts]
+bucketcloner = "bucketcloner:entry_point"
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
