@@ -1,0 +1,2 @@
+[console_scripts]
+pixelateme = pixelateme.cli:main
