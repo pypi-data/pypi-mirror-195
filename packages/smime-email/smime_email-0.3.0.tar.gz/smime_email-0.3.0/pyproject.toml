@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "smime-email"
+version = "0.3.0"
+description = "A Python library to generate a signed email"
+authors = ["Siemens"]
+readme = "README.md"
+packages = [{include = "smime_email"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+cryptography = "39.0.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+isort = "^5.12.0"
+flake8 = "^6.0.0"
+poethepoet = "^0.18.1"
+pytest = "^7.2.2"
+mypy = "^1.0"
+pytest-deadfixtures = "^2.2.1"
+coverage = "^7.2.1"
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "--cov smime_email --cov-report term --cov-report html --cov-report xml --junitxml junit.xml"
+filterwarnings = "ignore"
+junit_family = "xunit2"
+
+[tool.isort]
+profile = "black"
+
+[tool.poe.tasks]
+format = { shell = "black . && isort ." }
+lint = { shell = "black --check . && isort --check . && flake8 && poe types && pytest --dead-fixtures" }
+types = { cmd = "mypy ." }
+test = { cmd = "pytest" }
+all = { shell = "poe format && poe lint && poe types && poe test" }
