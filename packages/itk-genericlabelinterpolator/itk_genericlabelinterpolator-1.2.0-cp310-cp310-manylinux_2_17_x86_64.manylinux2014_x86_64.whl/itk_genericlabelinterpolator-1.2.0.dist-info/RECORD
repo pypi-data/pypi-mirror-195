@@ -1,0 +1,11 @@
+itk_genericlabelinterpolator.libs/libtbb-a0c974ac.so.12.3,sha256=bqgqED0VDlAmLUWUR3b-34M1gPmiyLKzuy3mRj7ncbc,444449
+itk/GenericLabelInterpolatorPython.py,sha256=0iHovX1esIj5e76pT2ZDcZqQ5nVKJwTFvcWmD0JX96k,2430
+itk/_GenericLabelInterpolatorPython.so,sha256=uhIp3JQHwcKYvmTA1yRID7oCVkMv3py4l5Sd62NWAbk,3161401
+itk/itkLabelImageGenericInterpolateImageFunctionPython.py,sha256=FoG7jjty-frdbYrNjboeNsIoYqGmkYaYAvK-_EpjusY,132256
+itk/Configuration/GenericLabelInterpolator_snake_case.py,sha256=WRnLlen2jxLU1s5GGArPufZ1-DR4D7SdRd25VYoBFXE,26
+itk/Configuration/GenericLabelInterpolatorConfig.py,sha256=PXqWRw1j9zcEPEmj3BvZrcwi4M4wKYFoSCAQIOWbGk8,10344
+itk_genericlabelinterpolator-1.2.0.dist-info/top_level.txt,sha256=K3Bo2NX2FvAd7ExrYg0rKrdBucaB6n6elW5QBc_g8FA,4
+itk_genericlabelinterpolator-1.2.0.dist-info/LICENSE,sha256=qsc7MUj20dcRHbyjIJn2jSbGRMaBOuHk8F9leaomY_4,11360
+itk_genericlabelinterpolator-1.2.0.dist-info/RECORD,,
+itk_genericlabelinterpolator-1.2.0.dist-info/WHEEL,sha256=8q9zHF1-MV9dG4BZ3vWFWq8r7rPWXrNS0kYYuG9ah6A,146
+itk_genericlabelinterpolator-1.2.0.dist-info/METADATA,sha256=qwn081Q1LGO8fy-_i1-0epUvClMfJ1VCyaSTH_0HqpA,1679
