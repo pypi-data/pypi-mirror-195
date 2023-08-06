@@ -1,0 +1,14 @@
+xmlstore/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xmlstore/converter-1.0.xsd,sha256=I2wEYZjOgs8pG5vxdR_w-DL1TUjTvgwh8FrW4awYfy8,2659
+xmlstore/datatypes.py,sha256=Bv2EMKOU9dEzPoAvZPHC8lUwsXDP61Jdd-siKT8B0Ek,64400
+xmlstore/gui_qt4.py,sha256=HIRMXSUI1LngLX2AS8wJi04u-I-3QtPu7jowDpWTp50,91556
+xmlstore/qt_compat.py,sha256=p9yRgvbZTh6K6kWRaKCAOl2Nl4fBNtr_mvaxoSSBqXA,2357
+xmlstore/util.py,sha256=-g1PB-ZhwY8fIeVl3dDM9Va5a9qOthNKwaUtylCyOWk,15948
+xmlstore/versioning.py,sha256=pALfJl1wAkDEK0WmB0a4ycYbXMIuA_tc2oioXJIZ-Es,12280
+xmlstore/xmlstore-1.0.xsd,sha256=WZi0sC9BOgmumV0DgaT80-j-IQRvEr8YWuehCM9VgFc,562
+xmlstore/xmlstore-base-1.0.xsd,sha256=mY38joUsBN7GDuB6GpJXMpsqlQMg0M57IJeadYdKMTY,9224
+xmlstore/xmlstore.py,sha256=oaeV_Zk2v3QxabDKVai5M3bbWN3x6DRzS5TH4Nc0-1M,132318
+xmlstore-0.9.12.dist-info/METADATA,sha256=JJgJ6fdqUQMZkpiCYLGMqyYVxj7pZbhpovmNM2erSLs,543
+xmlstore-0.9.12.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+xmlstore-0.9.12.dist-info/top_level.txt,sha256=1n6pUpKZcdtOaMo0LKCVzuM8dBctoS7spCefQvK1R7g,9
+xmlstore-0.9.12.dist-info/RECORD,,
