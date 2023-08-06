@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "django-hotwire"
+version = "0.2.0"
+description = "Hotwire Turbo, Stimulus, Data Loader, Nested views and Anycable combined together."
+authors = ["Josiah Kaviani <proofit404@gmail.com>"]
+license = "BSD-2-Clause"
+readme = "README.md"
+packages = [{include = "django_hotwire"}]
+
+[tool.poetry.dependencies]
+python = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
