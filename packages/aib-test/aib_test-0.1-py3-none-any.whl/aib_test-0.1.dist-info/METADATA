@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: aib-test
+Version: 0.1
+Home-page: 
+Author: 
+Author-email: 
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: ray (==2.2.0)
+Requires-Dist: scikit-learn (==1.2.1)
+Requires-Dist: xgboost (==1.7.3)
+Requires-Dist: mysql-connector-python (==8.0.32)
+Requires-Dist: dill (==0.3.6)
+
