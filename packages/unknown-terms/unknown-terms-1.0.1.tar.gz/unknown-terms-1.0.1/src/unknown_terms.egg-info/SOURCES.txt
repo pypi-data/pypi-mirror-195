@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/unknown_terms/__init__.py
+src/unknown_terms/alpha_term.py
+src/unknown_terms/multiple_alpha_term.py
+src/unknown_terms/printer.py
+src/unknown_terms.egg-info/PKG-INFO
+src/unknown_terms.egg-info/SOURCES.txt
+src/unknown_terms.egg-info/dependency_links.txt
+src/unknown_terms.egg-info/requires.txt
+src/unknown_terms.egg-info/top_level.txt

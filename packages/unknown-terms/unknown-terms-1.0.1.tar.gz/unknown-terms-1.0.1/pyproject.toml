@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=41.2.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unknown-terms"
+version = "1.0.1"
+description = "Unknown terms library for math apps"
+readme = "README.md"
+authors = [{ name = "@lightningcell (Hamit Şimşek)", email = "hamidsimsek4457@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["python", "math", "binom", "derrivative", "integral"]
+
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/lightningcell/unknown-terms"
+
+[tool.bumpver]
+current_version = "1.0.1"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message  = "Bump version {old_version} -> {new_version}"
+commit          = true
+tag             = true
+push            = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
+"src/reader/__init__.py" = ["{version}"]
