@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/discord-commands/__init__.py
+src/discord_commands.egg-info/PKG-INFO
+src/discord_commands.egg-info/SOURCES.txt
+src/discord_commands.egg-info/dependency_links.txt
+src/discord_commands.egg-info/top_level.txt
