@@ -1,0 +1,7 @@
+skit/__init__.py,sha256=I10JlClqvOLG7VThb0vTsdaKT2Z7aAzi6OcUSR1kwJo,188
+skit/_types.py,sha256=jHhGd2QSKmD6wJp6jyKuBXZv6GaVeoTHF1r02xr35bc,479
+skit/card.py,sha256=AHa5IH6C9h93WZu19SZlkzRvP7nxPNLjJwmfgALXWIU,4969
+skit/deck.py,sha256=YeX9DTmBaHwjdrmUrOI0Z-u_AFL95u7kqR5Focc-PEA,3296
+skit_game-0.1.1.dist-info/METADATA,sha256=iCabkyIwOUbW_g2iS0n9RYN3gs0UoxNivvUlaPHTDIY,883
+skit_game-0.1.1.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+skit_game-0.1.1.dist-info/RECORD,,
