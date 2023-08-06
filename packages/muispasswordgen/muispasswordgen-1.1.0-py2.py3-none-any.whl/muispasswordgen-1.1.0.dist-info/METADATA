@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: muispasswordgen
+Version: 1.1.0
+Summary: A password generation module
+Home-page: 
+Author: muis
+Author-email: exlkip@gmail.com
+Requires-Python: >=3.6
+
