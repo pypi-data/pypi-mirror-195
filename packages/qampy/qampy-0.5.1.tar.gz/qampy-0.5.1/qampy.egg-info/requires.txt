@@ -1,0 +1,8 @@
+numpy>=0.12
+scipy>=1.8
+
+[docs]
+sphinx
+
+[test]
+pytest

@@ -1,0 +1,11 @@
+name: demo-notebooks
+channels:
+  - conda-forge
+dependencies:
+  - voila
+  - numpy
+  - scipy
+  - pythran
+  - sphinx
+  - pip:
+      - .
