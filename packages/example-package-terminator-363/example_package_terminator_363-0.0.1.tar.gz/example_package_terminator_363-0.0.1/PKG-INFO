@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: example_package_terminator_363
+Version: 0.0.1
+Summary: Demo Project for Mentorskool assigned training.
+Author-email: Ashish Singh <ashishsinghshekhawat41@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Package
+
+This is a sample package for mentorskool assigned project task.
