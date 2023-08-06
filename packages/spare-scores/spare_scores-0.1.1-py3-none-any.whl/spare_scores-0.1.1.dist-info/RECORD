@@ -1,0 +1,9 @@
+spare_scores/__init__.py,sha256=txsqtkW9QtcsweOboBV_dlcXpLVcq7o--9gMrRQa3nc,61
+spare_scores/data_prep.py,sha256=43VmX9YuHB5-B_U4-GPmK7xUmVoKs0c8vbEXplzQzyQ,12609
+spare_scores/spare_scores.py,sha256=F2252yJ28FDMAzCVePa3Cuf62JsGhcOh3xvRKNs8SmA,7337
+spare_scores/svm.py,sha256=YKUdDm5YB0BYlbXHyBPCw0NInBGfFVFvlZDBJAOxGiE,3949
+spare_scores-0.1.1.dist-info/LICENSE,sha256=keGCF07bPavmZEwWHoLyxRO3MxN1BQ13BnHNkEbyUek,1070
+spare_scores-0.1.1.dist-info/METADATA,sha256=s_REeKPX52EpL31n4NvYWjbhY6jl7fthgkmp0DVL650,2222
+spare_scores-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+spare_scores-0.1.1.dist-info/top_level.txt,sha256=wPDWeYXhOygRcC0tfBB7iYBlNSWZPNxwJ3dy2nYihY4,13
+spare_scores-0.1.1.dist-info/RECORD,,
