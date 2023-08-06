@@ -1,0 +1,12 @@
+numpy
+pandas
+pathos
+requests
+python-Levenshtein
+thefuzz
+rapidfuzz
+sas7bdat
+nltk
+beautifulsoup4
+fake-useragent
+Cython
