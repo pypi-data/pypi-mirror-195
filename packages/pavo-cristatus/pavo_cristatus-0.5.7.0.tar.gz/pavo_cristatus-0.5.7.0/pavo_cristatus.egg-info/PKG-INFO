@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pavo-cristatus
+Version: 0.5.7.0
+Summary: type hints ide plugin
+Home-page: https://github.com/MATTHEWFRAZER/pavo_cristatus
+Author: Matthew Frazer
+Author-email: mfrazeriguess@gmail.com
+License: MIT
+Keywords: ide plugin
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE
+
+UNKNOWN
+
