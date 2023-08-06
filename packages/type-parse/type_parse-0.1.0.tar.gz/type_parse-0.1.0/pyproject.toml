@@ -1,0 +1,75 @@
+[tool.poetry]
+name = "type-parse"
+version = "0.1.0"
+description = "Parse the markup language with Python type hints."
+authors = ["nahco314 <nahco3_ta@yahoo.co.jp>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+black = "^22.12.0"
+isort = "^5.11.4"
+mypy = "^0.991"
+pyproject-flake8 = "^6.0.0.post1"
+coverage = {version = "7.0.0b1", extras = ["toml"]}
+py-spy = "^0.3.14"
+tox = "^4.0.19"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+line_length = 88
+force_single_line = true
+
+[tool.flake8]
+max-line-length = 88
+ignore = ["E203"]
+
+[tool.mypy]
+python_version = 3.11
+disallow_untyped_defs = true
+
+[tool.coverage.run]
+parallel = true
+relative_files = true
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "class .*\bProtocol\\):",
+    '@(abc\.)?abstractmethod',
+]
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+env_list =
+    py311
+    py310
+    py39
+    py38
+
+[testenv]
+allowlist_externals = poetry
+skip_install = true
+commands =
+    poetry install -v
+    poetry run pytest
+"""
