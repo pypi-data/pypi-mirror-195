@@ -1,0 +1,10 @@
+pyloadanimate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyloadanimate/load_animation.py,sha256=KmVTYLeU7MLRHeZUZwto95dJoSd2gW2lOJZiXv0ZjFo,778
+pyloadinganimate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyloadinganimate/loadanimation.py,sha256=ypmTMeeH9jpx96qn92EaUCkFURxunf7SLbP5AndE76U,786
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_loadanimation.py,sha256=jcgfuUKMe8ngsm31srPzWKd0Z7IKXsjPDOO9Z3Vptow,196
+pyloadanimate-0.1.1.dist-info/METADATA,sha256=1WZeau_-fHbJtJ6zHggCl1JUiQL6kSmL9e_dfktPLzU,152
+pyloadanimate-0.1.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+pyloadanimate-0.1.1.dist-info/top_level.txt,sha256=imcbkmuqseBr59zhTZUoijH4Q0GfbBzCb_TN27RgHE4,20
+pyloadanimate-0.1.1.dist-info/RECORD,,
