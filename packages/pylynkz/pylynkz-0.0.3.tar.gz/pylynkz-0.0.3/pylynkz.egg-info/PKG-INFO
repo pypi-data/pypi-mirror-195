@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pylynkz
+Version: 0.0.3
+Summary: Testing installation of Package
+Home-page: https://github.com/Lynkz-Instruments/pylynkz
+Author: Alexandre Desgagné
+Author-email: alexd@lynkz.ca
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# pylynkz
+
+## Description
+This is a toolbox for Lynkz Instruments python projects.
+
+## Installation
+
+`pip install pylynkz`
