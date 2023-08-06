@@ -1,0 +1,11 @@
+swcolorpicker/__init__.py,sha256=RRnpabRVymJLYhMFQ9NqBAYam48_pwWglifnmRwUKso,289
+swcolorpicker/__main__.py,sha256=_7XTIHJBfBxr1VoXfdEkGqigmcYXWSzNF4ynjiOLAns,54
+swcolorpicker/img.py,sha256=i3h2P0QuLSCAK3Ca9rLzj-09aD39MqzUBvyTqsx1G14,8339
+swcolorpicker/swcolorpicker.py,sha256=kmsDaBCA90wNdg4FxpBtznfT2oNzK3IvJdH05hKS5Mg,11588
+swcolorpicker/ui_dark.py,sha256=UhOXX5RftJlbcDO0ZkPCeFxEGXDQ_qhxb_szPwyIyk0,13888
+swcolorpicker/ui_dark_alpha.py,sha256=d8mPUKmgxTSxrfM59oXk2MsveSQh6XHDqNOqls1kabc,14815
+swcolorpicker-1.4.2.dist-info/LICENSE,sha256=usfOf7REu_VkHJ4gOsyFR5Dl-rs0gDNIlyWz9ZXVFWs,1062
+swcolorpicker-1.4.2.dist-info/METADATA,sha256=L9SiIvSb2FCVqISFbmGIe-JUUAhxtEimWTi-yxhW-rQ,622
+swcolorpicker-1.4.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+swcolorpicker-1.4.2.dist-info/top_level.txt,sha256=QqpVj6srNg4berN2909Gk_rdcu3ui6-cnj26iCeHq_M,14
+swcolorpicker-1.4.2.dist-info/RECORD,,
