@@ -1,0 +1,4 @@
+mlserver
+optimum[onnxruntime]>=1.4.0
+transformers
+Pillow
