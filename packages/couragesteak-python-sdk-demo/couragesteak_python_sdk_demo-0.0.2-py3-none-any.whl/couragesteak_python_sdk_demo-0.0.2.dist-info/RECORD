@@ -1,0 +1,11 @@
+couragesteak_python_sdk_demo/__init__.py,sha256=rHOrDrDw4TTMBUzj9L0vuuyYt_g-mR40Elzf7VpQilg,350
+couragesteak_python_sdk_demo/__version__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+couragesteak_python_sdk_demo/app.py,sha256=2i9x6WivGJBjf_4X3bBFmuhvfs9-4s-DyS_wA0ErfEQ,331
+couragesteak_python_sdk_demo/base/__init__.py,sha256=cOO44GpQ2qvFdq0cjTegqA1MEtYy7pU9GPFwSYUBEBo,183
+couragesteak_python_sdk_demo/util/__init__.py,sha256=HYhLRiNPuzbTj_p5Dsld6J1RDjWUc_f56r6_puZhago,139
+couragesteak_python_sdk_demo/util/util_math.py,sha256=VbLG0iVCod2LvruKs9Gt_YbgoBSc_mbbg4hnkSTk0U0,173
+couragesteak_python_sdk_demo/util/util_string.py,sha256=b7Yu_UgPFm8dc3n1kjxDomr3vj7uOQDZ5mwlahigHXo,201
+couragesteak_python_sdk_demo-0.0.2.dist-info/METADATA,sha256=CoWZTCETrTnSi4NXl2bqxM1kBYaAld4KX1AQCxENCU4,616
+couragesteak_python_sdk_demo-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+couragesteak_python_sdk_demo-0.0.2.dist-info/top_level.txt,sha256=t8RiKXQZChGTJi1s1nNYuzTpJ6OtnUPTfje9hJvghIc,29
+couragesteak_python_sdk_demo-0.0.2.dist-info/RECORD,,
