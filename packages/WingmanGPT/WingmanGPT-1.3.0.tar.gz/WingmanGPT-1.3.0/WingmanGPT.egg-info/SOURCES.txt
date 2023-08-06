@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+WingmanGPT.egg-info/PKG-INFO
+WingmanGPT.egg-info/SOURCES.txt
+WingmanGPT.egg-info/dependency_links.txt
+WingmanGPT.egg-info/entry_points.txt
+WingmanGPT.egg-info/requires.txt
+WingmanGPT.egg-info/top_level.txt
+src/GPT.py
+src/__init__.py
+src/__main__.py
+src/prompts.py
