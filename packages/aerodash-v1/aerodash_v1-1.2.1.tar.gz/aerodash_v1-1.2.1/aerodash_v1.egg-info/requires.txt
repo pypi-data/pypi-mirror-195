@@ -1,0 +1,5 @@
+numpy
+pandas
+typer
+requests
+re
