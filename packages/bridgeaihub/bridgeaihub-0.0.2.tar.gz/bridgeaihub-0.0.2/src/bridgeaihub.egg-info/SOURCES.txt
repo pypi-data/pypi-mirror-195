@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/bridgeaihub/__init__.py
+src/bridgeaihub/main.py
+src/bridgeaihub.egg-info/PKG-INFO
+src/bridgeaihub.egg-info/SOURCES.txt
+src/bridgeaihub.egg-info/dependency_links.txt
+src/bridgeaihub.egg-info/requires.txt
+src/bridgeaihub.egg-info/top_level.txt
