@@ -1,0 +1,3 @@
+[console_scripts]
+cafeplotter=cafeplotter.scripts:cafeplotter.main
+
