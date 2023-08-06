@@ -1,0 +1,14 @@
+pymlga/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymlga/chromosome.py,sha256=EFT8k-Zr9EcBWgiS7_Zb5uVEsCUpw393XuN308gFcww,2474
+pymlga/evolution.py,sha256=4ohOM8u3-TmZukIdcgxJXwHfSb5yI3TYJnr08xUcHfU,3099
+pymlga/experiment.py,sha256=dRHOp2n31r_1MnjxBFe5d5CavQnA2jB1AqEL7a4NEvU,2785
+pymlga/gene.py,sha256=7rik0jHHd4ehEPS88cVi9o5DgFRbsi2PY6PsD177VcU,604
+pymlga/generation.py,sha256=wnPAtZ_zjBYo9aqCEr4B3_38Xb7A8qGnT7xMYUPIYWc,1077
+pymlga/individual.py,sha256=_7Si476iOQk1Ulq1A2Y6SoRf7taaoLUeKs7J0uwepMY,1625
+pymlga/reproduction.py,sha256=mA92UXw1frcDvNCNVFsDhqCffx3rbl5OvOrIVUGRFoA,6780
+pymlga/spawn.py,sha256=vAc4vLZQSBp8nvIUHNhF0XnUhbYYFOJKKAKkyHf-nh8,1343
+jeremydimond.pymlga-0.0.1.dist-info/LICENSE,sha256=chUzsV4oxOXhIPat_kljcmHyTZ4zpdCVrQvu7whHK74,1064
+jeremydimond.pymlga-0.0.1.dist-info/METADATA,sha256=5EAG9YI2qUSpoVwNPBmDPGnSR9A8kCf0jklewJgfkTk,2042
+jeremydimond.pymlga-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+jeremydimond.pymlga-0.0.1.dist-info/top_level.txt,sha256=dLmXaqDzCPzb8d23FQHYYmQWDJzjFTV1DD_daquaTmY,7
+jeremydimond.pymlga-0.0.1.dist-info/RECORD,,
