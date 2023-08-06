@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/gmltutils.egg-info/PKG-INFO
+src/gmltutils.egg-info/SOURCES.txt
+src/gmltutils.egg-info/dependency_links.txt
+src/gmltutils.egg-info/requires.txt
+src/gmltutils.egg-info/top_level.txt
+src/gmlutils/__init__.py
