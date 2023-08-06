@@ -1,0 +1,7 @@
+
+[dev]
+bumpver
+hypothesis
+mypy
+pytest
+pytest-cov
