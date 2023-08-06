@@ -1,0 +1,10 @@
+fast21cmemu/__init__.py,sha256=5NCxgby4nHt10UfrtRqXdvad7sR54kr0f6JfnMh5fvI,238
+fast21cmemu/config.py,sha256=Vve6kAYcW16rO5IbQyDT3Rd_mlX1AtF_CXSqsjLxVGM,2930
+fast21cmemu/emulator.py,sha256=OiYqN8YqXCBTRJWpTTIhHzDppfNTm7amuEfe10aXApU,19144
+fast21cmemu/emulator_constants.npz,sha256=AJZ5IcVdfLpw3pOHk23fxs7kGVAys8VrQqls2tlHWTA,12208
+fast21cmemu/get_emulator.py,sha256=ClCsVP-dYThfF-Po8G7pJqMBZOdnGK0cAofbS9HiSrY,3132
+fast21cmemu-1.0.0.dist-info/LICENSE,sha256=etWS8QwAdwbsZoXF_vDeHjKEFXrvSnjNMxu6bUMCqDs,1073
+fast21cmemu-1.0.0.dist-info/METADATA,sha256=UgWZMwrLS1wiE0Ri2qrb0eey-tEZ9LxmJ7hLL3HWrmM,4307
+fast21cmemu-1.0.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+fast21cmemu-1.0.0.dist-info/entry_points.txt,sha256=pWJm3Dhdh_UNmZwxM2i4KtbOyp7mY2xj7GOV8bIYr4g,57
+fast21cmemu-1.0.0.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+FAST21cmEMU=fast21cmemu.__main__:main
+
