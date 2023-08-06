@@ -1,0 +1,15 @@
+alpa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alpa/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alpa/cli/alpa_repo.py,sha256=WG2euQH-952GRkcANIdA43lbcB3OklQQsDDoxWLlSP0,761
+alpa/cli/base.py,sha256=_N13UkZAg72YM1V3-7_EtRMSaZl9LJ30e1RlX8AwiN4,1011
+alpa/cli/local_repo.py,sha256=hJJHyTJ9Rb0yxNj5Myie-dPJOd0Ap_ss21r9v0nChYM,2197
+alpa/constants.py,sha256=sa71WnQlCa0rTBUkBrYejkwIwPAohqomPSdnTGOHaYY,488
+alpa/exceptions.py,sha256=dm4d7FEh1aFfhOFv8ixx58CkkIQ4Z8m2nJ_tlYSNDOE,111
+alpa/gh.py,sha256=MYP_emDPjXSt6MeF5fsRU7tQR4cXfEw0ioeIltuZwto,2536
+alpa/messages.py,sha256=pGHFxj6Pg4wfecp5dIK7yizEu7_AV6BpIbGOMnsyuSU,824
+alpa/repository.py,sha256=wRbelnrIzYuIUXmu8P5ZHJZ3ZF4PhfoCAKc5b70FtQE,5462
+pyalpa-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyalpa-0.1.0.dist-info/METADATA,sha256=IAUNA9sanAjTxFm2eAGqV_GySd9lT0xlZLKbI3b8cuQ,1485
+pyalpa-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+pyalpa-0.1.0.dist-info/entry_points.txt,sha256=p8eeLX4aaI0YDsgjUUy-UjQMMy9yCxBoc2sRTJZCSVc,50
+pyalpa-0.1.0.dist-info/RECORD,,
