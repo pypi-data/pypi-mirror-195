@@ -1,0 +1,7 @@
+setup.py
+titania_nlp/titania_nlp.py
+titania_nlp.egg-info/PKG-INFO
+titania_nlp.egg-info/SOURCES.txt
+titania_nlp.egg-info/dependency_links.txt
+titania_nlp.egg-info/requires.txt
+titania_nlp.egg-info/top_level.txt
