@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: brukerapi
+Version: 0.1.9
+Summary: Bruker API
+Home-page: https://github.com/isi-nmr/brukerapi-python
+Download-URL: https://github.com/isi-nmr/brukerapi-python/releases/latest
+Author: Tomas Psorn
+Author-email: tomaspsorn@isibrno.cz
+License: MIT
+License-File: LICENSE
