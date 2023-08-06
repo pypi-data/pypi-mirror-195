@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: greenscreen
+Version: 0.0.1
+Summary: A package for checking the energy efficiency of large models while training
+Home-page: UNKNOWN
+Author: avocardio
+Author-email: mkalcher@uos.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+
+UNKNOWN
+
