@@ -1,0 +1,6 @@
+minimal_activitypub/__init__.py,sha256=WY5vhsj7iYDGsgMFEpcqOXk0vX5jSsAO0hn6mMceAMg,407
+minimal_activitypub/client_2_server.py,sha256=ZTMhndWoI5oy-RrLHSMxvfk2xAs2R_T_MLaaxq5P8mw,32768
+minimal_activitypub-0.5.5.dist-info/LICENSE.md,sha256=PQ0YeyTNKuWz9fwaRJVmGVIlvDVwygG6ZJydQv7HhO0,32118
+minimal_activitypub-0.5.5.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+minimal_activitypub-0.5.5.dist-info/METADATA,sha256=b6NHDmY06yYtzxe8OoDHktDX_2g2_FbsogaN1rYMEOc,5405
+minimal_activitypub-0.5.5.dist-info/RECORD,,
