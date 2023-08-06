@@ -1,0 +1,20 @@
+
+General Options
+--------------------
+
+-h, --help            Show help message and exit
+--version             Show program's version number and exit
+-v, --verbose         Be verbose. Can be used more than once to increase the
+                      verbosity.
+-n, --dry-run     Show what would have been done, but do not generate files.
+
+
+-s NUMBER, --signature NUMBER
+          Specify the size of the signature (number
+          of sides which will be folded and bound together). Default: 4.
+
+
+.. Emacs config:
+ Local Variables:
+ mode: rst
+ End:

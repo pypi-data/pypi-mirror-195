@@ -1,0 +1,11 @@
+recursive-include docs *.rst *.txt
+include docs/conf.py
+graft docs/_images
+graft docs/_static
+prune docs/_build
+include docs/man-pages/*.1 docs/man-pages/*.html
+include INSTALL
+include DEVELOPERS.rst
+include pdfdecrypt.rst
+include projectlogo.*
+requirements.txt

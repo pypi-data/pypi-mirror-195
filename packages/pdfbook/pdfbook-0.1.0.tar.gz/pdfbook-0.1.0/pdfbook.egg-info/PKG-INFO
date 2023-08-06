@@ -1,0 +1,115 @@
+Metadata-Version: 2.1
+Name: pdfbook
+Version: 0.1.0
+Summary: Rearrange pages in PDFs for printing books
+Home-page: https://pdfbook.readthedocs.io/
+Author: Hartmut Goebel
+Author-email: h.goebel@crazy-compilers.com
+License: AGPLv3+
+Download-URL: https://pypi.org/project/pdfbook/
+Description: ==========================
+        pdfbook
+        ==========================
+        
+        ----------------------------------------------------------------
+        Rearrange pages in PDF file into signatures for printing books
+        ----------------------------------------------------------------
+        
+        :Author:    Hartmut Goebel <h.goebel@crazy-compilers.com>
+        :Version:   Version 0.1
+        :Copyright: 2010-2023 by Hartmut Goebel
+        :Licence:   GNU Affero General Public License v3 or later (AGPLv3+)
+        :Homepage:  http://pdfbook.readthedocs.io/
+        
+        
+        ``pdfbook`` rearranges pages from a PDF document into "signatures"
+        for printing books or booklets, creating a new PDF file.
+        
+        This is much like ``psbook`` does for Postscript files, but working
+        with PDF. Indeed ``pdfbook`` was inspired by ``psbook``.
+        
+        For more information please refer to the manpage or visit
+        the `project homepage <http://pdfbook.readthedocs.io/>`_.
+        
+        
+        Requirements when Installating from Source
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        If you want to install `pdfbook` from source, make sure you have the
+        following software installed:
+        
+        * `Python 3`__  (tested with 3.8),
+        * `pip`__ for installation, and
+        * `PyPDF2`__.
+        
+        __ http://www.python.org/download/
+        __ https://pypi.org/project/pip
+        __ http://mstamy2.github.io/PyPDF2/
+        
+        
+        :Hints for installing on Windows: Following the links above you will
+           find .msi and .exe-installers. Simply install them and continue
+           with `installing pdfbook`_.
+        
+        :Hints for installing on GNU/Linux: Most current GNU/Linux distributions
+           provide packages for the requirements. Look for packages names like
+           `python-pypdf2`. Simply install them and
+           continue with `installing pdfbook`_.
+        
+        :Hint for installing on other platforms: Many vendors provide Python.
+           Please check your vendors software repository. Otherwise please
+           download Python 3.8 (or any higher version from the 3.x series) from
+           http://www.python.org/download/ and follow the installation
+           instructions there.
+        
+           If the commands below fail due to module `pip` not found,
+           please install it using::
+        
+             python -m ensurepip
+        
+        
+        
+        Installing pdfbook
+        ---------------------------------
+        
+        If your system has network access installing `pdfbook`
+        is a breeze::
+        
+          pip install pdfbook
+        
+        
+        If you  downloaded and unpacked `pdfbook` just run::
+        
+          python -m pip install .
+        
+        
+        Without network access download `pdfbook` from
+        http://pypi.python.org/pypi/pdfbook and run::
+        
+           pip install pdfbook-*.tar.gz
+        
+        
+        For more details like custom installation locations
+        please refer to
+        `the official end user guide for installing Python packages
+        <https://docs.python.org/3/installing/>`__.
+        
+Keywords: pdf,book
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Printing
+Classifier: Topic :: Utilities
+Description-Content-Type: text/x-rst
