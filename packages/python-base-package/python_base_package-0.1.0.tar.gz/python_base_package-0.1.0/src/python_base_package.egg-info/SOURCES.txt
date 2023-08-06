@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+examples/example.py
+src/python_base_package/__init__.py
+src/python_base_package/calculator.py
+src/python_base_package.egg-info/PKG-INFO
+src/python_base_package.egg-info/SOURCES.txt
+src/python_base_package.egg-info/dependency_links.txt
+src/python_base_package.egg-info/top_level.txt
+tests/__init__.py
+tests/test_calculator.py
