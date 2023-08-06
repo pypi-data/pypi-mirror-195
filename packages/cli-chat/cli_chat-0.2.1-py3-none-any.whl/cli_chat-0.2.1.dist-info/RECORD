@@ -1,0 +1,10 @@
+cli_chat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli_chat/app.py,sha256=X4-Uh5ckt_TBHuVp3UFtthjJ778yqlqL9UyD8n3_dEg,1574
+cli_chat/bot.py,sha256=PAggpOhdbU13wjadzCSq4X994gBJ71meRcu9A7b_SoA,3217
+cli_chat/command.py,sha256=K0VoDw-I4z_eyKfvn5YmRlAQZ6ts7PkTMs3ol4IYeg0,3036
+cli_chat/console.py,sha256=uDo4SvC_vtupUjJx_lT153Tnki8ji5yrtT18nuwOOUI,2623
+cli_chat-0.2.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+cli_chat-0.2.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+cli_chat-0.2.1.dist-info/entry_points.txt,sha256=F5INB4RhrZ8ia5Iu_i3KhAuVqmcQ9rT_SAOxe-AETQc,85
+cli_chat-0.2.1.dist-info/METADATA,sha256=cbJmLdpW9vfUI-3y4FDH8uGQzHlBddEqdau9644vRwk,5314
+cli_chat-0.2.1.dist-info/RECORD,,

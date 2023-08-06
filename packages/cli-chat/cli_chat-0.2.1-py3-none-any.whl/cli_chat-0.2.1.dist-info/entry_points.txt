@@ -1,0 +1,4 @@
+[console_scripts]
+cli-chat=cli_chat.app:app
+cli-chat-config=cli_chat.app:config_app
+
