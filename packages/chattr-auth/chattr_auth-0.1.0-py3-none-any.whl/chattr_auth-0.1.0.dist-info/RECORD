@@ -1,0 +1,14 @@
+chattr_auth/__init__.py,sha256=z0VphIqHDdwDLr_5IF4ftgmQNJRFL2RJ0KfyjeVZCKg,515
+chattr_auth/auth0_jwt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chattr_auth/auth0_jwt/jwt_service.py,sha256=kbn_8JTrvolTqF0v72yx35QIfbV2DUsIA3pbbtKg1uE,2783
+chattr_auth/base_jwt_service.py,sha256=XuEQpRX_HvZiiUTUHNaRBBfuKEV-bMwE3GnU3Z8S52s,5398
+chattr_auth/chattr_jwt/__init__.py,sha256=z0VphIqHDdwDLr_5IF4ftgmQNJRFL2RJ0KfyjeVZCKg,515
+chattr_auth/chattr_jwt/constants.py,sha256=UXEQ3ROeH8xv3ZQTsnNfGy4izVjX0K2RUUfOuS-gIVQ,351
+chattr_auth/chattr_jwt/helper.py,sha256=hyz82KG2up-CbJ5fHrB8Wl7wsCXG9aXkg5hJ3PbezX4,1462
+chattr_auth/chattr_jwt/jwt_service.py,sha256=DdY1ndfVRy_7ab0ElEaczJq8rKjT3O8vHlTZCpiEop8,3582
+chattr_auth/chattr_jwt/utils.py,sha256=Njcj4JxZ3PJA9iu05Au78nTKlTW0KI4dPcH_1RURPA0,645
+chattr_auth/errors.py,sha256=3DKfiq__3fC3KGbfDp7h9K9ZBg0tVyY36ms5GIogcuE,569
+chattr_auth/jwt_dataclasses.py,sha256=GV2TvYeYaUrUAYVMsU2RvwM7Wh955i2O8atzsC24qYw,2534
+chattr_auth-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+chattr_auth-0.1.0.dist-info/METADATA,sha256=lKlXDRyn5D0m_57ZmsHxF90eHJkJMgd3cwbtBHwdtDs,373
+chattr_auth-0.1.0.dist-info/RECORD,,
