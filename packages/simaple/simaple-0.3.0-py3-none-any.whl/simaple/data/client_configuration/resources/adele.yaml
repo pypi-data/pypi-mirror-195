@@ -1,0 +1,49 @@
+kind: ClientConfiguration
+version: simaple.io/ClientConfiguration
+metadata:
+  label:
+    group: adele
+data:
+  v_skill_names:
+    - 루인
+    - 인피니트
+    - 리스토어
+    - 스톰
+    - 매직 서킷 풀 드라이브
+    - 그란디스 여신의 축복(레프)
+  v_improvement_names:
+    - 디바이드
+    - 오더
+    - 그레이브
+    - 테리토리
+    - 블로섬
+    - 스콜
+    - 레조넌스
+    - 마커
+    - 크리에이션
+    - 게더링
+    - 샤드
+    - 원더
+  component_groups:
+    - adele
+    - common
+    - flora
+    - str_based
+    - warrior
+  mdc_order:
+    - 매직 서킷 풀 드라이브
+    - 그란디스 여신의 축복(레프)
+    - 리스토어
+    - 인피니트
+    - 스톰
+    - 마커
+    - 오더
+    - 그레이브
+    - 테리토리
+    - 루인
+    - 게더링
+    - 블로섬
+    - 레조넌스
+    - 샤드
+    - 디바이드
+
