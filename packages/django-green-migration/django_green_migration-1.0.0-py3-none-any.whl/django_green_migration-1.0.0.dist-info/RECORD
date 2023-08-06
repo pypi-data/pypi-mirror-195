@@ -1,0 +1,17 @@
+green_migration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+green_migration/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+green_migration/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+green_migration/management/commands/green_migrate.py,sha256=7LSm1ztqLhykWNJdm8RmGZ0Y5FGQRim8vWev4ZzszYk,3605
+green_migration/management/commands/pos_green_migrate.py,sha256=46BTxuyHW-QefKQV84bjF4cqt8FegWqCxEKpvCU83Rw,953
+green_migration/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+green_migration/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+green_migration/tests/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+green_migration/tests/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+green_migration/tests/management/commands/fake_temp_model.py,sha256=ZC7B50P6p12OPs3XO71ig0jGP_u017gwbNgt9q-19c8,618
+green_migration/tests/management/commands/test_green_migrate.py,sha256=BOXwsiA8vamAZsxxmLHhPJoPB1O2FMDIaQOUYs5nGmw,5384
+green_migration/tests/management/commands/test_pos_green_migrate.py,sha256=sMjoejPRhfM3Yl2K6tUZNcA6PHK3_p7owLdldv3zfjE,1382
+django_green_migration-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+django_green_migration-1.0.0.dist-info/METADATA,sha256=GNQDkMKTbHx0KjV0uoF86S7ujFA1ran_OIBmX7JtbuI,14622
+django_green_migration-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+django_green_migration-1.0.0.dist-info/top_level.txt,sha256=lSwerJLPJqvr-i8crLcVj0ejlw40-zp-orcxqd4ABUQ,16
+django_green_migration-1.0.0.dist-info/RECORD,,
