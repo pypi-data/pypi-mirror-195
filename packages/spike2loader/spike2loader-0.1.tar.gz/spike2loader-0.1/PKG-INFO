@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: spike2loader
+Version: 0.1
+Summary: Loads spike2 events to an event_dataframe
+Home-page: https://github.com/JulienBrn/Spike2Loader
+Download-URL: https://github.com/JulienBrn/Spike2Loader.git
+Author: Julien Braine
+Author-email: julienbraine@yahoo.fr
+License: MIT
+Keywords: python,logging
+License-File: LICENSE.txt

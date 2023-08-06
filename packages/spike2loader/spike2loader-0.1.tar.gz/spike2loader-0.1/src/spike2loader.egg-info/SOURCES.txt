@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+src/spike2loader/__init__.py
+src/spike2loader/spike2loader.py
+src/spike2loader.egg-info/PKG-INFO
+src/spike2loader.egg-info/SOURCES.txt
+src/spike2loader.egg-info/dependency_links.txt
+src/spike2loader.egg-info/requires.txt
+src/spike2loader.egg-info/top_level.txt
