@@ -1,0 +1,11 @@
+landfall/__init__.py,sha256=6M6zmq5Tjna1e0II8LPSzkg8qgg2U-fP2MXdJCSKPV0,164
+landfall/color.py,sha256=hlXncY0fetQUfwBo-WIvlg6Bvk8GLhrgyW2q925pRAo,1705
+landfall/colorsys.py,sha256=lLryIPPOiRmN1ZnxuAECCp53zXvLdqb2WcnyzdSZFP8,631
+landfall/distinctipy.py,sha256=N29Z3RedWSe7Gjvoejq2PjPnzNDJGWMssFaV3kJTDhg,271
+landfall/heat.py,sha256=VB4bsr-YSRJEyQzUq-nId1xafgJSW3lj9PUKru0YEPY,5975
+landfall/points.py,sha256=ICQzQJgkt8KC94JDV7ECNFDABtKfdWe_2fQEJ3nS5GA,2232
+landfall-0.1.0.dist-info/LICENSE,sha256=oFq9FEIyAGvzUW2asR4JnQiFiH0X7cNCLO4N_bhiZUk,1068
+landfall-0.1.0.dist-info/METADATA,sha256=_EAK2wAeaqLgY7S0mOGAPm3hhHq0bqh6QmU4BTRmz_8,1011
+landfall-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+landfall-0.1.0.dist-info/top_level.txt,sha256=5hJHa8DW6HpsYFUTstoguc1LYRkKgyatMMdGtvMQRVs,9
+landfall-0.1.0.dist-info/RECORD,,
