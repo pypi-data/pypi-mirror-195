@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: wcpan-drive-google
+Version: 8.1.0
+Summary: Google Drive driver for wcpan.drive
+License: MIT
+Author: Wei-Cheng Pan
+Author-email: legnaleurc@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: aiohttp (>=3.6.0,<4.0.0)
+Requires-Dist: arrow (>=1.2.3,<2.0.0)
+Requires-Dist: wcpan.drive.core (>=3.0.0,<4.0.0)
+Requires-Dist: wcpan.logger (>=1.2,<2.0)
+Description-Content-Type: text/markdown
+
+# wcpan.drive.google
+
+Google Drive driver for wcpan.drive.
+
+Please use `wcpan.drive.google.driver.GoogleDriver` as the driver class.
+
+## Requirement
+
+Need a `client_secret.json` file provided in **config path**.
+You can download it from Google Developer Console.
+
+## Config Example
+
+In code:
+
+```python
+factory = DriveFactory()
+# put client_secret.json at here
+factory.config_path = '/path/to/config'
+# assign driver class
+factory.driver = 'wcpan.drive.google.driver.GoogleDriver'
+factory.load_config()
+```
+
+Or in `core.yaml`:
+
+```yaml
+version: 1
+database: nodes.sqlite
+driver: wcpan.drive.google.driver.GoogleDriver
+middleware: []
+```
+

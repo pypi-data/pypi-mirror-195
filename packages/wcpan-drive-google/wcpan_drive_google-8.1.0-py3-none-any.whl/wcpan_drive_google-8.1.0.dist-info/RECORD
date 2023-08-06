@@ -1,0 +1,10 @@
+wcpan/drive/google/__init__.py,sha256=bb2uH-iiT6KFbtfgwxv-3O39xOVhMg42X7buW3-nWAU,88
+wcpan/drive/google/api.py,sha256=URFKJH7YAlTdxvNyktccr7tcZLTjuio0fEG0oQ6MhRM,11768
+wcpan/drive/google/driver.py,sha256=4EssLi74PXuUtE6OTd6LQtzhSuPB7MiD17sYWfU7sc0,20594
+wcpan/drive/google/exceptions.py,sha256=oYL5vMl90_Nkkeca3ASK00Jx96wVDVZdHKKPrvu5swc,999
+wcpan/drive/google/network.py,sha256=Pcnw36f8F2nzJ2PFKLa67IVrkA6mL_lbUlGEgNatw84,12065
+wcpan/drive/google/util.py,sha256=mFFyDi0Bn4MqbckGo-3XNEc4-eSqRjOcrNT87EctXJs,7738
+wcpan_drive_google-8.1.0.dist-info/LICENSE.txt,sha256=uOppBWSdxDMjjlDJ2o07rnUPC2MZppj6_wWId86JuhE,1102
+wcpan_drive_google-8.1.0.dist-info/METADATA,sha256=af3RgFjExnoEt2BjdDkYhp1ycHKwZElbM5aXw_vgrhU,1423
+wcpan_drive_google-8.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+wcpan_drive_google-8.1.0.dist-info/RECORD,,
