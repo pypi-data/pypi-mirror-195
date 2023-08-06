@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+psifx/__init__.py
+psifx/example.py
+psifx.egg-info/PKG-INFO
+psifx.egg-info/SOURCES.txt
+psifx.egg-info/dependency_links.txt
+psifx.egg-info/not-zip-safe
+psifx.egg-info/top_level.txt
