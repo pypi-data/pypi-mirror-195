@@ -1,0 +1,9 @@
+quickumls_simstring/simstring.py,sha256=AP8rZCwY9CW8_YJ-YGL4h_YA9wJjiUsyiIgN9TW7VUE,9142
+quickumls_simstring/_simstring.so,sha256=SKaXoFkZmSRd7IiNonU5nmLrsffG1RKH59QuOpg_6r8,599080
+quickumls_simstring/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+medspacy_simstring.libs/libgcc_s-a04fdf82.so.1,sha256=E2_sw1FhiQZsCQiywTDdBDMlSUsazp7QUYpklMz_w_s,81256
+medspacy_simstring.libs/libstdc++-a9383cce.so.6.0.28,sha256=AQF8xpA7y538aY2feICyHGJkLWgDpwHYribC_iWn8Bw,2447392
+medspacy_simstring-2.2a0.dist-info/top_level.txt,sha256=HPSlZWtsUoMBbo8WdIPMYYQv3gmJNr8BfiGXA2cfy3g,51
+medspacy_simstring-2.2a0.dist-info/WHEEL,sha256=ogCTRyjHDpGGFvF35n-cpV4SlFzxF7w5DeXJyxGbBi8,113
+medspacy_simstring-2.2a0.dist-info/METADATA,sha256=_-aCCDcLeZbCbtNoQ4AwYgp9jjKEJ5lpL9SnxrNwIBk,1396
+medspacy_simstring-2.2a0.dist-info/RECORD,,
