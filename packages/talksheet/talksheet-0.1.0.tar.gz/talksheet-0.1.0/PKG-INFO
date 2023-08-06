@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: talksheet
+Version: 0.1.0
+Summary: Interact with flat files using natural languages
+License: MIT
+Author: Daniel Palma
+Author-email: danivgy@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: duckdb (>=0.7.1,<0.8.0)
+Requires-Dist: duckdb-engine (>=0.6.9,<0.7.0)
+Requires-Dist: langchain (>=0.0.100,<0.0.101)
+Requires-Dist: openai (>=0.27.0,<0.28.0)
+Requires-Dist: pandas (>=1.5.3,<2.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: textual (>=0.12.1,<0.13.0)
+Description-Content-Type: text/markdown
+
+# Talksheet
+
+Talksheet is an AI-powered CLI tool for exploring data.
+
+It can read data from local CSV files
+
+![local_csv_example](assets/pic_loca_csv.png)
+
+And from remote CSV files
+
+![remote_csv_example](assets/pic_remote_csv.png)
+
+
+## Installation
+
+Talksheet is available on PyPI. You can install it with pip:
+
+```bash
+pip install talksheet
+```
+
+## Roadmap
+
+- Better scrolling
+- Handle more data formats
+- Export results
