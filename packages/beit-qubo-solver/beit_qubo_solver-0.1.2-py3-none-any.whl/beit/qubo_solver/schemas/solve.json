@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "https://qubo-solver.dev.beit.tech/solve.schema.json",
+    "title": "Solve",
+    "description": "Solve the given QUBO instance",
+    "type": "object",
+    "properties": {
+        "instance": {
+            "description": "QUBO instance.",
+            "type": "array",
+            "items": {
+                "description": "Weighted edge of a QUBO instance. May be a loop (self edge).",
+                "type": "object",
+                "properties": {
+                    "edge": {
+                        "type": "array",
+                        "minItems": 2,
+                        "maxItems": 2,
+                        "items": {"type": "integer"}
+                    },
+                    "weight": {"type": "number"}
+                },
+                "required": ["edge", "weight"]
+            }
+        },
+        "boltzmann": {
+            "description": "Various parameters for additional computations.",
+            "type": "object",
+            "properties": {
+                "temperature": {"type": "number"},
+                "sample_count": {"type": "integer", "minimum": 0, "exclusiveMinimum": true}
+            },
+            "required": ["temperature"]
+        }
+    },
+    "required": ["instance"]
+}
