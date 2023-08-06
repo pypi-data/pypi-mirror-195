@@ -1,0 +1,9 @@
+qiskit>=0.32.1
+numpy
+dimod
+dwave-greedy
+pennylane>=0.27.0
+pandas
+seaborn
+tqdm
+scikit-learn
