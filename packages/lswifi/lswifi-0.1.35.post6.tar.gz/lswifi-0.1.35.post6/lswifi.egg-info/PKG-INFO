@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: lswifi
+Version: 0.1.35.post6
+Summary: a CLI-centric Wi-Fi scanning tool for Windows
+Home-page: https://github.com/joshschmelzle/lswifi
+Author: Josh Schmelzle
+Author-email: josh@joshschmelzle.com
+License: BSD 3-Clause License
+Keywords: lswifi,scanner,wireless,wifi,802.11,wlan,rlan,native wifi,wlanapi
+Platform: win32
+Classifier: Natural Language :: English
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Topic :: Utilities
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Networking :: Monitoring
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+License-File: AUTHORS.md
+
+a CLI-centric Wi-Fi scanning tool for Windows
