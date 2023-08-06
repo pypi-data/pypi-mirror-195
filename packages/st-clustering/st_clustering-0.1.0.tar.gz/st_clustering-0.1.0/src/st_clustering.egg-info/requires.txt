@@ -1,0 +1,10 @@
+numpy
+scipy
+scikit-learn
+hdbscan
+joblib>=1.1.0
+cython<=0.29.33
+
+[testing]
+pytest
+pytest-cov
