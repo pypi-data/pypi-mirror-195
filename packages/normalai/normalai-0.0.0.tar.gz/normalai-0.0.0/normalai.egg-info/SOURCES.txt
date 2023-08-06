@@ -1,0 +1,6 @@
+pyproject.toml
+normalai/__init__.py
+normalai.egg-info/PKG-INFO
+normalai.egg-info/SOURCES.txt
+normalai.egg-info/dependency_links.txt
+normalai.egg-info/top_level.txt

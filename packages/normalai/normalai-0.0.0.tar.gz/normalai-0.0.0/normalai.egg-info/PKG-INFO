@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: normalai
+Version: 0.0.0
+Summary: Python client library for the Normal Computing API.
+Author-email: Normal Computing <support@normalcomputing.com>
+Keywords: normal computing,machine learning,deep learning,language models,diffusion models
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
