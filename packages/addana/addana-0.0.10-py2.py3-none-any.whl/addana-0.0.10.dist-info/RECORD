@@ -1,0 +1,11 @@
+addana/__init__.py,sha256=s09oaRxlCGXbR9KpASsEJj-o8cUsQj12oIKbduwYPBc,15600
+addana/__main__.py,sha256=_WlB_KHxw7BrACb6eta7quNYCjf6cY_X7m9R8TuCPCE,2193
+addana/drawer.py,sha256=WjU6uws8GEBy5o-ndrhMUOpw4oYCVM5fGhPf3VM2ZnY,4170
+addana/exceptions.py,sha256=bUfoqYhuDAT4U93xdqOXw1IoxY6cfNxn6BBAeSePT3c,435
+addana/structures.py,sha256=oRDySbLEIIWWML3UOGRQNS1TA4TB6XuMECTKtVwWReU,1815
+addana-0.0.10.dist-info/LICENSE,sha256=h5QsEYBsrWbIeAaPx0cGNQFQ-TWPZz5hbjOvrrDVvG4,1068
+addana-0.0.10.dist-info/METADATA,sha256=5I4yZgep_JoEime1PvL3bqPnAjkv7dblDed1aG00p-8,1335
+addana-0.0.10.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+addana-0.0.10.dist-info/dependency_links.txt,sha256=EthRKHTa_vCdsgKWzxDWrW-Epu0qITOmnONQFrlCvVk,30
+addana-0.0.10.dist-info/top_level.txt,sha256=aHhgMOBz49b2VKwTcHKQzFpRRdeq7RwKsE4UPEGlRMA,7
+addana-0.0.10.dist-info/RECORD,,
