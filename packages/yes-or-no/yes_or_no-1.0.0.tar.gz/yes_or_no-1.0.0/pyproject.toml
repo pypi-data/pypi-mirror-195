@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "yes-or-no"
+version = "1.0.0"
+description = "A silly little helper function, that is strangly helpful. All it does, is prompt a yes or question, then convert a boolean to the answer of yes or now. This library is meant to be used in debug strings, it is recommended to use in multi line f string meant to be passed to a log.debug. It mean to help make understanding the state just a little easier."
+authors = ["Daniel Davee"]
+license = "Apache 2.0"
+readme = "README.md"
+packages = [{include = "yes_or_no"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+chat-companion = "^0.1.6"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.11.0"
+black = "^23.1.0"
+pylint = "^2.16.3"
+flake9 = "^3.8.3.post2"
+behave = "^1.2.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
