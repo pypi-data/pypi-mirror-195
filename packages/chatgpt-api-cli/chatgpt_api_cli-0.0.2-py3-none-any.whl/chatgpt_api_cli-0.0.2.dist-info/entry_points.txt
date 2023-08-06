@@ -1,0 +1,3 @@
+[console_scripts]
+chatgpt=src.main:main
+
