@@ -1,0 +1,46 @@
+# FunkyCam
+
+This is a simple package with one class, Funk, that allows you to recolor images by "luminance" of each pixel and also extract and thicken edges. 
+The final product is a cartoon-like version of the original image. Like this:
+
+![Image](./photo.png)
+
+To install this package just use:
+
+```bash
+pip install funkycam
+```
+
+Examples are given in the "examples" folder to demonstrate how to use this package with a webcam, image files, and video files. But, to use this class all you need to do is:
+
+```python
+import cv2
+from funkycam.funkycam import Funk
+
+img = cv2.imread('example.jpg')
+
+funk = Funk()
+funky_img = funk.funkify(img)
+```
+
+**Note**: The code expects images that are read using cv2 which means they are in BGR format. If you read with other packages, images are often in RGB format. It may still work fine, but the calculations will be incorrect. Thus, the channels will need to be flipped. 
+This can be accomplished on an np array with array slicing:
+
+```python
+img_flipped = img[:,:,::-1] # flips third dim
+```
+
+## Customizing the Output 
+To select colors, there are 3 options:
+1. Use the seaborn color_palettes or matplotlib colormaps (https://matplotlib.org/stable/tutorials/colors/colormaps.html).
+2. Manually input RGB colors in a list of lists. Resolution is 8 bits: 0-255 each color.
+3. Specify "random_colors=True".
+
+If you can't find colors you like, I recommend randomly generating colors and recording the colors that look good. The colors are printed every time it runs, but you can also access them from the Funk object with "funk.colors".
+
+You can also specify the line size, blur value for finding edges, and blur value when finding colors. Generally, increasing blur values will reduce detail in the edges and colors, i.e. fewer edges and larger splotches of colors. **NOTE: The line size and blur values must be odd numbers**. 
+
+## Other Notes
+The luminance calculation is not real luminance, it is simplified so that it can recolor video in "real-time" (depends on image quality and number of colors chosen). 
+
+Turns out this method is a little bit like "cel-shading", a commonly used shader algorithm.
