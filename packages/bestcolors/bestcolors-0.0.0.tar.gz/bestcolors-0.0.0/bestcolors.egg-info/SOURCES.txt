@@ -1,0 +1,7 @@
+setup.py
+bestcolors/__init__.py
+bestcolors/discord.py
+bestcolors.egg-info/PKG-INFO
+bestcolors.egg-info/SOURCES.txt
+bestcolors.egg-info/dependency_links.txt
+bestcolors.egg-info/top_level.txt
