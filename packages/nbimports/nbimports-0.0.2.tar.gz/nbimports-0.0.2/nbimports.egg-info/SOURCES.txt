@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+nbimports/__init__.py
+nbimports/__main__.py
+nbimports/cli.py
+nbimports/constants.py
+nbimports.egg-info/PKG-INFO
+nbimports.egg-info/SOURCES.txt
+nbimports.egg-info/dependency_links.txt
+nbimports.egg-info/entry_points.txt
+nbimports.egg-info/requires.txt
+nbimports.egg-info/top_level.txt
+nbimports/templates/__init__.py
+nbimports/templates/jinja.py
