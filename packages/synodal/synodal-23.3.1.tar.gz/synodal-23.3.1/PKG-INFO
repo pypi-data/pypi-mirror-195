@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: synodal
+Version: 23.3.1
+Summary: Metadata about the Synodalsoft project
+Home-page: UNKNOWN
+Author: Rumma & Ko Ltd
+Author-email: info@lino-framework.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+License-File: COPYING
+
+A minimal Python package with metadata about the code repositories of the
+Synodalsoft project.
+
+Source code repository: https://gitlab.com/lino-framework/synodal
+
+Usage example:
+
+>>> from synodal import REPOS_DICT
+>>> r = REPOS_DICT['synodal']
+>>> print(r.git_repo)
+https://gitlab.com/lino-framework/synodal
+
