@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pokemon-images
+Version: 1.0.0
+Summary: Randomly get images of Pokémon from the official Pokémon website
+License: MIT
+Author: Tomodachi94
+Requires-Python: >=3.5,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
