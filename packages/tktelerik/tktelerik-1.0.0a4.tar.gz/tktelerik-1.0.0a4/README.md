@@ -1,0 +1,96 @@
+# tktelerik
+来自WinForms界面扩展库做出来的组件
+
+## Telerik
+> 原项目需要付费使用，请谨慎使用
+
+```python
+# 基础示例1
+import tktelerik
+from tkinter import Tk
+
+root = Tk()
+theme1 = tktelerik.FluentDark()
+
+button = tktelerik.Button(text="button1")
+button.configure(theme="FluentDark")
+button.pack(fill="both", expand="yes", padx=5, pady=5)
+
+root.mainloop()
+```
+
+```python
+# 基础示例2
+import tktelerik
+from tkinter import Tk
+
+root = Tk()
+theme1 = tktelerik.FluentDark()
+
+list1 = tktelerik.ListBox()
+list1.configure(theme="FluentDark")
+for index in range(4):
+    list1.add(list1.create_label("item"+str(index+1)))
+list1.pack(fill="both", expand="yes", padx=5, pady=5)
+
+root.mainloop()
+```
+
+```python
+# 高级示例1
+import tktelerik
+from tkinter import Tk
+
+root = Tk()
+theme1 = tktelerik.FluentDark()
+
+ribbon = tktelerik.RibbonBar()
+ribbon_quick_item = tktelerik.RibbonButton()
+ribbon_quick_item.onclick(lambda: print("click ribbon_quick_button"))
+ribbon.add_item(ribbon_quick_item)
+
+ribbon_tab = tktelerik.RibbonTabbed()
+
+ribbon_group = tktelerik.RibbonGroup()
+
+ribbon_button = tktelerik.RibbonButton()
+ribbon_button.onclick(lambda: print("click ribbon_button"))
+ribbon_button.configure(anchor="w")
+ribbon_textbox = tktelerik.RibbonTextBox()
+ribbon_textbox.configure(anchor="w")
+
+ribbon_group.add(ribbon_button)
+ribbon_group.add(ribbon_textbox)
+
+ribbon_tab.add(ribbon_group)
+ribbon.add(ribbon_tab)
+
+ribbon.configure(theme="FluentDark")
+ribbon.pack(fill="both", expand="yes", padx=5, pady=5)
+
+root.mainloop()
+```
+
+```python
+# 高级示例2
+import tktelerik
+from tkinter import Tk
+
+root = Tk()
+theme1 = tktelerik.Windows11()
+
+nav1 = tktelerik.NavigationView()
+nav1.configure(theme="Windows11")
+
+page1 = tktelerik.PageViewPage()
+page1.configure(text="page1")
+
+button1 = tktelerik.Button(page1.frame())
+button1.configure(theme="Windows11")
+button1.pack(fill="both")
+
+nav1.add_page(page1)
+nav1.pack(fill="both", expand="yes", padx=4, pady=4)
+
+root.mainloop()
+```
