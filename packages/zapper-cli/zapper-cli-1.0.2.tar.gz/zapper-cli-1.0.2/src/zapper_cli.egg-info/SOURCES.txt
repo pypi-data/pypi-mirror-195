@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/zapper-cli/__init__.py
+src/zapper_cli.egg-info/PKG-INFO
+src/zapper_cli.egg-info/SOURCES.txt
+src/zapper_cli.egg-info/dependency_links.txt
+src/zapper_cli.egg-info/top_level.txt

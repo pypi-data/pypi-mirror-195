@@ -1,0 +1,18 @@
+[project]
+name = "zapper-cli"
+version = "1.0.2"
+authors = [
+  { name="Pandaxyzzz", email="pandaxyz@tourble.org" },
+]
+description = "library for text styling"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pypa/sampleproject"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
