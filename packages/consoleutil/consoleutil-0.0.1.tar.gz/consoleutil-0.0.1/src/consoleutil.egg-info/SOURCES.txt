@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/consoleutil/__init__.py
+src/consoleutil/consoleutil.py
+src/consoleutil.egg-info/PKG-INFO
+src/consoleutil.egg-info/SOURCES.txt
+src/consoleutil.egg-info/dependency_links.txt
+src/consoleutil.egg-info/top_level.txt
