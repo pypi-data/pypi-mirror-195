@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: fitk
+Version: 0.6.6
+Summary: The Fisher Information ToolKit
+License: MIT
+Author: JCGoran
+Author-email: goran.jelic-cizmek@unige.ch
+Requires-Python: >=3.7,<4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: matplotlib (>=3.5,<4.0) ; python_version < "3.11"
+Requires-Dist: matplotlib (>=3.6,<4.0) ; python_version >= "3.11"
+Requires-Dist: numpy (==1.21.6) ; python_version == "3.7"
+Requires-Dist: numpy (>1.22) ; python_version >= "3.8"
+Requires-Dist: scipy (==1.7.3) ; python_version == "3.7"
+Requires-Dist: scipy (>1.7.3) ; python_version >= "3.8"
