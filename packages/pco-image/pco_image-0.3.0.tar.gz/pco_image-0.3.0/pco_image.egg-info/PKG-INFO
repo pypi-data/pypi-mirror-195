@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: pco-image
+Version: 0.3.0
+Summary: Tool to read and extract meta data from pco images
+Home-page: https://github.com/matthiasprobst/pco_image
+Author: Matthias Probst
+Author-email: matth.probst@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+# PCO Image
+
+Small python package that can read PCO images and its **metadata**, especially its **image index** and **time stamp**.
+
+For reading the image, the package `pco_tools` is used.
+
+It is tested for the pco.pixelfly camera (14 bit camera) but should work for other PCO cameras, too. For 
+16 bit cameras you may disable 2 bit pixel shift in which case `get_timestamp(False)` is called.
+
+## Example
+
+````python
+import matplotlib.pyplot as plt
+
+from pco_image import PCOImage
+
+pco_img = PCOImage('image.b16')  # not yet loading the image
+plt.imshow(pco_img.img)  # only now loading the image
+
+print(f'image index: {pco_img.get_index()}')
+>>> image index: 1
+print(f'image timestamp: {pco_img.get_timestamp()}')
+>>> image timestamp: 2023-01-20 18:21:53.096300
+# write to other file:
+pco_img.write('out.tiff')
+
+````
+
+## Installation
+
+```bash
+pip install pco_image
+```
