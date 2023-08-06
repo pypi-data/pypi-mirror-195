@@ -1,0 +1,3 @@
+[console_scripts]
+jsonsqlquery=jsonsqlquery.main:main
+
