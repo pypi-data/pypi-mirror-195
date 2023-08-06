@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: drag-resize
+Version: 0.0.4
+Summary: drag and resize
+Author: Jin Ch <jin236248@gmail.com>
+License: MIT
+Classifier: Framework :: Dash
+License-File: LICENSE
+
+This package make dash objects draggable and resizable. It is based on react-rnd (https://www.npmjs.com/package/react-rnd)
