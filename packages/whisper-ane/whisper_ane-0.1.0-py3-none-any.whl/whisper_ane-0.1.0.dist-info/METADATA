@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: whisper-ane
+Version: 0.1.0
+Summary: ANE optimised adaptation of Whisper for optimised inference
+Author: Rahul Somani
+Author-email: rahul@ozu.ai
+License: Private
+Keywords: transformers,ANE,inference,CoreML
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: <4,>=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: coremltools (==6.2)
+Requires-Dist: torch (==1.11.0)
+Requires-Dist: numpy (==1.22.3)
+
+This project is an attempt to re-define certain architectures to be optimised to run on the ANE. More specifically, it aims to adopt this Apple's [`ml-ane-transformers`](https://github.com/apple/ml-ane-transformers) codebase to the [Whisper](https://github.com/openai/whisper) architecture. I've been working with the commit hash `d18e9ea` (there have been some changes to return signatures of internal functions -- that may not impact us, but I haven't tested that yet)
+
+---
+
+## Install
+
+```bash
+pip install git+https://github.com/openai/whisper/.git@d18e9ea5dd2ca57c697e8e55f9e654f06ede25d0
+pip install git+https://github.com/apple/ml-ane-transformers
+pip install whisper_ane
+```
