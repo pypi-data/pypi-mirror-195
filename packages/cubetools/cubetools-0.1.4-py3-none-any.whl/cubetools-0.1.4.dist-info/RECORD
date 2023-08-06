@@ -1,0 +1,10 @@
+cubetools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cubetools/image_tools.py,sha256=yFgmfXGm2CWv1zmlr9BtGaPAZpMRvnrqi50_c2vbjn8,4784
+cubetools/openvino_predict.py,sha256=Ra4R97bsqcNJs9C5mSlGay4kYZ5IhHA7kQlVrI-ArSM,709
+cubetools/paddle_predict.py,sha256=UVIHXqX3HCXdKM6zQls8mrxrHaxi5lTJIFmglPhHyMI,2951
+cubetools/video_capture.py,sha256=c2AMfuZDg-11pzqeQ0Uo9g34nWPDqgV8naSUhR88iyc,2554
+cubetools-0.1.4.dist-info/METADATA,sha256=MBRktFqb9gjxHC9fdBkdRPfFCueuei3PZwiMx0ob_X4,1602
+cubetools-0.1.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cubetools-0.1.4.dist-info/entry_points.txt,sha256=TcUB1mzXiQO4GxpTRZ0EMpOXKMU3u-n_q1WrgVIcs1I,5
+cubetools-0.1.4.dist-info/top_level.txt,sha256=kRZTWJEuOF3kUTJ2tYvnhyVvuNGVcNr8a6k2-CkaoQQ,10
+cubetools-0.1.4.dist-info/RECORD,,
