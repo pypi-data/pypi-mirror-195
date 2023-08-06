@@ -1,0 +1,9 @@
+list_overlap/__init__.py,sha256=gyT6UZqFRvbnRNanS9mjfJPk5RDrQyYXgrnCJzZ-g_E,78
+list_overlap/overlaps1.py,sha256=vL0YjqSZi1mToa0WCkdxs6D_jz6TWwXN2pyo-0SECfM,1710
+tests/__init__.py,sha256=pbw1CyoylGEDybv8dxZIu7q7cFQQuDM3OTIe5bbVxow,83
+tests/overlap_tests.py,sha256=5qBTY03RdZfY6EpakFDeSlzhDz37tJNs5ZyFlDDcGl4,1525
+vennoverlap-0.1.0.dist-info/LICENSE,sha256=QBkwjYV9zOFwciVdTsk8k4lnibs-B2nFyTyJJX1Kmzs,1072
+vennoverlap-0.1.0.dist-info/METADATA,sha256=LnR3VvUBzQ_uv3XffBciCcyMhFSEbRgPVRb7-XUwYqY,1575
+vennoverlap-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+vennoverlap-0.1.0.dist-info/top_level.txt,sha256=7LuiHajuSXp7Q8E_UAKXBa4d45G-qnBGYH5w_oQmqVs,19
+vennoverlap-0.1.0.dist-info/RECORD,,
