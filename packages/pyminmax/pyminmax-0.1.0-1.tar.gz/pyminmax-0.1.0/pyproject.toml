@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyminmax"
+version = "0.1.0"
+license = {file = "LICENSE"}
+
+# Description/Documentation
+description = "minmax(x): min(x), max(x) in one pass"
+readme = "README.md"
+
+# Dependencies. TODO: need to pin down the minimum.
+requires-python = ">=3.10.1,<3.12.0"
+dependencies = []
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers"
+]
+
+authors = [{name = "Owain Davies"}]
+
+[project.urls]
+homepage = "https://github.com/OTheDev/pyminmax"
