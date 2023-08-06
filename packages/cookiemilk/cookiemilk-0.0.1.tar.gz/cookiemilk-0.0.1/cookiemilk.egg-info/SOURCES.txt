@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cookiemilk.egg-info/PKG-INFO
+cookiemilk.egg-info/SOURCES.txt
+cookiemilk.egg-info/dependency_links.txt
+cookiemilk.egg-info/requires.txt
+cookiemilk.egg-info/top_level.txt
