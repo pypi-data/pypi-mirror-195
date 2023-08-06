@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+scaffold/scaffoldx.egg-info/PKG-INFO
+scaffold/scaffoldx.egg-info/SOURCES.txt
+scaffold/scaffoldx.egg-info/dependency_links.txt
+scaffold/scaffoldx.egg-info/requires.txt
+scaffold/scaffoldx.egg-info/top_level.txt
