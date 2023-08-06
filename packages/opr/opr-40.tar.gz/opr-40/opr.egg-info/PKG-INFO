@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: opr
+Version: 40
+Summary: object programming runtime
+Home-page: http://github.com/operbot/opr
+Author: B.H.J. Thate
+Author-email: operbot100@gmail.com
+License: Public Domain
+Description: README
+        ######
+        
+        
+        **NAME**
+        
+        
+        ``OPR - object programming runtime``
+        
+        
+        **SYNOPSIS**
+        
+        
+        | ``opr [-c|-d|-h]``
+        | ``opr <cmd> [key=value] [key==value]``
+        |
+        
+        
+        **DESCRIPTION**
+        
+        
+        ``OPR`` is a runtime (program) that is intended to be programmable, with a
+        client program to develop modules on and a daemonised version that can run
+        in the background. ``OPR`` provides object persistence, an event handler and
+        some basic code to load modules that can provide additional functionality.
+        
+        
+        ``OPR`` uses object programming (opv), the object oriented programming without
+        the oriented ;] Object programming is that method are seperated out into
+        functions that use the object as the first argument of that funcion. This gives
+        base class definitions a clean namespace to inherit from and to load json data
+        into the object's __dict__. A clean namespace prevents a json loaded attribute
+        to overwrite any methods.
+        
+        
+        **INSTALL**
+        
+        
+        ``pip3 install opr``
+        
+        
+        **AUTHOR**
+        
+        
+        Bart Thate - operbot100@gmail.com
+        
+        
+        **COPYRIGHT**
+        
+        
+        ``opr`` is placed in the Public Domain.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: Public Domain
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/x-rst
