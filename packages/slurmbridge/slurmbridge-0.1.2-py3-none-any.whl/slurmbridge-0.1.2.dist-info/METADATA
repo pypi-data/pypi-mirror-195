@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: slurmbridge
+Version: 0.1.2
+Summary: A Django ORM Style Bridge to Local Slurm Commands
+Author: Griesshaber Daniel
+Author-email: griesshaber@hdm-stuttgart.de
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
