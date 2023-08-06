@@ -1,0 +1,16 @@
+SikuliXLibrary/__init__.py,sha256=VjOytwWph83-gv-yWGFsm4m6XDFu2Qm7REmBZxLJFRU,433
+SikuliXLibrary/sikulixapp.py,sha256=6ct3eq9_Mjwr-V3gAPkTr17OnWmWT5MJoiPZIaYRWfU,1858
+SikuliXLibrary/sikulixdebug.py,sha256=5ztlV_7nDY6R8M3kFmjrbn-xHaLf15Ti6B_6C6_vruE,529
+SikuliXLibrary/sikuliximagepath.py,sha256=_ST7H5HBLQkxCS_r8ltokYiMkmR-i2PlZhdFVRTUaD8,1718
+SikuliXLibrary/sikulixjclass.py,sha256=qeGokwdMAMFCQLADrPouPrW8zxQtQFqRtia3N9NaRH0,7916
+SikuliXLibrary/sikulixlibrary.py,sha256=CJw_wH1_8HZeuoQR2T9qvpeiZwgPKN9WeGAolw0o8zk,7500
+SikuliXLibrary/sikulixlogger.py,sha256=-SBoW8WBvYk4rpuGXUcTwMJBrmm68wi3byd2NYPMoo8,6146
+SikuliXLibrary/sikulixpy4j.py,sha256=VQImpesfL1h1n9BPaD4cvzBW80Ieve7ZrsQsxyHwafw,315
+SikuliXLibrary/sikulixregion.py,sha256=wc8H5klNa_wv5-bLBfzXhp35uU-Lca69w7q7J5ixTWE,35690
+SikuliXLibrary/sikulixsettings.py,sha256=h-kFRQ5y-bHWqevTukAsFWSXk-z_E522RiYX0MeaUQw,6236
+SikuliXLibrary/version.py,sha256=HLJc82fZ6h65qdEwfCWx0U1_51VFQHVHv3kddt9t2Yk,23
+robotframework_sikulixlibrary-2.0.0.dist-info/LICENSE,sha256=Uc5y6PR75n0tXWT4pH7IlmpkQ_HqjUJYaeBUV3-_QKk,1087
+robotframework_sikulixlibrary-2.0.0.dist-info/METADATA,sha256=jIZ5ObRJr24uRJDm6_PzlqqhcAIraXqFJQ2RAonGULI,9168
+robotframework_sikulixlibrary-2.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+robotframework_sikulixlibrary-2.0.0.dist-info/top_level.txt,sha256=Z70Kc-51x2dv2zcv4E9BHGaAmmOVf7ORUeWQzDK3yIE,15
+robotframework_sikulixlibrary-2.0.0.dist-info/RECORD,,
