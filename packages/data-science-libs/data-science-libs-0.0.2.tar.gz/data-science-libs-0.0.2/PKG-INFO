@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: data-science-libs
+Version: 0.0.2
+Summary: data science related tools & helpers
+Home-page: https://github.com/cjkepinsky/libs
+Author: Chris J. Kepinsky
+Author-email: chris.kepinski@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/cjkepinsky/libs/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Libs for machine learning
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
