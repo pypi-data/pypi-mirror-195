@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: mxnet-alas
+Version: 0.0.3
+Summary: MXNet distribution for AzurLaneAutoScript (alas)
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: requests
+Requires-Dist: numpy
+Requires-Dist: graphviz
+
