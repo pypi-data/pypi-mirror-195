@@ -1,0 +1,11 @@
+icfs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icfs/eepromfs.py,sha256=ojsnOOienZO5W7WvEVF7WwpCnkYl0nLyl1J-AMxkzEY,54330
+icfs/config/eepromfs.yaml,sha256=uBkTOAj2ouXsz3yiI1xsjX7-XHDWO7CsMNDk53LddHk,13763
+icfs/config/filetype.yaml,sha256=2_bUhzfc2cCERWdjnx1VA2IxYyai5RUDL4ovQDneyIw,128
+icfs/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icfs/lib/eeprom_math.py,sha256=9E-dIj7oiWi-tQ8q3X-UTgeUWVc6rkGDJl0MJJUh9xs,657
+icfs-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+icfs-0.1.0.dist-info/METADATA,sha256=M8xI4q2jTzJpCr_68j0Qu5-CUm4_9rs1lRAY9uO0_Cc,1221
+icfs-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+icfs-0.1.0.dist-info/top_level.txt,sha256=XcjYrO5_FUQ8ZmOry-p6FHmI5PUmhwL_bu0knX_Nzk0,5
+icfs-0.1.0.dist-info/RECORD,,
