@@ -1,0 +1,3 @@
+[console_scripts]
+marlin=marlin_cli.marlin:cli
+
