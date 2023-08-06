@@ -1,0 +1,17 @@
+wptools/__init__.py,sha256=PTcqfEi71u7ALyaqWdGY_LvkRiy_BUpKD5zmzWGB_LI,810
+wptools/__main__.py,sha256=-hhgNzwtmSD_s40fANH_7ucqmvu6k8GW87dgFntD_bk,96
+wptools/category.py,sha256=GcEDysBlltjqVAw75v6msU7e-M_QA2WzIigOfb360LM,5165
+wptools/core.py,sha256=N-QQE5BaFjWKhnkXgIPLPxukn43zMMUS3KOECdr5a1A,9623
+wptools/page.py,sha256=Rsudb4Bza0K7sjuKvGRTLfDCfW-dPcjBQmnnq3rrHLk,23717
+wptools/query.py,sha256=qWY45LB_3SiUIHZpzRIprpzl3yOwd4y2znhVrt_PYb4,11330
+wptools/restbase.py,sha256=Nil09cX1ziFqjBtq4zIfEPzAaMFrmRuDNl5lpk8EyWQ,6224
+wptools/site.py,sha256=X4aNA9mISiH87vZ22wDJ7hAr5XYoyFzoxk_YM9tJDA8,7154
+wptools/utils.py,sha256=ghj1eGUXkdw-Bk8MGnhav5w_RbiunRi97sC5FULbPmc,8426
+wptools/wikidata.py,sha256=SA_koBp3bxhRvkVT-za_qsucZNyRMORlo-U8kREA6Cw,11864
+wptools/wptool.py,sha256=pzc04JSEy95VRELPoy0Lhw-opCubxmAUOkVD9scCdP4,5560
+wptools_clone-0.4.22.dist-info/LICENSE,sha256=nGSx-wSn-N44WJYL62O6lDYVKd-4YlxPZJzCW0-jxPM,1078
+wptools_clone-0.4.22.dist-info/METADATA,sha256=vNFBFJrNCaQbn81p4zatXyITBpDT46WKOMEDpgy7Vpo,14316
+wptools_clone-0.4.22.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+wptools_clone-0.4.22.dist-info/entry_points.txt,sha256=iJgj02e4EEZg-gcPbEPAzdGgbYWmwsMPWzUzZWUyoLs,47
+wptools_clone-0.4.22.dist-info/top_level.txt,sha256=jgIESP5gRCFF2pIIcAMBGe_NtvGAcCuH0a1k3ep8ynU,8
+wptools_clone-0.4.22.dist-info/RECORD,,
