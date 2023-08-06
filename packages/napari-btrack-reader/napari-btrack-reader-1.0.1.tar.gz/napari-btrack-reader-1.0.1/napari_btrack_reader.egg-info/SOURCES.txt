@@ -1,0 +1,9 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+.github/workflows/deploy.yml
+napari_btrack_reader.egg-info/PKG-INFO
+napari_btrack_reader.egg-info/SOURCES.txt
+napari_btrack_reader.egg-info/dependency_links.txt
+napari_btrack_reader.egg-info/top_level.txt
