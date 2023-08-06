@@ -1,0 +1,12 @@
+imagedit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imagedit/processing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imagedit/processing/coloration.py,sha256=xf8AdbNAH2qIL9OO6sHDEjFv3udcXlQr5Txxv3j2PjA,767
+imagedit/processing/effects.py,sha256=JB_VDE1He-el84iU4OoLtB11Mz-fK4YTE_QXA4bRRR8,396
+imagedit/processing/transformation.py,sha256=TgfvH55ZTXrACh2bkjpzP4miMJXi-i6zqUFKcaP61w4,855
+imagedit/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imagedit/utils/io.py,sha256=kOYp8WTYjchYAW2RjKzLgJXas7nJy1qCYThmoKdiZ0g,154
+imagedit/utils/tools.py,sha256=PsX0N1GUdm0McNcNKoOhRtpi1xEBg3VSOl8PqHZfeAI,796
+imagedit-0.0.1.dist-info/METADATA,sha256=q2T0aZ-M3ul0B4SSbtyRT1hJJtce7MTVLcz2v5teoQs,1383
+imagedit-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+imagedit-0.0.1.dist-info/top_level.txt,sha256=Td97MD5M7SFo2W4qZo3dg12nPEwv0mWM8AiG08CTZ9E,9
+imagedit-0.0.1.dist-info/RECORD,,
