@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: chatgpt-api-cli
+Version: 0.1.7
+Summary: A CLI wrapper for OpenAI's ChatGPT API
+License: MIT
+Author-email: Aumit Leon <aumitleon@gmail.com>
+Requires-Python: >=3.11
+Requires-Dist: openai>=0.27.0
+Requires-Dist: pydantic[dotenv]>=1.10.5
+Requires-Dist: typer[all]>=0.7.0
