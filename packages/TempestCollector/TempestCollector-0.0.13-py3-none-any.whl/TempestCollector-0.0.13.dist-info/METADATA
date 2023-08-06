@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: TempestCollector
+Version: 0.0.13
+Requires-Dist: websockets
+Requires-Dist: asyncio
+Requires-Dist: graphyte
+
