@@ -1,0 +1,9 @@
+mycli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mycli/cli.py,sha256=rSympc61ODyXmcH_Tf5kc6Ozds3wUR4z3cpvryZ71mQ,41
+mycli_ttlg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mycli_ttlg/cli.py,sha256=rSympc61ODyXmcH_Tf5kc6Ozds3wUR4z3cpvryZ71mQ,41
+mycli_ttlg-0.1.0.dist-info/METADATA,sha256=JrxkLsAOwAbnUOxXTrWaQDMBgydri6ZF3QpGv94wf0k,135
+mycli_ttlg-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+mycli_ttlg-0.1.0.dist-info/entry_points.txt,sha256=GB4MoU4LdNjMuuWEp7ZSdwNW1CWHP4WwGvsvpoKb1P4,52
+mycli_ttlg-0.1.0.dist-info/top_level.txt,sha256=Iv7LW6m-ro9GU8X6EpPAXzR1vm10jmMO80mbeYZPC18,11
+mycli_ttlg-0.1.0.dist-info/RECORD,,
