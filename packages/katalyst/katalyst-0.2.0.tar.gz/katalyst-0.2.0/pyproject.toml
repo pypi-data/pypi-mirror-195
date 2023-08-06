@@ -1,0 +1,48 @@
+[project]
+name = "katalyst"
+version = "0.2.0"
+description = "This library abstracts away the details of common operations to \"katalyse\" progress without imposing the constraints frameworks usually come with"
+
+authors = [{name="Valentin Neagu", email="vali19th@protonmail.com"}]
+classifiers = [
+	"Development Status :: 4 - Beta",
+	"Intended Audience :: Developers",
+	"Intended Audience :: Science/Research",
+	"Intended Audience :: System Administrators",
+	"License :: OSI Approved :: MIT License",
+	"Natural Language :: English",
+	"Operating System :: OS Independent",
+	"Programming Language :: Python :: 3",
+	"Topic :: Database",
+	"Topic :: Scientific/Engineering :: Artificial Intelligence",
+	"Topic :: Scientific/Engineering :: Image Processing",
+	"Topic :: Scientific/Engineering :: Mathematics",
+	"Topic :: Scientific/Engineering :: Visualization",
+	"Topic :: Software Development :: Libraries",
+	"Topic :: System :: Filesystems",
+	"Topic :: System :: Logging",
+	"Topic :: System :: Systems Administration",
+	"Topic :: Text Processing",
+	"Topic :: Utilities",
+]
+keywords = [
+	"automation",
+	"decorators",
+	"metaprogramming",
+]
+
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.6"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+homepage = "https://gitlab.com/vali19th/katalyst.git"
+repository = "https://gitlab.com/vali19th/katalyst.git"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]

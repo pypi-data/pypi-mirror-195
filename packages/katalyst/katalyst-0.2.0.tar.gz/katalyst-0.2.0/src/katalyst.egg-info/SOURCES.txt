@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/katalyst/__init__.py
+src/katalyst/files.py
+src/katalyst.egg-info/PKG-INFO
+src/katalyst.egg-info/SOURCES.txt
+src/katalyst.egg-info/dependency_links.txt
+src/katalyst.egg-info/requires.txt
+src/katalyst.egg-info/top_level.txt
+tests/test_files.py
