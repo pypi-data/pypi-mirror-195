@@ -1,0 +1,9 @@
+esrp-release-test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+esrp-release-test/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+esrp-release-test/src/esrpreltest.py,sha256=wngd_-DLS_IvViqC70g36o-zJS8QKp9OohJZ5_zwT8k,20
+esrp_release_test-11.dist-info/LICENSE,sha256=fHekSorNm0H9wgmGSoAWs9QwtdDgkwmBjVt0RDNt90Q,1074
+esrp_release_test-11.dist-info/METADATA,sha256=MqF9UnB-qV9DNVI8qmFaxMUkKZzq7xVchk1rDy14N9c,1160
+esrp_release_test-11.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+esrp_release_test-11.dist-info/entry_points.txt,sha256=P7kAE_xFRzzKSE9SdHbbyWYuicZ_7bpzlK1SjaLjgS4,63
+esrp_release_test-11.dist-info/top_level.txt,sha256=CNk0bUCzfa9MfuJRoFbRTBWdErYtzX55llksQSc7nxo,18
+esrp_release_test-11.dist-info/RECORD,,
