@@ -1,0 +1,3 @@
+pandas
+geo
+cognite-sdk
