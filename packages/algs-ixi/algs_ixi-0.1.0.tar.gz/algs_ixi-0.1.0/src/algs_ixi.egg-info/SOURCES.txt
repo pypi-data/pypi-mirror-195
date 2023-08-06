@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/algs_ixi.egg-info/PKG-INFO
+src/algs_ixi.egg-info/SOURCES.txt
+src/algs_ixi.egg-info/dependency_links.txt
+src/algs_ixi.egg-info/requires.txt
+src/algs_ixi.egg-info/top_level.txt
+src/examplepy/__init__.py
+src/examplepy/module1.py
