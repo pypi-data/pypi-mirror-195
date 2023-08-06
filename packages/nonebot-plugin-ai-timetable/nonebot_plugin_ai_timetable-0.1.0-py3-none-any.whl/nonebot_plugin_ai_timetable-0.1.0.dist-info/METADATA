@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-ai-timetable
+Version: 0.1.0
+Summary: 
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: httpx (>=0.23.0,<0.24.0)
+Requires-Dist: nonebot-adapter-onebot (>=2.1.0,<3.0.0)
+Requires-Dist: nonebot-plugin-apscheduler (>=0.2.0,<0.3.0)
+Requires-Dist: nonebot-plugin-htmlrender
+Requires-Dist: nonebot2 (>=2.0.0rc1,<3.0.0)
+Description-Content-Type: text/markdown
+
+# nonebot-plugin-ai-timetable
+nonebot2插件，简单易上手，支持一键导入小爱课程表，查询、订阅课表
+
