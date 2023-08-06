@@ -1,0 +1,9 @@
+pywry-0.3.5.dist-info/METADATA,sha256=d_zpWlUg8PzdFQvgd2xw4D4f4gCjCBnRRam8QrkvotU,1405
+pywry-0.3.5.dist-info/WHEEL,sha256=IA4URS4rmrTszDnA_VenXhdAr7ngoXDGptODf3RnuBI,148
+pywry-0.3.5.dist-info/license_files/LICENSE,sha256=qV95Qk1nnXiw13uDSVuQiK-ET8Qq0D_HpxNASQpo2rs,1063
+pywry/backend.py,sha256=6iRSWyWN_NhDbKUFCmEhm5YV9SMwaarL86-4v03hDEQ,767
+pywry/__init__.py,sha256=Pi28GFbQCEaHTehVbnqz39C3lvJbOTzoDyL-r88bbxE,61
+pywry/core.py,sha256=mCC_kgCctrFVSz__50Xt_V7sjf8G2238ErzoVFW7Xzo,8849
+pywry/pywry.pyi,sha256=BuBiJeLaRqbUcruko5OVViY-zKLawtBRGminl3ySJgg,327
+pywry/pywry.cpython-311-darwin.so,sha256=UTljG7KymgKDt8PrpXub851-DaOS3Gmxrt9bIvmPgpk,6358536
+pywry-0.3.5.dist-info/RECORD,,
