@@ -1,0 +1,1 @@
+"""Strangeworks QAOA SDK Extension."""
