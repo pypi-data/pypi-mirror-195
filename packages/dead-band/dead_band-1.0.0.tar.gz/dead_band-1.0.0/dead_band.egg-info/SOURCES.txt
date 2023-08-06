@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+dead_band.c
+pyproject.toml
+setup.py
+dead_band.egg-info/PKG-INFO
+dead_band.egg-info/SOURCES.txt
+dead_band.egg-info/dependency_links.txt
+dead_band.egg-info/top_level.txt
