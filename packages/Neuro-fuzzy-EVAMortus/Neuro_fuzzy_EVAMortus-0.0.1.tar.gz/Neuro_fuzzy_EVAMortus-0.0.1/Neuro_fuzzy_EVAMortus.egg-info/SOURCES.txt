@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Neuro_fuzzy_EVAMortus/__init__.py
+Neuro_fuzzy_EVAMortus/main.py
+Neuro_fuzzy_EVAMortus.egg-info/PKG-INFO
+Neuro_fuzzy_EVAMortus.egg-info/SOURCES.txt
+Neuro_fuzzy_EVAMortus.egg-info/dependency_links.txt
+Neuro_fuzzy_EVAMortus.egg-info/requires.txt
+Neuro_fuzzy_EVAMortus.egg-info/top_level.txt
