@@ -1,0 +1,2 @@
+[console_scripts]
+salutation = matchclot.complex_module.core:formal_introduction
