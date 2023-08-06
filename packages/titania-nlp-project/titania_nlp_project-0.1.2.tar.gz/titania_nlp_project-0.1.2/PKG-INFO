@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: titania_nlp_project
+Version: 0.1.2
+Summary: Named Entity Recognition package using SpaCy
+Home-page: https://github.com/your_username/titania_nlp_project
+Author: Sai Teja Reddy
+Author-email: saitejareddy123@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6, <4
+
+UNKNOWN
+
