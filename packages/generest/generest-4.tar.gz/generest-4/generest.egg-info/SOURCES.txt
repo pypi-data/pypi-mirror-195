@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+generest/__init__.py
+generest.egg-info/PKG-INFO
+generest.egg-info/SOURCES.txt
+generest.egg-info/dependency_links.txt
+generest.egg-info/entry_points.txt
+generest.egg-info/requires.txt
+generest.egg-info/top_level.txt
+generest/cli/__init__.py
+generest/cli/main.py
