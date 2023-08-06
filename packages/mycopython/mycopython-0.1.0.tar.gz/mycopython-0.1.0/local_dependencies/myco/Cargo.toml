@@ -1,0 +1,12 @@
+[package]
+name = "myco"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+build_html = "2.3.0"
+log = "0.4.17"
+pest = "2.5.5"
+pest_derive = "2.5.5"
+simple_logger = "4.0.0"

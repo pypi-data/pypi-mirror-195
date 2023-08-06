@@ -1,0 +1,50 @@
+WHITESPACE = _{ " " }
+punc = {":"|"."}
+span = { ASCII_ALPHANUMERIC+ ~ punc* }
+
+// styles 
+style = { italic }
+// style = { (italic|bold|monospace|highlighted|lifted|underscore|lowered|strikethrough)+ }
+// spanstyle = { span+ }
+italic = {"//" ~ span ~ "//"}
+// bold = {"**" ~ spanstyle ~ "**"}
+// monospace = {"`" ~ spanstyle ~ "`"}
+// highlighted = {"++" ~ spanstyle ~ "++"} 
+// lifted = {"^^" ~ spanstyle ~ "^^"}
+// underscore = {"__" ~ spanstyle ~ "__"}
+// lowered = {",," ~ spanstyle ~ ",,"}
+// strikethrough = {"~~" ~ spanstyle ~ "~~"}
+
+// wikilink stuff
+wikilink = { "[[" ~ link ~ bar* ~ "]]"}
+wikilink_target = { span }
+wikilink_title = { span }
+bar = { "|" ~ wikilink_title }
+link = { (url|wikilink_target) }
+// link = { url }
+dotted = { (span ~ "." ~ span)}
+url = { ("https"|"http") ~ "://" ~ span ~ span  }
+// url = { "https://example.com"}
+// url = { "https://anagora.org" }
+// line = { (NEWLINE|paragraph|rocket) ~ NEWLINE*}
+doubleline = { NEWLINE ~ NEWLINE }
+
+// headings
+heading1 = {"= " ~ span}
+heading2 = {"== " ~ span}
+heading3 = {"=== " ~ span}
+heading4 = {"==== " ~ span}
+
+code = {span}
+// text = { span+ }
+// blocks
+text = { span }
+paragraph = {(style|wikilink|url|text)+ ~ doubleline*  }
+codeblock = {"```" ~NEWLINE* ~ code ~ NEWLINE* ~ "```"}
+rocket = { "=>" ~ link ~ bar* ~ NEWLINE* }
+heading = { (heading1|heading2|heading3|heading4)}
+
+block = { (paragraph|rocket|codeblock|heading) }
+input = {SOI ~ block+ ~ EOI}
+
+
