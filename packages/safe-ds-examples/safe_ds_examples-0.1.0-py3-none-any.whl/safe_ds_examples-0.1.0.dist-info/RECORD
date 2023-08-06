@@ -1,0 +1,8 @@
+safeds_examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+safeds_examples/titanic/__init__.py,sha256=TzZ3Feb0D8izCVsBtUyMKmft6OhrtldYz8KpSskPoR4,32
+safeds_examples/titanic/_load.py,sha256=1QwgsJ4Y1L2a5t_UcS5s7HrS6YCq8ao1vD8aYpk68FQ,185
+safeds_examples/titanic/data/attribution.md,sha256=khYzLprPSTUzqgREchr1bvfdkr2A3H8gC3DvyJyOJqA,985
+safeds_examples/titanic/data/titanic.csv,sha256=_qqkSE6MFZ-N36xs_UVU-SmjJagffh_KpR4XQjxttsc,97471
+safe_ds_examples-0.1.0.dist-info/METADATA,sha256=HPy1hjQfocrKN9a81by7yLEpzBo1DLn9_lt0hU3XjmU,715
+safe_ds_examples-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+safe_ds_examples-0.1.0.dist-info/RECORD,,

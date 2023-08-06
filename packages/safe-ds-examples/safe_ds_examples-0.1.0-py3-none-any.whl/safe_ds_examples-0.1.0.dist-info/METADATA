@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: safe-ds-examples
+Version: 0.1.0
+Summary: Ready-to-use examples for the Safe-DS Python library.
+Home-page: https://github.com/Safe-DS/Stdlib-Examples
+License: MIT
+Keywords: data science,machine learning,usability,learnability
+Author: Lars Reimann
+Author-email: mail@larsreimann.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: safe-ds (>=0.2.0,<0.3.0)
+Project-URL: Repository, https://github.com/Safe-DS/Stdlib-Examples
+Description-Content-Type: text/markdown
+
+# Safe-DS Stdlib Examples
+
