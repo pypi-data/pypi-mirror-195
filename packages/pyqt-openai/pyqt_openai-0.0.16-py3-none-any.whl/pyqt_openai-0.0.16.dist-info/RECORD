@@ -1,0 +1,12 @@
+pyqt_openai/__init__.py,sha256=LIxPfY3B0w5XEFDqPYpnpJ7_tvfQtXa7UuVfcvmPHN0,30
+pyqt_openai/chatWidget.py,sha256=OU4GORdyN1te0CkjFhfztI0gx2v4oAgsUXuIiuIY228,3710
+pyqt_openai/main.py,sha256=YtQU9fS5Dv9aoOiZ3vMzMG1q7ylDgIFLeq0zucoopnY,15743
+pyqt_openai/notifier.py,sha256=kcznljrNtnAZSNqZBIzGyH473dZGqf0pvzzBWTNtlFU,3281
+pyqt_openai/ico/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyqt_openai/ico/close.svg,sha256=9HAo6I7oSHfJD1NysDypmGSX64pCi0FP-7yBGJI_CVg,526
+pyqt_openai/ico/openai.svg,sha256=RraID-ZpuuC8f46qKL4ZvR3SgfK8X5oyeNfTdUFKYWo,1355
+pyqt_openai-0.0.16.dist-info/LICENSE,sha256=9rl72iiTYvrFm5LduQxySwfjTTDk3t8jGCfyGJWv22Q,1091
+pyqt_openai-0.0.16.dist-info/METADATA,sha256=xWYAwYTP8UX2aGmYpG7_glM3B7Z_c5_0p1eBZ7pDHB4,2752
+pyqt_openai-0.0.16.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyqt_openai-0.0.16.dist-info/top_level.txt,sha256=JFp4TxcSacZlQ2EOPRYs_0xdkS1jbsea90uhlJXBJQQ,12
+pyqt_openai-0.0.16.dist-info/RECORD,,
