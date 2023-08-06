@@ -1,0 +1,31 @@
+## Server Configuration ##
+
+# Expected name for the servers jarfile
+jar_name = 'server.jar' 
+# Command used to start the server where (jar_name) is replaced
+# with either `server.jar` by default or a jarname given in the config file
+start_command = "java -Xms2G -Xmx2G -jar (jar_name) nogui"
+# screen name given to the server process
+screen_name = "minecraft_server"
+# grace period given to players before the server is shut down
+shutdown_delay = 60
+
+## Jarfile configuration ##
+
+# directory where the jardata file is stored
+jardata_dir = 'spsm/jardata'
+# filename of the jardata file
+jardata_filename = 'jardata.json'
+
+## Logging configuration ##
+
+# directory where logs are stored
+log_dir = 'spsm/logs'
+# maximum number of stored log archives
+max_log_archives = 10
+
+## Backup Configuration ##
+#--Backups not yet implemented--#
+
+backup_dir = "backups"
+max_backups = 5
