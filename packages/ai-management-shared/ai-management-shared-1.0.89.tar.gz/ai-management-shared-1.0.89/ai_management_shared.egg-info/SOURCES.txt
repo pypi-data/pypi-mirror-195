@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+ai-management-shared/__init__.py
+ai-management-shared/configutil.py
+ai-management-shared/secretutil.py
+ai_management_shared.egg-info/PKG-INFO
+ai_management_shared.egg-info/SOURCES.txt
+ai_management_shared.egg-info/dependency_links.txt
+ai_management_shared.egg-info/requires.txt
+ai_management_shared.egg-info/top_level.txt
