@@ -1,0 +1,13 @@
+amoreqq/__init__.py,sha256=vIPEx55jFvcxRf-vw8DYrbFyASSTHfjEZrS7vC61Sdw,75
+amoreqq/main.py,sha256=mz-52wHgx4gK3M32OkKf35klBb1A5_fneRPk2JrbAGQ,6853
+amoreqq/utils.py,sha256=6zdnRMumrq9e9_LSamIw_2txM-qo5B5ym_sJfRuKrfQ,153
+amoreqq/version.py,sha256=53GVpdbXWKClDfDcMCbYGRJD9bu0Au5mGW3n_hBqP3w,21
+amoreqq/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+amoreqq/models/qqddm_api.py,sha256=jOmrIA7vjwpNuaxBzfLlmju2zagKS2UDvx1XDUy4fFg,1038
+amoreqq/models/exceptions/__init__.py,sha256=oI7MGSBlr_mI36r6AvLtR8yse33ZnE7Ei5-AWF3Rgxk,45
+amoreqq/models/exceptions/base.py,sha256=hz8YLXfPsnwuefNBXM7cEEhCwW6gRhoXka-uhCsCETQ,81
+amoreqq/models/exceptions/qqddm_api.py,sha256=ao4jQBmZLqLR0WiwIFuYOoIstY1KS-7b36ZoFzS5QZE,2394
+amoreqq-1.1.1.dist-info/METADATA,sha256=ezG5T2Ym4yz8eJxiguZbyBruyPTbL5iD-QDgst3poKg,933
+amoreqq-1.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+amoreqq-1.1.1.dist-info/top_level.txt,sha256=9wXgZpxzXnhtJRdytfUSQpPPTEnTza0homiLa0qDWYg,8
+amoreqq-1.1.1.dist-info/RECORD,,
