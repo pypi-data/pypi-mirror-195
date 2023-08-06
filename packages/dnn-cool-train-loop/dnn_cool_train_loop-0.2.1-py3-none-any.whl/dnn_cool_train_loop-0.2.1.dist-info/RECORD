@@ -1,0 +1,10 @@
+dnn_cool_train_loop/__init__.py,sha256=HfjVOrpTnmZ-xVFCYSVmX50EXaBQeJteUHG-PD6iQs8,22
+dnn_cool_train_loop/metrics.py,sha256=igNVzSnFf3NDFeQ-TDTHtEFY2c8ZL_mspFsIwdvAPUY,1303
+dnn_cool_train_loop/task_loop.py,sha256=nWlT5_uxRbUNu6UIOkPIYm4fvmbZO6JdyBr_-eSPNH8,2294
+dnn_cool_train_loop/train_loop.py,sha256=zvBwv8tEsqj32moFcFB6RdIa_MSgZ19qJKRM6fHby5g,4018
+dnn_cool_train_loop/valid_loop.py,sha256=X_beXe-wWrf8SRTabNJVVwz-mPRIc0-s5cpAfTyD1rw,1664
+dnn_cool_train_loop-0.2.1.dist-info/LICENSE,sha256=XeFfc1uOXUoLWkyJxR8EfVpZAMMRHObECYIRUFVzFWI,1069
+dnn_cool_train_loop-0.2.1.dist-info/METADATA,sha256=lGqFL1pla19x6ssCC9Z9z5BZn7aonIK0RtuGHu47_pY,1091
+dnn_cool_train_loop-0.2.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dnn_cool_train_loop-0.2.1.dist-info/top_level.txt,sha256=QmtZVxPtEtu8hFI43a4JhzCCsUsqxgxe3y5FEDTqAvU,20
+dnn_cool_train_loop-0.2.1.dist-info/RECORD,,
