@@ -1,0 +1,3 @@
+[console_scripts]
+zathura-rpc=zathura_rpc.__main__:__start__
+
