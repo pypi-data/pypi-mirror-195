@@ -1,0 +1,12 @@
+afscgap/__init__.py,sha256=1baf4UYsBmcTWS5_-89emPa15XCodZslJeYSnnvBcmE,12729
+afscgap/client.py,sha256=hwA-q_THW29zstEOxJjcZN7_oMVrbIGWu4yZ8u9-gfo,42288
+afscgap/cursor.py,sha256=khx0m6ZQXmBENSwE1nHW-ekC-aqLbLPwRuSeyg89S3M,5129
+afscgap/inference.py,sha256=WC9PpFhCL7wTCVMsed_vB3WptvawDMjhrmf9nslUM2I,34853
+afscgap/model.py,sha256=MrVPxh1EASHmaaIpHxAaFWbQqlKRRKcRJHQRvKA6_vE,35443
+afscgap/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+afscgap/query_util.py,sha256=Tb4DJeXZ2gFDk2nrllPgO_x1JbYgKnpP8Nu1uzdo648,2376
+afscgap/util.py,sha256=MgqmZ_dSEUkzXPg6flRaUvPiGObR8wnYiqZhyD1X5S4,4608
+afscgap-0.0.5.dist-info/METADATA,sha256=7KA4ITQtI8zqrIS_n0WJIiZJgoo5mfXWnLmbq2kJjho,34192
+afscgap-0.0.5.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+afscgap-0.0.5.dist-info/licenses/LICENSE.md,sha256=T7ef9hHhOKhwJ91clj-4pptEMrQa4Zg7tfGIOeFzvo8,1613
+afscgap-0.0.5.dist-info/RECORD,,
