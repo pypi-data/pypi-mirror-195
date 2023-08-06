@@ -1,0 +1,15 @@
+bumpkin/__init__.py,sha256=gHtNFyzOMAg3QyAbH3p1y7K34UTQnUe34LER28I-aXo,71
+bumpkin/__main__.py,sha256=HEoVB8FRfLylOzYRACAwfm6Hj9HBTtAlcNvfmzalga0,133
+bumpkin/base.py,sha256=psW0ShAj4v0BhuEUrCOE-ANgTUiyP-yTA7049hnmLFU,323
+bumpkin/cli.py,sha256=hA2wzLbPWVXD9WuX3u5ojVXLNpunbSpe7weqAewUEzM,2564
+bumpkin/sources/__init__.py,sha256=YG9xNgp5ISjAZhy2_K090enimiHwo_nRL_d_wY7gXuM,2635
+bumpkin/sources/base.py,sha256=1net0e0Yj5xQ8AsCIDu7_IzffzL8XejVsHQIyAPSeI8,293
+bumpkin/sources/basicgithub/__init__.py,sha256=WpxeopjAjedy_UYViuFzWxH4uaoYAcKDg86zbmSGoL8,4225
+bumpkin/sources/basichttp/__init__.py,sha256=zHDwIAuF3BneU7EykAiUQXhmKlT-eTjf0SYIb5M2UY0,1613
+bumpkin/sources/basichttpjsonvendor/__init__.py,sha256=R2HwMnQXBGZZRe4NWU8V8DOLf0KyWCO8IG0BAhF-aPI,1272
+bumpkin-0.0.3.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+bumpkin-0.0.3.dist-info/METADATA,sha256=y6E2uoiUwB-L1PITQt8U_uzhNFuYY1XeOhWvqYy1-kI,3896
+bumpkin-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bumpkin-0.0.3.dist-info/entry_points.txt,sha256=XnPOTFqsncGJlyMUS9OiMfXKQnxoGJctLdGMsd5bpGs,50
+bumpkin-0.0.3.dist-info/top_level.txt,sha256=ob2dYnwvYrJ7Zk7DvDDq6mS2acCEO3eCynxz-MK4Erw,8
+bumpkin-0.0.3.dist-info/RECORD,,
