@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ifn
+Version: 0.1.3
+Summary: Function Interface Toolbox
+Home-page: https://github.com/iydon/ifn
+License: GPL-3.0-only
+Author: Iydon Liang
+Author-email: liangiydon@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: click
+Provides-Extra: full
+Requires-Dist: click (>=8.1.3,<9.0.0); extra == "click" or extra == "full"
+Project-URL: Repository, https://github.com/iydon/ifn
