@@ -1,0 +1,3 @@
+[distutils.command]
+build_ext=setuptools_cpp_cuda.build_ext:BuildExtension
+
