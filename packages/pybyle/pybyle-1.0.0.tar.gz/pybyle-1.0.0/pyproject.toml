@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "pybyle"
+version = "1.0.0"
+description = "Library for simplified work with encoding"
+authors = ["Molchaliv <molchaliv666@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
