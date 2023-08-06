@@ -1,0 +1,2 @@
+[console_scripts]
+yape = yape.__main__:run
