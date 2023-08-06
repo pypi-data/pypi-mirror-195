@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "candy-wrapper"
+version = "1.0.0"
+description = "A \"sticky\" wrapper for any object, that allow other objects to be add as propeties, which can be access through the .key notation or [key] notation. To unrap the object just add () notation to the end of the function."
+authors = ["daniel davee <daniel.v.davee@gmail.com>"]
+license = "Apache 2.0"
+readme = "README.md"
+packages = [{include = "candy"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pysimplelog = "^4.0.0"
+yes-or-no = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+behave = "^1.2.6"
+ipython = "^8.11.0"
+chat-companion = "^0.1.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
