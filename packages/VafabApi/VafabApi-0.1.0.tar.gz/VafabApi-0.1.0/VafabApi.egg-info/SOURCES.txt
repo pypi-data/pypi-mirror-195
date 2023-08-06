@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+VafabApi/Unofficial.py
+VafabApi/UnofficialTypes.py
+VafabApi/__init__.py
+VafabApi.egg-info/PKG-INFO
+VafabApi.egg-info/SOURCES.txt
+VafabApi.egg-info/dependency_links.txt
+VafabApi.egg-info/requires.txt
+VafabApi.egg-info/top_level.txt

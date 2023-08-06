@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: VafabApi
+Version: 0.1.0
+Summary: Helper to get pickup times for garbage
+Home-page: https://github.com/APayerl/VafabApi
+Author: Anders Payerl
+Author-email: anders_payerl@msn.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# VafabApi
+A small api wrapper to handle the complexity of getting the json and converting it to a typed object.
+
+## Warning
+Currently this uses a backward engineered API and could therefore break at any moment.
+
+## Installation
+```
+pip install VafabApi
+```
+
+## Get started
+How to use:
+
+```Python
+# At this point VafabMiljö does not have an official API.
+from VafabApi import VafabUnafficial as Vafab
+
+# Call with address
+address = "..."
+addr_id = Vafab.get_address_identifier(address).buildings[0]
+print(addr_id)  # Prints the address id
+addr_services = Vafab.get_service_info(addr_id)
+print(addr_services)  # Prints the object containing all fetched services
+```
