@@ -1,0 +1,8 @@
+black
+isort
+ruff
+pre-commit
+pytest
+setuptools_scm
+tox
+wheel
