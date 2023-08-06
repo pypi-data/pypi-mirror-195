@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: bridgecord
+Version: 0.3.9
+Home-page: https://github.com/onyx1a/BridgeCord
+Author: onyx1a
+Author-email: onyx1anis@gmail.com
+Classifier: Programming Language :: C++
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+License-File: LICENSE
+
+Discord Game SDK implementation
