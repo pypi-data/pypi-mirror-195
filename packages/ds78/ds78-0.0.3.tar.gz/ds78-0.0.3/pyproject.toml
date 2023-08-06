@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ds78"
+version = "0.0.3"
+description = ""
+authors = ["Dmitry Drozdov <dinochrom1@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+ds78 = "ds78.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = {extras = ["all"], version = "^0.7.0"}
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+pytest = "^7.2.2"
+typer-cli = "^0.0.13"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
