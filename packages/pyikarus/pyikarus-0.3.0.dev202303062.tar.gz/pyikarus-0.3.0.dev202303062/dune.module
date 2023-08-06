@@ -1,0 +1,9 @@
+// SPDX-FileCopyrightText: 2022 The Ikarus Developers mueller@ibb.uni-stuttgart.de
+// SPDX-License-Identifier: LGPL-3.0-or-later
+
+Module: pyikarus
+Version: 0.3
+Maintainer: mueller@ibb.uni-stuttgart.de
+Depends: dune-typetree dune-geometry dune-iga dune-localfefunctions dune-functions dune-grid dune-fufem dune-alugrid dune-foamgrid dune-uggrid dune-vtk
+# Optional build dependencies
+#Suggests:
