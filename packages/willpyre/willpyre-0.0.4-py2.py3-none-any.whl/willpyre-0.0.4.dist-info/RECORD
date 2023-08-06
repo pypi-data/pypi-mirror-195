@@ -1,0 +1,12 @@
+willpyre/__init__.py,sha256=C-gK4CLN-RqW4Njbd8USb9gMs6bgXFkiIfI8njmJGIo,1075
+willpyre/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+willpyre/app.py,sha256=GcglyhYVM1EV3Zur2aXku1HYw7u94pkDZ--duOn490M,2641
+willpyre/asgi.py,sha256=wRsWGMwaPoAF7a--AV7yN04nHYK4zTwSjTHH0QVq56w,3661
+willpyre/kua.py,sha256=bSN4G62g44dQi_k6hXJHgxd9wAnVuekmx11AWaeafew,12432
+willpyre/router.py,sha256=56q8TLbFdu9xhBLJja_22ihRKM8U2q9Cg90CwBaKkrk,11509
+willpyre/structure.py,sha256=KqK8S9nEKOcbLh0vJGNr-Wjye3dBHkVS-N4WdFoB_hw,10939
+willpyre-0.0.4.dist-info/LICENSE,sha256=CJ6AH9DNjgJYoeH-ImoQRrstcCpTSaDvWg4jKzmilZQ,1067
+willpyre-0.0.4.dist-info/LICENSE.rst,sha256=IE4mTMMIvOV-Iw84BayKh_Zbkqw2NDJhFuFlJaq9LSw,1526
+willpyre-0.0.4.dist-info/WHEEL,sha256=kdeDBNPvBI0w3meLKPoGgAnEr54n1jzrZWUoaLmGzVY,99
+willpyre-0.0.4.dist-info/METADATA,sha256=YbUDq8yq4FhwKaSvExLCTtJO-zZ3k3I06KF4ez_OUuI,1720
+willpyre-0.0.4.dist-info/RECORD,,
