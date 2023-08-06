@@ -1,0 +1,15 @@
+cli/__init__.py,sha256=VYGGPDUWeZNUFVM5rxVhq11XsOQncGGfxjfDXuAi8k4,23
+cli/main.py,sha256=zF_hM80kgXmUnFZ7S1xwguMoNmMi9TuCsLSeBx9e1sw,4157
+command/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+command/check.py,sha256=xT-29tLOGUBL6PBElupzN-ePSgri6LNkpsnwFgWlL-Q,758
+command/delete.py,sha256=qVWu3MlwoKCvC4y_Uww0vk5oIdHhs6-sDA0tD5dn1Mg,474
+command/read.py,sha256=XxgjeoBlZYhQuQ62lJeGCqXNGqrgDP3qMvUZWR3lMlw,1294
+command/send.py,sha256=tegwLYgWrTB_8rDKlAJl9foA2WZVRdFsKctkyMWBDq4,656
+command/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+command/util/serial_stream.py,sha256=az1GNRn4g95RHvckcvivKVUK47k1jtSeU_uUpDbcyEE,1019
+sms_cli-1.0.4.dist-info/LICENSE.md,sha256=0Is_hHXWHVwwJJIt4VV1anhCxdnZx4yjct1N11uTIV4,18275
+sms_cli-1.0.4.dist-info/METADATA,sha256=mupUGnXDvGOh7_ETtZ1lLR3qpfa0tYICF5uwI8qtaPM,4080
+sms_cli-1.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sms_cli-1.0.4.dist-info/entry_points.txt,sha256=54rIbGcWhk7EbWShpMNpEQPZxn6kjRqcLlgJEjsXdRc,42
+sms_cli-1.0.4.dist-info/top_level.txt,sha256=3PK460XQVnv4TgcSQvjOWo8QJaPEX8uA0uO_eYpY308,12
+sms_cli-1.0.4.dist-info/RECORD,,
