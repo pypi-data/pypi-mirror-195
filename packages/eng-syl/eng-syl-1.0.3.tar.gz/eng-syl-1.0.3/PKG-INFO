@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: eng-syl
+Version: 1.0.3
+Summary: English word syllabifier
+Home-page: https://github.com/ellipse-liu/eng-syl
+Author: ellipse-liu
+Author-email: timothys.new.email@gmail.comm
+License: MIT
+Keywords: Syllable,NLP,psycholinguistics
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+ï»¿# English Syllabifier (eng_syl)
+This program implements a sequence labelling Bidirectional LSTM to identify syllable boundaries in English words. The model was trained on data from the  [WebCelex](http://celex.mpi.nl/) English wordform corpus.
+
+Use the `syllabify()` function from the `Syllabel` class to syllabify your words:
+
+>     >>> from eng_syl import Syllabel
+>     >>> sylabler = Syllabel()
+>     >>> syllabler.syllabify("chomsky")
+>     'chom-sky'
+
+`syllabify()` parameters
+
+ - **text**: *string*- English text to be syllabified. Input should only contain alphabetic characters.
+
+`syllabify()` returns the given word with hyphens inserted at syllable boundaries.
