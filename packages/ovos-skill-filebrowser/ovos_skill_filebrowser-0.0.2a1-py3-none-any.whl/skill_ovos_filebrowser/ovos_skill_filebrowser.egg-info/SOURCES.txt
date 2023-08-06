@@ -1,0 +1,13 @@
+LICENSE
+README.md
+__init__.py
+setup.py
+version.py
+ovos_skill_filebrowser.egg-info/PKG-INFO
+ovos_skill_filebrowser.egg-info/SOURCES.txt
+ovos_skill_filebrowser.egg-info/dependency_links.txt
+ovos_skill_filebrowser.egg-info/entry_points.txt
+ovos_skill_filebrowser.egg-info/requires.txt
+ovos_skill_filebrowser.egg-info/top_level.txt
+res/desktop/skill-ovos-filebrowser.desktop
+res/icon/ovos-file-browser.svg
