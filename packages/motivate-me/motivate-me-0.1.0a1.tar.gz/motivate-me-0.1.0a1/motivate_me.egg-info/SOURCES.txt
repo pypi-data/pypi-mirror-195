@@ -1,0 +1,8 @@
+README.md
+setup.py
+motivate_me/__init__.py
+motivate_me.egg-info/PKG-INFO
+motivate_me.egg-info/SOURCES.txt
+motivate_me.egg-info/dependency_links.txt
+motivate_me.egg-info/requires.txt
+motivate_me.egg-info/top_level.txt
