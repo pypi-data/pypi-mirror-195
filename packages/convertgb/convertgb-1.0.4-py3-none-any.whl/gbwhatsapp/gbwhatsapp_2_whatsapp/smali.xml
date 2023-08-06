@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<properties>
+    <comment>gbwhatsapp/aborthooks</comment>
+    <comment>gbwhatsapp/breakpad</comment>
+    <comment>gbwhatsapp/AbstractConsumerAppShell.smali</comment>
+    <comment>gbwhatsapp/GifHelper.smali</comment>
+    <comment>gbwhatsapp/MediaData.smali</comment>
+    <comment>gbwhatsapp/Mp4Ops$LibMp4CheckAndRepairResult.smali</comment>
+    <comment>gbwhatsapp/Mp4Ops$LibMp4OperationResult.smali</comment>
+    <comment>gbwhatsapp/Mp4Ops$LibMp4StreamCheckResult.smali</comment>
+    <comment>gbwhatsapp/Mp4Ops.smali</comment>
+    <comment>gbwhatsapp/NativeMediaHandler.smali</comment>
+    <comment>gbwhatsapp/SqliteShell.smali</comment>
+    <comment>gbwhatsapp/VideoFrameConverter.smali</comment>
+</properties>
+

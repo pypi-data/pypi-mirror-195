@@ -1,0 +1,2 @@
+[console_scripts]
+convertgb = gbwhatsapp.__main__:main
