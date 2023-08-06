@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+edanif/__init__.py
+edanif/eda_nif.py
+edanif/vis_nif.py
+edanif.egg-info/PKG-INFO
+edanif.egg-info/SOURCES.txt
+edanif.egg-info/dependency_links.txt
+edanif.egg-info/requires.txt
+edanif.egg-info/top_level.txt
