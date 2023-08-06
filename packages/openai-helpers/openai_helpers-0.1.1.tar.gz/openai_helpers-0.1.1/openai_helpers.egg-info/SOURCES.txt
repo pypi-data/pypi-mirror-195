@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+embeddings/__init__.py
+embeddings/embeddings.py
+openai_helpers.egg-info/PKG-INFO
+openai_helpers.egg-info/SOURCES.txt
+openai_helpers.egg-info/dependency_links.txt
+openai_helpers.egg-info/requires.txt
+openai_helpers.egg-info/top_level.txt
+text/__init__.py
+text/chunk.py
