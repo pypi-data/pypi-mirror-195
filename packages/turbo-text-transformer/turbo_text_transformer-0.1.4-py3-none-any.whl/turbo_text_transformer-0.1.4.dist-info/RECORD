@@ -1,0 +1,10 @@
+ttt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ttt/__main__.py,sha256=h3YUfffx02gW--P5PQaGEaJuh6ba0ktfG_yappWw6-Q,4836
+ttt/chunker.py,sha256=mIidgp2hITQi1c1GhfYzM4XEwJpT6onC9WWiD54FmPM,1970
+ttt/config.py,sha256=F29E-SHhlfGUm1F42pTODWCRhS7P1eqM1wtdeuPFxPo,1945
+ttt/models.py,sha256=Vk4ane7ieBollSI74QFNMAF9ijgxqyzWnvEqTzQzgD4,9262
+turbo_text_transformer-0.1.4.dist-info/LICENSE,sha256=3PeSfsAA4L6gIbr1Vsgq16wuls3YKFociypwFOgwDG0,1063
+turbo_text_transformer-0.1.4.dist-info/METADATA,sha256=t4xUUnLHdesPlTnMPrY34bGCYx7eHOxKlTb5tcZlRJg,5037
+turbo_text_transformer-0.1.4.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+turbo_text_transformer-0.1.4.dist-info/entry_points.txt,sha256=of7J1yv1a_zmhR2W47O8DmoiGprOKbtLRoC1rNBJbw4,41
+turbo_text_transformer-0.1.4.dist-info/RECORD,,
