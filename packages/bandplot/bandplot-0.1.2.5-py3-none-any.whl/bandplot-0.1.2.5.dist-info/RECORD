@@ -1,0 +1,10 @@
+bandplot/__init__.py,sha256=bcd-r1IxBGSJw_0PhWVB8WjyFUBkY3Ep7PNgneNPtPY,26
+bandplot/plots.py,sha256=EEhITz9cZKxhfe9DOmoIWGOAyXrJqoz6_dk_utYaPyI,27604
+bandplot/readdata.py,sha256=HhxtT-zYxaHyYjyqQi5K0Fr-T2MFyY9meAB0IUDLI1k,6187
+bandplot/wrapper.py,sha256=bycujpxuKTniVopbOR1Nx7l4rX8_6rnloTkez0F1rMo,15273
+bandplot-0.1.2.5.dist-info/LICENSE,sha256=aWH1yhtukPX_iihAaz4foL04PJNxgsrRPqp_iwxlTr0,1060
+bandplot-0.1.2.5.dist-info/METADATA,sha256=09HnP9J04eh-eVau9FbB-4Pz0E4bKueb2mX8eh9X4hE,2856
+bandplot-0.1.2.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+bandplot-0.1.2.5.dist-info/entry_points.txt,sha256=SvxNWml8aGC9jtg2IfAn1_LXoL6Aa7fbVI6mWKlGV8Y,87
+bandplot-0.1.2.5.dist-info/top_level.txt,sha256=SMQlf9lMS_nlhnQduityQVcU231XkEEvM7Z0n9gB0JE,9
+bandplot-0.1.2.5.dist-info/RECORD,,
