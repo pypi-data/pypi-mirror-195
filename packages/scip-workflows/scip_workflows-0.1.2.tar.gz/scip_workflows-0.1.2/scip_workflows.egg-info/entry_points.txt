@@ -1,0 +1,2 @@
+[nbdev]
+scip_workflows = scip_workflows._modidx:d
