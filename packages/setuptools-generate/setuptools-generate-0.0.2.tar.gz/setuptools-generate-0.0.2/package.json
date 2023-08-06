@@ -1,0 +1,7 @@
+{
+  "name": "setuptools-generate",
+  "version": "0.0.2",
+  "description": "Generate shell completions and man page.",
+  "author": "Wu Zhenyu <wuzhenyu@ustc.edu>",
+  "license": "GPLv3"
+}
