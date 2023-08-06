@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+oriopy/4th_order__decomposition_interpolation.py
+oriopy/__init__.py
+oriopy/component_averaging_interpolation.py
+oriopy/decomposition_interpolation.py
+oriopy.egg-info/PKG-INFO
+oriopy.egg-info/SOURCES.txt
+oriopy.egg-info/dependency_links.txt
+oriopy.egg-info/top_level.txt
