@@ -1,0 +1,5 @@
+mysql.connector
+maskpass
+pyttsx3
+numpy
+SpeechRecognition
