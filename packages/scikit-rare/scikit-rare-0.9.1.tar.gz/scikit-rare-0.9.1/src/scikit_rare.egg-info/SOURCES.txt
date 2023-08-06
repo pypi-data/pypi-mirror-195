@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/scikit_rare.egg-info/PKG-INFO
+src/scikit_rare.egg-info/SOURCES.txt
+src/scikit_rare.egg-info/dependency_links.txt
+src/scikit_rare.egg-info/requires.txt
+src/scikit_rare.egg-info/top_level.txt
+src/skrare/__init__.py
+src/skrare/methods.py
+src/skrare/multi_methods.py
+src/skrare/rare.py
+tests/test_rare_methods.py
+tests/test_rare_methods_1.py
