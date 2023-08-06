@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: apollinaire
+Version: 1.2
+Summary: Module for helio- and asteroseismic data analysis
+Home-page: https://apollinaire.readthedocs.io
+Author: Sylvain N. Breton
+Author-email: sylvain.breton@inaf.it
+Maintainer: Sylvain N. Breton
+Maintainer-email: sylvain.breton@inaf.it
+License: CeCILL
+Keywords: asteroseismology,helioseismology,bayesian,peakbagging,mcmc,data,data_analysis
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: statsmodels
+Requires-Dist: emcee
+Requires-Dist: dill
+Requires-Dist: pathos
+Requires-Dist: corner
+Requires-Dist: h5py
+Requires-Dist: scipy
+Requires-Dist: numba
+Requires-Dist: george
+Requires-Dist: astropy
+Requires-Dist: tqdm
+
