@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ShellChat
+Version: 0.4.0
+Author: Adriano R. de Sousa
+License: MIT
+Requires: click
+Requires: flask
+Requires: aiohttp
+Requires: requests
+Requires: rich
