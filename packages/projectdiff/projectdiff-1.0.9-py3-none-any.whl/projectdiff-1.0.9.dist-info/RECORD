@@ -1,0 +1,12 @@
+merge_project_diff/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+merge_project_diff/__main__.py,sha256=pAz6FqOr0EflB9tGgOf1sQFcY_RTpfcUVBPnIaw4MK8,95
+merge_project_diff/manifest_diff.py,sha256=Y4Plo8ZQDlbJQIDfDnCI9gyE9BTyS14NfdOH90JwICY,4602
+merge_project_diff/merge_project_files.py,sha256=0Mlrq62U76F_YAl2kW43dIUH4Rj8Ova9dyJaO_Nw1Vk,3870
+merge_project_diff/merge_public.py,sha256=OsDSupGy70BMt3pmB5vIYtZ73RFuOEs4vOQWmb95GM4,3174
+merge_project_diff/merge_xml_diff.py,sha256=Gu5oyRm5_qAZHeoiqkoGqOOiYeGz2GINBe7icYdqI_U,8001
+projectdiff-1.0.9.dist-info/LICENSE,sha256=iaHuf1cPy1cnaueIKeanvIigoIMhCNMDoF1X1nJ6RvQ,1065
+projectdiff-1.0.9.dist-info/METADATA,sha256=9Nb6PAT5NJmAwl6m3y8Q26nxPc064RbUaNLEbsRm5D0,563
+projectdiff-1.0.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+projectdiff-1.0.9.dist-info/entry_points.txt,sha256=J4kPi-hVyASdqmTBpWXWf_lsBK17bZpORyWNpQd3F00,76
+projectdiff-1.0.9.dist-info/top_level.txt,sha256=lpRj_yyssTaPw-B8dircEnD9RqhrbDx2sBzTdaYLK34,19
+projectdiff-1.0.9.dist-info/RECORD,,
