@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "monkeyble"
+version = "1.4.0" # /!\ version placed in monkeyble._version and in galaxy.yml files too
+description = "End-to-end testing framework for Ansible"
+authors = ["Nicolas Marcq <nicolas.marcq@hpe.com>"]
+license = "GNU General Public License v3 (GPLv3)"
+readme = "README.md"
+homepage = "https://hewlettpackard.github.io/monkeyble/"
+repository = "https://github.com/HewlettPackard/monkeyble"
+keywords = ["test", "ansible", "end2end"]
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Environment :: Console',
+    'Intended Audience :: Information Technology',
+    'Intended Audience :: Developers',
+    'Intended Audience :: System Administrators',
+    'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+    'Operating System :: POSIX :: Linux',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Topic :: Utilities',
+]
+include = [
+    'LICENSE.md'
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+tabulate = "^0.9.0"
+pyyaml = "^6.0"
+
+[tool.poetry.dev-dependencies]
+ansible = "6.6.0"
+mkdocs = "^1.4.2"
+mkdocs-material = "^8.5.10"
+mike = "^1.1.2"
+build = "^0.9.0"
+twine = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+monkeyble = 'monkeyble.cli.monkeyble_cli:main'
