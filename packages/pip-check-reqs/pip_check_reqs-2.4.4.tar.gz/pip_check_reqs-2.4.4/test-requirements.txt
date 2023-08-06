@@ -1,0 +1,9 @@
+black
+flake8
+isort
+mypy
+pyenchant
+pylint
+pytest
+pytest-cov
+types-setuptools
