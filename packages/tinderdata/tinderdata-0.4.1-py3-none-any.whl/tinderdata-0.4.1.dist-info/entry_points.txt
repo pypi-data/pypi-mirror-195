@@ -1,0 +1,3 @@
+[console_scripts]
+tinderdata=tinderdata.__main__:app
+

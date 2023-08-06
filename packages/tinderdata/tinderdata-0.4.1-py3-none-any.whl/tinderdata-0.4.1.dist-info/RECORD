@@ -1,0 +1,11 @@
+tinderdata/__init__.py,sha256=BwDdceiuj12A6P0VflcjraZxbiN1BgdPXRgvHrLYp04,651
+tinderdata/__main__.py,sha256=41bXsyfhgLt8NiAh6zusTxVrIMmXdgEiYcH9yQq7BAU,1891
+tinderdata/context.py,sha256=mRDsoUMp9bN2pE8ZIDAaPZ0zxhoMwsks31OJMuoilQc,946
+tinderdata/settings.py,sha256=mI_RlFaNKV6N3QLVhxzdoa8m6Y3GFrzdLaK67Fr5rj0,3041
+tinderdata/tinder.py,sha256=Jl5uShaN0qZim3Bc0YpTXq7HzymTI1h0HMOgAosggXo,27986
+tinderdata/utils.py,sha256=rmY_PDyMr2qTssShuywB_nL82IvsyQMzugLyTZ6Gbc8,613
+tinderdata-0.4.1.dist-info/LICENSE,sha256=HTW3evT2Fl5zqQEL3YWwI8xK3eFifdX6hXrZTAxw7zk,1071
+tinderdata-0.4.1.dist-info/METADATA,sha256=7Qs3_aO-7N-gMTdPpq9bcF7cQs0D_X6Rh_15bRM5AjE,4275
+tinderdata-0.4.1.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+tinderdata-0.4.1.dist-info/entry_points.txt,sha256=Qd_kETDc2A2mC4kNlrJcRyJL90w78Vp2SSVSJevzVCM,54
+tinderdata-0.4.1.dist-info/RECORD,,
