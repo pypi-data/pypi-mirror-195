@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pdfsadj/__init__.py
+pdfsadj/pdf2image.py
+pdfsadj/pdf2text.py
+pdfsadj.egg-info/PKG-INFO
+pdfsadj.egg-info/SOURCES.txt
+pdfsadj.egg-info/dependency_links.txt
+pdfsadj.egg-info/top_level.txt
