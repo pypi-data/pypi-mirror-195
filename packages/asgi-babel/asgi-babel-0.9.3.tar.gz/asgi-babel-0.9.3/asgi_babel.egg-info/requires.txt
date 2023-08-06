@@ -1,0 +1,21 @@
+asgi-tools>=0.73.0
+babel
+
+[dev]
+bump2version
+tox
+pre-commit
+
+[dev:python_version >= "3.9"]
+refurb
+
+[example]
+uvicorn
+
+[tests]
+pytest
+pytest-aio[curio,trio]>=1.1.0
+ruff
+
+[tests:implementation_name == "cpython"]
+pytest-mypy
