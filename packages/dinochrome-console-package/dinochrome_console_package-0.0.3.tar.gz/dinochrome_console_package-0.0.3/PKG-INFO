@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dinochrome-console-package
+Version: 0.0.3
+Summary: package of console utilities for my own needs
+Author: Dmitry Drozdov
+Author-email: dinochrom1@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+
