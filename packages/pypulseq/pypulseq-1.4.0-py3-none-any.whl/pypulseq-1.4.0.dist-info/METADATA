@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pypulseq
+Version: 1.4.0
+Summary: Pulseq in Python
+Home-page: https://github.com/imr-framework/pypulseq
+Author: Keerthi Sravan Ravi
+Author-email: ks3621@columbia.edu
+License: License :: OSI Approved :: GNU Affero General Public License v3
+Project-URL: Documentation, https://pypulseq.readthedocs.io/en/latest/
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6.3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: coverage (>=6.2)
+Requires-Dist: matplotlib (>=3.5.2)
+Requires-Dist: numpy (>=1.19.5)
+Requires-Dist: scipy (>=1.8.1)
+Requires-Dist: sigpy (==0.1.23)
+
+Pulseq in Python
+
