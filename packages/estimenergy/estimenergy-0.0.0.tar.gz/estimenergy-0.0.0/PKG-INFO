@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: estimenergy
+Version: 0.0.0
+Summary: Estimate Energy Consumption
+Home-page: https://github.com/EuleMitKeule/EstimEnergy
+License: MIT
+Author: Lennard Beers
+Author-email: l.beers@outlook.de
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: PyYAML (>=6.0,<6.1)
+Requires-Dist: aioesphomeapi (>=13.4.0,<13.5.0)
+Requires-Dist: fastapi (>=0.92.0,<0.93.0)
+Requires-Dist: fastapi-crudrouter (>=0.8.6,<0.9.0)
+Requires-Dist: prometheus-fastapi-instrumentator (>=5.10.0,<5.11.0)
+Requires-Dist: prometheus_client (>=0.16.0,<0.17.0)
+Requires-Dist: python-dotenv (>=0.21.1,<0.22.0)
+Requires-Dist: requests (>=2.28.2,<2.29.0)
+Requires-Dist: tortoise_orm (>=0.19.3,<0.20.0)
+Requires-Dist: twine (>=4.0.2,<5.0.0)
+Requires-Dist: uvicorn[standard] (>=0.20.0,<0.21.0)
+Project-URL: Repository, https://github.com/EuleMitKeule/EstimEnergy
+Description-Content-Type: text/markdown
+
+[![PyPI](https://img.shields.io/pypi/v/estimenergy)](https://pypi.org/project/estimenergy)
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
+
+[![Docker](https://github.com/EuleMitKeule/EstimEnergy/actions/workflows/docker.yml/badge.svg)](https://github.com/EuleMitKeule/EstimEnergy/actions/workflows/docker.yml)
+[![PyPI](https://github.com/EuleMitKeule/EstimEnergy/actions/workflows/pypi.yml/badge.svg)](https://github.com/EuleMitKeule/EstimEnergy/actions/workflows/pypi.yml)
+[![HACS](https://github.com/EuleMitKeule/EstimEnergy/actions/workflows/hacs.yml/badge.svg)](https://github.com/EuleMitKeule/EstimEnergy/actions/workflows/hacs.yml)
+[![hassfest](https://github.com/EuleMitKeule/EstimEnergy/actions/workflows/hassfest.yml/badge.svg)](https://github.com/EuleMitKeule/EstimEnergy/actions/workflows/hassfest.yml)
+
+# EstimEnergy
+
+EstimEnergy is tool for monitoring and estimating energy usage and cost.
+It consists of a FastAPI application that collects data from a home-assistant-glow device, an accompanying API client library and a HACS enabled custom integration for Home Assistant that exposes the data via a sensor entity.
+
+## EstimEnergy API
+
+### Installation
+
+```yaml
+# docker-compose
+
+services:
+  estimenergy:
+    image: ghcr.io/eulemitkeule/estimenergy:latest
+    container_name: estimenergy
+    restart: unless-stopped
+    ports:
+      - 12380:80
+    volumes:
+      - /path/to/appdata/estimenergy:/config
+```
+
+The mounted folder must contain a `config.yml` file that is used to integrate and configure home-assistant-glow devices.
+
+### Configuration
+
+```yaml
+# config.yml
+
+collectors:
+  - name: <name_your_glow_device> # "glow"
+    host: <glow_device_ip_address> # 192.168.0.123
+    port: <glow_device_ip_address> # 6053
+    password: <glow_device_password> # ""
+    cost_per_kwh: <cost_per_kilowatt_hour> # 0.1234
+    base_cost_per_month: <independent_cost_per_month> # 12.34
+    payment_per_month: <monthly_payment_in_advance> # 123.4
+    billing_month: <month_the_billing_period_begins> # 9
+    max_incomplete_days: <explained_below> # 5
+    min_hour: <explained_below> # 0
+    max_hour: <explained_below> # 24
+```
+
+## EstimEnergy Library
+
+### Installation
+
+```sh
+pip install estimenergy
+```
+
+### Usage
+
+```python
+from estimenergy.client import EstimEnergyClient
+
+client = EstimEnergyClient(
+    host="<estimenergy_api_ip_address",
+    port=<estimenergy_api_port>
+)
+
+data = client.get_data(name="<glow_device_name>")
+```
+
+## Home Assistant Integration
+
+### Installation
+
+Install the repository in HACS via custom repository option. After restarting Home Assistant you can add and configure the integration via the integrations UI.
