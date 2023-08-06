@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: arklog
+Version: 0.5.1
+Summary: Custom python logging formatter with color output.
+Keywords: arklog
+Author-email: Arkadiusz Michał Ryś <Arkadiusz.Michal.Rys@gmail.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Requires-Dist: toml>=0.10.2
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: tox>=3.25.1 ; extra == "dev"
+Requires-Dist: pip>=22.2.2 ; extra == "dev"
+Requires-Dist: flit>=3.7.1 ; extra == "dev"
+Requires-Dist: twine>=4.0.1 ; extra == "dev"
+Requires-Dist: invoke>=1.7.1 ; extra == "dev"
+Requires-Dist: jinja2>=3.1.2 ; extra == "dev"
+Requires-Dist: flake8>=5.0.4 ; extra == "dev"
+Requires-Dist: coverage>=6.4.4 ; extra == "dev"
+Requires-Dist: sphinx>=5.1.1 ; extra == "doc"
+Requires-Dist: pytest>=7.1.3 ; extra == "test"
+Project-URL: source, https://git.rys.one/arrys/arklog
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
+
+======
+arklog
+======
+
+.. image:: https://img.shields.io/pypi/v/arklog.svg
+        :target: https://pypi.python.org/pypi/arklog
+
+A python logging module with colors.
+
+Examples
+--------
+
+.. code-block:: python3
+
+    import arklog
+
+    arklog.set_config_logging()
+    arklog.debug("Debug message")
+    arklog.info("Debug message")
+    arklog.warning("Debug message")
+    arklog.extra("Extra")
+    arklog.success("Completed")
+
+
+
+.. code-block:: python3
+
+    import arklog
+
+    arklog.set_defaults()
+    arklog.debug("Debug message")
+    arklog.info("Info message")
+    arklog.warning("Warning message")
+    arklog.extra("Extra message")
+    arklog.error("Error message")
+    arklog.success("Success message")
+
