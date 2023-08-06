@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+tdfl/__init__.py
+tdfl/array.py
+tdfl/dataframe.py
+tdfl/parsing.py
+tdfl.egg-info/PKG-INFO
+tdfl.egg-info/SOURCES.txt
+tdfl.egg-info/dependency_links.txt
+tdfl.egg-info/requires.txt
+tdfl.egg-info/top_level.txt
