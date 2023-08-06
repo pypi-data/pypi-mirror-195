@@ -1,0 +1,3 @@
+[console_scripts]
+flexsea-demos=demos.console.main:main
+
