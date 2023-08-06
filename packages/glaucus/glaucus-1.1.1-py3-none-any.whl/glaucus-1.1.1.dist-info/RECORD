@@ -1,0 +1,11 @@
+glaucus/__init__.py,sha256=EjF_6zz4ScBK9Gk-FUcAmhF7fULNguo_GnZKJ6JzmMg,264
+glaucus/autoencoders.py,sha256=hFCIBq7GTpRadyIu_PC-kLrvtS-NDFJPngkQv3wlraY,10766
+glaucus/fcblocks.py,sha256=JGTXqaBCqurkXhlYF9808BqOLob1dx2zFn31nwJoR8U,2864
+glaucus/gblocks.py,sha256=5lTAR6IWMCnM2yPR3v0--xVHF0ov3PoZz2ZvqI8WRx4,15638
+glaucus/layers.py,sha256=rYzUhYKOJN0LvdSlPJbvl8oD_v5X4qFkpdVqw1L81Ug,7646
+glaucus/rfloss.py,sha256=V8Cww1h0VvXIgVdwxSI1ErHmpnVilBaMHAPxz_6ka8o,11834
+glaucus-1.1.1.dist-info/LICENSE,sha256=GkWx0KhgPf4s_GRPnauXCxdi-Sur4qrG6y9dRXLEpoA,7653
+glaucus-1.1.1.dist-info/METADATA,sha256=taqb7sex_HCTgDl8rasNleg3DkMaaFinNK5Kibdre9I,10198
+glaucus-1.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+glaucus-1.1.1.dist-info/top_level.txt,sha256=wNSnZT83-pvN9fHc6JR0-k2ChMQKkz9mU_fYa1RpVIs,8
+glaucus-1.1.1.dist-info/RECORD,,
