@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: asalamcalculator
+Version: 1.0.0
+Summary: This is very basic calculator
+Author: Abdus Salam
+Author-email: asjabed.01@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# asalamcalculator
+
+Under construction! Not ready for use yet!
+Currently experimenting and planning!
+
+Developed by Abdus Salam from DIA (c) 2023
+
+## Exmples of How To Use (Asalam Calculator)
+
+Creating A Calculator
+
+```python
+
+def add_numbers(a,b):
+    return a+b
+def sub_numbers(a,b):
+    return a-b
+def mul_numbers(a,b):
+    return a*b
+def div_numbers(a,b):
+    return a/b
+
+USES:
+from asalmcalculator import calculator
+calculator.add_number(7,8)
+
+```
