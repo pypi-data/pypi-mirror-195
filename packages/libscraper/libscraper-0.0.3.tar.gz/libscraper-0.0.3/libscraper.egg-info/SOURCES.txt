@@ -1,0 +1,7 @@
+setup.py
+libscraper/__init__.py
+libscraper.egg-info/PKG-INFO
+libscraper.egg-info/SOURCES.txt
+libscraper.egg-info/dependency_links.txt
+libscraper.egg-info/requires.txt
+libscraper.egg-info/top_level.txt
