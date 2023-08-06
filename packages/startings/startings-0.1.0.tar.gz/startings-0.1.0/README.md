@@ -1,0 +1,1 @@
+Register python scripts as bootstrapped
