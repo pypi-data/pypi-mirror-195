@@ -1,0 +1,2 @@
+[console_scripts]
+audiodotturn = audiodotturn.cli_runner:main
