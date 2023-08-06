@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: vnnlib
+Version: 0.0.1a0
+Author-email: David Shriver <davidshriver@outlook.com>
+License: MIT
+Project-URL: Documentation, https://github.com/dlshriver/vnnlib#readme
+Project-URL: Issues, https://github.com/dlshriver/vnnlib/issues
+Project-URL: Source, https://github.com/dlshriver/vnnlib
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: lint
+Provides-Extra: style
+Provides-Extra: test
+Provides-Extra: docs
+Provides-Extra: dist
+License-File: LICENSE.txt
+
+# vnnlib
+
+[![PyPI - Version](https://img.shields.io/pypi/v/vnnlib.svg)](https://pypi.org/project/vnnlib)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/vnnlib.svg)](https://pypi.org/project/vnnlib)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install vnnlib
+```
+
+## License
+
+`vnnlib` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
