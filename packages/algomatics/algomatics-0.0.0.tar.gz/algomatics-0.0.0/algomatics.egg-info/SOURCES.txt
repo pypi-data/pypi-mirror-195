@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+algomatics/__init__.py
+algomatics.egg-info/PKG-INFO
+algomatics.egg-info/SOURCES.txt
+algomatics.egg-info/dependency_links.txt
+algomatics.egg-info/top_level.txt
+algomatics/arrays/__init__.py
+algomatics/arrays/array.py
