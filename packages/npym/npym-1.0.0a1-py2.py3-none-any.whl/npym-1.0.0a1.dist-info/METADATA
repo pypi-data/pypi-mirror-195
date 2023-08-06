@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: npym
+Version: 1.0.0a1
+Summary: Support package for NPyM, to install NPM packages with Python package managers.
+License: WTFPL
+Author: Rémy Sanchez
+Author-email: remy.sanchez@hyperthese.net
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# NPyM
+
+NPyM is a service that translates NPM packages into Python wheels so that you
+can install them using a Python package manager. This helps calling JS code
+from Python, especially if you combine it with
+[Node Edge](https://node-edge.readthedocs.io/en/latest/).
+
+This package is a support package for NPyM, which is depended upon by the
+converted NPM packages.
+
+It provides:
+
+- A wrapper to allow JS bin to be installed by package managers
+- A way to know where the `node_modules` is installed
+
+In order to know this, you can easily do:
+
+```python
+from npym import node_modules
+
+print(node_modules)
+```
+
