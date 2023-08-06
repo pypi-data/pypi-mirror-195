@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/ContigNet.egg-info/PKG-INFO
+src/ContigNet.egg-info/SOURCES.txt
+src/ContigNet.egg-info/dependency_links.txt
+src/ContigNet.egg-info/entry_points.txt
+src/ContigNet.egg-info/not-zip-safe
+src/ContigNet.egg-info/requires.txt
+src/ContigNet.egg-info/top_level.txt
+tests/test_ContigNet.py

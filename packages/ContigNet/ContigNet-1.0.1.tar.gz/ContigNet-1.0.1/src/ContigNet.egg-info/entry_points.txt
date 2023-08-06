@@ -1,0 +1,2 @@
+[console_scripts]
+ContigNet = ContigNet.__main__:main
