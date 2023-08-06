@@ -1,0 +1,5 @@
+matplotlib>=3.6.2
+numpy>=1.23.5
+PyWavelets>=1.4.1
+scipy>=1.9.3
+pactools>=0.3.1pycwt>=0.3.0a22
