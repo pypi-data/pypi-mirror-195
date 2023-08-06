@@ -1,0 +1,17 @@
+.gitignore
+LICENSE.txt
+README.md
+pyproject.toml
+requirements.txt
+django_power_tools.egg-info/PKG-INFO
+django_power_tools.egg-info/SOURCES.txt
+django_power_tools.egg-info/dependency_links.txt
+django_power_tools.egg-info/requires.txt
+django_power_tools.egg-info/top_level.txt
+power_tools/__init__.py
+power_tools/action_patterns.py
+power_tools/admin.py
+power_tools/docs.py
+power_tools/helpers.py
+power_tools/managers.py
+power_tools/mixins.py
