@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: ecomet-i2c-sensors
+Version: 0.1.6
+Summary: Library for I2C communication with selected Chips for Raspbarry PI.
+Home-page: https://github.com/mamin27/ecomet_i2c_raspberry_tools
+Author: Marian Minar
+Author-email: mminar7@gmail.com
+License: GPLv3
+Keywords: raspberry,I2C,sensor,ecomet
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: Adafruit-PureIO (>1.1.8)
+Requires-Dist: pickle5 (>0.0.10)
+Requires-Dist: json5 (>0.9.5)
+
+Library focused to I2C communication IOT with Raspberry PI.
+Supported Vendors: EEPROM, NXP Semiconductor, Texas Instruments, TE Connectivity, Microchip, Solomon Systech
+
+
+Change Log
+==========
+
+0.1.6 (03/03/2023)
+-------------------
+- EEPROM added writeNBytes & readNBytes sub
+- add Raspberry PI ZERO W 2 in PI version 
+
+0.1.5 (18/10/2022)
+-------------------
+- Fixed issue with units for current ['mA', 'A'] and voltage ['mV','V']
+
+0.1.4 (11/10/2022)
+-------------------
+- Added calibration offsets for measure_i, measure_u, measure_ui for INA260 for calibration of measured values
+
+0.1.3 (08/06/2022)
+-------------------
+- Added new def measure_i, measure_u, parent_i, parent_u in ina260ui.py for individual measure U or I
+- Added accuracy of measurement at INA260 using attributes mode, avgc, ishc, vbusct
+- More test scripts for INA260
+
+0.1.2 (17/05/2022)
+-------------------
+- Change terminology in REGISTER NAMEs
+- Fixed unis in def measure_current
+- Add new device_id allowed 0x226
+- Add ISL2802x Reneses devices lib (in progress)
+
+0.1.1 (02/03/2022)
+-------------------
+- Fix pypi issue in setup.py file
+
+0.1.0 (27/01/2022)
+-------------------
+- First Release import lib fixed
+- Chip supported: 24cXXX,PCA9557,PCA9632,HDC1080,HTU21D,MS5637,EMC2301,SSD1306
+- New chip added: INA260,INA226
+- INA260 - bulk measure fuction:  measure_voltage, measure_current
+
+0.1.1 (01/03/2022)
+-------------------
+- Add requirements packages:
+  * Adafruit_PureIO > 1.1.8
+  * pickle5 > 0.0.10
+  * json5 > 0.9.5
