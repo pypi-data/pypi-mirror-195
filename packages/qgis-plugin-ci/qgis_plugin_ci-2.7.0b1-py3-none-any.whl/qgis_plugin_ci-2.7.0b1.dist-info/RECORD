@@ -1,0 +1,9 @@
+translation_clients/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+translation_clients/baseclient.py,sha256=F4_beQyRPBqS6mgACELBXvuBZiWxqJk30ONrGuhC9aY,1851
+translation_clients/transifex.py,sha256=uIPC5euP1gZqjLmZyNCA1NJkPWJ-sj9XePfYKhAfD0s,4940
+qgis_plugin_ci-2.7.0b1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+qgis_plugin_ci-2.7.0b1.dist-info/METADATA,sha256=yj4basWZ-A3Isc6pMfcW61rQe7rIaqBpHyfKCWZtBK0,6970
+qgis_plugin_ci-2.7.0b1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+qgis_plugin_ci-2.7.0b1.dist-info/entry_points.txt,sha256=l_89flBM6inA50KHPl0Aff15qo8Yx3BDIugRvUSGtCQ,57
+qgis_plugin_ci-2.7.0b1.dist-info/top_level.txt,sha256=QafREEtvBiCoE8QuKS-VDvnzsfTVR7cuHZ4nMPGDm8k,20
+qgis_plugin_ci-2.7.0b1.dist-info/RECORD,,
