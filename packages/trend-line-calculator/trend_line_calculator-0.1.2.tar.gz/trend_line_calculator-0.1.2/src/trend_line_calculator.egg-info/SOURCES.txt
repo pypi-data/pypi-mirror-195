@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+examples/example.py
+src/trend_line_calculator/__init__.py
+src/trend_line_calculator/calculator.py
+src/trend_line_calculator.egg-info/PKG-INFO
+src/trend_line_calculator.egg-info/SOURCES.txt
+src/trend_line_calculator.egg-info/dependency_links.txt
+src/trend_line_calculator.egg-info/requires.txt
+src/trend_line_calculator.egg-info/top_level.txt
+tests/__init__.py
+tests/test_calculator.py
