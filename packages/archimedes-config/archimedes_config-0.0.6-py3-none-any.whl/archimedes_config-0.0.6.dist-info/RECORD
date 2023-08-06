@@ -1,0 +1,7 @@
+archimedes_config/__init__.py,sha256=s_hif5K0cV0x3Eh1iHfvk_PsevEh9tqeKis_xiK00Us,188
+archimedes_config/config_manager.py,sha256=fCapD4uzGkZKE7totMAL062FOGmIEm2x3jPFIQ_wFrI,12832
+archimedes_config/keyvault_client.py,sha256=QB6lbm4zK_oczAWa-z-h5ycfXV4Komz_xCHCTzDsStI,2308
+archimedes_config/keyvault_config_manager.py,sha256=nU62CuN9Y0K0Qcw4_NKod6vzjrD4MJdnPAI3wOpxrAg,1242
+archimedes_config-0.0.6.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+archimedes_config-0.0.6.dist-info/METADATA,sha256=yYflRRzTb2fj8toBlG3BjRZAneBeDQMvIlHsxl_WveE,7308
+archimedes_config-0.0.6.dist-info/RECORD,,
