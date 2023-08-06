@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+corpusshow/__init__.py
+corpusshow/corpus_cluster.py
+corpusshow/example.py
+corpusshow.egg-info/PKG-INFO
+corpusshow.egg-info/SOURCES.txt
+corpusshow.egg-info/dependency_links.txt
+corpusshow.egg-info/requires.txt
+corpusshow.egg-info/top_level.txt
