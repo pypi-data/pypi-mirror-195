@@ -1,0 +1,7 @@
+tmdbsimple
+pymediainfo
+typer==0.5.0
+click
+rich-click==1.5.2
+patch
+docstring-parser
