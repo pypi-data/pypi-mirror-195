@@ -1,0 +1,161 @@
+name: tests
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.py'
+      - '.github/workflows/tests.yml'
+      - 'pyproject.toml'
+      - 'tests/**'
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check:
+    name: ${{ matrix.toxenv }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        toxenv: [ check-style, check-build ]
+        python-version: [ '3.x' ]
+        os: [ ubuntu-latest ]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'
+          cache-dependency-path: 'pyproject.toml'
+      - run: pip install tox
+      - run: tox -e ${{ matrix.toxenv }}
+  test:
+    name: ${{ matrix.toxenv }} (Python ${{ matrix.python-version }}, ${{ matrix.os }})
+    needs: [ check ]
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        toxenv: [ test ]
+        python-version: [ '3.8', '3.9', '3.10', '3.11' ]
+        os: [ ubuntu-latest ]
+    services:
+      postgres:
+        image: postgres
+        env:
+          POSTGRES_DB: test_database
+          POSTGRES_PASSWORD: test_password
+          POSTGRES_USER: test_user
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'
+          cache-dependency-path: 'pyproject.toml'
+      - run: pip install tox
+      - run: tox -e ${{ matrix.toxenv }}
+        env:
+          POSTGRES_HOST: localhost
+          POSTGRES_DB: test_database
+          POSTGRES_USER: test_user
+          POSTGRES_PASSWORD: test_password
+  test_spatial:
+    name: ${{ matrix.toxenv }} (Python ${{ matrix.python-version }}, ${{ matrix.os }})
+    needs: [ check ]
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        toxenv: [ test-spatial ]
+        python-version: [ '3.8', '3.9', '3.10', '3.11' ]
+        os: [ ubuntu-latest ]
+    services:
+      postgres:
+        image: postgis/postgis
+        env:
+          POSTGRES_DB: test_database
+          POSTGRES_USER: test_user
+          POSTGRES_PASSWORD: test_password
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    steps:
+      - run: |
+          sudo apt install libsqlite3-mod-spatialite
+          sudo ln -sf /usr/lib/x86_64-linux-gnu/mod_spatialite.so /usr/lib/x86_64-linux-gnu/mod_spatialite
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'
+          cache-dependency-path: 'pyproject.toml'
+      - run: pip install tox
+      - run: tox -e ${{ matrix.toxenv }}
+        env:
+          POSTGRES_HOST: localhost
+          POSTGRES_DB: test_database
+          POSTGRES_USER: test_user
+          POSTGRES_PASSWORD: test_password
+  test_with_coverage:
+    name: ${{ matrix.toxenv }} (Python ${{ matrix.python-version }}, ${{ matrix.os }})
+    needs: [ check ]
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        toxenv: [ test-sqlite-postgres-spatial-cov ]
+        python-version: [ '3.x' ]
+        os: [ ubuntu-latest ]
+    services:
+      postgres:
+        image: postgis/postgis
+        env:
+          POSTGRES_DB: test_database
+          POSTGRES_USER: test_user
+          POSTGRES_PASSWORD: test_password
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    steps:
+      - run: |
+          sudo apt install libsqlite3-mod-spatialite
+          sudo ln -sf /usr/lib/x86_64-linux-gnu/mod_spatialite.so /usr/lib/x86_64-linux-gnu/mod_spatialite
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'
+          cache-dependency-path: 'pyproject.toml'
+      - run: pip install tox
+      - run: tox -e ${{ matrix.toxenv }}
+        env:
+          POSTGRES_HOST: localhost
+          POSTGRES_DB: test_database
+          POSTGRES_USER: test_user
+          POSTGRES_PASSWORD: test_password
+      - if: ${{ contains(matrix.toxenv,'-cov') }}
+        uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./coverage.xml
+          flags: unit
+          fail_ci_if_error: true
