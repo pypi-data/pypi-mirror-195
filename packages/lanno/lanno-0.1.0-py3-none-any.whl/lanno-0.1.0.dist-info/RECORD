@@ -1,0 +1,16 @@
+lanno/__init__.py,sha256=h7D001WDh7A-kFUQxUdGhnYtBkGF0tSlqwsi0irPhrY,131
+lanno/config.py,sha256=nRDhqIqb01fDs5EBLMyaLAvExvfXmRoHefDwda2oYN8,957
+lanno/utils.py,sha256=DrhrWE5_FoopsmUXIBB2TIlwBBBijqBkG0ytHE0ALN0,359
+lanno/annotators/__init__.py,sha256=NPv2CKYiI3txy22PpzELWcD9Y5d2TPhsoCxdlXHmKXE,63
+lanno/annotators/base.py,sha256=Uhfksmpb8SEEgMBNeCe-7ft7D0o4ClBL-V5dGbAip68,239
+lanno/annotators/gpt.py,sha256=JTbUCar0zpO3Jfg6DEqVYkh8-cWK2dBfHhk54sOplTQ,4305
+lanno/models/__init__.py,sha256=fpPXdZViLYBpPEa2Ri89rVzBL30DUIo55h6UlWe9yLo,59
+lanno/models/base.py,sha256=GJRcTcaF1VqHBLPxIrodhmeuKJiDCdQRkJCsyN-8ht4,239
+lanno/models/gpt.py,sha256=-sOzBUZ8BKvxbdL9zhf3l9If6UnhphT6OsprEyCU5IM,2260
+lanno/templates/texts/ner.en.jinja,sha256=t3nBtreEIMYpX41bAP2aBz41679nTEMS3Ab0RXT_azk,336
+lanno/templates/texts/ner.zh_cn.jinja,sha256=M2tUQYnYAU2Ao5Z7e0s1hUv7FtLKs3TvJIj5L78ue1k,316
+lanno-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+lanno-0.1.0.dist-info/METADATA,sha256=-bhLTl9p8WguyuTo4rdjOoehQp9dASn92xIm15U05zU,13468
+lanno-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+lanno-0.1.0.dist-info/top_level.txt,sha256=CJPwWNdW2Jk8AxUsIea55IKqV4D8usZcIZD8Hf44zNI,6
+lanno-0.1.0.dist-info/RECORD,,
