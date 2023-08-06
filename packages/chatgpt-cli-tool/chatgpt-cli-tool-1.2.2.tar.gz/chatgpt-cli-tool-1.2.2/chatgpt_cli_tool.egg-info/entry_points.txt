@@ -1,0 +1,3 @@
+[console_scripts]
+chatgpt-cli = cli:main.main
+gpt-ai = cli:ai.run
