@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/simpletimeago.egg-info/PKG-INFO
+src/simpletimeago.egg-info/SOURCES.txt
+src/simpletimeago.egg-info/dependency_links.txt
+src/simpletimeago.egg-info/requires.txt
+src/simpletimeago.egg-info/top_level.txt
+src/simpletimeago/_jsii/__init__.py
+src/simpletimeago/_jsii/jsii-time-ago@0.0.10.jsii.tgz
