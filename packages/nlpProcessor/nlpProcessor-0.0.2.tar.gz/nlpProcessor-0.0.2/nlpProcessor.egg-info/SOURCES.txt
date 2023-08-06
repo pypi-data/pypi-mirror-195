@@ -1,0 +1,12 @@
+LICENSE
+setup.py
+nlpProcessor.egg-info/PKG-INFO
+nlpProcessor.egg-info/SOURCES.txt
+nlpProcessor.egg-info/dependency_links.txt
+nlpProcessor.egg-info/requires.txt
+nlpProcessor.egg-info/top_level.txt
+nlp_lib/__init__.py
+nlp_lib/preprocessor.py
+nlp_lib/data/abbreviations.json
+nlp_lib/data/contractions.json
+nlp_lib/data/emoji_emotion.csv
