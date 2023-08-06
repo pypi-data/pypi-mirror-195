@@ -1,0 +1,10 @@
+fairscape_models/__init__.py,sha256=7QF6ZhGehE9CUXnFiajZtRZqvg4Lg5llFrMWE1oW3qE,179
+fairscape_models/base.py,sha256=BiJDMRehisKtNIc5zzklmtByX5yoxh0ID3C6M7gJnvI,902
+fairscape_models/computation.py,sha256=siezkrhuJGBs7m3NJrOQCXAq6jkniybbCobxzKwInRE,612
+fairscape_models/dataset.py,sha256=F6G7H8p7z1cGbgHYFLUiarnCK0M5DR2r4XexX9IhmVg,763
+fairscape_models/software.py,sha256=uOIkuIns9aV1QaSfw_-AQFyeppL8TDpw-MoH9aEicpA,521
+fairscape_models-1.0.0.dist-info/LICENSE,sha256=PcuCQpGxZ1Tb7IcZraQxk5uLEARgk_bvaWhCV1s51Vg,1066
+fairscape_models-1.0.0.dist-info/METADATA,sha256=AU_NbOybpbCuK0dOSsgOxQRIrkcvn-U6x85CePhoDqE,1793
+fairscape_models-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fairscape_models-1.0.0.dist-info/top_level.txt,sha256=YPb6LTD9Ovf0_Vqr12uPyXu9xZ9i3jpSDinrV1e2bAE,17
+fairscape_models-1.0.0.dist-info/RECORD,,
