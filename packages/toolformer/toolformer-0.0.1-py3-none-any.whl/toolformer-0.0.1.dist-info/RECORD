@@ -1,0 +1,12 @@
+toolformer/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+toolformer/_modidx.py,sha256=A4_I0QxCjolnng9z-g0VWglebCVDLZHVvl1wmnHx0Ec,6186
+toolformer/api.py,sha256=5Q0Mm3walA8Wi0vesESWTgDw1keUJwYk45hFC-e__Jc,1095
+toolformer/data_generator.py,sha256=6Gfx1dHJZEo9EkXv4zlW2Mvwy6B5IuIISVbScmnkwHM,16392
+toolformer/prompt.py,sha256=VqX-AYo8T3N47c40H0SgOlpy6sIUzNBrI6nySsQat_4,3209
+toolformer/utils.py,sha256=TUuIVvHNAyb2yaaflYPnjrn0ssLIPpxCbPB3W2XsE0s,293
+toolformer-0.0.1.dist-info/LICENSE,sha256=qhZC9w4zMgkZ0F1ELFAZ0gMa9ShPgrEDwFZkJhG-Sdc,1065
+toolformer-0.0.1.dist-info/METADATA,sha256=qqCX7AafLregETWDLxWwcZagf8RstMQnHl-fvN_zi4A,10143
+toolformer-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+toolformer-0.0.1.dist-info/entry_points.txt,sha256=nuByhwDrMm2DvzNdYRy1JweCMQpB7qYZOfLinlNJCTU,42
+toolformer-0.0.1.dist-info/top_level.txt,sha256=YDGOYv_WuBuiJlH7UsC5pw8AZSS_PSTS8U5Njpf9jgw,11
+toolformer-0.0.1.dist-info/RECORD,,
