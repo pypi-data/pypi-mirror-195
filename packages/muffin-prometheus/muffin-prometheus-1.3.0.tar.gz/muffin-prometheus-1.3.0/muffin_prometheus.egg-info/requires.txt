@@ -1,0 +1,13 @@
+muffin>=0.92
+asgi-prometheus>=1.1.2
+
+[dev]
+pre-commit
+refurb
+bump2version
+
+[tests]
+pytest
+pytest-aio[curio,trio]
+pytest-mypy
+ruff
