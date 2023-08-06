@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+colorlog/__init__.py
+colorlog/colorlog.py
+colorlog/utils.py
+colorlog_python.egg-info/PKG-INFO
+colorlog_python.egg-info/SOURCES.txt
+colorlog_python.egg-info/dependency_links.txt
+colorlog_python.egg-info/requires.txt
+colorlog_python.egg-info/top_level.txt
