@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "maybe_type"
+version = "1.0.0"
+authors = [
+  { name="Leander", email="fitzisreal@gmx.de" },
+]
+description = "Adds module to add the Maybe monad to Python."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/henceiusegentoo/Maybe"
