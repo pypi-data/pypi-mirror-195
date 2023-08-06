@@ -1,0 +1,17 @@
+swagenttools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swagenttools/extractor.py,sha256=yIpbi7PN5VYlovFtioyHk7UpcoTyov3D71BH-wR-feo,7153
+swagenttools/seeker.py,sha256=l7q-QmCwrxTHoWlsc9YZ9DDUWEX3-A1EX8d6hMFjH6o,1673
+swagenttools/sql_engine.py,sha256=O0sGGvTo85qriaAQ0TcwDZTZX230fO4eDcBDK-JtQzE,4285
+swagenttools/sql_functions/swagent_main_db_create.sql,sha256=S62eZXgHSvt8LYCorWiMi458PPGCr2HjehOLgJ11RUg,1752
+swagenttools/user_agent_list/Android.txt,sha256=etnJvwlDzvrktmFm1gusmfxt-9wnZNkY0crK10PFON8,2802
+swagenttools/user_agent_list/Chrome.txt,sha256=usYjoXGc9i4Fy94IWx4nKK7ZvjbKH93ZsMNzYr6iRh4,98913
+swagenttools/user_agent_list/Edge.txt,sha256=6LOumqe6vHFceF9Rri7-J-_NXF2-n4VWCnhO6rMycY0,995
+swagenttools/user_agent_list/Firefox.txt,sha256=RAiBMIsHGYhFEs2bbZamsEmzM9r1PeSp2DgGGakIOwU,192962
+swagenttools/user_agent_list/LICENSE,sha256=ppTmMwLk1YIMUr6xfb0-ohW6DvCLelZLVPUyLhL1bbw,1071
+swagenttools/user_agent_list/Opera.txt,sha256=n2b1QltwLOQGDViDHPDz36gZo6njChusHPPJmGx7Vgg,51661
+swagenttools/user_agent_list/README.md,sha256=422Hc2Hzl7hmYKKhEUzS20TJ3XejkRwk9zG_YI2CH7g,107
+swagenttools/user_agent_list/Safari.txt,sha256=mamuQpjCU95fwRL96AbZTXt1sNARgkyt8QBFOdkazdE,65703
+swagenttools-0.3.13.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+swagenttools-0.3.13.dist-info/METADATA,sha256=bNjEI0qNDaP2CKykcE51RkrATdy3Dr2TqWdEHhDwhk0,1779
+swagenttools-0.3.13.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+swagenttools-0.3.13.dist-info/RECORD,,
