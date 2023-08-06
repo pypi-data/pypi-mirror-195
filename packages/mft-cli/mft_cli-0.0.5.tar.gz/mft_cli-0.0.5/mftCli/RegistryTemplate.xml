@@ -1,0 +1,6 @@
+<mftp>
+    <transferName>%transferName%</transferName>
+    <localDownloadDirectory>%dir%</localDownloadDirectory>
+    <destinations>
+    </destinations>
+</mftp>
