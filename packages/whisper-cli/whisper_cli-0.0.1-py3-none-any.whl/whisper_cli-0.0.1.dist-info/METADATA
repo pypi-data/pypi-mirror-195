@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: whisper-cli
+Version: 0.0.1
+Summary: A CLI for transcribing/translating audio/video using whisper
+License: MIT
+Author: Vatsal
+Author-email: vatsalaggarwal@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: openai (>=0.27.0,<0.28.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+# Whisper CLI
+Whisper CLI is a command-line interface for transcribing and translating audio using OpenAI's Whisper API. It also allows you to manage multiple OpenAI API keys as separate environments.
+
+To install Whisper CLI, simply run:
+
+```sh
+pip install whisper-cli
+```
+
+## Setup
+To get started with Whisper CLI, you'll need to set your OpenAI API key. You can do this using the following command:
+
+```sh
+whisper set-key <openai_api_key>
+```
+
+This will set the API key for the default environment. If you want to use a different API key, you can set up an alternative environment by running:
+
+```sh
+whisper set-key <openai_api_key> --env <env_name>
+```
+
+To activate an alternative environment, run:
+
+```sh
+whisper activate-env <env_name>
+```
+
+## Usage
+
+Whisper CLI supports two main functionalities: translation and transcription.
+
+### Translation
+To translate an audio file, simply run:
+
+```sh
+whisper translate <file_name>
+```
+
+### Transcription
+To transcribe an audio file, run:
+
+```sh
+whisper transcribe <file_name>
+```
+
+## Development
+If you'd like to contribute to Whisper CLI, you'll need to set up a development environment with Python 3.10.9.
+
+```sh
+python=3.10.9
+```
+
+Happy transcribing and translating with Whisper CLI.
+
