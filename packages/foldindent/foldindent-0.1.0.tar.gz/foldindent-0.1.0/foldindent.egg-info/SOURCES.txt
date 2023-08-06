@@ -1,0 +1,11 @@
+COPYING.WTFPL
+README.md
+foldindent
+setup.cfg
+setup.py
+foldindent.egg-info/PKG-INFO
+foldindent.egg-info/SOURCES.txt
+foldindent.egg-info/dependency_links.txt
+foldindent.egg-info/requires.txt
+foldindent.egg-info/top_level.txt
+foldindent.egg-info/zip-safe
