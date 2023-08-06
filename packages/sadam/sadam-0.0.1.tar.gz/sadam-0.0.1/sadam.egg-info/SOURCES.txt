@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+sadam/__init__.py
+sadam/sadam.py
+sadam.egg-info/PKG-INFO
+sadam.egg-info/SOURCES.txt
+sadam.egg-info/dependency_links.txt
+sadam.egg-info/top_level.txt
