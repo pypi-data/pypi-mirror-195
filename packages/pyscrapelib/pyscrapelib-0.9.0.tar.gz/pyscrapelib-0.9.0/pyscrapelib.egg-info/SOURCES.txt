@@ -1,0 +1,6 @@
+setup.py
+pyscrapelib/__init__.py
+pyscrapelib.egg-info/PKG-INFO
+pyscrapelib.egg-info/SOURCES.txt
+pyscrapelib.egg-info/dependency_links.txt
+pyscrapelib.egg-info/top_level.txt
