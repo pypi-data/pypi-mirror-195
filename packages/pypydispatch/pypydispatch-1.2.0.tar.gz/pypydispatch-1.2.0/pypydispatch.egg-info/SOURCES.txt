@@ -1,0 +1,14 @@
+README.md
+setup.py
+dispatcher/__init__.py
+dispatcher/const.py
+dispatcher/discover.py
+dispatcher/dispatcher.py
+dispatcher/hook.py
+dispatcher/tasks.py
+dispatcher/weakref_backports.py
+pypydispatch.egg-info/PKG-INFO
+pypydispatch.egg-info/SOURCES.txt
+pypydispatch.egg-info/dependency_links.txt
+pypydispatch.egg-info/requires.txt
+pypydispatch.egg-info/top_level.txt
