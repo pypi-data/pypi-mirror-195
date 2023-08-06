@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+irispdf/__init__.py
+irispdf/pdf2image.py
+irispdf/pdf2text.py
+irispdf.egg-info/PKG-INFO
+irispdf.egg-info/SOURCES.txt
+irispdf.egg-info/dependency_links.txt
+irispdf.egg-info/top_level.txt
