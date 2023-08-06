@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: fastapi-iot
+Version: 0.0.3
+Summary: Track Django users alive
+Home-page: https://github.com/tomvictor/djangolive
+Author: Tom Victor
+Author-email: vjtomvictor@gmail.com
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Provides-Extra: test
+Provides-Extra: lint
+Provides-Extra: doc
+Provides-Extra: dev

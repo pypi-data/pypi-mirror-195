@@ -1,0 +1,9 @@
+README.rst
+setup.py
+fastapi-iot/__init__.py
+fastapi_iot.egg-info/PKG-INFO
+fastapi_iot.egg-info/SOURCES.txt
+fastapi_iot.egg-info/dependency_links.txt
+fastapi_iot.egg-info/not-zip-safe
+fastapi_iot.egg-info/requires.txt
+fastapi_iot.egg-info/top_level.txt
