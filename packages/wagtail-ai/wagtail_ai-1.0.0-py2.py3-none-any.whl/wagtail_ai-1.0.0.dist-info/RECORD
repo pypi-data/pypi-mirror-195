@@ -1,0 +1,15 @@
+wagtail_ai/__init__.py,sha256=07Alx9lq1YxSQeXC0txVzk8Ca7mIDjHS9WYwV_x6PxY,122
+wagtail_ai/apps.py,sha256=FeDnvGcXxYe9RdLl9aNAsQW1QTEheRnUGZe8FAP1tCM,154
+wagtail_ai/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_ai/openai.py,sha256=ndF1H7byDYDNLmasmNjfHQg0dP19J0IWE_6o8w9U5TI,680
+wagtail_ai/settings.py,sha256=da3q2mAK7UbJIYu0hv8Vm_jKD9dWK-j3Qhvo_hemFw0,254
+wagtail_ai/views.py,sha256=mU6W-y_Hj65z_FT8lg0z6PcCOUw37uodlGkZDVw09IM,1526
+wagtail_ai/wagtail_hooks.py,sha256=pBJ5czOqMvHTWba6bvuZC5FhGRPEANBCZbNkVnSMwhE,1172
+wagtail_ai/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_ai/static/wagtail_ai/main.css,sha256=W7AnvcD1lEOC1-x8CzujFgCIOKZ3iHQ6QyUmRRGCRtg,667
+wagtail_ai/static/wagtail_ai/wagtail-ai.js,sha256=EBL7z7wroVQvBQmnliCx29cz24Dy3_xqwthj_M7Hv3E,350363
+wagtail_ai/static/wagtail_ai/wagtail-ai.js.LICENSE.txt,sha256=7_d_C_HTe-bEeydA5O3BkOTEJcHZl3kTtFavIxwVQ8I,307
+wagtail_ai-1.0.0.dist-info/LICENSE,sha256=jw7OxtH-_59Dl8fdSJoC0f5vjDJSqhSn8wAHmmEpZF8,1067
+wagtail_ai-1.0.0.dist-info/WHEEL,sha256=kdeDBNPvBI0w3meLKPoGgAnEr54n1jzrZWUoaLmGzVY,99
+wagtail_ai-1.0.0.dist-info/METADATA,sha256=Y68YkTAEv_tE-HhD-7IgWefnMV2NYqYvdZaqoULk0_A,5197
+wagtail_ai-1.0.0.dist-info/RECORD,,
