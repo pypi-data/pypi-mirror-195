@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+minepython/__init__.py
+minepython/block.cp38-win_amd64.pyd
+minepython/connection.cp38-win_amd64.pyd
+minepython/event.cp38-win_amd64.pyd
+minepython/keyhandle.cp38-win_amd64.pyd
+minepython/minecraft.cp38-win_amd64.pyd
+minepython/mineenum.py
+minepython/util.cp38-win_amd64.pyd
+minepython/vec3.cp38-win_amd64.pyd
+minepython.egg-info/PKG-INFO
+minepython.egg-info/SOURCES.txt
+minepython.egg-info/dependency_links.txt
+minepython.egg-info/top_level.txt
