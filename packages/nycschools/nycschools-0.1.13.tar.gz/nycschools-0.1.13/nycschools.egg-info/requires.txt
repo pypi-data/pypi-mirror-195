@@ -1,0 +1,15 @@
+arrow
+folium
+geopandas
+ipython
+mapclassify
+matplotlib
+networkx
+numpy
+pandas
+py7zr
+python-Levenshtein
+requests
+seaborn
+thefuzz
+wget
