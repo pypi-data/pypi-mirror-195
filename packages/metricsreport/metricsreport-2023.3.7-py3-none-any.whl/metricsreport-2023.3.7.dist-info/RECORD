@@ -1,0 +1,7 @@
+metricsreport/__init__.py,sha256=Lj1MwVlnacLBmEw6cWBVGV9TgyxbK5LAFUq3-BNUHVM,73
+metricsreport/custom_metrics.py,sha256=_eBXlE6Ohg8avbA1taV5GLYABfnFVTA-b0rtEfqN3n0,1455
+metricsreport/metricsreport.py,sha256=O3wHz44qboMVUYXK7jtX8TFJSHmryt-BV6Hs5ysSvZw,18617
+metricsreport-2023.3.7.dist-info/LICENSE,sha256=DoTFQI9KbfY7wyCNbR4F3DRfZbOgXu84Xh0F8os21NQ,1067
+metricsreport-2023.3.7.dist-info/METADATA,sha256=Lt_UsqnG1eW9C8KYcfggGOKbAPdQd34YeUmoaRj2vKg,3074
+metricsreport-2023.3.7.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+metricsreport-2023.3.7.dist-info/RECORD,,
