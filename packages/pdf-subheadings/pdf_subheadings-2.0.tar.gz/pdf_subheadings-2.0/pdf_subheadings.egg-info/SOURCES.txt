@@ -1,0 +1,6 @@
+pdf_subheadings.egg-info/PKG-INFO
+pdf_subheadings.egg-info/SOURCES.txt
+pdf_subheadings.egg-info/dependency_links.txt
+pdf_subheadings.egg-info/entry_points.txt
+pdf_subheadings.egg-info/requires.txt
+pdf_subheadings.egg-info/top_level.txt
