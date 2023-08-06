@@ -1,0 +1,7 @@
+include stablefusion/pages/*.py
+include stablefusion/data/*.txt
+include stablefusion/*.txt
+recursive-include stablefusion/scripts *
+recursive-include stablefusion/models *
+include OTHER_LICENSES
+
