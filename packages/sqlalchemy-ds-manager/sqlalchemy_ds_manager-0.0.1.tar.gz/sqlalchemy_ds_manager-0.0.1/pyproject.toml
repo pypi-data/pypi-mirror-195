@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sqlalchemy-ds-manager"
+version = "0.0.1"
+authors = [
+  { name="Jonny Nguyen", email="jonny_nguyen@outlook.com" },
+]
+description = "SqlAlchemy DS Manager: A simple datasource manager for SqlAlchemy using json file and cache manager for your sql statement"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "oracledb",
+  "pymssql", 
+  "SQLAlchemy",
+]
+
+[tool.hatch.build]
+sources = ["src"]
+
+[project.urls]
+"Homepage" = "https://github.com/jnguyen0220/sqlalchemy_ds_manager"
+"Bug Tracker" = "https://github.com/jnguyen0220/sqlalchemy_ds_manager/issues"
