@@ -1,0 +1,8 @@
+irispdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+irispdf/pdf2image.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+irispdf/pdf2text.py,sha256=5--64-OYoPnJr369BowREbCyMU2VZrAXDrr2AB1VAx4,39
+irispdf-1.1.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+irispdf-1.1.dist-info/METADATA,sha256=TdNPNIvE1NdsQa9QzBDRAAixan_vP0X7SHZBwAbmuwQ,114
+irispdf-1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+irispdf-1.1.dist-info/top_level.txt,sha256=YN1q7HWQr-sSMhsSW_8O9qL2v2zT-cUd1mBjgoEVCPk,8
+irispdf-1.1.dist-info/RECORD,,
