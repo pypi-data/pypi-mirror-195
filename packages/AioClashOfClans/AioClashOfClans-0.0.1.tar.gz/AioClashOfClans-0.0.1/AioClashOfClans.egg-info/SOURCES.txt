@@ -1,0 +1,8 @@
+README.md
+setup.py
+AioClashOfClans.egg-info/PKG-INFO
+AioClashOfClans.egg-info/SOURCES.txt
+AioClashOfClans.egg-info/dependency_links.txt
+AioClashOfClans.egg-info/requires.txt
+AioClashOfClans.egg-info/top_level.txt
+aioclashofclans/__init__.py

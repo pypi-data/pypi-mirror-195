@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: AioClashOfClans
+Version: 0.0.1
+Summary: An API Wrapper for Clash Of Clans API in Python
+Home-page: UNKNOWN
+Author: Necrosis
+Author-email: necrosis000business@gmail.com
+License: UNKNOWN
+Keywords: python,clashofclans,wrapper,api,aiohttp,supercell
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+# AioClashOfClans
+
+## About
+This is a wrapper for the Clash Of Clans API for python using the AioHttp Library
+
+Main features include:
+- Get user data
+- Viewing leaderboards
+- and More!
+
+## Usage
+First, install the package:
+```
+pip install aioclashofclans
+```
+
+
+
+
