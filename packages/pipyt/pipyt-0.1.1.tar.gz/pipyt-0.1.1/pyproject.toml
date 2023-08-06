@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pipyt"
+version = "0.1.1"
+description = "A basic CLI application that searches and downloads YT Music songs"
+readme = "README.md"
+dependencies = [
+	"click",
+	"requests",
+	"yt-dlp",
+	"columnar"
+]
+
+[project.urls]
+Source = "https://github.com/r1klz/pipyt"
+Issues = "https://github.com/r1klz/pipyt/issues"
+
+[project.scripts]
+pipyt = "pipyt.__main__:main"
