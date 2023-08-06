@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: diator
+Version: 0.0.1
+Summary: Diator is a Python library for implementing CQRS pattern in your Python applications.
+Project-URL: Homepage, https://github.com/akhundMurad/diator
+Project-URL: Bug Tracker, https://github.com/akhundMurad/diator/issues
+Author-email: Murad Akhundov <akhundov1murad@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.rst
+Keywords: CQRS,async,asyncio,command,commands,di,diator,event,events,mediator,mediatr,queries,query
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10
+Requires-Dist: dataclass-factory
+Requires-Dist: orjson
+Provides-Extra: redis
+Requires-Dist: redis; extra == 'redis'
+Provides-Extra: test
+Requires-Dist: black; extra == 'test'
+Requires-Dist: isort; extra == 'test'
+Requires-Dist: mypy; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-asyncio; extra == 'test'
+Requires-Dist: types-redis; extra == 'test'
+Requires-Dist: vulture; extra == 'test'
+Description-Content-Type: text/markdown
+
+# Diator - CQRS Library for Python (ON DEVELOPMENT STAGE!!!)
+
+Diator is a Python library for implementing CQRS pattern in your Python applications. It provides a set of abstractions and utilities to help you separate your read and write concerns, allowing for better scalability, performance, and maintainability of your application.
+
+## Features
+
+- Implements the CQRS pattern
+- Simple, yet flexible API
+- Supports multiple storage backends
+- Easy to integrate with existing codebases
+- Well-documented
+
+## Installation
+
+You can install Diator using pip:
+
+```bash
+pip install diator
+```
