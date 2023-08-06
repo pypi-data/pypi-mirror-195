@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: remedy-client
+Version: 0.1.0
+Summary: A REST Client for BMC Remedy ITSM.
+Home-page: https://github.com/albertonarro/bmc-remedy-client
+Author: Alberto Narro
+Author-email: alberto.narro@hotmail.com
+License: Apache-2.0
+Keywords: remedy,client,cli
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (==2.28.2)
+
+# bmc-remedy-client
+A REST Client for BMC Remedy ITSM.

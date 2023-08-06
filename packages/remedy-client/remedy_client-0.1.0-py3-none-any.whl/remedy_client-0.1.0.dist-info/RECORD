@@ -1,0 +1,8 @@
+remedy/__init__.py,sha256=MJarBLHH6Dgq4yQ1m4y6W-KBACgH18qxjkyloBw1PRM,33
+remedy/exceptions.py,sha256=SdfR7C3zeNVjrJhDqtOByz2PM1bT4pZwIoahMBqm8tg,147
+remedy/remedy.py,sha256=prfBpKyMJyNYKHvrRkodLeWTbDGdw-s2ss5Gz2Hfc2o,4006
+remedy_client-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+remedy_client-0.1.0.dist-info/METADATA,sha256=gB0AzNQiRXixbJfMUzz2Dud5htlU8l7E5PsxcpiQ-MM,559
+remedy_client-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+remedy_client-0.1.0.dist-info/top_level.txt,sha256=L6d8B35CVrihF0rZj95DXjBV4d_JUnRDoPND2BAd1vU,7
+remedy_client-0.1.0.dist-info/RECORD,,
