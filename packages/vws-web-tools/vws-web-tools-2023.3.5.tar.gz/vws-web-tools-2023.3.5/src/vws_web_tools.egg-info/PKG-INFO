@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: vws-web-tools
+Version: 2023.3.5
+Summary: Tools for interacting with the Vuforia Web Services (VWS) website.
+Author-email: Adam Dangoor <adamdangoor@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2020 VWS-Python
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Source, https://github.com/VWS-Python/vws-web-tools
+Keywords: vuforia,vws
+Classifier: Operating System :: POSIX
+Classifier: Environment :: Web Environment
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Pytest
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+License-File: LICENSE
+
+|Build Status| |codecov| |PyPI| |Documentation Status|
+
+VWS-Web-Tools
+=============
+
+Tools for interacting with the VWS (Vuforia Web Services) website.
+
+Installation
+------------
+
+.. code:: sh
+
+   pip install vws-web-tools
+
+This is tested on Python 3.11+.
+
+Usage
+-----
+
+.. code:: sh
+
+   export VWS_EMAIL_ADDRESS=[YOUR-EMAIL]
+   export VWS_PASSWORD=[YOUR-PASSWORD]
+   export TIME=(date +%s%N | cut -b1-13)
+
+   vws-web-tools \
+     create-vws-license \
+     --license-name my-licence-$TIME && \
+   vws-web-tools \
+     create-vws-database \
+     --license-name my-licence-$TIME  \
+     --database-name my-database-$TIME && \
+   vws-web-tools show-database-details \
+     --database-name my-database-$TIME
+
+.. |Build Status| image:: https://github.com/VWS-Python/vws-web-tools/workflows/CI/badge.svg
+   :target: https://github.com/VWS-Python/vws-web-tools/actions
+.. |codecov| image:: https://codecov.io/gh/VWS-Python/vws-web-tools/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/VWS-Python/vws-web-tools
+.. |Documentation Status| image:: https://readthedocs.org/projects/vws-web-tools/badge/?version=latest
+   :target: https://vws-web-tools.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
+.. |PyPI| image:: https://badge.fury.io/py/VWS-Web-Tools.svg
+   :target: https://badge.fury.io/py/VWS-Web-Tools
