@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Ddnet/Ddnet.py
+Ddnet/__init__.py
+Ddnet.egg-info/PKG-INFO
+Ddnet.egg-info/SOURCES.txt
+Ddnet.egg-info/dependency_links.txt
+Ddnet.egg-info/requires.txt
+Ddnet.egg-info/top_level.txt
