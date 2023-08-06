@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Mbgdregressor/Mbgdregressor.py
+Mbgdregressor/__init__.py
+Mbgdregressor.egg-info/PKG-INFO
+Mbgdregressor.egg-info/SOURCES.txt
+Mbgdregressor.egg-info/dependency_links.txt
+Mbgdregressor.egg-info/top_level.txt
