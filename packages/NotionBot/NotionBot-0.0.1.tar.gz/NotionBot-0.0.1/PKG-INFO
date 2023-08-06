@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: NotionBot
+Version: 0.0.1
+Summary: Wrapper around Notion API.
+Home-page: https://github.com/quan0715/PyNotion
+Author: Quan
+Author-email: quan787887@gmail.com
+License: license.txt
+Description: UNKNOWN
+Platform: UNKNOWN
