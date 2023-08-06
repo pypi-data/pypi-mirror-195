@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+LegacyVersion/LegacyCode.py
+LegacyVersion/__init__.py
+LegacyVersion.egg-info/PKG-INFO
+LegacyVersion.egg-info/SOURCES.txt
+LegacyVersion.egg-info/dependency_links.txt
+LegacyVersion.egg-info/top_level.txt
