@@ -1,0 +1,11 @@
+open_dev/__init__.py,sha256=6A5aHaFtBxNd-CcSwOchWJPLv8ic73oiX_wsRLS-uxA,121
+open_dev/cli.py,sha256=_-WztJXBF_fWDTtuqWslWDjZ7VKZMizHnUTrrNES7s4,4170
+open_dev/constants.py,sha256=GcKL_2yOJW8XMpEJ9fZwwZ9jT-zp81bfuRrlumiQf9k,689
+open_dev/src/__init__.py,sha256=MypmtUSmWAxl9P_L_vTkj9BO_5y8-LxVGuCKbHxBLhU,39
+open_dev/src/open_dev_repo.py,sha256=t2q745D8USf_LTtS2pgP5uF31mzwTAaIEyrMpA-_Vt4,3400
+open_dev/src/utils.py,sha256=rSCbVtLryNnPAY8rjXc0b0zgLtL72sYzzUHgXJXJMFQ,23
+open_dev-0.1.7.dist-info/LICENSE,sha256=fDWbavyfgKCh7I68UrsHl_xz4CiS3OKgzQWH_0J3xCE,578
+open_dev-0.1.7.dist-info/METADATA,sha256=WRk9MMUq9MsZ8G4eJBsZjDDDd9NsnJJQqjfaEg_P21I,5146
+open_dev-0.1.7.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+open_dev-0.1.7.dist-info/entry_points.txt,sha256=kwoeliGmLq5lPQGhY9N2h0WwHszENCUYRRMmiQ-rB5E,42
+open_dev-0.1.7.dist-info/RECORD,,
