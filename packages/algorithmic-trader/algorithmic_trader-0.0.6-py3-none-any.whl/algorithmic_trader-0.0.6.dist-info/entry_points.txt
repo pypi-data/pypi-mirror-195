@@ -1,0 +1,2 @@
+[console_scripts]
+algo-trader = algotrader.cli.main:initiate_cli
