@@ -1,0 +1,15 @@
+wizata_dsapi/__init__.py,sha256=-1M9mpJOeg3_d4dudk9ilWf5qat6APFPDAXaLb7mnvc,334
+wizata_dsapi/dataframe_toolkit.py,sha256=iUB-el4OR5kU1LJA9ZnQvnWZH534nLl1LWHm7veu4I8,442
+wizata_dsapi/dsapi_json_encoder.py,sha256=Uw-xrLnX6iSmWKzPFIx_sRbs42rD-3x5XEjZMqXA1_c,599
+wizata_dsapi/execution.py,sha256=SesVXcnQ5t2jJdnk9lnTCda_o55i9UnBPYfcx4aquA0,1704
+wizata_dsapi/mlmodel.py,sha256=QzaXUXmV62YIoMxKxDE37CTWZfqqg7w7TQBkOVBLEOc,2291
+wizata_dsapi/model_toolkit.py,sha256=bE4RKnNoMGBT6hJZwmaAadduV7ZWDeyXnDW-MG__aZc,1293
+wizata_dsapi/plot.py,sha256=nqV29jGT4NYL8pk74MylmEnBS6zhRS6bLlB3nQQZvo0,228
+wizata_dsapi/request.py,sha256=R9XKmHriO0FV2TJ4n1WrhEDme17uqf87tZ3gnhFZW-E,3183
+wizata_dsapi/script.py,sha256=9327UhvVhYqJknPnO9mWwnBFOmc8rVJOTGpz_oTPabc,859
+wizata_dsapi/wizata_dsapi_client.py,sha256=Un0s9yVlMK0sYehWp1rKmSMvhElxl5KFYcytd76U_rQ,5785
+wizata_dsapi-0.0.45.dist-info/LICENSE.txt,sha256=WtjCEwlcVzkh1ziO35P2qfVEkLjr87Flro7xlHz3CEY,11556
+wizata_dsapi-0.0.45.dist-info/METADATA,sha256=AyEbjtEk-oD3UXd3V67hS_aU5ulklAb3O8LJdY7nmFc,306
+wizata_dsapi-0.0.45.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+wizata_dsapi-0.0.45.dist-info/top_level.txt,sha256=-OeTJbEnh5DuWyTOHtvw0Dw3LRg3G27TNS6W4ZtfwPs,13
+wizata_dsapi-0.0.45.dist-info/RECORD,,
