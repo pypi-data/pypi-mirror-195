@@ -1,0 +1,24 @@
+preservationdatabase/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+preservationdatabase/cli.py,sha256=LrWVoaMJRr868ayjVgoC9FXXCjoVMKM6N3VarESIZNo,14269
+preservationdatabase/constants.py,sha256=0eEsb_eqDZtJGiTzYu1fU5vsKO0S-y7cEoVo_KeUsAs,660
+preservationdatabase/environment.py,sha256=CnjfmlPY2Jn8UYot3HWS0nQkPsvQNoZEwx3g23Nbz4A,1358
+preservationdatabase/example_settings.py,sha256=6zF9alSLyLTPCmuF5T9Oqv8gExEfUsUax-tGmIDyzok,3450
+preservationdatabase/exporter.py,sha256=oqBFRNis08Tpi64FI7hPmL0zM-jOrMZD7YLwQ9z8PiI,21751
+preservationdatabase/models.py,sha256=U0klziKN2kbWW0pPd5bE45X-TRPxhtrnezY-UQJtm2k,42623
+preservationdatabase/urls.py,sha256=nUmiDtLY-_eH_7JrwxAo1Lq8AaKtZCQxZRFKfLo5WMc,767
+preservationdatabase/utils.py,sha256=bjvbuNtWrnVXR9olEzfy_TT6ELxK7JUr0XxHuJ2Jl6w,20285
+preservationdatabase/output/Preservation_Reports.py,sha256=cpD-cO2_lHXWPBi_EpEQHCz8D5BCimd4oIKwqtnolw0,3984
+preservationdatabase/output/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+preservationdatabase/output/settings.py,sha256=TihRBoHC6kLpOBV2L3O8Auz_w5-3FiqITfWPqzfnIFQ,4740
+preservationdatabase/output/pages/1_📊_Member_Data.py,sha256=1gagW3MmYs2ne-PLru32En1Wlyxcg2bVZSbYA6ia9AQ,4810
+preservationdatabase/output/pages/2_📈_Member Class Data.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+preservationdatabase/output/pages/3_🤓_Data_Validation_Information.py,sha256=e4cLL5Y2AG9GIEf_J8MaxMmLUAd48ykaMh4YnSR4uL8,119
+preservationdatabase/output/pages/4_✅_Grading System.py,sha256=ZqnhPYbauw6Z0eEJuO8s2-VMAdP6U5aemPdzU9ERQ8U,679
+preservationdatabase/output/pages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+preservationdatabase/test_data/tests.jsonl,sha256=hgTHVy3sZa1wMzJvzb9542f9GoSoHPnVrKAqyN1q0nA,888
+preservationdatabase/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+preservationdatabase/tests/test_archives.py,sha256=w4-dr4pLlrlprhf2K--vWOAZKQNOwklzxNdvkj6oe0w,2072
+preservation_database-0.0.69.dist-info/METADATA,sha256=Y87346Core7C_IFEx2Ec4t1xqtmM4ZPEJinSjLOvJiI,5987
+preservation_database-0.0.69.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+preservation_database-0.0.69.dist-info/top_level.txt,sha256=HiII-eq8eD-ug32FAbQaESyhFIi9F5Y4PVY_SiFyQyo,21
+preservation_database-0.0.69.dist-info/RECORD,,
