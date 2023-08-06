@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+Mensajes_Pablohn.egg-info/PKG-INFO
+Mensajes_Pablohn.egg-info/SOURCES.txt
+Mensajes_Pablohn.egg-info/dependency_links.txt
+Mensajes_Pablohn.egg-info/requires.txt
+Mensajes_Pablohn.egg-info/top_level.txt
