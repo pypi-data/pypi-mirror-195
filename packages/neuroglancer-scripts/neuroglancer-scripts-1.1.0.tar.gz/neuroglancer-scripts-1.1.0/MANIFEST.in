@@ -1,0 +1,17 @@
+include LICENCE.txt
+include .coveragerc
+exclude .editorconfig
+include tox.ini
+exclude .pre-commit-config.yaml
+exclude .readthedocs.yaml
+
+prune examples
+prune experimental
+
+recursive-include docs *.rst
+include docs/conf.py
+include docs/Makefile
+prune docs/_build
+
+recursive-include script_tests *.py
+recursive-include unit_tests *.py
