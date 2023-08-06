@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: abie
+Version: 0.8.5
+Summary: Alice-Bob Integrator Environment (ABIE), a GPU-accelerated integrator framework for astrophysical N-body simulations
+Home-page: https://github.com/MovingPlanetsAround/ABIE
+Author: Maxwell X. Cai, Javier Roa, Adrian S. Hamers, Nathan W. C. Leigh
+Author-email: maxwellemail@gmail.com
+License: GPL-3.0
+License-File: LICENSE

@@ -1,0 +1,2 @@
+[console_scripts]
+abie = ABIE.abie:main
