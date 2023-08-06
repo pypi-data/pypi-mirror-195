@@ -1,0 +1,19 @@
+[[avasar]]
+name = "words.blades.background"
+items = [ "academic", "labor", "law", "trade", "military", "noble", "underword",]
+
+[[avasar]]
+name = "words.blades.district"
+items = [ "barrowcleft", "brightstone", "charhollow", "charterhall", "coalridge", "crow’s foot", "the docks", "dunslough", "nightmarket", "silkshore", "six towers", "whitecrown",]
+
+[[avasar]]
+name = "words.blades.heritage"
+items = [ "akoros", "dagger isles", "iruvia", "severos", "skovlan", "tycheros",]
+
+[[avasar]]
+name = "words.blades.playbook"
+items = [ "cutter", "hound", "leech", "lurk", "slide", "spider", "whisper",]
+
+[[avasar]]
+name = "words.blades.vice"
+items = [ "faith", "gambling", "luxuary", "oblication", "pleasure", "stupor", "weird",]
