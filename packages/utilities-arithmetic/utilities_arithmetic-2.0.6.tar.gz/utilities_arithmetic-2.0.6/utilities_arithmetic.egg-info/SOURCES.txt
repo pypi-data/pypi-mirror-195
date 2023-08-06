@@ -1,0 +1,8 @@
+utilities_arithmetic/__init__.py
+utilities_arithmetic/setup.py
+utilities_arithmetic/utilities_arithmetic.py
+utilities_arithmetic.egg-info/PKG-INFO
+utilities_arithmetic.egg-info/SOURCES.txt
+utilities_arithmetic.egg-info/dependency_links.txt
+utilities_arithmetic.egg-info/requires.txt
+utilities_arithmetic.egg-info/top_level.txt
