@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: consoleutil
+Version: 0.0.1
+Summary: Make colored texts, bold, and console functions with color
+Home-page: https://github.com/pypa/sampleproject
+Author: psvks
+Author-email: brofbot@gmail.com
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Install
+
+    To install this awesome library you can do:
+
+    Windows 10/11:
+    ```bat
+        pip3 install consoleutil
+    ```
+
+
+    MacOS or Linux:
+    ```bat
+        python3 install consoleutil
+    ```
+
+
+# Documentation
+
+    Super easy to use. Here some examples
+
+    ```python
+        from consoleutil import console, returns, type_texts
+
+        console.warn("Whats upp")
+        console.error("Yo!!")
+
+        console.info("Whats up my dude")
+
+
+
+        print(type_texts.BOLD(returns.OKBLUE("Whats up dude")))
+    ```
+
+    Its simple, use it if you want i dont mind if you dont
+    
