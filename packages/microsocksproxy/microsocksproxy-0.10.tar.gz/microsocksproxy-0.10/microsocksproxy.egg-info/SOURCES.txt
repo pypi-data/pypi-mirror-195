@@ -1,0 +1,17 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+microsocksproxy/LICENSE
+microsocksproxy/README.MD
+microsocksproxy/__init__.py
+microsocksproxy/cygwin1.dll
+microsocksproxy/microsocks.exe
+microsocksproxy/requirements.txt
+microsocksproxy/thirdparty.json
+microsocksproxy.egg-info/PKG-INFO
+microsocksproxy.egg-info/SOURCES.txt
+microsocksproxy.egg-info/dependency_links.txt
+microsocksproxy.egg-info/requires.txt
+microsocksproxy.egg-info/top_level.txt
