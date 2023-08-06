@@ -1,0 +1,13 @@
+odoo/addons/account_statement_base/README.rst,sha256=_WaIa_ffdlXpAdyVqXkWKBWDZMPlug47Yv_4chZtinQ,3060
+odoo/addons/account_statement_base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/account_statement_base/__manifest__.py,sha256=_nGwYlRtngiG15B_R3SmhmVoxM9Ecj9KPqdalCeUQvE,623
+odoo/addons/account_statement_base/i18n/account_statement_base.pot,sha256=D9CCNeShgaUAiGa72bK2Z4Sn8eOxgtPPcmss5TyjSjs,2205
+odoo/addons/account_statement_base/readme/CONTRIBUTORS.rst,sha256=e8dOgio6UxRss1tsAaHVr97hi-hjTfI5ouj7XQ1JHGE,50
+odoo/addons/account_statement_base/readme/DESCRIPTION.rst,sha256=N1LPOKJt4c3yhq5BsyFvwDKCtynPJ1DGiQ5I0jBEpLY,157
+odoo/addons/account_statement_base/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/account_statement_base/static/description/index.html,sha256=-cE3qmUPAkb8VjbaFcaWlNram1GwJGiaaBWAWDnRWGU,12222
+odoo/addons/account_statement_base/views/account_bank_statement_line.xml,sha256=P3HdeFiAd-8xkABL9l9nM0qhde_kyiETnmQ8MeCEmgA,6120
+odoo_addon_account_statement_base-16.0.1.1.0.dist-info/METADATA,sha256=HSNjMqPAKkuCO7ke5jj9w8OnQmKO5ZIn1F4Jrx-pkg4,3622
+odoo_addon_account_statement_base-16.0.1.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+odoo_addon_account_statement_base-16.0.1.1.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo_addon_account_statement_base-16.0.1.1.0.dist-info/RECORD,,
