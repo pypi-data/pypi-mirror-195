@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: stac-info
+Version: 0.0.1
+Summary: A Python package for STAC info
+License-File: LICENSE
+Requires-Dist: requests
+
