@@ -1,0 +1,7 @@
+qtdatasetviewer/__init__.py,sha256=_ebrPiaja-x4rC3tGj5veUoZQoW53awBAVb1XTNvBrI,224
+qtdatasetviewer/abstract_convert_to_pil.py,sha256=wwD5y_U1zYenLk6kqk2Q8CaM82S417KbdbwBEZJKnL4,514
+qtdatasetviewer/qt_dataset_viewer.py,sha256=39Vl9tVTf9YFIDmzl4KrfgkPmHS2PX9usKkAxQxshPk,7314
+qtdatasetviewer-0.0.4.dist-info/LICENSE,sha256=CXAlg9e4CneYOTMp-7a0ztNUqp2wJwOYW079Fn5gBxE,1064
+qtdatasetviewer-0.0.4.dist-info/METADATA,sha256=iKir8X2F5GEu6MF2yLYPiYosO6Gndz3dIzRPLcPhkS4,1949
+qtdatasetviewer-0.0.4.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+qtdatasetviewer-0.0.4.dist-info/RECORD,,
