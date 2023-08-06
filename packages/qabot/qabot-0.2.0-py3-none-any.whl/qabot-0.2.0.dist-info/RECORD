@@ -1,0 +1,17 @@
+qabot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qabot/agent.py,sha256=KqwOg2D4W4r3bd3DdRj27icGMjRNuj33QvKaPFsZ2fg,4086
+qabot/caching.py,sha256=zLnqwCZctg1_EOTR-6M1UZzKnpQ8YJEtDGICAWw0WDw,744
+qabot/cli.py,sha256=C-agWyW_-rMDsXuXcJndvYlfoOmxVsRn6tHyfWzY4MU,6921
+qabot/config.py,sha256=jZUz4PrRqwgqRWSjDC_nJw7hKsBLUrx3VlZFrUBVdwg,261
+qabot/data_loader_chain.py,sha256=QZCfw3FrD6Fx2A4FVxCldKiuHOEWOhX235QR74zgEBc,1980
+qabot/data_query_chain.py,sha256=d-eVVZCOggbN1nYtzfVyy12EW0JzNpT31L4WjsK4cOU,4099
+qabot/duckdb_documentation.py,sha256=E7ijGKiv74CQXP2RhjtMb7oswYE91Fu2MmiZfP9DW-A,1084
+qabot/duckdb_execute_tool.py,sha256=kElMGtd1ET74mWq3VCk2WuVJd6DObgoSsNlWA_wmOjw,689
+qabot/duckdb_manual_data_loader.py,sha256=Zt6-uq6dqbVyxVSsbHqFXzOFAAf_tJU2Im9q4ocAzpU,2066
+qabot/duckdb_query.py,sha256=Jkv4CTLe3ZNZlnFhi4rGti4KtPWDHXe828__-fi6OfQ,502
+qabot/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qabot/tools/describe_duckdb_table.py,sha256=zyYLrNsVkhzxDX2YOov-KtL9ZkJsuwiwOJRDILXzWs8,243
+qabot-0.2.0.dist-info/METADATA,sha256=b6Ut_DSKFFu4WqQfKSq7FwQNf1qAu2M6nz6yVWPQ5A0,13380
+qabot-0.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+qabot-0.2.0.dist-info/entry_points.txt,sha256=3YCSusEt1IP4sZQqaiwm1ulj3p6jTJDwgZ4l0Fa5UeM,39
+qabot-0.2.0.dist-info/RECORD,,
