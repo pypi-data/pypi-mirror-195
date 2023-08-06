@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: autoacu
+Version: 0.1.0
+Summary: Interpretable and Efficient Automatic Summarization Evaluation Metrics
+Home-page: https://github.com/Yale-LILY/AutoACU
+Provides-Extra: stable
