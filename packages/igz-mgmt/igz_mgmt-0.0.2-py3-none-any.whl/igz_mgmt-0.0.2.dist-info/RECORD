@@ -1,0 +1,17 @@
+igz_mgmt/__init__.py,sha256=hY2Yu2XugTtPFTGlC6WPeqBRw_lhy1c6W3aJfXDUS2s,1972
+igz_mgmt/__version__.py,sha256=apjdNo3lNNAzd2PWJei0GOZ8Ix61l22RDmw1evmG2M4,663
+igz_mgmt/app_services.py,sha256=RHaTrOFpYMiJRZzOBDraMaSXIqZpCiphVoaP45jVKFQ,11316
+igz_mgmt/client.py,sha256=0BYeXQ0yrvVqz7TIca_XChvNx6kohsgtm3mBYJxtHRQ,13485
+igz_mgmt/constants.py,sha256=6dimIEwBJmPT1QKRDGBlKatSXEnffaFNSsKVul-mEac,4705
+igz_mgmt/cruds.py,sha256=qXGAeoL3R-oxJFBxzcOBNPiAIx9LuB5ZpFrpqo0zmjE,5151
+igz_mgmt/exceptions.py,sha256=MuxY1CHuMTut7iIocNLGsclAgy2r1o0G1NKr18hGTkY,1709
+igz_mgmt/operations.py,sha256=_Ay1hYSB81QpHNgbH-fBOQB15eAKtBY0E_jWoU9xeFk,8407
+igz_mgmt/resources.py,sha256=uuPmHfs3MCcWyTxCtdC701tBampvucE0fULDGCCdYPA,36107
+igz_mgmt/common/__init__.py,sha256=R6vEz7SeiHbo3ScPnSeNcGEFejUF_qi8dH645e4cexA,619
+igz_mgmt/common/helpers.py,sha256=SBHjJvKIuGexDXnpRqBqaG2OdZkN8EuyWR9VhAGyJTo,6686
+igz_mgmt/logger/__init__.py,sha256=RdYdo53ZC7ueeTOXrsVSjrUVZw6uTHLUylSAb9HYcOg,669
+igz_mgmt/logger/logger.py,sha256=6pYccPtIruS2wzEqFqbB25uZidJscD4gO3Ff5YSt3dY,3627
+igz_mgmt-0.0.2.dist-info/METADATA,sha256=I_dBmDQY5gf6dCmaoIL4p3TBWAiFm3l53Hdawj5vIg8,1039
+igz_mgmt-0.0.2.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+igz_mgmt-0.0.2.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+igz_mgmt-0.0.2.dist-info/RECORD,,
