@@ -1,0 +1,7 @@
+README.rst
+setup.cfg
+setup.py
+src/pinuccio.egg-info/PKG-INFO
+src/pinuccio.egg-info/SOURCES.txt
+src/pinuccio.egg-info/dependency_links.txt
+src/pinuccio.egg-info/top_level.txt
