@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name='larvaworld'
+version = "0.0.4"
+description='Drosophila larva behavioral analysis and simulation platform'
+authors=[
+    {name='Panagiotis Sakagiannis', email='bagjohn0@gmail.com'}
+]
+license = {file = "LICENSE.txt"}
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+    'pandas',
+    'numpy',
+    'typing-extensions',
+    'PySimpleGUI',
+    'shapely',
+    'imageio',
+    'agentpy',
+#    'box2d-py',
+    'pygame',
+    'argparse',
+    'pint',
+    'matplotlib',
+    'seaborn',
+    'scikit-learn',
+    'scipy',
+    'PyPDF2',
+    'powerlaw',
+    'progressbar',
+    'param',
+    'decorator'
+]
+
+[project.urls]
+# homepage = "https://example.com"
+# documentation = "https://readthedocs.org"
+repository = "https://github.com/nawrotlab/larvaworld"
+
+[project.scripts]
+larvaworld-cli = "larvaworld.cli.main:main"
+larvaworld-gui = "larvaworld.gui.main:main"
+larvaworld-examples = "larvaworld.examples.main:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest"
+]
+box2d = [
+    "box2d-py"
+]
+nengo = [
+    "nengo"
+]
+
+
+[tool.setuptools.package-data]
+"*" = ["*.png", "*.pdf", "*.txt", "*.csv"]
+
+#[tool.poetry.scripts]
+#my_package_cli = 'larvaworld.console:run'

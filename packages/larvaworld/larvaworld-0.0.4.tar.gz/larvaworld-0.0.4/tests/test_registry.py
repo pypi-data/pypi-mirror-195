@@ -1,0 +1,1 @@
+from larvaworld.lib import reg
