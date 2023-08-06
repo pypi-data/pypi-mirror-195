@@ -1,0 +1,9 @@
+nkdv/__init__.py,sha256=FBOkmylhctdt5upaWwencpI_2inKi6CpUQ673k5qrMw,22
+nkdv/compute_nkdv.py,sha256=I4Y5cYyngmrzLZMXt-UVLLQU9X3ov4-EEoL0lRoW45s,2162
+nkdv/nkdv.dll,sha256=qjh9iMlQk89JMjrAP7KIG30RV-sC7exX4ligRdQOg58,2575187
+nkdv/nkdv.py,sha256=iEAQFnO2CjncRlHZWZMdrBIvYWDH5H3eoM6yVSlH5U8,1301
+nkdv-0.0.4.dist-info/LICENSE.txt,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+nkdv-0.0.4.dist-info/METADATA,sha256=KVEUmLFHwJZ0Q-uxck0PoTieRoQNDgdnia0Ycd4IBRs,355
+nkdv-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nkdv-0.0.4.dist-info/top_level.txt,sha256=yIc4ZD7Lr46fbR1aE8dyVfL-Gkh9zwJcnvABXvhVwC0,5
+nkdv-0.0.4.dist-info/RECORD,,
