@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: go-chatgpt
+Version: 0.0.1
+Summary: Quick call to openai chatgpt api web page
+Home-page: https://github.com/RedHeartSecretMan/go_chatgpt
+Author: HaoDaXia
+Author-email: wh18307094479@gmail.com
+License: MIT
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: gradio (==3.20.1)
+Requires-Dist: matplotlib (==3.7.0)
+Requires-Dist: openai (==0.27.0)
+Requires-Dist: setuptools (==65.6.3)
+Requires-Dist: transformers (==4.24.0)
+Requires-Dist: torch (==1.13.1)
+
