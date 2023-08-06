@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+src/ExpdFtpService/__init__.py
+src/ExpdFtpService/connServer.py
+src/ExpdFtpService/download.py
+src/ExpdFtpService/upload.py
+src/ExpdFtpService.egg-info/PKG-INFO
+src/ExpdFtpService.egg-info/SOURCES.txt
+src/ExpdFtpService.egg-info/dependency_links.txt
+src/ExpdFtpService.egg-info/requires.txt
+src/ExpdFtpService.egg-info/top_level.txt
