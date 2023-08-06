@@ -1,0 +1,5 @@
+{% if trace.data.response_data %}
+{% include 'lens/components/codeblock.html' with code=trace.data.response_data only %}
+{% else %}
+{% include 'lens/components/empty_trace.html' with title="No data found" subtitle="This request does not have response data." only %}
+{% endif %}

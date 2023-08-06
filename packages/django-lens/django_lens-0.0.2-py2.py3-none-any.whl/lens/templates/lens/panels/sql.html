@@ -1,0 +1,19 @@
+{% if request.GET.slot == 'summary' %}
+    {% include 'lens/components/sql_summary.html' %}
+{% elif request.GET.slot == 'detail' %}
+    {% include 'lens/components/sql_detail.html' %}
+{% elif trace.sql_traces.exists %}
+<div class="hidden md:flex flex-row font-semibold bg-gray-100 px-6 py-3 text-sm">
+    <div class="w-8/12">SQL</div>
+    <div class="w-1/12">Duration</div>
+    <div class="w-2/12">Time</div>
+    <div class="w-1/12"></div>
+</div>
+<div class="divide-y divide-gray-200 text-sm">
+    {% for trace in trace.sql_traces %}
+        {% include 'lens/components/sql_summary.html' %}
+    {% endfor %}
+</div>
+{% else %}
+    {% include 'lens/components/empty_trace.html' with title="No traces found" subtitle="SQL queries are displayed here." only %}
+{% endif %}

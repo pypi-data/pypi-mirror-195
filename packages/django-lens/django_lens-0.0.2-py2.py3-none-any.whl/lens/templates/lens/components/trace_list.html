@@ -1,0 +1,38 @@
+<div class="divide-y divide-gray-100">
+{% for trace in traces %}
+    <a href="{% url 'lens:trace_detail' trace.request_id %}" class="hover:bg-gray-100 p-3 flex flex-row">
+        <div class="w-1/12">
+            {% include 'lens/components/method.html' with method=trace.data.method only %}
+        </div>
+        <div class="w-8/12">
+            {{ trace.data.path }}
+        </div>
+        <div class="w-1/12">
+            {% include 'lens/components/status.html' with status_code=trace.data.status_code only %}
+        </div>
+        <div class="w-2/12">
+            {{ trace.start_time }}
+        </div>
+    </a>
+{% endfor %}
+</div>
+
+{% if page_obj.has_next %}
+<div id="paginator" class="py-6 text-center">
+    <button
+        class="bg-green-900 py-2 px-4 rounded hover:bg-green-800 text-green-50 shadow-lg"
+        hx-target="#paginator"
+        hx-swap="outerHTML"
+        hx-get="{% url 'lens:trace_list' %}?page={{ page_obj.next_page_number }}"
+        hx-trigger="click">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 2v6h-6" />
+            <path d="M3 12a9 9 0 0 1 15-6.7L21 8" />
+            <path d="M3 22v-6h6" />
+            <path d="M21 12a9 9 0 0 1-15 6.7L3 16" />
+        </svg> Load More
+    </button>
+</div>
+{% endif %}
+</div>
