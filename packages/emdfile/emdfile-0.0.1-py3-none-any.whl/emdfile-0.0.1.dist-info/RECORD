@@ -1,0 +1,10 @@
+tutorials/emd_intro_example.ipynb,sha256=QEz54az6dpZ-m0G5cK2UIVWmrsQH_5-we-u_pxhFS-Y,336331
+tutorials/emd_package_walkthrough.ipynb,sha256=9PBJk6IPfbVk-agQjyoIJ7SRzqV4FBl3RXHoAZWj87M,111978
+tutorials/test_custom_class.py,sha256=fn20xVGUpKGyZSrTxaByLgleTkfB2W37fM2tDPUvPy0,569
+tutorials/sample_custom_class_module/__init__.py,sha256=fMEvGWDaMI5STWyVVyjfIUG5T18cLSNVJUdQaoGCNJY,43
+tutorials/sample_custom_class_module/classes/__init__.py,sha256=Bjk55Uf5nuayBMy73CGsAsc0696J58sPzxWjftzwRaU,44
+tutorials/sample_custom_class_module/classes/my_custom_class.py,sha256=kmcPxq_iFRvXtJapkxh_xKVodYFuq8j2gVEd_yCpywg,1186
+emdfile-0.0.1.dist-info/METADATA,sha256=0XdqfK8Kf8ohOrxKFOVbQHKKCkQk-AHXOlL3E2jS6Xg,1718
+emdfile-0.0.1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+emdfile-0.0.1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+emdfile-0.0.1.dist-info/RECORD,,
