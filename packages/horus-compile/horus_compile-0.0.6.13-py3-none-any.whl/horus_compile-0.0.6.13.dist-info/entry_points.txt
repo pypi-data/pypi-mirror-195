@@ -1,0 +1,3 @@
+[console_scripts]
+horus-compile=horus.compiler.horus_compile:run
+
