@@ -1,0 +1,6 @@
+opentrons
+sbol3
+
+[test]
+pytest<5.0.0
+pytest-cov[all]
