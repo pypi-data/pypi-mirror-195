@@ -1,0 +1,2 @@
+[console_scripts]
+cli-name = src.squaretictactoe.square_tictactoe:main
