@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: sinker
+Version: 0.1.0
+Summary: Synchronize Postgres to Elasticsearch
+License: MIT/Apache-2.0
+Author: Loren Siebert
+Author-email: loren@paradigm.xyz
+Requires-Python: >=3.11,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: elasticsearch (>=8.6.1,<9.0.0)
+Requires-Dist: environs (>=9.5.0,<10.0.0)
+Requires-Dist: psycopg (>=3.1.8,<4.0.0)
+Description-Content-Type: text/markdown
+
+# Sinker: Synchronize Postgres to Elasticsearch
+
+What are you sinking about?
+
+[![CI status](https://github.com/paradigm-operations/sinker/actions/workflows/test.yml/badge.svg)](gh-ci)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![codecov](https://codecov.io/gh/paradigm-operations/sinker/branch/main/graph/badge.svg?token=AIGMBZR0IG)](https://codecov.io/gh/paradigm-operations/sinker)
+
+
+
+
