@@ -1,0 +1,8 @@
+ds78/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ds78/main.py,sha256=bHYMDLZnO0tuvhlyhMH-gUgkK3agfg8sFG1VgjjTfro,1230
+ds78/utils.py,sha256=VdZod0aroU2Kkcvx_HUMv72IYKzCMJfMskBS_knQhRs,23
+ds78/video_duration.py,sha256=6lM4MSThS54FaCYnMgWymPkcxwK-L7yumYCSyzEwFUI,889
+ds78-0.0.8.dist-info/METADATA,sha256=it09dexyEDdUNCj5lq0iSfSnUBrLjrUeiiqYUi-m6Qo,1876
+ds78-0.0.8.dist-info/WHEEL,sha256=UTbu2d3PIo7FtACOQrq825bNtQhldwLx2SG2oh0Fl8Q,88
+ds78-0.0.8.dist-info/entry_points.txt,sha256=vJbA01k5BJFwVMvd7qkKYpKpAq4WK0d5erffRkrdZHo,37
+ds78-0.0.8.dist-info/RECORD,,
