@@ -1,0 +1,8 @@
+LICENSE
+README.md
+main.py
+setup.py
+pypi_package_example_bunyaminergen.egg-info/PKG-INFO
+pypi_package_example_bunyaminergen.egg-info/SOURCES.txt
+pypi_package_example_bunyaminergen.egg-info/dependency_links.txt
+pypi_package_example_bunyaminergen.egg-info/top_level.txt
