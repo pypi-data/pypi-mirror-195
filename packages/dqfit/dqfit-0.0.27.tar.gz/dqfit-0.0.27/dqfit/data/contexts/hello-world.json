@@ -1,0 +1,11 @@
+{
+    "path": [
+        "Patient.gender",
+        "Patient.birthDate",
+        "Condition.recordedDate",
+        "Condition.code",
+        "Condition.subject",
+        "Condition.onset[x]"
+    ],
+    "code": []
+}
