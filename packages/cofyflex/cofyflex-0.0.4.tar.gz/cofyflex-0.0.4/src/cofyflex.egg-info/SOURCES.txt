@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/cofyflex/__init__.py
+src/cofyflex.egg-info/PKG-INFO
+src/cofyflex.egg-info/SOURCES.txt
+src/cofyflex.egg-info/dependency_links.txt
+src/cofyflex.egg-info/requires.txt
+src/cofyflex.egg-info/top_level.txt
+src/cofyflex/price_matrix/__init__.py
