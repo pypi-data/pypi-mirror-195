@@ -1,0 +1,25 @@
+[build-system]
+equires = [ "poetry-core",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "yyxx-game-pkg-dev"
+version = "v2023.03.07.001"
+description = "yyxx game custom module"
+authors = [ "yyxxx-game",]
+license = "MIT"
+homepage = "https://github.com/yuanyou-tech/git-pypi-dev.git"
+repository = "https://github.com/yuanyou-tech/git-pypi-dev.git"
+readme = "README.md"
+classifiers = [ "Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent",]
+[[tool.poetry.packages]]
+include = "yyxx_game_pkg_dev"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+toml = "^0.10.2"
+opentelemetry-api = "^1.16.0"
+opentelemetry-exporter-jaeger = "^1.16.0"
+opentelemetry-sdk = "^1.16.0"
+opentelemetry-instrumentation-requests = "^0.37b0"
+pandas = "^1.5.3"
