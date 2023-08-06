@@ -1,0 +1,3 @@
+[console_scripts]
+farcaster-cli=farcaster_cli.main:start
+
