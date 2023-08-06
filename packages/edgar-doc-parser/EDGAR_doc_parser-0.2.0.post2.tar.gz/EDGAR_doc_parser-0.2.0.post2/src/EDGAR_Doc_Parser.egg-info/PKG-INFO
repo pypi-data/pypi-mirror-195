@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: EDGAR-doc-parser
+Version: 0.2.0.post2
+Summary: Download, extraction, and parsing of documents available through the Securities and Trade Comission's EDGAR database
+Author-email: Kamil Krukowski <Kamil.Krukowski@tufts.edu>, Yiting Li <Yiting.Li@tufts.edu>, Nachuan Zhao <Nachuan.Zhao@tufts.edu>, Kelsey Yew <Kelsey.Yew@tufts.edu>
+Maintainer-email: Kamil Krukowski <Kamil.Krukowski@tufts.edu>
+Project-URL: Homepage, https://github.com/kamilkrukowski/EDGAR-DOC-PARSER
+Project-URL: Bug Tracker, https://github.com/kamilkrukowski/EDGAR-DOC-PARSER/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# EDGAR-DOC-PARSER
+
+## Documentation
+
+For more information read our documentation hosted [here.](https://kamilkrukowski.github.io/EDGAR-DOC-PARSER)
+
+We have a Test Server PyPi Page hosted [here.](https://test.pypi.org/project/EDGAR-Doc-Parser/)
+
+## About
+
+A package for downloading, extracting, parsing, and processing data from SEC-EDGAR, a public online database of all documents filed with the USA's Securities and Exchange Commission.
+
+## Currently Support Filing Types
+
+10-Q
+
+8-K
+
+We plan on expanding the list in future releases
+
+## Quick Start Guide
+
+```
+import edgar
+
+dataloader = edgar.Dataloader(tikrs=['nflx'], document_type='8-K', data_dir='data')
+
+for text_8k in dataloader:
+  #dostuff
+  print(text_8k)
+  break
+```
+
+## Dependencies
+### Conda
+
+To create conda environment for local
+```
+conda create -n edgar -c conda-forge -c anaconda python=3.10 scipy numpy selenium=4.5.0 pyyaml chardet requests lxml pandas
+conda activate edgar
+pip install secedgar==0.4.0 beautifulsoup4 attrs typing-extensions
+```
+
