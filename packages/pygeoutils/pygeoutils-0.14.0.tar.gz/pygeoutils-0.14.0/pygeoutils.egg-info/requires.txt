@@ -1,0 +1,17 @@
+cytoolz
+dask
+geopandas>=0.10
+netcdf4
+numpy>=1.21
+pyproj>=2.2
+rasterio>=1.2
+rioxarray>=0.11
+scipy
+shapely>=2
+ujson
+xarray>=2022.03
+
+[test]
+coverage[toml]
+pytest-cov
+pytest-xdist[psutil]
