@@ -1,0 +1,9 @@
+xia_api/__init__.py,sha256=YtNOzbeGg1bjbqcGJB0p4kNhZ7ijv2YfvLeTmEyZhCA,497
+xia_api/auth_client.cpython-310-darwin.so,sha256=WRJawpnTybyHOQXROEaX8T4kUUY3K-5oPYUmb5G-CXY,218536
+xia_api/message.cpython-310-darwin.so,sha256=BHfsOcgzI1Mg14dir2RN20L8b6V6cpYT1NUiFtxdL84,268856
+xia_api/rest.cpython-310-darwin.so,sha256=MiKpWb6Or2pUecuN4kiP3rSIdnhSs3fXJ4tuu3TM25o,372960
+xia_api-0.1.5.dist-info/LICENSE.txt,sha256=jxznpTpxL7_Twtr8jS9RRvl_XlPmxUkhsj8FdFYTFoY,151
+xia_api-0.1.5.dist-info/METADATA,sha256=qJ-jxBhejP7-QjM5dfaRwyYou_II6KQwBBBNnZwwqcI,636
+xia_api-0.1.5.dist-info/WHEEL,sha256=NsapCMY7EanMRKZsZABtoiyq2rs4aXJ4FKsV_kV91NE,108
+xia_api-0.1.5.dist-info/top_level.txt,sha256=krL7__RbzvbaNfgnuF-oCqAnr2y3Yy6whD8CBZyVXyw,8
+xia_api-0.1.5.dist-info/RECORD,,
