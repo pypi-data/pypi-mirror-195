@@ -1,0 +1,12 @@
+confattr/__init__.py,sha256=SVorOf-pXtGCVVUEKFywd54dcfbPEQa7K446pKaqtbA,917
+confattr/config.py,sha256=wXuIaUr0Jp8v055x2MwXyUN61ZgYB_H6sbXWRV0wTD4,22394
+confattr/configfile.py,sha256=Yg3E29Tn_aJ25saKbw50jwqOlvyxQAn7U6DTHmPEW1o,63644
+confattr/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+confattr/runmodule.sh,sha256=d-Jm57ILIDnPL__wmHKS-sckSrScka_Q7ojJkHOhMIk,142
+confattr/subprocess_pipe.py,sha256=kQvDfThoz4_kewmynS7me_JrvJKVF9YiuySPcfGN020,2176
+confattr/types.py,sha256=BTapo2gyd1t7bQfbwAIuEjTSFA5vzPwP_ZdLhfLcRm0,7005
+confattr/utils.py,sha256=wg29nTSsGBM0_3D1AcA3hxIO-f3kkO0LnUF-UXPGVXY,11553
+confattr-0.9.1.dist-info/LICENSE,sha256=LB4viZx5oTFIra8PUFnAZW1O9GecSS3Covr0qE7W4AQ,657
+confattr-0.9.1.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+confattr-0.9.1.dist-info/METADATA,sha256=Dh0PUUNLt6SbmJSDiL86Xx1qRhzmgthB6QjBh--fT94,947
+confattr-0.9.1.dist-info/RECORD,,
