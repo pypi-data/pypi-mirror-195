@@ -1,0 +1,10 @@
+beat.backend.python>=1.7.12
+docker
+docopt
+graphviz
+jsonschema==3.2
+numpy
+pyzmq
+setuptools
+simplejson
+six
