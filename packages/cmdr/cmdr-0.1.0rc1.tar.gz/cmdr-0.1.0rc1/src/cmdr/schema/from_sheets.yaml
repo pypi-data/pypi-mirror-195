@@ -1,0 +1,125 @@
+classes:
+  Container:
+    from_schema: TEMP
+    slot_usage:
+      materials:
+        inlined: true
+        inlined_as_list: true
+        multivalued: true
+        range: MaterialEntity
+      processes:
+        inlined: true
+        inlined_as_list: true
+        multivalued: true
+        range: Process
+      studies:
+        inlined: true
+        inlined_as_list: true
+        multivalued: true
+        range: Study
+    slots:
+    - processes
+    - materials
+    - studies
+  MaterialEntity:
+    aliases:
+    - Substance
+    - Specimen
+    - Sample
+    - Biospecimen
+    - Biosample
+    description: Physical entity that is an input our output of a process
+    from_schema: TEMP
+    slot_usage:
+      id:
+        identifier: true
+        range: uriorcurie
+    slots:
+    - id
+    - name
+  MaterialProcessing:
+    class_uri: OBI:0000094
+    description: A planned process which results in physical changes in a specified
+      input material
+    from_schema: TEMP
+    is_a: Process
+  Process:
+    abstract: true
+    from_schema: TEMP
+    slot_usage:
+      id:
+        identifier: true
+        range: uriorcurie
+    slots:
+    - id
+  SpecimenCollectionProcess:
+    aliases:
+    - MaterialCollectionProcess
+    class_uri: OBI:0000659
+    description: A planned process with the objective of collecting a specimen
+    from_schema: TEMP
+    is_a: Process
+    slot_usage:
+      has_input:
+        multivalued: true
+        range: MaterialEntity
+      has_output:
+        multivalued: true
+        range: MaterialEntity
+    slots:
+    - has_input
+    - has_output
+  Study:
+    from_schema: TEMP
+    slot_usage:
+      id:
+        identifier: true
+        range: uriorcurie
+      part_of:
+        range: Study
+    slots:
+    - id
+    - name
+    - part_of
+  Subject:
+    aliases:
+    - Site
+    - Participant
+    from_schema: TEMP
+default_prefix: TEMP
+default_range: string
+id: TEMP
+imports:
+- linkml:types
+name: TEMP
+prefixes:
+  OBI: http://purl.obolibrary.org/obo/OBI_
+  RO: http://purl.obolibrary.org/obo/RO_
+  TEMP: https://example.org/TEMP/
+  cmdr: https://w3id.org/linkml/cmdr/
+  linkml: https://w3id.org/linkml/
+  omicsrus: https://example.org/omicsrus/
+  sdo: http://schema.org/
+  wikidata: http://www.wikidata.org/entity/
+slots:
+  has_input:
+    from_schema: TEMP
+  has_output:
+    from_schema: TEMP
+  id:
+    from_schema: TEMP
+  materials:
+    from_schema: TEMP
+  name:
+    from_schema: TEMP
+  part_of:
+    from_schema: TEMP
+  processes:
+    from_schema: TEMP
+  studies:
+    from_schema: TEMP
+subsets:
+  potential_phi:
+    from_schema: TEMP
+  temporal_data:
+    from_schema: TEMP

@@ -1,0 +1,814 @@
+{
+  "name": "cmdr",
+  "description": "Core Model for Data Research (Tentative)",
+  "title": "cmdr",
+  "see_also": [
+    "https://linkml.github.io/cmdr"
+  ],
+  "id": "https://w3id.org/linkml/cmdr",
+  "imports": [
+    "linkml:types",
+    "conservative"
+  ],
+  "license": "MIT",
+  "prefixes": [
+    {
+      "prefix_prefix": "cmdr",
+      "prefix_reference": "https://w3id.org/linkml/cmdr/"
+    },
+    {
+      "prefix_prefix": "linkml",
+      "prefix_reference": "https://w3id.org/linkml/"
+    },
+    {
+      "prefix_prefix": "biolink",
+      "prefix_reference": "https://w3id.org/biolink/"
+    },
+    {
+      "prefix_prefix": "schema",
+      "prefix_reference": "http://schema.org/"
+    },
+    {
+      "prefix_prefix": "PATO",
+      "prefix_reference": "http://purl.obolibrary.org/obo/PATO_"
+    },
+    {
+      "prefix_prefix": "example",
+      "prefix_reference": "https://example.org/"
+    }
+  ],
+  "default_prefix": "cmdr",
+  "default_range": "string",
+  "subsets": [
+    {
+      "name": "potential_phi",
+      "definition_uri": "https://example.org/TEMP/PotentialPhi",
+      "from_schema": "TEMP",
+      "@type": "SubsetDefinition"
+    },
+    {
+      "name": "temporal_data",
+      "definition_uri": "https://example.org/TEMP/TemporalData",
+      "from_schema": "TEMP",
+      "@type": "SubsetDefinition"
+    }
+  ],
+  "types": [
+    {
+      "name": "string",
+      "definition_uri": "https://w3id.org/linkml/String",
+      "description": "A character string",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Text"
+      ],
+      "base": "str",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "integer",
+      "definition_uri": "https://w3id.org/linkml/Integer",
+      "description": "An integer",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Integer"
+      ],
+      "base": "int",
+      "uri": "http://www.w3.org/2001/XMLSchema#integer",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "boolean",
+      "definition_uri": "https://w3id.org/linkml/Boolean",
+      "description": "A binary (true or false) value",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Boolean"
+      ],
+      "base": "Bool",
+      "uri": "http://www.w3.org/2001/XMLSchema#boolean",
+      "repr": "bool",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "float",
+      "definition_uri": "https://w3id.org/linkml/Float",
+      "description": "A real number that conforms to the xsd:float specification",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Float"
+      ],
+      "base": "float",
+      "uri": "http://www.w3.org/2001/XMLSchema#float",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "double",
+      "definition_uri": "https://w3id.org/linkml/Double",
+      "description": "A real number that conforms to the xsd:double specification",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "close_mappings": [
+        "schema:Float"
+      ],
+      "base": "float",
+      "uri": "http://www.w3.org/2001/XMLSchema#double",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "decimal",
+      "definition_uri": "https://w3id.org/linkml/Decimal",
+      "description": "A real number with arbitrary precision that conforms to the xsd:decimal specification",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "broad_mappings": [
+        "schema:Number"
+      ],
+      "base": "Decimal",
+      "uri": "http://www.w3.org/2001/XMLSchema#decimal",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "time",
+      "definition_uri": "https://w3id.org/linkml/Time",
+      "description": "A time object represents a (local) time of day, independent of any particular day",
+      "notes": [
+        "URI is dateTime because OWL reasoners do not work with straight date or time"
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Time"
+      ],
+      "base": "XSDTime",
+      "uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "date",
+      "definition_uri": "https://w3id.org/linkml/Date",
+      "description": "a date (year, month and day) in an idealized calendar",
+      "notes": [
+        "URI is dateTime because OWL reasoners don't work with straight date or time"
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Date"
+      ],
+      "base": "XSDDate",
+      "uri": "http://www.w3.org/2001/XMLSchema#date",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "datetime",
+      "definition_uri": "https://w3id.org/linkml/Datetime",
+      "description": "The combination of a date and time",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:DateTime"
+      ],
+      "base": "XSDDateTime",
+      "uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "date_or_datetime",
+      "definition_uri": "https://w3id.org/linkml/DateOrDatetime",
+      "description": "Either a date or a datetime",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "str",
+      "uri": "https://w3id.org/linkml/DateOrDatetime",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "uriorcurie",
+      "definition_uri": "https://w3id.org/linkml/Uriorcurie",
+      "description": "a URI or a CURIE",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "URIorCURIE",
+      "uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "curie",
+      "definition_uri": "https://w3id.org/linkml/Curie",
+      "conforms_to": "https://www.w3.org/TR/curie/",
+      "description": "a compact URI",
+      "comments": [
+        "in RDF serializations this MUST be expanded to a URI",
+        "in non-RDF serializations MAY be serialized as the compact representation"
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "Curie",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "uri",
+      "definition_uri": "https://w3id.org/linkml/Uri",
+      "conforms_to": "https://www.ietf.org/rfc/rfc3987.txt",
+      "description": "a complete URI",
+      "comments": [
+        "in RDF serializations a slot with range of uri is treated as a literal or type xsd:anyURI unless it is an identifier or a reference to an identifier, in which case it is translated directly to a node"
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "close_mappings": [
+        "schema:URL"
+      ],
+      "base": "URI",
+      "uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "ncname",
+      "definition_uri": "https://w3id.org/linkml/Ncname",
+      "description": "Prefix part of CURIE",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "NCName",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "objectidentifier",
+      "definition_uri": "https://w3id.org/linkml/Objectidentifier",
+      "description": "A URI or CURIE that represents an object in the model.",
+      "comments": [
+        "Used for inheritence and type checking"
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "ElementIdentifier",
+      "uri": "http://www.w3.org/ns/shex#iri",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "nodeidentifier",
+      "definition_uri": "https://w3id.org/linkml/Nodeidentifier",
+      "description": "A URI, CURIE or BNODE that represents a node in a model.",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "NodeIdentifier",
+      "uri": "http://www.w3.org/ns/shex#nonLiteral",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    }
+  ],
+  "slots": [
+    {
+      "name": "birth_date",
+      "definition_uri": "https://example.org/TEMP/birth_date",
+      "from_schema": "TEMP",
+      "slot_uri": "https://example.org/TEMP/birth_date",
+      "owner": "Subject",
+      "domain_of": [
+        "Subject"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "has_input",
+      "definition_uri": "https://example.org/TEMP/has_input",
+      "from_schema": "TEMP",
+      "slot_uri": "https://example.org/TEMP/has_input",
+      "owner": "Sampling",
+      "domain_of": [
+        "Process",
+        "Sampling"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "has_output",
+      "definition_uri": "https://example.org/TEMP/has_output",
+      "from_schema": "TEMP",
+      "slot_uri": "https://example.org/TEMP/has_output",
+      "owner": "Sampling",
+      "domain_of": [
+        "Process",
+        "Sampling"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "has_parent_specimen",
+      "definition_uri": "https://example.org/TEMP/has_parent_specimen",
+      "from_schema": "TEMP",
+      "slot_uri": "https://example.org/TEMP/has_parent_specimen",
+      "owner": "Specimen",
+      "domain_of": [
+        "Specimen"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "has_source",
+      "definition_uri": "https://example.org/TEMP/has_source",
+      "from_schema": "TEMP",
+      "slot_uri": "https://example.org/TEMP/has_source",
+      "owner": "Specimen",
+      "domain_of": [
+        "Specimen"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "is_about",
+      "definition_uri": "https://example.org/TEMP/is_about",
+      "from_schema": "TEMP",
+      "slot_uri": "https://example.org/TEMP/is_about",
+      "owner": "Document",
+      "domain_of": [
+        "Diagnosis",
+        "Document"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "source",
+      "definition_uri": "https://example.org/TEMP/source",
+      "from_schema": "TEMP",
+      "slot_uri": "https://example.org/TEMP/source",
+      "owner": "Diagnosis",
+      "domain_of": [
+        "Diagnosis"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "subjects",
+      "definition_uri": "https://example.org/TEMP/subjects",
+      "from_schema": "TEMP",
+      "slot_uri": "https://example.org/TEMP/subjects",
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "taxon",
+      "definition_uri": "https://example.org/TEMP/taxon",
+      "from_schema": "TEMP",
+      "slot_uri": "https://example.org/TEMP/taxon",
+      "owner": "Subject",
+      "domain_of": [
+        "Subject"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Database_subjects",
+      "definition_uri": "https://example.org/TEMP/subjects",
+      "from_schema": "TEMP",
+      "is_a": "subjects",
+      "domain": "Database",
+      "slot_uri": "https://example.org/TEMP/subjects",
+      "alias": "subjects",
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "subjects",
+      "range": "Subject",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Diagnosis_is_about",
+      "definition_uri": "https://example.org/TEMP/is_about",
+      "from_schema": "TEMP",
+      "is_a": "is_about",
+      "domain": "Diagnosis",
+      "slot_uri": "https://example.org/TEMP/is_about",
+      "alias": "is_about",
+      "owner": "Diagnosis",
+      "domain_of": [
+        "Diagnosis"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "is_about",
+      "range": "Condition",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Diagnosis_source",
+      "definition_uri": "https://example.org/TEMP/source",
+      "from_schema": "TEMP",
+      "is_a": "source",
+      "domain": "Diagnosis",
+      "slot_uri": "https://example.org/TEMP/source",
+      "alias": "source",
+      "owner": "Diagnosis",
+      "domain_of": [
+        "Diagnosis"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "source",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Document_is_about",
+      "definition_uri": "https://example.org/TEMP/is_about",
+      "from_schema": "TEMP",
+      "is_a": "is_about",
+      "domain": "Document",
+      "slot_uri": "https://example.org/TEMP/is_about",
+      "alias": "is_about",
+      "owner": "Document",
+      "domain_of": [
+        "Document"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "is_about",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Process_has_input",
+      "definition_uri": "https://example.org/TEMP/has_input",
+      "from_schema": "TEMP",
+      "is_a": "has_input",
+      "domain": "Process",
+      "slot_uri": "https://example.org/TEMP/has_input",
+      "alias": "has_input",
+      "owner": "Process",
+      "domain_of": [
+        "Process"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "has_input",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Process_has_output",
+      "definition_uri": "https://example.org/TEMP/has_output",
+      "from_schema": "TEMP",
+      "is_a": "has_output",
+      "domain": "Process",
+      "slot_uri": "https://example.org/TEMP/has_output",
+      "alias": "has_output",
+      "owner": "Process",
+      "domain_of": [
+        "Process"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "has_output",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Sampling_has_input",
+      "definition_uri": "https://example.org/TEMP/has_input",
+      "from_schema": "TEMP",
+      "is_a": "has_input",
+      "domain": "Sampling",
+      "slot_uri": "https://example.org/TEMP/has_input",
+      "alias": "has_input",
+      "owner": "Sampling",
+      "domain_of": [
+        "Sampling"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "has_input",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Sampling_has_output",
+      "definition_uri": "https://example.org/TEMP/has_output",
+      "from_schema": "TEMP",
+      "is_a": "has_output",
+      "domain": "Sampling",
+      "slot_uri": "https://example.org/TEMP/has_output",
+      "alias": "has_output",
+      "owner": "Sampling",
+      "domain_of": [
+        "Sampling"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "has_output",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Specimen_has_parent_specimen",
+      "definition_uri": "https://example.org/TEMP/has_parent_specimen",
+      "from_schema": "TEMP",
+      "is_a": "has_parent_specimen",
+      "domain": "Specimen",
+      "slot_uri": "https://example.org/TEMP/has_parent_specimen",
+      "alias": "has_parent_specimen",
+      "owner": "Specimen",
+      "domain_of": [
+        "Specimen"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "has_parent_specimen",
+      "range": "Specimen",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Specimen_has_source",
+      "definition_uri": "https://example.org/TEMP/has_source",
+      "from_schema": "TEMP",
+      "is_a": "has_source",
+      "domain": "Specimen",
+      "slot_uri": "https://example.org/TEMP/has_source",
+      "alias": "has_source",
+      "owner": "Specimen",
+      "domain_of": [
+        "Specimen"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "has_source",
+      "range": "ResearchSubject",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Subject_birth_date",
+      "definition_uri": "https://example.org/TEMP/birth_date",
+      "in_subset": [
+        "potential_phi"
+      ],
+      "from_schema": "TEMP",
+      "is_a": "birth_date",
+      "domain": "Subject",
+      "slot_uri": "https://example.org/TEMP/birth_date",
+      "alias": "birth_date",
+      "owner": "Subject",
+      "domain_of": [
+        "Subject"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "birth_date",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Subject_taxon",
+      "definition_uri": "https://example.org/TEMP/taxon",
+      "from_schema": "TEMP",
+      "is_a": "taxon",
+      "domain": "Subject",
+      "slot_uri": "https://example.org/TEMP/taxon",
+      "alias": "taxon",
+      "owner": "Subject",
+      "domain_of": [
+        "Subject"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "taxon",
+      "range": "string",
+      "@type": "SlotDefinition"
+    }
+  ],
+  "classes": [
+    {
+      "name": "Condition",
+      "definition_uri": "https://example.org/TEMP/Condition",
+      "from_schema": "TEMP",
+      "aliases": [
+        "Disease",
+        "Phenotype"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://example.org/TEMP/Condition",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Database",
+      "definition_uri": "https://example.org/TEMP/Database",
+      "from_schema": "TEMP",
+      "slots": [
+        "Database_subjects"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://example.org/TEMP/Database",
+      "tree_root": true,
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Diagnosis",
+      "definition_uri": "https://example.org/TEMP/Diagnosis",
+      "in_subset": [
+        "temporal_data"
+      ],
+      "from_schema": "TEMP",
+      "is_a": "Information",
+      "slots": [
+        "Diagnosis_is_about",
+        "Diagnosis_source"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://example.org/TEMP/Diagnosis",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Document",
+      "definition_uri": "https://example.org/TEMP/Document",
+      "from_schema": "TEMP",
+      "slots": [
+        "Document_is_about"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://example.org/TEMP/Document",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Event",
+      "definition_uri": "https://example.org/TEMP/Event",
+      "from_schema": "TEMP",
+      "slot_usage": {},
+      "class_uri": "https://example.org/TEMP/Event",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Information",
+      "definition_uri": "https://example.org/TEMP/Information",
+      "from_schema": "TEMP",
+      "slot_usage": {},
+      "class_uri": "https://example.org/TEMP/Information",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "MaterialEntity",
+      "definition_uri": "https://example.org/TEMP/MaterialEntity",
+      "from_schema": "TEMP",
+      "aliases": [
+        "Substance"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://example.org/TEMP/MaterialEntity",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Measurment",
+      "definition_uri": "https://example.org/TEMP/Measurment",
+      "in_subset": [
+        "temporal_data"
+      ],
+      "from_schema": "TEMP",
+      "slot_usage": {},
+      "class_uri": "https://example.org/TEMP/Measurment",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Observation",
+      "definition_uri": "https://example.org/TEMP/Observation",
+      "in_subset": [
+        "temporal_data"
+      ],
+      "from_schema": "TEMP",
+      "slot_usage": {},
+      "class_uri": "https://example.org/TEMP/Observation",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Process",
+      "definition_uri": "https://example.org/TEMP/Process",
+      "from_schema": "TEMP",
+      "slots": [
+        "Process_has_input",
+        "Process_has_output"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://example.org/TEMP/Process",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ResearchProject",
+      "definition_uri": "https://example.org/TEMP/ResearchProject",
+      "from_schema": "TEMP",
+      "slot_usage": {},
+      "class_uri": "https://example.org/TEMP/ResearchProject",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ResearchSubject",
+      "definition_uri": "https://example.org/TEMP/ResearchSubject",
+      "description": "A Subject that has participated in at least on Study",
+      "from_schema": "TEMP",
+      "aliases": [
+        "Participant"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://example.org/TEMP/ResearchSubject",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Sampling",
+      "definition_uri": "https://example.org/TEMP/Sampling",
+      "from_schema": "TEMP",
+      "aliases": [
+        "SpecimenCreation",
+        "SampleCollection"
+      ],
+      "slots": [
+        "Sampling_has_input",
+        "Sampling_has_output"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://example.org/TEMP/Sampling",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Site",
+      "definition_uri": "https://example.org/TEMP/Site",
+      "from_schema": "TEMP",
+      "slot_usage": {},
+      "class_uri": "https://example.org/TEMP/Site",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Specimen",
+      "definition_uri": "https://example.org/TEMP/Specimen",
+      "from_schema": "TEMP",
+      "aliases": [
+        "Sample"
+      ],
+      "slots": [
+        "Specimen_has_source",
+        "Specimen_has_parent_specimen"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://example.org/TEMP/Specimen",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Study",
+      "definition_uri": "https://example.org/TEMP/Study",
+      "description": "the root class of the data model",
+      "from_schema": "TEMP",
+      "slot_usage": {},
+      "class_uri": "https://example.org/TEMP/Study",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Subject",
+      "definition_uri": "https://example.org/TEMP/Subject",
+      "from_schema": "TEMP",
+      "aliases": [
+        "Person",
+        "Organism"
+      ],
+      "is_a": "MaterialEntity",
+      "slots": [
+        "Subject_taxon",
+        "Subject_birth_date"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://example.org/TEMP/Subject",
+      "@type": "ClassDefinition"
+    }
+  ],
+  "metamodel_version": "1.7.0",
+  "source_file": "cmdr.yaml",
+  "source_file_date": "2023-03-06T14:28:28",
+  "source_file_size": 486,
+  "generation_date": "2023-03-06T14:49:43",
+  "@type": "SchemaDefinition",
+  "@context": [
+    "project/jsonld/cmdr.context.jsonld",
+    "https://w3id.org/linkml/types.context.jsonld",
+    "conservative.context.jsonld",
+    {
+      "@base": "https://w3id.org/linkml/cmdr/"
+    }
+  ]
+}
