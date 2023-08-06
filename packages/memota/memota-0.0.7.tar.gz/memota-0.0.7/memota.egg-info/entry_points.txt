@@ -1,0 +1,2 @@
+[console_scripts]
+memota = memota.memota:cli
