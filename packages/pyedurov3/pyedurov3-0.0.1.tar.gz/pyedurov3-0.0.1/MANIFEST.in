@@ -1,0 +1,3 @@
+include pyedurov3/web/*
+include pyedurov3/images/*
+include pyedurov3/system/pyedurov3.service
