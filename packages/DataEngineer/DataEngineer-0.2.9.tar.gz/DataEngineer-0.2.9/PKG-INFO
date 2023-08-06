@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: DataEngineer
+Version: 0.2.9
+Summary: innovata-DataEngineer
+Home-page: https://github.com/innovata/DataEngineer
+Author: innovata sambong
+Author-email: iinnovata@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# DataEngineer
+
+
+### ============================================================
+### Overview
+### ============================================================
+
+MongoDB 를 기반으로 하는 모든 프로젝트를 위한 Database-Package.
