@@ -1,0 +1,7 @@
+setup.py
+gpt_assistant/__init__.py
+gpt_assistant/gpt_assistant.py
+gpt_assistant.egg-info/PKG-INFO
+gpt_assistant.egg-info/SOURCES.txt
+gpt_assistant.egg-info/dependency_links.txt
+gpt_assistant.egg-info/top_level.txt
