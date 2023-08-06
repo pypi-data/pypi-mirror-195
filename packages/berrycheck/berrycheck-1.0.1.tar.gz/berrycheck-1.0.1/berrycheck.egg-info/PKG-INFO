@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: berrycheck
+Version: 1.0.1
+Summary: Fornecer aos usuários uma maneira fácil e acessível de obter cotações atualizadas de várias moedas, incluindo as principais moedas do mundo, para fins de negociação, investimento ou outras finalidades financeiras. Além dos preços de ações das principais empresas brasileiras.
+Home-page: UNKNOWN
+Author: Eduardo de Sousa
+Author-email: eduardosousa1718@gmail.com
+License: MIT License
+Keywords: berry check
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# berrycheck
+ Pacote python de cotacao de moedas e de acoes das principais empresas brasileiras. 
+
+
