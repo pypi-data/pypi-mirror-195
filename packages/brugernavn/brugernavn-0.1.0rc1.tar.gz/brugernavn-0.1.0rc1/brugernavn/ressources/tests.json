@@ -1,0 +1,11 @@
+{
+  "http_error_test(Minecraft)": {
+    "url": "https://api.mojang.com/users/profiles/minecraft/%s",
+    "method": "http_error"
+  },
+  "http_error_test(typeracer)": {
+    "url": "https://data.typeracer.com/pit/profile?user=%s",
+    "method": "keyword_error",
+    "keyword": "We couldn't find a profile for username"
+  }
+}
