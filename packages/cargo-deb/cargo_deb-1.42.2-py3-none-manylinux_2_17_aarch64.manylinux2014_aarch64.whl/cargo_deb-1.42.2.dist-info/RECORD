@@ -1,0 +1,4 @@
+cargo_deb-1.42.2.dist-info/METADATA,sha256=Aer4IHIon19WG82xeRGIln5xsFUnbHkHlBtzaqc9GrU,12306
+cargo_deb-1.42.2.dist-info/WHEEL,sha256=EBQE_vNFh5106Dk796uZY2WZmmpolOoJquZK1l5srVU,130
+cargo_deb-1.42.2.data/scripts/cargo-deb,sha256=ABX7ycwqBaCmCNA9R8ECHsuDcX67o2lB84Tb-ppiBck,5370904
+cargo_deb-1.42.2.dist-info/RECORD,,
