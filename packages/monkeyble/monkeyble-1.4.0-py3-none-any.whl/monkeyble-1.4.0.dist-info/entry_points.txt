@@ -1,0 +1,3 @@
+[console_scripts]
+monkeyble=monkeyble.cli.monkeyble_cli:main
+
