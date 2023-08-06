@@ -1,0 +1,89 @@
+New features
+============
+The main changes in this version are performance improvement in various
+fields:
+- dictionary and set objects
+- function arguments parsing
+- attribute resolution
+
+A first version of a synthesizer demo is also included in the gallery.
+
+Implementation
+==============
+- rewrite zip implementation
+- use make_js_iterator in list.$factory
+- change implementation of dict views. Related to issue #2153. Store key hash
+  in a list d._hashes so that iteration on items provides it: for eg
+  `d1.update(d2)`, avoids having to compute hash of d2 keys again
+- improve error reporting for async functions. Related to issue #2158.
+- improve speed of dict literal creation: use dict.$literal() instead of
+  dict.$factory; compute hash of constants at translation time.
+- change internal API for function calls and arguments parsing:
+  - keyword arguments passed as `{$kw: [kwargs,...double_star]}` instead of
+    `{$nat: 'kw', kw:...}`
+  - inside function body, replace
+    `locals = $B.args(fname, argcount, slots, varnames, args, defaults, vararg, kwarg)`
+    by `$B.args0(f, argcount, slots, args)`. Missing arguments are taken from
+    f attributes
+  - add a parameter `nb_posonly` to $B.args; don't add "/" in varnames when it
+    is present in function definition; adapt the core scripts that call
+    $B.args with positional-only parameters
+- add missing __qualname__ to builtin classes
+- set name of lambda function to "<lambda>". Adapt run_tests.html.
+- replace _b_.isinstance by $B.$isinstance to avoid checking arguments
+- if a function doesn't expect arguments, don't use $B.args in function body
+  if no argument is passed
+- check if string literals have special characters at translation time, not at
+  runtime
+- speed improvement in management functions that accept a variable kwarg
+  ("def f(**kwarg): ..."): use a wrapper around a JS object instead of a
+  "real" Python dictionary. Adapt the core scripts.
+- for performance, implement attribute __dict__ of objects as a wrapper around
+  a JS object instead of a Python dictionary
+
+Internal tools
+==============
+- in generation of unicode_tables.js, replace "var" by "const" to avoid
+  leaking variable names
+- add pyproject.toml and long_description.md to use build for distribution of
+  Brython on PyPI
+
+Bug fixes
+=========
+- bug for hash of string subclasses
+- various bugs for dicts, detected by Lib/test/test_dict.py
+- fix bugs in / improve speed of set implementation, detected with
+  Lib/test/test_set.py
+- bug if "async for" has an "else" clause
+- bugs in number literals
+- tokenizer does not throw SyntaxError for code like "0xfor" (interpreted as
+  "0xf", then "or")
+- fix typo in bytes.removesuffix
+
+Issues
+- #2155 : ord() behavior on multi-character strings
+
+Brython site
+============
+- rewrite programs (in tests/unittests) that run tests in Lib/test, using a
+  web worker so that the result for each method is shown in the page as soon
+  as it has been run
+
+Github site
+===========
+
+
+Demos
+=====
+- new synthesizer demo in the gallery
+
+Standard distribution
+=====================
+- add __repr__ to sys._version_info
+- in _webworker.js, don't include brython_stdlib.js in the list of scripts to
+  load if it is not loaded in the HTML page
+- in module time, use window.performance for time.perf_counter
+
+Documentation
+=============
+
