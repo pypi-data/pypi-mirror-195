@@ -1,0 +1,10 @@
+cli/__init__.py,sha256=EC4J1WCRNbur19qU-_rvaR6FXNDwZwpfyqCichJKmVQ,23
+cli/command.py,sha256=Db0i14JqM2A31zeK3EkMhZ6dY7cb_h3r00nnZacHnKk,1358
+cli/core.py,sha256=kTafuaQCRGi-RNCk5sgx4blc1J7VhS55LOGSlb1iQ5M,3424
+cli/main.py,sha256=eytaJxTXeSKKeQuX8iS9wUJecJuCl_SlG6PrUcOM8Bc,1483
+chatgpt_cli_tool-1.2.0.dist-info/LICENSE,sha256=96mlX3y_liKaVUh_AUOAmmTzk0smCQTWO8yzk8zQ21c,1094
+chatgpt_cli_tool-1.2.0.dist-info/METADATA,sha256=ANUWQ9k0KoHYYoAc-Uvh2btfr12Ommx_pfBagiQ9o9A,2566
+chatgpt_cli_tool-1.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+chatgpt_cli_tool-1.2.0.dist-info/entry_points.txt,sha256=IDZC59cBl5eSvyt_xhi9EGJJPxt8pvGMXMJMCLP240M,71
+chatgpt_cli_tool-1.2.0.dist-info/top_level.txt,sha256=2ImG917oaVHlm0nP9oJE-Qrgs-fq_fGWgba2H1f8fpE,4
+chatgpt_cli_tool-1.2.0.dist-info/RECORD,,
