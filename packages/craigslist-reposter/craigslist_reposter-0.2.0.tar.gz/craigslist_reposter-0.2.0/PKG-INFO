@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: craigslist_reposter
+Version: 0.2.0
+Summary: A package for renewing and reposting posts on craigslist.com.
+Author: porkyc
+Project-URL: Homepage, https://github.com/porkyc/craigslist-reposter
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# craigslist-reposter
+
+## Simple automation of craigslist listing renewal and reposting:
+
+- Selenium to access craigslist.com, IMAPClient package to authenticate login
+- User information is imported from environment variables
+- Pings an optional Discord webhook when reposts are completed
+
+## Installation
+
+```shell
+git clone https://github.com/PorkyC/craigslist-reposter.git
+cd craigslist-reposter
+pip install -r requirements.txt
+```
+
+## Usage
+
+1. Set environment variables (e.g. for Windows)
+
+```shell
+SETX CL_USER craigslist_login@gmail.com
+SETX CL_PASS craigslistpassword123
+SETX CL_EMAIL_PASS gmailpassword123
+
+# Optional: if using a webhook:
+SETX DISCORD_WEBHOOK discord.com/webhook-address
+```
+
+2. Change CLICK_TYPE in craigslist.py depending on whether script is running on Windows or Mac
+
+```python
+# CLICK_TYPE configures which key is used to open the post in a new tab
+CLICK_TYPE = Keys.COMMAND # Use this if you are on a Mac
+CLICK_TYPE = Keys.CONTROL # Use this if you are on a PC
+```
+
+3. Set maximum days a post can be active before reposting, and imap address in reposter.py
+
+```python
+# MAX_POST_DAYS configures the maximum number of days after posting before reposting
+MAX_POST_DAYS = 11
+
+# IMAP_SERVER for email provider, default for gmail
+IMAP_SERVER = 'imap.gmail.com'
+```
+
+4. Run reposter.py (can also be scheduled, e.g. Launchd on MacOS) with arg[1]: max reposts allowed and arg[2]: max renewals allowed. 
+
+```shell
+python3 reposter.py 3 8
+
+```
+
+## TODO:
+
+- Improve repost process so that no additional configuration needed between MacOS and Windows
+- ~~Save and reload Selenium browser session to reduce new logins and verifications~~ Added 1/14/2023
+- Filter verification emails by subject 
