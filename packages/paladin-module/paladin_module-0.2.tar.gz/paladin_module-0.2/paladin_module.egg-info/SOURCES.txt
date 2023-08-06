@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+main_module/__init__.py
+main_module/paladin_module.py
+paladin_module.egg-info/PKG-INFO
+paladin_module.egg-info/SOURCES.txt
+paladin_module.egg-info/dependency_links.txt
+paladin_module.egg-info/top_level.txt
