@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+lunaticpypi/__init__.py
+lunaticpypi/lunaticpypi.py
+lunaticpypi.egg-info/PKG-INFO
+lunaticpypi.egg-info/SOURCES.txt
+lunaticpypi.egg-info/dependency_links.txt
+lunaticpypi.egg-info/top_level.txt
