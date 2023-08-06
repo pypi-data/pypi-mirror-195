@@ -1,0 +1,8 @@
+common_fate_schema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+common_fate_schema/provider/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+common_fate_schema/provider/v1alpha1.py,sha256=fDtgfoUC23NVWwLLbRztAbQscEev7NgPUVko0DGLgBw,1817
+common_fate_schema/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+common_fate_schema/tests/v1alpha1_test.py,sha256=tpY8GNrAxoOS5wpBYfqczvoKPRlV99Venzx3WMivVaI,1210
+common_fate_schema-0.2.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+common_fate_schema-0.2.0.dist-info/METADATA,sha256=1xaUpmhHhyzEXm3UU57OSpEpCT-C1iA8F3pCi6b-wfg,565
+common_fate_schema-0.2.0.dist-info/RECORD,,
