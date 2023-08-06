@@ -1,0 +1,12 @@
+nbimports/__init__.py,sha256=4IKw-wiIRoteISzElH8VpTgU54_j0SYnYW-6SaKpKiY,81
+nbimports/__main__.py,sha256=SoJAehtb8HsB7s75OU3FAxyk8DMecPAmG13HEWAXJVc,68
+nbimports/cli.py,sha256=9BHWTyWqW0Rq8TBiMV6OVOyks4rxPxD1I9JYnnW31RI,2697
+nbimports/constants.py,sha256=U531-IFDvQRWIXpcwKuxS6Q7jMZrUAa-lBFmagEvnAE,40
+nbimports/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nbimports/templates/jinja.py,sha256=-boG_wxz18O4GjDB-tDFFiWOgZEBpkNwbMt0PBIsiFQ,311
+nbimports-0.0.2.dist-info/LICENSE,sha256=2Np9c8225SFWfmxwsLUJ2XOY3uJr6YpL4Vyj59IQTiM,1062
+nbimports-0.0.2.dist-info/METADATA,sha256=iHboNin2SaSo0llD8DF3qicP4UWQs6xPx_YbMWxZWks,1995
+nbimports-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+nbimports-0.0.2.dist-info/entry_points.txt,sha256=1OhAooQlZTo2QRWoTGCFcJrEmHmvuJKey-cLIVxKuZA,53
+nbimports-0.0.2.dist-info/top_level.txt,sha256=bJ5-StonuT5iJP6s-GjC8QKYLF4KQ_LvrmJsXr3iYZM,10
+nbimports-0.0.2.dist-info/RECORD,,
