@@ -1,0 +1,13 @@
+tts_arranger/__init__.py,sha256=C67TDZYB_PJxPHQM3qcadbR7fBfi5_HGCt5AzKhUaE0,48
+tts_arranger/example.py,sha256=OJMAk2jDAzdiwRqNUNHH8T8yIUEAZI9BJ1cggmujwS0,490
+tts_arranger/tts_arranger.py,sha256=m9uaAkYHgIaMwn9KFZRl_82v1vZPdmyvZI5akw_01Xo,28543
+tts_arranger/data/replace,sha256=rqDeMEh_6GFeJyP5zm48-TRb-jxEfDbdqePCNp2GikI,182
+tts_arranger/data/replace_de,sha256=duUC3k-iimxUrzQmpC_L3gngnKuL419bFNr7OkBQ__I,13
+tts_arranger/data/replace_en,sha256=Dwn4XMDSokXlyMfFCFLMFRrebO3R0WXFpe1lCCg7_zI,79
+tts_arranger/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tts_arranger/utils/audio.py,sha256=scToL_L3Q_JFY_dq8bTg7PivWeL7elqc9ii_vjkeJ2w,613
+tts_arranger/utils/log.py,sha256=upRbbmVKLseW0tyuS8sCdzq0ytc3uwEhDJsr-THevBk,685
+tts_arranger-0.0.3.dist-info/METADATA,sha256=GcDRuKdT5SCw03YhmaG_PqhPWBf9PQlpz84RHH5REi4,1263
+tts_arranger-0.0.3.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+tts_arranger-0.0.3.dist-info/licenses/LICENSE,sha256=hZGLWCVhatXi6M8dkR7s7nXla4fZWm8CwkIvxjtC1dM,1067
+tts_arranger-0.0.3.dist-info/RECORD,,
