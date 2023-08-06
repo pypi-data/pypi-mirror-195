@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+ShellChat.egg-info/PKG-INFO
+ShellChat.egg-info/SOURCES.txt
+ShellChat.egg-info/dependency_links.txt
+ShellChat.egg-info/entry_points.txt
+ShellChat.egg-info/top_level.txt
+shellchat/__init__.py
+shellchat/__main__.py
+shellchat/search_handler.py
