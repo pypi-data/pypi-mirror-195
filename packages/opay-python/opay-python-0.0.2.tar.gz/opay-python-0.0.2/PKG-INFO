@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: opay-python
+Version: 0.0.2
+Summary: A Python client for OPay API
+Author-email: isaacrobert33 <isaacrobertoluwaseun@gmail.com>
+Project-URL: Homepage, https://github.com/isaacrobert33/OPay-python
+Project-URL: Bug Tracker, https://github.com/isaacrobert33/OPay-python/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Opay Python Library
+
+The OPay Python library provides convenient access to the OPay merchant API from
+applications written in the Python language. It includes a pre-defined set of
+classes for API resources that initialize themselves dynamically from API
+responses which makes the OPay resources easily accessed and enhances 
+transaction ease via the OPay API.
+

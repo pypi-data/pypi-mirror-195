@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/opay-python/__init__.py
+src/opay-python/opay_client.py
+src/opay-python/util.py
+src/opay_python.egg-info/PKG-INFO
+src/opay_python.egg-info/SOURCES.txt
+src/opay_python.egg-info/dependency_links.txt
+src/opay_python.egg-info/top_level.txt
