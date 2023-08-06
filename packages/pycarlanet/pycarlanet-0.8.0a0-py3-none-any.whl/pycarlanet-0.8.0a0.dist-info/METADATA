@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pycarlanet
+Version: 0.8.0a0
+Summary: Carla and Omnet++ co-simulation library
+Home-page: UNKNOWN
+Author: Valerio Cislaghi, Christian Quadri
+License: MIT
+Project-URL: Source, https://github.com/jaivra/pycarlanet
+Platform: UNKNOWN
+Requires-Dist: carla (==0.9.13)
+Requires-Dist: pyzmq (==23.2.1)
+
+UNKNOWN
+
+
