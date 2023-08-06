@@ -1,0 +1,12 @@
+microsocksproxy/LICENSE,sha256=D1zl09NUYVPZHBZlhxMZqm8KZZpk4NpBqWdZAI_v5AU,1090
+microsocksproxy/README.MD,sha256=ry---2x0X31d-bBwiOahVFZw2lV9UBZSlvR4vAIsf3Y,1528
+microsocksproxy/__init__.py,sha256=WJl-ObMgG8VeYuufSwviP6JU4cavcssttvqeO6xUv3I,6812
+microsocksproxy/cygwin1.dll,sha256=HypV71Pzywm2ODTWnbbTIBQa7c5nyE9lFHDFPpS3XvI,2953269
+microsocksproxy/microsocks.exe,sha256=eMis3nEGs1RX1Ct9OBSB9UbGLCh_2jSLIO8i6pcqwHs,86347
+microsocksproxy/requirements.txt,sha256=W_KjfE22StY4KVOCRriPnZzsSupaUle0zPUFwAxdiV0,36
+microsocksproxy/thirdparty.json,sha256=T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU,2
+microsocksproxy-0.10.dist-info/LICENSE.rst,sha256=57krgYrI6h5a_2WXQgGcjWo8PExV4ONSi1SPUj9Jk1g,1148
+microsocksproxy-0.10.dist-info/METADATA,sha256=nsa0HuRDWMrh8EZRgFLBnJSCIpa_M8kWMa3JySuW5oU,2548
+microsocksproxy-0.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+microsocksproxy-0.10.dist-info/top_level.txt,sha256=8U98z6k_D1oXp7DEsrlH5aJAzpBZyJY7kV94hQQoZyc,16
+microsocksproxy-0.10.dist-info/RECORD,,
