@@ -1,0 +1,8 @@
+build:
+python3 -m build
+
+publish:
+python3 -m twine upload dist/*
+
+  >> username: vincent2303
+  >> password: check dashlane
