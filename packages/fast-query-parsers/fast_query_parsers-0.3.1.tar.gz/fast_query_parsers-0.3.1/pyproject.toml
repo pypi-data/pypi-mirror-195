@@ -1,0 +1,61 @@
+[tool.poetry]
+name = "fast-query-parsers"
+version = "0.3.1"
+description = "Ultra-fast query string and url-encoded form-data parsers"
+authors = ["Na'aman Hirschfeld <nhirschfeld@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "src"}]
+
+[project]
+name = "fast-query-parsers"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Web Environment",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python",
+    "Programming Language :: Rust",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development",
+    "Typing :: Typed",
+]
+
+homepage = "https://github.com/starlite-api/fast-query-parsers"
+documentation = "https://github.com/starlite-api/fast-query-parsers/README.md"
+repository = "https://github.com/starlite-api/fast-query-parsers"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+maturin = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pyperf = "*"
+
+[build-system]
+requires = ["maturin>=0.13,<0.14"]
+build-backend = "maturin"
+
+[tool.black]
+line-length = 120
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.pycln]
+all = true
+
+[tool.maturin]
+sdist-include = ["Cargo.lock"]
+strip = true
