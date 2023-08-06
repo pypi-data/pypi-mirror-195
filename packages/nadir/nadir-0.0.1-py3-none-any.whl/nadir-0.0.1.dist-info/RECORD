@@ -1,0 +1,14 @@
+nadir/__init__.py,sha256=QCzjCjFVHQmzs21-3WvI3l5RPZ_k4uEsqmYtwBaBnyI,1411
+nadir/adadelta.py,sha256=cwzMtGMYRND9drMq40HZyDqZJ_6KU8QsaDAKZJGzwzo,1812
+nadir/adagrad.py,sha256=_AtBQhKHu7SLGcf3Mot0qRGx-aR4wZQXJt8r_b9wmis,1410
+nadir/adam.py,sha256=xmjwow_-TtO12DYOlYds6FXLOySRFCvoUsvgV67q7to,1424
+nadir/adamax.py,sha256=VZxWwWkqOZGaAPm3uvwvNap-Mzln7LgaAps8jZu0FuQ,1648
+nadir/base.py,sha256=u6Qq_CU2p1TzavE6t2WRMYEAwr_3ZpDP_HqpIxppBkA,3865
+nadir/momentum.py,sha256=CB9999GjE6LXaWiLWcQlcRPt4tD0MuTM7WaQAkCAu0M,1211
+nadir/rmsprop.py,sha256=CrEmlmMFS-jU_FGW7JyX3nfiMdo15nU335Dp-IhdxE4,1232
+nadir/sgd.py,sha256=r_i63hdnvAeLNV7ZiFYMz0mvHykbKxcAksu-hK23ZQY,949
+nadir-0.0.1.dist-info/LICENCE,sha256=mfLJfCLeN2c-DnSWgMgvkQUSZWD9jL4J55qdetspS8Q,11344
+nadir-0.0.1.dist-info/METADATA,sha256=RHjQnPK3QGQCSPSIqUeQGPR9x1SCBEOpPUJwIqIs5rM,3341
+nadir-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+nadir-0.0.1.dist-info/top_level.txt,sha256=7yytCQw6jOM83-5OogmlCu-LaZtQu7bH0r5m-i5tBJw,6
+nadir-0.0.1.dist-info/RECORD,,
