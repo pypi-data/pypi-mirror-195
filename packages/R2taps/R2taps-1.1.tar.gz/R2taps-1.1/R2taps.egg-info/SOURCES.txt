@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.cfg
+setup.py
+R2taps/__init__.py
+R2taps.egg-info/PKG-INFO
+R2taps.egg-info/SOURCES.txt
+R2taps.egg-info/dependency_links.txt
+R2taps.egg-info/top_level.txt
