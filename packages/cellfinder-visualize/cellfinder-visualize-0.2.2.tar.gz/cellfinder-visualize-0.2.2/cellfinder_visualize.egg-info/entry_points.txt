@@ -1,0 +1,2 @@
+[console_scripts]
+cellfinder_visualize = cellfinder_visualize.main:main
