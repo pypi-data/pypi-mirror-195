@@ -1,0 +1,10 @@
+README.md,sha256=b-UaDK9XVlOLQrdRCly0B7nB5zQE8kdl2A3ljZP7Eeg,771
+cmdr/_version.py,sha256=JFaNlp2ZrNwZgHwds5m7YEKlfcpiPA7uLIEFMog7VmU,185
+cmdr/datamodel/__init__.py,sha256=qoIVLIYxhy6GVcdff5usTRbNFCoQHbPzH0tivvmtoK0,20
+cmdr/datamodel/cmdr.py,sha256=nEtAR0knEzAyrfU6jvy6fr3uFA_YgG42O_bARPjEI-U,11876
+cmdr/schema/cmdr.yaml,sha256=UzamVzTUThlemEVdFaP5tGB27QrypM2KAUEgJzLbajs,485
+cmdr/schema/from_sheets.yaml,sha256=4GqxrWhQhhhVuED32kp0-Mgb1erPTYpKIPdzavMPEvA,2580
+cmdr-0.1.0rc1.dist-info/LICENSE,sha256=E6fY-3_q6bbGgF5aSYp9caF3b60kyBP6anNU9JdckdA,1075
+cmdr-0.1.0rc1.dist-info/METADATA,sha256=m3ypfc6q_EWfFQ94T9uYEfSl8JuYCfU4PUBYTx8GR3g,1377
+cmdr-0.1.0rc1.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+cmdr-0.1.0rc1.dist-info/RECORD,,
