@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: idaly
+Version: 1.0.1
+Summary: An industrial data augmentation library 
+Author: chenking
+Author-email: 
+Keywords: python,data augmentation,industrial big data
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+IdaLy is a data augmentation library for industrial data.
+You can use any methods of industrial data augmentation in your python file by installing our library.
+You can also download the platform(Idap, an executable file) to finish augmentation task conveniently.
