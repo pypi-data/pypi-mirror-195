@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pychatgpt-cli
+Version: 0.0.2
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: openai (>=0.27.0)
+Requires-Dist: rich
+
