@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+flexivit_pytorch/__init__.py
+flexivit_pytorch/flexivit.py
+flexivit_pytorch/patch_embed.py
+flexivit_pytorch/utils.py
+flexivit_pytorch.egg-info/PKG-INFO
+flexivit_pytorch.egg-info/SOURCES.txt
+flexivit_pytorch.egg-info/dependency_links.txt
+flexivit_pytorch.egg-info/requires.txt
+flexivit_pytorch.egg-info/top_level.txt
