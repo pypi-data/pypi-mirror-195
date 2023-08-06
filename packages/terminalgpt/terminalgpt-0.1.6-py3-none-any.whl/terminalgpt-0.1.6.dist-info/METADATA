@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: terminalgpt
+Version: 0.1.6
+Summary: AI chat asistent in your terminal powered by OpenAI GPT-3.5
+Keywords: ai,chat,terminal,openai,gpt3,chatGPT,assistant,gpt3.5,terminalGPT
+Author: Adam Yodinsky
+Author-email: 27074934+adamyodinsky@users.noreply.github.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: colorama (>=0.4.6,<0.5.0)
+Requires-Dist: openai (>=0.27.0,<0.28.0)
+Requires-Dist: tiktoken (>=0.2.0,<0.3.0)
+Description-Content-Type: text/markdown
+
+
