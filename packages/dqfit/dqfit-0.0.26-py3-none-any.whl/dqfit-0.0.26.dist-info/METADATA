@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: dqfit
+Version: 0.0.26
+Summary: Data Quality Fitness Index Tool
+Author: Parker Holcomb
+Project-URL: Homepage, https://github.com/healthdataqualityorg/dqfit
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# DQFIT Init
