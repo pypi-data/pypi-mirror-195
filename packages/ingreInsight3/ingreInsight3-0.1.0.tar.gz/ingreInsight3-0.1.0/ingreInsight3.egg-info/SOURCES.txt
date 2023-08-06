@@ -1,0 +1,7 @@
+appCode.py
+setup.py
+ingreInsight3.egg-info/PKG-INFO
+ingreInsight3.egg-info/SOURCES.txt
+ingreInsight3.egg-info/dependency_links.txt
+ingreInsight3.egg-info/requires.txt
+ingreInsight3.egg-info/top_level.txt

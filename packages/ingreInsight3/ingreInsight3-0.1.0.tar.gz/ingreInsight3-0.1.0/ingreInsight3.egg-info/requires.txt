@@ -1,0 +1,4 @@
+pyzbar
+tenacity
+openai
+openfoodfacts
