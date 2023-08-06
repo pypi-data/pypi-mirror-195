@@ -1,0 +1,10 @@
+rest_api_supporter/__init__.py,sha256=aWwcBK_xsA-Z5RNfOcT5wpe9ewr6Si0rMZ6wXodV8J0,42
+rest_api_supporter/servers/__init__.py,sha256=sFoeSqBJg8BnCG1ftQhZOOAJxYdAQnv91-OFw5iAc3I,91
+rest_api_supporter/servers/flask_rest_api_server.py,sha256=yACEbz1hV0tM-vxgqhcJDEr0T5vizZOY_x4iPHpmsaA,4102
+rest_api_supporter/utils/__init__.py,sha256=jucCk6pCMdq4ORs-ChWcOWPpakW7TPsn5rR87rP0410,122
+rest_api_supporter/utils/image_to_base64.py,sha256=s-V9ExzXtSPu-_tM1KuM_wR6L1Pi6wgaz4oOhPFOZ0s,292
+rest_api_supporter/utils/query.py,sha256=pvSC8B5X6Fa9Z1eb6IRXBiLAn8_BGv9iU1onO_8gYEQ,220
+rest_api_supporter-0.0.1.dist-info/METADATA,sha256=9iNdBSFKIC5qCSTZJljyhnhCItZnNnzCI7pTMBc0RQk,668
+rest_api_supporter-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+rest_api_supporter-0.0.1.dist-info/top_level.txt,sha256=KxzsN5j61VyXkkULNXZ7bZ6jYz9WZ5DRUnAeYEuUKMc,19
+rest_api_supporter-0.0.1.dist-info/RECORD,,
