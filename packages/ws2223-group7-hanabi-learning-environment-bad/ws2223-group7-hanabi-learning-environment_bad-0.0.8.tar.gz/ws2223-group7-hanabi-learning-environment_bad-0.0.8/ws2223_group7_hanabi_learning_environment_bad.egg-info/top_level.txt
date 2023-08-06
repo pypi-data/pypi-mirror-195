@@ -1,0 +1,4 @@
+bad
+hanabi_learning_environment
+main
+tests
