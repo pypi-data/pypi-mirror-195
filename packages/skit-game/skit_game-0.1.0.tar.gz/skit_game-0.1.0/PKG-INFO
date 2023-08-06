@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: skit-game
+Version: 0.1.0
+Summary: A tool for prototyping card games
+License: MIT
+Author: Matt Cooper
+Author-email: vtbassmatt@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pillow (>=9.4.0,<10.0.0)
+Description-Content-Type: text/markdown
+
+# Skit
+
+A tool for prototyping card games.
+
+Inspired by [squib][squib], but I could never quite get my head around Ruby.
+
+[squib]: https://github.com/andymeneely/squib
+
