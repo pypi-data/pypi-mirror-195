@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: panqec
+Version: 0.1.6
+Summary: Simulation and visualization of quantum error correcting codes
+Home-page: http://github.com/panqec/panqec
+Author: Eric Huang
+License: MIT
+License-File: LICENSE
