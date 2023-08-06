@@ -1,0 +1,10 @@
+README.md
+setup.py
+chromatics/__init__.py
+chromatics/chromatogram.py
+chromatics/peaks.py
+chromatics.egg-info/PKG-INFO
+chromatics.egg-info/SOURCES.txt
+chromatics.egg-info/dependency_links.txt
+chromatics.egg-info/requires.txt
+chromatics.egg-info/top_level.txt
