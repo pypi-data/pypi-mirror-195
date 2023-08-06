@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: lml-lab3
+Version: 0.0.1
+Summary: Practice package publishing
+Home-page: https://github.com/lukemlawley/lml-lab3
+Author: Luke Lawley
+Author-email: lukmlawl@vols.utk.edu
+License: MIT license
+Keywords: lml_lab3
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# lml-lab3
+
+
+[![image](https://img.shields.io/pypi/v/lml-lab3.svg)](https://pypi.python.org/pypi/lml-lab3)
+[![image](https://img.shields.io/conda/vn/conda-forge/lml-lab3.svg)](https://anaconda.org/conda-forge/lml-lab3)
+
+
+**Practice package publishing**
+
+
+-   Free software: MIT license
+-   Documentation: https://lukemlawley.github.io/lml-lab3
+    
+
+## Features
+
+-   TODO
+
+## Credits
+
+This package was created with [Cookiecutter](https://github.com/cookiecutter/cookiecutter) and the [giswqs/pypackage](https://github.com/giswqs/pypackage) project template.
