@@ -1,0 +1,15 @@
+eo_kit-0.1.3.dist-info/METADATA,sha256=I3dT7UCTlAHOpl0Nhcku8yup3yOL5sfwjNM8bj_IqQY,1077
+eo_kit-0.1.3.dist-info/WHEEL,sha256=iAsCsjMT7NINBudiRgYxcBed2kxhSnCClmzDZHQx-U0,145
+eo_kit-0.1.3.dist-info/license_files/LICENSE,sha256=l7SFKMvGoUTFwhOaWTGtCX8DfIXpicHe5mwfkmXRjpY,1079
+EOkit/array_utils.py,sha256=HmTLOhDnk2phSC8MyD1ps-YmUlluWL1p_YTwuLww7sI,270
+EOkit/gaussian_processes.py,sha256=2JegrO1zVaVj87XBUVJAMKhucmn8YfcMKiv9j1KSJRo,7749
+EOkit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+EOkit/smoothers/whittaker.py,sha256=CSfeWKUvTfJrUqBp_Faj7jkG5Rk6at35_Y51g4Yr_bI,6077
+EOkit/smoothers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+EOkit/smoothers/sav_golay.py,sha256=kSfVa-B0AGtwZWJCdrYUYSL8Wmg61F6r3qrmb88-4Us,5442
+EOkit/EOkit/__init__.py,sha256=6T2QoYxNyEr-kgyc40R87nLcHnJ79xBleNI0-gyAQ6I,361
+EOkit/EOkit/ffi.py,sha256=T1ZtL44XECiQ2Cb6CHuNl-uYVnwJOm6l-HQESOlcbOg,1493
+EOkit/EOkit/__init__.py,sha256=hsVZR7agC05B2LKh1o3-Xj95Uziyiy2NP0_kS0aEM4k,136
+EOkit/EOkit/ffi.py,sha256=T1ZtL44XECiQ2Cb6CHuNl-uYVnwJOm6l-HQESOlcbOg,1493
+EOkit/EOkit/native.so,sha256=zyIu9akerLpFSQDae6oRSpW6fmE6tHc9GLd8IjH0CoM,2061259
+eo_kit-0.1.3.dist-info/RECORD,,
