@@ -1,0 +1,16 @@
+click
+click-log
+pbr
+requests
+
+[develop]
+black
+pylint
+twine
+
+[test]
+pyfakefs
+pypandoc
+pytest
+pytest-mock
+responses
