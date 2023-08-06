@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "syracuse"
+version = "0.1.0"
+description = "The Syracuse problem (aka Collatz conjecture) library"
+license = "MIT"
+authors = ["devfred78 <97401939+devfred78@users.noreply.github.com>"]
+readme = "README.md"
+classifiers = [
+	"Development Status :: 3 - Alpha",
+	"Operating System :: OS Independent",
+	"Intended Audience :: Education",
+	"Topic :: Scientific/Engineering :: Mathematics"
+]
+
+[tool.poetry.dependencies]
+python = "~3.11"
+networkx = {extras = ["default"], version = "^3.0"}
+matplotlib = "~3.6"
+numpy = "~1.24"
+
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.4.2"
+mkdocstrings = {extras = ["python"], version = "^0.20.0"}
+mkdocs-material = "^9.0.12"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
