@@ -1,0 +1,16 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/undate/__init__.py
+src/undate/undate.py
+src/undate.egg-info/PKG-INFO
+src/undate.egg-info/SOURCES.txt
+src/undate.egg-info/dependency_links.txt
+src/undate.egg-info/requires.txt
+src/undate.egg-info/top_level.txt
+src/undate/dateformat/__init__.py
+src/undate/dateformat/base.py
+src/undate/dateformat/iso8601.py
+tests/test_undate.py
