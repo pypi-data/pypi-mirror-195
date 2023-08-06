@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: cylibs
+Version: 1.3.2
+Summary: Python libraries by ChihYing
+Home-page: https://gitlab.com/chihyinglin/cylibs
+Author: ChihYing_Lin
+Author-email: 
+License: MIT
+Description: # cylibs
+        
+        My python libraries
+        
+        [![pipeline status](https://gitlab.com/chihyinglin/cylibs/badges/main/pipeline.svg)](https://gitlab.com/chihyinglin/cylibs/-/commits/main)
+        [![coverage report](https://gitlab.com/chihyinglin/cylibs/badges/main/coverage.svg)](https://gitlab.com/chihyinglin/cylibs/-/commits/main)
+        
+        ## Modules
+        - [RwLock](https://gitlab.com/chihyinglin/cylibs/-/blob/main/doc/RwLock.md)
+          - A Python Reader-Writer lock.
+        - [SharePoint](https://gitlab.com/chihyinglin/cylibs/-/blob/main/doc/SharePoint.md)
+          - A SharePoint library to do List/Download/Upload/Delete.
+        
+        ### Install
+        1. `pip install cylibs`
+        2. download latest version from https://pypi.org/project/cylibs
+        
+Keywords: cylibs
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
