@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: iotcore
+Version: 0.0.7
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# iot-core
+
+## Demo
+```
+import iotcore
+
+iotcore.mqtt_sample(
+    server = "mqtt.eclipseprojects.io",
+    sub_topic = "sub/iotcore",
+    pub_topic = "pub/iotcore",
+    port = 1883
+)
+```
+
+## Develop
+
+```
+pip3 install -r requirements.txt
+maturin develop
+maturin sdist
+twine upload target/wheels/*
+```
+
+## Release
+
+Update `version` in `Cargo.toml`
+
+```
+maturin sdist
+twine upload target/wheels/*
+```
