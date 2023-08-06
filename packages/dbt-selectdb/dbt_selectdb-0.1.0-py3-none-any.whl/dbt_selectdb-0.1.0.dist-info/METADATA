@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dbt-selectdb
+Version: 0.1.0
+Summary: The selectdb adapter plugin for dbt, Original code fork from Apache Doris
+Home-page: https://github.com/selectdb/dbt-selectdb.git
+Author: catpineapple,JNSimba
+Author-email: 1391869588@qq.com
+Requires-Python: >=3.8,<=3.10
+Requires-Dist: dbt-core (~=1.3.0)
+Requires-Dist: mysql-connector-python (<8.1,>=8.0.0)
+
+The selectdb adapter plugin for dbt, Original code fork from Apache Doris
