@@ -1,0 +1,10 @@
+README.md
+license.txt
+setup.py
+cool/__init__.py
+cool/add_num.py
+crmixc_automator.egg-info/PKG-INFO
+crmixc_automator.egg-info/SOURCES.txt
+crmixc_automator.egg-info/dependency_links.txt
+crmixc_automator.egg-info/requires.txt
+crmixc_automator.egg-info/top_level.txt
