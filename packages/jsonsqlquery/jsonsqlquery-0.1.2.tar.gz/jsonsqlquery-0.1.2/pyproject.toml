@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "jsonsqlquery"
+version = "0.1.2"
+description = "Query JSON using SQL"
+authors = ["Peter Byfield <byfield554@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+mypy = "^1.0.1"
+pytest = "^7.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+jsonsqlquery = 'jsonsqlquery.cli:main'
