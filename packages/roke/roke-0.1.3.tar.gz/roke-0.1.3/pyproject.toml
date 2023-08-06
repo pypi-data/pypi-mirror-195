@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "roke"
+version = "0.1.3"
+description = "A library to name and identify things"
+authors = ["Roberto Alsina <roberto.alsina@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/ralsina/roke"
+packages = [{ include = "roke" }]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+click = "^8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.3"
+flake8 = "^3.7.9"
+black = "^19.10b0"
+mypy = "^0.761"
+flake8-builtins = "^1.4.2"
+flake8-blind-except = "^0.1.1"
+flake8-logging-format = "^0.6.0"
+flakehell = "^0.3.3"
+hypothesis = "^5.6.0"
+pre-commit = "^3"
+
+[tool.poetry.scripts]
+roke = 'roke:main'
+
+[tool.black]
+line-length = 88
+target-version = ['py36']
+
+[tool.flakehell]
+# make output nice
+format = "grouped"
+# show line of source code in output
+show_source = true
+application-import-names = "roke"
+
+[tool.flakehell.plugins]
+# include everything in pyflakes except E501
+pyflakes = ["+*", "-E501"]
+flake8-blind-except = ["+*"]
+flake8-builtins = ["+*"]
+flake8-logging-format = ["+*"]
+mccabe = ["+*"]
+pycodestyle = ["+*"]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
