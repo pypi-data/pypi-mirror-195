@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: uadatasdk
+Version: 0.0.2
+Summary: Widening data acquisition program
+Home-page: UNKNOWN
+Author: 
+Author-email: 
+License: Apache License v2
+Description: ## 调用方法
+        
+        ### 安装方法
+        
+        ```shell
+        # 首次安装
+        pip install uadatasdk
+        
+        
+        ```
+        
+        
+        ### 使用方法
+        
+        ```python
+        import uadatasdk
+        
+        # 登录认证
+        uadatasdk.auth(username, password)
+        
+        # 获取数据
+        uadatasdk.get_price("AG2301.XSHE", start_date="2022-11-01", end_date="2023-01-01")
+        ```
+        ```
+        #获取所有交易日
+        uadatasdk.get_all_trade_days()
+        
+        #获取指定日期范围内的所有交易日
+        #statr_date和count不能都为空,二选一
+        uadatasdk.get_trade_days(start_date=None, end_date=None, count=None)
+        
+        #获取某期货品种在策略当前日期的可交易合约标的列表
+        uadatasdk.get_future_contracts(underlying_symbol, date=None)
+        
+        #获取主力合约对应的标的
+        uadatasdk.get_dominant_future(underlying_symbol, date=None)
+        
+        #补全合约
+        uadatasdk.normalize_code(code)
+        
+        #获取合约的futures_sett_price和 open_interest
+        uadatasdk.get_extras(fields, security, start_date=None, end_date=None, count=None)
+        
+        #获取合约的起始结束时间,name和display_name
+        uadatasdk.get_security_info(code, date=None)
+        ```
+        
+        ###例子
+        ```angular2html
+        auth('name','password')
+        data = uadatasdk.get_all_securities('2023-01-21')
+        
+        data = uadatasdk.get_price(['AG2301.XSGE','AG2302.XSGE'],count=5,end_date='2023-01-31',fields=["open","close"])
+        
+        data = uadatasdk.get_all_trade_days()
+        
+        
+        data = uadatasdk.get_trade_days(count='5',end_date='2022-12-30')
+        
+        
+        data =uadatasdk.get_future_contracts('ag',)
+        
+        
+        data = uadatasdk.get_dominant_future('ag','2022-12-21')
+        
+        
+        data = uadatasdk.normalize_code('a2303')
+        
+        
+        data = uadatasdk.get_extras('futures_sett_price',['AG2301.XSGE','AG2302.XSGE'],count=5,end_date='2022-12-30')
+        
+        data = uadatasdk.get_security_info('AG2301.XSGE')
+        
+        ```
+Platform: all
+Classifier: Programming Language :: Python
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown

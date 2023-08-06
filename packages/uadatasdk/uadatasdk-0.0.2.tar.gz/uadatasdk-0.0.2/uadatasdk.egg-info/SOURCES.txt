@@ -1,0 +1,8 @@
+README.md
+setup.py
+uadatasdk.egg-info/PKG-INFO
+uadatasdk.egg-info/SOURCES.txt
+uadatasdk.egg-info/dependency_links.txt
+uadatasdk.egg-info/not-zip-safe
+uadatasdk.egg-info/requires.txt
+uadatasdk.egg-info/top_level.txt
