@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pycrypto-tali"
+version = "0.3.0"
+description = "CLI Mensajeria encriptada"
+authors = ["Kevin Barroso <kevin.barroso@taligent.com.ar>"]
+readme = "README.md"
+packages = [{ include = "cli"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+cryptography = "39"
+pyperclip = "1.8.2"
+typer = {extras = ["all"], version = "^0.7.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pct = 'cli.index:main'
