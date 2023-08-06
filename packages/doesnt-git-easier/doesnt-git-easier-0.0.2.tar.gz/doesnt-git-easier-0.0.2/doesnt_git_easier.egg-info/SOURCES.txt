@@ -1,0 +1,11 @@
+README.md
+setup.py
+doesnt_git_easier/__init__.py
+doesnt_git_easier/commit.py
+doesnt_git_easier/config.py
+doesnt_git_easier/file.py
+doesnt_git_easier.egg-info/PKG-INFO
+doesnt_git_easier.egg-info/SOURCES.txt
+doesnt_git_easier.egg-info/dependency_links.txt
+doesnt_git_easier.egg-info/requires.txt
+doesnt_git_easier.egg-info/top_level.txt
