@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: comgra
+Version: 0.9.0
+Summary: A package for analyzing computation graphs
+Home-page: https://github.com/FlorianDietz/comgra
+Author: Florian Dietz
+Author-email: Florian Dietz <floriandietz44@gmail.com>
+Project-URL: Homepage, https://github.com/FlorianDietz/comgra
+Project-URL: Bug Tracker, https://github.com/FlorianDietz/comgra/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# comgra
+
+
+## Installation instructions
+
+(Much of the below is not necessary after all, if you use a website instead of jupyter to display things.)
+(Likewise some requirements are probably unnecessary)
+(TODO: Clean these up once I am sure whether or not to use jupyter for visualization after all)
+(TODO: make two requirements files. One for recording and one for displaying.)
+
+Install nodejs.
+
+jupyter nbextension install --sys-prefix --symlink --py jupyter_dash
+jupyter nbextension enable jupyter_dash
+jupyter labextension link extensions/jupyterlab
+jupyter serverextension enable jupyter_server_proxy
+
+jupyter lab build
