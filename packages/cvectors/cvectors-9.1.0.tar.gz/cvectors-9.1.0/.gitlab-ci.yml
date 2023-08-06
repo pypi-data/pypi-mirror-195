@@ -1,0 +1,12 @@
+image: python:latest
+
+before_script:
+    - pip install tox
+    - pip install .
+    - pip show cvectors
+
+run tests:
+    only:
+        - master
+    script:
+        - tox
