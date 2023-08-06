@@ -1,0 +1,27 @@
+{% extends 'base.j2' %}
+{% block extra_css %}<link rel="stylesheet" href="/static/css/chan.css"/>{% endblock %}
+{% block title %}{{ chan }}{% endblock %}
+{% block content %}
+<h1>{{ chan }} top threads</h1>
+<table>
+<thead>
+    <tr>
+        <th>title</th>
+        <th>time_ago</th>
+        <th>timestamp</th>
+        <th>posts</th>
+        <th>board</th>
+    </tr>
+</thead>
+<tbody>
+{% for thread in threads %}
+    <tr>
+        <th><a href='{{ thread.url }}'>{{ thread.title }}</a></th>
+        <th>{{ thread.timestamp | format_time }}</th>
+        <th>{{ thread.posts_count }}</th>
+        <th>{{ thread.board }}</th>
+    </tr>
+{% endfor%}
+</tbody>
+</table>
+{% endblock %}
