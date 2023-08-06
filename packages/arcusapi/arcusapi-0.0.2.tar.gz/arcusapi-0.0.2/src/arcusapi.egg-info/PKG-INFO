@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: arcusapi
+Version: 0.0.2
+Summary: Arcus Data Exchange Client SDK.
+Author-email: "Arcus Inc." <sdk@arcus.co>
+Project-URL: Homepage, https://www.arcus.co
+Project-URL: Documentation, https://app.arcus.co/docs
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: ~=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Arcus Data Exchange Client SDK
+
+www.arcus.co
