@@ -1,0 +1,9 @@
+hyperopt>=0.2.5
+pyod>=1.0.7
+emmv>=0.0.4
+mlflow>=1.0.0
+
+[dev]
+isort
+black
+build
