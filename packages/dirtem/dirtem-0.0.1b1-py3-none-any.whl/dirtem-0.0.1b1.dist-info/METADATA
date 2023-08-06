@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: dirtem
+Version: 0.0.1b1
+Summary: Directory Template
+License: MIT
+Keywords: directory,file,file system,template
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Filesystems
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: loguru
+Requires-Dist: tomli-w
+Requires-Dist: wcmatch
+Requires-Dist: tomli (>=1.1.0) ; python_version < "3.11"
+Provides-Extra: docs
+Requires-Dist: furo ; extra == 'docs'
+Requires-Dist: Sphinx ; extra == 'docs'
+Requires-Dist: sphinx-copybutton ; extra == 'docs'
+
+dirtem
+======
+
+`dirtem` is a library and command-line tool to copy a directory by adding variable information.
+`jinja` is used as a temlate engine.
+
+
+Links
+-----
+
+* [Documentation](https://phoenixr-codes.github.io/dirtem)
+* [Repository](https://github.com/phoenixr-codes/dirtem)
+* [PyPI](https://pypi.org/project/dirtem)
+
+
+ToDo
+----
+
+* [ ] add support for every config option
+* [ ] add CLI
+* [ ] selecting by path, NOT BY directory/file name
