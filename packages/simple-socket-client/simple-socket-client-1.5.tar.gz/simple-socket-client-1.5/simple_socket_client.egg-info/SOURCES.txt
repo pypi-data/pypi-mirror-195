@@ -1,0 +1,12 @@
+LICENSE.md
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+simple_socket_client/__init__.py
+simple_socket_client.egg-info/PKG-INFO
+simple_socket_client.egg-info/SOURCES.txt
+simple_socket_client.egg-info/dependency_links.txt
+simple_socket_client.egg-info/not-zip-safe
+simple_socket_client.egg-info/requires.txt
+simple_socket_client.egg-info/top_level.txt

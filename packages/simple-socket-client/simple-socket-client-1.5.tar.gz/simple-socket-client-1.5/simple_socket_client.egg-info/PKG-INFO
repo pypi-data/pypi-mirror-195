@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: simple-socket-client
+Version: 1.5
+Summary: Simple TCP socket client
+Home-page: https://github.com/webtoucher/simple-socket-client
+Author: Alexey Kuznetsov
+Author-email: mirakuru@webtoucher.ru
+License: BSD-3-Clause
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# Simple TCP socket client
+
+![License](https://img.shields.io/badge/License-BSD%203--Clause-green)
+[![Downloads](https://img.shields.io/pypi/dm/simple-socket-client.svg?color=orange)](https://pypi.python.org/pypi/simple-socket-client)
+[![Latest Version](https://img.shields.io/pypi/v/simple-socket-client.svg)](https://pypi.python.org/pypi/simple-socket-client)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/simple-socket-client.svg)](https://pypi.python.org/pypi/simple-socket-client)
+
+## Installation
+
+Install it with pip:
+
+```shell
+$ pip install simple-socket-client
+```
+
+Or you can add it as dependency in requirements.txt file of your python application:
+
+```
+simple-socket-client~=1.5
+```
+
+## Usage
+
+```python
+from simple_socket_client import SimpleSocketClient
+
+client = SimpleSocketClient('192.168.0.2', 6666)
+client.connect(timeout=10)
+
+client.send('Test'.encode()) # if you don't need an answer
+answer = client.ask('Hi!'.encode())
+print(answer.decode())
+
+client.disconnect()
+```
