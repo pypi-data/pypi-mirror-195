@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+bin/cgmhc
+cgmhc/__init__.py
+cgmhc/extract.py
+cgmhc/flanking.py
+cgmhc/main.py
+cgmhc/samfile.py
+cgmhc/score.py
+cgmhc.egg-info/PKG-INFO
+cgmhc.egg-info/SOURCES.txt
+cgmhc.egg-info/dependency_links.txt
+cgmhc.egg-info/top_level.txt
