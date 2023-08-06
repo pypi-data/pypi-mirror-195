@@ -1,0 +1,2 @@
+[console_scripts]
+pbcpg-pipeline = pbcpg_pipeline.pbcpg_pipeline:main
