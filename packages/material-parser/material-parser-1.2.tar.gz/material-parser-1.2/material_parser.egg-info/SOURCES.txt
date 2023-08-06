@@ -1,0 +1,6 @@
+setup.py
+material_parser.egg-info/PKG-INFO
+material_parser.egg-info/SOURCES.txt
+material_parser.egg-info/dependency_links.txt
+material_parser.egg-info/not-zip-safe
+material_parser.egg-info/top_level.txt
