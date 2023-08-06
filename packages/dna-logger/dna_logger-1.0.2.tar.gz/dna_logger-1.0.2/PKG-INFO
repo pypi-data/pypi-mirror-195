@@ -1,0 +1,185 @@
+Metadata-Version: 2.1
+Name: dna_logger
+Version: 1.0.2
+Summary: Data and Analytics Logging Module
+Home-page: UNKNOWN
+Author: Vishal Periyasamy Rajendran
+Author-email: vishalrv1904@gmail.com
+License: UNKNOWN
+Description: # dna_logger
+        Common Python Logging Module for data and analytics applications.
+        
+        # Usage
+        Install newest version of the dna_logger using
+        
+        ``` pip install dna-logger ```
+        
+        # Logging Format
+        ```
+        {
+            "timestamp": DateTime[ISO8601 format],
+            "message": string,
+            "level": string,
+            "exception": {
+                "message": string,
+                "type": string,
+                "stackTrace": string(recommended)
+            }(optional),
+            "context": {
+                "traceld": string(recommended),
+                "executionld": string(recommended),
+                "codeVersion": string(recommended),
+                "lineNumber": string(optional),
+                "methodName": string(optional),
+                "fileName": string(optional),
+                "applicationName": string(recommended),
+                "*": string(optional)
+            }
+        }
+        ```
+        
+        # Script example:
+        
+        ```
+        from dna_logger import logger
+        
+        log = logger.get_instance('test', "INFO", "2.0")
+        
+        log.info('Testing Module')
+        ```
+        
+        # Log Example
+        ```
+        {
+        	"timestamp": "2023-03-02T15:50:18.155Z",
+        	"level": "INFO",
+        	"message": "Test status",
+        	"context": {
+        		"traceId": "1cf8d889-058d-4736-8b36-e242f69e2130",
+        		"applicationName": "test",
+        		"codeVersion": "2.0",
+        		"fileName": "test_log.py",
+        		"methodName": "test_application_name",
+        		"lineNumber": "32"
+        	}
+        }
+        ```
+        
+        # Test Command (Local Dev):
+        ```
+        python -m unittest discover .
+        ```
+        
+        # Data analytics logging module
+        
+        ### dna_logger.logger.get_instance(name: str, level: str, code_version: str)
+        
+        * Used to create singleton logger instance for the application.
+        * Accepts application name as the mandatory input.
+        * Optionally accepts log level as input, default as INFO.
+        * Possible log levels are INFO, DEBUG, ERROR, WARNING, FATAL.
+        * Optionally accepts code_version as input, default as 1.0.
+        
+        ```
+        from dna_logger import logger
+        log = logger.get_instance('test', "INFO", "2.0")
+        ```
+        
+        ### log.info(message: object)
+        * Used to log the message with log level as INFO.
+        ```
+        log.info('info log example')
+        ```
+        
+        ### log.debug(message: object)
+        * Used to log the message with log level as DEBUG.
+        ```
+        log.debug('debug log example')
+        ```
+        
+        ### log.error(message: object)
+        * Used to log the message with log level as ERROR.
+        ```
+        log.error('error log example')
+        ```
+        
+        ### log.error(message: object, exception: Exception)
+        * Used to log the message with log level as ERROR.
+        * Will add aditional exception block with message, error type and stacktrace.
+        ```
+        # ex -> Exception object
+        log.error('error log example', ex)
+        ```
+        
+        ### log.warn(message: object)
+        * Used to log the message with log level as WARN.
+        ```
+        log.warn('warn log example')
+        ```
+        
+        ### log.fatal(message: object)
+        * Used to log the message with log level as FATAL.
+        ```
+        log.fatal('fatal log example')
+        ```
+        
+        ### log.get_logentry()
+        * Used to get the log entry object.
+        * This object can be used to set the required context for the logger object.
+        
+        ```
+        from dna_logger import logger
+        log = logger.get_instance('test')
+        log_entry = log.get_logentry()
+        ```
+        
+        ### log_entry.get_execution_id() and log_entry.set_execution_id(value: str)
+        * Used to get/set the application id or the execution id of the application.
+        * Example: Task id of the ECS application, spark application id of the EMR application.
+        ```
+        log_entry = log.get_logentry()
+        log_entry.set_execution_id('application_001')
+        ```
+        
+        ### log_entry.get_trace_id() and log_entry.set_trace_id(value: str)
+        * Used to get/set the trace id of the application.
+        * Example: Xray trace
+        ```
+        log_entry = log.get_logentry()
+        log_entry.set_trace_id('xray_trace_id')
+        ```
+        
+        ### log_entry.get_code_version() and log_entry.set_code_version(value: str)
+        * Used to get/set the code version of the application.
+        * Example: Jenkins build number
+        ```
+        log_entry = log.get_logentry()
+        log_entry.set_code_version('1.0')
+        ```
+        
+        ### log_entry.get_line_number() and log_entry.get_line_number(value: str)
+        * Used to get/set the line number of the log statement.
+        * Automatically setted by the data analytics logger.
+        
+        ### log_entry.get_method_name() and log_entry.set_method_name(value: str)
+        * Used to get/set the method name of the log statement.
+        * Automatically setted by the data analytics logger.
+        
+        ### log_entry.get_file_name() and log_entry.set_file_name(value: str)
+        * Used to get/set the file name of the log statement.
+        * Automatically setted by the data analytics logger.
+        
+        ### log_entry.get_application_name() and log_entry.set_application_name(value: str)
+        * Used to get/set the application name.
+        * Automatically setted by the data analytics logger during the initialization.
+        
+        ### log_entry.get_generic_context() and log_entry.set_generic_context(key:str, value: object)
+        * Used to get/set additional log context for the log entry.
+        ```
+        log_entry = log.get_logentry()
+        log_entry.set_generic_context('emrClusterName', 'EMR_CLUSTER')
+        ```
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
