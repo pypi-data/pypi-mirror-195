@@ -1,0 +1,7 @@
+README.md
+setup.py
+django_plotly_cms.egg-info/PKG-INFO
+django_plotly_cms.egg-info/SOURCES.txt
+django_plotly_cms.egg-info/dependency_links.txt
+django_plotly_cms.egg-info/top_level.txt
+dpcms/version.py
