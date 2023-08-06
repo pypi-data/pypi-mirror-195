@@ -1,0 +1,9 @@
+flexivit_pytorch/__init__.py,sha256=2O_HcmqeukRLOpqx9ix14sQWL9wTkvEuHDVQVRPRBsc,416
+flexivit_pytorch/flexivit.py,sha256=Ef_sR-UDVCRcQIvFTKOkQgEbDfSE-GjpglYAnJoA0vk,6803
+flexivit_pytorch/patch_embed.py,sha256=yasMG_YdH1yfLSJsisDgQQg2fmCZHOH4eOis1IoZ8r8,9419
+flexivit_pytorch/utils.py,sha256=uXKjlD9zmSdKkDM3emb-jg3XOMYpn7WEQsbpmqUMdQ8,2211
+flexivit_pytorch-0.0.1.dist-info/LICENSE,sha256=p1mrRM0qjF4fIcyEzIWRKZgARCEIjrfdy_tn4hfVCtk,1067
+flexivit_pytorch-0.0.1.dist-info/METADATA,sha256=TsPonADTzEWI4rG8wBsdLFTfOEQb0HewQy6vBHpoIzE,8148
+flexivit_pytorch-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+flexivit_pytorch-0.0.1.dist-info/top_level.txt,sha256=GHpBILSOAw1HIHhhuKDlsU8rPyeX0-buhEnItT8hxC8,17
+flexivit_pytorch-0.0.1.dist-info/RECORD,,
