@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "htrc_topicexplorer"
+version = "1.0b1"
+authors = [
+  { name="Damien Thomas", email="damien.thomas.0214@gmail.com" },
+  { name="Samitha Liyanage", email="shliyana@indiana.edu" }
+]
+description = "HTRC rework of the InPHO Topic Explorer tool."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Framework :: Bottle",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Topic :: Software Development :: User Interfaces",
+    "Topic :: Text Processing :: Linguistic"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/htrc/topic-explorer"
+"Bug Tracker" = "https://github.com/htrc/topic-explorer/issues"
