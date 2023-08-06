@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: chattr-django-master-password
+Version: 1.1.2
+Summary: Login as any user with a master password. Add master password support to your custom authentication backend.
+Home-page: https://github.com/ixc/django-master-password
+Author: Interaction Consortium
+Author-email: studio@interaction.net.au
+License: MIT
+License-File: LICENSE
+Requires-Dist: Django
+Provides-Extra: dev
+Requires-Dist: ipdb ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: coveralls ; extra == 'test'
+Requires-Dist: django-dynamic-fixture ; extra == 'test'
+Requires-Dist: django-nose ; extra == 'test'
+Requires-Dist: django-webtest ; extra == 'test'
+Requires-Dist: nose-progressive ; extra == 'test'
+Requires-Dist: WebTest ; extra == 'test'
+
