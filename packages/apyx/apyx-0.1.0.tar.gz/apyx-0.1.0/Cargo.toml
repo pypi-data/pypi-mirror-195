@@ -1,0 +1,13 @@
+[package]
+name = "apyx"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "apyx"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.18.0", features = ["extension-module"] }
+apx = { path = "local_dependencies/apx" }
+
