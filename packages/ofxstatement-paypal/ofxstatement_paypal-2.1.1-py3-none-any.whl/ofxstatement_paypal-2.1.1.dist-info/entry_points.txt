@@ -1,0 +1,2 @@
+[ofxstatement]
+paypal-ng = ofxstatement.plugins.paypal:PayPalPlugin
