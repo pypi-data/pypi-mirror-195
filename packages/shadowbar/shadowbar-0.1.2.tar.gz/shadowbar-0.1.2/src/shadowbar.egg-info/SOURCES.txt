@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/shadowbar/ProgressBar.py
+src/shadowbar/__init__.py
+src/shadowbar.egg-info/PKG-INFO
+src/shadowbar.egg-info/SOURCES.txt
+src/shadowbar.egg-info/dependency_links.txt
+src/shadowbar.egg-info/top_level.txt
