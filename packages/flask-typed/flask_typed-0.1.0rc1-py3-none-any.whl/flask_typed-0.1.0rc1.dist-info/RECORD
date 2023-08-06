@@ -1,0 +1,12 @@
+flask_typed/__init__.py,sha256=TJm6gC5wx8O38ZAQgDnTUhP4X-pPWaOZdsRg3AOd7_E,125
+flask_typed/docs_utils.py,sha256=ivD3uUcZybdAc_x6QEWfta4UpePlZJqCWHILoRaJTrI,1938
+flask_typed/errors.py,sha256=40eK-l_PmtzRxYdM7O3izn9YAU504DSUysRm8LH-R4U,999
+flask_typed/handler.py,sha256=vjjGexFSIV8_lY1uFhqGRdRyPw2ARlOz_Ah3nBILH58,6166
+flask_typed/parameter.py,sha256=PmVMvldXyru7qWcBgb-f5_rdjh7uDJP8Krqp8tI2Dlk,5445
+flask_typed/response.py,sha256=cZXvYh5kkkgqo5WaaHuaQxu5YRxPPEFoUd4u_U62CHE,4041
+flask_typed/typed_api.py,sha256=52XAvRsYT1AQ0oLOTj-Qh6MTDoFFnzPypQor2F-9lao,3084
+flask_typed/typed_resource.py,sha256=HTgqvap924PMtcS7qTVFHG8BIp22uecbNxevywYxzZA,1601
+flask_typed-0.1.0rc1.dist-info/LICENSE,sha256=aMSNEBTRHxMM1ZxAKqAv7RCAHzdFstdZ4SSdkSBiN7I,1076
+flask_typed-0.1.0rc1.dist-info/METADATA,sha256=HAxlkBVSg7kjY32DkJT7IYIVRdEXrxBiZIhILG0cn3E,1517
+flask_typed-0.1.0rc1.dist-info/WHEEL,sha256=UTbu2d3PIo7FtACOQrq825bNtQhldwLx2SG2oh0Fl8Q,88
+flask_typed-0.1.0rc1.dist-info/RECORD,,
