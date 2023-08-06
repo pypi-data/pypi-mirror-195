@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+nginqcomm.egg-info/PKG-INFO
+nginqcomm.egg-info/SOURCES.txt
+nginqcomm.egg-info/dependency_links.txt
+nginqcomm.egg-info/top_level.txt
