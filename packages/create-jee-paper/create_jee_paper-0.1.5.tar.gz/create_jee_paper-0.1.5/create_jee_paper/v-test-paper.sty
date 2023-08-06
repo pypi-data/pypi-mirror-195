@@ -1,0 +1,119 @@
+\ProvidesPackage{v-test-paper}[2023/01/09 v1.0]
+
+\RequirePackage{geometry}
+\RequirePackage{graphics}
+\RequirePackage{tzplot}
+\RequirePackage{tasks}
+\RequirePackage{amsmath}
+\RequirePackage{kinematikz}
+\RequirePackage{physunits}
+\RequirePackage[utopia]{mathdesign}
+\geometry{a4paper, top=15mm, bottom=20mm, left=20mm, right=20mm}
+
+
+\newcommand{\ans}{\textcolor{red!95}{\textit{\quad Ans.}}}
+\def\ansit#1{\textcolor{red!95}{\quad [ #1 ]}}
+\def\ansint#1{\textcolor{red!95}{\quad [ #1 ]}}
+
+\newcommand{\jeeSectionA}{
+	\begin{center}
+	\textbf{Section-A\\(One Options Correct Type)}
+	\flushleft{This section contains 20 multiple choice questions. 
+		Each question has four choices (A), (B), (C) and (D), 
+		out of which ONLY ONE option is correct.
+	}
+	\rule{\textwidth}{1 pt}
+	\end{center}
+}
+
+\newcommand{\jeeSectionB}{
+	\begin{center}
+	\textbf{Section-B\\(Numerical Answer Type)}
+
+	{\flushleft{
+		This section contains 10 questions. 
+		The answer to each question is a NUMERICAL VALUE. 
+		For each question, enter the correct numerical value 
+		(in decimal notation, truncated/rounded-off to the second decimal place).
+	}}\\
+
+	\textbf{Do any 5 questions out of 10 Questions.}
+	\rule{\textwidth}{1 pt}
+	\end{center}
+}
+
+
+\newcommand{\neetSectionA}{
+	\begin{center}
+	\textbf{Section-A}
+	\flushleft{
+		This section contains 35 multiple choice questions. 
+		Each question has four choices (A), (B), (C) and (D), 
+		out of which ONLY ONE option is correct.
+	}
+	\textbf{All questions are compulsory.}
+	\rule{\textwidth}{1 pt}
+	\end{center}
+}
+
+
+\newcommand{\neetSectionB}{
+	\begin{center}
+	\textbf{Section-B}
+	\flushleft{
+		This section contains 15 multiple choice questions. 
+		Each question has four choices (A), (B), (C) and (D), 
+		out of which ONLY ONE option is correct.
+	}
+	\textbf{Attempt any 10 questions out of 15.}
+	\rule{\textwidth}{1 pt}
+	\end{center}
+}
+
+
+
+
+\tikzstyle test-paper=[>=latex, thick]
+\tikzset{
+>=latex
+}
+
+% block (8 X 8)mm -> block
+\tikzstyle{block}=[
+	rectangle,
+	draw, 
+	thick, 
+	minimum size=8mm, 
+	node distance=1.8cm
+	]
+
+\tikzstyle{pulley}=[circle,draw, thick, minimum size=10mm, node distance=1.8cm]
+
+\tikzstyle{sblock}=[rectangle,draw, thick, minimum size=8mm, node distance=1.8cm]
+\tikzstyle{spulley}=[circle,draw, thick, minimum size=8mm, node distance=1.8cm]
+
+\tikzstyle{lblock}=[rectangle,draw, thick, minimum size=12mm, node distance=1.8cm]
+
+%vblock(10 X 20) -> vertical block 
+\tikzstyle{vblock}=[rectangle,draw, thick, minimum width=10mm, minimum height=20mm, node distance=1.8cm]
+\tikzstyle{lpulley}=[circle,draw, thick, minimum size=12mm, node distance=2cm]
+
+\tikzstyle{hblock}=[rectangle,draw, thick, minimum height=12mm, minimum width=20mm, node distance=1.8cm]
+
+\tikzstyle{Hblock}=[rectangle,draw, thick, minimum height=12mm, minimum width=24mm, node distance=1.8cm]
+
+\tikzstyle{lift}=[rectangle,draw, thick, minimum height=60mm, minimum width=50mm, node distance=1.8cm]
+
+\tikzstyle{Bpulley}=[circle,draw, thick, minimum size=20mm, node distance=1.8cm]
+
+\tikzstyle{plank}=[rectangle,draw, thick, minimum height=8mm, minimum width=50mm, node distance=1.8cm]
+
+
+%%fplatform -> fill platform
+\tikzstyle{fplatform}=[rectangle, draw, thick, fill, minimum height=4mm, minimum width=30mm, node distance=0mm, pattern=north east lines]
+
+%%platform -> platform
+\tikzstyle{platform}=[rectangle, draw, fill, minimum height=4mm, minimum width=30mm, node distance=0mm]
+
+
+\endinput
