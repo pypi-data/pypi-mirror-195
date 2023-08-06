@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+BubbelzTheBubble.egg-info/PKG-INFO
+BubbelzTheBubble.egg-info/SOURCES.txt
+BubbelzTheBubble.egg-info/dependency_links.txt
+BubbelzTheBubble.egg-info/top_level.txt
