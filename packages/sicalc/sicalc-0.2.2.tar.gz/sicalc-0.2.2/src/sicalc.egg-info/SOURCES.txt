@@ -1,0 +1,16 @@
+.gitignore
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+examples/example1.py
+src/sicalc/__init__.py
+src/sicalc/_frap.py
+src/sicalc/constants.py
+src/sicalc/error_calc.py
+src/sicalc/func.py
+src/sicalc/units.py
+src/sicalc.egg-info/PKG-INFO
+src/sicalc.egg-info/SOURCES.txt
+src/sicalc.egg-info/dependency_links.txt
+src/sicalc.egg-info/top_level.txt
