@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: selfbotpy
+Version: 1.1.2
+Summary: Package For selfbotpy 
+Home-page: 
+Author: gummy.simps
+Author-email: gummyloo909@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+Join are Support Server [HERE](https://discord.gg/jBK6hDxFVS)
+# Language used
+this Fortnite bot is fully coded with Python
+# Warning                                                                                  
+  I do not recommed using [Replit](https://replit.com/)                                                                                                                                                        
+  Reason: file device_auths.json is public
+# languages 
+|  language | Status  | code |
+| ---- | ---- | ----|
+|  Arabic   |  Done  | ar |
+|  German   |  Done  | de |
+|  English  |  Done  | en |
+|  Spanish   |  Done | es |
+|  Frence  |  Done | fr |
+|  Italian  | Coming Soon| it |
+|  Japanese  |  Done  | ja |
+|  Korean  |  Done | ko |
+|  Polish  | Coming Soon | pl |
+|  Portuguese | coming Soon | pt-br|
+|  Russian |  Coming Soon| ru|
+|  Turkish | Coming Soon| tr |
+| Chinese-CH | Coming Soon | zh-cn |
+|  Chinese-HKS   |  Done  | zh-hk | 
+
+
+# Credits                                                                                       
+Cosmetics By [Fortnite Api](https://fortnite-api.com/)
+Client by [Fortnitepy](https://fortnitepy.readthedocs.io)
