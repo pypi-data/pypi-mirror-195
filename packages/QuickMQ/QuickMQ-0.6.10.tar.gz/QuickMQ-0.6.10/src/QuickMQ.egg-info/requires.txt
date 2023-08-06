@@ -1,0 +1,10 @@
+pika
+platformdirs
+
+[testing]
+pytest
+pytest-cov
+mypy
+flake8
+tox
+pika-stubs
