@@ -1,0 +1,6 @@
+scipy<=1.9.3
+scikit-learn
+torch>=1.7
+nltk
+pipelineprofiler
+pandas
