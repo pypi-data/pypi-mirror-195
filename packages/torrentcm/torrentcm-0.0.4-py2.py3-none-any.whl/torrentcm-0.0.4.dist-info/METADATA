@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: torrentcm
+Version: 0.0.4
+Summary: Torrent Client Manager is a CLI utility for managing torrent client instances.
+Home-page: https://github.com/ezggeorge/torrent-client-manager
+Author: EZGGeorge
+License: BSD 2-clause
+Requires-Dist: argparse
+Requires-Dist: rich
+Requires-Dist: qbittorrent-api
+Requires-Dist: platformdirs
+
