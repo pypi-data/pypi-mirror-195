@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: fext-cli
+Version: 0.1.0rc0
+Home-page: https://fext.lunte.dev
+Author: Lunte
+Author-email: fext@lunte.dev
+License: MIT
+Keywords: fast,package,manger
+
