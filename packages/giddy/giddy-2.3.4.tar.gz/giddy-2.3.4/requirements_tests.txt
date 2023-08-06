@@ -1,0 +1,8 @@
+codecov
+ipywidgets
+matplotlib
+pandas
+pytest
+pytest-cov
+pytest-xdist
+splot
