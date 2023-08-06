@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: structura
+Version: 0.1.2
+Summary: C extension module for common data structures
+Home-page: https://github.com/sekomer/structura
+Author: alperen serkan aksoz
+Author-email: a.serkanaksoz@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: manylinux1_x86_64
