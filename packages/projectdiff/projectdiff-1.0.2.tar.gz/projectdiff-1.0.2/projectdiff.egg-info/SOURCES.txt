@@ -1,0 +1,13 @@
+README.md
+merge_project_diff/__init__.py
+merge_project_diff/__main__.py
+merge_project_diff/manifest_diff.py
+merge_project_diff/merge_project_files.py
+merge_project_diff/merge_public.py
+merge_project_diff/merge_xml_diff.py
+projectdiff.egg-info/PKG-INFO
+projectdiff.egg-info/SOURCES.txt
+projectdiff.egg-info/dependency_links.txt
+projectdiff.egg-info/entry_points.txt
+projectdiff.egg-info/requires.txt
+projectdiff.egg-info/top_level.txt

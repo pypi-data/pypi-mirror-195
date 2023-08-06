@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: projectdiff
+Version: 1.0.2
+Summary: 比较项目的差异
+Home-page: https://github.com/pypa/sampleproject
+Author: XiaoTian
+Author-email: 1961993790@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# pythonProject
