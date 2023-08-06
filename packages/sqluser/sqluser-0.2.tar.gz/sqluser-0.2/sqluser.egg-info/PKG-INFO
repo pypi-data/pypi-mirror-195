@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: sqluser
+Version: 0.2
+Summary: A system for Login and Sign Up with all the necessary functions such as sign_up() and login() with the support of MySql database
+Author: Akshat Sabharwal
+Author-email: akshatsabharwal35@gmail.com
+License-File: LICENSE.txt

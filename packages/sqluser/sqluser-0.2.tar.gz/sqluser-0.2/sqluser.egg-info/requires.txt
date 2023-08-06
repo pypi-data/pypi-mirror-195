@@ -1,0 +1,4 @@
+mysql.connector
+maskpass
+secure-smtplib
+random2
