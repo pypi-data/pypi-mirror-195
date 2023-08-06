@@ -1,0 +1,9 @@
+fmcimage/__init__.py,sha256=-aWsXPRLmiZiC7X_nNLK4R1F1z9NlXe5lrbO8e79iFc,30
+fmcimage/image_locating.py,sha256=mEA51GGo9OgV2ht7heqiAw1mTDl5HhYW_TB5nN1cVkE,5514
+fmcimage/text_recognition.py,sha256=8YSPCK8BPZqZ-NNHSqc8fEoGfEMZRD2P8lDVt-8JmZg,4290
+fmcimage/ui.py,sha256=yMIfSLVBWNH4VNStBdi-Rqc6oIQwhOBszdDp1-gxC50,2333
+fmcimage-0.25.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+fmcimage-0.25.dist-info/METADATA,sha256=vZMEQ3sl_Vi4tKw5IZwMMgwT3X2JHYhgHbOJsay2bA0,178
+fmcimage-0.25.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fmcimage-0.25.dist-info/top_level.txt,sha256=sieiKtRBZZmX6mdvYInlsF89sbmIHPB18_ClQ0TfMxg,9
+fmcimage-0.25.dist-info/RECORD,,
