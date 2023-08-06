@@ -1,0 +1,70 @@
+{
+    "meta": {
+        "legacy_uri": "v1/ecommerce/shopify.cart_event",
+        "version": "v1"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "cart_id": {
+                "type": "string"
+            },
+            "cart_token": {
+                "type": "string"
+            },
+            "brand_id": {
+                "type": "number"
+            },
+            "timestamp": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "line_items": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "variant_id": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        },
+                        "product_id": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        },
+                        "quantity": {
+                            "type": [
+                                "number",
+                                "null"
+                            ]
+                        },
+                        "price": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        },
+                        "sku": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        },
+                        "title": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

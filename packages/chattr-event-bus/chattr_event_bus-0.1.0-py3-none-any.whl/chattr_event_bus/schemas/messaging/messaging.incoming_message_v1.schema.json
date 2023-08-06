@@ -1,0 +1,108 @@
+{
+    "meta": {
+        "legacy_uri": "v1/messaging/messaging.incoming_message",
+        "version": "v1"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "status_code": {
+                "type": [
+                    "number"
+                ]
+            },
+            "provider_message": {
+                "type": [
+                    "string"
+                ]
+            },
+            "provider_code": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "provider_name": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "session_id": {
+                "type": [
+                    "string"
+                ]
+            },
+            "from": {
+                "type": [
+                    "string"
+                ]
+            },
+            "to": {
+                "type": [
+                    "string"
+                ]
+            },
+            "text": {
+                "type": [
+                    "string"
+                ]
+            },
+            "event_time": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "segment_count": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "applicationId": {
+                "type": "string"
+            },
+            "reference_id": {
+                "type": [
+                    "number",
+                    "null"
+                ]
+            },
+            "associate_brand_user": {
+                "type": [
+                    "boolean",
+                    "null"
+                ]
+            },
+            "media": {
+                "type": [
+                    "array",
+                    "null"
+                ]
+            },
+            "tag": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "id": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            }
+        },
+        "required": [
+            "status_code",
+            "provider_message",
+            "session_id",
+            "from",
+            "to",
+            "text",
+            "event_time",
+            "applicationId"
+        ]
+    }
+}

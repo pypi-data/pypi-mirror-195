@@ -1,0 +1,24 @@
+{
+    "meta": {
+        "legacy_uri": "v100/test/TestTopic",
+        "version": "v100"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "number"
+            },
+            "non_existing": {
+                "type": "number"
+            },
+            "name": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "name",
+            "id"
+        ]
+    }
+}

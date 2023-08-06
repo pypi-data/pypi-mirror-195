@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "legacy_uri": "v1/subscriptions/SubscriptionsTopic",
+        "version": "v1"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "stripe_id": {
+                "type": "string"
+            },
+            "brand_id": {
+                "type": "number"
+            }
+        },
+        "required": [
+            "stripe_id",
+            "brand_id"
+        ]
+    }
+}

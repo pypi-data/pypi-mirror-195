@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "legacy_uri": "v100/sensus/SensusTopic",
+        "version": "v100"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "event_type": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "event_type"
+        ]
+    }
+}

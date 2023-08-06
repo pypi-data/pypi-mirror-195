@@ -1,0 +1,23 @@
+{
+    "meta": {
+        "legacy_uri": "v1/segment/segment.sync_elastic_search",
+        "version": "v1"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "entity": {
+                "type": [
+                    "string"
+                ]
+            },
+            "payload": {
+                "type": "object"
+            }
+        },
+        "required": [
+            "entity",
+            "payload"
+        ]
+    }
+}

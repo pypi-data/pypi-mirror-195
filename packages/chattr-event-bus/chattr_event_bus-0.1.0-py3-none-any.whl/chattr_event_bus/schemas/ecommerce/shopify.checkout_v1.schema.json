@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "legacy_uri": "v1/ecommerce/shopify.checkout",
+        "version": "v1"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "created_at": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "brand_id": {
+                "type": "number"
+            },
+            "shopify_checkout_id": {
+                "type": "string"
+            },
+            "shopify_customer_id": {
+                "type": [
+                    "number",
+                    "null"
+                ]
+            },
+            "checkout_id": {
+                "type": "number"
+            }
+        },
+        "required": [
+            "created_at",
+            "brand_id",
+            "shopify_checkout_id",
+            "checkout_id"
+        ]
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "legacy_uri": "v100/vaportal/VATopic",
+        "version": "v100"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "event_type": {
+                "type": "string"
+            },
+            "uow_id": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "event_type",
+            "uow_id"
+        ]
+    }
+}

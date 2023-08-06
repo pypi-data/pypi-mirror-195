@@ -1,0 +1,22 @@
+{
+    "meta": {
+        "legacy_uri": "v1/ecommerce_subscription_engine/subscription.received",
+        "version": "v1"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "event_type": {
+                "type": "string"
+            },
+            "data_payload": {
+                "type": "object",
+                "properties": {}
+            }
+        },
+        "required": [
+            "event_type",
+            "data_payload"
+        ]
+    }
+}

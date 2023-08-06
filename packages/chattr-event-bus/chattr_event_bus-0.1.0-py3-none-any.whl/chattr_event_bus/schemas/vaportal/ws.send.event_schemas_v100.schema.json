@@ -1,0 +1,25 @@
+{
+    "meta": {
+        "legacy_uri": "v100/vaportal.ws.send.event",
+        "version": "v100"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "channel_key": {
+                "type": "string"
+            },
+            "payload": {
+                "type": "object"
+            },
+            "type": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "channel_key",
+            "payload",
+            "type"
+        ]
+    }
+}
