@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+Chromepas.egg-info/PKG-INFO
+Chromepas.egg-info/SOURCES.txt
+Chromepas.egg-info/dependency_links.txt
+Chromepas.egg-info/top_level.txt
+Chromepass/__init__.py
