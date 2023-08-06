@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: shella
+Version: 1.0.2
+Summary: An asynchronous Interactive shell
+Home-page: UNKNOWN
+Author: Malte Gruber
+Author-email: <contact@maltegruber.com>
+License: UNKNOWN
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux 
+Description-Content-Type: text/markdown
+Requires-Dist: aiofiles
+
+# Shella
+
+Shella is a Python module that enables you to interact with your python script using a command line. Provided commands run asynchronously as async functions.  In addition to its asynchronous functionality, Shella also provides autocompleting, history, and argument validation features. 
+
+Autocompleting enables users to save time by automatically completing commands as they type. History allows users to easily recall previous commands and reuse them. Argument validation ensures that commands are executed with the correct arguments, minimizing errors and increasing efficiency.
+
+## How to try
+Use Linux (Windows not supported!)
+```python
+pip3 install shella
+```
+Then run
+```python
+import shella
+import asyncio
+
+counter = 0
+
+
+@shella.shell_cmd(commands=["show", "s"], desc="Show counter state")
+async def test(args):
+    print(f"counter={counter}")
+
+
+@shella.shell_cmd(commands=["set"], desc="Set counter state", template="%s", usage="[count]")
+async def test2(args):
+    if len(args) != 2:
+        print("Please provide a number")
+    global counter
+    counter = int(args[1])
+
+
+async def my_task():
+    global counter
+    while shella.running:
+        await asyncio.sleep(1)
+        counter += 1
+
+
+async def main():
+    shella_task_ = asyncio.create_task(shella.shell_task())
+    my_task_ = asyncio.create_task(my_task())
+    await shella_task_
+    await my_task_
+    print("Good bye!")
+
+asyncio.run(main())
+
+```
+
+
+## Turning a function into a command
+Use the 
+```
+@demo_command(commands=["command","c"],desc="Enable pairing mode")
+```
+
+
