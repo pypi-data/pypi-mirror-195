@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/mailer_otphero/__init__.py
+src/mailer_otphero/mailer.py
+src/mailer_otphero.egg-info/PKG-INFO
+src/mailer_otphero.egg-info/SOURCES.txt
+src/mailer_otphero.egg-info/dependency_links.txt
+src/mailer_otphero.egg-info/top_level.txt
