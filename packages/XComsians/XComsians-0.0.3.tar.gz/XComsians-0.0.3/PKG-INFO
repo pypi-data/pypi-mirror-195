@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: XComsians
+Version: 0.0.3
+Summary: NLP Preprocessing By XComsians
+Author: Engr. Bilal Ahmad
+Author-email: bilalahmad176176@gmail.com
+Keywords: python,XComsians,NLP Preprocessing,preprocessing by XComsians,Engr. Bilal Ahmad
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+i have created this library that you just have to set your data with the parameters that which type of preprocessing you need on your data. if you pass empty data then preprocessing will apply which is set by default you need to install library emoji , pandas , numpy , nltk , and all other basics to run this. These are the preprocessing parameters metrices= ['lowercase' , 'remove_html_tag' , 'remove_links' , 'remove_emoji' , 'remove_punctuation' , 'remove_chat_words' , 'spell_correction' , 'remove_stopwords' , 'stemming' , 'limitization' , 'word_tokenization']
