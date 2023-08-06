@@ -1,0 +1,47 @@
+[project]
+name = "Helmi_FEM"
+dynamic = ["version"]
+description = "Finite element method for solving the electromagnetic Helmholtz equation."
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+readme = {file = "README.md", content-type = "text/markdown"}
+keywords = ["Helmholtz equation", "finite-element analysis", "finite-element method"]
+authors = [
+  {name = "Vincent R."}
+]
+maintainers = [
+  {name = "Vincent R."}
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: BSD License",
+  "Operating System :: OS Independent"
+]
+
+dependencies = [
+    "scikit-fem",
+    "meshio",
+    "numpy",
+    "scipy",
+]
+
+[project.optional-dependencies]
+plot = [
+    "matplotlib"
+]
+mesh = [
+    "gmsh"
+]
+
+[project.urls]
+homepage = "https://github.com/Vinc0110/Helmi_FEM"
+repository = 'https://github.com/Vinc0110/Helmi_FEM.git'
+
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = {attr = "helmi.__version__"}

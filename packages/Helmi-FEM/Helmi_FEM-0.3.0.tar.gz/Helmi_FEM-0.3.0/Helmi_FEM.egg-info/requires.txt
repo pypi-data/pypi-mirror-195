@@ -1,0 +1,10 @@
+scikit-fem
+meshio
+numpy
+scipy
+
+[mesh]
+gmsh
+
+[plot]
+matplotlib

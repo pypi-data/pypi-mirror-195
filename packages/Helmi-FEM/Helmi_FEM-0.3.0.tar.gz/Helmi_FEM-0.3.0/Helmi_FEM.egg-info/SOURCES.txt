@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+Helmi_FEM.egg-info/PKG-INFO
+Helmi_FEM.egg-info/SOURCES.txt
+Helmi_FEM.egg-info/dependency_links.txt
+Helmi_FEM.egg-info/requires.txt
+Helmi_FEM.egg-info/top_level.txt
+helmi/__init__.py
+helmi/forms.py
+helmi/helmholtz.py
+helmi/helper.py
