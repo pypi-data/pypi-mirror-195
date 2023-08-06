@@ -1,0 +1,13 @@
+sphinx_rtd_theme
+autodocsumm
+myst_parser
+nbsphinx
+pandoc
+sphinx
+sphinxcontrib-confluencebuilder
+sphinxcontrib-napoleon
+numpydoc
+pdflatex
+ipywidgets
+scalecast
+tqdm
