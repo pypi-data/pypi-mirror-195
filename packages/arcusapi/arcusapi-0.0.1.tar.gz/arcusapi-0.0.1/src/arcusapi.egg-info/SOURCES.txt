@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/arcusapi/__init__.py
+src/arcusapi/arcusapi.py
+src/arcusapi.egg-info/PKG-INFO
+src/arcusapi.egg-info/SOURCES.txt
+src/arcusapi.egg-info/dependency_links.txt
+src/arcusapi.egg-info/top_level.txt
