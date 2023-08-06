@@ -1,0 +1,3 @@
+mlflow
+boto3
+protobuf~=3.19.0
