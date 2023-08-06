@@ -1,0 +1,9 @@
+scrapse/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrapse/__main__.py,sha256=6pCgAj7qE3K4Yye1jVEYOOasNHL0ngbPG3nbLQryTV0,48
+scrapse/leggitalia.py,sha256=4cAfFwVv8A9N7Mrylu3nilgcjp9Mf3nTgc2Eva-f90s,6087
+scrapse/main.py,sha256=esGk7uT0GdbwOFUDjwiC0Sw1FsDJEit92kR8gEc1mY4,556
+scrapse/utils.py,sha256=dnCmzil44TDl_DEIIS9PxYV-mIZk9vxhMaFb8E7bBQg,7786
+scrapse-0.2.3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+scrapse-0.2.3.dist-info/entry_points.txt,sha256=48l9qMpZPWOfcPVGtaXxikv8X0NGhJOkJe5oozYCM6E,44
+scrapse-0.2.3.dist-info/METADATA,sha256=ckJI_zcnm39Tu4UexpUjZA867bRJpTUwYyfDp4W-kD8,1900
+scrapse-0.2.3.dist-info/RECORD,,
