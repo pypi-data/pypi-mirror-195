@@ -1,0 +1,9 @@
+deepface
+tqdm
+opencv-python
+onnx
+onnxruntime
+gooey
+
+[gpu]
+onnxruntime-gpu
