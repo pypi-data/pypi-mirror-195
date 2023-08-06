@@ -1,0 +1,2 @@
+[console_scripts]
+nbimports = nbimports.__main__:app
