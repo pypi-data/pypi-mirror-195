@@ -1,0 +1,15 @@
+distroinfo/__init__.py,sha256=IXu5XY435JzBhdZskOyfjOatkVAjRweJQcCzj02uMmw,317
+distroinfo/exception.py,sha256=PXxa--NlyroBO6E_bSg5tckTEhEFs2WHW5GbDV6mVtU,2550
+distroinfo/fetch.py,sha256=iuclW0J2FpgRvEM4yvg0Mw_2WKM7-XYUDXozSVGpa04,6562
+distroinfo/helpers.py,sha256=HOmRVxzohFQmOtC2m_vX3aafE04McQVg_2MpEOtVRWU,1684
+distroinfo/info.py,sha256=IBceNdLLZPSnf5pDpwcRFwoZCNWdesVNkSSLcaKN5d0,2960
+distroinfo/parse.py,sha256=2-QMGhTJQjgJUOpdGZMP3dOcfYzx6UXDcf9UfUoHHaQ,8391
+distroinfo/query.py,sha256=EQAhaUCEZUWQeS1N2pHHjMWyR7098pLomfT0QwaA-aM,7430
+distroinfo/repoman.py,sha256=XGmb1so4cG9zhsfWNY_coaJlVk32gOX-OareZdngRFw,5142
+distroinfo-0.6.2.dist-info/AUTHORS,sha256=I_Ck99F2J0yT2p733l1zWcZozLwhqx12IZKLGH3weWA,511
+distroinfo-0.6.2.dist-info/LICENSE,sha256=y16Ofl9KOYjhBjwULGDcLfdWBfTEZRXnduOspt-XbhQ,11325
+distroinfo-0.6.2.dist-info/METADATA,sha256=Eg1nWNqZHLUf47-kdllzYKg4KbDxex44l0sCC1g27BM,7408
+distroinfo-0.6.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+distroinfo-0.6.2.dist-info/pbr.json,sha256=t1Y5sBFQu57zXB39EJsANkQfGNK_d-2GAPs5XRG014g,46
+distroinfo-0.6.2.dist-info/top_level.txt,sha256=Ks4-hiycZ3LAnIdh32r9P-hGvysaPIbUdaqXdKL0__A,11
+distroinfo-0.6.2.dist-info/RECORD,,
