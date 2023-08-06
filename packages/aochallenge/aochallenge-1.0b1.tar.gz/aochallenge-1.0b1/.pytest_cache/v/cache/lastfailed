@@ -1,0 +1,9 @@
+{
+  "tests/test_solution.py::test_print_csv[data0-1,34\\nTrue,\"xyz\"\\n]": true,
+  "tests/test_solution.py::test_print_arranged[data0-1,34\\nTrue,xyz\\n]": true,
+  "tests/test_solution.py::test_print_arranged[data0-   1 3456\\nTrue xyz\\n]": true,
+  "tests/test_solution.py::test_load": true,
+  "tests/test_solution.py::test_load[-True-data1]": true,
+  "tests/test_solution.py::test_load[i1-params2-row1,45,6.9\\nrow2,78,7.9\\n]": true,
+  "tests/test_solution.py::test_load[col-True-data4]": true
+}
