@@ -1,0 +1,10 @@
+astropy
+astroquery
+matplotlib
+panstamps
+Pillow
+python-casacore
+pyvo
+requests
+scikit-image
+tqdm
