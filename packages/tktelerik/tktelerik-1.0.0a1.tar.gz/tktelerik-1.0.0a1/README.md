@@ -1,0 +1,37 @@
+# tktelerik
+来自WinForms界面扩展库做出来的组件
+
+## Telerik
+> 原项目需要付费使用，请谨慎使用
+
+```python
+# 基础示例1
+import tktelerik
+from tkinter import Tk
+
+root = Tk()
+theme1 = tktelerik.FluentDark()
+
+button = tktelerik.Button(text="button1")
+button.configure(theme="FluentDark")
+button.pack(fill="both", expand="yes", padx=5, pady=5)
+
+root.mainloop()
+```
+
+```python
+# 基础示例2
+import tktelerik
+from tkinter import Tk
+
+root = Tk()
+theme1 = tktelerik.FluentDark()
+
+list1 = tktelerik.ListBox()
+list1.configure(theme="FluentDark")
+for index in range(4):
+    list1.add(list1.create_label("item"+index+1))
+    list1.pack(fill="both", expand="yes", padx=5, pady=5)
+
+root.mainloop()
+```
