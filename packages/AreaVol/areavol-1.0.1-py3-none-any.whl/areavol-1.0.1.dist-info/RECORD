@@ -1,0 +1,13 @@
+AreaVol/__init__.py,sha256=kB5pnjlXpyWxm1bBMMdViDtcAgDmPyabkaV4g-H8nbg,677
+AreaVol/threed/cube.py,sha256=XvRS3KCs4Y6nWPASImE8aFP8yYOhm1C-RtbMfY_1oks,81
+AreaVol/threed/cuboid.py,sha256=gTuErMvJ6XJtX1iwdYrIh6TiE-yKa-B8VB7xQ552Q84,273
+AreaVol/threed/prism.py,sha256=RYSdJPkJdgPaGZ-b2Nz2wiNO4IObahlVfFQVKFiaYgQ,267
+AreaVol/threed/sphere.py,sha256=dcw66vxWPv3xACvsayw0VGxO1gbbc7IHLOeyaCyXusw,116
+AreaVol/twod/circle.py,sha256=Go_kKAGdkC4H6ahdeqfitmDXBiUrH3lulhK6S9uQGVI,89
+AreaVol/twod/rectangle.py,sha256=EFDAC4JQU_6A-FyWd4R0FCp9KLPh8vvWUPydENVFf2k,135
+AreaVol/twod/square.py,sha256=0itmP4cr5N3yXMP14dAA09jLe_DQpm0TbXxM67ubOhM,58
+AreaVol/twod/triangle.py,sha256=oj3HtfECsmYYR4XCNC_36__6sL0Rc1OghOOlWmclnWI,140
+areavol-1.0.1.dist-info/METADATA,sha256=aSUgpH7JkegGN6wwlwJAZqaGd3sidf0vT2zwE2HXz0c,552
+areavol-1.0.1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+areavol-1.0.1.dist-info/licenses/LICENSE,sha256=On46tuP-oNmcyHO_lGny_yR0jhsPyW7B4BnVcbTzInU,1067
+areavol-1.0.1.dist-info/RECORD,,
