@@ -1,0 +1,2 @@
+[flake8.extension]
+KFP = flake8_keyword_function_parameters:Plugin
