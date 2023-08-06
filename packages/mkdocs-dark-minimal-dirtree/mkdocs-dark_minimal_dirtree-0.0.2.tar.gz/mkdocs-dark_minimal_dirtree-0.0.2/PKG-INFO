@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: mkdocs-dark_minimal_dirtree
+Version: 0.0.2
+Summary: simple minimal dark theme for mkdocs with a holy dir tree.
+Home-page: https://github.com/Jakkins/dark_minimal_dirtree
+Author: jakkins
+Author-email: sjakkins@proton.me
+License: MIT License
+License-File: LICENSE

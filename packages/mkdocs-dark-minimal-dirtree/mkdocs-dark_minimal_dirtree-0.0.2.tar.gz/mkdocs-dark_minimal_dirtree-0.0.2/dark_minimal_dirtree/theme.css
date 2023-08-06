@@ -1,0 +1,162 @@
+/* ------------------------------------------- */
+/* =============== GENERAL CSS =============== */
+/* ------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(0, 0, 0, 0);
+  color: whitesmoke;
+  font-family: "Consolas", "Courier New", "Lucida Console", "Menlo", "Monaco",
+    "Liberation Mono", "Ubuntu Mono", "DejaVu Sans Mono", "Roboto Mono",
+    "Noto Mono", "Inconsolata", "Source Code Pro", "SF Mono", monospace;
+  line-height: 1.1;
+  font-size: 18px;
+  font-style: normal;
+}
+
+html,
+body {
+  background-color: rgb(18, 18, 18);
+  padding: 10px;
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav {
+    min-width: 450px;
+    margin-right: 10px;
+  }
+
+  .content {
+    /* do not remove these css */
+    margin: 0 auto;
+    /* if this min-width is black magic, read this: */
+    /* https://stackoverflow.com/questions/36230944/prevent-flex-items-from-overflowing-a-container */
+    min-width: 0;
+  }
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+h2 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 26px;
+}
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+blockquote {
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(0, 41, 82);
+}
+
+blockquote p,
+blockquote strong em,
+blockquote p strong em {
+  color: rgb(242, 255, 103);
+}
+
+ul {
+  margin-left: 40px;
+}
+
+/* ------------------------------------ */
+/* =============== CODE =============== */
+/* ------------------------------------ */
+pre {
+  background-color: rgba(255, 255, 255, 0.152);
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+code {
+  background-color: rgba(20, 20, 20, 0);
+}
+
+.vscode-light .hljs-comment,
+.vscode-light .hljs-quote,
+.vscode-light .hljs-number,
+.vscode-light .hljs-class,
+.vscode-light .hljs-variable {
+  background-color: rgba(0, 128, 0, 0);
+  color: rgb(0, 138, 0);
+}
+
+/* ----------------------------------- */
+/* =============== NAV =============== */
+/* ----------------------------------- */
+
+.children {
+  list-style: none;
+}
+
+/* 
+  ul > li > ul {
+    display: none;
+  } 
+*/
+
+.section {
+  list-style: none;
+  cursor: pointer;
+  padding: 10px 0px;
+}
+
+.section span {
+  /* unclickable span */
+  pointer-events: none;
+}
+
+.section::before {
+  content: "-";
+}
+
+.section.collapsed::before {
+  content: "+";
+}
+
+/* hide the items */
+.section.collapsed + .children {
+  display: none;
+}
+
+/* show the items */
+.section + .children {
+  display: block;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.nav-page {
+  padding: 2px 0px;
+}
+
+.nav-page a {
+  text-decoration: none;
+  pointer-events: none;
+}

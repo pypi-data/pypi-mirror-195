@@ -1,0 +1,25 @@
+{% if nav_item.is_page %}
+<li class="nav-page">
+	<!-- <a href="{{ base_url }}/{{ nav_item.url }}">{{ nav_item.title }}</a> -->
+	<a href="{{ base_url }}/{{ nav_item.url }}">{{ nav_item.title }}</a>
+</li>
+{% endif %}
+
+{% if nav_item.is_section %}
+<li id="section" class="section noselect collapsed">
+	<span>{{ nav_item.title }}</span>
+</li>
+{% endif %}
+
+<!-- if nav_item has children -->
+{%- if nav_item.children %}
+<li class="children">
+	<ul>
+		{%- set navlevel = navlevel + 1 %}
+		{%- for nav_item in nav_item.children %}
+		{% include 'nav-item2.html' %}
+		{%- endfor %}
+		{%- set navlevel = navlevel - 1 %}
+	</ul>
+</li>
+{% endif %}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!--this is not working-->
+	{% for path in config.extra_css %}
+	<link href="{{ path|url }}" rel="stylesheet" />
+	{% endfor %}
+
+	<!---->
+	{% block libs %}
+	<link rel="stylesheet" href="{{ base_url }}/highlight/styles/default.min.css" />
+	<link rel="stylesheet" href="{{ base_url }}/theme.css" />
+	<script src="{{ base_url }}/highlight/highlight.min.js"></script>
+	<script src="{{ base_url }}/theme.js"></script>
+	{% endblock %}
+	<title>
+		{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}
+	</title>
+</head>
+
+<body>
+	{% include 'nav.html' %} {% include 'index.html' %}
+</body>
+
+<script>
+	document.addEventListener("DOMContentLoaded", (event) => {
+		// before css
+		hljs.highlightAll();
+	});
+	window.addEventListener("load", function (event) {
+		// after images and css
+	});
+</script>
+
+</html>

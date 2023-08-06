@@ -1,0 +1,2 @@
+[mkdocs.themes]
+dark_minimal_dirtree = dark_minimal_dirtree
