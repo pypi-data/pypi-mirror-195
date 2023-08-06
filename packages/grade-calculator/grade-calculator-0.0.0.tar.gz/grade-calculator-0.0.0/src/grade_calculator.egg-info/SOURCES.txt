@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/grade-calculator/__init__.py
+src/grade-calculator/__main__.py
+src/grade-calculator/category.py
+src/grade-calculator/course.py
+src/grade-calculator/semester.py
+src/grade-calculator/setup.py
+src/grade-calculator/statics.py
+src/grade-calculator/undergrad.py
+src/grade_calculator.egg-info/PKG-INFO
+src/grade_calculator.egg-info/SOURCES.txt
+src/grade_calculator.egg-info/dependency_links.txt
+src/grade_calculator.egg-info/requires.txt
+src/grade_calculator.egg-info/top_level.txt

@@ -1,0 +1,8 @@
+
+[dev]
+flake8
+pylint
+bumpver
+isort
+pip-tools
+pytest
