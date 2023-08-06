@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+pcb_parser.egg-info/PKG-INFO
+pcb_parser.egg-info/SOURCES.txt
+pcb_parser.egg-info/dependency_links.txt
+pcb_parser.egg-info/top_level.txt
