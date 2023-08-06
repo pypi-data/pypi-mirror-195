@@ -1,0 +1,8 @@
+mysql-connector-python==8.0.32
+pyyaml==5.4.1
+
+[tests]
+pytest==7.2.1
+pytest-env==0.8.1
+pytest-cov==4.0.0
+coverage==7.2.1
