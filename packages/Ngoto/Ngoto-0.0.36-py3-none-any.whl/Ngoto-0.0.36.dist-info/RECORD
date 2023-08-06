@@ -1,0 +1,15 @@
+ngoto/__init__.py,sha256=42qvogZnhoD_4i3CxQCRNRSYkAUhZBSKPdQim2iBMho,661
+ngoto/cogs/__init__.py,sha256=5_vr3TmHH41Wh2pqMOAW6vx-wIcpSM7fiHAfZCL8NIo,560
+ngoto/cogs/basic.py,sha256=xP0cR1wYFIaAaXonoIiABGMXrxeGxEv9VqyRoydgylc,3129
+ngoto/cogs/chrome_passwords.py,sha256=Psx8y8l0zvnU2PWXJH-pZ0koKNpsKboO2wZJQjKGc80,5354
+ngoto/cogs/osint_framework.py,sha256=YK56_tOMq3V6NjVNuknuL9f9KwbGxd2giciPqzib9CI,4567
+ngoto/cogs/pc_usage_monitor.py,sha256=RpGIcFh_mpPdBSfRItWRuSvZ9jN2MoI6ckgJWfHzBxA,2093
+ngoto/cogs/url.py,sha256=x023d3Ydut1II5HVXIq7NoI1EcTU4oRblsdB8g1bVGE,1718
+ngoto/cogs/wifi_passwords.py,sha256=GJDlx4Od2IS4gbxH1fyMhLY3SffRTRCmNGktl-CzUQ4,2022
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_commands.py,sha256=zTfhpORiWbrlawCCBVD7BdxInoSXNG_SD_ZmaswhYaw,1975
+test/test_plugins.py,sha256=4lGHCQKpHojKt17_TvzySli0IQ8gBZMGiRKfyRAKhuQ,911
+Ngoto-0.0.36.dist-info/METADATA,sha256=N85Tsglq6wLUnWxItkl2XmhgNdSAmU8FS0yshMaj7OQ,2802
+Ngoto-0.0.36.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Ngoto-0.0.36.dist-info/top_level.txt,sha256=mbYviibNxkNzzh5dHzLctc5LWV0tWDwkbbOuQjqVNf4,11
+Ngoto-0.0.36.dist-info/RECORD,,
