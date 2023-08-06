@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: forbid
+Version: 0.1.0
+Summary: 
+Home-page: https://github.com/2tunnels/forbid
+License: MIT
+Author: Vlad Dmitrievich
+Author-email: 2tunnels@proton.me
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/2tunnels/forbid
+Description-Content-Type: text/markdown
+
+# forbid
+
+Yet another test project
+
