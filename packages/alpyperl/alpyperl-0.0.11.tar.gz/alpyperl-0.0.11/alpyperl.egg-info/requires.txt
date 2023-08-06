@@ -1,0 +1,8 @@
+gymnasium
+py4j
+ray
+ray[rllib]
+tensorflow
+torch
+uvicorn
+fastapi
