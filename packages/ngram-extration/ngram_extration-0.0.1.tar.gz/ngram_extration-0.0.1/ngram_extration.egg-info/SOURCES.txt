@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+ngram_extration/__init__.py
+ngram_extration.egg-info/PKG-INFO
+ngram_extration.egg-info/SOURCES.txt
+ngram_extration.egg-info/dependency_links.txt
+ngram_extration.egg-info/top_level.txt
