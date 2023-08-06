@@ -1,0 +1,11 @@
+## Include
+include README.md LICENSE NOTICE requirements.txt
+recursive-include compiler *.py *.tl *.tsv *.txt
+recursive-include tests *.py
+
+## Exclude
+prune ubotlibs/errors/exceptions
+prune ubotlibs/raw/functions
+prune ubotlibs/raw/types
+prune ubotlibs/raw/base
+exclude ubotlibs/raw/all.py
