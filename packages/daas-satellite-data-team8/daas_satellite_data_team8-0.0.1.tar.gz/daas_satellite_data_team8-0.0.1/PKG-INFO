@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: daas_satellite_data_team8
+Version: 0.0.1
+Summary: A package for CLI satellite data
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Author-email: Team 8 <team8@example.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Assignment 3 Package
+
+This package enables users to create an account on our Satellite Data Download service and download the files of satellite images as per user requirement.
+Upon installing, please run the python typer_main.py users --help command and you're good to go!
