@@ -1,0 +1,3 @@
+[console_scripts]
+ygka=ygka:main
+
