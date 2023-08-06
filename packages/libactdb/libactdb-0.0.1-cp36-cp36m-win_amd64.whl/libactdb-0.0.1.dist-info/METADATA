@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: libactdb
+Version: 0.0.1
+Summary: Activations DB
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: Cython
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: h5py
+
+UNKNOWN
+
