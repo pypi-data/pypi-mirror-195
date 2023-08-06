@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: AhronROC
+Version: 1.2
+Summary: This package can be use to calculate the rate of change on any pricing data
+Author: Ahron Segal
+Author-email: ahron@threegamma.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Unix
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+
