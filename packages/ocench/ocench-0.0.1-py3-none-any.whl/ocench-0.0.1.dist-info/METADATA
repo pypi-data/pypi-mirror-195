@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ocench
+Version: 0.0.1
+Summary: OCENCH: A One-Class Classification method based on Expanded Non-Convex Hulls
+Project-URL: Homepage, https://github.com/DavidNovoaP/OCENCH
+Project-URL: Bug Tracker, https://github.com/DavidNovoaP/OCENCH/issues
+Author-email: David Novoa-Paradela <david.novoa@udc.es>, Oscar Fontenla-Romero <oscar.fontenla@udc.es>, Bertha Guijarro-Berdiñas <berta.guijarro@udc.es>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# OCENCH
+
+OCENCH: A One-Class Classification method based on Expanded Non-Convex Hulls
+
+## Pip Installation
+Pypi url: https://test.pypi.org/project/OCENCH/. To install, run the command
+
+    pip install -i https://test.pypi.org/simple/ OCENCH

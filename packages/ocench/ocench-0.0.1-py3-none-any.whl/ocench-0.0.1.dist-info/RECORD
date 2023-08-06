@@ -1,0 +1,9 @@
+ocench/NCH.py,sha256=0gXxbvraUBT8gG8dn8bMRJL2XwEezhAdtEtngTjLviI,4241
+ocench/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ocench/aux_functions.py,sha256=Qfk9QLqcNPXxu2anBjddqF6a91k7bs2LoXGjD6bEMEs,13715
+ocench/calcular_NCH.py,sha256=2J9zq91ohZVMlaUiTpb6KlOJtwIycc-QNPmK2TRFr0k,18495
+ocench/example.py,sha256=JbdtPUQfX3CHclq6AXN8hp6RIoZj0cxJWsc5pz2dRGU,1245
+ocench-0.0.1.dist-info/METADATA,sha256=4Ja2E43qDpQDQwH5iSbaxysMJ304NGcNdS8MsQVFiwE,959
+ocench-0.0.1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+ocench-0.0.1.dist-info/licenses/LICENSE.txt,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+ocench-0.0.1.dist-info/RECORD,,
