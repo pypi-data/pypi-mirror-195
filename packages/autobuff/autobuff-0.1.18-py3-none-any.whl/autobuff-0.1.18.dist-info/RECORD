@@ -1,0 +1,7 @@
+autobuff/__init__.py,sha256=Z1dNff89L22-ZfavxWGlP81tEzCyVjdVxKxyfYj3QCo,25
+autobuff/__main__.py,sha256=iDpM_jMhboeMrkK6IIgJhX4lwsqjIuGZSgyYr6E8Td0,52555
+autobuff/pytransform/__init__.py,sha256=OAwIt1kGBC0Y5zsNJlTrAwQwmJhMqierRUVI_ZOjqgg,13587
+autobuff/pytransform/_pytransform.dll,sha256=F5DubVrVc4jMwNtIH3Vso2i4_aZJ2LpM7GGY-GJBrdA,1165824
+autobuff-0.1.18.dist-info/METADATA,sha256=p8qm7ka8rafuwfyDoesHjh083G7toA2jHiizwq026qs,605
+autobuff-0.1.18.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+autobuff-0.1.18.dist-info/RECORD,,
