@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: abhistrongseries
+Version: 0.0.1
+Summary: it checks and prints strong numbers
+Home-page: 
+Author: Abhijith Krishna G
+Author-email: abhijithkrishnag234@gmail.com
+License: MIT
+Keywords: armstrong,strong,printstrong
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is a library to check whether a given number belongs to strong series or to print strong series for given n elements
+
+Change Log
+==========
+
+0.0.1 (05/03/2023)
+------------------
+- First Release
+

@@ -1,0 +1,8 @@
+LICENCE.txt
+README.txt
+setup.py
+abhistrongseries.egg-info/PKG-INFO
+abhistrongseries.egg-info/SOURCES.txt
+abhistrongseries.egg-info/dependency_links.txt
+abhistrongseries.egg-info/top_level.txt
+strong/__init__.py

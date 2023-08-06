@@ -1,0 +1,1 @@
+This is a library to check whether a given number belongs to strong series or to print strong series for given n elements
