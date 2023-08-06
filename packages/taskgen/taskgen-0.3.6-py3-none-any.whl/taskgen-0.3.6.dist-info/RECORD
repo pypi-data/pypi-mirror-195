@@ -1,0 +1,7 @@
+taskgen/__init__.py,sha256=qcAuGf3QU7mpAjI5TWpIicB0cMQPdCfkGwwc2f8vIeY,2113
+taskgen/generator.py,sha256=J2kjjNMerQwf1Fkbyuu8mFl_hKQAzTZypwfORs68nYc,67545
+taskgen/html2pdf.py,sha256=xk4f2fWlGTByY8tx0slXGGVjIuxNI9ttsyYqQ_01nxs,7462
+taskgen-0.3.6.dist-info/METADATA,sha256=EhUGTN5GI6yW5AX9ZgvkqaaYJD1lrrQf1_4D3G-S-p0,2632
+taskgen-0.3.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+taskgen-0.3.6.dist-info/top_level.txt,sha256=CJv-xSk3wwdo4ptGrAY8wwe1BaKnp3AJTfg9FOKnC24,8
+taskgen-0.3.6.dist-info/RECORD,,
