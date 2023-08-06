@@ -1,0 +1,11 @@
+supergood/__init__.py,sha256=oGYYjacBYFwdcXv5NOtkHz_t0QEZ7_fnGx_37pB5gv0,21
+supergood/api.py,sha256=T-NMLkYSM1ecSef3W-MqF0DlAGcoR93yIcv6Da6bm0M,1607
+supergood/client.py,sha256=rvPtOnqKp6SZ4KLqOrhsdRAN2qWURFxc-VPNC7Jb_NY,7672
+supergood/constants.py,sha256=DVupNk_sFoaEnAYYknAU_Un2QfkgJ9YoeksKendKHfc,1180
+supergood/helpers.py,sha256=U62I8BVZ-tES_mjKYemWm9BUle9SSHi081HSSJo-RE8,1078
+supergood/logger.py,sha256=iiTSAjW4h-XQXUsSBonRbmQlpmG5D9IXacpRuHeMEis,725
+supergood-0.0.2.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+supergood-0.0.2.dist-info/METADATA,sha256=yAoR-ySPPc127gdw3KOGwvAoKyetOqLoVYNiMTCjhMw,1213
+supergood-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+supergood-0.0.2.dist-info/top_level.txt,sha256=ZHXREMK0k5eTycJTFk8BPPzLv8Gcpj7lLasBTVEVSPE,10
+supergood-0.0.2.dist-info/RECORD,,
