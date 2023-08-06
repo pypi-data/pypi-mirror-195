@@ -1,0 +1,4 @@
+[certbot.plugins]
+certbot-dns-schlundtech:auth = certbot_dns_schlundtech.dns_schlundtech:Authenticator
+dns-schlundtech = certbot_dns_schlundtech.dns_schlundtech:Authenticator
+
