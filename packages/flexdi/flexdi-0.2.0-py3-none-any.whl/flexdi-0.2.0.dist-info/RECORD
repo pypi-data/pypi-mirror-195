@@ -1,0 +1,16 @@
+flexdi/__init__.py,sha256=7zOmutioDWLFg_pzPYw5ljMorpjt_MpgKsEMXKpAUMQ,115
+flexdi/errors.py,sha256=U08fBkO-DJrpCmbo3x45dO9vsAZNbXIGu4GBLWvOUkk,227
+flexdi/graph.py,sha256=oiyz2o-X1afEZ-Dl2pCUt3ovaF0R0YCN3SMpcLyCD_o,7562
+flexdi/implicit.py,sha256=vXXEXZOpJ400i4gwhb6pnD_-zM_bP-_1_npmT2Z4NsQ,1128
+flexdi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flexdi/rules.py,sha256=ZoBiC2k1ORo0m2daEVggN-wvcJ55hPI98_hKhOmuKtg,4768
+flexdi/scope.py,sha256=ENBZ2tmV2E54HGxKlB0wkoWZPcWzK-y8K4AgS6U8hDQ,5677
+flexdi/store.py,sha256=3o9HoIKCxN2lkuhWgF97VeNvSJVCAbc2-OCDg0OLPJs,1818
+flexdi/types.py,sha256=WM2P4BBxOi-S7EcGlBs5KfaFUbMMVvoytIkcJqH7hXI,2765
+flexdi/util.py,sha256=_yKw5BHvrzRtBpwC2EJS6xDZh07TL-H0KPZz7DaZqcs,2617
+flexdi/fastapi/__init__.py,sha256=YLpDrDaoPQ5AOXMLHsUfp1ADCILUnpdp77gdn0yReNM,1602
+flexdi-0.2.0.dist-info/LICENSE,sha256=XLLM9nM_WffiqpUU9l13pAh3SSjSjWxEz0fxXrD1up0,1087
+flexdi-0.2.0.dist-info/METADATA,sha256=Wm84_gDch1EDGwDNfQbOEnK0Tuu31JhqszrS9-oT6rA,8015
+flexdi-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+flexdi-0.2.0.dist-info/top_level.txt,sha256=rj-_zrrY8006UI8J8pA5tKnYCh1DSO0N7J8kUJbnOnc,7
+flexdi-0.2.0.dist-info/RECORD,,
