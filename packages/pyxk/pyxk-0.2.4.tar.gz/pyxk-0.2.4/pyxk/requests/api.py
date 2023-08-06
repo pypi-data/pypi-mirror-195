@@ -1,0 +1,340 @@
+from pyxk.requests.sessions import Session
+
+
+def request(
+    method,
+    url,
+    params=None,
+    data=None,
+    headers=None,
+    cookies=None,
+    files=None,
+    auth=None,
+    timeout=5,
+    allow_redirects=True,
+    proxies=None,
+    hooks=None,
+    stream=None,
+    verify=None,
+    cert=None,
+    json=None
+):
+    with Session() as session:
+        return session.request(
+            method=method,
+            url=url,
+            params=params,
+            data=data,
+            headers=headers,
+            cookies=cookies,
+            files=files,
+            auth=auth,
+            timeout=timeout,
+            allow_redirects=allow_redirects,
+            proxies=proxies,
+            hooks=hooks,
+            stream=stream,
+            verify=verify,
+            cert=cert,
+            json=json,
+        )
+
+
+def get(
+    url,
+    params=None,
+    data=None,
+    headers=None,
+    cookies=None,
+    files=None,
+    auth=None,
+    timeout=5,
+    allow_redirects=True,
+    proxies=None,
+    hooks=None,
+    stream=None,
+    verify=None,
+    cert=None,
+    json=None
+):
+    return request(
+        method="get",
+        url=url,
+        params=params,
+        data=data,
+        headers=headers,
+        cookies=cookies,
+        files=files,
+        auth=auth,
+        timeout=timeout,
+        allow_redirects=allow_redirects,
+        proxies=proxies,
+        hooks=hooks,
+        stream=stream,
+        verify=verify,
+        cert=cert,
+        json=json,
+    )
+
+
+def post(
+    url,
+    params=None,
+    data=None,
+    headers=None,
+    cookies=None,
+    files=None,
+    auth=None,
+    timeout=5,
+    allow_redirects=True,
+    proxies=None,
+    hooks=None,
+    stream=None,
+    verify=None,
+    cert=None,
+    json=None
+):
+    return request(
+        method="post",
+        url=url,
+        params=params,
+        data=data,
+        headers=headers,
+        cookies=cookies,
+        files=files,
+        auth=auth,
+        timeout=timeout,
+        allow_redirects=allow_redirects,
+        proxies=proxies,
+        hooks=hooks,
+        stream=stream,
+        verify=verify,
+        cert=cert,
+        json=json,
+    )
+
+
+def options(
+    url,
+    params=None,
+    data=None,
+    headers=None,
+    cookies=None,
+    files=None,
+    auth=None,
+    timeout=5,
+    allow_redirects=True,
+    proxies=None,
+    hooks=None,
+    stream=None,
+    verify=None,
+    cert=None,
+    json=None
+):
+    return request(
+        method="options",
+        url=url,
+        params=params,
+        data=data,
+        headers=headers,
+        cookies=cookies,
+        files=files,
+        auth=auth,
+        timeout=timeout,
+        allow_redirects=allow_redirects,
+        proxies=proxies,
+        hooks=hooks,
+        stream=stream,
+        verify=verify,
+        cert=cert,
+        json=json,
+    )
+
+
+def head(
+    url,
+    params=None,
+    data=None,
+    headers=None,
+    cookies=None,
+    files=None,
+    auth=None,
+    timeout=5,
+    allow_redirects=False,
+    proxies=None,
+    hooks=None,
+    stream=None,
+    verify=None,
+    cert=None,
+    json=None
+):
+    return request(
+        method="head",
+        url=url,
+        params=params,
+        data=data,
+        headers=headers,
+        cookies=cookies,
+        files=files,
+        auth=auth,
+        timeout=timeout,
+        allow_redirects=allow_redirects,
+        proxies=proxies,
+        hooks=hooks,
+        stream=stream,
+        verify=verify,
+        cert=cert,
+        json=json,
+    )
+
+
+def put(
+    url,
+    params=None,
+    data=None,
+    headers=None,
+    cookies=None,
+    files=None,
+    auth=None,
+    timeout=5,
+    allow_redirects=True,
+    proxies=None,
+    hooks=None,
+    stream=None,
+    verify=None,
+    cert=None,
+    json=None
+):
+    return request(
+        method="put",
+        url=url,
+        params=params,
+        data=data,
+        headers=headers,
+        cookies=cookies,
+        files=files,
+        auth=auth,
+        timeout=timeout,
+        allow_redirects=allow_redirects,
+        proxies=proxies,
+        hooks=hooks,
+        stream=stream,
+        verify=verify,
+        cert=cert,
+        json=json,
+    )
+
+
+def patch(
+    url,
+    params=None,
+    data=None,
+    headers=None,
+    cookies=None,
+    files=None,
+    auth=None,
+    timeout=5,
+    allow_redirects=True,
+    proxies=None,
+    hooks=None,
+    stream=None,
+    verify=None,
+    cert=None,
+    json=None
+):
+    return request(
+        method="patch",
+        url=url,
+        params=params,
+        data=data,
+        headers=headers,
+        cookies=cookies,
+        files=files,
+        auth=auth,
+        timeout=timeout,
+        allow_redirects=allow_redirects,
+        proxies=proxies,
+        hooks=hooks,
+        stream=stream,
+        verify=verify,
+        cert=cert,
+        json=json,
+    )
+
+
+def delete(
+    url,
+    params=None,
+    data=None,
+    headers=None,
+    cookies=None,
+    files=None,
+    auth=None,
+    timeout=5,
+    allow_redirects=True,
+    proxies=None,
+    hooks=None,
+    stream=None,
+    verify=None,
+    cert=None,
+    json=None
+):
+    return request(
+        method="delete",
+        url=url,
+        params=params,
+        data=data,
+        headers=headers,
+        cookies=cookies,
+        files=files,
+        auth=auth,
+        timeout=timeout,
+        allow_redirects=allow_redirects,
+        proxies=proxies,
+        hooks=hooks,
+        stream=stream,
+        verify=verify,
+        cert=cert,
+        json=json,
+    )
+
+
+def wget(
+    url,
+    method="get",
+    params=None,
+    data=None,
+    headers=None,
+    cookies=None,
+    files=None,
+    auth=None,
+    timeout=5,
+    allow_redirects=True,
+    proxies=None,
+    hooks=None,
+    verify=None,
+    cert=None,
+    json=None,
+    file=None,
+    resume=False
+):
+    with Session() as session:
+        return session.wget(
+            method=method,
+            url=url,
+            params=params,
+            data=data,
+            headers=headers,
+            cookies=cookies,
+            files=files,
+            auth=auth,
+            timeout=timeout,
+            allow_redirects=allow_redirects,
+            proxies=proxies,
+            hooks=hooks,
+            verify=verify,
+            cert=cert,
+            json=json,
+            file=file,
+            resume=resume
+        )
