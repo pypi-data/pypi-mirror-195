@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: powergridsim
+Version: 0.0.1
+Summary: Simulation of Unit Commitment and Economic Dispatch in Real Power Grids
+Home-page: UNKNOWN
+Author: Junying (Alice) Fang
+Author-email: jf3187@columbia.edu
+License: UNKNOWN
+Keywords: python,optimization,grid,electricity,energy,unit commitment,economic dispatch
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+UNKNOWN
+
