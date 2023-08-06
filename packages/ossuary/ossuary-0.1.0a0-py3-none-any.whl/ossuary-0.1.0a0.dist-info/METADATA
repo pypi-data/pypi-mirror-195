@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: ossuary
+Version: 0.1.0a0
+Summary: dice analysis toolkit
+Project-URL: Homepage, https://github.com/bszonye/ossuary
+Project-URL: Repository, https://github.com/bszonye/ossuary
+Project-URL: Documentation, https://github.com/bszonye/ossuary
+Author-email: Bradd Szonye <bszonye@gmail.com>
+License: MIT
+License-File: LICENSE.md
+Keywords: dice,probability
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11.0rc2
+Provides-Extra: gtkplot
+Requires-Dist: ossuary[plot]; extra == 'gtkplot'
+Requires-Dist: pygobject; extra == 'gtkplot'
+Provides-Extra: plot
+Requires-Dist: matplotlib; extra == 'plot'
+Description-Content-Type: text/markdown
+
+# ossuary 🎲 probability analysis toolkit
+
+A Python package for analyzing dice and other randomizers.
+
+Features:
+
+* Exact values for probability computations.
+* Statistical analysis (mean, mode, standard deviation).
+* Graph plotting with visualization of median and other quantiles.
+* Support for symbolic as well as numeric dice.
+* Command-line evaluator for ease of use.
+* Python API for extensibility.
+
+Installation
+------------
+```
+pip install ossuary
+pip install matplotlib  # optional graphing support
+```
+
+Commands
+--------
+Roll a die.
+```
+ossuary d6
+```
+Roll d4+1 three times and add the results.
+```
+ossuary '3 @ (d4+1)'
+```
+Roll 4d6 and add the highest 3 dice.
+```
+ossuary 'Dice.NdX(4, d6, kh=3).sum()'
+```
+Take the middle die out of three d20 rolls.
+```
+ossuary 'Dice.NdX(3, d20, km=1).sum()'
+```
+Graph 12d6 with the results partitioned by deciles.
+```
+ossuary '(12 @ d6).plot(q=10)'
+```
+
