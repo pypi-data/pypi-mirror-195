@@ -1,0 +1,12 @@
+pydeseq2/__init__.py,sha256=koFBbrZXGFPOOq1qHt_0lk8T37yo-aqLjfJw_34d28U,53
+pydeseq2/__version__.py,sha256=VrXpHDu3erkzwl_WXrqINBm9xWkcyUy53IQOj042dOs,22
+pydeseq2/dds.py,sha256=RArCs5BGg6wE2rXNthbI5h1b2cjus9OSCDxUZKpW8ao,29935
+pydeseq2/ds.py,sha256=jQVz-ijvuHITXUULbTOs4Ax3hnj4N1KjcJKoEpBogAQ,19946
+pydeseq2/grid_search.py,sha256=echWkxj0GemXfmjp-uia_keYY-0HefBtRia5_YFcfR8,8473
+pydeseq2/preprocessing.py,sha256=587rEbrKnbN3VrdMkcPGEExg0AwDAqOl1vgxxyG0PtI,1316
+pydeseq2/utils.py,sha256=sOaB2-Ng5xir1UkYmTXhb1YB3pO1OhZDKmifBwtcMgQ,35002
+pydeseq2-0.3.0.dist-info/LICENSE,sha256=DE4YrnSXJb_AaIvIMkxWm5Vjgm_whQk3w4qY5-gRGd8,1062
+pydeseq2-0.3.0.dist-info/METADATA,sha256=cwDh7_opBK17ELL9tL_sCvdNwCngj5KPvaL393CrlEI,6513
+pydeseq2-0.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pydeseq2-0.3.0.dist-info/top_level.txt,sha256=RlMXsvZjiC1oSVVzjxRX2alxKzF0ZFcTG1wak42I9Gk,9
+pydeseq2-0.3.0.dist-info/RECORD,,
