@@ -1,0 +1,8 @@
+sconv/__init__.py,sha256=fkOowNLWLvGtw5ervJXp7kh8EcNzOWortzLgnfDX7aU,471
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_string.py,sha256=Tapbjh7jn7so_BjyTWaLKNvgs-zQ4OMzxnE9rqwqsJ4,534
+sconv_ha86-1.0.1.dist-info/LICENSE,sha256=oFwSuzMX5mkD1ZFYhyWkVpJwHT3lj04tDcf33I3vTtg,1060
+sconv_ha86-1.0.1.dist-info/METADATA,sha256=ZvMBxjKEzT2Kg6-nuWdV9UayPS8cHN7uQO-q24AqC4Q,440
+sconv_ha86-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sconv_ha86-1.0.1.dist-info/top_level.txt,sha256=_DbXB-9zr9fVR3akaxVDqwbS-mEzgnLOth-pdRIKzX0,12
+sconv_ha86-1.0.1.dist-info/RECORD,,
