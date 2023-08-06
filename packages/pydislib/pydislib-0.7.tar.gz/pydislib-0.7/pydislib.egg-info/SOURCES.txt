@@ -1,0 +1,9 @@
+README.rst
+setup.py
+pydislib/__init__.py
+pydislib/pydislib.py
+pydislib.egg-info/PKG-INFO
+pydislib.egg-info/SOURCES.txt
+pydislib.egg-info/dependency_links.txt
+pydislib.egg-info/requires.txt
+pydislib.egg-info/top_level.txt
