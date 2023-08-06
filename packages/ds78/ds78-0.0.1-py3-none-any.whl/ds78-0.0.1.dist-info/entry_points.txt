@@ -1,0 +1,3 @@
+[console_scripts]
+ds78=ds78.main:app
+
