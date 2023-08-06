@@ -1,0 +1,3 @@
+[console_scripts]
+plinky=plinky.__main__:main
+
