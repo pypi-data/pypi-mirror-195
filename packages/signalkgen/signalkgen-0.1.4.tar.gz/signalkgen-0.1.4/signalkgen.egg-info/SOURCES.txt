@@ -1,0 +1,17 @@
+.DS_Store
+.gitignore
+LICENSE
+README.md
+SECURITY.md
+pyproject.toml
+renovate.json
+.github/workflows/pylint.yml
+.github/workflows/python-publish.yml
+signalkgen/__main__.py
+signalkgen/generate.py
+signalkgen/move_boats.py
+signalkgen.egg-info/PKG-INFO
+signalkgen.egg-info/SOURCES.txt
+signalkgen.egg-info/dependency_links.txt
+signalkgen.egg-info/entry_points.txt
+signalkgen.egg-info/top_level.txt

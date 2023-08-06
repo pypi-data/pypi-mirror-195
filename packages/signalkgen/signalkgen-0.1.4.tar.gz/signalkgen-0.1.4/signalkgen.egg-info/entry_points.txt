@@ -1,0 +1,2 @@
+[console_scripts]
+signalkgen = signalkgen.__main__:main
