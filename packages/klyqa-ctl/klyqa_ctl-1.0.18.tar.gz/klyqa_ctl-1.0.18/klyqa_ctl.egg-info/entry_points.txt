@@ -1,0 +1,2 @@
+[console_scripts]
+klyqa-ctl = klyqa_ctl.klyqa_ctl:main

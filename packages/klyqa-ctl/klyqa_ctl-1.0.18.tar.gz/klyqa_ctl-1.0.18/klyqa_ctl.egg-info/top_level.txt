@@ -1,0 +1,3 @@
+klyqa-home-assistant-integration
+klyqa_ctl
+test
