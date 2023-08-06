@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/statstool.egg-info/PKG-INFO
+src/statstool.egg-info/SOURCES.txt
+src/statstool.egg-info/dependency_links.txt
+src/statstool.egg-info/top_level.txt
+src/statstools/__init__.py
+src/statstools/method.py
