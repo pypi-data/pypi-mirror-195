@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+plantfinder/__init__.py
+plantfinder/plantfinder.py
+plantfinder.egg-info/PKG-INFO
+plantfinder.egg-info/SOURCES.txt
+plantfinder.egg-info/dependency_links.txt
+plantfinder.egg-info/not-zip-safe
+plantfinder.egg-info/top_level.txt
