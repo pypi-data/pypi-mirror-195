@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+AezaAPI.egg-info/PKG-INFO
+AezaAPI.egg-info/SOURCES.txt
+AezaAPI.egg-info/dependency_links.txt
+AezaAPI.egg-info/requires.txt
+AezaAPI.egg-info/top_level.txt
+ApiAeza/__init__.py
+ApiAeza/aeza.py
