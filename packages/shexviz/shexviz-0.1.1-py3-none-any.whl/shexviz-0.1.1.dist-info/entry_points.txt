@@ -1,0 +1,2 @@
+[console_scripts]
+shexviz = shexviz.__main__:main
