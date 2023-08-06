@@ -1,0 +1,13 @@
+psutil
+numpy
+scipy
+click
+dnspython
+pymongo
+mongoengine
+pandas
+pyyaml
+colorama
+
+[celery]
+celery
