@@ -1,0 +1,7 @@
+simple_requirements_export/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_requirements_export/command.py,sha256=N7kDhfG0rrkH0JYpYakDCaFw6S-8QXTIcXGySaW8n8k,1856
+simple_requirements_export/plugin.py,sha256=Dog9GfHVydvl5cMsA29OHJRuBGtxEN_QrodZTyndNJk,382
+poetry_plugin_simple_requirements_export-0.1.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+poetry_plugin_simple_requirements_export-0.1.2.dist-info/entry_points.txt,sha256=HfTjJkm-oHBf-cY5wyMFMU7RIWpam5dmmZiWwslkj_k,114
+poetry_plugin_simple_requirements_export-0.1.2.dist-info/METADATA,sha256=wdx5ZT70oFAYIhAhkr9baugawgqq-5CuH_E67ofZWfw,658
+poetry_plugin_simple_requirements_export-0.1.2.dist-info/RECORD,,
