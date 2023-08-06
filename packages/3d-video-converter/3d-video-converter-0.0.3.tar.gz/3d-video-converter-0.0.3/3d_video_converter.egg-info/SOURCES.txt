@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+3d_video_converter.egg-info/PKG-INFO
+3d_video_converter.egg-info/SOURCES.txt
+3d_video_converter.egg-info/dependency_links.txt
+3d_video_converter.egg-info/requires.txt
+3d_video_converter.egg-info/top_level.txt
+video_converter_3d/__init__.py
+video_converter_3d/converter.py
