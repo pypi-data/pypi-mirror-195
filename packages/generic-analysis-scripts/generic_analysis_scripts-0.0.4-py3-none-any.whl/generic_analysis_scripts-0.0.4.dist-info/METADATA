@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: generic-analysis-scripts
+Version: 0.0.4
+Summary: Generic utilities for data analysis
+Requires-Dist: mplhep
+Requires-Dist: hist
+Requires-Dist: pandas
+Requires-Dist: zfit
+Requires-Dist: dill
+
+Private package, if you do not know what this is, it is useless for you, keep moving
