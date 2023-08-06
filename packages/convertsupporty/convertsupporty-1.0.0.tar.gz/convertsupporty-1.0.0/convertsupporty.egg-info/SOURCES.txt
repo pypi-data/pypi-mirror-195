@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+convertsupporty.egg-info/PKG-INFO
+convertsupporty.egg-info/SOURCES.txt
+convertsupporty.egg-info/dependency_links.txt
+convertsupporty.egg-info/entry_points.txt
+convertsupporty.egg-info/top_level.txt
+support_2_supporty/__init__.py
+support_2_supporty/convert_supporty.py

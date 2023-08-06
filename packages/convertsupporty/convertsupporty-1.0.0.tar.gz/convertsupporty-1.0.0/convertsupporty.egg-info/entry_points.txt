@@ -1,0 +1,2 @@
+[console_scripts]
+convertsupporty = support_2_supporty.convert_supporty:main
