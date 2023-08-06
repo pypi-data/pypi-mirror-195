@@ -1,0 +1,4 @@
+pnu-libpnu
+
+[hw]
+py-cpuinfo
