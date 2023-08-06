@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: lingvue
+Version: 0.0.1
+Summary: LingVue is a user-friendly language analysis and visualization toolkit that enables researchers, data analysts, and enthusiasts to explore language data and extract valuable insights. With its advanced visualization tools and algorithms, SpråkSyn makes it easy to analyze large language data datasets and create new ones for further analysis.
+Project-URL: Documentation, https://github.com/ysenarath/lingvue#readme
+Project-URL: Issues, https://github.com/ysenarath/lingvue/issues
+Project-URL: Source, https://github.com/ysenarath/lingvue
+Author: Yasas
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# LingVue
+
+*A toolkit for analyzing and visualizing language data.*
+
+---
+
+LingVue is a user-friendly language analysis and visualization toolkit that enables researchers, data analysts, 
+and enthusiasts to explore language data and extract valuable insights. With its advanced visualization tools and 
+algorithms, TextTrove makes it easy to analyze large language data datasets and create new ones for further analysis. 
