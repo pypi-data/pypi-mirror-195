@@ -1,0 +1,17 @@
+MANIFEST.in
+setup.py
+em3u8/__init__.py
+em3u8/cmd.py
+em3u8/httpclient.py
+em3u8/logger.py
+em3u8/m3u8.py
+em3u8/parse.py
+em3u8/sites/__init__.py
+em3u8/sites/site.py
+em3u8/sites/yunbtv.py
+vget.egg-info/PKG-INFO
+vget.egg-info/SOURCES.txt
+vget.egg-info/dependency_links.txt
+vget.egg-info/entry_points.txt
+vget.egg-info/requires.txt
+vget.egg-info/top_level.txt
