@@ -1,0 +1,46 @@
+# PyMathSolver
+
+## Introduction
+
+PyMathSolver is a Python module to solve math problems and work on calculations.
+
+## Installing and Importing
+
+Run the following command `pip install PyMathSolver` to install the module.
+
+To import the module, use `import PyMathSolver`.
+
+When you run `PyMathSolver.about()`, you can get a little more information on this module.
+
+## Utilities
+
+Till now, this module can only work on Quadratic Equations. Many more utilities are on their way!
+
+### 1) Quadratic Equations
+
+To import this, use the following code `from PyMathSolver import Quadratic`. To know more about Quadratic Equation and their usage, use `Quadratic.about()`.
+
+To find the roots of a quadratic equations, you can use the `Quadratic.findRoots(a, b, c)` function where a, b, and c are the co-efficients/values that you need to enter. It will print the 2 roots of the Quadratic Equation.
+
+## License
+
+Copyright 2022-2023 Aniketh Chavare
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+and associated documentation files (the "Software"), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## Conclusion
+
+I hope you liked this module. Thank you!
