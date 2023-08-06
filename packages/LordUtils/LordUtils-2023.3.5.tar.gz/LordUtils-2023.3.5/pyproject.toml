@@ -1,0 +1,25 @@
+
+[project]
+name = "LordUtils"
+version = "2023.3.5"
+description = "Helper Package for other Lord packages"
+requires-python = ">=3.10"
+keywords = []
+authors = [
+  {email = "lordibex@protonmail.com", name = "lordbex"},
+]
+maintainers = [
+  {email = "lordibex@protonmail.com", name = "lordbex"},
+]
+classifiers = [
+]
+
+dependencies = [
+  "regex~=2022.9.13",
+  "validators~=0.20.0",
+  "rich"
+]
+
+[project.urls]
+homepage = "https://github.com/BexWorld/LordUtils.git"
+repository = "https://github.com/BexWorld/LordUtils.git"
