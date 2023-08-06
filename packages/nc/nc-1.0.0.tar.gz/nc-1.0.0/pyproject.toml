@@ -1,0 +1,31 @@
+[tool.black]
+line-length = 79
+skip-string-normalization = true
+target-version = ['py38']
+
+[tool.poetry]
+name = "nc"
+version = "1.0.0"
+description = "🎨 Named colors in Python 🎨"
+authors = ["Tom Ritchford <tom@swirly.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+xmod = "^1.4.0"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.1.0"
+flake8 = "5.0.4"
+impall = "^1.1.1"
+mypy = "^0.991"
+pyfakefs = "^5.1.0"
+pytest = "^7.2.1"
+beautifulsoup4 = "^4.11.2"
+requests = "^2.28.2"
+safer = "^4.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
