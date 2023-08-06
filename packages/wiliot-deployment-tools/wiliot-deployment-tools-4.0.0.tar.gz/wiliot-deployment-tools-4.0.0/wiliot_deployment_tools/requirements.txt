@@ -1,0 +1,13 @@
+setuptools_scm
+pandas
+numpy
+pygubu==0.16
+MarkupSafe==2.0.1
+tabulate
+jsonpickle
+slack_sdk
+analytics_common_pkg
+plotly
+colorama
+bitstruct
+backports

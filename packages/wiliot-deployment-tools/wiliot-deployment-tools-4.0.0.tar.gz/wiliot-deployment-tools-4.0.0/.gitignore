@@ -1,0 +1,15 @@
+/secrets.py
+/token
+.idea
+__pycache__/
+*.log
+wiliot_deployment_tools/version.py
+/wiliot_deployment_tools/internal/test007and8ii_tableData.csv
+/wiliot_deployment_tools/internal/tableTest.csv
+/wiliot_deployment_tools/internal/tagstats.dict
+/wiliot_deployment_tools/internal/test004_testConfiguration.csv
+/wiliot_deployment_tools/internal/test007and8_tableData.csv
+/wiliot_deployment_tools/internal/test007and008_testConfigurationii.csv
+/scratch.py
+/test_analysis.py
+/wiliot_deployment_tools/internal/alert_service/alertOwners.json
