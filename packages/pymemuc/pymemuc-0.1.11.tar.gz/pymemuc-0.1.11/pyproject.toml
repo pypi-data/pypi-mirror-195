@@ -1,0 +1,92 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "pymemuc"
+version = "v0.1.11"
+description = "A Memuc.exe wrapper for Python"
+readme = "README.md"
+authors = ["Martin Miglio <code@martinmiglio.dev>"]
+license = "MIT"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+keywords = ["memu", "memuc", "wrapper", "api"]
+repository = "https://github.com/marmig0404/pymemuc"
+documentation = "https://pymemuc.readthedocs.io/"
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[tool.poetry.group.dev]
+optional = true
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = ">=2.20,<4.0"
+black = ">=22,<24"
+prospector = "^1.8.4"
+ipykernel = "^6.17"
+
+
+[tool.poetry.group.docs]
+optional = true
+
+
+[tool.poetry.group.docs.dependencies]
+sphinx = ">=5.3,<7.0"
+furo = "^2022.12.7"
+sphinxext-opengraph = ">=0.7.5,<0.9.0"
+sphinx-autobuild = "^2021.3.14"
+sphinx-copybutton = "^0.5.1"
+
+
+[tool.poetry.group.tests]
+optional = true
+
+
+[tool.poetry.group.tests.dependencies]
+twine = "^4.0.2"
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
+
+
+[tool.isort]
+profile = "black"
+
+
+[tool.pylint.main]
+ignore = ["docs/source"]
+py-version = "3.10"
+suggestion-mode = true
+disable = [
+    "C0301", # line-too-long
+    "W0622", # redefined-builtin
+    "R0903", # too-few-public-methods
+    "C0412", # ungrouped-imports
+    ]
