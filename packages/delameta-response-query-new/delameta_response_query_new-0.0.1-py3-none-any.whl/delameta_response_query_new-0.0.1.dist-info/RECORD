@@ -1,0 +1,6 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/create_pool_psycopg2.py,sha256=0jjrKhqMqgsZQk3S_0RmFIdHIgH5InwVI7pjU4SOK6E,1351
+src/query_psycopg2.py,sha256=2tYcBNDVQ4R4r39mayAzejlBFlZD2LFVonsOZwD6-6o,14940
+delameta_response_query_new-0.0.1.dist-info/METADATA,sha256=azga5Z3eOVPV1LfM-_haYPeDjuXW8nZ0e8yPwGiI63A,335
+delameta_response_query_new-0.0.1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+delameta_response_query_new-0.0.1.dist-info/RECORD,,
