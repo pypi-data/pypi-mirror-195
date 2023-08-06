@@ -1,0 +1,4 @@
+[console_scripts]
+vk-mutuals = vk.mutuals:main
+vk-sessions = vk.tracking.sessions:main
+vk-status = vk.tracking.status:main
