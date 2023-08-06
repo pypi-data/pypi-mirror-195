@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: toros
+Version: 0.0.2
+Summary: Torch <-> ROS Interface
+Home-page: https://github.com/simon-schaefer/toros
+Author: Simon Schaefer
+Author-email: simon.k.schaefer@gmail.com
+License: Apache
+License-File: LICENSE
