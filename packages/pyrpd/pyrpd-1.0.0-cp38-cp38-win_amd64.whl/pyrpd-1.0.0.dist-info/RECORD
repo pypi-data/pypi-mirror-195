@@ -1,0 +1,9 @@
+pyrpd/__init__.py,sha256=GIOp7uUqSLhoGYDa09f5YUe9-SiItR7fWb0SlK3ip8E,172
+pyrpd/_pyrpd.cp38-win_amd64.pyd,sha256=CAlMSQoK9TBiLVACRyzgV72T_wO9ELJRYqt1CRZnRrM,93184
+pyrpd/tests/__init__.py,sha256=H3KUpp2_CBp_o_pySBnESl4FaZ9EQLmxyoGpJHMZmWg,82
+pyrpd/tests/wechat.py,sha256=E0ZmPIOE3A3NhB1JK13xbknJkaIR_aPpbBaDqii7Gs4,1197
+pyrpd-1.0.0.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+pyrpd-1.0.0.dist-info/METADATA,sha256=NI1eUOkd9Yzin7XuwTL5xfhw_7F1Q2a6hz1tRdZMZH0,702
+pyrpd-1.0.0.dist-info/WHEEL,sha256=b_PH-i_F2xFYDXcROE5vpDbWUcY020I0eLFvEIYA9Pc,100
+pyrpd-1.0.0.dist-info/top_level.txt,sha256=aiIBpR2Ao2gLRhZKwwteKX2BEDUZ25ZoM1qIkUNSIvk,6
+pyrpd-1.0.0.dist-info/RECORD,,
