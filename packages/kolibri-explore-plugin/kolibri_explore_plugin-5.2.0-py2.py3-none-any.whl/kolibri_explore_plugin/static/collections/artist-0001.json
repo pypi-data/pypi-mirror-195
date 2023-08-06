@@ -1,0 +1,217 @@
+{
+  "channels": [
+    {
+      "id": "1520f018610256549c98ca0140cceebe",
+      "version": 5,
+      "include_node_ids": [
+        "6fe6f580dc6c54df91c131c17b5548fd"
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "Artist",
+    "subtitle": "0001",
+    "description": "artist",
+    "required_gigabytes": 1,
+    "tagged_node_ids": [
+      {
+        "node_id": "6fe6f580dc6c54df91c131c17b5548fd",
+        "tags": [
+          "career",
+          "highlight"
+        ]
+      },
+      {
+        "node_id": "d48bba63221b45b08eb5b7e85aa6d4c8",
+        "tags": []
+      },
+      {
+        "node_id": "aed0ad11eaeb4c75a4f93569492f3f7f",
+        "tags": []
+      },
+      {
+        "node_id": "dc02a16cf93d4961b082e45a9569a21a",
+        "tags": [
+          "career",
+          "highlight"
+        ]
+      },
+      {
+        "node_id": "18794db672544db9b1fc5113b0f11ab0",
+        "tags": [
+          "highlight",
+          "skill"
+        ]
+      },
+      {
+        "node_id": "8b094975fb034ffabe8f84e94236c450",
+        "tags": [
+          "highlight",
+          "skill"
+        ]
+      },
+      {
+        "node_id": "454b964a232b40b6b1ac757bc8682442",
+        "tags": [
+          "highlight",
+          "skill"
+        ]
+      },
+      {
+        "node_id": "bedd4f11617a4a91bea8eb563eade367",
+        "tags": [
+          "skill"
+        ]
+      },
+      {
+        "node_id": "b6a27f3179e545a7ae36aba9ebcdd7e0",
+        "tags": [
+          "highlight",
+          "skill"
+        ]
+      },
+      {
+        "node_id": "a6a373e3080b432e8979292f2e4e9027",
+        "tags": [
+          "curious",
+          "highlight"
+        ]
+      },
+      {
+        "node_id": "65e3efecb1f247429dfd2ce83284eb3a",
+        "tags": []
+      },
+      {
+        "node_id": "4cf9c5c24352504d9e82d89649acdef1",
+        "tags": [
+          "curious"
+        ]
+      },
+      {
+        "node_id": "6d5a97dd59c555c09d3aebfb54a5a256",
+        "tags": [
+          "curious",
+          "highlight"
+        ]
+      },
+      {
+        "node_id": "ed3bc69a222b50baa81d2b4621776ea3",
+        "tags": [
+          "highlight",
+          "skill"
+        ]
+      },
+      {
+        "node_id": "fee375c9593051e580656ee6ea988f1d",
+        "tags": [
+          "skill"
+        ]
+      },
+      {
+        "node_id": "a19656e6e54056c7a8642ea7246cde3e",
+        "tags": [
+          "highlight",
+          "skill"
+        ]
+      },
+      {
+        "node_id": "19babfa40f6b5f64b0404d1c03980a7c",
+        "tags": [
+          "highlight",
+          "skill"
+        ]
+      },
+      {
+        "node_id": "4c4d8ea7a9db5614bdd18d2a1cbbd7fb",
+        "tags": [
+          "skill"
+        ]
+      },
+      {
+        "node_id": "c4e8db9e8c4657aab03e4d60d0739fd7",
+        "tags": [
+          "skill"
+        ]
+      },
+      {
+        "node_id": "a5a3168bb39b52cf8337d74e2dbb0cda",
+        "tags": [
+          "skill"
+        ]
+      },
+      {
+        "node_id": "782d0145c5df5f9692c0e71ca18df2ad",
+        "tags": [
+          "skill"
+        ]
+      },
+      {
+        "node_id": "b46315b5a5c55992b4e70ce876690a37",
+        "tags": [
+          "highlight",
+          "skill"
+        ]
+      },
+      {
+        "node_id": "8e5de022aa23530f9dd5e8a144e3b1f1",
+        "tags": [
+          "skill"
+        ]
+      },
+      {
+        "node_id": "8a50feaea98452fc9d3dc46fab10a33f",
+        "tags": [
+          "skill"
+        ]
+      },
+      {
+        "node_id": "a5d7911a7e3555e89054f6d3f5a3087f",
+        "tags": [
+          "highlight",
+          "skill"
+        ]
+      },
+      {
+        "node_id": "69d579c0b5e1550b8ba05caf429dc81a",
+        "tags": [
+          "career",
+          "highlight"
+        ]
+      },
+      {
+        "node_id": "2185f2ced9db5ad295386bcbad8ca4e5",
+        "tags": [
+          "career"
+        ]
+      },
+      {
+        "node_id": "37f9039b5ae55ec6a7194198e8531837",
+        "tags": [
+          "curious",
+          "highlight"
+        ]
+      },
+      {
+        "node_id": "fb259af752015b2ab39d786a0dae0e03",
+        "tags": [
+          "skill"
+        ]
+      },
+      {
+        "node_id": "037e5278d0175dbbaee3e3eaae345b46",
+        "tags": [
+          "highlight",
+          "skill"
+        ]
+      },
+      {
+        "node_id": "c08d46d405355850926e7e27acf35663",
+        "tags": [
+          "highlight",
+          "skill"
+        ]
+      }
+    ]
+  },
+  "channel_list_hash": ""
+}
