@@ -1,0 +1,10 @@
+sim2lbuilder/__init__.py,sha256=WwA2JJs2bNYlsZKOiy0z1Gw5opbegIi6ex1_DGCzsUw,1559
+sim2lbuilder/_version.py,sha256=avgsfQFaMnBPrWGoOOLT8URgAtuLyxxuKqDwwJcTdsw,1290
+sim2lbuilder/components.py,sha256=cYbnKfJrPvnLVy1ewXE6SZCtz5dwq0nVu0gwkPtreG4,36073
+sim2lbuilder/sim2lbuilder.py,sha256=QuiNgfoFHBfpOFpXQaL13ZwdZPCWPEQ-BRivcLxSsjg,51002
+sim2lbuilder/utils.py,sha256=f-1SjHSpOKQh38zonHHphW-HrM1Gg3f6vewTMqAARJ4,30956
+sim2lbuilder/views.py,sha256=wIcF0o8L3LgjL6_xEGFdDzC2uYWqvdp1F4nJMtXpz2c,40853
+sim2lbuilder-0.0.5.dist-info/METADATA,sha256=1CImQVf4hstUr94mu2YFiXy5Uno3EfsBf1VJDxihcj4,5097
+sim2lbuilder-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+sim2lbuilder-0.0.5.dist-info/top_level.txt,sha256=0_A-xlvT1lBmNE_O9VbGFHwLS9SUE-WVyc5Yjtdf9pM,13
+sim2lbuilder-0.0.5.dist-info/RECORD,,
