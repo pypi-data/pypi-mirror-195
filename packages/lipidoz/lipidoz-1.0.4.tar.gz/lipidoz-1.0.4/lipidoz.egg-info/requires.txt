@@ -1,0 +1,10 @@
+mzapy
+matplotlib
+numpy
+scipy
+xlsxwriter
+pandas
+scikit-learn
+scikit_image
+torch
+torchvision
