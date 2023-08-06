@@ -1,0 +1,2 @@
+[console_scripts]
+gdesk = gdesk.console:argexec
