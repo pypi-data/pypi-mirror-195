@@ -1,0 +1,11 @@
+ALifeStdDev/__init__.py,sha256=y0Ce6FjQZojrNLtbij87Xnw2WYhHKFoXLCyB6mQ4crQ,83
+ALifeStdDev/ALifeStdDev/__init__.py,sha256=dG3VMXtjlfIGCMnGfn8SlDtl3aK_mpPdgQJYZHG2itA,149
+ALifeStdDev/phylogeny/__init__.py,sha256=K76fEiu1purqnUgOZv8bRAGwu7Kuzprk70bb6giw98k,65
+ALifeStdDev/phylogeny/loader.py,sha256=UONnv-SWHueXNzVc1XXfHdFV0ZgiwDhStmWEhx_puN4,2847
+ALifeStdDev/phylogeny/metrics.py,sha256=8q0HdIxLesLoeHVozSzjs_YoOttclXp1Uw7GhV9bxaY,7412
+ALifeStdDev/phylogeny/utils.py,sha256=LjwIOg7A0riWzXc7IkXmVefj7pmxnuN1G5fTZFV4xA4,30136
+ALifeStdDev-0.2.4.dist-info/LICENSE,sha256=juSAg2dMqWuPt2xr6szOSVt3LS-BmM9f6PttoZ1yX94,1087
+ALifeStdDev-0.2.4.dist-info/METADATA,sha256=SCjo4AByKsdBrH0kjas1SeVJNfbnxNEMhl5G9m56D3Q,2366
+ALifeStdDev-0.2.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ALifeStdDev-0.2.4.dist-info/top_level.txt,sha256=ykL-h6-FZZjunPwmywwCgglgOz8IN4ahlCG3Dm9jFp4,12
+ALifeStdDev-0.2.4.dist-info/RECORD,,
