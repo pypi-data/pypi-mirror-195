@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: xyapi
+Version: 0.0.2
+Summary: api base
+Home-page: https://github.com/zhangguangyong/xyapi.git
+Author: 9527
+Author-email: 9527deyouxiang@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi
+
+
+# xyapi
+base fastapi
