@@ -1,0 +1,10 @@
+limesurveyrc2api/__init__.py,sha256=_7OlQdbVkK4jad0CLdpI0grT-zEAb-qgFmH5mFzDXiA,22
+limesurveyrc2api/_survey.py,sha256=UOm4hUhwLTweb92ynnUUKNv-dGsCOWTjlMdm-R6kD68,2622
+limesurveyrc2api/_token.py,sha256=FX3Mzwv-C0-89nsWeKin8-9RVw-ogzXvgyoqefp4NCU,10583
+limesurveyrc2api/exceptions.py,sha256=LuMoHqoro1bkcDT8CSHzcXVCBqcC4Tf-8mMt0flrpPM,319
+limesurveyrc2api/limesurvey.py,sha256=0xi1OBV6yrUl1h3DdsIJa21qKG8qMr1GRibEMLvpR8M,3754
+limesurveyrc2api-2.0.0.dist-info/LICENSE,sha256=Bx42pqpt1GGokayk_qcRB4cJ-qhJBp63oFy0cx2lDFE,1082
+limesurveyrc2api-2.0.0.dist-info/METADATA,sha256=pkgv_5zaR4QeNCz4RufARDWyrxwmba4ERPZJEb3UGD4,5794
+limesurveyrc2api-2.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+limesurveyrc2api-2.0.0.dist-info/top_level.txt,sha256=WIjLlR5iOyAcaDJlnShthLeBJg46yMrcZ5A4zg9qtzE,17
+limesurveyrc2api-2.0.0.dist-info/RECORD,,
