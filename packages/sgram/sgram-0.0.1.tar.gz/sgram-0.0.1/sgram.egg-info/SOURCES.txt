@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+sgram/__init__.py
+sgram.egg-info/PKG-INFO
+sgram.egg-info/SOURCES.txt
+sgram.egg-info/dependency_links.txt
+sgram.egg-info/requires.txt
+sgram.egg-info/top_level.txt
