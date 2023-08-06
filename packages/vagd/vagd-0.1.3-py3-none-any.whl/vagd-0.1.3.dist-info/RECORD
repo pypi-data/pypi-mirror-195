@@ -1,0 +1,17 @@
+vagd/__init__.py,sha256=4-o4DhlgDA4FE_spdZIXVIbFrLxty4KbSnMxD6EAUwA,11439
+vagd/box.py,sha256=k2s7xxYjsuXufCV11gks2aopGYsUPQyZYc6P5MtlPxw,140
+vagd/gdb.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vagd/vtemplate.py,sha256=9o_YW_IlXyLRzoKO2trkz97pAgDH7dJ7ja-GwIgXLDM,322
+vagd/wrapper.py,sha256=fGXIq0OrpVkOwqET2tJKQrf_leUOHQMQwLd8kqoobBo,815
+vagd/gdb/__init__.pyi,sha256=1DjxGj8ZIgHJFc9ykCXF_oNSDEC_PqM-nI4x8g2Xu_g,20349
+vagd/gdb/events.pyi,sha256=b0skbUvunlkPbIkoVol3AbEmzFGfvmITmlF3wKoVSlE,4178
+vagd/gdb/printing.pyi,sha256=FHMqQ66eS_OgPKAYRD_bbY5SnF5uy_i7-F0V6Pde5OQ,983
+vagd/gdb/prompt.pyi,sha256=QpDWRXVr9xwcf1YTqY2u0pc3YKTKP01b7oQE-dn1yTI,47
+vagd/gdb/types.pyi,sha256=iNbX8nRTK88Z5RO8xr0wxZtHX072_6ubs9V8hFVqXMo,865
+vagd/gdb/unwinder.pyi,sha256=GXp_zej0DjUERVs9mJWfMlkApgHmOfiGU9qsY0GBalE,135
+vagd/gdb/xmethod.pyi,sha256=ab7Rj4647YOviKRPVS1ywaKeARu-52tXGELi8_Rzqv8,844
+vagd-0.1.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+vagd-0.1.3.dist-info/METADATA,sha256=atJKGnaTiciSmT4F0y-yM4uB1e3qY2WLdsSNXnbIIvw,6521
+vagd-0.1.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+vagd-0.1.3.dist-info/top_level.txt,sha256=crSDoZ0TmNAC3MNIknlaQxzhXqD5-gkIi9ppmyqiXe0,5
+vagd-0.1.3.dist-info/RECORD,,
