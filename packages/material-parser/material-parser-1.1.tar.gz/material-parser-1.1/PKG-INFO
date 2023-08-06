@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: material-parser
+Version: 1.1
+Summary: Grobid superconductors tools material parser
+Home-page: https://github.com/lfoppiano/grobid-superconductors-tools
+Author: Luca Foppiano
+Author-email: FOPPIANO.Luca@nims.go.jp
+License: Apache 2.0
+Keywords: text mining,machine learning
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
