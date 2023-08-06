@@ -1,0 +1,9 @@
+capsulecorp/__init__.py,sha256=q4kqdtSAwtglJtPAYDpPWzJ6MP75BEdd22hFajrUYGY,63
+capsulecorp/query_driver.py,sha256=gceEMjiwrZfm0ULLgxPpvQO7kDnPM31a8K1AP4kidOc,7356
+capsulecorp/utils.py,sha256=DwVP9UGVkCJnmMBEdY0oOfOePVOVufoPofrB_VEsp3w,11476
+capsulecorp/version.py,sha256=h19s7NEM4_WEfkXLYP5WHeI2PDqDW7VteCl9o0gPisE,270
+capsulecorp-0.0.17.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+capsulecorp-0.0.17.dist-info/METADATA,sha256=Bk2CBqrnItLfnPDGwO0DWpNSd6bP2ErA3J4rLC35TAI,568
+capsulecorp-0.0.17.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+capsulecorp-0.0.17.dist-info/top_level.txt,sha256=bDBi96flhP_whKE6MNhiJ1mTm_3yuYYN7OhIpVmVeBI,12
+capsulecorp-0.0.17.dist-info/RECORD,,
