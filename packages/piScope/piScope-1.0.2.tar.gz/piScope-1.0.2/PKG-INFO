@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: piScope
+Version: 1.0.2
+Summary: piScope data analysis workbench
+Download-URL: https://github.com/piScope/piScope
+Author: S. Shiraiwa
+Author-email: shiraiwa@princeton.edu
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
