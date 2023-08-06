@@ -1,0 +1,4 @@
+prometheus_fastapi_instrumentator
+opentelemetry-exporter-zipkin-json
+opentelemetry.instrumentation.wsgi
+opentelemetry.instrumentation.fastapi

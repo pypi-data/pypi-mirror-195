@@ -1,0 +1,1 @@
+from .openTelemetry_fastapi import auto_monitoring_FastAPI

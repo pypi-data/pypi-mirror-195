@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: auto-instrumentors
+Version: 0.0.2
+Summary: Tool for auto create tracers and metrics to your application
+Home-page: UNKNOWN
+Author: Otávio Mascarenhas
+Author-email: otaviomascarenhaspessoal@gmail.com
+License: MIT License
+Keywords: instrumentors tracers metrics
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+UNKNOWN
+

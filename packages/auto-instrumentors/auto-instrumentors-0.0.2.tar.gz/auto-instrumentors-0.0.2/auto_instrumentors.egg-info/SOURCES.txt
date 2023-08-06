@@ -1,0 +1,9 @@
+LICENCE
+setup.py
+auto_instrumentors/__init__.py
+auto_instrumentors/openTelemetry_fastapi.py
+auto_instrumentors.egg-info/PKG-INFO
+auto_instrumentors.egg-info/SOURCES.txt
+auto_instrumentors.egg-info/dependency_links.txt
+auto_instrumentors.egg-info/requires.txt
+auto_instrumentors.egg-info/top_level.txt
