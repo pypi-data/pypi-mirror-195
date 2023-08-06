@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: flake8-assert-finder
+Version: 1.0
+Summary: A simple flake8 Plugin that checks if assert is used
+Author-email: JakobDev <jakobdev@gmx.de>
+License: BSD-2-Clause
+Project-URL: Issues, https://codeberg.org/JakobDev/flake8-assert-finder/issues
+Project-URL: Source, https://codeberg.org/JakobDev/flake8-assert-finder
+Project-URL: Donation, https://ko-fi.com/jakobdev
+Keywords: JakobDev,assert,flake8
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Other Environment
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Framework :: Flake8
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flake8
+
+# flake8-assert-finder
+
+A simple flake8 Plugin that checks if assert is used
+
+The `assert` Keyword is very useful in Python, but has one big problem: Python has a [optimized mode](https://docs.python.org/3/using/cmdline.html?highlight=pythonoptimize#cmdoption-O). When using this, The `assert` Keyword will no longer work, so if you use `assert` in a Library, this can lead to Problems.
+
+You should replace assert with this little function:
+```python
+def assert_func(expression: bool) -> None:
+    """
+    The assert keyword is not available when running Python in optimized mode.
+    This function is a drop-in replacement.
+    See https://docs.python.org/3/using/cmdline.html?highlight=pythonoptimize#cmdoption-O
+    """
+    if not expression:
+        raise AssertionError()
+```
+This makes sure, your will be working.
+
+If you just write your own Program, which you don't use with the optimized mode or if you use something like [pytest](https://docs.pytest.org), you can use `assert` of course.
+
+This Plugin just checks for the use of the `assert` Keyword. Nothing more.
+
+### List of warnings:
+
+| ID    | Description  |
+| ----- | ------------ |
+| AF100 | Found assert |
