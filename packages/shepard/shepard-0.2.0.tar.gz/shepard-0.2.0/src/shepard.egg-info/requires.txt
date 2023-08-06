@@ -1,0 +1,6 @@
+click
+boto3
+awscli
+validators
+aws-cdk-lib
+constructs
