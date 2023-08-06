@@ -1,0 +1,2 @@
+[console_scripts]
+mulimgviewer = mulimgviewer.__main__:main
