@@ -1,0 +1,9 @@
+README.md
+setup.py
+survex3dreader/__init__.py
+survex3dreader/reader.py
+survex3dreader.egg-info/PKG-INFO
+survex3dreader.egg-info/SOURCES.txt
+survex3dreader.egg-info/dependency_links.txt
+survex3dreader.egg-info/not-zip-safe
+survex3dreader.egg-info/top_level.txt
