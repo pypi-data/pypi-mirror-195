@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: JobHunter
+Version: 0.0.2
+Summary: This will automate the job application process to seek.com
+Home-page: UNKNOWN
+Author: Reamon Sumapig (DSoftwareArtist)
+Author-email: <29reamonsumapig@gmail.com>
+License: UNKNOWN
+Description: 
+        ### Reminder
+        
+Keywords: python,jobhunter
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Customer Service
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix 
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown

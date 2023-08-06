@@ -1,0 +1,10 @@
+beautifulsoup4
+black
+chromedriver-autoinstaller
+gspread
+lxml
+oauth2client
+pydantic[email]
+python-dotenv
+requests
+selenium
