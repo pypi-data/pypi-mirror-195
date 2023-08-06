@@ -1,0 +1,3 @@
+[console_scripts]
+sttool=sttool.cli:cli
+
