@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "dinochrome-console-package"
+version = "0.0.1"
+description = "package of console utilities for my own needs"
+authors = ["Dmitry Drozdov <dinochrom1@gmail.com>"]
+readme = "README.md"
+packages = [{include = "dinochrome_console_package"}]
+
+[tool.poetry.scripts]
+dsc = "dinochrome_console_package.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = {extras = ["all"], version = "^0.7.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
