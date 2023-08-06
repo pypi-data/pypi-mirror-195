@@ -1,0 +1,2 @@
+[console_scripts]
+wasabis3 = wasabis3.cli:main
