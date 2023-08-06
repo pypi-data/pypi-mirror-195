@@ -1,0 +1,6 @@
+more-itertools
+
+[test]
+pytest
+pytest-cov
+typing_extensions
