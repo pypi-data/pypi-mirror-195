@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: bikash-calculator
+Version: 0.3
+Summary: This is very basic calculator
+Home-page: https://github.com/bikash829
+Author: Bikash Chowdhury
+Author-email: chowdhurybikash38@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Bikash Calculator
+
+Under construction! No tready for use yet! Currently experimenting and planning! 
+
+Developed by Bikash Chowdhury from DIA (c) 2023
+
+## Example of How TO USe (Bikash Calculator)
+Creating A caalculator 
+
+
+
+```python 
+ 
+def add_number(a,b):
+    return a + b
+
+ 
+def sub_number(a,b):
+    return a - b
+
+     
+def mul_number(a,b):
+    return a * b
+
+     
+def div_number(a,b):
+    return a / b
+
+
+USES:
+from mycalculator import calculator
+calculator.add_number(7,8)
+
+```
