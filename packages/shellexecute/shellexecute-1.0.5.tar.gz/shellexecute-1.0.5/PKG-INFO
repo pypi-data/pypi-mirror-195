@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: shellexecute
+Version: 1.0.5
+Summary: Executes a command, allows confirmation to be sent using p/wexpect
+Home-page: https://github.com/zackees/shellexecute
+Maintainer: Zachary Vorhies
+License: BSD 3-Clause License
+Keywords: template-python-cmd
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# shellexecute
+
+[![Linting](https://github.com/zackees/shellexecute/actions/workflows/lint.yml/badge.svg)](https://github.com/zackees/shellexecute/actions/workflows/lint.yml)
+
+[![MacOS_Tests](https://github.com/zackees/shellexecute/actions/workflows/push_macos.yml/badge.svg)](https://github.com/zackees/shellexecute/actions/workflows/push_macos.yml)
+[![Ubuntu_Tests](https://github.com/zackees/shellexecute/actions/workflows/push_ubuntu.yml/badge.svg)](https://github.com/zackees/shellexecute/actions/workflows/push_ubuntu.yml)
+[![Win_Tests](https://github.com/zackees/shellexecute/actions/workflows/push_win.yml/badge.svg)](https://github.com/zackees/shellexecute/actions/workflows/push_win.yml)
+
+`pip install shellexecute`
+
+```python
+from shellexecute import execute
+rtn = execute(
+    f"echo HI",
+    send_confirmation=[("HI", "y")],
+)
+```
+
+Cross platform way to run shell commands using pexpect (wexpect on windows). VERY useful for installers where
+you want to automate accepting prompts.
+
+To develop software, run `. ./activate.sh`
+
+# Windows
+
+This environment requires you to use `git-bash`.
+
+# Linting
+
+Run `./lint.sh` to find linting errors using `pylint`, `flake8` and `mypy`.
+
+
+# Versions
+  * 1.0.5: Fix coloram issue in non windows builds.
+  * 1.0.4: Timeout is now set to None by default.
