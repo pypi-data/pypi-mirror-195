@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+src/ixi_algs.egg-info/PKG-INFO
+src/ixi_algs.egg-info/SOURCES.txt
+src/ixi_algs.egg-info/dependency_links.txt
+src/ixi_algs.egg-info/not-zip-safe
+src/ixi_algs.egg-info/top_level.txt
