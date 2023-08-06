@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "MalaPy"
+version = "0.0.1"
+authors = [
+  { name="Noel Garber", email="ngarber93@gmail.com" },
+]
+description = "A simple Python interface for requesting lists of associated diseases for one or more genes from MalaCards."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/noelgarber/malapy"
+"Bug Tracker" = "https://github.com/noelgarber/malapy/issues"
