@@ -1,0 +1,10 @@
+pipinfo/__init__.py,sha256=OIUvQK6yxVB8AiXXHt83ZFQSsZMxRVNxkf2BJMND5v0,60
+pipinfo/library.py,sha256=PTdWo-yMY1NT7EXrqoADg51RwB9cDPzH64lvHT69Yws,29529
+pipinfo/main.py,sha256=GNCimv5bi4Y2OZ93IJwFMrU4QzJ6x3qsEIElNu70vFg,12852
+pnu_pipinfo-0.9.1.data/data/man/man1/pipinfo.1.gz,sha256=IoV7tLUhXC1T5ruZByH4_uoT3aA4TWKkVVRSygnKOJY,2004
+pnu_pipinfo-0.9.1.dist-info/License,sha256=_8OOv2grfA7GzILc5V0VEMRkVk3nSBmUZQsylbCPksQ,1461
+pnu_pipinfo-0.9.1.dist-info/METADATA,sha256=wmeolKS7yZrr8ZGKqM7hMxEyvcicFovi4MP5y7XPK3o,6699
+pnu_pipinfo-0.9.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pnu_pipinfo-0.9.1.dist-info/entry_points.txt,sha256=0SnHC0m0Km-B-_khFe5RHO5NZh4igg43frVbGj_5j_I,41
+pnu_pipinfo-0.9.1.dist-info/top_level.txt,sha256=htP2XwmIx44lvjSfUDak876pml1m7YyAqIwrMC_6a9Y,8
+pnu_pipinfo-0.9.1.dist-info/RECORD,,
