@@ -1,0 +1,11 @@
+compel/__init__.py,sha256=_0tNrpf9-RVKOoPkTgp-t7yijvbXT79Dh2O0q0WFwRI,124
+compel/compel.py,sha256=zRIvck-y4_hqBtILujSuqBhfOsdkC0n7oCM_Yb_XNQo,9816
+compel/conditioning_scheduler.py,sha256=CnkuU3Fbjl40ezyq39XpM3vRE_vjTitGXX6uOAPHW-0,1837
+compel/cross_attention_control.py,sha256=u3_KfMMtLRFepMZk2A9rPT2_1f8sCEZqPWzdZbgzoFU,1581
+compel/embeddings_provider.py,sha256=Yy__9kSMfUHwXUApsbXmEe6DXCnp18I6i-hy2ObgdsU,15080
+compel/prompt_parser.py,sha256=7GDw_TS0US6ouN9YjWBjYfhDSVMArscnan2jBntNV2g,28450
+compel-0.1.8.dist-info/LICENSE,sha256=_K1CuXbSeAbWpibmAgVqu9x1kl4Blfn7zCFmiqkAHzs,1064
+compel-0.1.8.dist-info/METADATA,sha256=cAdRTdD1_i-yeJ14q6O0U5KqjOP78xFjLQujsfNiErU,3086
+compel-0.1.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+compel-0.1.8.dist-info/top_level.txt,sha256=RB-UnXNUED-8bXVuuTK4U9MWYWHJ-GjwN1jfPcOyZYA,7
+compel-0.1.8.dist-info/RECORD,,
