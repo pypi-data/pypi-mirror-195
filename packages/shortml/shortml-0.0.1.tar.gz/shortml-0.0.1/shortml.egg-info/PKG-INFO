@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: shortml
+Version: 0.0.1
+Summary: Helps you to write ML Code.
+Home-page: https://github.com/utkarshbelkhede/shortml
+Author: Utkarsh Belkhede
+Author-email: utkarshbelkhede@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# ML Helper
+
+Awesome Library
+

@@ -1,0 +1,9 @@
+LICENCE.txt
+README.md
+setup.py
+shortml/__init__.py
+shortml/classifier.py
+shortml.egg-info/PKG-INFO
+shortml.egg-info/SOURCES.txt
+shortml.egg-info/dependency_links.txt
+shortml.egg-info/top_level.txt
