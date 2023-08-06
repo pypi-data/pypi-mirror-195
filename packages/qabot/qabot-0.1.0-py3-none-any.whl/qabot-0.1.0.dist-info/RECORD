@@ -1,0 +1,10 @@
+qabot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qabot/caching.py,sha256=zLnqwCZctg1_EOTR-6M1UZzKnpQ8YJEtDGICAWw0WDw,744
+qabot/cli.py,sha256=ZcmFx1l1lBigRFGZbfUY7dQkNBeGClWBTWzhWN1xUWE,5355
+qabot/config.py,sha256=so23IE0pC9q3kiHrJhtUHI21sthsFTFN9nIUJtOjG3A,274
+qabot/duckdb.py,sha256=niBzd9Vkyc3tKNrTqu4X7AXn_xMl-CW9Luq0Lv1KNjg,1086
+qabot/sqlagent.py,sha256=KuavsBla_H45Gqu6fP6THdD_fjfZUBqr4IkF8ZLf890,2915
+qabot-0.1.0.dist-info/METADATA,sha256=4gQAuNRTGQaei4tajDva5emsGqCEWDqjvgwxMBqudS4,2687
+qabot-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+qabot-0.1.0.dist-info/entry_points.txt,sha256=3YCSusEt1IP4sZQqaiwm1ulj3p6jTJDwgZ4l0Fa5UeM,39
+qabot-0.1.0.dist-info/RECORD,,
