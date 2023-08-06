@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+fmcimage/__init__.py
+fmcimage/image_locating.py
+fmcimage/text_recognition.py
+fmcimage/ui.py
+fmcimage.egg-info/PKG-INFO
+fmcimage.egg-info/SOURCES.txt
+fmcimage.egg-info/dependency_links.txt
+fmcimage.egg-info/top_level.txt
