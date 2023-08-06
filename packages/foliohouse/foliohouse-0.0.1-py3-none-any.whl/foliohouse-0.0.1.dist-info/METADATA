@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: foliohouse
+Version: 0.0.1
+Summary: A Python package for accessing datasets from Foliohouse
+Home-page: UNKNOWN
+Author: Your name
+Author-email: bashybaranaba@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: pandas
+Requires-Dist: pycryptodome
+Requires-Dist: requests
+
+UNKNOWN
+
+
