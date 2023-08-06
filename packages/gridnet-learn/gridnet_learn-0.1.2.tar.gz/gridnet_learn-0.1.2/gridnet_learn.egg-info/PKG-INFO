@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gridnet-learn
+Version: 0.1.2
+Summary: GrID-Net: Granger causal inference on DAGs identifies genomic loci regulating transcription
+Home-page: https://github.com/alexw16/gridnet
+Author: Alex Wu, Rohit Singh
+Author-email: alexwu@mit.edu,rsingh@mit.edu
+License: GPLv3
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
