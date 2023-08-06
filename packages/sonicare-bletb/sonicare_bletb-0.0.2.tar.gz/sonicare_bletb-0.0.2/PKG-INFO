@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: sonicare-bletb
+Version: 0.0.2
+Summary: Bluetooth library for Sonicare toothbrushes
+Home-page: https://github.com/Bluetooth-Devices/sonicare-bletb
+License: MIT
+Author: S. Schutten
+Author-email: schutten@hotmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Provides-Extra: docs
+Requires-Dist: Sphinx (>=5.0,<6.0) ; extra == "docs"
+Requires-Dist: bleak (>=0.19.2)
+Requires-Dist: bleak-retry-connector (>=2.13.0)
+Requires-Dist: bluetooth-data-tools (>=0.1.2)
+Requires-Dist: bluetooth-sensor-state-data (>=1.6.0)
+Requires-Dist: home-assistant-bluetooth (>=1.6.0)
+Requires-Dist: myst-parser (>=0.18,<0.19) ; extra == "docs"
+Requires-Dist: sphinx-rtd-theme (>=1.0,<2.0) ; extra == "docs"
+Project-URL: Bug Tracker, https://github.com/Bluetooth-Devices/sonicare-bletb/issues
+Project-URL: Changelog, https://github.com/Bluetooth-Devices/sonicare-bletb/blob/main/CHANGELOG.md
+Project-URL: Documentation, https://sonicare-bletb.readthedocs.io
+Project-URL: Repository, https://github.com/Bluetooth-Devices/sonicare-bletb
+Description-Content-Type: text/markdown
+
+# Sonicare BLE Toothbrush
+
