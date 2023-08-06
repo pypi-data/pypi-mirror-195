@@ -1,0 +1,9 @@
+setup.py
+madx/__init__.py
+madx/madx.py
+madx/tablemixin.py
+madx.egg-info/PKG-INFO
+madx.egg-info/SOURCES.txt
+madx.egg-info/dependency_links.txt
+madx.egg-info/requires.txt
+madx.egg-info/top_level.txt
