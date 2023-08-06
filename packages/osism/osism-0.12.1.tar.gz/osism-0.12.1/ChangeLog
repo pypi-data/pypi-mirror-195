@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.12.1
+-------
+
+* chore(deps): update dependency openstack.cloud to v2 (#338)
