@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "AreaVol"
+version = "1.0.0"
+authors = [
+  { name="Rachit Murarka", email="murarka.10.rachit.v@gmail.com" },
+]
+description = "Package to calculate are and volume"
+ChanelLog = "ChanelLog.md"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+install_requires = ['math', 'numpy']
+
+[project.urls]
+homepage = "https://github.com/RachitVM/AreaVol"
+# documentation = "https://readthedocs.org"
+changelog = "https://github.com/RachitVM/AreaVol/blob/main/ChanelLog.md"
