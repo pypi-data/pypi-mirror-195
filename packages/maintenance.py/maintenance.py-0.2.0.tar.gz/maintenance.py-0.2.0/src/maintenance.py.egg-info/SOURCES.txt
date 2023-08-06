@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+src/maintenance/__init__.py
+src/maintenance.py.egg-info/PKG-INFO
+src/maintenance.py.egg-info/SOURCES.txt
+src/maintenance.py.egg-info/dependency_links.txt
+src/maintenance.py.egg-info/top_level.txt
+tests/test_deprecated.py
+tests/test_todo.py
+tests/test_unstable.py
