@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+nestlog/__init__.py
+nestlog.egg-info/PKG-INFO
+nestlog.egg-info/SOURCES.txt
+nestlog.egg-info/dependency_links.txt
+nestlog.egg-info/requires.txt
+nestlog.egg-info/top_level.txt
