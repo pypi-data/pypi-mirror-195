@@ -1,0 +1,15 @@
+drag_and_drop_v2/__init__.py,sha256=aXfvVuZU1TDPM22dZ21_9KSJCtowvx_ar3cXp9mup38,102
+drag_and_drop_v2/compat.py,sha256=Xc8W20Y2hm4Ypk4dMR771vfPyMv09KSVHzOYlzTkP-U,1202
+drag_and_drop_v2/default_data.py,sha256=XYmJ5UqCrHi_hssDz7fp1oghkUParaTL1gH9oFNpGfM,4294
+drag_and_drop_v2/drag_and_drop_v2.py,sha256=0g3pwHyAldjnwI1JhSCf2AMWelLWsHb6UkT6BQtitHs,53365
+drag_and_drop_v2/utils.py,sha256=PqfSUDWzuc4PmsS8rkbQMX6o0Qoob5A-GWlk2KPnKiA,11732
+drag_and_drop_v2/locale/__init__.py,sha256=2V1Y7Qw-iIdiBNORe8aMmp6yR2fDi-BqPXnjvcqNooI,58
+drag_and_drop_v2/locale/settings.py,sha256=Ev6V6tAp7vJyP8Ff_SxzY_uVK5QIqjcNoUfy4ncKohk,2239
+drag_and_drop_v2/translations/__init__.py,sha256=2V1Y7Qw-iIdiBNORe8aMmp6yR2fDi-BqPXnjvcqNooI,58
+drag_and_drop_v2/translations/settings.py,sha256=Ev6V6tAp7vJyP8Ff_SxzY_uVK5QIqjcNoUfy4ncKohk,2239
+xblock_drag_and_drop_v2-3.1.1.dist-info/LICENSE,sha256=4S14VpdCb50-mprHwxk4fLGBV611UfrV4kWMIUggnhY,35136
+xblock_drag_and_drop_v2-3.1.1.dist-info/METADATA,sha256=LL0tssLpO34HpKkqtiqApN7DHEoyhVSMH3piR_NnNmU,34390
+xblock_drag_and_drop_v2-3.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+xblock_drag_and_drop_v2-3.1.1.dist-info/entry_points.txt,sha256=t52A4DzHnCbKBsHwE0mtF_oK2z94UErKzFJl5Mvry8c,65
+xblock_drag_and_drop_v2-3.1.1.dist-info/top_level.txt,sha256=hN_t-tP7_JM9j1H4iiEiFw2AnrCJoFt-awlYJ8s7hIA,17
+xblock_drag_and_drop_v2-3.1.1.dist-info/RECORD,,
