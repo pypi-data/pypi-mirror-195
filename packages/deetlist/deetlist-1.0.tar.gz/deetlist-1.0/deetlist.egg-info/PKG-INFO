@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: deetlist
+Version: 1.0
+Summary: Fetcher/scraper of https://deetlist.com/dragoncity/
+Author: Marcuth
+Author-email: marcuth2006@gmail.com
+License: MIT License
+Keywords: dragoncity dcutils tools
+Description-Content-Type: text/markdown
+
+# Deetlsit crawler

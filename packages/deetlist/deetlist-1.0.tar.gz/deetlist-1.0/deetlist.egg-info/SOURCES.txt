@@ -1,0 +1,7 @@
+README.md
+setup.py
+deetlist.egg-info/PKG-INFO
+deetlist.egg-info/SOURCES.txt
+deetlist.egg-info/dependency_links.txt
+deetlist.egg-info/requires.txt
+deetlist.egg-info/top_level.txt
