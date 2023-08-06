@@ -1,0 +1,10 @@
+to_json_schema/__init__.py,sha256=pH5i4Fj1tbXLqLtTVIdoojiplZssQn0nnud8-HXodRE,577
+to_json_schema/combine.py,sha256=iyQRZTOp4WAMhBJuo3JFdqtUXKQAvUnTyDqKefsGzVg,1869
+to_json_schema/constants.py,sha256=z5tjNtsE5ApwjR7JmFI3i-iekAQm0VCsOSfh2TuyEmw,66
+to_json_schema/to_json_schema.py,sha256=J813CiBJMQT7k7GAxttlYJDgPywec6SKYpwP-mrE-P8,1388
+to_json_schema/utils.py,sha256=W_ldIgGjeDUKy1YbPoAqxQaFF47Lh_ww4cGTaBmWX9Q,416
+to_json_schema-1.0.0.dist-info/LICENSE.txt,sha256=Jn8_WbHHs8yY6A-tmzow_o5JcKDLOLrOWBpD7q2xxVc,1075
+to_json_schema-1.0.0.dist-info/METADATA,sha256=hPwDh62ef5rRkxfqDqIqPydALfB9pVQadFvjqgyyIhU,881
+to_json_schema-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+to_json_schema-1.0.0.dist-info/top_level.txt,sha256=1iGMaze2ct9N_9u7yaxTmAnjoyzoHxPwtoJm8hLrn1o,15
+to_json_schema-1.0.0.dist-info/RECORD,,
