@@ -1,0 +1,7 @@
+setup.py
+axclh.egg-info/PKG-INFO
+axclh.egg-info/SOURCES.txt
+axclh.egg-info/dependency_links.txt
+axclh.egg-info/entry_points.txt
+axclh.egg-info/requires.txt
+axclh.egg-info/top_level.txt
