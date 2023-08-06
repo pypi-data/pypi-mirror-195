@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: networking-udp-client
+Version: 0.3
+Summary: Extension providing a basic udp client for making connections, receiving and sending packets in C.
+Home-page: https://github.com/lstuma/udp_client/
+Author: lstuma
+Author-email: g.lstuma@gmail.com
+Description-Content-Type: text/markdown
+
+# udp_client
+Python UDP Client
+
+## How to use
+
+### Connecting to server
+```Python
+import udp_client as udp
+socket = udp.open()
+```
+
+### Sending packet
+```Python
+udp.send("Hello Server!", '127.0.0.1', 7777, socket)
+```
+
+### Receiving Packets
+```Python
+msg, source_address, source_port = udp.receive(socket)
+```
+
+### Closing connection
+```Python
+udp.close(socket)
+```
