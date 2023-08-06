@@ -1,0 +1,13 @@
+curies/__init__.py,sha256=7IeUJwQHdJG0Q-xF_XbkPp0rwxn_XLWnD0e_mVZJpCQ,941
+curies/__main__.py,sha256=PnQB8oQ9DccUNah0KQF8vtie8ur1BSpfPdnSWn3U_nM,146
+curies/api.py,sha256=6M_MtQ0yvK6fYjMqkIQHEH3xP0RYQDNMawdz80QF8qs,35011
+curies/cli.py,sha256=KGrsLYN3ByykgdAUfimc4yUuNnyVOVzc3aYDDZn60dc,3719
+curies/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+curies/sources.py,sha256=3TE3KS8LOVg2G1AFrWvt8cpzf7lXQ0r89Y675xqM97k,2033
+curies/version.py,sha256=CR3m1QA17SutzZtTPNYgF0-ntN4Bo581RVjYl_DOWJE,255
+curies/web.py,sha256=zNv_U7qEWLyc3glUVYcN6Pt0M7FCYVqpYuw7p0VYCu0,9620
+curies-0.4.4.dist-info/LICENSE,sha256=ve6WiK7DUzD7fEkZ_ddqaiBSMNj9ib93QYZG5UsOAH0,1076
+curies-0.4.4.dist-info/METADATA,sha256=-i2DB2REgX44ltRXsSk4QKYT2o90gCfTeGTciSwb_pg,10831
+curies-0.4.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+curies-0.4.4.dist-info/top_level.txt,sha256=c6fLHdQYwGgqBhtXVXYVfEN601WRKJRHKyAOtxflPw0,7
+curies-0.4.4.dist-info/RECORD,,
