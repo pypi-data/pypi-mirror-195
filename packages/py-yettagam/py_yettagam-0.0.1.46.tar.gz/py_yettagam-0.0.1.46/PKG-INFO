@@ -1,0 +1,497 @@
+Metadata-Version: 2.1
+Name: py_yettagam
+Version: 0.0.1.46
+Summary: Python package for Metarium's Storage Layer
+Author: MetariumProject
+Project-URL: Homepage, https://github.com/MetariumProject/py-yettagam
+Project-URL: Bug Tracker, https://github.com/MetariumProject/py-yettagam/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# py-yettagam
+
+Python client for Yettagam - Metarium's storage layer
+
+# Usage
+
+## 1. Virtual environment
+
+### 1.1. Install virtual environment
+
+```
+pip3 install virtualenv
+```
+
+### 1.2. Create virtual environment for metarium
+
+```
+python3 -m venv virtualenv ~/venv-yettagam
+```
+
+### 1.3. Activate metarium virtual environment
+
+```
+source ~/venv-yettagam/bin/activate
+```
+
+## 2. Dependencies
+
+### 2.1. Install Yettagam
+
+```
+pip install py-yettagam==0.0.1.46
+```
+
+### 2.2. Install third-party libraries
+
+```
+pip install python-dotenv==0.21.0
+```
+
+### 2.3. Modify `ipfshttpclient` version
+
+Modify `Ln:19` in `client/__init__.py`
+
+```
+nano ~/venv-yettagam/lib/python3.10/site-packages/ipfshttpclient/client/__init__.py
+
+VERSION_MAXIMUM   = "0.19.0"
+```
+
+## 3. Example usage - Create a simple Yettagam Storage Sync
+
+### 3.1. CLI Scripts for `Topic Configurateur`
+
+#### 3.1.1. Add a Listener node to a Topic
+
+Create a script called `configurateur-add-listener.py` with the following code block
+
+```
+from argparse import ArgumentParser
+
+from py_yettagam import (
+    TopicConfigurateur,
+)
+
+parser = ArgumentParser()
+# add --mnemonic or --uri
+group = parser.add_mutually_exclusive_group(required=True)
+group.add_argument(
+    "--mnemonic",
+    type=str,
+    help="Mnemonic of the Configurateur Node."
+)
+group.add_argument(
+    "--uri",
+    type=str,
+    help="URI of the Configurateur Node."
+)
+# add --listener-mnemonic
+parser.add_argument(
+    "--listener-mnemonic",
+    type=str,
+    help="Mnemonic of the Listener Node to add."
+)
+# add --listener-swarm-key-path
+parser.add_argument(
+    "--listener-swarm-key-path",
+    type=str,
+    help="Path to the swarm key file of the Listener's IPFS node."
+)
+# add --listener-ip-address
+parser.add_argument(
+    "--listener-ip-address",
+    type=str,
+    help="IP address of the Listener Node to add."
+)
+# add --listener-ipfs-id
+parser.add_argument(
+    "--listener-ipfs-id",
+    type=str,
+    help="IPFS ID of the Listener Node to add."
+)
+# add --topic-id
+parser.add_argument(
+    "--topic-id",
+    type=int,
+    help="Topic ID to add the Listener to."
+)
+# add --node-url, default to localhost
+parser.add_argument(
+    "--node-url",
+    type=str,
+    default="ws://127.0.0.1:9945",
+    help="URL of the node to connect to. Defualts to ws://127.0.0.1:9945"
+)
+
+
+if __name__ == "__main__":
+    # parse args
+    args = parser.parse_args()
+    # create configurateur
+    configurateur = TopicConfigurateur(
+        node_url=args.node_url,
+        mnemonic=args.mnemonic,
+        uri=args.uri
+    )
+    # add listener
+    listener_data = {
+        "topic_id": args.topic_id,
+        "id": args.listener_ipfs_id,
+        "ip_address": args.listener_ip_address
+    }
+    transaction_hash = configurateur.node_added_to_topic_listener_set(
+        listener_data=listener_data,
+        listener_mnemonic=args.listener_mnemonic,
+        swarm_key_path=args.listener_swarm_key_path
+    )
+    print(f"Transaction hash: {transaction_hash}")
+```
+
+Run the cli script
+
+```
+python configurateur-add-listener.py -h
+```
+
+### 3.2. Scripts for `Topic Committer`
+
+#### 3.2.1. Watch folders locally and upload Arikuris to the chain
+
+Create a script called `committer-upload-arikuris.py` with the following code block
+
+```
+import os
+from argparse import ArgumentParser
+
+from py_yettagam import (
+    TopicCommitter,
+)
+
+parser = ArgumentParser()
+# add --mnemonic or --uri
+group = parser.add_mutually_exclusive_group(required=True)
+group.add_argument(
+    "--mnemonic",
+    type=str,
+    help="Mnemonic of the Committer Node. Either this or --uri is required."
+)
+group.add_argument(
+    "--uri",
+    type=str,
+    help="URI of the Committer Node. Either this or --mnemonic is required."
+)
+# add --chain-swarm-key-path
+parser.add_argument(
+    "--chain-swarm-key-path",
+    type=str,
+    help="Path to the swarm key file of the Committer's IPFS node."
+)
+# add --topic-id
+parser.add_argument(
+    "--topic-id",
+    type=int,
+    help="Topic ID to upload Arikuris to."
+)
+# add --node-url, default to localhost
+parser.add_argument(
+    "--node-url",
+    type=str,
+    default="ws://127.0.0.1:9945",
+    help="URL of the node to connect to. Defualts to ws://127.0.0.1:9945"
+)
+# add watch interval, default to 10 seconds
+parser.add_argument(
+    "--watch-interval",
+    type=int,
+    default=10,
+    help="Interval in seconds to watch the data folder for new Arikuris. Defaults to 10 seconds."
+)
+
+if __name__ == "__main__":
+
+    # parse args
+    args = parser.parse_args()
+    # check if swarm key exists
+    assert os.path.exists(args.chain_swarm_key_path)
+    # create committer
+    committer = TopicCommitter(
+        node_url=args.node_url,
+        chain_swarm_key_path=args.chain_swarm_key_path,
+        mnemonic=args.mnemonic,
+        uri=args.uri
+    )
+    # start auto upload
+    committer.watch_swarm_data(
+        topic_id=args.topic_id,
+        interval=args.watch_interval
+    )
+```
+
+Run the cli script
+
+```
+python committer-upload-arikuris.py -h
+```
+
+#### 3.2.2 Subscribe to Topic updates via chain's IPFS swarm, and publish missing Arikuris via Listeners' private IPFS swarm
+
+Create a script called `committer-sync-topic.py` with the following code block
+
+```
+from argparse import ArgumentParser
+
+from py_yettagam import (
+    TopicCommitter
+)
+
+parser = ArgumentParser()
+# add --mnemonic or --uri
+group = parser.add_mutually_exclusive_group(required=True)
+group.add_argument(
+    "--mnemonic",
+    type=str,
+    help="Mnemonic of the Committer Node. Either this or --uri is required."
+)
+group.add_argument(
+    "--uri",
+    type=str,
+    help="URI of the Committer Node. Either this or --mnemonic is required."
+)
+# add --chain-swarm-key-path
+parser.add_argument(
+    "--chain-swarm-key-path",
+    type=str,
+    help="Path to the swarm key file of the Committer's IPFS node."
+)
+# add --topic-id
+parser.add_argument(
+    "--topic-id",
+    type=int,
+    help="Topic ID to sync to."
+)
+# add --node-url, default to localhost
+parser.add_argument(
+    "--node-url",
+    type=str,
+    default="ws://127.0.0.1:9945",
+    help="URL of the node to connect to. Defualts to ws://127.0.0.1:9945"
+)
+# add sync interval, default to 10 seconds
+parser.add_argument(
+    "--sync-interval",
+    type=int,
+    default=3600,
+    help="Interval in seconds to subscribe to the topic. Defaults to 3600 seconds, aka, 1 hour"
+)
+
+
+if __name__ == "__main__":
+    # parse args
+    args = parser.parse_args()
+    # create committer
+    committer = TopicCommitter(
+        node_url=args.node_url,
+        chain_swarm_key_path=args.chain_swarm_key_path,
+        mnemonic=args.mnemonic,
+        uri=args.uri
+    )
+    # sync to topic
+    committer.sync_to_topic(topic_id=args.topic_id, interval=args.sync_interval)
+```
+
+Run the cli script
+
+```
+python committer-sync-topic.py -h
+```
+
+### 3.3. Scripts for `Topic Listener`
+
+#### 3.3.1. Publish Topic updates on chain's IPFS swarm and subscribe to missing Arikuris via private IPFS swarm
+
+Create a script called `listener-listen-topic.py` with the following code block
+
+```
+from argparse import ArgumentParser
+
+from py_yettagam import (
+    TopicListener,
+)
+
+parser = ArgumentParser()
+# add --mnemonic or --uri
+group = parser.add_mutually_exclusive_group(required=True)
+group.add_argument(
+    "--mnemonic",
+    type=str,
+    help="Mnemonic of the Listener Node. Either this or --uri is required."
+)
+group.add_argument(
+    "--uri",
+    type=str,
+    help="URI of the Listener Node. Either this or --mnemonic is required."
+)
+# add --chain-swarm-key-path
+parser.add_argument(
+    "--chain-swarm-key-path",
+    type=str,
+    help="Path to the swarm key file to publish updates to Committers' IPFS nodes."
+)
+# add --listener-swarm-key-path
+parser.add_argument(
+    "--listener-swarm-key-path",
+    type=str,
+    help="Path to the swarm key file of the Listener's IPFS node."
+)
+# add --topic-id
+parser.add_argument(
+    "--topic-id",
+    type=int,
+    help="Topic ID to sync to."
+)
+# add --node-url, default to localhost
+parser.add_argument(
+    "--node-url",
+    type=str,
+    default="ws://127.0.0.1:9945",
+    help="URL of the node to connect to. Defualts to ws://127.0.0.1:9945"
+)
+
+
+if __name__ == "__main__":
+
+    # parse args
+    args = parser.parse_args()
+    # create listener
+    listener = TopicListener(
+        node_url=args.node_url,
+        chain_swarm_key_path=args.chain_swarm_key_path,
+        listener_swarm_key_path=args.listener_swarm_key_path,
+        mnemonic=args.mnemonic,
+        uri=args.uri
+    )
+    # sync to topic
+    listener.sync_with_topic(topic_id=args.topic_id)
+```
+
+Run the cli script
+
+```
+python listener-listen-topic.py -h
+```
+
+#### 3.3.2. Periodically publish status and rff via chain's IPFS swarm and sync with Committers via private IPFS swarm
+
+Create a script called `listener-sync-topic.py` with the following code block
+
+```
+from argparse import ArgumentParser
+
+import asyncio
+
+from py_yettagam import (
+    TopicListener,
+)
+
+
+parser = ArgumentParser()
+# add --mnemonic or --uri
+group = parser.add_mutually_exclusive_group(required=True)
+group.add_argument(
+    "--mnemonic",
+    type=str,
+    help="Mnemonic of the Listener Node. Either this or --uri is required."
+)
+group.add_argument(
+    "--uri",
+    type=str,
+    help="URI of the Listener Node. Either this or --mnemonic is required."
+)
+# add --chain-swarm-key-path
+parser.add_argument(
+    "--chain-swarm-key-path",
+    type=str,
+    help="Path to the swarm key file to publish updates to Committers' IPFS nodes."
+)
+# add --listener-swarm-key-path
+parser.add_argument(
+    "--listener-swarm-key-path",
+    type=str,
+    help="Path to the swarm key file of the Listener's IPFS node."
+)
+# add --topic-id
+parser.add_argument(
+    "--topic-id",
+    type=int,
+    help="Topic ID to sync to."
+)
+# add --node-url, default to localhost
+parser.add_argument(
+    "--node-url",
+    type=str,
+    default="ws://127.0.0.1:9945",
+    help="URL of the node to connect to. Defualts to ws://127.0.0.1:9945"
+)
+# add --sync-interval, default to 60
+parser.add_argument(
+    "--sync-interval",
+    type=int,
+    default=60,
+    help="Interval in seconds to sync to the topic. Defaults to 60 seconds."
+)
+
+
+if __name__ == "__main__":
+
+    # parse args
+    args = parser.parse_args()
+    # create listener
+    listener = TopicListener(
+        node_url=args.node_url,
+        chain_swarm_key_path=args.chain_swarm_key_path,
+        listener_swarm_key_path=args.listener_swarm_key_path,
+        mnemonic=args.mnemonic,
+        uri=args.uri
+    )
+    # sync to topic
+    asyncio.run(listener.periodic_publish_status(topic_id=args.topic_id, interval=args.sync_interval))
+```
+
+Run the cli script
+
+```
+python listener-sync-topic.py -h
+```
+
+### 3.4. Expectations
+
+- The committer uploads an Arikuri by dropping a file into the `<COMMITTER_ADDRESS>/<CHAIN_NAME>/data/` folder
+- After upload, the file's Arikuri is saved in `<COMMITTER_ADDRESS>/<CHAIN_NAME>/data/mappings.json`
+- Upon listening to the topic, the listener
+  - stores the file's Arikuri in
+    - `<LISTENER_ADDRESS>/<CHAIN_NAME>/sync/<TOPIC_ID>/kuris.json`
+    - `<LISTENER_ADDRESS>/<CHAIN_NAME>/sync/status.txt`
+    - `<LISTENER_ADDRESS>/<CHAIN_NAME>/sync/rff.txt`
+  - subscribes to the arikuri via private IPFS swarm
+- The listener publishes it's status and rff to the chain's IPFS swarm as a topic update
+- Upon listening to the tpoic update, the committer
+  - Saves the status in `<COMMITTER_ADDRESS>/<CHAIN_NAME>/sync/<LISTENER_ADDRESS>/status.txt`
+  - Saves the rff in `<COMMITTER_ADDRESS>/<CHAIN_NAME>/sync/<LISTENER_ADDRESS>/rff.txt`
+  - Connects to the Listener's private IPFS swarm, publishes IPFS_CID and FILE_NAME for all it's kuris mentioned in the rff
+- Upon listening to the published IPFS_CID and FILE_NAME for a subscribed arikuri, the listener
+  - downloads the file from the IPFS_CID into `<LISTENER_ADDRESS>/<CHAIN_NAME>/data/<FILENAME>`
+  - removes the subscribed arikuri from the rff
+  - Unsubscribes from the arikuri
+
+## 4. Teardown
+
+Please remember to deactivate the virtual environment after usage
+
+```
+deactivate
+```
