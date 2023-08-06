@@ -1,0 +1,85 @@
+{
+  "title": "CERN Analysis Preservation Client",
+  "description": "API for cap-client, the CLI tool of CERN Analysis Preservation",
+  "plugins": [
+    "back-to-top-button",
+    "github", "github-buttons", "toggle-chapters",
+    "anchorjs",
+    "github",
+    "-fontsettings", "-sharing",
+    "folding-menu",
+    "codeblock-filename",
+    "theme-cap@git+https://github.com/cernanalysispreservation/gitbook-plugin-theme-cap.git",
+    "terminal",
+    "richquotes"
+  ],
+  "variables": {
+    "CAP_BASE_URL": "https://analysispreservation.cern.ch",
+    "toc_title": "CLI Client Documentation",
+    "themeCAP": {
+      "nav": [
+        {
+          "url": "/docs/general/",
+          "name": "General"
+        },
+        {
+          "url": "/docs/cli/",
+          "name": "CLI client"
+        },
+        {
+          "url": "/docs/api/",
+          "name": "REST API",
+          "target": "_blank"
+        },
+        {
+          "url": "/",
+          "name": "Take me to CAP",
+          "className": "cap-primary",
+          "target": "_blank"
+        }
+      ]
+    }
+  },
+  "pluginsConfig": {
+    "anchorjs": {
+      "placement": "right"
+    },
+    "github": {
+      "url": "https://github.com/cernanalysispreservation/cap-client"
+    },
+    "github-buttons": {
+      "buttons": [{
+        "user": "cernanalysispreservation",
+        "repo": "cap-client",
+        "type": "star",
+        "size": "small",
+        "count": true
+      }]
+    },
+    "theme-api": {
+      "languages": [
+        {
+          "lang": "python",
+          "name": "Python"
+        }
+      ]
+    },
+    "terminal": {
+      "copyButtons": true,
+      "fade": true,
+      "style": "flat"
+    },
+    "theme-cap": {
+      "search-placeholder": "Search the docs",
+      "logo": "./cap-logo-dark.png",
+      "favicon": "./favicon.ico",
+      "anchor-selector": "h1, h2, h3"
+    },
+    "richquotes": {
+      "star": {
+        "alert": "warning",
+        "picto": "fa-star"
+      }
+    }
+  }
+}
