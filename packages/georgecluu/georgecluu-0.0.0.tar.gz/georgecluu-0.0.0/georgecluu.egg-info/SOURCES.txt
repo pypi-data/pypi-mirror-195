@@ -1,0 +1,9 @@
+LICENSE.txt
+README.txt
+setup.py
+georgecluu/__init__.py
+georgecluu.egg-info/PKG-INFO
+georgecluu.egg-info/SOURCES.txt
+georgecluu.egg-info/dependency_links.txt
+georgecluu.egg-info/requires.txt
+georgecluu.egg-info/top_level.txt
