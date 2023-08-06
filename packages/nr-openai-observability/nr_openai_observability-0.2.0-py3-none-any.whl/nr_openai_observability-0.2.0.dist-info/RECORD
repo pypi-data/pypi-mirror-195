@@ -1,0 +1,6 @@
+nr_openai_observability/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nr_openai_observability/monitor.py,sha256=E1Ji77WPFp0jYe5iAjoN54_PPU9qY7yu92oWEtEixmA,4603
+nr_openai_observability-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nr_openai_observability-0.2.0.dist-info/METADATA,sha256=DqTb8Qt4EvEOwEhubseFR7xliFcA9yPt8j2M85ZyeSo,523
+nr_openai_observability-0.2.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+nr_openai_observability-0.2.0.dist-info/RECORD,,
