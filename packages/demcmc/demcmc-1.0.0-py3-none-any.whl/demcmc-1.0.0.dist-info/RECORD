@@ -1,0 +1,16 @@
+demcmc/__init__.py,sha256=mOJgB-QZ4f2vD9H0uHBp7xYFT5kbVJ9TzKlfvR1nRXI,202
+demcmc/dem.py,sha256=77A76NMlGjm5kJh1m61cWD6gGP70HXA8DFLWGCY9qHU,6530
+demcmc/emission.py,sha256=Z_joUkGJDYNWg9Tpi0OvNi5plCR1AvHpdMbZp4QuQj8,9022
+demcmc/io.py,sha256=F17FQ18c_woUSSoubPo_0Ic5PbhjZYiNAcE9wZJdcDo,1017
+demcmc/mcmc.py,sha256=RO_CkD2qA5nv2ybC4Skfd0bp7s21fz06rOmWNu0rmkc,4842
+demcmc/sample_data.py,sha256=x-CN9WjhojsyTRsu4IpteMXNTDNYtt08xrzYb-jUa0k,525
+demcmc/units.py,sha256=RIFt3jHy8_g4mQm5fyZmgD3VYWZnJeLq3RZ29PD6Gn0,147
+demcmc/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+demcmc/tests/test_dem.py,sha256=wB6Qnn_2X21xZfxR6Fcp_oDupcyrT4fiEFri5QTWhFM,988
+demcmc/tests/test_emission.py,sha256=lUZBgHVNjwBTeVczrY_lKcIEYjJ1zhxH8at8v1xZCVQ,811
+demcmc/tests/test_mcmc.py,sha256=Mt0gse93os7ayxlouCqgElakGnHIkkV6nrShZfk5qOU,1485
+demcmc-1.0.0.dist-info/LICENSE,sha256=UTkqw8xlwi48YDF3hKWKVE1XeR9_Tc5pgeJZCq-Kr-E,1500
+demcmc-1.0.0.dist-info/METADATA,sha256=flR5b_NL3aj6QNPP3eBYSLRBkJrYOEIgSL_lpDpOYoM,2772
+demcmc-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+demcmc-1.0.0.dist-info/top_level.txt,sha256=ZKyk-MZE0n_0cGlgSuBEkyWdF_ZnyOizBThEhjlbhh0,7
+demcmc-1.0.0.dist-info/RECORD,,
