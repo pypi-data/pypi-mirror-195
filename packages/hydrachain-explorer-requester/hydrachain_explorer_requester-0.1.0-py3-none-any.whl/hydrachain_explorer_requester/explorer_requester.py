@@ -1,0 +1,307 @@
+import logging
+from typing import List, Callable
+from urllib.parse import urlencode
+
+import requests
+from requests import Session
+from requests.adapters import HTTPAdapter
+
+from hydrachain_explorer_requester import __version__
+from datetime import datetime
+
+_logger = logging.getLogger(__name__)
+
+
+class ResponseCodeError(Exception):
+    """
+    A not expected response code has been received.
+    We always expect response with code 200 from the Explorer's API.
+    """
+
+
+class ResponseBodyError(Exception):
+    """
+    A not expected response body has been received.
+    We always expect a JSON response from the Explorer's API.
+    """
+
+
+class ExplorerRequester:
+    """
+    Easy-to-use class that provides function, which return data from the explorer's API.
+    Optionally you can customize the logger or properties of the used requester.
+    Data retrieved from the explorer is returned in raw format.
+    """
+
+    def __init__(self,
+                 logger: logging = _logger,
+                 timeout_seconds: float = None,
+                 hooks: dict = None,
+                 http_adapter: HTTPAdapter = HTTPAdapter()):
+        self.request_user_agent = f'Hydrachain Explorer Requester/{__version__}'
+        self.domain = 'https://explorer.hydrachain.org'
+
+        self.logger = logger
+        self.session = Session()
+        self.timeout = timeout_seconds
+        self.hooks = hooks
+        self.http_adapter = http_adapter
+        self.session.mount('http://', self.http_adapter)
+        self.session.mount('https://', self.http_adapter)
+
+    def search(self, value: str) -> dict:
+
+        return self._request_explorer(
+            path='/7001/search',
+            params={
+                'query': value
+            }
+        )
+
+    def get_biggest_miners(self, page_number: int = 0, page_size: int = 20) -> dict:
+
+        return self._request_explorer(
+            path='/7001/misc/biggest-miners',
+            params={
+                'page': page_number,
+                'pageSize': page_size
+            }
+        )
+
+    def get_biggest_miners_iterator(self, request_portion: int = 20):
+
+        return self._pageable_iterator(
+            function=self.get_biggest_miners,
+            data_field='list',
+            request_portion=request_portion
+        )
+
+    def get_rich_list(self, page_number: int = 0, page_size: int = 20) -> dict:
+
+        return self._request_explorer(
+            path='/7001/misc/rich-list',
+            params={
+                'page': page_number,
+                'pageSize': page_size
+            }
+        )
+
+    def get_rich_list_iterator(self, request_portion: int = 20):
+
+        return self._pageable_iterator(
+            function=self.get_rich_list,
+            data_field='list',
+            request_portion=request_portion
+        )
+
+    def get_daily_transactions(self) -> dict:
+
+        return self._request_explorer(
+            path='/7001/stats/daily-transactions'
+        )
+
+    def get_block_interval(self) -> dict:
+
+        return self._request_explorer(
+            path='/7001/stats/block-interval'
+        )
+
+    def get_address_growth(self) -> dict:
+
+        return self._request_explorer(
+            path='/7001/stats/address-growth'
+        )
+
+    def get_recent_blocks(self) -> dict:
+
+        return self._request_explorer(
+            path='/7001/recent-blocks'
+        )
+
+    def get_recent_txs(self) -> dict:
+
+        return self._request_explorer(
+            path='/7001/recent-txs'
+        )
+
+    def get_info(self) -> dict:
+
+        return self._request_explorer(
+            path='/7001/info'
+        )
+
+    def get_block(self, number: int) -> dict:
+
+        return self._request_explorer(
+            path=f'/7001/block/{number}'
+        )
+
+    def get_blocks(self, date: datetime) -> dict:
+        date_format = '%Y-%m-%d'
+        date_formatted = date.strftime(date_format)
+
+        return self._request_explorer(
+            path='/7001/blocks',
+            params={
+                'date': date_formatted
+            }
+        )
+
+    def get_tokens(self, page_number: int = 0, page_size: int = 20) -> dict:
+
+        return self._request_explorer(
+            path='/7001/qrc20',
+            params={
+                'page': page_number,
+                'pageSize': page_size
+            }
+        )
+
+    def get_tokens_iterator(self, request_portion: int = 20):
+
+        return self._pageable_iterator(
+            function=self.get_tokens,
+            data_field='tokens',
+            request_portion=request_portion
+        )
+
+    def get_contract(self, contract: str) -> dict:
+
+        return self._request_explorer(
+            path=f'/7001/contract/{contract}'
+        )
+
+    def get_contract_transactions(self, contract: str, page_number: int = 0, page_size: int = 20) -> dict:
+
+        return self._request_explorer(
+            path=f'/7001/contract/{contract}/txs',
+            params={
+                'page': page_number,
+                'pageSize': page_size
+            }
+        )
+
+    def get_contract_transactions_iterator(self, contract: str, request_portion: int = 20):
+
+        return self._pageable_iterator(
+            function=self.get_contract_transactions,
+            external_arguments={'contract': contract},
+            data_field='transactions',
+            request_portion=request_portion
+        )
+
+    def get_address(self, address: str) -> dict:
+
+        return self._request_explorer(
+            path=f'/7001/address/{address}'
+        )
+
+    def get_address_transactions(self, address: str, page_number: int = 0, page_size: int = 20) -> dict:
+
+        return self._request_explorer(
+            path=f'/7001/address/{address}/txs',
+            params={
+                'page': page_number,
+                'pageSize': page_size
+            }
+        )
+
+    def get_address_transactions_iterator(self, address: str, request_portion: int = 20):
+
+        return self._pageable_iterator(
+            function=self.get_address_transactions,
+            external_arguments={'address': address},
+            data_field='transactions',
+            request_portion=request_portion
+        )
+
+    def get_transaction(self, transaction) -> dict:
+
+        return self._request_explorer(
+            path=f'/7001/tx/{transaction}'
+        )
+
+    def get_transactions(self, transactions: List[str]) -> dict:
+        transactions_formatted = ','.join(transactions)
+
+        return self._request_explorer(
+            path=f'/7001/txs/{transactions_formatted}'
+        )
+
+    def _pageable_iterator(self,
+                           function: Callable, data_field: str,
+                           external_arguments: dict = {},
+                           request_portion: int = 20
+                           ):
+        """
+        Easy-to-use wrapper for removing repeating logic, when calling a functions that have pageable.
+
+        :param function: A function, that have page_number and page_size arguments and returns a dict, when called.
+        :param data_field: A field in the returned dict, when the function was called, which contains array of data.
+        :param external_arguments: Additional arguments of the functions.
+        :param request_portion: How many data to fetch at once
+        """
+        page_number = 0
+        while True:
+
+            external_arguments['page_number'] = page_number
+            external_arguments['page_size'] = request_portion
+
+            response = function(**external_arguments)
+
+            data = response[data_field]
+
+            if len(data) <= 0:
+                break
+
+            for d in data:
+                yield d
+
+            page_number = page_number + 1
+
+    def _request_explorer(self,
+                          path: str,
+                          params: dict = {},
+                          domain: str = None,
+                          method: str = 'GET',
+                          ) -> dict:
+
+        request = requests.Request(
+            method=method,
+            url=f'{domain or self.domain}{path}',
+            headers=self._get_request_headers(),
+            params=params,
+            hooks=self.hooks
+        )
+
+        self.logger.debug(f'Starting a new hydrachain explorer request to {request.url}?{urlencode(request.params)}')
+
+        prepared_request = self.session.prepare_request(request)
+        response = self.session.send(
+            request=prepared_request,
+            timeout=self.timeout
+        )
+
+        self._validate_response(response)
+
+        self.logger.debug(
+            f'Received a successful hydrachain explorer response from {response.url} with content {response.content}')
+
+        return response.json()
+
+    def _validate_response(self, response):
+        self._validate_response_code(response)
+        self._validate_response_content_type(response)
+
+    def _validate_response_code(self, response):
+        if response.status_code != 200:
+            raise ResponseCodeError(
+                f'GET {response.url} responded with unexpected code {response.status_code} and content {response.content}')
+
+    def _validate_response_content_type(self, response):
+        if not 'application/json' in response.headers.get('content-type'):
+            raise ResponseBodyError(
+                f'GET {response.url} responded with code {response.status_code} and unexpected content {response.content}')
+
+    def _get_request_headers(self) -> dict:
+        return {'User-Agent': self.request_user_agent}
