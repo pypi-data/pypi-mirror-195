@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pyapi-client
+Version: 0.2.0
+Summary: Python client library for OpenAPI-based services.
+License: MIT
+Author-email: Berislav Lopac <berislav@lopac.net>
+Requires-Python: >=3.8,<4.0
+Requires-Dist: PyYAML>=5.4
+Requires-Dist: httpx>=0.22
+Requires-Dist: openapi-core>=0.16.1
+Requires-Dist: stringcase>=1.2.0
+Project-URL: documentation, https://pyapi-client.readthedocs.io
+Project-URL: homepage, https://pyapi-client.readthedocs.io
+Project-URL: repository, https://github.com/berislavlopac/pyapi-client
+Description-Content-Type: text/markdown
+
+# PyAPI Client
+
+**PyAPI Client** is a Python library for consuming REST APIs based on [OpenAPI](https://swagger.io/resources/open-api/) specifications.
+
+**WARNING:** This is still a work in progress and not quite ready for production usage. Until version 1.0 is released, any new release can be expected to break backward compatibility.
+
+
+## Quick Start
+
+```python
+from pyapi.client import Client
+
+client = Client.from_file("path/to/openapi.yaml")
+result = client.some_endpoint_id("path", "variables", "query_var"="example")
+```
+
