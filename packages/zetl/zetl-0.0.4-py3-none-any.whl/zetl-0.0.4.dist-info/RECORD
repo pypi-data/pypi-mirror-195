@@ -1,0 +1,11 @@
+zetl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zetl/mysql_export.py,sha256=vTCPxfhAbJRI1hF89pgbOpyQfECirf-SfHslDfAxZB0,1314
+zetl/mysql_import.py,sha256=LFIA_37mwlzYirRciAnAb3jDCLvjDPJA7zGJ3BYNY8A,1523
+zetl/postgres_export.py,sha256=NWgLDeODxvzOOe6uBkn9nGvpzAMbosWozlDqGQxmk2c,1254
+zetl/postgres_import.py,sha256=axvfSQ5CVLj2bpI-CUu7D1cGLX7juEfLVc2e_Rsgqno,1550
+zetl/run.py,sha256=jicEXvMkzR3-_GimY_oGVHivU1WtWu-8JYivOYz6djM,18871
+zetl/tesla.csv,sha256=KwHGY_Ux20cNOFekmfTubXuIzZt5y2ph_sSGbZtn_KU,50392
+zetl-0.0.4.dist-info/METADATA,sha256=O80kdD9Q00FKbkeHJuYVKLb_v2RZ4CBzR8Ci9w13qDA,3586
+zetl-0.0.4.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+zetl-0.0.4.dist-info/licenses/LICENSE,sha256=GJsa-V1mEVHgVM6hDJGz11Tk3k0_7PsHTB-ylHb3Fns,18431
+zetl-0.0.4.dist-info/RECORD,,
