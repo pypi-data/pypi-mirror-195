@@ -1,0 +1,8 @@
+setup.py
+ninsolver/__init__.py
+ninsolver/client.py
+ninsolver/objects.py
+ninsolver.egg-info/PKG-INFO
+ninsolver.egg-info/SOURCES.txt
+ninsolver.egg-info/dependency_links.txt
+ninsolver.egg-info/top_level.txt
