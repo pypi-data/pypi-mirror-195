@@ -1,0 +1,9 @@
+README.md
+setup.py
+django_otlp_log_exporter.egg-info/PKG-INFO
+django_otlp_log_exporter.egg-info/SOURCES.txt
+django_otlp_log_exporter.egg-info/dependency_links.txt
+django_otlp_log_exporter.egg-info/requires.txt
+django_otlp_log_exporter.egg-info/top_level.txt
+otlp_exporter/__init__.py
+otlp_exporter/handler.py
