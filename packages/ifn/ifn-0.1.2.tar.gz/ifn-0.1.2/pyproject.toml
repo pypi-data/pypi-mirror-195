@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ifn"
+packages = [{ include = "fn" }]
+version = "0.1.2"
+description = "Function Interface Toolbox"
+authors = ["Iydon Liang <liangiydon@gmail.com>"]
+license = "GPL-3.0-only"
+homepage = "https://github.com/iydon/ifn"
+repository = "https://github.com/iydon/ifn"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
