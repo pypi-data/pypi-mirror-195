@@ -1,0 +1,255 @@
+<html>
+
+<head>
+    <title>eduROV</title>
+    <script src="./scripts/globalData.js"></script>
+    <script src="./scripts/pageManager.js"></script>
+    <script src="./scripts/settings.js"></script>
+    <script src="./scripts/video.js"></script>
+    <script src="./scripts/ioclient.js"></script>
+    <script src="./scripts/joy.js"></script>
+    <script src="./scripts/input.js"></script>
+    <script src="./scripts/index.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./static/style.css">
+    <link rel="stylesheet" type="text/css" href="./static/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./static/bootstrap-icons.css">
+</head>
+
+<body onload="start()">
+
+    <!-- MAIN PAGE -->
+    <div class="main-page">
+
+        <!-- Video Feed -->
+        <div class="stream-panel row justify-content-center">
+            <canvas class="stream-canvas" id="streamCanvas"></canvas>
+        </div>
+
+        <!-- Info -->
+        <div class="overlay-info">
+            <h5>Info</h5>
+            The vehicle is disarmed.
+            The motors are therefore deactivated.
+            Would you like to arm it?
+            <button type="button" onclick="arm()" id="settingsBtn"
+                class="btn btn-outline-warning btn-sm btn-block" title="Use this to arm the robot">
+                Arm
+        </div>
+
+        
+        <div class="overlay-secondary-controls">
+            <div class="container-fluid">
+                <!-- Top Bar -->
+                <div class="row justify-content-center align-items-start" style="height: 20%">
+                    <div class="col-fixed top-bar">
+                        <div class="row justify-content-center align-items-start" style="height: 100%">
+
+                            <div class="col-1  align-self-center">
+                                <!--spacer-->
+                            </div>
+                            <div class="col-2 align-self-center">
+                                <button id="infoButton" type="button" onclick=""
+                                    class="btn btn-dark btn-sm btn-block" title="Use this to arm the robot">
+                                    <i class="bi-exclamation-diamond" style="font-size: 2em;color: white;"></i>
+                            </div>
+
+                            <div class="col  align-self-center" style="color:white">
+                                <div class="row justify-content-center" id="motorCurrent">0.00</div>
+                                <div class="row justify-content-center">A</div>
+                            </div>
+
+                            <div class="col  align-self-center">
+                                <button type="button" onclick="" id="settingsBtn"
+                                    class="btn btn-dark btn-sm btn-block" title="Use this to arm the robot">
+                                    <i id="batteryIcon" class="bi-battery-full" style="font-size: 50px;color: white;"></i>
+                            </div>
+
+                            <div class="col  align-self-center" style="color:white">
+                                <div class="row justify-content-center" id="batteryVoltage">0.00</div>
+                                <div class="row justify-content-center">V</div>
+                            </div>
+
+                            <div class="col-2  align-self-center">
+                                <button id="settingsBtn" type="button" onclick="switch_to_page('settings-page')"
+                                    class="btn btn-dark btn-sm btn-block" title="Use this to arm the robot">
+                                    <i class="bi-gear" style="font-size: 2em;color: white;"></i>
+                            </div>
+                            <div class="col-1  align-self-center">
+                                <!--spacer-->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Joysticks -->
+                <div class="row justify-content-between align-items-center" style="height: 60%">
+                    <div width="200 px" height="200 px" style="visibility: hidden;">
+                        <div id="leftJoystick" class="left-joystick"></div>
+                    </div>
+                    <div width="200 px" height="200 px"></div>
+                        <div id="rightJoystick" class="right-joystick" style="visibility: hidden;"></div>
+                    </div>
+                </div>
+
+                <!-- Bottom Bar -->
+                <div class="row justify-content-center align-items-end" style="height: 20%">
+                    <div class="col-fixed bottom-bar">
+                        <div class="row justify-content-center align-items-start" style="height: 100%">
+
+                            <div class="col-2 align-self-center">
+                                <button id="cameraBtn" type="button" onclick="video_download_frame()"
+                                    class="btn btn-dark btn-sm btn-block" title="Use this to arm the robot">
+                                    <i class="bi-camera" style="font-size: 2em;color: white;"></i>
+                            </div>
+
+                            <div class="col-2  align-self-center">
+                                <button  id="lightBtn" type="button" onclick="processButton('lightBtn')"
+                                    class="btn btn-dark btn-sm btn-block" title="Use this to arm the robot">
+                                    <i class="bi-lightbulb" style="font-size: 2em;color: white;"></i>
+                            </div>
+
+
+                            <div class="col-2  align-self-center">
+                                <button  id="armBtn" type="button" onclick="processButton('armBtn')"
+                                    class="btn btn-dark btn-sm btn-block" title="Use this to arm the robot">
+                                    Disarm
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- SETTINGS PAGE -->
+    <div class="d-none d-md-block settings-page" style="visibility:hidden;">
+        <div class="d-none d-md-block">
+            <div class="card bg-light">
+                <h4 class="card-header">Settings</h4>
+                <div class="card bg-light">
+                    <h5 class="card-header">Output Settings</h5>
+                <div id="propulsionSystemSettings" class="card bg-light">
+                    <h6 class="card-header">Propulsion System</h6>
+                    </div>
+                </div>
+                <div class="card bg-light">
+                    <h6 class="card-header">Accesories</h6>
+                    <form id="battery_form" class="card_body">
+                        <div class="form-group row">
+                            <label for="accesories_maxLedPower" class="col-sm-3 col-form-label">maxLedPower</label>
+                            <input id="accesories_maxLedPower" class="col-sm-3 form-control" type="number"></input>
+                            <span style="margin-left:10px;">V</span>
+                        </div>
+                        <div class="form-group row">
+                            <label for="accesories_ledChannel" class="col-sm-3 col-form-label">ledChannel</label>
+                            <input id="accesories_ledChannel" class="col-sm-3 form-control" type="number"></input>
+                            <span style="margin-left:10px;">V</span>
+                        </div>
+                    </form>
+                </div>
+                <div class="card bg-light">
+                    <h6 class="card-header">Sensors</h6>
+                    <form id="sensor_form" class="card_body">
+                        <div class="form-group row">
+                            <label for="sensors_currentFactor" class="col-sm-3 col-form-label">currentFactor</label>
+                            <input id="sensors_currentFactor" step="0.00000001" class="col-sm-3 form-control" type="number"></input>
+                            <span style="margin-left:10px;"></span>
+                        </div>
+                        <div class="form-group row">
+                            <label for="sensors_voltageFactor" class="col-sm-3 col-form-label">voltageFactor</label>
+                            <input id="sensors_voltageFactor" step="0.00000001" class="col-sm-3 form-control" type="number"></input>
+                            <span style="margin-left:10px;"></span>
+                        </div>
+                        <div class="form-group row">
+                            <label for="sensors_updateInterval" class="col-sm-3 col-form-label">updateInterval</label>
+                            <input id="sensors_updateInterval" class="col-sm-3 form-control" type="number"></input>
+                            <span style="margin-left:10px;">ms</span>
+                        </div>
+                    </form>
+                </div>
+                <div class="card bg-light">
+                    <h6 class="card-header">Battery</h6>
+                    <form id="battery_form" class="card_body">
+                        <div class="form-group row">
+                            <label for="battery_minVoltage" class="col-sm-3 col-form-label">minVoltage</label>
+                            <input id="battery_minVoltage" step="0.1" class="col-sm-3 form-control" type="number"></input>
+                            <span style="margin-left:10px;">V</span>
+                        </div>
+                        <div class="form-group row">
+                            <label for="battery_maxVoltage" class="col-sm-3 col-form-label">maxVoltage</label>
+                            <input id="battery_maxVoltage" step="0.1" class="col-sm-3 form-control" type="number"></input>
+                            <span style="margin-left:10px;">V</span>
+                        </div>
+                    </form>
+                </div>
+                <button type="button" onclick="requestSettings()" id="settingsBtn"
+                class="btn btn-outline-success btn-sm btn-block" title=" ">
+                Refresh
+                </button>
+                <button type="button" onclick="setOutputSettings()" id="settingsBtn"
+                class="btn btn-outline-success btn-sm btn-block" title=" ">
+                Set
+                </button>
+                <button type="button" onclick="setDefaultOutputSettings()" id="settingsBtn"
+                class="btn btn-outline-success btn-sm btn-block" title=" ">
+                Set Default
+                </button>
+                <button type="button" onclick="saveOutputSettings()" id="settingsBtn"
+                class="btn btn-outline-success btn-sm btn-block" title=" ">
+                Save
+                </button>
+
+                </div>
+                        
+                <button type="button" onclick="switch_to_page('main-page')" id="backBtn"
+                    class="btn btn-outline-success btn-sm btn-block" title="Use this to arm the robot">
+                    Back
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Info PAGE -->
+    <div class="d-none d-md-block info-page" style="visibility:hidden;">
+        <div class="card bg-light">
+            <h5 class="card-header">Hotkeys</h5>
+            <div class="card-body">
+                <table class="table table-sm">
+                    <tbody>
+                        <tr>
+                            <td><b>F11</b></td>
+                            <td>Fullscreen</td>
+                        </tr>
+                        <tr>
+                            <td><b>L</b></td>
+                            <td>Lights</td>
+                        </tr>
+                        <tr>
+                            <td><b>C</b></td>
+                            <td>Cinema</td>
+                        </tr>
+                        <tr>
+                            <td><b>ENTER</b></td>
+                            <td>Arm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button type="button" onclick="switch_to_page('main-page')" id="backBtn"
+            class="btn btn-outline-success btn-sm btn-block" title="Use this to arm the robot">
+            Back
+        </button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
