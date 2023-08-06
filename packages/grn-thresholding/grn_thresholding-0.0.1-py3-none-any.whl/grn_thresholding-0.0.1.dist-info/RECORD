@@ -1,0 +1,13 @@
+grn_thresholding/__init__.py,sha256=YIpgxC1Uq7zT4fmTQohGZlh5ajt4TAYxY0Sh99RmiJo,23
+grn_thresholding/methods/__init__.py,sha256=0pb7IVXfsAh8aTup7t5uHpeRN_F3Nb4pngpgngAqI2c,246
+grn_thresholding/methods/bimodal_thresholding.py,sha256=a1FtugBkI2c9RZY9iSAJUjYX0MIH-O0cSsMS0WZ-U3Q,1712
+grn_thresholding/methods/hard_thresholding.py,sha256=9RyjGCkI1kHZwy35msxopJMqzO8wdVTpNFZ7xzlGmPI,606
+grn_thresholding/methods/homogeneous_thresholding.py,sha256=T6mw8PHw8S7pKQjwHBtUzBdyWEkGZgqJVptvMFPkGg0,1151
+grn_thresholding/methods/max_f1_score.py,sha256=s4ZL-bG25pLglw7g2fMjq8ujN7ofxMfTSA5htCFss1Y,1099
+grn_thresholding/methods/soft_trhesholding.py,sha256=1TpOqwqKnEITRpacs84f86OQIjSLUZvsDf87ddivH2o,343
+grn_thresholding/methods/top_edges.py,sha256=_Q-z03MtDW9iFKimboPVgfHbrr5aZoQURCJetiaK06M,1310
+grn_thresholding-0.0.1.dist-info/LICENSE,sha256=n9tqyIpmjVQqpAcNgvUYmf-q8OL7Zu56Su39DJb2H6w,1072
+grn_thresholding-0.0.1.dist-info/METADATA,sha256=K-0I3Vmyr0k_PAdnIuMoJ3Op5EM9nuhgF4R09D3T41k,675
+grn_thresholding-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+grn_thresholding-0.0.1.dist-info/top_level.txt,sha256=RFaBd0ze14hc5Uunq2PP20gK3nANA8YUYGPksKr5TdE,17
+grn_thresholding-0.0.1.dist-info/RECORD,,
