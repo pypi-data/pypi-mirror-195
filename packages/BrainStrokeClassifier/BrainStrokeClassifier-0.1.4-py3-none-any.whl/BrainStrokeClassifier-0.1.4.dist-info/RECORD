@@ -1,0 +1,9 @@
+BrainStrokeClassifier/__init__.py,sha256=6FjZlzumgavkLgT2hZolU0OgQBktNqlPUpVgqAw3tpQ,4207
+trained_model/pkl/__init__.py,sha256=6FjZlzumgavkLgT2hZolU0OgQBktNqlPUpVgqAw3tpQ,4207
+trained_model/pkl/trained_model.pkl,sha256=7gj07kTia045FTxjHFZib77kb7yVQP4SEcKg5vZLO9c,367710
+trained_model/pkl/model/trained_model.pkl,sha256=7gj07kTia045FTxjHFZib77kb7yVQP4SEcKg5vZLO9c,367710
+BrainStrokeClassifier-0.1.4.dist-info/LICENSE.txt,sha256=SGGFwM-h_T26L-yg9tJ7cZGIJkrY3H0si0cfgxLv3xY,1087
+BrainStrokeClassifier-0.1.4.dist-info/METADATA,sha256=k9isp5XRTFcjYLUY6dqeBNlzJTYKmHeosLdG9U8Mrdk,3072
+BrainStrokeClassifier-0.1.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+BrainStrokeClassifier-0.1.4.dist-info/top_level.txt,sha256=fCYrNYGcHJ17X6TxcK7wEb2ckQ1QGHphXDjigrfdJIk,36
+BrainStrokeClassifier-0.1.4.dist-info/RECORD,,
