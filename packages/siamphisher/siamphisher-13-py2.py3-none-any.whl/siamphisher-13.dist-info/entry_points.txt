@@ -1,0 +1,2 @@
+[console_scripts]
+siamphisher = siamphisher.siamphisher:main_menu
