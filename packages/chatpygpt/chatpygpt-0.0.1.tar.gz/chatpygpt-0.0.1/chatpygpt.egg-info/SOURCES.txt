@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+chatpygpt/__init__.py
+chatpygpt/gpt.py
+chatpygpt/streamlit.py
+chatpygpt.egg-info/PKG-INFO
+chatpygpt.egg-info/SOURCES.txt
+chatpygpt.egg-info/dependency_links.txt
+chatpygpt.egg-info/top_level.txt
