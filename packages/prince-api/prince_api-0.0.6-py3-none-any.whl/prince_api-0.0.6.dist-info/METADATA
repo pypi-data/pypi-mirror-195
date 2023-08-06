@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: prince-api
+Version: 0.0.6
+Summary: A Project Made To Centralize Various APIs 📖 No Authorization Needed :)
+Home-page: https://github.com/NotReallyPrince/Prince-Api
+Author: NotReallyPrince
+Author-email: princebots3011@gmail.com
+License: MIT
+Project-URL: Tracker, https://github.com/NotReallyPrince/Prince-API/issues
+Project-URL: Community, https://t.me/PrincexUpdates
+Project-URL: Source, https://github.com/NotReallyPrince/Prince-API
+Project-URL: Documentation, https://docs.prince-api.tk
+Keywords: Prince-Api,python-pakage,api,Prince
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.28.1)
+
+# Welcome to the Prince-API Documentation
+Welcome to Prince-API! Here you'll find all the documentation you need to get up and running with the Prince-API.
+
+## List Of APIs
+1. Lyrics
+2. Google Translate
+3. Youtube
+4. Reddit
+5. Wallpapers
+6. Urban Dictionary
+7. AI Chatbot
+8. Image Search
+9. Wikipedia
+10. Proxy Scraper
+11. The Movie Database [TMDB]
+12. Quotly [TELEGRAM]
+13. Image Search
+14. ChatGPT Ask Anything  
+
+## Note
+1. I'll add more features soon.
+2. If you're stuck somewhere, [Prince Support](https://t.me/PrincexSupport) are there to help.
