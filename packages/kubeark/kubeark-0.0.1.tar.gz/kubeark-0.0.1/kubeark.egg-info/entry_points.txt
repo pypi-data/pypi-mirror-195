@@ -1,0 +1,2 @@
+[console_scripts]
+kubeark = kubeark.main:main

@@ -1,0 +1,9 @@
+MANIFEST.in
+setup.py
+kubeark/kubeark.py
+kubeark.egg-info/PKG-INFO
+kubeark.egg-info/SOURCES.txt
+kubeark.egg-info/dependency_links.txt
+kubeark.egg-info/entry_points.txt
+kubeark.egg-info/requires.txt
+kubeark.egg-info/top_level.txt

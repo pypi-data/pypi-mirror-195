@@ -1,0 +1,3 @@
+include README.md
+recursive-include kubeark/templates *
+recursive-include kubeark/static *
