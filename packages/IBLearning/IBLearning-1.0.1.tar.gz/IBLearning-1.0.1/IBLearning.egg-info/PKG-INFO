@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: IBLearning
+Version: 1.0.1
+Summary: IBLearning is a Python module that contains a set of tools to help you to make your own machine learning algorithms.
+Home-page: https://github.com/IB-Solution/IBLearning
+Author: Alix Hamidou
+Author-email: alix.hamidou@gmail.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Text Processing :: Linguistic
+Description-Content-Type: text/markdown
+
+# IBLearning
+
+## Modules
+
+### TextClustering
+Allow text classification using KMeansCluster methods
+
+#### Example
+```python
+from IBLearning.MachineLearning.KMeansCluster import TextClustering
+
+# text to classify
+texts = [
+    "hello world",
+    "this world is beautiful",
+    "issou is a meme",
+    "welcome to the world",
+    "Risitas is the origin of issou",
+    "Issou is a city in France"
+]
+
+# Create a TextClustering object
+textClustering = TextClustering.TextClustering(TextClustering.Language.english)
+
+# Add texts to the TextClustering object
+for text in texts:
+    textClustering.AddText(text)
+
+# If needed, you can rebase the clusters with a new accuracy (create new clusters)
+textClustering.RebaseClusterMean(accuracyMin=0.75)
+
+# Get the clusters
+clusters = textClustering.clusters
+
+# Get the first cluster texts
+texts = clusters[0].texts
+
+# Get the first cluster words with count
+words = clusters[0].words
+```
+
+### Possible improvements
+- When processing a text mean, whe can use the word count to improve the accuracy of the mean
