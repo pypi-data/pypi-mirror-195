@@ -1,0 +1,68 @@
+[tool.poetry]
+name = "sweep-design"
+version = "0.3.1"
+description = "Project designed to create and analyze sweep signals."
+authors = ["Vladislav <serebraykov.vs@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.7, <4.0"
+
+numpy = [
+    {version = "<=1.19", python = ">=3.6,<3.8"},
+    {version = ">1.19", python = ">=3.8"}
+]
+scipy = [
+    {version = ">=1.2,<1.8", python = ">=3.6,<3.8"},
+    {version = ">=1.8", python = ">=3.8"}
+]
+
+typing_extensions = [
+    {version = ">=3.6", python = ">=3.6,<3.8"},
+]
+
+emd-signal = "^1.2.3"
+packaging = "^22"
+
+
+[tool.poetry.group.tests.dependencies]
+tox = "^4.0.2"
+mypy = "^0.991"
+
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^5.3.0"
+myst-nb = "^0.17.1"
+sphinx-autoapi = "^2.0.0"
+sphinx-rtd-theme = "^1.1.1"
+jupyterlab = "^3.5.0"
+pandoc = "^2.3"
+matplotlib = "^3.5"
+
+
+[tool.poetry.group.formatter.dependencies]
+autopep8 = "^2.0.0"
+
+
+[tool.poetry.group.release.dependencies]
+python-semantic-release = "^7.32.2"
+
+[tool.semantic_release]
+version_variable = [
+    "sweep_design/__init__.py:__version__",
+    "pyproject.toml:version"
+]
+branch = "main"
+changelog_file = "CHANGELOG.md"
+build_command = "poetry build"
+dist_path = "dist/"
+upload_to_release = true
+upload_to_pypi = false
+remove_dist = false
+patch_without_tag = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
