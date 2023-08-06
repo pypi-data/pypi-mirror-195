@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+zmeiapi/Material.py
+zmeiapi/MaterialCreators.py
+zmeiapi/Pin.py
+zmeiapi/PinCreators.py
+zmeiapi/__init__.py
+zmeiapi.egg-info/PKG-INFO
+zmeiapi.egg-info/SOURCES.txt
+zmeiapi.egg-info/dependency_links.txt
+zmeiapi.egg-info/top_level.txt
