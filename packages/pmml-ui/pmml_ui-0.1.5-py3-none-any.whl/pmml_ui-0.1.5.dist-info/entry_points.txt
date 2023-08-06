@@ -1,0 +1,3 @@
+[console_scripts]
+add-pmml-ui-user=pmml_ui.auth.add_user:add_user
+
