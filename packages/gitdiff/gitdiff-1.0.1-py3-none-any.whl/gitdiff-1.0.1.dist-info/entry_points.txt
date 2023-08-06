@@ -1,0 +1,2 @@
+[console_scripts]
+gitdiff = git_diff.__main__:main

@@ -1,0 +1,12 @@
+git_diff/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_diff/__main__.py,sha256=3ENvhGqzmGg8UYTv2PS7JaWX8jPbuBpo4x60RWIFpig,75
+git_diff/deal_diff.py,sha256=szl3f5FBSIQJq-ADOIvuucjA57aBa631J53CJ6xBfQU,3567
+vestpackage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vestpackage/__main__.py,sha256=-geMEIEl7Ip0npqNAub09Hb4Hlmj9OJfOtJyYDSusNg,83
+vestpackage/replace_package.py,sha256=uA5oU4MsqtySV8KtxcuE8Yi_N5Cc5rgn03RVLRHMOxY,5728
+gitdiff-1.0.1.dist-info/LICENSE,sha256=iaHuf1cPy1cnaueIKeanvIigoIMhCNMDoF1X1nJ6RvQ,1065
+gitdiff-1.0.1.dist-info/METADATA,sha256=-lN-TF55FGeocYTh8Qs7vbgkTINL2wA2QbzTYH9sXV4,564
+gitdiff-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+gitdiff-1.0.1.dist-info/entry_points.txt,sha256=cpjcmTG9sUwAARxzN6fZ_wOZORuUAsJB60VihGM4DUc,51
+gitdiff-1.0.1.dist-info/top_level.txt,sha256=4DzwC9KRGqn9E6Uw15uFGrvgIHoNOxVHvnmwPbEHbJ4,9
+gitdiff-1.0.1.dist-info/RECORD,,
