@@ -1,0 +1,14 @@
+{
+  "editor.formatOnSave": true,
+  "python.formatting.provider": "black",
+  "python.analysis.typeCheckingMode": "basic",
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "cSpell.words": ["riseact", "isort", "Testtest", "venv"],
+  "python.languageServer": "Default"
+}

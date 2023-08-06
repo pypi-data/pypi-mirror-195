@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: riseact
+Version: 1.0.0
+Summary: Riseact CLI
+Author-email: Edoardo Nodari <edoardo.nodari@metadonors.it>
+Requires-Python: >=3.10
+Requires-Dist: typer[all]
+Requires-Dist: inquirer
+Requires-Dist: pydantic
+Requires-Dist: requests
+Requires-Dist: python-dotenv
+Requires-Dist: gql[all]
+Requires-Dist: watchdog
+Requires-Dist: python-magic
+Requires-Dist: GitPython
+Requires-Dist: toml
+Requires-Dist: pyngrok
+Requires-Dist: flake8 ; extra == "test"
+Requires-Dist: black ; extra == "test"
+Requires-Dist: isort ; extra == "test"
+Project-URL: Home, https://github.com/riseact/cli
+Provides-Extra: test

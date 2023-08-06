@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "riseact"
+authors = [{ name = "Edoardo Nodari", email = "edoardo.nodari@metadonors.it" }]
+dynamic = ["version", "description"]
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "typer[all]",
+    "inquirer",
+    "pydantic",
+    "requests",
+    "python-dotenv",
+    "gql[all]",
+    "watchdog",
+    "python-magic",
+    "GitPython",
+    "toml",
+    "pyngrok"
+]
+
+[project.optional-dependencies]
+test = ["flake8", "black", "isort"]
+
+[project.scripts]
+riseact = "riseact.cli:run"
+
+[project.urls]
+Home = "https://github.com/riseact/cli"
