@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sinhala-speech-to-text
+Version: 1.0.1
+Summary: A library for sending Sinhala audio files to a Flask API and decoding the received text
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests (>=2.25.1)
+
+UNKNOWN
+
+
