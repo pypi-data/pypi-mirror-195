@@ -1,0 +1,3 @@
+[console_scripts]
+seman=seman.main:main
+

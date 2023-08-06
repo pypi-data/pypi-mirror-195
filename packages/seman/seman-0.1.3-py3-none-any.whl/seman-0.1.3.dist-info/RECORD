@@ -1,0 +1,8 @@
+sbom.xml,sha256=QBp_0o2tkjkP8PfhGrvN9DT6M4ebflO9RjnVp1ywJPw,10578
+seman/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seman/main.py,sha256=QznOpAvFltkPNy5-EGMU-uZxctPdo2MAXVJPaI1pB3w,1802
+seman-0.1.3.dist-info/entry_points.txt,sha256=GXX4JRVtPetrCwCk7ytQ8--jA2HxP4uFUQgvy2SQbtQ,41
+seman-0.1.3.dist-info/LICENSE,sha256=rzWXqSQprKAaJHHcL8Bd6l3Xx0vvfx-0bbk1Z5pBzX4,1064
+seman-0.1.3.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+seman-0.1.3.dist-info/METADATA,sha256=dcRk4BqoCr0UeGrfjLgrd5oy1uKEwZXcqWgIvMaC68g,1430
+seman-0.1.3.dist-info/RECORD,,
