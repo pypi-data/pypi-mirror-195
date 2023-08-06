@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "cdk-webapp-skeleton"
+version = "0.2.dev1"
+description = ""
+authors = ["Ilya Nekhay <nekhayiv@gmail.com>"]
+readme = "README.md"
+packages = [{include = "cdk_webapp_skeleton"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aws-cdk-lib = "^2.67.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
