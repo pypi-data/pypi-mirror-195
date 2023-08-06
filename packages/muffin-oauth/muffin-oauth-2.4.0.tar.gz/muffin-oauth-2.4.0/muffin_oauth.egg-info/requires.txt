@@ -1,0 +1,16 @@
+muffin>=0.92
+aioauth-client>=0.27.2
+
+[dev]
+pre-commit
+refurb
+bump2version
+
+[example]
+uvicorn
+
+[tests]
+pytest
+pytest-aio[curio,trio]
+pytest-mypy
+ruff
