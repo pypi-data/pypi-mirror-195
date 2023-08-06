@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: inspiredco
+Version: 0.0.2
+Summary: Inspired Cognition API client
+Author-email: Inspired Cognition <support@inspiredco.ai>
+License: MIT
+License-File: LICENSE.txt
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Requires-Dist: requests>=2.27.0
+Provides-Extra: test
+Requires-Dist: pytest-mock>=3.0.0; extra == 'test'
+Requires-Dist: pytest>=6.0.0; extra == 'test'
+Description-Content-Type: text/markdown
+
+# Inspired Cognition API Client
+
+This is the API client to [Inspired Cognition](https://inspiredco.ai) services.
+
+## Getting Started
+
+To install the client, make sure you have Python 3.8 or higher, and then run the
+following command:
+
+```shell
+pip install inspiredco
+```
+
+To use the API, you will need an API key. You can obtain one by traveling to the
+[Inspired Cognition Dashboard](https://dashboard.inspiredco.ai).
+
+## Usage
+
+See the documentation at the links below for more detailed usage.
+
+* [Critique](https://docs.inspiredco.ai/critique/)
