@@ -1,0 +1,10 @@
+BrainStrokeClassifier/__init__.py,sha256=jQngSsyWZt7f8o4fLrpXhDcJpf6NrvbT4H-Gl2IArYQ,4223
+BrainStrokeClassifier/trained_model.pkl,sha256=7gj07kTia045FTxjHFZib77kb7yVQP4SEcKg5vZLO9c,367710
+trained_model/pkl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trained_model/pkl/trained_model.pkl,sha256=7gj07kTia045FTxjHFZib77kb7yVQP4SEcKg5vZLO9c,367710
+trained_model/pkl/model/trained_model.pkl,sha256=7gj07kTia045FTxjHFZib77kb7yVQP4SEcKg5vZLO9c,367710
+BrainStrokeClassifier-0.1.5.dist-info/LICENSE.txt,sha256=SGGFwM-h_T26L-yg9tJ7cZGIJkrY3H0si0cfgxLv3xY,1087
+BrainStrokeClassifier-0.1.5.dist-info/METADATA,sha256=0rXH2KsabTNYm71hmy1qcjiAx_oTZpimaEhYdIgC7og,3072
+BrainStrokeClassifier-0.1.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+BrainStrokeClassifier-0.1.5.dist-info/top_level.txt,sha256=fCYrNYGcHJ17X6TxcK7wEb2ckQ1QGHphXDjigrfdJIk,36
+BrainStrokeClassifier-0.1.5.dist-info/RECORD,,
