@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pretty-langchain"
+version = "0.1.0"
+description = "Langchain but prettier"
+authors = ["Melisa Russak <melisa.stal@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "pretty_langchain"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+langchain = "^0.0.101"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
