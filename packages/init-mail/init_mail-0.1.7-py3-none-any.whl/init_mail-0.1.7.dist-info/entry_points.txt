@@ -1,0 +1,3 @@
+[console_scripts]
+init-mail=init_mail.main:main
+
