@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+OctoPrint_Setuptools.egg-info/PKG-INFO
+OctoPrint_Setuptools.egg-info/SOURCES.txt
+OctoPrint_Setuptools.egg-info/dependency_links.txt
+OctoPrint_Setuptools.egg-info/top_level.txt
+octoprint_setuptools/__init__.py
