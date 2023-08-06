@@ -1,0 +1,11 @@
+comandor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+comandor/log.py,sha256=yMDvEP2brxEXlU5EZ0d9b1CB00Pj4ulDcG7ERlsSv3g,219
+comandor/main.py,sha256=zi5QhGSu5S2SP1b5kFKGCYtSuywzi1cWl7CqZefaKvM,2365
+comandor/models.py,sha256=EquR4Ya1vK_HoWT78LRolKF8sFR0sDqTf0mIgRWuY6k,271
+comandor/settings.py,sha256=I9rID9N5iuMCrh6FluyfixAtiwpY7MlN9frsM27YVv8,864
+comandor-0.1.0.dist-info/LICENSE,sha256=V5IpH_nuMyDBK-cGyNONAYDI0LQWnsK6sv1IUxUL_fQ,1089
+comandor-0.1.0.dist-info/METADATA,sha256=8RZIyfoXGZz-Mp9Gx24tRnosstJdoNKIx_zi2HfUXc0,1871
+comandor-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+comandor-0.1.0.dist-info/entry_points.txt,sha256=idTVlK7FPuMFfDXS8HvX6W8eXLZOOqwl01qQZUxXzXo,48
+comandor-0.1.0.dist-info/top_level.txt,sha256=nKdUzAR9seAYyTXspc4QRlgPkIEJBq3kq5gES8Tzc0c,9
+comandor-0.1.0.dist-info/RECORD,,
