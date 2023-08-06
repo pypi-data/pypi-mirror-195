@@ -1,0 +1,5 @@
+tqdm<5,>=4.15.0
+wagtail>=3
+
+[testing]
+coverage[toml]
