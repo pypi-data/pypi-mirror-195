@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/shexviz/__init__.py
+src/shexviz/__main__.py
+src/shexviz/shex2dot.py
+src/shexviz.egg-info/PKG-INFO
+src/shexviz.egg-info/SOURCES.txt
+src/shexviz.egg-info/dependency_links.txt
+src/shexviz.egg-info/entry_points.txt
+src/shexviz.egg-info/requires.txt
+src/shexviz.egg-info/top_level.txt
