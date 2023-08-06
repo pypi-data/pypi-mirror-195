@@ -1,0 +1,7 @@
+pyyaml
+openai>=0.27.0
+python-telegram-bot
+
+[browser]
+playwright
+cf_clearance
