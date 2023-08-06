@@ -1,0 +1,9 @@
+{
+  "memory_length": 3,
+  "max_token": 500,
+  "ai_temperature": 75,
+  "bot_active": 1,
+  "daily_limit": 50,
+  "admin_limit": 50,
+  "password": "",
+}
