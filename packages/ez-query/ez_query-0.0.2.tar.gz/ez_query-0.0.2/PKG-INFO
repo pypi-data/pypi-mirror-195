@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: ez_query
+Version: 0.0.2
+Summary: SQL Query Generator (using your table schemas) powered by ChatGPT.
+Project-URL: Source Code, https://github.com/AbhishekVel/ez-query
+Author-email: Abhishek Velayudhamm <velayudham.abhishek@gmail.com>
+License-File: LICENSE.md
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: argparse==1.4.0
+Requires-Dist: mysql-connector-python==8.0.32
+Requires-Dist: openai==0.27.0
+Requires-Dist: prompt-toolkit==3.0.38
+Requires-Dist: python-dotenv==0.21.1
+Description-Content-Type: text/markdown
+
+# Ez-Query
+## SQL Query Generator Powered by ChatGPT
+
+Ez_query allows you to generate sql queries using ChatGPT with the added benefit of retrieving your table schemas for you. 
+
+ChatGPT is capable of helping you write SQL queries but only if you provide it your table schemas first. This would mean you have to retrieve them youself manually and enter them into ChatGPT. Doing this multiple times is tedious and time-consuming. 
+
+Ez_query makes the process of retrieving your table schemas extremely simple and allows you to do this all in the terminal.
+
+## Installation
+
+
+```sh
+pip install ez_query
+```
+## Usage
+
+```sh
+ez_query -h
+ez_query --openai_api_key sk-fake-key --db_host=localhost --db_user=root --db_pass=root --db_name=employees
+```
