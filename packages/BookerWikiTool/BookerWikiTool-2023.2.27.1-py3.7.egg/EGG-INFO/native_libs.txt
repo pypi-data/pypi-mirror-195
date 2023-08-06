@@ -1,0 +1,2 @@
+BookerWikiTool/assets/7z.dll
+BookerWikiTool/assets/jbig2enc.dll
