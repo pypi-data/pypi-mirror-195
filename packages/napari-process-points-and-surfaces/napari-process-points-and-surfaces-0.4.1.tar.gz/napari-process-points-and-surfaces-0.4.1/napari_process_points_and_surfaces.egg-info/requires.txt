@@ -1,0 +1,11 @@
+napari-plugin-engine>=0.1.4
+numpy
+napari
+napari-tools-menu>=0.1.14
+napari-time-slicer>=0.4.5
+napari-workflows>=0.2.3
+vedo>=2022.4.1
+napari-skimage-regionprops>=0.5.5
+pandas
+imageio!=2.22.1
+stackview>=0.5.2
