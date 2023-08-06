@@ -1,0 +1,139 @@
+# This YAML file contains descriptions for the CI of nightly builds of Bob and
+# BEAT.
+
+# Definition of global variables (all stages)
+variables:
+  PYTHONUNBUFFERED: "1"
+  CONDA_ROOT: "${CI_PROJECT_DIR}/miniconda"
+  BOOTSTRAP: "https://gitlab.idiap.ch/bob/bob.devtools/raw/master/bob/devtools/bootstrap.py"
+  XDG_CACHE_HOME: "${CI_PROJECT_DIR}/.cache"
+
+
+# Definition of our build pipeline order
+stages:
+  - build
+  - cleanup
+
+
+# All stages are prepared the same, with a base set of commands
+.bootstrap:
+  before_script:
+    - curl --silent "${BOOTSTRAP}" --output "bootstrap.py"
+    - python3 bootstrap.py -vv channel base
+    - source ${CONDA_ROOT}/etc/profile.d/conda.sh
+    - conda activate base
+    - conda clean --all
+  cache:
+    paths:
+      - miniconda.sh
+      - .cache/torch
+      - .cache/pre-commit
+
+
+# Build targets
+.build_template:
+  extends: .bootstrap
+  stage: build
+  script:
+    - bdt ci nightlies -vv order.txt
+    - bdt ci clean -vv
+
+.build_linux_template:
+  extends: .build_template
+  tags:
+    - bob
+    - docker
+  image: quay.io/condaforge/linux-anvil-cos7-x86_64
+  variables:
+    # The version of cuda at Idiap
+    CONDA_OVERRIDE_CUDA: "11.6"
+  before_script:
+    - !reference [.bootstrap, before_script]
+    - git config --global --add safe.directory ${CI_PROJECT_DIR}
+
+.build_macos_template:
+  extends: .build_template
+  tags:
+    - bob
+    - macos
+
+build_linux_39:
+  extends: .build_linux_template
+  variables:
+    PYTHON_VERSION: "3.9"
+  cache:
+    key: 'build-py39'
+
+build_linux_310:
+  extends: .build_linux_template
+  variables:
+    PYTHON_VERSION: "3.10"
+  cache:
+    key: 'build-py310'
+
+build_macos_intel_39:
+  extends: .build_macos_template
+  variables:
+    PYTHON_VERSION: "3.9"
+  tags:
+    - bob
+    - macos
+    - intel
+  cache:
+    key: 'build-py39'
+
+build_macos_intel_310:
+  extends: .build_macos_template
+  variables:
+    PYTHON_VERSION: "3.10"
+  tags:
+    - bob
+    - macos
+    - intel
+  cache:
+    key: 'build-py310'
+
+build_macos_arm_39:
+  extends: .build_macos_template
+  variables:
+    PYTHON_VERSION: "3.9"
+  tags:
+    - bob
+    - macos
+    - arm
+  cache:
+    key: 'build-py39'
+
+build_macos_arm_310:
+  extends: .build_macos_template
+  variables:
+    PYTHON_VERSION: "3.10"
+  tags:
+    - bob
+    - macos
+    - arm
+  cache:
+    key: 'build-py310'
+
+# Periodic cleanup of beta packages
+.cleanup_template:
+  extends: .bootstrap
+  stage: cleanup
+  tags:
+    - bob
+    - docker
+  image: quay.io/condaforge/linux-anvil-cos7-x86_64
+  script:
+    - bdt ci clean-betas -vv
+  cache:
+    key: 'cleanup'
+
+
+# The automatic clean-up takes place when the nightly successfuly runs
+cleanup:
+  extends: .cleanup_template
+
+manual_cleanup:
+  extends: .cleanup_template
+  when: manual
+  allow_failure: true

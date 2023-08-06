@@ -1,0 +1,222 @@
+# This YAML file contains descriptions for the CI of most of our Bob/BEAT/BATL
+# packages - do **not** modify it unless you know what you're doing (and up
+# to!)
+
+# Definition of global variables (all stages)
+variables:
+  PYTHONUNBUFFERED: "1"
+  CONDA_ROOT: "${CI_PROJECT_DIR}/miniconda"
+  BOOTSTRAP: "https://gitlab.idiap.ch/bob/bob.devtools/raw/master/bob/devtools/bootstrap.py"
+  XDG_CACHE_HOME: "${CI_PROJECT_DIR}/.cache"
+
+
+# Definition of our build pipeline order
+stages:
+  - build
+  - deploy
+  - pypi
+
+
+# All stages are prepared the same, with a base set of commands
+.bootstrap:
+  before_script:
+    - curl --silent "${BOOTSTRAP}" --output "bootstrap.py"
+    - python3 bootstrap.py -vv channel base
+    - source ${CONDA_ROOT}/etc/profile.d/conda.sh
+    - conda activate base
+    - conda clean --all
+  cache:
+    paths:
+      - miniconda.sh
+      - .cache/torch
+      - .cache/pre-commit
+
+
+# Build targets
+.build_template:
+  extends: .bootstrap
+  stage: build
+  script:
+    - bdt ci build -vv
+    - bdt ci clean -vv
+  coverage: '/(?i)total.*? (100(?:\.0+)?\%|[1-9]?\d(?:\.\d+)?\%)$/'
+  artifacts:
+    when: always
+    expire_in: 1 week
+    reports:
+      junit: test_results.xml
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage.xml
+
+
+.build_linux_template:
+  extends: .build_template
+  tags:
+    - bob
+    - docker
+  # make sure we use the same image as conda-forge:
+  # https://github.com/conda-forge/conda-forge-pinning-feedstock/blob/main/recipe/conda_build_config.yaml
+  image: quay.io/condaforge/linux-anvil-cos7-x86_64
+  before_script:
+    - !reference [.bootstrap, before_script]
+    - git config --global --add safe.directory ${CI_PROJECT_DIR}
+    - bdt ci check -vv
+  artifacts:
+    paths:
+      - ${CONDA_ROOT}/conda-bld/linux-64/*.conda
+      - ${CONDA_ROOT}/conda-bld/linux-64/*.tar.bz2
+  variables:
+    # The version of cuda at Idiap
+    CONDA_OVERRIDE_CUDA: "11.6"
+
+
+.build_macos_intel_template:
+  extends: .build_template
+  tags:
+    - bob
+    - macos
+    - intel
+  before_script:
+    - !reference [.bootstrap, before_script]
+    - bdt ci check -vv
+  artifacts:
+    paths:
+      - ${CONDA_ROOT}/conda-bld/osx-64/*.conda
+      - ${CONDA_ROOT}/conda-bld/osx-64/*.tar.bz2
+
+
+.build_macos_arm_template:
+  extends: .build_template
+  tags:
+    - bob
+    - macos
+    - arm
+  before_script:
+    - !reference [.bootstrap, before_script]
+    - bdt ci check -vv
+  artifacts:
+    paths:
+      - ${CONDA_ROOT}/conda-bld/osx-arm64/*.conda
+      - ${CONDA_ROOT}/conda-bld/osx-arm64/*.tar.bz2
+
+
+build_macos_intel_39:
+  extends: .build_macos_intel_template
+  variables:
+    PYTHON_VERSION: "3.9"
+  cache:
+    key: "build-py39"
+
+build_macos_intel_310:
+  extends: .build_macos_intel_template
+  variables:
+    PYTHON_VERSION: "3.10"
+  cache:
+    key: "build-py310"
+
+build_macos_arm_39:
+  extends: .build_macos_arm_template
+  variables:
+    PYTHON_VERSION: "3.9"
+  cache:
+    key: "build-py39"
+
+build_macos_arm_310:
+  extends: .build_macos_arm_template
+  variables:
+    PYTHON_VERSION: "3.10"
+  cache:
+    key: "build-py310"
+
+build_linux_39:
+  extends: .build_linux_template
+  variables:
+    PYTHON_VERSION: "3.9"
+  cache:
+    key: "build-py39"
+
+build_linux_310:
+  extends: .build_linux_template
+  variables:
+    PYTHON_VERSION: "3.10"
+    BUILD_EGG: "true"
+  script:
+    - bdt ci build -vv
+    - bdt ci readme -vv dist/*.zip
+    - bdt ci clean -vv
+  artifacts:
+    paths:
+      - dist/*.zip
+      - sphinx
+      - ${CONDA_ROOT}/conda-bld/linux-64/*.conda
+      - ${CONDA_ROOT}/conda-bld/linux-64/*.tar.bz2
+  cache:
+    key: "build-py310"
+
+
+# Deploy targets
+.deploy_template:
+  extends: .bootstrap
+  stage: deploy
+  script:
+    - git config --global --add safe.directory ${CI_PROJECT_DIR}
+    - bdt ci deploy -vv
+    - bdt ci clean -vv
+  dependencies:
+    - build_linux_39
+    - build_linux_310
+    - build_macos_intel_39
+    - build_macos_intel_310
+    - build_macos_arm_39
+    - build_macos_arm_310
+  tags:
+    - bob
+    - docker
+  cache:
+    key: "deploy"
+
+
+deploy_beta:
+  extends: .deploy_template
+  environment: beta
+  only:
+    - master
+    - main
+
+
+deploy_stable:
+  extends: .deploy_template
+  environment: stable
+  only:
+    - /^v\d+\.\d+\.\d+([abc]\d*)?$/  # PEP-440 compliant version (tags)
+  except:
+    - branches
+
+
+pypi:
+  extends: .bootstrap
+  stage: pypi
+  environment: pypi
+  only:
+    refs:
+      - /^v\d+\.\d+\.\d+([abc]\d*)?$/  # PEP-440 compliant version (tags)
+    variables:
+      - $CI_PROJECT_VISIBILITY == "public"
+  except:
+    - branches
+  script:
+    - bdt ci pypi -vv dist/*.zip
+    - bdt ci clean -vv
+  dependencies:
+    - build_linux_39
+    - build_linux_310
+    - build_macos_intel_39
+    - build_macos_intel_310
+    - build_macos_arm_39
+    - build_macos_arm_310
+  tags:
+    - bob
+    - docker
+  cache:
+    key: "pypi"
