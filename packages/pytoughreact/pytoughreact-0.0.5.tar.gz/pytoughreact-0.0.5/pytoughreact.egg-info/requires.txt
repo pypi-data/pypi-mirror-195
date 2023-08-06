@@ -1,0 +1,5 @@
+numpy
+scipy
+vtk
+matplotlib
+PyTOUGH-1.5.6
