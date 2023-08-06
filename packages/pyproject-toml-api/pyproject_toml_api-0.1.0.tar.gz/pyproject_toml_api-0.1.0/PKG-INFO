@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pyproject-toml-api
+Version: 0.1.0
+Summary: 
+License: MIT
+Author: Zack Hankin
+Author-email: zthankin@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: dev
+Provides-Extra: docs
+Requires-Dist: mypy (>=1.0.1,<2.0.0) ; extra == "dev"
+Requires-Dist: myst-parser (>=0.18,<0.19) ; extra == "docs"
+Requires-Dist: pytest (>=7.2.1,<8.0.0) ; extra == "dev"
+Requires-Dist: semantic-version (>=2.10.0,<3.0.0)
+Requires-Dist: sphinx (>=5.3,<6.0) ; extra == "docs"
+Requires-Dist: sphinx-rtd-theme (>=1.2.0,<2.0.0) ; extra == "docs"
+Requires-Dist: tox (>=4.4.6,<5.0.0) ; extra == "dev"
+Description-Content-Type: text/markdown
+
+# Pyproject.toml API
+
