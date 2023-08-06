@@ -1,0 +1,97 @@
+well      sample name         organ               barcode             
+A1        PB1                 NaN                 NaN                 
+A2        EC1                 NaN                 NaN                 
+A3        S1                  Descending colon    83614811            
+A4        S2                  Descending colon    89169063            
+A5        S3                  Parotid glands      1618808             
+A6        S4                  Parotid glands      40575438            
+A7        S5                  Parotid glands      79950930            
+A8        S6                  Parotid glands      39890221            
+A9        S7                  Mammary glands      89508336            
+A10       S8                  Mammary glands      92586048            
+A11       S9                  Parotid glands      17924528            
+A12       S10                 Parotid glands      2216201             
+B1        S11                 Kidneys             35520948            
+B2        PO1                 NaN                 NaN                 
+B3        EC2                 NaN                 NaN                 
+B4        S12                 Kidneys             36798209            
+B5        S13                 Tendons             13590642            
+B6        S14                 Tendons             80409861            
+B7        S15                 Kidneys             20006570            
+B8        S16                 Kidneys             93710466            
+B9        S17                 Descending colon    32772333            
+B10       S18                 Descending colon    71942469            
+B11       S19                 Tendons             50076222            
+B12       S20                 Tendons             96135327            
+C1        S21                 Kidneys             47813663            
+C2        S22                 Kidneys             16444379            
+C3        PB2                 NaN                 NaN                 
+C4        EC3                 NaN                 NaN                 
+C5        S23                 Mammary glands      53217769            
+C6        S24                 Mammary glands      77067395            
+C7        S25                 Kidneys             35041672            
+C8        S26                 Kidneys             92383616            
+C9        S27                 Descending colon    15681836            
+C10       S28                 Descending colon    11568803            
+C11       S29                 Mammary glands      27680865            
+C12       S30                 Mammary glands      24227179            
+D1        S31                 Mammary glands      79047814            
+D2        S32                 Mammary glands      91766816            
+D3        S33                 Mammary glands      70720549            
+D4        PO2                 NaN                 NaN                 
+D5        EC4                 NaN                 NaN                 
+D6        S34                 Mammary glands      27865538            
+D7        S35                 Tendons             41458259            
+D8        S36                 Tendons             40723587            
+D9        S37                 Kidneys             6013196             
+D10       S38                 Kidneys             3415078             
+D11       S39                 Tendons             56836608            
+D12       S40                 Tendons             21842405            
+E1        S41                 Tendons             11799566            
+E2        S42                 Tendons             96245163            
+E3        S43                 Mammary glands      43678389            
+E4        S44                 Mammary glands      45853937            
+E5        PB3                 NaN                 NaN                 
+E6        EC5                 NaN                 NaN                 
+E7        S45                 Parotid glands      62302586            
+E8        S46                 Parotid glands      38750984            
+E9        S47                 Descending colon    4471059             
+E10       S48                 Descending colon    69617164            
+E11       S49                 Tendons             9194793             
+E12       S50                 Tendons             6618919             
+F1        S51                 Tendons             74195046            
+F2        S52                 Tendons             12751426            
+F3        S53                 Descending colon    84076342            
+F4        S54                 Descending colon    69000959            
+F5        S55                 Tendons             61473065            
+F6        PO3                 NaN                 NaN                 
+F7        EC6                 NaN                 NaN                 
+F8        S56                 Tendons             44289300            
+F9        S57                 Mammary glands      63672039            
+F10       S58                 Mammary glands      48213462            
+F11       S59                 Descending colon    36310326            
+F12       S60                 Descending colon    43144259            
+G1        S61                 Kidneys             77899910            
+G2        S62                 Kidneys             61349643            
+G3        S63                 Kidneys             76862984            
+G4        S64                 Kidneys             1211405             
+G5        S65                 Tendons             56491470            
+G6        S66                 Tendons             66764335            
+G7        PB4                 NaN                 NaN                 
+G8        EC7                 NaN                 NaN                 
+G9        S67                 Descending colon    38082467            
+G10       S68                 Descending colon    43656677            
+G11       S69                 Mammary glands      34820292            
+G12       S70                 Mammary glands      74479092            
+H1        S71                 Parotid glands      76656309            
+H2        S72                 Parotid glands      50554942            
+H3        S73                 Tendons             94486322            
+H4        S74                 Tendons             29278367            
+H5        S75                 Tendons             51791902            
+H6        S76                 Tendons             63189179            
+H7        S77                 Descending colon    7725999             
+H8        PO4                 NaN                 NaN                 
+H9        EC8                 NaN                 NaN                 
+H10       S78                 Descending colon    72544501            
+H11       S79                 Mammary glands      1472646             
+H12       S80                 Mammary glands      69191787            
