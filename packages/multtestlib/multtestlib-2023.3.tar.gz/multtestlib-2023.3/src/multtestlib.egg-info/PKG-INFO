@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: multtestlib
+Version: 2023.3
+Summary: Library for executing unit tests, in Python, using parallel processing.
+Author-email: Ricardo Alvarenga <alvarenga.r.ricardo@gmail.com>
+License: Copyright (c) 2022 Ricardo Ribeiro de Alvarenga
+        
+         Permission is hereby granted, free of charge, to any person obtaining a copy
+         of this software and associated documentation files (the "Software"), to deal
+         in the Software without restriction, including without limitation the rights
+         to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+         copies of the Software, and to permit persons to whom the Software is
+         furnished to do so, subject to the following conditions:
+        
+         The above copyright notice and this permission notice shall be included in
+         all copies or substantial portions of the Software.
+        
+         THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+         IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+         FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+         AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+         LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+         OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+         THE SOFTWARE.
+Project-URL: Homepage, https://github.com/alvarengaricardo/multtestlib
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+ # multtestlib
+
+**multtestlib** is a library for running unit tests using processing parallel, written in Python.
+
+![table](https://user-images.githubusercontent.com/16055876/222324613-78df26fa-1cf5-48ce-b8e8-4018d6a2224c.png)
+
+## Example
+
+**Code:**
+
+    import multtestlib  
+    def main():
+    
+    a = 90  
+    b = 35  
+    c = 12
+    
+    with multtestlib.Pool() as pool:
+	    pool.starmap(multtestlib.test_equal,
+		[(a, 90),
+		 (b, 35),
+		 (c, 12)])
+    		 
+    if __name__ == "__main__":  
+        multtestlib.init()  
+        multtestlib.freeze_support()  
+        main()  
+        multtestlib.end()
+
+**Output:**
+
+    test_equal - a: 35 b: 35 Result: Pass
+    test_equal - a: 90 b: 90 Result: Pass
+    test_equal - a: 12 b: 12 Result: Pass
+    Total: 3
+    Passed: 3
+
+**Generated Files**
+
+    filepass.txt -> Contains passed tests
+    filefail.txt -> Contains failed tests
+    filetot.txt -> Contains all tests
