@@ -1,0 +1,5 @@
+# For sdist
+
+exclude README.md
+include description.md
+graft puccini/go-source
