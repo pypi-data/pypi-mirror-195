@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: text-equivalences
+Version: 0.0.1
+Summary: Rule based language modeling
+Home-page: https://github.com/o-alexandre-felipe/text-search
+Author: Alexandre Felipe
+Author-email: o.alexandre.felipe@gmail.com
+License: MIT
+Keywords: FST,Transducers,Regular Expression,Text normalization,graph,language model
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE.txt
