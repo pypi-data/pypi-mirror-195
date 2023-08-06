@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+geek_noisrucer2/__init__.py
+geek_noisrucer2/test.py
+geek_noisrucer2.egg-info/PKG-INFO
+geek_noisrucer2.egg-info/SOURCES.txt
+geek_noisrucer2.egg-info/dependency_links.txt
+geek_noisrucer2.egg-info/top_level.txt
