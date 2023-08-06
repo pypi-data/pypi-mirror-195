@@ -1,0 +1,3 @@
+[console_scripts]
+pf2ewc=pf2e_wealth_calculator.pf2ewc:entry_point
+
