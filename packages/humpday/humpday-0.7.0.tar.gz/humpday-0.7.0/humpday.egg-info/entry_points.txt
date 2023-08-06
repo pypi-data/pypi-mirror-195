@@ -1,0 +1,2 @@
+[console_scripts]
+humpday = humpday.__main__:main
