@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "extremeflash"
+version = "v0.1.1"
+description = ""
+authors = ["Grische <2787581+grische@users.noreply.github.com>"]
+license = "GPL-3.0-only"
+readme = "README.md"
+packages = [{include = "extremeflash"}]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pyserial = "^3.5"
+tftpy = "^0.8.2"
+paramiko = "^3.0.0"
+scp = "^0.14.5"
+
+[tool.poetry.scripts]
+extremeflash = "extremeflash.__main__:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
