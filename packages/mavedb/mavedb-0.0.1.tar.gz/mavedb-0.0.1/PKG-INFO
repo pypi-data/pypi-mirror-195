@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mavedb
+Version: 0.0.1
+Summary: "Database server for Multiplexed Assays of Variant Effect."
+Project-URL: documentation, https://www.mavedb.org/docs
+Project-URL: repository, https://github.com/VariantEffect/mavedb-api
+Author-email: MaveDB Developers <alan.rubin@wehi.edu.au>
+License: AGPL-3.0-or-later
+License-File: LICENSE
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# MaveDB Server

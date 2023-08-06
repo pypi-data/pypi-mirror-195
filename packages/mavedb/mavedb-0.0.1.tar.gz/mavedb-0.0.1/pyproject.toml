@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mavedb"
+description = '"Database server for Multiplexed Assays of Variant Effect."'
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "AGPL-3.0-or-later"}
+keywords = []
+authors = [
+  { name = "MaveDB Developers", email = "alan.rubin@wehi.edu.au" },
+]
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Programming Language :: Python",
+]
+dependencies = []
+dynamic = ["version"]
+
+[project.urls]
+documentation = "https://www.mavedb.org/docs"
+repository = "https://github.com/VariantEffect/mavedb-api"
+
+[tool.hatch.version]
+path = "src/mavedb/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fqfa"]
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    "docs/",
+    ".github/",
+]
+
