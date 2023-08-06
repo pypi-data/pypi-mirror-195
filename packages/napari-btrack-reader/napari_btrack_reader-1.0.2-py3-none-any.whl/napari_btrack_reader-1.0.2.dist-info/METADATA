@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: napari-btrack-reader
+Version: 1.0.2
+License-File: LICENSE
+
+The functionality of this package has been integrated into [BayesianTracker](https://github.com/quantumjot/BayesianTracker).
