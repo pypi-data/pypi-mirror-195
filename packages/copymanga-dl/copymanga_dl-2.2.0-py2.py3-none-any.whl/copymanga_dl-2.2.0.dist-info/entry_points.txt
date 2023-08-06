@@ -1,0 +1,3 @@
+[console_scripts]
+copymanga-dl=main:main
+
