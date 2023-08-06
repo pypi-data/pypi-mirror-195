@@ -1,0 +1,3 @@
+[console_scripts]
+energyplus_transition_gui = energyplus_transition.runner:main_gui
+
