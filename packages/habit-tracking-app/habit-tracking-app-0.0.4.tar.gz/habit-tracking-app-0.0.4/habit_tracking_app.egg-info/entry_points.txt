@@ -1,0 +1,3 @@
+[console_scripts]
+habit-tracking-app = habit_tracking_app.main:run
+habit-tracking-app-tests = habit_tracking_app.test_all:run
