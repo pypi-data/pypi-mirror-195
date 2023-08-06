@@ -1,0 +1,196 @@
+"""Baseline NLU model for Ruth."""
+import copy
+import logging
+from datetime import datetime
+from pathlib import Path
+from typing import Any, Dict, List, Optional, Text
+
+import ruth
+from rich.console import Console
+from ruth.constants import INTENT, TEXT
+from ruth.nlu.constants import RUTH
+from ruth.nlu.elements import Element
+from ruth.nlu.registry import registered_classes
+from ruth.nlu.utils import check_required_elements, module_path_from_object
+from ruth.shared.constants import INTENT_NAME_KEY, PREDICTED_CONFIDENCE_KEY
+from ruth.shared.nlu.training_data.collections import TrainData
+from ruth.shared.nlu.training_data.ruth_config import RuthConfig
+from ruth.shared.nlu.training_data.ruth_data import RuthData
+from ruth.shared.utils import json_pickle
+
+logger = logging.getLogger(__name__)
+console = Console()
+
+
+class ElementBuilder:
+    """Builds an element from the given configuration."""
+
+    def __init__(self, use_cache: bool = True):
+        self.use_cache = use_cache
+
+        self.element_cache = {}
+
+    @staticmethod
+    def create_element(name: Text, element_config: Dict[Text, Any]):
+        """Creates an element from the given configuration."""
+        if name not in registered_classes:
+            logger.error(
+                f"Given {name} element is not an registered element. We won't support custom element as of now."
+            )
+        else:
+
+            return registered_classes[name].build(element_config)
+
+    @staticmethod
+    def load_element(name: Text, element_config: Dict[Text, Any], model_dir: Path):
+        """Loads an element from the given configuration."""
+        if name not in registered_classes:
+            logger.error(
+                f"Given {name} element is not an registered element. We won't support custom element now."
+            )
+        else:
+            return registered_classes[name].load(element_config, model_dir=model_dir)
+
+
+class MetaData:
+    """Stores the metadata of the model."""
+
+    def __init__(self, metadata: Dict[Text, Any]):
+        self.metadata = metadata
+
+    def get(self, prop: Text, defaults: Any = None):
+        """Returns the value of the given property."""
+        return self.metadata.get(prop, defaults)
+
+    def persist(self, model_dir: Path):
+        """Persists the metadata to the given path."""
+        metadata = self.metadata.copy()
+
+        metadata.update(
+            {"Training completed at": datetime.now(), "ruth_version": ruth.VERSION}
+        )
+        filename = model_dir / "metadata.json"
+        json_pickle(filename, metadata, indent=4)
+
+
+class Trainer:
+    """Trains the NLU model using the given training data."""
+
+    def __init__(self, config: RuthConfig, element_builder: ElementBuilder = None):
+        self.config = config
+        self.training_data = None
+
+        if element_builder is None:
+            element_builder = ElementBuilder()
+
+        self.pipeline = self._build_pipeline(config, element_builder)
+        self.validate_pipeline()
+
+    def validate_pipeline(self) -> None:
+        """Validates the pipeline."""
+        missing_element = []
+        for i, element in enumerate(self.pipeline):
+            for required_element in element.required_element():
+                if not check_required_elements(required_element, self.pipeline[:i]):
+                    missing_element.append(required_element)
+                    raise ValueError(
+                        f'Missing required elements {" ,".join(missing_element)}'
+                    )
+
+    @staticmethod
+    def _build_pipeline(config: RuthConfig, element_builder: ElementBuilder):
+        """Builds the pipeline from the given configuration."""
+        pipeline = []
+
+        for index, pipe_element in enumerate(config.pipeline):
+            element_cnf = config.get_element(index)
+            element = element_builder.create_element(pipe_element["name"], element_cnf)
+            pipeline.append(element)
+
+        return pipeline
+
+    @staticmethod
+    def get_filename(index, name):
+        """Returns the filename for the given element."""
+        return f"element_{index}_{name}"
+
+    def train(self, data: TrainData):
+        """Trains the model using the given training data."""
+        self.training_data = data
+
+        working_data: TrainData = copy.deepcopy(data)
+
+        for i, element in enumerate(self.pipeline):
+            console.print(f"Starting to train element {element.name}")
+            # component.prepare_partial_processing(self.pipeline[:i], context)
+            element.train(working_data)
+            console.print(f"Finished training element {element.name}.")
+        # return Interpreter(self.pipeline, context)
+
+    def persist(self, path: Path) -> Path:
+        """Persists the model to the given path."""
+        timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+
+        model_name = RUTH + "_" + timestamp
+        metadata = {"language": self.config.language, "pipeline": []}
+
+        model_dir = path.absolute() / model_name
+        model_dir.mkdir(exist_ok=True)
+
+        for index, element in enumerate(self.pipeline):
+            file_name = self.get_filename(index, name=element.name)
+            custom_meta = element.persist(file_name, model_dir)
+            element_meta = element.element_config
+            if element_meta and custom_meta:
+                element_meta.update(custom_meta)
+            element_meta["class"] = module_path_from_object(element)
+
+            metadata["pipeline"].append(element_meta)
+
+        MetaData(metadata).persist(model_dir)
+        return model_dir
+
+
+class Interpreter:
+    """Interprets the given text using the trained model."""
+
+    def __init__(
+        self,
+        pipeline: List[Element],
+        model_metadata: Optional[MetaData] = None,
+    ) -> None:
+        self.pipeline = pipeline
+        self.model_metadata = model_metadata
+
+    def parse(
+        self,
+        text: Text,
+    ) -> Dict[Text, Any]:
+        """Parse the input text, classify it and return pipeline result.
+
+        The pipeline result usually contains intent and entities."""
+
+        if not text:
+            output = self.default_output_attributes()
+            output["text"] = ""
+            return output
+
+        data = self.default_output_attributes()
+        data[TEXT] = text
+
+        message = RuthData(data=data)
+
+        for element in self.pipeline:
+            element.parse(message)
+
+        output = self.default_output_attributes()
+        output.update(message.as_dict())
+        return output
+
+    @staticmethod
+    def default_output_attributes():
+        """Returns the default output attributes."""
+        return {
+            TEXT: "",
+            INTENT: {INTENT_NAME_KEY: None, PREDICTED_CONFIDENCE_KEY: 0.0},
+        }
