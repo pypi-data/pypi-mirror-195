@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pather
+Version: 0.1.3
+Summary: Make path from string!
+Author-email: Alexander Bogatyrev <alexander@bogatyrev.de>
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Home, https://github.com/bogatyrev74/pather
