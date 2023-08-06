@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+EZ_AppInstaller.egg-info/PKG-INFO
+EZ_AppInstaller.egg-info/SOURCES.txt
+EZ_AppInstaller.egg-info/dependency_links.txt
+EZ_AppInstaller.egg-info/entry_points.txt
+EZ_AppInstaller.egg-info/requires.txt
+EZ_AppInstaller.egg-info/top_level.txt
+ez_appinstaller/__init__.py
+ez_appinstaller/cli.py
