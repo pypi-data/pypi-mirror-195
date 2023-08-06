@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/pyhttprequests/__init__.py
+src/pyhttprequests.egg-info/PKG-INFO
+src/pyhttprequests.egg-info/SOURCES.txt
+src/pyhttprequests.egg-info/dependency_links.txt
+src/pyhttprequests.egg-info/top_level.txt
