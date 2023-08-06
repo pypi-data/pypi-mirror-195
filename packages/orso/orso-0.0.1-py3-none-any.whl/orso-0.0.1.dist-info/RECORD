@@ -1,0 +1,11 @@
+orso/__init__.py,sha256=dsPCAHtQaQuYSMfxhyAYhY-yEbEvcCfZy8Ej406ZBHI,34
+orso/dataframe.py,sha256=FGyIx_58CPMlNtiztfzVcMlJIK2NAwu-45XpGNYG2ZM,5303
+orso/display.py,sha256=Ixk76UXvzoP9j10u4_8rJPj6k-QYexjEFMboh2Id1ZY,8488
+orso/exceptions.py,sha256=R8687IgeTY_Ypr82ZulMipeIB_PB-hsELMQD02OALAw,824
+orso/row.py,sha256=Y4x5SyQ38tV37EHW1_GdnUDRZ5MgKJNtyoOw0kqwjqY,2746
+orso/version.py,sha256=Ggkc4pZDnDQLc3HW6eU6MbbR22AO6w5NUGIp5znGq0Y,604
+orso-0.0.1.dist-info/LICENSE,sha256=gGSwOOSXZtC2wRbm44bO-IfR6n02k6as1lKcEiI-2rA,1090
+orso-0.0.1.dist-info/METADATA,sha256=p1PTNWAOJXOfj2AqGQzNcnNj59FZVzpLzr6laJ8c5s4,1704
+orso-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+orso-0.0.1.dist-info/top_level.txt,sha256=i5IfwRpRn-pVl2qa93Jico5BH4j3BFVtF6ysfhyFzK4,5
+orso-0.0.1.dist-info/RECORD,,
