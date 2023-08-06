@@ -1,0 +1,7 @@
+pyod>=1.0.7
+emmv>=0.0.4
+
+[dev]
+isort
+black
+build
