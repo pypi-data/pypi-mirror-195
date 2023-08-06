@@ -1,0 +1,6 @@
+README.md
+setup.py
+python_iambic.egg-info/PKG-INFO
+python_iambic.egg-info/SOURCES.txt
+python_iambic.egg-info/dependency_links.txt
+python_iambic.egg-info/top_level.txt
