@@ -1,0 +1,2 @@
+[console_scripts]
+linelib = linelib.__main__:main
