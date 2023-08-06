@@ -1,0 +1,14 @@
+phoenix/__init__.py,sha256=IcOJ9UbZ4qo54COGWg7nV30vlhlTyNTYSSA8QVrrKSk,2139
+phoenix/__main__.py,sha256=dRNak9HDV0Q1V6NohzJeWEKJoEbfgzkGCvsyXdvRox0,56
+phoenix/build.py,sha256=jFRxHZYH6gVZ36p-vt3msv4lvOWejl6BLw98cFa0Hw8,5361
+phoenix/minify.py,sha256=LyCY-4-oSXrLnqdiLEjYubrycFWEnHcGGYdphzxDT74,30908
+phoenix/serve.py,sha256=CNHKnmx_qrTSVjH9DNvR2y0aFw0vPNTh1fXtZ0YHArs,15413
+ppm/__init__.py,sha256=-W0evzSvPI6beaLhAGLQgsuOTnZxGTPeMUGR383Q5kk,222
+ppm/__main__.py,sha256=Gm-kAZ6b04pOFaTuMy7ZX8TQQhnKtvp9qDvY71wab6c,185
+ppm/ppm.py,sha256=I4aqgnDDMBd4xkwOIhLv7Sm1SMywI2UzxkW_m4hSbqo,4816
+phoenix_ws-2.0.1.dist-info/LICENSE.md,sha256=IgUsYXWU3p8zGVh4vuroKyaTHRvYrIGEaf-CGMPRX9k,1067
+phoenix_ws-2.0.1.dist-info/METADATA,sha256=TXQZHHS4jKEttB77RnU-wlziTdpcmjXd4i9VrnuyWVk,2529
+phoenix_ws-2.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+phoenix_ws-2.0.1.dist-info/entry_points.txt,sha256=celGsIYuqHusWD7dJSrMywtDwqw5bOz7ft-Tc7Crfow,50
+phoenix_ws-2.0.1.dist-info/top_level.txt,sha256=LCGMl4NdyOCQKEaY-9Oqnnuc7jkjjBWA3Sy9FEgo3Rg,12
+phoenix_ws-2.0.1.dist-info/RECORD,,
