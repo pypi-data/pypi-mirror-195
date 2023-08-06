@@ -1,0 +1,8 @@
+whisper_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whisper_cli/env.py,sha256=4TFCeJl6MtqgoqyXV5wM5VwLkZZo-5VDEghmIuiblNo,1852
+whisper_cli/main.py,sha256=5mStCoVA7IsjBBlvM1cExxO2RgyrgRenXiS-fPH2EXk,2767
+whisper_cli-0.0.3.dist-info/LICENSE,sha256=lBTjruFit4fXZGBSE2cw8azi9xGZyRsHYjS4zWS1JeQ,1072
+whisper_cli-0.0.3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+whisper_cli-0.0.3.dist-info/entry_points.txt,sha256=JGYFtFS3Ddx0AVM707kdy4sPHzeYomwvDsV85dwaUsA,48
+whisper_cli-0.0.3.dist-info/METADATA,sha256=jynP-jSKKT7mnNcoLPFvSULo3NQ4-2ZLqcf0fqsro4o,1851
+whisper_cli-0.0.3.dist-info/RECORD,,
