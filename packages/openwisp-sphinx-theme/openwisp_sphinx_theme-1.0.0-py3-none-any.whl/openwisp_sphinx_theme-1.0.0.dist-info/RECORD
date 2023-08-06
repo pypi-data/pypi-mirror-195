@@ -1,0 +1,12 @@
+openwisp/sphinx/theme/VERSION,sha256=Vj1ZULWNBVQBGltNkMFR8BMaZduubeQwB4uUZIF24eg,183
+openwisp/sphinx/theme/__init__.py,sha256=hc-JlduRNvrW_SUj_-YEkUftIzw4kSi8fToTGeFIuqM,644
+openwisp/sphinx/theme/footer.html,sha256=YkuwwPlJcq9JMynZJEDbEgzAUFPNv7PWtAO2eG2cgTo,685
+openwisp/sphinx/theme/theme.conf,sha256=zx2Ya_RzoPskJ0CnyCtJHo-j8LZD0bu9BU3Z0XEWZyQ,173
+openwisp/sphinx/theme/static/css/openwisp-sphinx-theme.css,sha256=cL46XYX_e2FBnOfOTvzNwQDRYUFvawuA32O9YViMEX0,4821
+openwisp/sphinx/theme/static/js/theme.js,sha256=Ne62Xu58iffRerqFNUBAEOzK6VVJu74Jl-st9qeHAcI,6646
+openwisp_sphinx_theme-1.0.0.dist-info/LICENSE,sha256=qDBxP_MfGAOXi83jjnBqCXetMooEYh3QPQR484-pCVM,1507
+openwisp_sphinx_theme-1.0.0.dist-info/METADATA,sha256=unLxJaoiKYZK3xpKjwWJrSscS_aVQVZP203DXU58-LQ,2411
+openwisp_sphinx_theme-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+openwisp_sphinx_theme-1.0.0.dist-info/entry_points.txt,sha256=TaJi4DdFd2KGkSwXVBITJe-bXBANBCuC2KPbXv2E4-0,68
+openwisp_sphinx_theme-1.0.0.dist-info/top_level.txt,sha256=f0ZCmP5U8Q5Ii-x28MS-aB3JOMQtlzUQCq85ET_HkXU,9
+openwisp_sphinx_theme-1.0.0.dist-info/RECORD,,
