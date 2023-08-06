@@ -1,0 +1,3 @@
+[console_scripts]
+pct=cli.index:main
+
