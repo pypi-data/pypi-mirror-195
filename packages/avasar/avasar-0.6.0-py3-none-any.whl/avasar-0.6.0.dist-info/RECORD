@@ -1,0 +1,17 @@
+avasar/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+avasar/__main__.py,sha256=GFVmCbZF9ah0hrGnDK5eA3FVTpoZVyHP0jivsoeG-9o,28
+avasar/data/blades.toml,sha256=iRyrCnQPj_ag_uP4mzEkd1nMjnfz9DDRW3E0bzU4hPI,2075
+avasar/data/firstname-english-female.toml,sha256=hk0LVdIcj35RwkkWe91XQE9V2SuWPEoOTpeg47D8vKM,35236
+avasar/data/firstname-english-male.toml,sha256=VWwlSagYuHYEXtzDE5gXT98VSoOusFYfK9k3USwdiKM,26690
+avasar/data/firstname-german-female.toml,sha256=XvResyGSt773mRau3304t2xF54REnxqUXDq-3itSQ7s,7542
+avasar/data/firstname-german-male.toml,sha256=7izeeOyTKFpvW54UV9YfoULqSyVCHW6UlV987FsgGoo,7884
+avasar/data/lastname-english.toml,sha256=NPMwoVj5tD1-T9-w-sQ7jCP478-4PY2AIYCzcID1dqQ,14297
+avasar/data/lastname-german.toml,sha256=eeSQfj-4SyzxsN0GRlnyVW9WKNNb8FtkYYW44_OadvU,25462
+avasar/data/person.py,sha256=li0U3WeYtRdPrBI1LFsHG4R-tOPqEhUmuvRvJThJBwM,851
+avasar/data/person.toml,sha256=ikSmFwYq_FIbFpFXXBVkuA-mGKnv5JZH5PDcN_XWukE,9818
+avasar/dsl.py,sha256=owKOW-mjDUHBRfOWwX2SyMYqnNKOYqC83NxGgUmZ9I4,9279
+avasar/main.py,sha256=XqPNfoFI9XAEU9GIeE9fpnShYKHkTUn2ly1U7r9IMsM,922
+avasar-0.6.0.dist-info/METADATA,sha256=Kg-fyLmCe-Kwm7kTQFY4yL5mMMylYSd-0fZ22uq7jmI,530
+avasar-0.6.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+avasar-0.6.0.dist-info/entry_points.txt,sha256=ylt_UIyyci7WfMnYYziJfEpxGH9KFDLWILfXgjHuF1A,42
+avasar-0.6.0.dist-info/RECORD,,
