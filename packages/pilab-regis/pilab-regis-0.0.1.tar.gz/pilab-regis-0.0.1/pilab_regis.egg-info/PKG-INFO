@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pilab-regis
+Version: 0.0.1
+Home-page: https://github.com/PiLAB-Medical-Imaging/registration
+Author: PiLAB
+Author-email: nicolas.delinte@uclouvain.be
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+
+# Registration
