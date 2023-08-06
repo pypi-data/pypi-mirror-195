@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+aws_cost_optimization/__init__.py
+aws_cost_optimization/utils.py
+aws_cost_optimization.egg-info/PKG-INFO
+aws_cost_optimization.egg-info/SOURCES.txt
+aws_cost_optimization.egg-info/dependency_links.txt
+aws_cost_optimization.egg-info/top_level.txt
