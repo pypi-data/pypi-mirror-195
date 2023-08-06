@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/wxbot-win/__init__.py
+src/wxbot-win/wxbot.py
+wxbot_win.egg-info/PKG-INFO
+wxbot_win.egg-info/SOURCES.txt
+wxbot_win.egg-info/dependency_links.txt
+wxbot_win.egg-info/requires.txt
+wxbot_win.egg-info/top_level.txt
