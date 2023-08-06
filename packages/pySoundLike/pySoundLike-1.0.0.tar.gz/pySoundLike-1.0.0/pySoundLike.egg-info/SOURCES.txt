@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pySoundLike/__init__.py
+pySoundLike/pySoundLike.py
+pySoundLike.egg-info/PKG-INFO
+pySoundLike.egg-info/SOURCES.txt
+pySoundLike.egg-info/dependency_links.txt
+pySoundLike.egg-info/requires.txt
+pySoundLike.egg-info/top_level.txt
