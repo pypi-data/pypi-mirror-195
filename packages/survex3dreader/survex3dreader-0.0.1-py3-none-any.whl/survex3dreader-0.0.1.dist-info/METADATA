@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: survex3dreader
+Version: 0.0.1
+Summary: Reader for Survex 3d files .3d
+Home-page: https://github.com/RadostW/survex-3d-reader
+Author: Radost Waszkiewicz
+Author-email: radost.waszkiewicz@gmail.com
+License: GPL 2.0
+Project-URL: Source, https://github.com/RadostW/survex-3d-reader
+Description-Content-Type: text/markdown
+
+# survex-3d-reader
+
+Import survex .3d files into Python objects.
+
+Dumbed down version of https://github.com/patrickbwarren/qgis3-survex-import
+without PyQt dependency.
+
+Has only one funciton. Example use:
+
+```Python
+import survex3dreader
+
+filename = "1623.3d"
+
+data = survex3dreader.read_svx_file(filename)
+
+```
