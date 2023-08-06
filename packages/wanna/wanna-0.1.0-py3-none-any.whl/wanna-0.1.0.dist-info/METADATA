@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: wanna
+Version: 0.1.0
+Summary: Shell command launcher with natural language
+Home-page: https://github.com/hirokidaichi/wanna
+License: MIT
+Author: hirokidaichi
+Author-email: hirokidaichi@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: glom (>=23.1.1,<24.0.0)
+Requires-Dist: langchain (>=0.0.96,<0.0.97)
+Requires-Dist: openai (>=0.27.0,<0.28.0)
+Requires-Dist: pygments (>=2.14.0,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: questionary (>=1.10.0,<2.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Project-URL: Repository, https://github.com/hirokidaichi/wanna
+Description-Content-Type: text/markdown
+
+# wanna
+Shell command launcher with natural language
+
