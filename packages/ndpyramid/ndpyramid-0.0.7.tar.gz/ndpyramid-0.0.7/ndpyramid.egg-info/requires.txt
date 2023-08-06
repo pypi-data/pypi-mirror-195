@@ -1,0 +1,3 @@
+cf_xarray
+xarray-datatree>=0.0.11
+zarr
