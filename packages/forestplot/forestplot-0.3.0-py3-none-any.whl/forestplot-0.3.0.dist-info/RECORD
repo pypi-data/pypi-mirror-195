@@ -1,0 +1,11 @@
+forestplot/__init__.py,sha256=MRg2wdCWuh1zhBH0zsVLrQ0V__mgvhdoUXOR2vyWeEI,206
+forestplot/arg_validators.py,sha256=-qPUTDMaZMCi0lL4KH0lyElYJMl_rnNOUEoVkXQdbZ8,11249
+forestplot/dataframe_utils.py,sha256=W2-marfeKydH95RvC892aY2jLSvTdp_l92H5iiMJMDg,5080
+forestplot/graph_utils.py,sha256=a1dDMXD3d9fJ8gzSBi07ibgelDNdm-s-vWMWTeVLREc,22321
+forestplot/plot.py,sha256=w8erzrQ1jdpxSREcvjqZ2mgKtf4Rh0EX0j1zAXphj3M,14210
+forestplot/text_utils.py,sha256=6H1ZMPdtcmwOBZg4FCVJb-tIuRmyApQQNgFR_49pQ0g,20904
+forestplot-0.3.0.dist-info/LICENSE,sha256=mpMyk42dRhoC2JUxv9vNN5jn4vBc5LOPqDkXZKQC-XA,1073
+forestplot-0.3.0.dist-info/METADATA,sha256=loX-cfp95r8F0opHmNmejPFJXKHzBI5YxS5dOjf0XsQ,28900
+forestplot-0.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+forestplot-0.3.0.dist-info/top_level.txt,sha256=STrQvSt4MkL0kHlKTfmo5RFzYTGoJa-Zfd0-ioL3oGo,11
+forestplot-0.3.0.dist-info/RECORD,,
