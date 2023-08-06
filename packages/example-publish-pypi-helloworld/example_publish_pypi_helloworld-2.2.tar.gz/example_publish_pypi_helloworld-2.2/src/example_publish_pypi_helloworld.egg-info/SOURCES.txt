@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+src/example_publish_pypi_helloworld/__init__.py
+src/example_publish_pypi_helloworld/helloworld_sample.py
+src/example_publish_pypi_helloworld.egg-info/PKG-INFO
+src/example_publish_pypi_helloworld.egg-info/SOURCES.txt
+src/example_publish_pypi_helloworld.egg-info/dependency_links.txt
+src/example_publish_pypi_helloworld.egg-info/requires.txt
+src/example_publish_pypi_helloworld.egg-info/top_level.txt
