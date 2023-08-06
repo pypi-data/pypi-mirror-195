@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    <p>Editing patient record</p>
+{% endblock %}
+
+{% block body %}
+
+<div class="person_block">
+    <div class="photo">
+        <img src="{{ data['image_url'] }}" onerror="this.src='/static/photo/face.jpg'"
+        width="150" height="150" alt="photo of person">
+    </div>
+    <div class="name_title">
+        {{ data['first_name'] }} {{ data['last_name'] }} 
+    </div>
+</div>
+
+
+<div class="person_data_edit">
+    <form action="/edit_patient" method="post" enctype="multipart/form-data">
+        <table class="table">
+            <tr>
+                <td>First name</td>
+                <td><input type="text" name="first_name" value="{{ data['first_name'] }}" required></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" id="last_name" name="last_name" value="{{ data['last_name'] }}" required></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <select name="gender">
+                        <optgroup label="Currend gender:"></optgroup>
+                            <option value={{ data['gender'] }}> {{ data['gender'] }} </option>
+                        <optgroup label="Awailable gender:"></optgroup>
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Birthday</td>
+                <td><input type="date" name="birthday" value="{{ data['birthday'] }}" required></td>
+            </tr>
+            <tr>
+                <td>Health state</td>
+                <td><input type="text" name="health_state" value="{{ data['health_state'] }}"></td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td><input type="email" name="email" value="{{ data['email'] }}" required></td>
+            </tr>
+            <tr>
+                <td>Doctor</td>
+                <td>
+                    <select name="doctor_id" >
+                        {% if data['doctor'] %}
+                        <optgroup label="Currend doctor:"></optgroup>
+                            <option value={{ data.doctor['id'] }}>{{ data.doctor['first_name'] }} {{ data.doctor['last_name'] }}</option>
+                        {% endif %}
+                        <optgroup label="Awailable doctors:"></optgroup>
+                            {% for doctor in doctors %}
+                            dropdown
+                            <option value={{ doctor['id'] }}>
+                                {{ doctor['first_name'] }} {{ doctor['last_name'] }}
+                            </option>
+                            {% endfor %}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Photo (up to 200kb. 1:1 ratio. bmp, png, jpg, jfif allowed)</td>
+                <td>
+                    <input type="file" name="file" placeholder="photo 150x150">
+                </td>
+            </tr>
+
+        </table>
+        <input type="hidden" name="id" value={{data['id']}}>
+        <input type="submit" id="button_save" value="SAVE">
+    </form>
+    
+</div>    
+{% endblock %}

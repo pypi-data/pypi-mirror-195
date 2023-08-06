@@ -1,0 +1,151 @@
+body {
+    background-color: white;
+  }
+
+
+
+a {
+  color: inherit;
+  background-color: transparent;
+  
+}
+
+.menu {
+    display: flex;
+    background-color: lightgray;
+    font-weight: bold;
+  }
+
+.menu_item {
+    margin: 30px;
+    font-size: 30px;
+    color: #aaa;
+}
+
+.menu_item:hover{
+    color: black;
+}
+
+.current {
+    color: black;
+}
+
+.person_block{
+    margin: 20px;
+}
+
+.table{
+    border-collapse: collapse;
+    font-size: 24px;
+    width: 95%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    margin: 20px;
+}
+
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}   
+
+.table th{
+    font-weight: bold;
+}
+
+.search_block > form{
+    margin: 20px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    align-items: center;
+
+}
+
+.buttons_block{
+    display: flex;
+    width: 95%;
+    justify-content: end;
+}
+
+.button{
+    background-color: #888;
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 20px;
+
+}
+
+#button{
+    background-color: #888;
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    font-size: 20px;
+    border-radius: 10px;
+
+}
+
+#button_save{
+    background-color: #888;
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    position: absolute;
+    left: 40%;
+
+
+}
+
+.person_block{
+    display: flex;
+    flex-direction: row;
+}
+
+.name_title{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 50px;
+}
+
+.table_title{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+input{
+    font-size: 24px;
+}
+
+select{
+    font-size: inherit;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 50px;
+}
+
+.flash{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 50px;
+    margin: 50px, 5px;
+}
+
+.error {
+    color: red;
+}
+
+.message {
+    color: green;
+}
+

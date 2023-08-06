@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    <p>Doctor record</p>
+{% endblock %}
+
+{% block body %}
+<div class="person_block">
+    <div class="photo">
+        <img src="{{ data['image_url'] }}" onerror="this.src='/static/photo/face.jpg'"
+        width="150" height="150" alt="photo of person">
+    </div>
+    <div class="name_title">
+        {{ data["first_name"] }} {{ data["last_name"] }}
+    </div>
+</div>
+
+
+<div class="doctor_data">
+    <table class="table">
+    <tr>
+        <td>First Name</td>
+        <td>{{ data["first_name"] }}</td>
+    </tr>
+    <tr>
+        <td>Last Name</td>
+        <td>{{ data["last_name"] }}</td>
+    </tr>
+    <tr>
+        <td>Grade</td>
+        <td>{{ data["grade"]}}</td>
+    </tr>
+    <tr>
+        <td>Specialization</td>
+        <td>{{ data["specialization"]}}</td>
+    </tr>
+    <tr>
+        <td>email</td>
+        <td>{{ data["email"]}}</td>
+    </tr>
+    </table>
+</div> 
+
+<div class="buttons_block">
+    <form action="/edit_doctor/" method="get">
+        <button class="button" type="submit" name="id" value={{ data["id"] }}>EDIT</button>
+    </form>
+
+    <form action="/remove_doctor/" method="post">
+        <input type="hidden" name="id" value="{{ data["id"] }}">
+        <button class="button" type="submit" onclick="return confirm('Please confirm deletion');">DELETE</button>
+    </form>
+</div>
+
+
+<div class="table_title">
+    List of patients
+</div>
+
+<div class="patient_list">
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>State</th>
+        </tr>
+        {% for patient in data["patients"] %}
+            <tr>
+                <td>
+                    <a href="{{url_for('patient', id=patient['id'])}}">
+                        {{ patient['first_name'] }} {{ patient['last_name'] }}
+                    </a>
+                </td>
+                <td>{{ patient['age'] }}</td>
+                <td>{{ patient['gender'] }}</td>
+                <td>{{ patient['health_state'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<div class="buttons_block">
+    <form action="/new_patient" method="get">
+        <div class="buttons_block">
+            <button class="button" type="submit" name="doctor_id" value={{ data["id"] }}>ADD</button>
+        </div>
+    </form>  
+</div>
+{% endblock %}
+
+
+        
+

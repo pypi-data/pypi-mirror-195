@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    <p>Patient record</p>
+{% endblock %}
+
+{% block body %}
+
+<div class="person_block">
+    <div class="photo">
+        <img src="{{ data['image_url'] }}" onerror='this.src="/static/photo/face.jpg"'
+        width="150" height="150" alt="photo of person">
+    </div>
+    <div class="name_title">
+        {{ data["first_name"] }} {{ data["last_name"] }}
+    </div>
+</div>
+
+<div class="patient_data">
+    {% if data %}
+            <table class="table">
+        <tr>
+            <td>First Name</td>
+            <td>{{ data["first_name"] }}</td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td>{{ data["last_name"] }}</td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>{{ data["gender"] }}</td>
+        </tr>
+        <tr>
+            <td>Birthday</td>
+            <td>{{ data["birthday"] }}</td>
+        </tr>
+        <tr>
+            <td>Health State</td>
+            <td>{{ data["health_state"] }}</td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td>{{ data["email"]}}</td>
+        </tr>
+        <tr>
+            <td>Doctor</td>
+            <td>
+                <a href="{{url_for('get_doctor', id=data.doctor.get('id')) }}">
+                    {{ data.doctor["first_name"]}} {{ data.doctor["last_name"]}}
+                </a>
+            </td>
+        </tr>
+        </table>
+    {% endif %}
+
+</div> 
+
+
+<div class="buttons_block">
+    <form action="/edit_patient" method="get">
+        <button class="button" type="submit" name="id" value={{ data["id"] }}>EDIT</button>
+    </form>
+
+    <form action="/remove_patient/" method="post">
+        <input type="hidden" name="id" value="{{ data["id"] }}">
+        <button class="button" type="submit" onclick="return confirm('Please confirm deletion');">DELETE</button>
+    </form>
+
+
+</div>
+{% endblock %}

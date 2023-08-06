@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    <p>List of Doctors</p>
+{% endblock %}
+
+{% block body %}
+<div class="doctor_list">
+    <table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Grade</th>
+        <th>Specialization</th>
+        <th>Count of patients</th>
+    </tr>
+
+    {% for item in data %}
+    <tr><td>
+            <a href="{{url_for('get_doctor', id=item['id'])}}">
+                {{ item["first_name"] }} {{ item["last_name"] }}
+            </a>
+        </td>
+        <td>{{ item["grade"] }}</td>
+        <td>{{ item["specialization"] }}</td>
+        <td>{{ item["patient_count"] }}</td>
+    </tr>
+    {% endfor %}
+
+    </table>
+</div> 
+
+<form action="/new_doctor" method="get">
+    <div class="buttons_block">
+        <button class="button" type="submit">ADD</button>
+    </div>
+</form>  
+{% endblock %}

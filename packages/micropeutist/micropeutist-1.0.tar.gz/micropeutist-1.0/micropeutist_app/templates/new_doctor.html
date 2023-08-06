@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    <p>Creating new doctor record</p>
+{% endblock %}
+
+{% block body %}
+
+<div class="person_data_edit">
+    <form action="/new_doctor" method="post" enctype="multipart/form-data">
+        <table class="table">
+            <tr>
+                <td>First name</td>
+                <td><input type="text" name="first_name" placeholder="John" required autofocus></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text"name="last_name" placeholder="Doe" required></td>
+            </tr>
+            <tr>
+                <td>Grade</td>
+                <td><input type="text" name="grade" placeholder="MD"></td>
+            </tr>
+            <tr>
+                <td>Specialization</td>
+                <td><input type="text" name="specialization" placeholder="Therapeutist"></td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td><input type="email" name="email" placeholder="john@email.com" required></td>
+            </tr>
+            <tr>
+                <td>Photo (up to 200kb. 1:1 ratio. bmp, png, jpg, jfif allowed)</td>
+                <td>
+                    <input type="file" name="file" placeholder="photo 150x150">
+                </td>
+            </tr>
+        </table>
+
+        
+        <button id="button_save" type="submit">SAVE</button>
+    </form>
+    
+</div>    
+{% endblock %}

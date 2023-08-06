@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link rel="stylesheet" href="/static/reset.css"/>
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+    <body>
+        <div class="menu">
+            <div class="menu_item">
+                <a href={{ url_for('doctors') }}>
+                    Doctors
+                </a>
+            </div>
+            <div class="menu_item">
+                <a href={{ url_for('patients') }}>
+                    Patients
+                </a>
+            </div>
+        </div>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <ul class=flash>
+                    {% for category, message in messages %}
+                        <li class="{{ category }}">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+        
+        <div class="title">
+            {% block title %}{% endblock %}
+        </div>
+
+        {% block body %}{% endblock %}
+    </body>
+</html>
