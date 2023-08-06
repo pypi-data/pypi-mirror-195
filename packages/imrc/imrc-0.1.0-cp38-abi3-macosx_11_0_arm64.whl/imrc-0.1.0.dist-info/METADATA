@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: imrc
+Version: 0.1.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Rust
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Summary: Python bindings to Rust's persistent data structures (im-rc)
+Keywords: data structures,rust,persistent
+Author: Julian Berman
+Author-email: Julian+im-rc@GrayVines.com
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst; charset=UTF-8
+
+========
+``imrc``
+========
+
+|PyPI| |Pythons| |CI|
+
+.. |PyPI| image:: https://img.shields.io/pypi/v/imrc.svg
+  :alt: PyPI version
+  :target: https://pypi.org/project/imrc/
+
+.. |Pythons| image:: https://img.shields.io/pypi/pyversions/imrc.svg
+  :alt: Supported Python versions
+  :target: https://pypi.org/project/imrc/
+
+.. |CI| image:: https://github.com/Julian/imrc.py/workflows/CI/badge.svg
+  :alt: Build status
+  :target: https://github.com/Julian/imrc.py/actions?query=workflow%3ACI
+
+
+Python bindings to the Rust ``im-rc`` crate.
+
