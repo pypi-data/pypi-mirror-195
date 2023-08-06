@@ -1,0 +1,2 @@
+[jupyter_ai.model_engine_class]
+test = jupyter_ai_dalle:DalleModelEngine
