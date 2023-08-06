@@ -1,0 +1,81 @@
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "aiohere"
+version = "2.2.0"
+description = "Asynchronous Python client for the HERE API"
+license = "MIT"
+authors = ["Kevin Stillhammer <kevin.stillhammer@gmail.com>"]
+readme = "README.md"
+repository = "http://github.com/eifinger/aiohere"
+keywords = [
+    "aiohttp",
+    "asyncio",
+    "here"
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: MIT License"
+]
+packages = [
+  {include = "aiohere"},
+  {include = "aiohere/py.typed"},
+]
+
+[tool.poetry.dependencies]
+python = ">= 3.9"
+aiohttp = "^3.8.3"
+
+[tool.poetry.group.dev.dependencies]
+aresponses = "^2.1.6"
+black = "^22.12.0"
+blacken-docs = "^1.12.1"
+codespell = "^2.2.2"
+mypy = "^0.991"
+pre-commit = ">=2.20,<4.0"
+pre-commit-hooks = "^4.4.0"
+pytest = "^7.2.0"
+pytest-cov = "^4.0.0"
+pytest-asyncio = "^0.20.3"
+pytest-mock = "^3.10.0"
+vulture = "^2.6"
+yamllint = "^1.28.0"
+ruff = "^0.0.192"
+
+[tool.pytest.ini_options]
+addopts = "--cov --cov-report term-missing --cov-report xml --cov=aiohere tests"
+
+[tool.coverage.report]
+show_missing = true
+exclude_lines = ["pragma: no cover", "if TYPE_CHECKING:"]
+
+[tool.vulture]
+min_confidence = 80
+paths = ["aiohere", "tests"]
+
+[tool.ruff]
+ignore = ['E501']
+line-length = 88
+select = [
+    'B',
+    'B9',
+    'C',
+    'E',
+    'F',
+    'W',
+]
+fix = true
+
+[tool.ruff.mccabe]
+max-complexity = 12
+
+[tool.semantic_release]
+version_toml = "pyproject.toml:tool.poetry.version"
+build_command = "pip install poetry && poetry build"
+branch = "main"
