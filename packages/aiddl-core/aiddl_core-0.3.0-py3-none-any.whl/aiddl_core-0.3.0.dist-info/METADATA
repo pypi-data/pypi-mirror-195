@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: aiddl-core
+Version: 0.3.0
+Summary: Core Library for the AIDDL Framework for Integrative AI
+Home-page: http://www.aiddl.org
+Author: Uwe Köckemann
+Author-email: uwe.kockemann@oru.se
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/uwe-koeckemann/AIDDL/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# The AIDDL Core Library
+
+This is the Python implementation of the AIDDL Core Library.
+
+It provides everything needed for 
+
+- Parsing AIDDL files
+- Working with containers and modules
+- Creating terms and types
+- Evaluating terms and types
+- Default functions for evaluation
+
+
+
