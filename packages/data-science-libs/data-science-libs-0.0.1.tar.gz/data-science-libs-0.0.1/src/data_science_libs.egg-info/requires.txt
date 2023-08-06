@@ -1,0 +1,12 @@
+babyplots
+matplotlib
+numpy
+pandas
+re
+scipy
+seaborn
+sklearn
+statistics
+sys
+umap
+xgboost
