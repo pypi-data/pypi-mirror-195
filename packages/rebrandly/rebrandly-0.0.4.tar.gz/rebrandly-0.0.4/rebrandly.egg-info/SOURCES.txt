@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+rebrandly/__init__.py
+rebrandly.egg-info/PKG-INFO
+rebrandly.egg-info/SOURCES.txt
+rebrandly.egg-info/dependency_links.txt
+rebrandly.egg-info/requires.txt
+rebrandly.egg-info/top_level.txt
