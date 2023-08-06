@@ -1,0 +1,11 @@
+README.txt
+pyproject.toml
+setup.py
+py_capsolver.egg-info/PKG-INFO
+py_capsolver.egg-info/SOURCES.txt
+py_capsolver.egg-info/dependency_links.txt
+py_capsolver.egg-info/top_level.txt
+pycapsolver/__init__.py
+pycapsolver/capsolvers.py
+pycapsolver/exceptions.py
+pycapsolver/hcaptcha.py
