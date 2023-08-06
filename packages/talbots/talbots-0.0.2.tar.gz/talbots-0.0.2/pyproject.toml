@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "talbots"
+version = "0.0.2"
+description = "Talbots is a Python library for understanding, analyzing, and evaluating the content of text-generating systems through research papers published in scientific journals, with features such as downloading Bibtex information of research papers, downloading PDF files of research papers, data conversion, and supporting the detection of tortured phrases. In addition, it can assist you in developing and publishing your projects."
+authors = ["Tan H. Nguyen <huynhtannguyen.my@uopeople.edu>", Thien Q. Tran, Nguyen Huy Tan]
+
+[tool.poetry.dependencies]
+python = ">=3.0, <3.11"
+requests = "^2.25.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+
+[tool.poetry.scripts]
+my-script = "my_module:main"
