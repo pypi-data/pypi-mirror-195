@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: AkshayCDTLib
+Version: 0.1
+Summary: A simple example python package.
+Author: Akshay Gajjar
+Author-email: Akshay.Gajjar@fractal.ai
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+Requires-Dist: pandas
+
+Testing installation of Package
