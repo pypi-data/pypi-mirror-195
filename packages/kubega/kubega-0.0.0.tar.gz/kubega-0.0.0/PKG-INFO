@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: kubega
+Version: 0.0.0
+Summary: A copy of the adaptdl project (Use is strictly limited to non-commercial areas, only for studying and testing)
+Home-page: https://github.com/hliangzhao/kubega
+Author: Petuum Inc. & The AdaptDL Authors
+Author-email: aurick.qiao@petuum.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.7

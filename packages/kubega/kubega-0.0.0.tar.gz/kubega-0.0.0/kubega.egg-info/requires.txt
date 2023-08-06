@@ -1,0 +1,10 @@
+autograd==1.5
+numpy==1.21.5
+portpicker==1.5.2
+pytest==7.1.2
+ray==2.3.0
+requests==2.28.1
+scipy==1.7.3
+semver==2.13.0
+setuptools==65.6.3
+torchtext==0.5.0
