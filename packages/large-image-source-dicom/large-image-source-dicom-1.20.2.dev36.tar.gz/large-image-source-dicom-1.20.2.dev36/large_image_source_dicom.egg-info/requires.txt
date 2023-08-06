@@ -1,0 +1,5 @@
+large-image>=1.20.2.dev36
+wsidicom
+
+[girder]
+girder-large-image>=1.20.2.dev36
