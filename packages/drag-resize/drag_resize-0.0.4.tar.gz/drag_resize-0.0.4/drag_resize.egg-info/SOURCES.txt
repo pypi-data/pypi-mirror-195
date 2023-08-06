@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+drag_resize/DragResize.py
+drag_resize/__init__.py
+drag_resize/_imports_.py
+drag_resize/drag_resize.min.js
+drag_resize/drag_resize.min.js.map
+drag_resize/metadata.json
+drag_resize/package-info.json
+drag_resize.egg-info/PKG-INFO
+drag_resize.egg-info/SOURCES.txt
+drag_resize.egg-info/dependency_links.txt
+drag_resize.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+include drag_resize/drag_resize.min.js
+include drag_resize/drag_resize.min.js.map
+include drag_resize/async-*.js
+include drag_resize/async-*.js.map
+include drag_resize/*-shared.js
+include drag_resize/*-shared.js.map
+include drag_resize/metadata.json
+include drag_resize/package-info.json
+include README.md
+include LICENSE
+include package.json
