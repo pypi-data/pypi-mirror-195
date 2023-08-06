@@ -1,0 +1,12 @@
+README.rst
+setup.py
+pkgver/__init__.py
+scora_notify.egg-info/PKG-INFO
+scora_notify.egg-info/SOURCES.txt
+scora_notify.egg-info/dependency_links.txt
+scora_notify.egg-info/requires.txt
+scora_notify.egg-info/top_level.txt
+scora_notify.egg-info/zip-safe
+src/__init__.py
+src/event_tracker.py
+src/notify.py
