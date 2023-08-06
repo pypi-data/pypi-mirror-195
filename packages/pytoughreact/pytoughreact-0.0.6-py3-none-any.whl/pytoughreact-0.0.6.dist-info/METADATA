@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pytoughreact
+Version: 0.0.6
+Summary: Python Library for automating reaction simulations using TOUGHREACT, TMVOC and TMVOC-BIO
+Home-page: https://github.com/temmy222/PyTOUGHREACT/tree/master
+Author: Temitope Ajayi
+Author-email: ajayi_temmy@yahoo.com
+License: MIT
+Keywords: python,reaction,TOUGHREACT,TMVOC-BIO,Uncertainty quantification,Sensitivity Analysis
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: vtk
+Requires-Dist: matplotlib
+Requires-Dist: PyTOUGH-1.5.6
+
