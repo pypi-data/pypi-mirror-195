@@ -1,0 +1,14 @@
+edgar/__init__.py,sha256=9I_fBxvCZR3hgwOtcHDGG4QZYRlRtdFotQYQASvfgGY,659
+edgar/dataloader.py,sha256=Vgwqdr91-l0-IMbVaOhTo1KAejWZ1PyZibkarik1TS8,4742
+edgar/document.py,sha256=lx6C8KODgl0W2Wje8pA-Q9jUTlRlfAWz6oxrIXyth3w,2635
+edgar/downloader.py,sha256=v6Llf2MNFiyjyGInnOCAfQbbW9GESGp73vs6na8DXME,20258
+edgar/html.py,sha256=uuLMoAzHdRZ6wi8gauKUeezMI9zr1yjBaWA4e-k5cY4,1871
+edgar/metadata_manager.py,sha256=uVw1iL2muPrxF8kCpYPA62aXO1kiD1oN5kWdjO0Sa-g,17373
+edgar/parser.py,sha256=KmakCNsDfFCLOlMEBFu3gYakVDjySm2AvLKeTkieqjA,24597
+edgar/pipeline.py,sha256=qIIKm3mrRtXmq-02WmGPn8ul-VXr1Vfapzfg7PdBwF0,6451
+edgar/wrappers.py,sha256=n-Y09VEIQKZOx2QaLmdWyE9sQp-soYo00ioxdBfSX2M,5425
+edgar_doc_parser-0.2.0.dist-info/LICENSE,sha256=0E90q2IvB35NT7MwfKCZZDPS7-_Q8FHnVLsbwAaInTY,1072
+edgar_doc_parser-0.2.0.dist-info/METADATA,sha256=EN7DL9AZjUwA0cgOaJz6srdwxgnVNJD_wZInkxvSD3A,1817
+edgar_doc_parser-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+edgar_doc_parser-0.2.0.dist-info/top_level.txt,sha256=KpsFP160hlYF5vykvY6J55qJ6cCtBp_9YtfYwD4uvzY,6
+edgar_doc_parser-0.2.0.dist-info/RECORD,,
