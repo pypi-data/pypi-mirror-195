@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0","wheel","numpy==1.21.0","pandas==1.1.5","joblib==1.2.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iaccsept-perceptron"
+version = "0.0.2"
+authors = [
+  { name="Srikanta", email="srikantabiswal8093@gmail.com" },
+]
+description = "Perceptron paper code"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pypa/iaccsept_perceptron"
+"Bug Tracker" = "https://github.com/pypa/iaccsept_perceptron/issues"
