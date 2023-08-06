@@ -1,0 +1,10 @@
+LICENCE
+README.MD
+pyproject.toml
+ris.py
+RISify.egg-info/PKG-INFO
+RISify.egg-info/SOURCES.txt
+RISify.egg-info/dependency_links.txt
+RISify.egg-info/requires.txt
+RISify.egg-info/top_level.txt
+test/test_ris.py

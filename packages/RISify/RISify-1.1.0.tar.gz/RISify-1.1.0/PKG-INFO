@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: RISify
+Version: 1.1.0
+Summary: Simplifies the encoding and decoding of Regional Indicator Symbols.
+Author-email: "M. P. van de Weerd" <michael@parcifal.dev>
+License: LICENCE
+Project-URL: Homepage, https://gitlab.com/parcifal/ris-py
+Project-URL: Bug Tracker, https://gitlab.com/parcifal/ris-py/-/issues
+Keywords: unicode,regional indicator symbols,encoding,decoding,flags,internationalization,localization,emoji
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# RISify
+
+`RISify` is a Python library that provides functions for encoding and decoding 
+Regional Indicator Symbols (RIS), which are Unicode characters used to 
+represent flags of countries and regions.
+
+## Installation
+
+You can install `RISify` via pip:
+
+```bash
+pip install RISify
+```
+
+## Usage
+
+```python
+from ris import ris
+
+# decode a country code to RIS
+pt = ris("PT")
+
+print(pt)  # 🇵🇹
+
+# decode an HTML code to RIS
+de = ris("&#127465;&#127466;")
+de = de.encode("unicode")  # default
+
+print(de)  # 🇩🇪
+
+# encode a RIS code to uppercase ASCII
+nl = ris("🇳🇱")
+nl = nl.encode("ascii")
+nl = nl.upper()  # default
+
+print(nl)  # NL
+
+# encode a RIS code to lowercase ASCII
+eu = ris("🇪🇺")
+eu = eu.encode("ascii")
+eu = eu.lower()
+
+print(eu)  # eu
+
+# encode a RIS code to HTML
+fo = ris("🇫🇴")
+fo = fo.encode("html")
+
+print(fo)  # &#127467;&#127476;
+
+# concatenate RIS codes into a string
+print("spam " + pt + " bacon " + de + " sausage " + nl + " eggs " + eu + " ham " + fo)
+# spam 🇵🇹 bacon 🇩🇪 sausage NL eggs eu ham &#127467;&#127476;
+```
+
+Note that HTML is encoded with HTML-safe symbols, which can be useful for 
+ensuring that the symbols are markup-safe when used in HTML.
+
+## Contributing
+
+Contributions are welcome! If you find a bug or have an idea for a new 
+feature, please open an issue on the GitLab repository. If you would like to 
+contribute code, please fork the repository and submit a pull request.
+
+## License
+
+`RISify` is released under the GPLv3 license. See [LICENSE](LICENCE) for
+details.
