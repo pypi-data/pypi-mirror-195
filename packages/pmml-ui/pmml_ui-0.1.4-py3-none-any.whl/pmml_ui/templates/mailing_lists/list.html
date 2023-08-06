@@ -1,0 +1,25 @@
+<!doctype html>
+{% extends 'base.html' %}
+
+{% block header %}
+<h1>{% block title %}Mailing Lists{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Name</th>
+    <th scope="col">Members</th>
+  </tr>
+  </thead>
+  <tbody>
+  {% for mailing_list in mailing_lists %}
+  <tr>
+    <td><a href="{{ url_for('mailing_lists.detail', mailing_list_name=mailing_list.name) }}">{{ mailing_list.name }}</td>
+    <td>{{ mailing_list.members | length }}</td>
+  </tr>
+  </tbody>
+{% endfor %}
+</table>
+{% endblock %}
