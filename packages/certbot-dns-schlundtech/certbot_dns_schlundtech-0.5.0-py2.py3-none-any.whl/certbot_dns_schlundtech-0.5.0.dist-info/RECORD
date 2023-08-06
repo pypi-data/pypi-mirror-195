@@ -1,0 +1,9 @@
+certbot_dns_schlundtech/__init__.py,sha256=xR_dig2cltUUwZyI560_UA0qQvjxVIVcE5ysstQIQiw,3135
+certbot_dns_schlundtech/dns_schlundtech.py,sha256=1zY7v5oFxaHwigkoz3fMF9DaFxERMNx2A7drsA0Ssq8,11154
+certbot_dns_schlundtech/dns_schlundtech_test.py,sha256=T4AKQtN0V7v1Zpt8JrnsdiwcjliaWa-0K35x-xcQMBk,8007
+certbot_dns_schlundtech-0.5.0.dist-info/LICENSE,sha256=UvwGDHVM45esBD_zSO1dzEyUvxc6gwBL3wAiVKkeb_E,1076
+certbot_dns_schlundtech-0.5.0.dist-info/METADATA,sha256=vq1TzfxBawNTrfDudjpzoFeQTPbXF6M3aCBXggW8UnU,1303
+certbot_dns_schlundtech-0.5.0.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+certbot_dns_schlundtech-0.5.0.dist-info/entry_points.txt,sha256=lo_CaOkKcMrPPQvtYZJ6fQtn8pWQ7Ea_8uj8tHXHLkw,175
+certbot_dns_schlundtech-0.5.0.dist-info/top_level.txt,sha256=DOFypKZ23lmtDolJVuNY44wwLujtLkO5Tw_jQIs2mWM,24
+certbot_dns_schlundtech-0.5.0.dist-info/RECORD,,
