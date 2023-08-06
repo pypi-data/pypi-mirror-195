@@ -1,0 +1,12 @@
+interegular/__init__.py,sha256=Rdp4U5_ExK-u-nrW-vFDzwZn34vQ7iz30odA0yaDS8Y,1104
+interegular/comparator.py,sha256=umlxcr5dlXewYXGjQRCNnY8FvqUtpBu45W08IB8h8MU,3119
+interegular/fsm.py,sha256=hU1CVKOgjAy6iyGeVQSC4JKWWtKymUswgfjsltrt_9Q,34806
+interegular/patterns.py,sha256=KOXIFlZimEMASIcx8olsG94PbVM0f3s0gkwm9f4A0SY,25318
+interegular/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+interegular/utils/__init__.py,sha256=3Ikv4zMFALnCPizMD-txoNhqCvKWVJsvRvTyQoHIBLo,140
+interegular/utils/simple_parser.py,sha256=G-CRsKKmekN5I9FI8g37bl1av9aESFoyJTmKCOIHuzQ,5361
+interegular-0.2.3.dist-info/LICENSE.txt,sha256=iiMYmhB0ePopJBii4LG4vS_mBhfBzmMlwhlPbZHyeyk,1096
+interegular-0.2.3.dist-info/METADATA,sha256=26h2t1XeJCQuH_7gZ-xGy_lYI6zluVqvzaOFrdORORI,3029
+interegular-0.2.3.dist-info/WHEEL,sha256=WxH1APzgyQ-79FJhoj4p03ynr_Ey5q0w9n3unBHfkBw,93
+interegular-0.2.3.dist-info/top_level.txt,sha256=A98LQ5TOfM4ZxEotuKyytmx17Y3u_ujlxjsOZTa-AhQ,12
+interegular-0.2.3.dist-info/RECORD,,
