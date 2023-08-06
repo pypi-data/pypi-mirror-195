@@ -1,0 +1,7 @@
+setup.py
+testercat/__init__.py
+testercat.egg-info/PKG-INFO
+testercat.egg-info/SOURCES.txt
+testercat.egg-info/dependency_links.txt
+testercat.egg-info/requires.txt
+testercat.egg-info/top_level.txt
