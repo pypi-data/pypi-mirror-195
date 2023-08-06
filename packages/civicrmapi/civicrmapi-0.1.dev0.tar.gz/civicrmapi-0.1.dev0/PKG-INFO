@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: civicrmapi
+Version: 0.1.dev0
+Summary: Connect with the CiviCRM APIv4.
+Home-page: https://github.com/thomst/civicrmapi
+Author: Thomas Leichtfuß
+Author-email: thomas.leichtfuss@posteo.de
+License: BSD License
+Platform: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENCE
+
+=====================
+Welcome to civicrmapi
+=====================
+
+.. note::
+    This is a early development version of civapi.
+
+Access the CiviCRM API with python. APIv3 and APIv4 are supported.
