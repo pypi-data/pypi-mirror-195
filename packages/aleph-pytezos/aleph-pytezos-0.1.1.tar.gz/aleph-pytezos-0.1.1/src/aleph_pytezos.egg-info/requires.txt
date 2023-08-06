@@ -1,0 +1,13 @@
+base58
+importlib-metadata
+mnemonic
+pynacl
+python-magic
+secp256k1
+typing_extensions
+fastecdsa
+
+[testing]
+pytest
+pytest-cov
+setuptools
