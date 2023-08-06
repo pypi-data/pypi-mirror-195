@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: licenseware-logblocks
+Version: 0.1.0
+Summary: Post formatted log messages to slack, mentioning users when error ocurrs
+Home-page: https://github.com/licenseware/licenseware-logblocks
+Author: Licenseware
+Author-email: contact@licenseware.com
