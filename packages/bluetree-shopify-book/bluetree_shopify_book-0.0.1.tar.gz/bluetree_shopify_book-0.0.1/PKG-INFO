@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: bluetree_shopify_book
+Version: 0.0.1
+Summary: A Python package for managing books in Shopify
+Home-page: https://bluetreemanagement.com
+Author: Blue Tree Management (Canada), Ltd.
+Author-email: bluetree@digitalnomad.jp
+License: MIT License
+Keywords: shopify isbn book python
+License-File: LICENSE

@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bluetree_shopify_book.egg-info/PKG-INFO
+bluetree_shopify_book.egg-info/SOURCES.txt
+bluetree_shopify_book.egg-info/dependency_links.txt
+bluetree_shopify_book.egg-info/not-zip-safe
+bluetree_shopify_book.egg-info/top_level.txt
