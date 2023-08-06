@@ -1,0 +1,7 @@
+bakbak.py
+setup.py
+Bak_Bak.egg-info/PKG-INFO
+Bak_Bak.egg-info/SOURCES.txt
+Bak_Bak.egg-info/dependency_links.txt
+Bak_Bak.egg-info/requires.txt
+Bak_Bak.egg-info/top_level.txt
