@@ -1,0 +1,13 @@
+ncbi_submit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ncbi_submit/arguments.py,sha256=Eg5PpdemdvW0jHr0g2qMPJZ8fnn1-BXeXMUSobkEgWE,12876
+ncbi_submit/helpers.py,sha256=I6V9cj2jrWSPdt0cryGX0g8B0Dd6MOyNXuuVO4Ug_kY,6224
+ncbi_submit/ncbi.py,sha256=S9iVIXt1dYyiQbyn2EtrnRCPYaWBeqq9LzmrMAznQM0,70115
+ncbi_submit/ncbi_submit.py,sha256=c02_5pP_HiDsiPIFobNx2LSWGTe8aYSLoyz4xGSIZgs,2958
+ncbi_submit/report.py,sha256=3kpAWakvHmB-VAC-YegpQJZ38xxpUipBgzF3YxJl2c8,9523
+ncbi_submit/version.py,sha256=hzcmZ_59qpktwOd5EcASNEDR9-cZoIsZvvGpzSgtuRA,89
+ncbi_submit/xml_format.py,sha256=LtoTlmxbXM14w2JJwgKseo60uT_303q6E-orpNL2UtI,17635
+ncbi_submit-0.4.0.dist-info/LICENSE,sha256=vKMZMLtbZnV2tUsnh2IBEMPLWWqSJRMloI7RgrmVsWQ,1065
+ncbi_submit-0.4.0.dist-info/METADATA,sha256=osmIVrsEE3CPx9sBVcdOQ6R9xhRoh-jfJHiklQJyCqg,9696
+ncbi_submit-0.4.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+ncbi_submit-0.4.0.dist-info/entry_points.txt,sha256=i_-asEbZp0cvDZd0R1gGP4iDrB2Br4N9ZZVq5tp48as,60
+ncbi_submit-0.4.0.dist-info/RECORD,,
