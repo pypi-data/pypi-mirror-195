@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: testpypipkgtestjunk
+Version: 0.1.1
+Summary: A example Python package
+Home-page: https://github.com/ossf/package-analysis
+Author: Caleb
+Author-email: calebbrown@google.com
+License: BSD 2-clause
+

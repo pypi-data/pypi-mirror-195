@@ -1,0 +1,5 @@
+testpypipkgtest/__init__.py,sha256=BfReRaiFvURBTtRY_RZGEhacVIRoH6WK-GOd5hm56g0,12
+testpypipkgtestjunk-0.1.1.dist-info/METADATA,sha256=2DD2TN0HxxdXQ3rmHHVrUHTBa6-czAm2sflxDUuCWsc,222
+testpypipkgtestjunk-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+testpypipkgtestjunk-0.1.1.dist-info/top_level.txt,sha256=ST3oqf92IDE4X_laKYWUaKPXFZV61ANBUXI8L3cT7Q0,16
+testpypipkgtestjunk-0.1.1.dist-info/RECORD,,
