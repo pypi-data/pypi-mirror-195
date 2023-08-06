@@ -1,0 +1,10 @@
+LICENSE
+README.md
+flake8_assert_finder.py
+pyproject.toml
+flake8_assert_finder.egg-info/PKG-INFO
+flake8_assert_finder.egg-info/SOURCES.txt
+flake8_assert_finder.egg-info/dependency_links.txt
+flake8_assert_finder.egg-info/entry_points.txt
+flake8_assert_finder.egg-info/requires.txt
+flake8_assert_finder.egg-info/top_level.txt
