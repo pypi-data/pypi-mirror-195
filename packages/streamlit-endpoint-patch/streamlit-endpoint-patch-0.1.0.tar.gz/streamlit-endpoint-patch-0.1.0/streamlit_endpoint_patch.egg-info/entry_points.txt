@@ -1,0 +1,2 @@
+[console_scripts]
+streamlit-endpoint-patch = streamlit_endpoint_patch.endpoint_coersion:main

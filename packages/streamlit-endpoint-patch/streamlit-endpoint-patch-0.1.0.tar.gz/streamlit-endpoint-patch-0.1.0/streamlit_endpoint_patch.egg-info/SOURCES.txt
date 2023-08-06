@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+streamlit_endpoint_patch/__init__.py
+streamlit_endpoint_patch/endpoint_coersion.py
+streamlit_endpoint_patch.egg-info/PKG-INFO
+streamlit_endpoint_patch.egg-info/SOURCES.txt
+streamlit_endpoint_patch.egg-info/dependency_links.txt
+streamlit_endpoint_patch.egg-info/entry_points.txt
+streamlit_endpoint_patch.egg-info/requires.txt
+streamlit_endpoint_patch.egg-info/top_level.txt
