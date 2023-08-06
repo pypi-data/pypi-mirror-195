@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    "group:allNonMajor",
+    ":automergeAll",
+    ":enablePreCommit",
+    ":preserveSemverRanges"
+  ],
+  "enabledManagers": ["pip_requirements", "github-actions", "pre-commit"],
+  "pip_requirements": {
+    "fileMatch": ["^template/\\.tools/requirements/*"]
+  },
+  "github-actions": {
+    "fileMatch": ["^template/\\.github/workflows/*"]
+  },
+  "pre-commit": {
+    "fileMatch": ["^bump/\\.pre-commit-config\\.yaml$"]
+  }
+}

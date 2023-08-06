@@ -1,0 +1,4 @@
+jupyter-book==0.14.0
+# For watching files until Live Preview supports it natively
+# https://github.com/microsoft/vscode-livepreview/issues/233
+watchfiles==0.18.1
