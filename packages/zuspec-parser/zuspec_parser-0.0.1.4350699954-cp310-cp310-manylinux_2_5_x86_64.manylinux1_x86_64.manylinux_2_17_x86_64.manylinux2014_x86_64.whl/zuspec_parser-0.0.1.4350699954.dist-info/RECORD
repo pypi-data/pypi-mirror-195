@@ -1,0 +1,8 @@
+zsp_parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zsp_parser/ast.cpython-310-x86_64-linux-gnu.so,sha256=wqepU_-OGR08VRFatCdJkftgUmdU0Ciz3LRXG3Kgy5s,13257872
+zsp_parser/core.cpython-310-x86_64-linux-gnu.so,sha256=4KCESFGMCGENeFLKSouS7XPppHjwDlO3DIAJ9-SP2eE,1466536
+zuspec_parser-0.0.1.4350699954.dist-info/top_level.txt,sha256=NsstMvuz6Y4XHEvzHfV_cEX9TMhTeUchTVvChwNl8no,11
+zuspec_parser-0.0.1.4350699954.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+zuspec_parser-0.0.1.4350699954.dist-info/RECORD,,
+zuspec_parser-0.0.1.4350699954.dist-info/WHEEL,sha256=QwjtG__Tr_is1tZdi3L0jvlWC7dBh2fjo2b04csMQFA,225
+zuspec_parser-0.0.1.4350699954.dist-info/METADATA,sha256=-T9wulzhh6fxVMsx3s2lJsLkGfHniKonpqh8G_26AEI,227
