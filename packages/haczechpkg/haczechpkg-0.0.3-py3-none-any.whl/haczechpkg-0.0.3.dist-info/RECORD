@@ -1,0 +1,9 @@
+haczechpkg/__init__.py,sha256=poPlG0v-mXpuqdZ_ACkNL-bqF-OSoVOB5tYjaPx0qTM,19
+haczechpkg/haczechpkg.py,sha256=2EyBHzudGD1bwPZstjkthaIEp0KSJS6VudFZ29tK6t0,167
+haczechpkg/sub/__init__.py,sha256=qjuCpJCfWLMaG92-gUTxe4WdCAxmXsLoxqYIqTSvhwI,9
+haczechpkg/sub/sw/__init__.py,sha256=6ukEjU-11gOoXgsaxfzHQWWFuNNVA5IpPDyORNXz8MY,10
+haczechpkg/sub/sw/sub.py,sha256=bXFfeoQ3K-BFBdVb_XeCARiMuOAJuXnOTn-I1Huw4HM,167
+haczechpkg-0.0.3.dist-info/METADATA,sha256=dbJDQv7L5WmcgWcBxFJUJnq8VX3bTwVRQWxC7cpTB_c,451
+haczechpkg-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+haczechpkg-0.0.3.dist-info/top_level.txt,sha256=8qRZ-FyNi734at1vgv4zvBZwYfkgl9A26_EE3_CNnsg,11
+haczechpkg-0.0.3.dist-info/RECORD,,
