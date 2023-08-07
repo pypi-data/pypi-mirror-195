@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: gmpacket
+Version: 0.1.2
+Summary: ANSS Ground Motion Packet
+Home-page: https://github.com/SCEDC/ground-motion-packet
+Author: Ellen Yu, Lijam Hagos, Jamie Steidl, Eric Thompson, Bruce Worden
+Author-email: Mike Hearne <mhearne@usgs.gov>, Eric Thompson <ethompson@usgs.gov>, Ellen Yu <eyu@caltech.edu>
+License: License
+        =======
+        
+        This is free and unencumbered software released into the public domain. It is 
+        distributed under the terms of the Unlicense described here:
+        http://unlicense.org/
+        
+Keywords: ground motion,earthquake
+Requires-Python: <=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: geopy (>=2.1.0)
+Requires-Dist: pandas (>=1.4.0)
+Requires-Dist: pydantic[email] (>=1.10.0)
+Provides-Extra: dev
+Requires-Dist: altair ; extra == 'dev'
+Requires-Dist: build (>=0.7.0) ; extra == 'dev'
+Requires-Dist: black (>=21) ; extra == 'dev'
+Requires-Dist: flake8 (>=3.9) ; extra == 'dev'
+Requires-Dist: furo ; extra == 'dev'
+Requires-Dist: ipython (>=7.26) ; extra == 'dev'
+Requires-Dist: myst-nb ; extra == 'dev'
+Requires-Dist: myst-parser ; extra == 'dev'
+Requires-Dist: nbsphinx ; extra == 'dev'
+Requires-Dist: notebook (>=6.4.1) ; extra == 'dev'
+Requires-Dist: twine (>=3.8.0) ; extra == 'dev'
+Requires-Dist: recommonmark ; extra == 'dev'
+Requires-Dist: requests (>=2) ; extra == 'dev'
+Requires-Dist: setuptools-scm ; extra == 'dev'
+Requires-Dist: sphinx (>3.0.0) ; extra == 'dev'
+Requires-Dist: sphinx-autoapi ; extra == 'dev'
+Requires-Dist: sphinx-copybutton ; extra == 'dev'
+Requires-Dist: sphinx-inline-tabs ; extra == 'dev'
+Requires-Dist: sphinxcontrib-programoutput ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: deepdiff (>=5.7.0) ; extra == 'test'
+Requires-Dist: openpyxl (>=3.0.9) ; extra == 'test'
+Requires-Dist: pytest (>=6.2) ; extra == 'test'
+Requires-Dist: pytest-cov (>=2.12.0) ; extra == 'test'
+
+# Description of GMP —A GeoJSON Specification for Ground Motion Metrics
+
+Here we present a specification for a GeoJSON (https://geojson.org/) format for 
+unassociated and event-associated ground motion metrics—that is, quantities 
+derived from ground motion records (e.g., accelerograms, velocity recordings). 
+We refer to this specification as a Ground Motion Packet (GMP). Common example 
+metrics include peak ground acceleration (PGA), peak ground velocity (PGV), and 
+spectral acceleration (SA). This format is designed so that it can also include 
+metrics that are gaining popularity for many engineering use cases, such as 
+significant duration, Arias intensity, and inelastic response spectra. This 
+format should be able to be used by any application that uses ground motion 
+metrics including, but not limited to, ShakeMap. The GMP format is not meant to 
+describe station metadata or site installation. The purpose of the metadata 
+included in the GMP format is to provide high-level information regarding the 
+suitability of the data for common engineering/seismological applications.
+
+## Documentation
+[User Documentation](https://scedc.github.io/ground-motion-packet/index.html)
+
+## Demo
+[Sample Jupyter notebook](https://github.com/SCEDC/ground-motion-packet/blob/main/gmpacket/GMP-demo.ipynb)
