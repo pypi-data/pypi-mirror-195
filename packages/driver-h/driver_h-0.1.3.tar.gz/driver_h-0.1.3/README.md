@@ -1,0 +1,1 @@
+This package return driver that prevents detection chrome driver while using selenium
